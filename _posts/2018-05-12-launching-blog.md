@@ -19,4 +19,4 @@ What can you expect to see here?
 * Personal portfolio and download pages for ~~all~~ most game modifications I have worked on (but not yet)
 * Personal rants (maybe)
 
-Got any suggestions or feedback? Reach me out on Twitter!
+Got any suggestions or feedback? Reach me out on Twitter! (EDIT: or leave a comment below!)
