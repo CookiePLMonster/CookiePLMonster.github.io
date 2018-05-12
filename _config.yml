@@ -1,0 +1,96 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://cookieplmonster.github.io"
+title: Silent's Blog
+description: "A blog and portfolio of Silent" # used by search engines
+
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Silent's Blog
+  avatar: assets/img/cookiemonsterlite.png
+  favicon: assets/favicon.ico
+  gravatar: B5015413CDD23101B12239A68DFFFC89
+
+  # Header and footer text
+  header_text: <p>Silent's blog - personal, modding, reverse engineering related content.<p><p>Also heavily Work in Progress.</p>
+  header_text_feature_image: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
+  footer_text: >
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+  # Icons
+  rss:
+  email_address: zdanio95@gmail.com
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: CookiePLMonster
+  google_plus:
+  instagram:
+  keybase:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam: CookiePLMonster
+  tumblr: 
+  twitter: __silent_
+  vimeo:
+  wordpress:
+  youtube: CookiePLMonster
+
+  # Scripts / Features 
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: 
+  
+  special_page:
+    search: 
+      icon: "search" # Assuming page link and icon are the same
+      enabled: true
+    tags:
+      icon: "tags"
+      enabled:
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: true
+  
+  
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+
+# PORTFOLIO
+
+
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag]
+#theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
