@@ -20,7 +20,7 @@ theme_settings:
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
-  rss:
+  rss: true
   email_address: zdanio95@gmail.com
   behance:
   bitbucket:
