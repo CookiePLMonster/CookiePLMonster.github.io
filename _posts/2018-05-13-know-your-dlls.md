@@ -13,7 +13,7 @@ The initial hunch was reasonable -- it looked like an incompatibility with a ret
 for both Steam and retail, since it was released as a post-launch patch.
 Further research revealed the problem is not in the ASI itself -- UAL would not inject itself into the process at all! For some reason, my `wininet.dll` ended up being completely ignored by Windows when resolving dependencies for `CrySystem.dll`. One of possible causes could be Known DLLs. **Larry Osterman** explains those on his blog very well:
 
-https://blogs.msdn.microsoft.com/larryosterman/2004/07/19/what-are-known-dlls-anyway/
+<https://blogs.msdn.microsoft.com/larryosterman/2004/07/19/what-are-known-dlls-anyway/>
 
 Let's take a look at KnownDLLs in Windows 10 then:
 
