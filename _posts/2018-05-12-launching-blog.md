@@ -2,7 +2,6 @@
 layout: post
 title: Anybody here? Ah yes, welcome!
 feature-img: "assets/img/posts/welcome.jpg"
-excerpt_separator: <!--more-->
 ---
 
 About time! My very own, personal blog. Better late than never, right?
