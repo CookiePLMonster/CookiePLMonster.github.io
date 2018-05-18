@@ -49,14 +49,14 @@ theme_settings:
   share_buttons:
     facebook: true
     twitter: true
-    google_plus: true
+    google_plus:
     tumblr:
     pinterest:
     pocket:
     reddit: true
     linkedin:
     wordpress:
-    email: true
+    email:
 
   # Scripts / Features 
   google_analytics: UA-119160362-1
