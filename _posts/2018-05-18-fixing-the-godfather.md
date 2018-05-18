@@ -178,7 +178,7 @@ This all sounds good so far, but why would overlays cause issues on modern syste
 
 One of the features Microsoft dropped in Windows Vista are... DirectDraw hardware overlays! According to Microsoft, DirectDraw primary surface is not lockable anymore because DWM
 needs an exclusive access to those - and it is mandatory to lock surfaces in order to update overlays (thus, if we can’t lock the surface, we can’t update it either).
-Security can also be a factor - hardware overlayscould be drawn over any window (even a log on screen). With this in mind,
+Security can also be a factor - hardware overlays could be drawn over any window (even a log on screen). With this in mind,
 dropping their support could be considered a security measure and thus align with a lot of other changes introduced in Windows Vista.
 
 Now we see that both OS and the game are at fault here - video player would not work as is no matter what developers did,
@@ -254,8 +254,9 @@ We could solve this by ensuring nothing else gets drawn after updating our newly
 and ends up being unfeasible. A more reliable solution is to come up with a custom overlay renderer, hooked into the game just before it presents the final framebuffer data.
 That’s **exactly** how overlay software (like Steam Overlay) works - the difference is that they hook D3D9, while we have the luxury of being able to tailor a game specific RwD3D9 hook wherever we see fit.
 
-RenderWare based games are required to render everything within camera update calls - and after that’s done, contents of the camera are being presented.
-We can hook game’s *RwCameraShowRaster* function (which presents the final framebuffer) to also draw our overlays, like so:
+RenderWare based games are required to render everything within camera update calls (think of cameras as of render targets, so update calls essentially specify we want to render to this specific target) - 
+and after that’s done, contents of the camera are being presented.
+We can hook game’s *RwCameraShowRaster* function (which presents the final framebuffer on screen) to also draw our overlays, like so:
 
 ```cpp
 if ( RwCameraBeginUpdate( rwCamera ) )  

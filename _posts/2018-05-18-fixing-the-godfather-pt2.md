@@ -144,7 +144,7 @@ The best solution is to preprocess image on the CPU, transforming it from YUY2 t
 while ( source != end )  
 {
         const uint32_t yuy = *source++;
-        *destination++ = (yuy & ~(0xFF0000))| ((yuy & 0xFF) << 16);
+        *destination++ = (yuy & ~(0xFF0000)) | ((yuy & 0xFF) << 16);
         *destination++ = yuy;
 }
 ```
