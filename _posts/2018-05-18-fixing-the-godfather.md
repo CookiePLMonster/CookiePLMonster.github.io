@@ -19,7 +19,7 @@ This article is split in two parts:
 Prelude to fixing
 =================
 
-The Godfather: The Game is a 2006 game developed by EA Redwood Shores. It initially released on PC, Xbox and PlayStation 2, later followed with additional releases on PlayStation Portable, Xbox 360,
+The Godfather: The Game is a 2006 game developed by [EA Redwood Shores (Visceral Games)](https://en.wikipedia.org/wiki/Visceral_Games). It initially released on PC, Xbox and PlayStation 2, later followed with additional releases on PlayStation Portable, Xbox 360,
 Wii and PlayStation 3. The game is designed as an open world action-adventure around the plot of The Godfather movie. It was received relatively well.
 
 However, PC version of the game has one major flaw which surfaced only several months after game’s debut in March 2006. At that time, the most popular Windows version was Windows XP
