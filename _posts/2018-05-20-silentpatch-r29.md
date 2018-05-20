@@ -13,7 +13,7 @@ Without further ado, here are all the changes introduced in new releases:
 
 GTA III
 ----------
-* FILE_FLAG_NO_BUFFERING flag has been removed from IMG reading functions - speeding up streaming
+* `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions - speeding up streaming
 * Alt+F4 now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
@@ -26,7 +26,7 @@ GTA III
 
 GTA Vice City
 ----------
-* FILE_FLAG_NO_BUFFERING flag has been removed from IMG reading functions - speeding up streaming
+* `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions - speeding up streaming
 * Alt+F4 now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
@@ -62,7 +62,11 @@ As for fixes:
 * Setting a BMX on fire will not set CJ on fire anymore
 * Keyboard input latency decreased by one frame
 
-As always, head to GTAGarage to download the newest builds: \\
-<http://www.gtagarage.com/mods/show.php?id=25368>
+As always, head to GTAForums to download the newest builds: \\
+<http://gtaforums.com/topic/669045-silentpatch/>
 
 However, expect the 'patches (and other mods) to appear here permanently sometime soon... That's what this website should be for, after all.
+
+EDIT: \\
+What happened? Since this release, **I am not hosting SilentPatch on GTAGarage** anymore. Due to a bug on their website (which remains ignored for over a year), every new submission is marked as malware.
+This was the final straw for me, so now releases are self-hosted.
