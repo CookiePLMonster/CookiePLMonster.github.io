@@ -70,3 +70,6 @@ However, expect the 'patches (and other mods) to appear here permanently sometim
 EDIT: \\
 What happened? Since this release, **I am not hosting SilentPatch on GTAGarage** anymore. Due to a bug on their website (which remains ignored for over a year), every new submission is marked as malware.
 This was the final straw for me, so now releases are self-hosted.
+
+EDIT2: \\
+Attention, Steam SA users! r29 used to crash on a Steam version, now it doesn't anymore! If you encountered them, please redownload.
