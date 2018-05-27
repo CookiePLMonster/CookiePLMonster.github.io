@@ -11,11 +11,10 @@ layout: default
         <h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     </header>
 
-    {% if page.description %}
     <section class="post-content">
+	{% if page.description %}
         {{ page.description }}
-    </section>
-    {% endif %}
+	{% endif %}
 
     <!-- Bootstrap will work within this div -->
     <section>
@@ -27,6 +26,8 @@ layout: default
             <div class="col-md-1"></div>
         </div>
     </section>
+	
+	</section>
 
     
     
