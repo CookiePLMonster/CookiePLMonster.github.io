@@ -12,6 +12,7 @@ Featured fixes:
 <div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchSA.zip" class="btn btn-primary btn-lg" role="button">Download for GTA: San Andreas</a></div>
 <div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchVC.zip" class="btn btn-primary btn-lg" role="button">Download for GTA: Vice City</a></div>
 <div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchIII.zip" class="btn btn-primary btn-lg" role="button">Download for GTA III</a></div>
+<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="btn btn-primary btn-lg" role="button">Download DDraw Component for GTA III & GTA VC</a></div>
 </div>
 
 For the other SilentPatches, visit my GitHub page for now: \\
