@@ -54,7 +54,11 @@
     {% endif %}
     
     <!-- seo tags -->
-    {% seo %}
+	{% capture seo %}
+		{% seo %}
+	{% endcapture %}
+	{% assign card_type = page.twitter.card | default: site.twitter.card | default: "summary_large_image" %}
+    {{ seo | replace: "summary_large_image", card_type }}
     <!-- Manual seo tags -->
     <!--
     <title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme_settings.title }}</title>

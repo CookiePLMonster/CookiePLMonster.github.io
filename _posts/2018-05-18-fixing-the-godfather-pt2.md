@@ -3,7 +3,10 @@ layout: post
 title: "Fixing game-breaking issues in The Godfather: The Game - Part 2"
 feature-img: "assets/img/posts/godfather/the-godfather-still.jpg"
 thumbnail: "assets/img/posts/godfather/thumbnail.jpg"
+image: "assets/img/posts/godfather/thumbnail.jpg"
 excerpt: "Now we know what to do, so let's do it."
+twitter:
+  card: "summary_large_image"
 date: 2018-05-18 20:10:00 +0200
 ---
 This article is split in two parts:

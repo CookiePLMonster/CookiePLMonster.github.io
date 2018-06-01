@@ -39,12 +39,12 @@ theme_settings:
   soundcloud:
   stack_exchange:  # Full URL
   steam: CookiePLMonster
-  tumblr: 
+  tumblr:
   twitter: __silent_
   vimeo:
   wordpress:
   youtube: CookiePLMonster
-  
+
   # Sharing options
   share_buttons:
     facebook: true
@@ -58,19 +58,19 @@ theme_settings:
     wordpress:
     email:
 
-  # Scripts / Features 
+  # Scripts / Features
   google_analytics: UA-119160362-1
   disqus_shortname: cookieplmonster-github-io
-  katex: 
-  
+  katex:
+
   special_page:
-    search: 
+    search:
       icon: "search" # Assuming page link and icon are the same
       enabled: true
     tags:
       icon: "tags"
       enabled:
-  
+
   # Localization strings
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
@@ -93,14 +93,31 @@ theme_settings:
 
   # Post navigation
   post_navigation: true
-  
-  
+
+
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
 
 collections:
   - mods
+
+# SEO
+twitter:
+  username: __silent_
+  card: summary
+
+social:
+  name: Silent
+  links:
+    - https://twitter.com/__silent_
+    - https://github.com/CookiePLMonster
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/cookiemonsterlite.png
 
 
 # PORTFOLIO
