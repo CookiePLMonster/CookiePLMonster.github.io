@@ -9,7 +9,7 @@ description: "A blog and portfolio of Silent" # used by search engines
 theme_settings:
   # Meta
   title: Silent's Blog
-  avatar: assets/img/cookiemonsterlite.png
+  avatar: assets/img/avatar.jpg
   favicon: assets/favicon.ico
   gravatar: B5015413CDD23101B12239A68DFFFC89
 
@@ -117,7 +117,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/cookiemonsterlite.png
+      image: /assets/img/avatar.jpg
 
 
 # PORTFOLIO
