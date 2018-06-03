@@ -7,7 +7,8 @@ date: 2018-06-03 15:30:00 +0200
 [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html) is compiled with Visual Studio 2015 with a `/Wv:18` compiler option. A quick memo on that from MSDN:
 > The compiler can suppress warnings that were introduced after a version you specify by using the /Wv compiler option.
 > This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings.
-Looking up at the table of values, `18` means all warnings introduced after Visual Studio 2013.
+
+Looking up at the table of values, `18` means all warnings introduced after Visual Studio 2013 are disabled.
 
 Why were those removed? Compiling with the option disabled makes it painfully obvious:
 ```
