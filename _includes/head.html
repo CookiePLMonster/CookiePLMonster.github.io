@@ -19,6 +19,11 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<!-- Bootstrap-3.3.7 isolation CSS -->
+	{% if page.bootstrap %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/vendor/bootstrap-iso.min.css">
+	{% endif %}
 
     <!-- Google Fonts -->
     {% if site.theme_settings.google_fonts %}
