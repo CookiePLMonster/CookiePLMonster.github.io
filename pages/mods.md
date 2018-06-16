@@ -11,7 +11,7 @@ bootstrap: true
   {% assign items = site.mods | sort: 'mod_order' %}
   {% for mod in items %}
   <div style="border-bottom:1px solid rgba(0,0,0,0.1)">
-      <h1>
+      <h1 id="{{ mod.id | split: '/' | last }}">
           {{ mod.title }}
       </h1>
       <div class="excerpt">
