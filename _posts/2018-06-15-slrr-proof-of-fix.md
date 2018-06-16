@@ -6,6 +6,7 @@ feature-img: "assets/img/posts/slrr-img.jpg"
 thumbnail: "assets/img/posts/slrr-img.jpg"
 image: "assets/img/posts/slrr-img.jpg"
 date: 2018-06-15 23:25:00 +0200
+redirect_from: "/2018/06/15/slrr-proof-of-fix.html"
 bootstrap: true
 ---
 

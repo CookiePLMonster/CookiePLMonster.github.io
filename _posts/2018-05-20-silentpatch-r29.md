@@ -6,6 +6,7 @@ thumbnail: "assets/img/silentpatch_banner.png"
 image: "assets/img/silentpatch_banner.png"
 excerpt: "New builds for GTA III, GTA VC and GTA SA!"
 date: 2018-05-20 11:10:00 +0200
+redirect_from: "/2018/05/20/silentpatch-r29.html"
 ---
 What's up? It's been over a year since a patch for GTA San Andreas and nearly **two years** since a patch for III and Vice City were updated!
 However, today is the day where all three of them receive an update at the same time! These releases also celebrate the 4th anniversary of SilentPatchSA, which was first announced on 27.04.2014.

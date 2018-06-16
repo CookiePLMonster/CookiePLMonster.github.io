@@ -2,6 +2,7 @@
 layout: post
 title: Finding a right DLL to hook is harder than you think
 excerpt: Know your KnownDLLs.
+redirect_from: "/2018/05/13/know-your-dlls.html"
 ---
 Ironically, the biggest challenge behind [SilentPatch for Far Cry](https://github.com/CookiePLMonster/SilentPatchFarCry) was to find the right DLL to proxy in order to make Ultimate ASI Loader work fine.
 Most games work fine with `dinput8.dll`, but since Far Cry is split into around 47.000 separate libraries (not literally), none of the DLLs supported by UAL worked fine.
