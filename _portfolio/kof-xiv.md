@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "The King of Fighters XIV"
-image: "assets/img/portfolio/thumb/kof-xiv.jpg"
-feature-img: "assets/img/portfolio/kof-xiv.png"
+image: "assets/img/portfolio/thumb/KOF-XIV.jpg"
+feature-img: "assets/img/portfolio/KOF-XIV.png"
 date: 2017-06-15
 ---
 
