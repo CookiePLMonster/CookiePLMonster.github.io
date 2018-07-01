@@ -6,4 +6,4 @@ feature-img: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
 permalink: /portfolio/
 ---
  
-Coming soon, work in progress...
+{% include portfolio.html %}
