@@ -101,7 +101,9 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 collections:
-  - mods
+  mods:
+  portfolio:
+    output: true
 
 # SEO
 twitter:
@@ -119,6 +121,7 @@ defaults:
       path: ""
     values:
       image: /assets/img/avatar.jpg
+      date-format: "%B %-d, %Y"
 
 
 # PORTFOLIO
