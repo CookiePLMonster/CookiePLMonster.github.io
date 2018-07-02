@@ -11,5 +11,4 @@ There are more characters, smart twists on the original gameplay, and a continua
 
 I started working on the game after its initial release and largely contributed to making **Level Editor** a reality.
 
-kk
 Released on: **PC, PlayStation 3, PlayStation 4, PlayStation Vita.**
