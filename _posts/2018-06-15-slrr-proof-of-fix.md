@@ -123,6 +123,9 @@ It has been tailored **only** for Build 936, I do not know what are the effects 
 
 <a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="btn btn-primary btn-lg" role="button" target="_blank">See source code on GitHub</a>
 
+**{{ "2018-07-14" | date_to_long_string | upcase }} UPDATE:**\\
+A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.
+
 # Unresolved issues
 Of course, there are a lot more issues with the game, mainly concerning random gameplay issues (collision detection failures) and D3D misuses (**so** many D3D calls each frame!).
 They are not as trivial to fix though, so... maybe spare them for Part 2 :)
