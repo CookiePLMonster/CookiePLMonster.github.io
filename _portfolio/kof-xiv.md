@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: page
 title: "The King of Fighters XIV"
 image: "assets/img/portfolio/thumb/KOF-XIV.jpg"
 feature-img: "assets/img/portfolio/KOF-XIV.png"
 date: 2017-06-15
+subtitle: "June 2017"
 ---
 
 The King of Fighters XIV is the newest entry in the King of Fighters series since 2010,

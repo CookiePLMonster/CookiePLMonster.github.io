@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: page
 title: "Danganronpa 2: Goodbye Despair"
 image: "assets/img/portfolio/thumb/danganronpa-2.jpg"
 feature-img: "assets/img/portfolio/danganronpa-2.png"
 date: 2016-04-18
+subtitle: "April 2016"
 ---
 
 Jabberwock Island – once a popular tourist destination, this now uninhabited island remains oddly pristine.
