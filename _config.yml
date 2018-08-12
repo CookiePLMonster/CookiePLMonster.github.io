@@ -62,7 +62,7 @@ theme_settings:
 
   # Scripts / Features
   google_analytics:
-  disqus_shortname: cookieplmonster-github-io
+  disqus_shortname:
   katex:
 
   special_page:
