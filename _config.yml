@@ -61,7 +61,7 @@ theme_settings:
     email:
 
   # Scripts / Features
-  google_analytics: UA-119160362-1
+  google_analytics:
   disqus_shortname: cookieplmonster-github-io
   katex:
 
