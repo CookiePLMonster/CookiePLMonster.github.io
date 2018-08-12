@@ -55,6 +55,7 @@ theme_settings:
     pinterest:
     pocket:
     reddit: true
+    hacker_news: true
     linkedin:
     wordpress:
     email:
