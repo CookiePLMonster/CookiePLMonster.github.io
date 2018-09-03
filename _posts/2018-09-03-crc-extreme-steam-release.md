@@ -14,13 +14,13 @@ It's real -- a single bugfix for a graphical issue caused a chain of events, and
 <iframe src="https://store.steampowered.com/widget/925550/" frameborder="0" width="900" height="200"></iframe>
 </div>
 
-Cross Racing Championship Extreme is a relatively nice racing game from [Invictus Games](http://invictus.com/), released in 2006.
+Cross Racing Championship Extreme is a relatively nice racing game from [Invictus Games](http://invictus.com/), released in 2005.
 Sadly, it was haunted by a relatively severe graphical artifact present on nearly all modern GPUs -- driver models would be corrupted
 and trees would randomly fly around!
 
 <p align="center">
 <img src="{{ site.baseurl }}/assets/img/posts/crc-extreme/crcbug.jpg"><br>
-<em>You are not wrong -- there really are trees in the sky.</em>
+<em>You are not wrong - there really are trees in the sky.</em>
 </p>
 
 With it fixed, Raxat aka [ImageCode](http://image-code.com/) (you [may remember the name from a post about Street Legal Racing Redline v2.3.1]({{ site.baseurl }}{% post_url 2018-06-15-slrr-proof-of-fix %}))
