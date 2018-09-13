@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Portfolio
-subtitle: "Projects I have been involved in, mostly professionally"
+subtitle: "Projects I have been involved in, mostly professionally."
+excerpt: Projects I have been involved in.
 feature-img: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
 permalink: /portfolio/
 ---

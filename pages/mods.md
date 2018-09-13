@@ -2,6 +2,7 @@
 layout: page
 title: "Mods & Patches"
 subtitle: My modifications and patches for various games. This page is in very early stages, will be expanded and made prettier soon.
+excerpt: My modifications and patches for various games.
 feature-img: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
 permalink: /mods/
 bootstrap: true
