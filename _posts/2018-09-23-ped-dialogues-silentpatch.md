@@ -5,7 +5,7 @@ excerpt: Running over people shall not be ignored ever again.
 date: 2018-09-23 15:25:00 +0200
 ---
 First of all, I am proud to announce that **we have reached 10,000 subscribers on YouTube!**
-While YT wasn't and isn't my main focus point, it's nice to know that my occasional uploads are interested for plenty of people.
+While YT wasn't and isn't my main focus point, it's nice to know that my occasional uploads are interesting for plenty of people.
 
 Even though it's nothing major, feel free to consider this progress update as a very non-unique 10k subscribers non-special! 😁
 
