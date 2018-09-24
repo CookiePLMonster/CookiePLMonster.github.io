@@ -1,0 +1,21 @@
+{% if site.theme_settings.patreon %}
+<li>
+	<a href="https://www.patreon.com/{{ site.theme_settings.patreon }}" title="{{ site.theme_settings.str_support_via }} Patreon">
+		<span class="fa-stack" style="font-size:1.5em;">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme_settings.paypal %}
+<li>
+	<a href="https://paypal.me/{{ site.theme_settings.paypal }}" title="{{ site.theme_settings.str_support_via }} PayPal">
+		<span class="fa-stack" style="font-size:1.5em;">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-paypal fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}

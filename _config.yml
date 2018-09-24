@@ -36,6 +36,8 @@ theme_settings:
   keybase:
   linkedin:  # Full URL
   pinterest:
+  patreon:
+  paypal: AdrianZdanowicz
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
@@ -77,6 +79,7 @@ theme_settings:
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
   str_discord: "Join RockstarVision Discord, the fastest way to contact me"
+  str_support_via: "Support me via"
   str_share_on: "Share on"
   str_add_to: "Add to"
   str_email: "Email"
