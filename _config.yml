@@ -14,7 +14,7 @@ theme_settings:
   gravatar: B5015413CDD23101B12239A68DFFFC89
 
   # Header and footer text
-  header_text: <p>Silent's blog - personal, modding, reverse engineering related content.<p><p>Also heavily Work in Progress.</p>
+  header_text: Personal, modding and reverse engineering related content.<br>Blog may or may not feature cookies.
   header_text_feature_image: assets/img/site-header.png
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
