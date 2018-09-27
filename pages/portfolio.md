@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 subtitle: "Projects I have been involved in, mostly professionally."
 excerpt: Projects I have been involved in.
-feature-img: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
+feature-img: assets/img/site-header.png
 permalink: /portfolio/
 ---
  

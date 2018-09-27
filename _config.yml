@@ -16,7 +16,7 @@ theme_settings:
 
   # Header and footer text
   header_text: <p>Silent's blog - personal, modding, reverse engineering related content.<p><p>Also heavily Work in Progress.</p>
-  header_text_feature_image: assets/img/free_cookie_texture_by_designercow-d4zkzjg.jpg
+  header_text_feature_image: assets/img/site-header.png
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
