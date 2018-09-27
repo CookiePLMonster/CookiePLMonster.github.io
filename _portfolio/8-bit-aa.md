@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "8-bit Adventure Anthology: Volume I"
-image: "assets/img/portfolio/thumb/8-bit-anthology-hero.jpg"
+image: "assets/img/portfolio/thumb/8baa.jpg"
 feature-img: "assets/img/portfolio/8-bit-anthology-hero.jpg"
 date: 2017-10-31
 subtitle: "October 2017"

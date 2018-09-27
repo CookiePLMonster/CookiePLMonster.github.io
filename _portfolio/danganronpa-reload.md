@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Danganronpa 1-2: Reload"
-image: "assets/img/portfolio/thumb/dr-reload.jpg"
+image: "assets/img/portfolio/thumb/danganronpa-reload.jpg"
 feature-img: "assets/img/portfolio/dr-reload.jpg"
 date: 2017-03-14
 subtitle: "March 2017"

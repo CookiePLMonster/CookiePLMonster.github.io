@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Danganronpa: Trigger Happy Havoc"
-image: "assets/img/portfolio/thumb/danganronpa.jpg"
+image: "assets/img/portfolio/thumb/danganronpa1.jpg"
 feature-img: "assets/img/portfolio/danganronpa.jpg"
 date: 2016-02-16
 subtitle: "February 2016"

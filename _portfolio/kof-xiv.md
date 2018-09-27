@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "The King of Fighters XIV"
-image: "assets/img/portfolio/thumb/KOF-XIV.jpg"
+image: "assets/img/portfolio/thumb/KOF14.jpg"
 feature-img: "assets/img/portfolio/KOF-XIV.png"
 date: 2017-06-15
 subtitle: "June 2017"

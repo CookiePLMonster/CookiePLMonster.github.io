@@ -6,7 +6,7 @@
         <a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-link" data-keyboard="true">
             <div class="caption" title="{{ item.title }}">
                 <div class="caption-content">
-                    <i class="fas fa-search-plus fa-3x"></i>
+                    <img src="{{ site.baseurl }}/{{ item.image | replace: "/thumb/", "/thumb/hover/" | replace: ".jpg", ".png" }}" class="" alt="">
                 </div>
             </div>
             <img src="{{ site.baseurl }}/{{ item.image }}" class="" alt="">
