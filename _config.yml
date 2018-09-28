@@ -70,9 +70,9 @@ theme_settings:
     search:
       icon: "search" # Assuming page link and icon are the same
       enabled: true
-    tags:
+    categories:
       icon: "tags"
-      enabled:
+      enabled: true
 
   # Localization strings
   str_follow_on: "Follow on"

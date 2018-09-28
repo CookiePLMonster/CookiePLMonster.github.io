@@ -1,12 +1,12 @@
 {% assign tags = include.tags | split:'|' | sort | uniq %}
 
-{% if include.tags.size > 0 %}
+{% if tags.size > 0 %}
 <footer>
   <div class="tag-list">
-    {% if include.tags.size == 1 %}
-      <div class="meta">Tag</div>
-    {% elsif include.tags.size > 1 %}
-      <div class="meta">Tags</div>
+    {% if tags.size == 1 %}
+      <div class="meta">Category</div>
+    {% elsif tags.size > 1 %}
+      <div class="meta">Categories</div>
     {% endif %}
 
     {% for tag in tags %}
