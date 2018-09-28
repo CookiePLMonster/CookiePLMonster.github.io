@@ -11,7 +11,6 @@ theme_settings:
   # Meta
   title: Silent's Blog
   avatar: assets/img/avatar.jpg
-  favicon: assets/favicon.ico
   gravatar: B5015413CDD23101B12239A68DFFFC89
 
   # Header and footer text
