@@ -382,9 +382,15 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
+    "tables.less",
     "forms.less",
-    "buttons.less"
+    "buttons.less",
+    "panels.less",
+    "component-animations.less"
   ],
-  "js": [],
+  "js": [
+    "collapse.js",
+    "transition.js"
+  ],
   "customizerUrl": "<none>"
 }

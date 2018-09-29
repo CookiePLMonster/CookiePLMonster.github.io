@@ -307,6 +307,246 @@
 .bootstrap-iso [role="button"] {
   cursor: pointer;
 }
+.bootstrap-iso table {
+  background-color: transparent;
+}
+.bootstrap-iso caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+.bootstrap-iso th {
+  text-align: left;
+}
+.bootstrap-iso .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.bootstrap-iso .table > thead > tr > th,
+.bootstrap-iso .table > tbody > tr > th,
+.bootstrap-iso .table > tfoot > tr > th,
+.bootstrap-iso .table > thead > tr > td,
+.bootstrap-iso .table > tbody > tr > td,
+.bootstrap-iso .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.bootstrap-iso .table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.bootstrap-iso .table > caption + thead > tr:first-child > th,
+.bootstrap-iso .table > colgroup + thead > tr:first-child > th,
+.bootstrap-iso .table > thead:first-child > tr:first-child > th,
+.bootstrap-iso .table > caption + thead > tr:first-child > td,
+.bootstrap-iso .table > colgroup + thead > tr:first-child > td,
+.bootstrap-iso .table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.bootstrap-iso .table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.bootstrap-iso .table .table {
+  background-color: #ffffff;
+}
+.bootstrap-iso .table-condensed > thead > tr > th,
+.bootstrap-iso .table-condensed > tbody > tr > th,
+.bootstrap-iso .table-condensed > tfoot > tr > th,
+.bootstrap-iso .table-condensed > thead > tr > td,
+.bootstrap-iso .table-condensed > tbody > tr > td,
+.bootstrap-iso .table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.bootstrap-iso .table-bordered {
+  border: 1px solid #dddddd;
+}
+.bootstrap-iso .table-bordered > thead > tr > th,
+.bootstrap-iso .table-bordered > tbody > tr > th,
+.bootstrap-iso .table-bordered > tfoot > tr > th,
+.bootstrap-iso .table-bordered > thead > tr > td,
+.bootstrap-iso .table-bordered > tbody > tr > td,
+.bootstrap-iso .table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+.bootstrap-iso .table-bordered > thead > tr > th,
+.bootstrap-iso .table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.bootstrap-iso .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.bootstrap-iso .table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.bootstrap-iso table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.bootstrap-iso table td[class*="col-"],
+.bootstrap-iso table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+.bootstrap-iso .table > thead > tr > td.active,
+.bootstrap-iso .table > tbody > tr > td.active,
+.bootstrap-iso .table > tfoot > tr > td.active,
+.bootstrap-iso .table > thead > tr > th.active,
+.bootstrap-iso .table > tbody > tr > th.active,
+.bootstrap-iso .table > tfoot > tr > th.active,
+.bootstrap-iso .table > thead > tr.active > td,
+.bootstrap-iso .table > tbody > tr.active > td,
+.bootstrap-iso .table > tfoot > tr.active > td,
+.bootstrap-iso .table > thead > tr.active > th,
+.bootstrap-iso .table > tbody > tr.active > th,
+.bootstrap-iso .table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.bootstrap-iso .table-hover > tbody > tr > td.active:hover,
+.bootstrap-iso .table-hover > tbody > tr > th.active:hover,
+.bootstrap-iso .table-hover > tbody > tr.active:hover > td,
+.bootstrap-iso .table-hover > tbody > tr:hover > .active,
+.bootstrap-iso .table-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.bootstrap-iso .table > thead > tr > td.success,
+.bootstrap-iso .table > tbody > tr > td.success,
+.bootstrap-iso .table > tfoot > tr > td.success,
+.bootstrap-iso .table > thead > tr > th.success,
+.bootstrap-iso .table > tbody > tr > th.success,
+.bootstrap-iso .table > tfoot > tr > th.success,
+.bootstrap-iso .table > thead > tr.success > td,
+.bootstrap-iso .table > tbody > tr.success > td,
+.bootstrap-iso .table > tfoot > tr.success > td,
+.bootstrap-iso .table > thead > tr.success > th,
+.bootstrap-iso .table > tbody > tr.success > th,
+.bootstrap-iso .table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.bootstrap-iso .table-hover > tbody > tr > td.success:hover,
+.bootstrap-iso .table-hover > tbody > tr > th.success:hover,
+.bootstrap-iso .table-hover > tbody > tr.success:hover > td,
+.bootstrap-iso .table-hover > tbody > tr:hover > .success,
+.bootstrap-iso .table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.bootstrap-iso .table > thead > tr > td.info,
+.bootstrap-iso .table > tbody > tr > td.info,
+.bootstrap-iso .table > tfoot > tr > td.info,
+.bootstrap-iso .table > thead > tr > th.info,
+.bootstrap-iso .table > tbody > tr > th.info,
+.bootstrap-iso .table > tfoot > tr > th.info,
+.bootstrap-iso .table > thead > tr.info > td,
+.bootstrap-iso .table > tbody > tr.info > td,
+.bootstrap-iso .table > tfoot > tr.info > td,
+.bootstrap-iso .table > thead > tr.info > th,
+.bootstrap-iso .table > tbody > tr.info > th,
+.bootstrap-iso .table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.bootstrap-iso .table-hover > tbody > tr > td.info:hover,
+.bootstrap-iso .table-hover > tbody > tr > th.info:hover,
+.bootstrap-iso .table-hover > tbody > tr.info:hover > td,
+.bootstrap-iso .table-hover > tbody > tr:hover > .info,
+.bootstrap-iso .table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+.bootstrap-iso .table > thead > tr > td.warning,
+.bootstrap-iso .table > tbody > tr > td.warning,
+.bootstrap-iso .table > tfoot > tr > td.warning,
+.bootstrap-iso .table > thead > tr > th.warning,
+.bootstrap-iso .table > tbody > tr > th.warning,
+.bootstrap-iso .table > tfoot > tr > th.warning,
+.bootstrap-iso .table > thead > tr.warning > td,
+.bootstrap-iso .table > tbody > tr.warning > td,
+.bootstrap-iso .table > tfoot > tr.warning > td,
+.bootstrap-iso .table > thead > tr.warning > th,
+.bootstrap-iso .table > tbody > tr.warning > th,
+.bootstrap-iso .table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.bootstrap-iso .table-hover > tbody > tr > td.warning:hover,
+.bootstrap-iso .table-hover > tbody > tr > th.warning:hover,
+.bootstrap-iso .table-hover > tbody > tr.warning:hover > td,
+.bootstrap-iso .table-hover > tbody > tr:hover > .warning,
+.bootstrap-iso .table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+.bootstrap-iso .table > thead > tr > td.danger,
+.bootstrap-iso .table > tbody > tr > td.danger,
+.bootstrap-iso .table > tfoot > tr > td.danger,
+.bootstrap-iso .table > thead > tr > th.danger,
+.bootstrap-iso .table > tbody > tr > th.danger,
+.bootstrap-iso .table > tfoot > tr > th.danger,
+.bootstrap-iso .table > thead > tr.danger > td,
+.bootstrap-iso .table > tbody > tr.danger > td,
+.bootstrap-iso .table > tfoot > tr.danger > td,
+.bootstrap-iso .table > thead > tr.danger > th,
+.bootstrap-iso .table > tbody > tr.danger > th,
+.bootstrap-iso .table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+.bootstrap-iso .table-hover > tbody > tr > td.danger:hover,
+.bootstrap-iso .table-hover > tbody > tr > th.danger:hover,
+.bootstrap-iso .table-hover > tbody > tr.danger:hover > td,
+.bootstrap-iso .table-hover > tbody > tr:hover > .danger,
+.bootstrap-iso .table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+.bootstrap-iso .table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+@media screen and (max-width: 767px) {
+  .bootstrap-iso .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+  }
+  .bootstrap-iso .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .bootstrap-iso .table-responsive > .table > thead > tr > th,
+  .bootstrap-iso .table-responsive > .table > tbody > tr > th,
+  .bootstrap-iso .table-responsive > .table > tfoot > tr > th,
+  .bootstrap-iso .table-responsive > .table > thead > tr > td,
+  .bootstrap-iso .table-responsive > .table > tbody > tr > td,
+  .bootstrap-iso .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .bootstrap-iso .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .bootstrap-iso .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .bootstrap-iso .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .bootstrap-iso .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .bootstrap-iso .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .bootstrap-iso .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .bootstrap-iso .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
 .bootstrap-iso fieldset {
   padding: 0;
   margin: 0;
@@ -1280,15 +1520,396 @@
 .bootstrap-iso input[type="button"].btn-block {
   width: 100%;
 }
+.bootstrap-iso .fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.bootstrap-iso .fade.in {
+  opacity: 1;
+}
+.bootstrap-iso .collapse {
+  display: none;
+}
+.bootstrap-iso .collapse.in {
+  display: block;
+}
+.bootstrap-iso tr.collapse.in {
+  display: table-row;
+}
+.bootstrap-iso tbody.collapse.in {
+  display: table-row-group;
+}
+.bootstrap-iso .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.bootstrap-iso .panel {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-iso .panel-body {
+  padding: 15px;
+}
+.bootstrap-iso .panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bootstrap-iso .panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.bootstrap-iso .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.bootstrap-iso .panel-title > a,
+.bootstrap-iso .panel-title > small,
+.bootstrap-iso .panel-title > .small,
+.bootstrap-iso .panel-title > small > a,
+.bootstrap-iso .panel-title > .small > a {
+  color: inherit;
+}
+.bootstrap-iso .panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bootstrap-iso .panel > .list-group,
+.bootstrap-iso .panel > .panel-collapse > .list-group {
+  margin-bottom: 0;
+}
+.bootstrap-iso .panel > .list-group .list-group-item,
+.bootstrap-iso .panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+.bootstrap-iso .panel > .list-group:first-child .list-group-item:first-child,
+.bootstrap-iso .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bootstrap-iso .panel > .list-group:last-child .list-group-item:last-child,
+.bootstrap-iso .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bootstrap-iso .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.bootstrap-iso .panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+.bootstrap-iso .list-group + .panel-footer {
+  border-top-width: 0;
+}
+.bootstrap-iso .panel > .table,
+.bootstrap-iso .panel > .table-responsive > .table,
+.bootstrap-iso .panel > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+.bootstrap-iso .panel > .table caption,
+.bootstrap-iso .panel > .table-responsive > .table caption,
+.bootstrap-iso .panel > .panel-collapse > .table caption {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bootstrap-iso .panel > .table:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bootstrap-iso .panel > .table:first-child > thead:first-child > tr:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.bootstrap-iso .panel > .table:first-child > tbody:first-child > tr:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.bootstrap-iso .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.bootstrap-iso .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.bootstrap-iso .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.bootstrap-iso .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+.bootstrap-iso .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.bootstrap-iso .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.bootstrap-iso .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.bootstrap-iso .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.bootstrap-iso .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+.bootstrap-iso .panel > .table:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bootstrap-iso .panel > .table:last-child > tbody:last-child > tr:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.bootstrap-iso .panel > .table:last-child > tfoot:last-child > tr:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.bootstrap-iso .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.bootstrap-iso .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.bootstrap-iso .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.bootstrap-iso .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 3px;
+}
+.bootstrap-iso .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.bootstrap-iso .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.bootstrap-iso .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.bootstrap-iso .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.bootstrap-iso .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: 3px;
+}
+.bootstrap-iso .panel > .panel-body + .table,
+.bootstrap-iso .panel > .panel-body + .table-responsive,
+.bootstrap-iso .panel > .table + .panel-body,
+.bootstrap-iso .panel > .table-responsive + .panel-body {
+  border-top: 1px solid #dddddd;
+}
+.bootstrap-iso .panel > .table > tbody:first-child > tr:first-child th,
+.bootstrap-iso .panel > .table > tbody:first-child > tr:first-child td {
+  border-top: 0;
+}
+.bootstrap-iso .panel > .table-bordered,
+.bootstrap-iso .panel > .table-responsive > .table-bordered {
+  border: 0;
+}
+.bootstrap-iso .panel > .table-bordered > thead > tr > th:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.bootstrap-iso .panel > .table-bordered > tbody > tr > th:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr > th:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.bootstrap-iso .panel > .table-bordered > thead > tr > td:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.bootstrap-iso .panel > .table-bordered > tbody > tr > td:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr > td:first-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.bootstrap-iso .panel > .table-bordered > thead > tr > th:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.bootstrap-iso .panel > .table-bordered > tbody > tr > th:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr > th:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.bootstrap-iso .panel > .table-bordered > thead > tr > td:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.bootstrap-iso .panel > .table-bordered > tbody > tr > td:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr > td:last-child,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.bootstrap-iso .panel > .table-bordered > thead > tr:first-child > td,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.bootstrap-iso .panel > .table-bordered > tbody > tr:first-child > td,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.bootstrap-iso .panel > .table-bordered > thead > tr:first-child > th,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.bootstrap-iso .panel > .table-bordered > tbody > tr:first-child > th,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+  border-bottom: 0;
+}
+.bootstrap-iso .panel > .table-bordered > tbody > tr:last-child > td,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr:last-child > td,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.bootstrap-iso .panel > .table-bordered > tbody > tr:last-child > th,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.bootstrap-iso .panel > .table-bordered > tfoot > tr:last-child > th,
+.bootstrap-iso .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+  border-bottom: 0;
+}
+.bootstrap-iso .panel > .table-responsive {
+  border: 0;
+  margin-bottom: 0;
+}
+.bootstrap-iso .panel-group {
+  margin-bottom: 20px;
+}
+.bootstrap-iso .panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.bootstrap-iso .panel-group .panel + .panel {
+  margin-top: 5px;
+}
+.bootstrap-iso .panel-group .panel-heading {
+  border-bottom: 0;
+}
+.bootstrap-iso .panel-group .panel-heading + .panel-collapse > .panel-body,
+.bootstrap-iso .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #dddddd;
+}
+.bootstrap-iso .panel-group .panel-footer {
+  border-top: 0;
+}
+.bootstrap-iso .panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #dddddd;
+}
+.bootstrap-iso .panel-default {
+  border-color: #dddddd;
+}
+.bootstrap-iso .panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+.bootstrap-iso .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #dddddd;
+}
+.bootstrap-iso .panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333333;
+}
+.bootstrap-iso .panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #dddddd;
+}
+.bootstrap-iso .panel-primary {
+  border-color: #1f69e9;
+}
+.bootstrap-iso .panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #1f69e9;
+  border-color: #1f69e9;
+}
+.bootstrap-iso .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #1f69e9;
+}
+.bootstrap-iso .panel-primary > .panel-heading .badge {
+  color: #1f69e9;
+  background-color: #ffffff;
+}
+.bootstrap-iso .panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #1f69e9;
+}
+.bootstrap-iso .panel-success {
+  border-color: #d6e9c6;
+}
+.bootstrap-iso .panel-success > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.bootstrap-iso .panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+.bootstrap-iso .panel-success > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.bootstrap-iso .panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+.bootstrap-iso .panel-info {
+  border-color: #bce8f1;
+}
+.bootstrap-iso .panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.bootstrap-iso .panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+.bootstrap-iso .panel-info > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.bootstrap-iso .panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+.bootstrap-iso .panel-warning {
+  border-color: #faebcc;
+}
+.bootstrap-iso .panel-warning > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.bootstrap-iso .panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+.bootstrap-iso .panel-warning > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+.bootstrap-iso .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+.bootstrap-iso .panel-danger {
+  border-color: #ebccd1;
+}
+.bootstrap-iso .panel-danger > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.bootstrap-iso .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+.bootstrap-iso .panel-danger > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+.bootstrap-iso .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
+}
 .bootstrap-iso .clearfix:before,
 .bootstrap-iso .clearfix:after,
 .bootstrap-iso .form-horizontal .form-group:before,
-.bootstrap-iso .form-horizontal .form-group:after {
+.bootstrap-iso .form-horizontal .form-group:after,
+.bootstrap-iso .panel-body:before,
+.bootstrap-iso .panel-body:after {
   content: " ";
   display: table;
 }
 .bootstrap-iso .clearfix:after,
-.bootstrap-iso .form-horizontal .form-group:after {
+.bootstrap-iso .form-horizontal .form-group:after,
+.bootstrap-iso .panel-body:after {
   clear: both;
 }
 .bootstrap-iso .center-block {
