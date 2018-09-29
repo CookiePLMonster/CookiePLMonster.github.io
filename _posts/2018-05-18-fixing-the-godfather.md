@@ -8,6 +8,7 @@ excerpt: "Game crashing on modern systems? Let's see what we can do about it."
 date: 2018-05-18 20:00:00 +0200
 twitter: {card: "summary_large_image"}
 redirect_from: "/2018/05/18/fixing-the-godfather.html"
+tags: [Articles]
 ---
 TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to grab SilentPatch for The Godfather:
 

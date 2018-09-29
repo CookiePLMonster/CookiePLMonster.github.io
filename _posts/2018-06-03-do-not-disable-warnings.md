@@ -4,6 +4,7 @@ title: Don't disable warnings, please
 excerpt: Some may be annoying, but they are here for your own good.
 date: 2018-06-03 15:30:00 +0200
 redirect_from: "/2018/06/03/do-not-disable-warnings.html"
+tags: [Articles]
 ---
 [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html) is compiled with Visual Studio 2015 with a `/Wv:18` compiler option. A quick memo on that from MSDN:
 > The compiler can suppress warnings that were introduced after a version you specify by using the /Wv compiler option.

@@ -6,6 +6,7 @@ thumbnail: "assets/img/posts/automation/automation-img.jpg"
 image: "assets/img/posts/automation/automation-img.jpg"
 date: 2018-07-14 18:00:00 +0200
 twitter: {card: "summary_large_image"}
+tags: [Other]
 ---
 What a day! Yesterday, [Automation](https://store.steampowered.com/app/293760/) and [BeamNG.drive](https://store.steampowered.com/app/284160/) released their joint updates,
 a result of collaboration allowing players to drive and crash cars they create.

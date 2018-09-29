@@ -4,6 +4,7 @@ title: Anybody here? Ah yes, welcome!
 feature-img: "assets/img/posts/welcome.jpg"
 excerpt_separator: <!--more-->
 redirect_from: "/2018/05/12/launching-blog.html"
+tags: [Other]
 ---
 
 About time! My very own, personal blog. Better late than never, right?

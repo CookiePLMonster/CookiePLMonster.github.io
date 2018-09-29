@@ -8,6 +8,7 @@ image: "assets/img/posts/farcry/farcry.jpg"
 date: 2018-07-07 18:10:00 +0200
 twitter: {card: "summary_large_image"}
 bootstrap: true
+tags: [Articles]
 ---
 
 TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to grab SilentPatch for Far Cry:

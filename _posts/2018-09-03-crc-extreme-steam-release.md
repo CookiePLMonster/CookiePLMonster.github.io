@@ -6,6 +6,7 @@ thumbnail: "assets/img/posts/crc-extreme/crc-extreme.jpg"
 image: "assets/img/posts/crc-extreme/crc-extreme-f.jpg"
 date: 2018-09-03 20:20:00 +0200
 twitter: {card: "summary_large_image"}
+tags: [Releases]
 ---
 
 It's real -- a single bugfix for a graphical issue caused a chain of events, and now CRC Extreme is (almost) **out on Steam!**

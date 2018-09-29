@@ -3,6 +3,7 @@ layout: post
 title: "New public beta release of SilentPatchBully!"
 date: 2018-07-22 23:05:00 +0200
 bootstrap: true
+tags: [Releases]
 ---
 
 Woop! It took a while, but a new public beta release of SP for Bully is out!

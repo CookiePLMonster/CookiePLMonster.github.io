@@ -8,6 +8,7 @@ image: "assets/img/posts/slrr-img.jpg"
 date: 2018-06-15 23:25:00 +0200
 redirect_from: "/2018/06/15/slrr-proof-of-fix.html"
 bootstrap: true
+tags: [Articles]
 ---
 
 This is a follow-up to a tweet I posted a few days ago:

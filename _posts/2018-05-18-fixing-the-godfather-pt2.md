@@ -8,6 +8,7 @@ excerpt: "Now we know what to do, so let's do it."
 date: 2018-05-18 20:10:00 +0200
 twitter: {card: "summary_large_image"}
 redirect_from: "/2018/05/18/fixing-the-godfather-pt2.html"
+tags: [Articles]
 ---
 This article is split in two parts:
 * [Part 1: Prelude to fixing]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather %})
