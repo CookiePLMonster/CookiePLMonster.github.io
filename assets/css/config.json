@@ -385,6 +385,7 @@
     "tables.less",
     "forms.less",
     "buttons.less",
+    "labels.less",
     "panels.less",
     "component-animations.less"
   ],
