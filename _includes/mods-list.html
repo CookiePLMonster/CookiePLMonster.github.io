@@ -1,24 +1,45 @@
-{% assign items = site.mods | where: "game-series", include.series | sort: 'mod_order' %}
+{% assign items = site.mods | where: "game-series", include.series | sort: 'order' %}
 {% for mod in items %}
-<div style="border-bottom:1px solid rgba(0,0,0,0.1)">
+<div>
+    {% assign modid = mod.id | split: '/' | last %}
     <div style="display:flex; justify-content:space-between; align-items:baseline;">
     {% if mod.title-image %}
-        <img style="max-width: 350px; padding: 1% 0" src="{{ site.baseurl }}/{{ mod.title-image }}" id="{{ mod.id | split: '/' | last }}" class="" alt="">
+        <img style="max-width: 400px; margin: 1.34em 0; padding: 0" src="{{ site.baseurl }}/{{ mod.title-image }}" id="{{ modid }}" class="" alt="">
     {% else %}
-    <h1 id="{{ mod.id | split: '/' | last }}">
+    <h1 id="{{ modid }}">
         {{ mod.title }}
     </h1>
     {% endif %}
-    <span class="excerpt" style="float:right;">
+    <div>
+    {% if mod.date %}
+    <div class="last-update">
+        Last update: {{ mod.date | date: page.date-format }}
+    </div>
+    {% endif %}
+    {% if items.size > 1 %}
+    <div class="excerpt">   
         {{ mod.excerpt }}
-    </span>
+    </div>
+    {% endif %}
+    </div>
     </div>
     
     <div class="panel panel-default">
-    <div class="panel-heading"><a class="expand-link" data-toggle="collapse" href="#{{mod.href}}" role="button">Click to expand</a></div>
-    <div class="panel-body collapse" id="{{mod.href}}">
+    <div class="panel-heading">
+    {% if items.size > 1 %}
+        <a class="expand-link" data-toggle="collapse" href="#{{modid}}-cps" role="button">Click to expand...</a>
+    {% else %}
+        &zwnj;
+    {% endif %}
+    </div>
+    {% if items.size > 1 %}
+    <div class="panel-body collapse" id="{{modid}}-cps">
+    {% else %}
+    <div class="panel-body">
+    {% endif %}
         {{ mod }}
     </div>
     </div>
 </div>
+{% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
