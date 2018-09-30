@@ -2,15 +2,22 @@
 {% for mod in items %}
 <div>
     {% assign modid = mod.id | split: '/' | last %}
-    <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    {% if mod.title-image %}
-        <img style="max-width: 400px; margin: 1.34em 0; padding: 0" src="{{ site.baseurl }}/{{ mod.title-image }}" id="{{ modid }}" class="" alt="">
-    {% else %}
+    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
     <h1 id="{{ modid }}">
+    {% if mod.title-image %}
+        <img style="max-width: 400px; padding: 0" src="{{ site.baseurl }}/{{ mod.title-image }}" class="" alt="">
+    {% else %}
         {{ mod.title }}
-    </h1>
     {% endif %}
-    <div>
+    </h1>
+    {% if mod.beta-caption %}
+        <span style="margin-left:.5em;" class="label label-danger" title="{{mod.beta-caption}}">BETA</span>
+    {% elsif mod.deprecated-caption %}
+        <span style="margin-left:.5em;" class="label label-danger" title="{{mod.deprecated-caption}}">DEPRECATED</span>
+    {% endif %}
+    </div>
+    <div style="margin: 1.34em 0;">
     {% if mod.date %}
     <div class="last-update">
         Last update: {{ mod.date | date: page.date-format }}

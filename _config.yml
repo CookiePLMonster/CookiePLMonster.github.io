@@ -107,7 +107,7 @@ collections:
   mods:
   games:
     output: true
-    permalink: /mods/:path/
+    permalink: /mods/:name/
   portfolio:
     output: true
 
