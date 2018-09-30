@@ -1,0 +1,12 @@
+<!-- Mods Grid Section -->
+
+<div class="mods-grid">
+	{% assign items = site.games | where:"game-series", include.series %}
+    {% for item in items %}
+    <div class="mods-cell">
+        <a href="{{ site.baseurl }}{{ item.url }}" class="mods-link" data-keyboard="true"> 
+            <img src="{{ site.baseurl }}/{{ item.image }}" class="" alt="">
+        </a>
+    </div>
+    {% endfor %}
+</div>

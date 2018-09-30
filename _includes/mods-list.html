@@ -1,0 +1,24 @@
+{% assign items = site.mods | where: "game-series", include.series | sort: 'mod_order' %}
+{% for mod in items %}
+<div style="border-bottom:1px solid rgba(0,0,0,0.1)">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+    {% if mod.title-image %}
+        <img style="max-width: 350px; padding: 1% 0" src="{{ site.baseurl }}/{{ mod.title-image }}" id="{{ mod.id | split: '/' | last }}" class="" alt="">
+    {% else %}
+    <h1 id="{{ mod.id | split: '/' | last }}">
+        {{ mod.title }}
+    </h1>
+    {% endif %}
+    <span class="excerpt" style="float:right;">
+        {{ mod.excerpt }}
+    </span>
+    </div>
+    
+    <div class="panel panel-default">
+    <div class="panel-heading"><a class="expand-link" data-toggle="collapse" href="#{{mod.href}}" role="button">Click to expand</a></div>
+    <div class="panel-body collapse" id="{{mod.href}}">
+        {{ mod }}
+    </div>
+    </div>
+</div>
+{% endfor %}

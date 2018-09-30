@@ -105,6 +105,9 @@ paginate_path: "blog/page:num"
 
 collections:
   mods:
+  games:
+    output: true
+    permalink: /mods/:path/
   portfolio:
     output: true
 
@@ -125,6 +128,11 @@ defaults:
     values:
       image: /assets/img/avatar.jpg
       date-format: "%B %-d, %Y"
+  - scope:
+      path: ""
+      type: "games"
+    values:
+      game-series: ""
 
 
 # PORTFOLIO
