@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Grand Theft Auto III"
-image: "assets/img/portfolio/thumb/8baa.jpg"
-feature-img: "assets/img/portfolio/8-bit-anthology-hero.jpg"
+image: "assets/img/games/gta-iii.jpg"
+feature-img: default
 game-series: "gta"
-excerpt: "My modifications for Grand Theft Auto III."
+order: 0
 bootstrap: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Far Cry"
-image: "assets/img/portfolio/thumb/hm2.jpg"
+image: "assets/img/games/far-cry.jpg"
 feature-img: default
 bootstrap: true
 ---

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Grand Theft Auto Vice City"
-image: "assets/img/portfolio/thumb/8baa.jpg"
-feature-img: "assets/img/portfolio/8-bit-anthology-hero.jpg"
+image: "assets/img/games/gta-vc.jpg"
+feature-img: default
 game-series: "gta"
-excerpt: "My modifications for Grand Theft Auto: Vice City."
+order: 1
 bootstrap: true
 ---
 

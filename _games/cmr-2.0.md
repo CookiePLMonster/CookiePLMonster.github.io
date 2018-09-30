@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Colin McRae Rally 2.0"
-image: "assets/img/portfolio/thumb/hm2.jpg"
+image: "assets/img/games/cmr-2.0.jpg"
 feature-img: default
 bootstrap: true
 ---

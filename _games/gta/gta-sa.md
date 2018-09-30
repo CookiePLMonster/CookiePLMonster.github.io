@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Grand Theft Auto: San Andreas"
-image: "assets/img/portfolio/thumb/8baa.jpg"
-feature-img: "assets/img/portfolio/8-bit-anthology-hero.jpg"
+title: "Grand Theft Auto San Andreas"
+image: "assets/img/games/gta-sa.jpg"
+feature-img: default
 game-series: "gta"
-excerpt: "My modifications for Grand Theft Auto: San Andreas."
+order: 2
 bootstrap: true
 ---
 

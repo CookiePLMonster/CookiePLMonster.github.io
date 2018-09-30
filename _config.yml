@@ -133,6 +133,7 @@ defaults:
       type: "games"
     values:
       game-series: ""
+      order: 0
 
 
 # PORTFOLIO

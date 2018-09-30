@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "Hotline Miami 2: Wrong Number"
-image: "assets/img/portfolio/thumb/hm2.jpg"
+image: "assets/img/games/hm2.jpg"
 feature-img: "assets/img/portfolio/hm2.png"
 bootstrap: true
+order: 100
 ---
 
 {% include mods-list.html series="hm2" %}
