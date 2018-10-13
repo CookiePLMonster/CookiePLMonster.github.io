@@ -49,7 +49,7 @@ layout: page
                 <h5 class="tag-title">
                     <a href="{{ page.url | prepend: site.baseurl }}">
                         <i class="far fa-file-image" aria-hidden="true"></i>
-                        {{ page.title }}
+                        {{ page.title | markdownify | strip_html }}
                     </a>
                     
                     <div class="meta">
@@ -65,7 +65,7 @@ layout: page
                 <h5 class="tag-title">
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <i class="far fa-file-alt" aria-hidden="true"></i>
-                        {{ post.title }}
+                        {{ post.title | markdownify | strip_html }}
                     </a>
                     
                     <div class="meta">
@@ -81,7 +81,7 @@ layout: page
                 <h5 class="tag-title">
                     <a href="{{ site.baseurl }}{{ note.url }}">
                         <i class="far fa-file" aria-hidden="true"></i>
-                        {{ note.title }}
+                        {{ note.title | markdownify | strip_html }}
                     </a>
                 
                     <div class="meta">

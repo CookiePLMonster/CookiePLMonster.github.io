@@ -11,7 +11,7 @@ layout: default
   {% endif %}
   >
     <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
-        {{ page.title }}
+        {{ page.title | markdownify | strip_html }}
     </h1>
     
     {% if page.subtitle %}

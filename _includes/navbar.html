@@ -7,7 +7,7 @@
 		</a>
 
 		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title | markdownify | strip_html }}</a>
 		</h1>
 	</div>
     
@@ -29,7 +29,7 @@
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="{{ page.url | relative_url }}">
-                {{ page.title }}
+                {{ page.title | markdownify | strip_html }}
             </a>
         </li>
         {% endif %}

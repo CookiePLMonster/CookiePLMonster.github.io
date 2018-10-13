@@ -8,7 +8,7 @@
     {% if mod.title-image %}
         <img style="max-width: 400px; padding: 0" src="{{ site.baseurl }}/{{ mod.title-image }}" class="" alt="">
     {% else %}
-        {{ mod.title }}
+        {{ mod.title | markdownify | strip_html }}
     {% endif %}
     </h1>
     {% if mod.beta-caption %}
