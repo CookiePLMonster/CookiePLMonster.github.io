@@ -102,10 +102,12 @@ And if it does, do they really have to be in global scope and not just per threa
 
 You see, Saints Row: The Third did **not** need them.
 
-My proposed fix is not present in the game anymore -- because, at a later point, I went back and checked if SR really needs those hooks.
+My proposed fix is not present in the ~~game~~ patch (13 Oct edit) anymore -- because, at a later point, I went back and checked if SR really needs those hooks.
 Turns out it does not, and removing them avoids any issues investigated above.
 
 Finding fixes is a neat thing, but sometimes it's even better to take a step back and look at the bigger picture. In this case, it paid off.
 
+EDITS:\\
+{{ "2018-10-14" | date_to_long_string }}: Rephrased a sentence to be more accurate.
 
 [^1]: If you were ever to say "but running games as admin is totally safe and does no harm!" -- well, that is one of (several) reasons why it may not be a good idea.
