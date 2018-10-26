@@ -8,8 +8,8 @@
         style="flex-basis: {{include.cell-size}};"
     {% endif %}
     >
-        <a href="{{ site.baseurl }}{{ item.url }}" class="mods-link" data-keyboard="true"> 
-            <img src="{{ site.baseurl }}/{{ item.image }}" class="" alt="">
+        <a href="{{ item.url | relative_url }}" class="mods-link" data-keyboard="true"> 
+            <img src="{{ item.image | relative_url }}" class="" alt="">
         </a>
     </div>
     {% endfor %}
