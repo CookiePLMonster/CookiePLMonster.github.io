@@ -96,6 +96,12 @@ it is required to call `wooting_rgb_reset` just before the app terminates, so ap
 This works fine, but **what if the application crashes!?** It cannot be guaranteed this function is going to be called,
 and calling it from game's exception handler is potentially very unsafe. Is there a way to remove this requirement?
 
+# 7. Multi-segmented Spacebar LED #
+I don't know if this is feasible from engineering standpoint, but it would be nice for RGB LEDs to have a multi-segmented Space bar.
+This way the bottommost row would be a fully functional row of "pixels", for any kind of art "drawn" on the keyboard.
+
 <hr>
 
 The list may be expanded with more entries at a later point, so I'll be mentioning any changes over here.
+
+{{ "2018-10-26" | date_to_long_string }} update: Added 7.
