@@ -34,7 +34,7 @@
           "title"    : "{{ mod.title | escape }}",
           "category" : "{{ mod.category }}",
           "tags"     : "{{ mod.tags | join: ', ' | prepend: " " }}",
-          "url"      : "{{ site.baseurl }}{{ mod.url }}",
+          "url"      : "{{ mod.url | relative_url }}",
           "date"     : "{{ mod.date | date: "%B %-d, %Y" }}",
           "excerpt"  : {{ mod.content | truncate: '250' | jsonify }},
           "content"  : {{ mod.content | truncate: '250' | jsonify }}
