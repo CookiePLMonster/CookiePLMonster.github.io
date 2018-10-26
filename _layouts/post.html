@@ -4,7 +4,7 @@ layout: default
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main"
   {% if page.feature-img == "default" %}
-  style="background-size: auto; background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')"
+  style="background-size: auto; background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_feature_image }}')"
   {% else %}
   style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')"
   {% endif %}
