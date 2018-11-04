@@ -133,6 +133,7 @@ defaults:
       type: "games"
     values:
       game-series: ""
+      parent-series: ""
       order: 0
 
 
