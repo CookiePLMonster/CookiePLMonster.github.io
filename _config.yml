@@ -126,7 +126,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/avatar.jpg
+      image: /assets/img/avatar-xmas.jpg
       date-format: "%B %-d, %Y"
   - scope:
       path: ""
