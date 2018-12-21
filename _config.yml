@@ -10,12 +10,12 @@ permalink: pretty
 theme_settings:
   # Meta
   title: Silent's Blog
-  avatar: assets/img/avatar.jpg
+  avatar: assets/img/avatar-xmas.jpg
   gravatar: B5015413CDD23101B12239A68DFFFC89
 
   # Header and footer text
   header_text: Personal, modding and reverse engineering related content.<br>Blog may or may not feature cookies.
-  header_feature_image: assets/img/site-header.png
+  header_feature_image: assets/img/site-header-xmas.png
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
