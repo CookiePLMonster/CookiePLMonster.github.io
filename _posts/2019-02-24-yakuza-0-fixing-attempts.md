@@ -248,7 +248,7 @@ Next, reimport a modified capture and... **it works!** We now have two exactly i
 so we can compare side by side, and watch lighting unfold on the screenshot:
 
 <p align="center">
-<iframe frameborder="0" class="juxtapose" width="100%" height="525" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dd1af658-3863-11e9-9dba-0edaf8f81e27"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="525" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=c054710c-3868-11e9-9dba-0edaf8f81e27"></iframe>
 </p>
 
 <hr>
