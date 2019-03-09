@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-sa"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 04-12-2018
+date: 09-03-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
@@ -78,6 +78,8 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Crosshair doesn't mess up weapon icon when on a jetpack anymore
 * Free resprays will not carry on a New Game now
 * Fixed ambulance and firetruck dispatch timers - they reset on New Game now
+* Several stat counters now reset on New Game - so the player will not level up quicker after starting New Game from a save
+* "To stop Carl..." message now resets properly on New Game
 * Previously present only on PS2, 'Cars drive on water' cheat is now toggleable - its string is SEAROADER
 * Randomizer error causing peds not to spawn in some areas has been fixed
 * Randomizer error causing prostitutes to be quiet during solicit has been fixed
@@ -112,6 +114,14 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Health triangle displaying when aiming at peds is now properly orientated (it's now upside down) for peds player can recruit
 * Setting a BMX on fire will not set CJ on fire anymore
 * Keyboard input latency decreased by one frame
+* Rhino does not gain extra wheels after being fixed anymore
+* Firetruck (firela variant) now has a functional ladder - it can be raised by moving right analog stick down/pressing Num2
+* artict3 trailers now can be chained (as it was most likely intended, since the model has a hook dummy which was not functional until now)
+* Tug now has a functional tow bar (model has a hook dummy which was not functional until now)
+* DFT-30 left middle wheel now displays properly (game now accepts a typo present in its naming)
+* Pushing pedestrians against the wall with a vehicle will not trigger passenger's voice lines anymore - instead, now they are triggered when player runs over pedestrians
+* Pay 'n Spray will not clean the car BEFORE garage doors close anymore - now it cleans them while the car is hidden behind the garage door
+* "True Invicibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invicibility cheat enabled (can be toggled on/off; DISABLED by default)
 * Steam version has proper aspect ratios now
 * IMG size checks have been removed from the Steam version
 * Steam version of the game will not reject 1.0/1.01 saves anymore (still, a compatible SCM is needed for the save to work)
