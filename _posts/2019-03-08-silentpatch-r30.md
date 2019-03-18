@@ -38,7 +38,9 @@ This was decided to be advantageous for players who have the patch, as they had 
 From Build 30, SilentPatch detects when the player is playing on LS-RP and **disables** this one fix there. No other SA-MP server is affected!
 
 While it has **not** been announced officially yet, it is more than likely that this and future builds of SilentPatch will be officially allowed to use without the risk of any punishment.
-When new information arrives, I will modify this post with up to date changes (last edit: {{ "2019-03-09" | date_to_long_string }})!
+When new information arrives, I will modify this post with up to date changes!
+
+{{ "2019-03-18" | date_to_long_string }} UPDATE: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
 
 <hr>
 
