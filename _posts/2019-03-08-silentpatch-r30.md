@@ -5,7 +5,7 @@ feature-img: "assets/img/silentpatch_banner.png"
 thumbnail: "assets/img/silentpatch_banner.png"
 image: "assets/img/silentpatch_banner.png"
 excerpt: "Now officially compliant with LS-RP rules, so you can roleplay with it without the risk of getting banned."
-date: 2019-03-09 21:00:00 +0200
+date: 2019-03-09 21:00:00 +0100
 tags: [Releases]
 ---
 Hey there! It's time for another release of SilentPatch for San Andreas!
