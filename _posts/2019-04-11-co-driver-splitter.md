@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Co-Driver Splitter - Co-driver calls on headphones"
-feature-img: "assets/img/posts/codriver-splitter.jpg"
-thumbnail: "assets/img/posts/codriver-splitter.jpg"
-image: "assets/img/posts/codriver-splitter-full.jpg"
+feature-img: "assets/img/posts/codriver-splitter/codriver-splitter.jpg"
+thumbnail: "assets/img/posts/codriver-splitter/codriver-splitter.jpg"
+image: "assets/img/posts/codriver-splitter/codriver-splitter-full.jpg"
 excerpt: "Make racing more immersive by separating co-driver from the rest of the sounds."
 date: 2019-04-11 23:15:00 +0200
 tags: [Releases]
@@ -38,7 +38,7 @@ You don't need to do much to make sure Co-Driver Splitter picks correct audio de
 while Default Device -- speakers or other device you want to play environment sounds through.
 
 Example: \\
-![Correctly set up audio devices]({{ 'assets/img/posts/audio-devices.jpg' | relative_url }})
+![Correctly set up audio devices]({{ 'assets/img/posts/codriver-splitter/audio-devices.jpg' | relative_url }})
 
 # How does it work?
 
