@@ -73,7 +73,7 @@ execute(SCI_SETPROPERTY, reinterpret_cast<WPARAM>("userDefine.currentBufferID"),
 Moral of the story is, **don't suppress warnings**. It's better to fix them, or at least leave them be, rather than suppress -- otherwise you're
 potentially missing out on crucial information.
 
-<hr>
+***
 
 Everything presented here has been submitted back to Notepad++ repository as a [pull request](https://github.com/notepad-plus-plus/notepad-plus-plus/pull/4544).
 Format strings are still left untouched, so warning remains -- if/when this gets merged, another pull request can be created which sorts out format strings,

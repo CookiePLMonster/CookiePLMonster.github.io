@@ -23,7 +23,7 @@ while everything else plays over speakers!
 <iframe src="https://www.youtube.com/embed/X3FQYK2GUuk" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<hr>
+***
 
 This is a modification I wanted to do for a long time. I wanted to have calls playing through headphones, with everything else left as is.
 Some people claimed it's just impossible due to the way audio is handled on PC -- so I decided to give it a shot myself, and it turned out to be absolutely doable!
@@ -47,7 +47,7 @@ Instead, center channel is routed to headphones! This creates a nearly perfect s
 
 Co-Driver Splitter is designed to be able to work as a wrapper around XAudio 2.7, XAudio 2.8 and XAudio 2.9. For XAudio 2.7, you may need to apply a few registry tweaks which I will detail soon.
 
-<hr>
+***
 
 If you are interested in getting Co-Driver Splitter to work with GRID or F1 games, check back here and on repository's wiki soon -- I'll be posting detailed set-up information there!
 <https://github.com/CookiePLMonster/CoDriver-Splitter/wiki>

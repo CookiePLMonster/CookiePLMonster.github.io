@@ -45,7 +45,7 @@ but I first asked again:
 > --- _Probably months ago, as I am using hibernation. Why do you ask?_\\
 > --- ...
 
-<hr>
+***
 
 Those following SilentPatch for San Andreas might be able to recall a very similar bug report from early 2017. It stated that dancing minigames could start to desync and stutter if PC
 had approximately over 12 days of uptime. To verify that, I faked years of uptime -- that's how dancing looks (without SilentPatch) with a fake uptime of 12 years:
@@ -131,7 +131,7 @@ return static_cast<float>( (timer_act.QuadPart - timer_begin.QuadPart) / timer_f
 With similar changes applied to the code, even months worth of uptime are not going to cause any problems!
 However, we need a way to reliably test it without having to leave PC running for weeks. And so for this, I have created an utility.
 
-<hr>
+***
 
 Uptime Faker
 ============
@@ -150,7 +150,7 @@ Uptime Faker can be downloaded and previewed on GitHub:
 <a href="https://github.com/CookiePLMonster/UptimeFaker" class="btn btn-primary btn-lg" role="button" target="_blank">Check Uptime Faker on GitHub</a>
 </div>
 
-<hr>
+***
 
 However, did all this effort help fixing the issue? Sure it did! Thanks to Uptime Faker I was able to reproduce all issues related to high uptime and resolve them quickly.
 Now no matter how much uptime I add to the game with the utility, everything works fine! Therefore, I expect tests on a real machine tomorrow to go smoothly, too.

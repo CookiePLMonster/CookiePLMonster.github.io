@@ -27,7 +27,7 @@ GTA San Andreas
 * Pay 'n Spray will not clean the car BEFORE garage doors close anymore - now it cleans them while the car is hidden behind the garage door
 * "True Invicibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invicibility cheat enabled (can be toggled on/off; DISABLED by default)
 
-<hr>
+***
 
 While this release does not bring an insane amount of new fixes, it's quite important due to its internal changes:
 
@@ -42,7 +42,7 @@ When new information arrives, I will modify this post with up to date changes!
 
 {{ "2019-03-18" | date_to_long_string }} UPDATE: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
 
-<hr>
+***
 
 The newest build can be downloaded from *Mods & Patches* section here: \\
 <{{ "mods/gta-sa/#silentpatch" | absolute_url }}>

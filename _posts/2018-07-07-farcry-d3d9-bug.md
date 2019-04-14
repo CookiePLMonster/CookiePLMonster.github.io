@@ -119,7 +119,7 @@ so it can be any other D3D call setting geometry up -- shaders, shader constants
 As much as I'd like to know, figuring it out would take way too much time to be feasible,
 especially since the current fix has proven to have absolutely no disadvantages.
 
-<hr>
+***
 
 For those interested,
 full source code of the patch has been published on GitHub, so it can be freely used as a point of reference:

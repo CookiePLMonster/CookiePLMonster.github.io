@@ -100,7 +100,7 @@ and calling it from game's exception handler is potentially very unsafe. Is ther
 I don't know if this is feasible from engineering standpoint, but it would be nice for RGB LEDs to have a multi-segmented Space bar.
 This way the bottommost row would be a fully functional row of "pixels", for any kind of art "drawn" on the keyboard.
 
-<hr>
+***
 
 The list may be expanded with more entries at a later point, so I'll be mentioning any changes over here.
 

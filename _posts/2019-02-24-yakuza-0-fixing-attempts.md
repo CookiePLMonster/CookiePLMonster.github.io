@@ -251,7 +251,7 @@ so we can compare side by side, and watch lighting unfold on the screenshot:
 <iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=c054710c-3868-11e9-9dba-0edaf8f81e27"></iframe>
 </div>
 
-<hr>
+***
 
 At this point it's been satisfactory enough. The issue was fixed, knowledge was gained -- success!
 

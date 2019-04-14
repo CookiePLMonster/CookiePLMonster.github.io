@@ -117,7 +117,7 @@ In my case, CFG reader tried to obtain `tag` close to the end of `line`, so it a
 
 Proper fix for that is to scrap this "optimization" and replace it with a `strncmp` function, which will gracefully return if `line` has less than 4 characters left.
 
-<hr>
+***
 
 All documented fixes have been assembled into a proof-of-concept plugin.
 It has been tailored **only** for Build 936, I do not know what are the effects of running it with a newer/older game version.

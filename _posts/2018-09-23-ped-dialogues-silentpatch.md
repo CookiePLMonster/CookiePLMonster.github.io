@@ -10,7 +10,7 @@ While YT wasn't and isn't my main focus point, it's nice to know that my occasio
 
 Even though it's nothing major, feel free to consider this progress update as a very non-unique 10k subscribers non-special! 😁
 
-<hr>
+***
 
 Since I haven't been reporting anything about GTA modding for a long while, a quick progress update on SilentPatch for San Andreas:
 

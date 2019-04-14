@@ -52,7 +52,7 @@ You can see all those improvements in a short gameplay I recorded:
 I am amazingly excited all this became reality and I hope you'll like the end result! A **huge** thanks to Raxat for getting the ball rolling and keeping it all in check later -- 
 if it wasn't for him, the fix would have never made it back to Invictus Games and the game would probably not make its way to Steam 😄
 
-<hr>
+***
 
 # What's next?
 

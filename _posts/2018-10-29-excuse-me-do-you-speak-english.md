@@ -36,7 +36,7 @@ This way I can fix it **and** use PCSX2 without wasting too much time and withou
 ...and let's hope I don't feel like touching [Xenia](http://xenia.jp/) or [RPCS3](https://rpcs3.net/) soon -- as something similar happened
 when I tried out [Dolphin](http://dolphin-emu.org/).
 
-<hr>
+***
 
 *Fix for the issue discussed here has been submitted back to PCSX2's repository via a [pull request](https://github.com/PCSX2/pcsx2/pull/2664).*
 

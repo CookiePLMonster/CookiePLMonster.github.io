@@ -44,6 +44,6 @@ Also, there are some things I would love to see implemented:
   ![]({{ site.baseurl }}/assets/img/posts/automation/tail.jpg)
   Bummer =(
 
-<hr>
+***
 
 *This is not a tech post at all, but hey -- [I did warn you]({{ site.baseurl }}{% post_url 2018-05-12-launching-blog %}).*
