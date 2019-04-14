@@ -1,7 +1,6 @@
 ---
 title: XP Support Patch
 game-series: "hm2"
-excerpt: "Movies working flawlessly on Windows 10!"
 deprecated-caption: "DON'T USE - this patch is no longer required. It is listed here for archival purposes only."
 ---
 

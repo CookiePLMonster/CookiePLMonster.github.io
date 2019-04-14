@@ -1,7 +1,7 @@
 ---
 title: SilentPatch
 game-series: "cmr-2.0"
-excerpt: "Fixes numerous issues in your favourite game."
+excerpt: "Widescreen support and more."
 date: 08-08-2015
 ---
 
