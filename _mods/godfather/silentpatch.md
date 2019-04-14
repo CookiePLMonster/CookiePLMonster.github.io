@@ -3,7 +3,7 @@ title: SilentPatch
 title-image: "assets/img/mods/silentpatch-godfather.png"
 game-series: "godfather"
 excerpt: "Movies working flawlessly on Windows 10!"
-date: 01-03-2018
+date: 14-04-2019
 ---
 
 This early 2006 game shipped with a movie player using an obscure DirectDraw feature - hardware overlays.
@@ -37,6 +37,6 @@ This is not the only fix included, however.
 </div>
 
 <div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/download/BUILD-1/SilentPatchGF.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
+<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/download/BUILD-2/SilentPatchGF.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
 <div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchGF" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
 </div>
