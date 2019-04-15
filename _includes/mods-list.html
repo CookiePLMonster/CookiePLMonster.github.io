@@ -6,7 +6,9 @@
     <div style="display:flex;justify-content:space-between;align-items:center;">
     <h1 id="{{ modid }}">
     {% if mod.title-image %}
-        <img style="max-width: 400px; padding: 0" src="{{ mod.title-image | relative_url }}" class="" alt="">
+        {% assign title-ext = mod.title-image | slice: -3, 3 | downcase %}
+        <img style="{% if title-ext == 'svg' %}width:{% else %}max-width:{% endif %} 400px;
+        padding: 0" src="{{ mod.title-image | relative_url }}" class="" alt="">
     {% else %}
         {{ mod.title | markdownify | strip_html }}
     {% endif %}
