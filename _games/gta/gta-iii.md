@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Grand Theft Auto III"
+excerpt: "My modifications and patches for Grand Theft Auto III: SilentPatch, GInput, VBDec."
 image: "assets/img/games/gta-iii.jpg"
 feature-img: default
 parent-series: "gta"
