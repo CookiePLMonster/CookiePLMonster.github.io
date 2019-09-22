@@ -135,4 +135,4 @@ These games are surely great, nonetheless they have some issues. This modificati
 <div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchSA.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
 </div>
 
-Requires <a href="#asiloader">ASI Loader<a>.
+Requires <a href="#asiloader">ASI Loader<a> (or [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases) for Rockstar Games Launcher version).
