@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-vc"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 20-05-2018
+date: 22-09-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
@@ -36,6 +36,7 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Car generator counters now work properly for generators with fixed amount of spawns
 * Extras on bikes now behave correctly, following bike lean and not floating in air
 * Keyboard input latency decreased by one frame
+* Made the game select metric/imperial units basing on system locale settings. This can be overridden from the INI file
 * Some props in Malibu Club, Ocean View Hotel and Pole Position Club have been restored; more environment shows outside when player is in interior too (just like on PS2)
 
 

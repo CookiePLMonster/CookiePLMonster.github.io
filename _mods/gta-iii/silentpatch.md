@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 16-06-2018
+date: 22-09-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
@@ -40,6 +40,8 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Fixed an issue which would cause games to freeze if III/VC/SA were running at the same time
 * Car generator counters now work properly for generators with fixed amount of spawns
 * Keyboard input latency decreased by one frame
+* Fixed a crash after playing the game for a short amount of time without a sound card
+* Made the game select metric/imperial units basing on system locale settings. This can be overridden from the INI file
 * Car reflections are now displayed correctly on Steam version
 
 <div class="container">

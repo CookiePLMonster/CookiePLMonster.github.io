@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-sa"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 30-03-2019
+date: 22-09-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
@@ -122,9 +122,13 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Pushing pedestrians against the wall with a vehicle will not trigger passenger's voice lines anymore - instead, now they are triggered when player runs over pedestrians
 * Pay 'n Spray will not clean the car BEFORE garage doors close anymore - now it cleans them while the car is hidden behind the garage door
 * "True Invicibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invicibility cheat enabled (can be toggled on/off; DISABLED by default)
-* Steam version has proper aspect ratios now
+* Made the game select metric/imperial units basing on system locale settings. This can be overridden from the INI file
+* Fixed a bug where paintjobs would vanish from cars stored in garage if they were stored without looking at them
+* Steam and RGL versions have proper aspect ratios now
 * IMG size checks have been removed from the Steam version
-* Steam version of the game will not reject 1.0/1.01 saves anymore (still, a compatible SCM is needed for the save to work)
+* Steam/RGL version of the game will not reject 1.0/1.01 saves anymore (still, a compatible SCM is needed for the save to work)
+* Censorships from Steam and RGL versions for German players have been removed
+* Steam/RGL versions will now default Steer with Mouse option to disabled, like in 1.0/1.01
 
 
 <div class="container">
