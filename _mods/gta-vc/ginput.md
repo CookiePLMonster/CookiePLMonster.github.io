@@ -4,7 +4,7 @@ title-image: "assets/img/mods/ginput-vc.png"
 order: -99
 game-series: "gta-vc"
 excerpt: "Adds XInput controller support on par with modern games."
-date: 09-02-2016
+date: 29-09-2019
 ---
 Hey, what's going on? You plugged in your PlayStation or XBOX pad in hopes that you'll be able to play GTA on your PC just like you used to play on the console, and for some reason you can't make the controls work properly? You can't use full possibilities of your brand new, XInput-compatible pad? Maybe you want to refresh your childhood memories after ages of playing IV and you're sick of the old-fashioned controls?
 
