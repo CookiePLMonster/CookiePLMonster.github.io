@@ -30,6 +30,7 @@ theme_settings:
   flickr:
   gitlab:
   github: CookiePLMonster
+  github_sponsors: true
   google_plus:
   instagram:
   keybase:
