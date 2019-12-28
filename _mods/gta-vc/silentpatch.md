@@ -4,10 +4,12 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-vc"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 22-09-2019
+date: 28-12-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
+
+Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file. These options are enabled by default, unless stated otherwise.
 
 ## Featured fixes:
 * Fixed an issue where installing the game on A or B drive made the game ask for the CD
@@ -36,7 +38,16 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Car generator counters now work properly for generators with fixed amount of spawns
 * Extras on bikes now behave correctly, following bike lean and not floating in air
 * Keyboard input latency decreased by one frame
-* Made the game select metric/imperial units basing on system locale settings. This can be overridden from the INI file
+* <i class="fas fa-cog"></i> Made the game select metric/imperial units basing on system locale settings
+* Fixed corona lines rendering on non-NVIDIA graphics cards
+* Corrected FBI Washington siren sound
+* <i class="fas fa-cog"></i> Fixed siren corona placements in Police, Firetruck, Ambulance, Enforcer, Vice Cheetah, FBI Washington
+* <i class="fas fa-cog"></i> Added siren corona to FBI Washington
+* <i class="fas fa-cog"></i> Fixed taxi light corona placement for Taxi
+* <i class="fas fa-cog"></i> Fixed police chopper's search light and red tail light placement
+* Fixed a glitch allowing lightless taxis to spawn in traffic
+* Allowed extra6 part to be picked when a random extra is to be picked
+* Made Drive-By use correct sounds based on what machine gun is used
 * Some props in Malibu Club, Ocean View Hotel and Pole Position Club have been restored; more environment shows outside when player is in interior too (just like on PS2)
 
 

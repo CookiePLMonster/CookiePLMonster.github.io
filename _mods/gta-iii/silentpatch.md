@@ -4,10 +4,12 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 22-09-2019
+date: 28-12-2019
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
+
+Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file. These options are enabled by default, unless stated otherwise.
 
 ## Featured fixes:
 * Mouse will not go beyond the game rect now, allowing to play the game on multimonitor setups without problems
@@ -41,7 +43,15 @@ These games are surely great, nonetheless they have some issues. This modificati
 * Car generator counters now work properly for generators with fixed amount of spawns
 * Keyboard input latency decreased by one frame
 * Fixed a crash after playing the game for a short amount of time without a sound card
-* Made the game select metric/imperial units basing on system locale settings. This can be overridden from the INI file
+* <i class="fas fa-cog"></i> Made the game select metric/imperial units basing on system locale settings
+* Fixed corona lines rendering on non-NVIDIA graphics cards
+* Corrected FBI Car secondary siren sound
+* <i class="fas fa-cog"></i> Fixed siren corona placements in Firetruck, Ambulance, Enforcer
+* <i class="fas fa-cog"></i> Fixed taxi light corona placement for Taxi
+* <i class="fas fa-cog"></i> Fixed police chopper's search light placement
+* Enlarged the bounding box of Catalina’s chopper and the police chopper to prevent it from being cut off on screen edges
+* Fixed cranes and night windows disappearing when viewed from up close
+* Fixed a glitch allowing lightless taxis to spawn in traffic
 * Car reflections are now displayed correctly on Steam version
 
 <div class="container">
