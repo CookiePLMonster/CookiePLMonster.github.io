@@ -91,6 +91,11 @@ theme_settings:
   str_previous_page: "Prev"
   str_continue_reading: "Continue reading"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  
+  # Icons for buttons
+  download_icon: "<i class='fas fa-download'></i>"
+  github_icon: "<i class='fab fa-github'></i>"
+  docs_icon: "<i class='fas fa-book'></i>"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
