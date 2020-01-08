@@ -24,7 +24,7 @@ Let me know in the comments if you'd like to see a writeup on this particular bu
 
 ***
 
-The newest build can be downloaded from *Mods & Patches* section here: \\
-<{{ "mods/godfather/#silentpatch" | absolute_url }}>
+The newest build can be downloaded from *Mods & Patches*: \\
+<a href="{{ "mods/godfather/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
 
 As always, enjoy!

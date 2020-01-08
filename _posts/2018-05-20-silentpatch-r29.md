@@ -65,8 +65,10 @@ As for fixes:
 * Setting a BMX on fire will not set CJ on fire anymore
 * Keyboard input latency decreased by one frame
 
-As always, head to GTAForums to download the newest builds: \\
-<http://gtaforums.com/topic/669045-silentpatch/>
+The newest builds can be downloaded from *Mods & Patches* section here: \\
+<a href="{{ "mods/gta-iii/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
+<a href="{{ "mods/gta-vc/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
+<a href="{{ "mods/gta-sa/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
 
 However, expect the 'patches (and other mods) to appear here permanently sometime soon... That's what this website should be for, after all.
 

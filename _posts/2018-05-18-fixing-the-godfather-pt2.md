@@ -208,7 +208,7 @@ Finale
 ======
 
 That draws the end of it! Developing the fix was quite a journey, and I am hoping so was the post-mortem article documenting it. For those interested,
-full source code of the patch has been published on GitHub, so it can be freely used as a point of reference:  
-<https://github.com/CookiePLMonster/SilentPatchGF>
+full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
+<a href="https://github.com/CookiePLMonster/SilentPatchGF" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a> 
 
 For the time being, enjoy a playable game and stay tuned for more fixes for various older games! **Next up: Far Cry water reflections not working properly on modern Windows versions.**

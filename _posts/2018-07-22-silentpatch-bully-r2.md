@@ -2,7 +2,6 @@
 layout: post
 title: "New public beta release of SilentPatchBully!"
 date: 2018-07-22 23:05:00 +0200
-bootstrap: true
 tags: [Releases]
 ---
 
@@ -16,9 +15,8 @@ Changes in this build:
 - Fixed an occasional crash when starting Nutcrackin' or Music Class.
 - Added a SP version number to main menu, so it is more obvious whether an user has installed the 'patch correctly or not.
 
-Without further ado -- grab the newest build from here!
-
-<a href="https://github.com/CookiePLMonster/SilentPatchBully/releases" class="btn btn-primary btn-lg" role="button" target="_blank">Download SilentPatch for Bully</a>
+Without further ado -- grab the newest build from *Mods & Patches*: \\
+<a href="{{ "mods/bully/#silentpatch" | absolute_url }}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
 
 # Important note
 

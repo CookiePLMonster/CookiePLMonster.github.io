@@ -159,7 +159,7 @@ Changes to existing SilentPatch code:
 ***
 
 The newest builds can be downloaded from *Mods & Patches* section here: \\
-<a href="{{ "mods/gta-iii/#silentpatch" | absolute_url }}" class="button">GTA III</a>
-<a href="{{ "mods/gta-vc/#silentpatch" | absolute_url }}" class="button">GTA Vice City</a>
-<a href="{{ "mods/gta-sa/#silentpatch" | absolute_url }}" class="button">GTA San Andreas</a>
+<a href="{{ "mods/gta-iii/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
+<a href="{{ "mods/gta-vc/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
+<a href="{{ "mods/gta-sa/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
 

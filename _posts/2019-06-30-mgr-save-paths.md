@@ -7,9 +7,6 @@ date: 2019-06-30 21:30:00 +0200
 tags: [Articles]
 ---
 
-<!-- Bootstrap-3.3.7 isolation CSS -->
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/vendor/bootstrap-iso.min.css">
-
 Today's test subject is [Metal Gear Rising: Revengeance](https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance), released in January 2014.
 A spinoff of Metal Gear Solid series, developed and ported in-house by [Platinum Games](https://www.platinumgames.com/), also known for e.g. NieR: Automata.
 
@@ -106,9 +103,7 @@ With most of the saving/loading code rewritten to correct all listed issues (and
 saving and loading already works flawlessly, even if Documents directory has been relocated to something as crazy as `X:\\ŻąłóРстуぬねのは-documents`.
 This also means Steam Cloud will sync saves correctly in all cases!
 
-Check SilentPatch for Metal Gear Rising on GitHub:
-<div class="bootstrap-iso">
-<a href="https://github.com/CookiePLMonster/SilentPatchMGR" class="btn btn-primary btn-lg" role="button" target="_blank">Check on GitHub</a>
-</div>
+Check SilentPatch for Metal Gear Rising on GitHub: \\
+<a href="https://github.com/CookiePLMonster/SilentPatchMGR" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Check on GitHub</a>
 
 This is not the only fix I intend to include, so it may take some more time before the release is ready -- so if you're interested, check back in a few days for an update!

@@ -8,7 +8,6 @@ twitter: {card: "summary_large_image"}
 excerpt: "Now also with a few improvements from myself - controller rumble and more!"
 date: 2019-04-18 19:15:00 +0200
 tags: [Releases]
-bootstrap: true
 ---
 
 Hey! This short post servers just as a heads up that *Silent Hill 2: Enhanced Edition* has reached a new version!
@@ -30,8 +29,7 @@ You can watch mod's presentation on their official channel:
 </div>
 
 To keep it short, head to the mod's official website for a full changelog, installation instructions, download links and credits:
-
-<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="btn btn-primary btn-lg" role="button" target="_blank">Visit the official website</a>
+<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>
 
 You may also want to follow **Town of Silent Hill** on Twitter:
 <https://twitter.com/WhereAllBegins>

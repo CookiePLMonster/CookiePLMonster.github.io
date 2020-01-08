@@ -7,7 +7,6 @@ thumbnail: "assets/img/posts/slrr-img.jpg"
 image: "assets/img/posts/slrr-img.jpg"
 date: 2018-06-15 23:25:00 +0200
 redirect_from: "/2018/06/15/slrr-proof-of-fix.html"
-bootstrap: true
 tags: [Articles]
 ---
 
@@ -122,7 +121,7 @@ Proper fix for that is to scrap this "optimization" and replace it with a `strnc
 All documented fixes have been assembled into a proof-of-concept plugin.
 It has been tailored **only** for Build 936, I do not know what are the effects of running it with a newer/older game version.
 
-<a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="btn btn-primary btn-lg" role="button" target="_blank">See source code on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
 **{{ "2018-07-14" | date_to_long_string | upcase }} UPDATE:**\\
 A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.

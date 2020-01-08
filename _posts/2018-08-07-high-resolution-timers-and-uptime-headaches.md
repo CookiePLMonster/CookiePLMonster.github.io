@@ -7,9 +7,6 @@ date: 2018-08-07 2:25:00 +0200
 tags: [Articles]
 ---
 
-<!-- Bootstrap-3.3.7 isolation CSS -->
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/vendor/bootstrap-iso.min.css">
-
 Today's task of upgrading the compiler used for an old game from Visual Studio 2003 to Visual Studio 2017 began pretty well.
 There are plenty of changes regarding C/C++ standard conformance between those, but half an hour was enough to reliably replace all problematic code parts.
 With everything adapted and code compiling in VS2017 just fine, I tested it, and it worked beautifully -- fast and without crashes.
@@ -145,10 +142,8 @@ Ideally, there should be a way to enable this mode for specific applications, bu
 As a plugin based on Detours, it can be injected to a newly created process as a plugin (could even use [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases)),
 or Detours utilities could be used to create a process with this DLL injected right away. Alternately, it can be loaded by the game itself, which is exactly what I did in my case.
 
-Uptime Faker can be downloaded and previewed on GitHub:
-<div class="bootstrap-iso">
-<a href="https://github.com/CookiePLMonster/UptimeFaker" class="btn btn-primary btn-lg" role="button" target="_blank">Check Uptime Faker on GitHub</a>
-</div>
+Uptime Faker can be downloaded and previewed on GitHub: \\
+<a href="https://github.com/CookiePLMonster/UptimeFaker" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Check Uptime Faker on GitHub</a>
 
 ***
 
