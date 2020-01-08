@@ -36,7 +36,5 @@ This is not the only fix included, however.
 <iframe src="https://www.youtube.com/embed/tkCyBY5z5dc" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/download/BUILD-2/SilentPatchGF.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchGF" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/download/BUILD-2/SilentPatchGF.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<a href="https://github.com/CookiePLMonster/SilentPatchGF" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

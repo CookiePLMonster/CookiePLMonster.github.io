@@ -15,12 +15,6 @@ Co-Driver Splitter is a plugin splitting audio between multiple devices. Now Co-
 {% endif %}
 
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="btn btn-info btn-lg" role="button">See setup instructions on GitHub Wiki</a></div>
-{% if include.bitness == 32 %}
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/download/v1.0/Co-Driver-Splitter-32-bit.zip" class="btn btn-primary btn-lg" role="button">Download (32-bit version)</a></div>
-{% elsif include.bitness == 64 %}
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/download/v1.0/Co-Driver-Splitter-64-bit.zip" class="btn btn-primary btn-lg" role="button">Download (64-bit version)</a></div>
-{% endif %}
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/CoDriver-Splitter" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="button docs" role="button">{{ site.theme_settings.docs_icon }} See setup instructions on GitHub Wiki</a> \\
+{% if include.bitness == 32 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/download/v1.0/Co-Driver-Splitter-32-bit.zip" class="button download" role="button">{{ site.theme_settings.download_icon }} Download (32-bit version)</a>{% elsif include.bitness == 64 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/download/v1.0/Co-Driver-Splitter-64-bit.zip" class="button download" role="button">{{ site.theme_settings.download_icon }} Download (64-bit version)</a>{% endif %} \\
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter" class="button github" role="button">{{ site.theme_settings.github_icon }} See source on GitHub</a>

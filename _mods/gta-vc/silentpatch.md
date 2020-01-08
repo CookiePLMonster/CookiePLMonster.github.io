@@ -50,8 +50,5 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Made Drive-By use correct sounds based on what machine gun is used
 * Some props in Malibu Club, Ocean View Hotel and Pole Position Club have been restored; more environment shows outside when player is in interior too (just like on PS2)
 
-
-<div class="container">
-<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchVC.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="btn btn-primary btn-lg" role="button">Download DDraw Component</a></div>
-</div>
+<a href="http://silent.rockstarvision.com/uploads/SilentPatchVC.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
+<a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download DDraw Component</a>

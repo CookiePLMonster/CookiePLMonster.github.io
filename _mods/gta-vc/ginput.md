@@ -30,6 +30,4 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 <iframe src="https://www.youtube.com/embed/e9rGqtJDtXc" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="container">
-<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/GInputVC.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-</div>
+<a href="http://silent.rockstarvision.com/uploads/GInputVC.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>

@@ -17,9 +17,7 @@ _"I use it on every installation so I can fight with the best sound" -Ash_
 
 **VBDec**, by Silent and [Sergeanur](https://github.com/Sergeanur) (...and [Ash_735](https://twitter.com/Ash_735), WHAT UP!?)
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/VBdec/releases/download/1.0/vbdec.asi" class="btn btn-primary btn-lg" role="button">Download (VBDec)</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/audio-samples/releases/download/1.0/audio-samples-10.zip" class="btn btn-primary btn-lg" role="button">Download (Audio Samples)</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/VBdec" class="btn btn-success btn-lg" role="button">See VBDec source on GitHub</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/audio-samples" class="btn btn-success btn-lg" role="button">See Audio Samples source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/VBdec/releases/download/1.0/vbdec.asi" class="button" role="button">{{ site.theme_settings.download_icon }} Download (VBDec)</a>
+<a href="https://github.com/CookiePLMonster/audio-samples/releases/download/1.0/audio-samples-10.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Audio Samples)</a> \\
+<a href="https://github.com/CookiePLMonster/VBdec" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See VBDec source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/audio-samples" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See Audio Samples source on GitHub</a>

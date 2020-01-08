@@ -54,7 +54,5 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Fixed a glitch allowing lightless taxis to spawn in traffic
 * Car reflections are now displayed correctly on Steam version
 
-<div class="container">
-<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchIII.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-<div class="row form-group"><a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="btn btn-primary btn-lg" role="button">Download DDraw Component</a></div>
-</div>
+<a href="http://silent.rockstarvision.com/uploads/SilentPatchIII.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
+<a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download DDraw Component</a>

@@ -34,7 +34,5 @@ between them.
 <iframe src="https://www.youtube.com/embed/p0HMeN27Rcw" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchCMR2/releases/download/BETA1/silentpatch_cmr2.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchCMR2" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR2/releases/download/BETA1/silentpatch_cmr2.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

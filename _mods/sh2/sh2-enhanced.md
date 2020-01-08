@@ -20,6 +20,4 @@ I contributed to *Silent Hill 2: Enhanced Edition* with:
 <iframe src="https://www.youtube.com/embed/6v1USVhtfjQ" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="container">
-<div class="row form-group"><a href="http://www.enhanced.townofsilenthill.com/SH2/" class="btn btn-primary btn-lg" role="button">Visit the official website</a></div>
-</div>
+<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>

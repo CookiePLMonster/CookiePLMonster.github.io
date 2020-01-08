@@ -14,6 +14,4 @@ not able to play now.
 I decided to make some quick research around the issue and it turned out re-adding XP support is not terribly hard.
 This unofficial patch aims to make the game playable on XP.
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/HM2-XP" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/HM2-XP" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

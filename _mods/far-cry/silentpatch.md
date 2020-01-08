@@ -24,7 +24,5 @@ The main reason for creating this patch were broken water reflections - landmass
 <a href="https://i.imgur.com/hizKXrW.jpg"><img src="https://i.imgur.com/hizKXrWl.jpg"></a>
 </p>
 
-<div class="container">
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchFarCry/releases/download/BUILD-2/SilentPatchFarCry.zip" class="btn btn-primary btn-lg" role="button">Download</a></div>
-<div class="row form-group"><a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="btn btn-success btn-lg" role="button">See source on GitHub</a></div>
-</div>
+<a href="https://github.com/CookiePLMonster/SilentPatchFarCry/releases/download/BUILD-2/SilentPatchFarCry.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
