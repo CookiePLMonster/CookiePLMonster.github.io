@@ -3,6 +3,7 @@
 <div class="mods-grid">
 	{% assign items = site.games | where:"parent-series", include.series | sort: "order" %}
     {% for item in items %}
+    {% unless item.hide %}
     <div class="mods-cell"
     {% if include.cell-size %}
         style="flex-basis: {{include.cell-size}};"
@@ -12,5 +13,6 @@
             <img src="{{ item.image | relative_url }}" class="" alt="">
         </a>
     </div>
+    {% endunless %}
     {% endfor %}
 </div>

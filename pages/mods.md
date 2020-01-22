@@ -6,5 +6,9 @@ excerpt: My modifications and patches for various games.
 feature-img: default
 permalink: /mods/
 ---
+
+Looking for an easy to browse list? Try the [**Mod Index**]({% link pages/mod-index.html %})!
+
+***
  
 {% include mods-grid.html series="" %}
