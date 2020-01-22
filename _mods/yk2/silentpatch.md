@@ -1,5 +1,6 @@
 ---
 title: SilentPatch
+title-image: "assets/img/mods/silentpatch-yk2.png"
 game-series: "yk2"
 excerpt: "Peeing minigame in 30 FPS, but also more FPS related fixes."
 date: 17-01-2020
