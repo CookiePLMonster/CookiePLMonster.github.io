@@ -160,4 +160,4 @@ and releasing as the lambda exits will be a correct fix.
 ***
 
 *This issue has been now [reported via the Feedback Hub](https://aka.ms/AA5rr0w).*
-*Additionally, I [submittied a pull request to PCSX2](https://github.com/PCSX2/pcsx2/pull/3053) to work around that bug as instructed in the article.*
+*Additionally, I [submitted a pull request to PCSX2](https://github.com/PCSX2/pcsx2/pull/3053) to work around that bug as instructed in the article.*
