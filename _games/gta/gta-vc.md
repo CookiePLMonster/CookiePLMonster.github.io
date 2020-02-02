@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Grand Theft Auto Vice City"
-excerpt: "My modifications and patches for Grand Theft Auto Vice City: SilentPatch, GInput, VBDec."
+excerpt: "My modifications and patches for Grand Theft Auto Vice City: SilentPatch, GInput, VBDec and more."
 image: "assets/img/games/gta-vc.jpg"
 parent-series: "gta"
 game-series: "gta-vc"
