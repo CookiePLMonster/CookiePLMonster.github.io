@@ -29,7 +29,7 @@ That all sounds... scary, so let's actually find out how the game behaves! Techn
 I run the game, and... sure enough, MGR creates a new `Documents` directory inside `Users\[username]`, just for itself:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/mgr-documents.png" | relative_url }}"><br>
+<img src="{% link assets/img/posts/mgr-documents.png %}"><br>
 <em>Yes, I <b>do</b> have more documents on this account. Just not here.</em>
 </p>
 

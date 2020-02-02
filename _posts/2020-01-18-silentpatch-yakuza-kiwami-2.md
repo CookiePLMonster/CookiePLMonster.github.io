@@ -11,7 +11,7 @@ tags: [Releases, Articles]
 ---
 
 TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Yakuza Kiwami 2**: \\
-<a href="{{ "mods/yk2/#silentpatch" | absolute_url }}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Yakuza Kiwami 2</a> \\
+<a href="{% link _games/yk2.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Yakuza Kiwami 2</a> \\
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it!
 
 ***
@@ -20,7 +20,7 @@ Yakuza Kiwami 2 is IMO a fun game. Remake of Yakuza 2, released on PS4 in Decemb
 and is the first Yakuza game running on a new Dragon Engine which was ported to PC. It is speculated that this is one of the reasons this port was not outsourced to [Lab42](https://www.lab42.games/),
 unlike the PC ports of Yakuza 0 and Yakuza Kiwami.
 
-I have [covered my adventures with Yakuza 0 lighting]({{ site.baseurl }}{% post_url 2019-02-24-yakuza-0-fixing-attempts %}) more or less a year ago. Both Yakuza Kiwami and Kiwami 2
+I have [covered my adventures with Yakuza 0 lighting]({% post_url 2019-02-24-yakuza-0-fixing-attempts %}) more or less a year ago. Both Yakuza Kiwami and Kiwami 2
 launched without issues as jarring as this, so at the first glance it looked like I could play this game without thinking about bugs and theoretizing fixes (for once).
 However, once again as soon as I say something like this, [karma](https://twitter.com/__silent_/status/1211343094253342720?s=20) makes sure to prove me wrong.
 
@@ -88,7 +88,7 @@ Depending on numerous factors like OS load and priority of other threads in the 
 
 With that in mind, issues in this code should be easily visible -- it expects `sleep` to take exactly 1ms, since it is called even when there is only 1000μs left for the deadline.
 In the worst case, frame limiter may "oversleep" by several milliseconds!
-Sounds familiar? Indeed, [Bully's FPS limiter had a nearly identical bug]({{ "mods/bully/#silentpatch" | absolute_url }}).
+Sounds familiar? Indeed, [Bully's FPS limiter had a nearly identical bug]({% link _games/bully.md %}#silentpatch).
 
 What is the best fix here? I personally think busy looping is actually **preferable** here -- while it does use more CPU, it allows for perfectly accurate limiting.
 Burning the CPU is probably less bad than it sounds, especially nowadays when you rarely see processors with less than 4 threads. On top of that, it is not unrealistic to

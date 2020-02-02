@@ -16,7 +16,7 @@ For this occasion, new builds have been released for GTA III, Vice City and San 
 For the first time the releases have received a name! Due to the amount of fixes related to coronas and lights,
 this release has been dubbed **"The Corona Update"**:
 
-![The Corona Update logo]({{ 'assets/img/posts/corona-update/coronaupdate_bg.png' | relative_url }})
+![The Corona Update logo]({% link assets/img/posts/corona-update/coronaupdate_bg.png %})
 
 Also for the first time, I am experimenting with a new way of presenting changes introduced in these builds, so bear with me.
 
@@ -159,7 +159,7 @@ Changes to existing SilentPatch code:
 ***
 
 The newest builds can be downloaded from *Mods & Patches* section here: \\
-<a href="{{ "mods/gta-iii/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
-<a href="{{ "mods/gta-vc/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
-<a href="{{ "mods/gta-sa/#silentpatch" | absolute_url }}" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
+<a href="{% link _games/gta/gta-iii.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
+<a href="{% link _games/gta/gta-vc.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
+<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
 

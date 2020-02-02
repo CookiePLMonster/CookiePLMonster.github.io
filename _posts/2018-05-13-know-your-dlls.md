@@ -5,7 +5,7 @@ excerpt: Know your KnownDLLs.
 redirect_from: "/2018/05/13/know-your-dlls.html"
 tags: [Articles]
 ---
-Ironically, the biggest challenge behind [SilentPatch for Far Cry]({{ "mods/far-cry/#silentpatch" | absolute_url }}) was to find the right DLL to proxy in order to make Ultimate ASI Loader work fine.
+Ironically, the biggest challenge behind [SilentPatch for Far Cry]({% link _games/far-cry.md %}#silentpatch) was to find the right DLL to proxy in order to make Ultimate ASI Loader work fine.
 Most games work fine with `dinput8.dll`, but since Far Cry is split into around 47.000 separate libraries (not literally), none of the DLLs supported by UAL worked fine.
 Finding a right DLL took much more time than I had hoped, but I decided to add support for `wininet.dll`. All fine, ASIs load just when I want them to load, users are happy.
 
@@ -19,11 +19,11 @@ Further research revealed the problem is not in the ASI itself -- UAL would not 
 
 Let's take a look at KnownDLLs in Windows 10 then:
 
-![KnownDLLs from Windows 10]({{ site.baseurl }}/assets/img/posts/known-win10.png)
+![KnownDLLs from Windows 10]({% link assets/img/posts/known-win10.png %})
 
 As suspected, `wininet.dll` is not there. However, what about Windows 7...?
 
-![KnownDLLs from Windows 7]({{ site.baseurl }}/assets/img/posts/known-win7.png)
+![KnownDLLs from Windows 7]({% link assets/img/posts/known-win7.png %})
 
 That's it! Since it's a Known DLL, Windows automatically assumes the DLL must be in *system32* and ignores any other possible DLLs.
 

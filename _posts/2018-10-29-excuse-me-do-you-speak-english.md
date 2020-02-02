@@ -9,7 +9,7 @@ Recently, I upgraded [PCSX2](https://pcsx2.net/) with an intent to check it out 
 I got to the Quick Start wizard and selected a preferred language, just to have next page's navigation buttons end up looking like this:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/lang-mix.png" | relative_url }}"><br>
+<img src="{% link assets/img/posts/lang-mix.png %}"><br>
 <em>Hold on a sec, that's not English.</em>
 </p>
 

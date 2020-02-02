@@ -36,7 +36,7 @@ You don't need to do much to make sure Co-Driver Splitter picks correct audio de
 while Default Device -- speakers or other device you want to play environment sounds through.
 
 Example: \\
-![Correctly set up audio devices]({{ 'assets/img/posts/codriver-splitter/audio-devices.jpg' | relative_url }})
+![Correctly set up audio devices]({% link assets/img/posts/codriver-splitter/audio-devices.jpg %})
 
 # How does it work?
 

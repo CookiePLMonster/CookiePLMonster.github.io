@@ -5,7 +5,7 @@ excerpt: Some details people asked about.
 redirect_from: "/2018/05/27/vehicle-anims-silentpatch.html"
 tags: [Progress Reports]
 ---
-A week ago, new builds of SilentPatch were released (you can grab them from [Mods]({{ site.baseurl }}/mods/)) section). Looking at the changelog, one of the features added to San Andreas was:
+A week ago, new builds of SilentPatch were released (you can grab them from [Mods]({% link _games/gta.md %}) section). Looking at the changelog, one of the features added to San Andreas was:
 
 > Several vehicles now have extra animated components: Phoenix hood scoops, Sweeper brushes, Newsvan antenna, radars on several boats, extra flaps on Stuntplane and Beagle
 

@@ -11,10 +11,10 @@ redirect_from: "/2018/05/18/fixing-the-godfather-pt2.html"
 tags: [Articles]
 ---
 This article is split in two parts:
-* [Part 1: Prelude to fixing]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather %})
-* [Part 2: Implementation]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather-pt2 %})
+* [Part 1: Prelude to fixing]({% post_url 2018-05-18-fixing-the-godfather %})
+* [Part 2: Implementation]({% post_url 2018-05-18-fixing-the-godfather-pt2 %})
 
-If you haven't read [Part 1]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather %}) yet, I strongly encourage to go back and read it first before proceeding with this post.
+If you haven't read [Part 1]({% post_url 2018-05-18-fixing-the-godfather %}) yet, I strongly encourage to go back and read it first before proceeding with this post.
 
 Implementation
 =================================
@@ -26,7 +26,7 @@ Blue rectangle - the breakthrough
 =================================
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image18.jpg">
+<img src="{% link assets/img/posts/godfather/image18.jpg %}">
 </p>
 
 This is a screenshot from the very first attempt of testing a RwD3D9 wrapper which gave visible results. While it doesn’t seem like it, this blue rectangle is in fact a breakthrough -
@@ -39,7 +39,7 @@ and this is exactly what we are going to do here.
 First, replacing static blue fill with data provided by VP6 decoder (without specifying a shader or anything fancy) gives us a first view on the movies. Getting there!
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image5.png"><br>
+<img src="{% link assets/img/posts/godfather/image5.png %}"><br>
 <em>The very first time movies are displayed on Windows 10 in game (note this is 640x240, for the time being displayed in the corner and not stretched at all).</em>
 </p>
 
@@ -57,7 +57,7 @@ Image formats - YUY2, YUV, RGB
 YUY2 is a 16-bit 4:2:2 format, which is a variation of YUV color format typically used to encode videos. With YUY2, each 32-bit value defines a pair of pixels. Data is laid out as presented:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image16.png">
+<img src="{% link assets/img/posts/godfather/image16.png %}">
 </p>
 
 Every pixel has its own Y (luminance) value, with U and V values shared between two neighbouring pixels.
@@ -77,7 +77,7 @@ With remaining issues identified, fixing them was only a matter of writing a cor
 Soon after, **movies finally started showing up correctly**!
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image23.png"><br>
+<img src="{% link assets/img/posts/godfather/image23.png %}"><br>
 <em>It lives! Still in 640x480, but otherwise fully working!</em>
 </p>
 
@@ -87,7 +87,7 @@ Watching The Godfather trailer from within the game has certain charm to it... 
 which shows on this screenshot as fake “aliasing” around the edges)
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image4.png"><br>
+<img src="{% link assets/img/posts/godfather/image4.png %}"><br>
 <em>I’m gonna make him an offer he can’t refuse.</em>
 </p>
 
@@ -106,7 +106,7 @@ While coding those was trivial, upscaling videos revealed a previously overlooke
 so it ends up being rendered as 1440x1080), you can notice it doesn’t look quite right...
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image11.png"><br>
+<img src="{% link assets/img/posts/godfather/image11.png %}"><br>
 <em>Artifacts are not obvious, but are clearly noticeable when the logo is fullscreen</em>
 </p>
 
@@ -114,7 +114,7 @@ What happens here? This clip is being a victim of a fairly severe problem coming
 In this example, I have prepared a 640x480 texture consisting of a 1px white column, followed by 1px black column - repeated. Then, this texture was drawn as 1440x1080 on screen:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image13.png">
+<img src="{% link assets/img/posts/godfather/image13.png %}">
 </p>
 
 Notice something wrong? One doesn’t need to zoom in to notice how irregular this pattern is, even though the source texture was completely regular! Why is this happening?
@@ -132,7 +132,7 @@ corresponds to two rendered pixels (remember a shader code snippet mentioned ea
 This causes them to display out of order - mountain shown on the Paramount logo makes it obvious:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image7.png"><br>
+<img src="{% link assets/img/posts/godfather/image7.png %}"><br>
 <em>Since we are displaying some pixels out of order, mountain becomes jaggy</em>
 </p>
 
@@ -156,21 +156,21 @@ while ( source != end )
 After this transformation, data is laid out like this:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image12.png">
+<img src="{% link assets/img/posts/godfather/image12.png %}">
 </p>
 
 Now, each pixel from source texture corresponds to exactly one output pixel, so pixel shader does not need to check what “side” the pixel is on!
 This solves all scaling issues we had and also allows to opt for bilinear filtering instead of nearest filtering, resulting in a more visually pleasing output image:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image22.png"><br>
+<img src="{% link assets/img/posts/godfather/image22.png %}"><br>
 <em>Perfect! Not stretched and with no filtering issues.</em>
 </p>
 
 Success! We can finally call it working correctly. Not only intros work fine - in game clips display just as well:
 
 <p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/godfather/image8.png"><br>
+<img src="{% link assets/img/posts/godfather/image8.png %}"><br>
 <em>While these tutorial clips don’t have too much educational value, it’s good to see them work fine.</em>
 </p>
 

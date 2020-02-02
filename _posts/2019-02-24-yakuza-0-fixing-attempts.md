@@ -21,13 +21,13 @@ No game is flawless though -- if Yakuza 0 was, this article wouldn't exist in th
 The port has been overall well received, however there is something which was bugging people about this release -- lighting appeared to be severely downgraded in several scenes.
 This view perhaps shows it the best:
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-default.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-default.jpg %}">
 </p>
 
 Surely it's not meant to be pitch black like this, right? Character seems to be lit properly (you can clearly see light reflecting on the suit!), but the environment -- not so much.
 It's even more evident in another shot, where car headlights cast no light at all:
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-default2.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-default2.jpg %}">
 </p>
 
 Finding the issue
@@ -40,13 +40,13 @@ How to find what's wrong easily? Usually you expect a render pass to have valid 
 Thankfully, I could quickly fine a pass which violated that rule of thumb -- a pass consisting of a single full screen draw, outputting nothing!
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/render-pass.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/render-pass.jpg %}">
 </p>
 
 Looking at both inputs and outputs of this pass, we can immediately tell something is not quite right...
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-io.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-io.jpg %}">
 </p>
 
 There are two issues here -- one of the input buffers is not bound (ie. not specified; RenderDoc shows it in pink-ish colour), and output is completely blank!
@@ -55,7 +55,7 @@ That can't be right. How can I identify that this is *the* buffer I am looking f
 Let's see where it's used:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-lightbuf.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-lightbuf.jpg %}">
 </p>
 
 It seems very plausible -- the buffer is cleared to black, then (possibly incorrectly) rendered to, then it's used as one of the input buffers for scene rendering.
@@ -91,7 +91,7 @@ Flow in this case is fairly straightforward:
 5. Check how the scene looks now....
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-modified-lighting.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-modified-lighting.jpg %}">
 </p>
 
 ...and it works! Verdict:
@@ -110,13 +110,13 @@ Before we try to understand why things are broken, it's worth looking at another
 lighting is *not* completely gone from the game! There is at least one shot where it seems to work more or less correctly:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-forest-light.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-forest-light.jpg %}">
 </p>
 
 And that's how that "possible light buffer" looks at this moment:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-forest-lightmap.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-forest-lightmap.jpg %}">
 </p>
 
 It looks somewhat correct, so this render pass is not *completely* broken at least...
@@ -151,13 +151,13 @@ At this point, it retained a purely educational value.
 Let's start by taking a look at the very same shot with the patch:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-patch3.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-patch3.jpg %}">
 </p>
 
 Looking much better, right? Let's take a look at the light buffer:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-lightbuf-patch3.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-lightbuf-patch3.jpg %}">
 </p>
 
 This makes much more sense than what was there before the patch.
@@ -165,7 +165,7 @@ This makes much more sense than what was there before the patch.
 Now, inputs and outputs for the very same draw provide an answer on what was fixed -- compare this with an earlier screenshot:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-io-patch3.jpg" | relative_url }}"><br>
+<img src="{% link assets/img/posts/y0-lighting/y0-io-patch3.jpg %}"><br>
 <em>Important note: First input buffer and second output buffer are one and the same!</em>
 </p>
 
@@ -179,7 +179,7 @@ My first theory was that the buffer was never bound.
 This quickly turned out to be untrue, as buffer binding calls are identical between the unpatched and patched versions -- here I named several resources to make it easier to understand:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-bind-comparison.jpg" | relative_url }}"><br>
+<img src="{% link assets/img/posts/y0-lighting/y0-bind-comparison.jpg %}"><br>
 <em>Left - unpatched, right - patched</em>
 </p>
 
@@ -200,7 +200,7 @@ Let's take a look at the depth buffer itself and the views it has (this is same 
 Once again, I named them for convenience, so as we don't need to dive into D3D11 flags to understand the meaning:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-depths.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-depths.jpg %}">
 </p>
 
 Multiple views! This starts to look very much like what Baldur described -- a read/write hazard.
@@ -208,7 +208,7 @@ Thus, the next thing we need to do is find the D3D11 call binding output buffers
 and compare its context. Here's how it looks before the patch:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-writable-depth.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-writable-depth.jpg %}">
 </p>
 
 **Writable** view -- plot thickens! Binding as an input buffer is a read-only bind, but here we see an attempt to bind the buffer as output for writing.
@@ -217,7 +217,7 @@ Therefore, even though an input buffer was bound in advance, it's now unbound.
 Was this the problem all along? Capture from a patched version provides an answer:
 
 <p align="center">
-<img src="{{ "/assets/img/posts/y0-lighting/y0-readonly-depth.jpg" | relative_url }}">
+<img src="{% link assets/img/posts/y0-lighting/y0-readonly-depth.jpg %}">
 </p>
 
 **Yes!** Looks like that was the issue, much more straightforward than one would expect.

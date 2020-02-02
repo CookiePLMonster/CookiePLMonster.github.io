@@ -16,7 +16,7 @@ Changes in this build:
 - Added a SP version number to main menu, so it is more obvious whether an user has installed the 'patch correctly or not.
 
 Without further ado -- grab the newest build from *Mods & Patches*: \\
-<a href="{{ "mods/bully/#silentpatch" | absolute_url }}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+<a href="{% link _games/bully.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
 
 # Important note
 

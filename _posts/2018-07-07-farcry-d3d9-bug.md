@@ -11,7 +11,7 @@ tags: [Releases, Articles]
 ---
 
 TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Far Cry**: \\
-<a href="{{ "mods/far-cry/#silentpatch" | absolute_url }}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Far Cry</a> \\
+<a href="{% link _games/far-cry.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Far Cry</a> \\
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it!
 
 # Overview
