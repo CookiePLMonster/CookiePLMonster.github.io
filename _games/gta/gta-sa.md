@@ -3,7 +3,6 @@ layout: page
 title: "Grand Theft Auto San Andreas"
 excerpt: "My modifications and patches for Grand Theft Auto San Andreas: SilentPatch, GInput, ASI Loader."
 image: "assets/img/games/gta-sa.jpg"
-feature-img: default
 parent-series: "gta"
 game-series: "gta-sa"
 order: 2

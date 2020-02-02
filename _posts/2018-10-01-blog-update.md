@@ -2,7 +2,6 @@
 layout: post
 title: Blog update - now (nearly) feature complete!
 date: 2018-10-01 10:55:00 +0200
-feature-img: default
 image: "assets/img/site-header.png"
 excerpt: Refreshed look, new content, more cookies.
 twitter: {card: "summary_large_image"}
