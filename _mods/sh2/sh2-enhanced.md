@@ -3,7 +3,7 @@ title: "Silent Hill 2: Enhanced Edition"
 title-image: "http://www.enhanced.townofsilenthill.com/SH2/images/logo.svg"
 game-series: "sh2"
 excerpt: "A comprehensive collection of community enhancements."
-date: 17-04-2019
+date: 14-02-2020
 contribution: true
 ---
 
@@ -13,6 +13,7 @@ PlayStation 2 quality audio and fog; better controller support; and much more. T
 makes for a definitive Silent Hill 2 HD experience.
 
 I contributed to *Silent Hill 2: Enhanced Edition* with:
+- Restoration of right analog stick functionality, allowing to look around with right analog stick while walking, like on PlayStation 2
 - XInput based controller vibration
 - An option to allow movement and menu navigation with DPad, like on PlayStation 2
 

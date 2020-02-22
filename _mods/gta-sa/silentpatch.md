@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-sa"
 excerpt: "Fixes numerous issues in your favourite game."
-date: 28-12-2019
+date: 22-02-2020
 ---
 
 These games are surely great, nonetheless they have some issues. This modification attempts to fix some of them.
