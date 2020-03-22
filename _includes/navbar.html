@@ -24,15 +24,14 @@
         
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
-        {% if name_page contains page.title %}
-        {% else %}
+        {% unless name_page contains page.title %}
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="{{ page.url | relative_url }}">
                 {{ page.title | markdownify | strip_html }}
             </a>
         </li>
-        {% endif %}
+        {% endunless %}
         {% assign name_page = page.title | append: name_page %}
         {% endif %}
         {% endfor %} 
