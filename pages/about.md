@@ -5,6 +5,14 @@ excerpt: My short bio.
 permalink: /about/
 ---
 
+*This page is available in:*
+<a href="{% link pages/about.md %}"><img style="height:1em;padding: 0 0.5em 0 1em"
+    src="{% link assets/img/flags/gb.svg %}" alt="GB">*English*</a>
+<a href="{% link pages/about-pl.md %}"><img style="height:1em;padding: 0 0.5em 0 1em"
+    src="{% link assets/img/flags/pl.svg %}" alt="PL">*polski*</a>
+
+***
+
 <div style="max-width:35%;float:right;text-align:center" >
 <img style="padding:0 5%;float:right" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
 <em>This might be surprising,<br>but I'm not blue and fluffy.</em>
