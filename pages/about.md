@@ -6,16 +6,17 @@ permalink: /about/
 ---
 
 *This page is available in:*
-<a href="{% link pages/about.md %}"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/gb.svg %}" alt="GB">*English*</a>
-<a href="{% link pages/about-pl.md %}"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/pl.svg %}" alt="PL">*polski*</a>
+<a href="{% link pages/about.md %}"><span style="white-space:nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
+    src="{% link assets/img/flags/gb.svg %}" alt="GB">*English*</span></a>
+<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
+    src="{% link assets/img/flags/pl.svg %}" alt="PL">*polski*</span></a>
 
 ***
 
 <div style="max-width:35%;float:right;text-align:center" >
 <img style="padding:0 5%;float:right" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
-<em>This might be surprising,<br>but I'm not blue and fluffy.</em>
+<em><span style="display:inline-block">This might be surprising,</span>
+<span style="display:inline-block">but I'm not blue and fluffy.</span></em>
 </div>
 Hi, I'm **Adrian** -- game developer by day, modder and reverse engineer by night. I try to fix things.
 In the cyberspace, I go by **Silent** or **CookiePLMonster**.
