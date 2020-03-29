@@ -18,13 +18,5 @@ later which also will not lock people out!
 ***
 
 The link to my Sponsors page is now added to the footer of the website, next to a PayPal link.
-If you wish to visit the page, either scroll down or click here:
-
-<div align="center">
-<a href="https://github.com/sponsors/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_support_via }} GitHub Sponsors">
-    <span class="fa-stack" style="font-size:1.75em;">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
-    </span>
-</a>
-</div>
+If you wish to visit the page, either scroll down or click here: \\
+<a href="https://github.com/sponsors/{{ site.theme_settings.github }}" class="button" role="button" target="_blank"><i class='fab fa-github-alt'></i> {{ site.theme_settings.str_support_via }} GitHub Sponsors</a>
