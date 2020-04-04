@@ -141,4 +141,4 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 
 <a href="http://silent.rockstarvision.com/uploads/SilentPatchSA.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
 
-Requires <a href="#asiloader">ASI Loader<a> (or [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v4.52/Ultimate-ASI-Loader.zip) for Rockstar Games Launcher version).
+Requires <a href="#asiloader">ASI Loader<a> (or [Ultimate ASI Loader x86](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v4.52/Ultimate-ASI-Loader.zip) for Rockstar Games Launcher version).
