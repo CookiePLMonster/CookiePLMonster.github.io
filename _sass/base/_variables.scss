@@ -19,6 +19,7 @@ $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 // Other links
 $github-color: #6CC644;
 $important-color: #A50038;
+$forums-color: #333;
 
 // Typography colours
 $text-color: #383838;
@@ -27,6 +28,7 @@ $selection-color: #D4D4D4; // visible when highlighting text
 $blockquote-color: #EEF7FA; // $background-color;
 $github-link-color: darken($github-color, 10%);
 $important-link-color: $important-color;
+$forums-link-color: $forums-color;
 
 //Search color
 $link-shadow: transparentize($link-color, .6); //rgba(26, 188, 156, 0.6);

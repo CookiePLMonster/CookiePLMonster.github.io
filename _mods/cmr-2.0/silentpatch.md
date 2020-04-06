@@ -35,4 +35,5 @@ between them.
 </div>
 
 <a href="https://github.com/CookiePLMonster/SilentPatchCMR2/releases/download/BETA1/silentpatch_cmr2.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a> \\
+<a href="https://forums.codemasters.com/topic/7492-colin-mcrae-rally-20-patching-the-game-for-modern-standards/" class="button forums" role="button">{{ site.theme_settings.codemasters_icon }} Discuss on Codemasters Forums</a>

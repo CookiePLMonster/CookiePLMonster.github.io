@@ -51,4 +51,5 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Some props in Malibu Club, Ocean View Hotel and Pole Position Club have been restored; more environment shows outside when player is in interior too (just like on PS2)
 
 <a href="http://silent.rockstarvision.com/uploads/SilentPatchVC.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
-<a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download DDraw Component</a>
+<a href="http://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download DDraw Component</a> \\
+<a href="https://gtaforums.com/topic/669045-silentpatch/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

@@ -16,6 +16,7 @@ if any modification makes use of them) so the player can quite literally take ov
 </div>
 
 <a href="https://github.com/CookiePLMonster/ExGangWars/releases/download/1.2/ExGangWars.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/ExGangWars" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/ExGangWars" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a> \\
+<a href="https://gtaforums.com/topic/682194-extended-gang-wars/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
 
 Requires <a href="#asiloader">ASI Loader<a>.

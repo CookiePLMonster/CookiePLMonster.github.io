@@ -51,6 +51,10 @@ a.button.docs {
     color: $important-link-color;
 }
 
+a.button.forums {
+    color: $forums-link-color;
+}
+
 .button-link {
     &:hover {
         background: $link-color;
@@ -71,6 +75,13 @@ a.button.docs {
     &:hover {
         background: $important-link-color;
         border-color: $important-link-color;
+    }
+}
+
+.button-link.forums {
+    &:hover {
+        background: $forums-link-color;
+        border-color: $forums-link-color;
     }
 }
 

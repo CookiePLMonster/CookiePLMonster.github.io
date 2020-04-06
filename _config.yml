@@ -96,6 +96,8 @@ theme_settings:
   download_icon: "<i class='fas fa-download'></i>"
   github_icon: "<i class='fab fa-github'></i>"
   docs_icon: "<i class='fas fa-book'></i>"
+  gtaf_icon: "<i class='fas icomoon icon-gtaf'></i>"
+  codemasters_icon: "<i class='fas icomoon icon-codemasters'></i>"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
