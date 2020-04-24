@@ -36,7 +36,7 @@ theme_settings:
   keybase:
   linkedin:  # Full URL
   pinterest:
-  patreon: CookiePLMonster
+  patreon: 32437453
   paypal: AdrianZdanowicz
   reddit:
   soundcloud:
@@ -79,7 +79,7 @@ theme_settings:
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
   str_discord: "Join RockstarVision Discord, the fastest way to contact me"
-  str_support_via: "Support me via"
+  str_support_via: "Support via"
   str_share_on: "Share on"
   str_add_to: "Add to"
   str_email: "Email"
