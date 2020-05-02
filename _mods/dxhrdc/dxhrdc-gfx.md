@@ -2,7 +2,7 @@
 title: Gold Filter Restoration
 game-series: "dxhrdc"
 excerpt: "Restores post-processing from the original Human Revolution."
-date: 26-04-2020
+date: 02-05-2020
 ---
 
 A plugin for Deus Ex: Human Revolution Director's Cut, restoring the gold filter, post processing and shading from the original Deus Ex: Human Revolution.
@@ -19,5 +19,9 @@ The configuration menu also allows to freely modify color grading attributes or 
 <a href="{% link assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg %}"><img src="{% link assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg %}"></a>
 </p>
 
-<a href="https://github.com/CookiePLMonster/DXHRDC-GFX/releases/download/BUILD-1/DXHRDC-GFX.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<div align="center" class="video-container">
+<iframe src="https://www.youtube.com/embed/b42mzApkaCw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<a href="https://github.com/CookiePLMonster/DXHRDC-GFX/releases/download/BUILD-2/DXHRDC-GFX.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -9,4 +9,4 @@ subtitle: "August 2019"
 
 Hotline Miami Collection contains both legendary games in the neon-soaked, brutally-challenging Hotline Miami series from Dennaton Games.
 
-Released on: **Nintendo Switch.**
+Released on: **Nintendo Switch, Xbox One.**
