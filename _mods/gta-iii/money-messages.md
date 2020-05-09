@@ -22,6 +22,8 @@ Money pop-ups will now show when:
 <iframe src="https://www.youtube.com/embed/9uZp9XPd9wA" frameborder="0" allowfullscreen></iframe>
 </div>
 
+{% include setup-instructions.html %}
+
 <a href="https://www.gtagarage.com/mods/show.php?id=26361" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/Money-Messages" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a> \\
 <a href="https://gtaforums.com/topic/727863-iiivcrel-money-messages/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

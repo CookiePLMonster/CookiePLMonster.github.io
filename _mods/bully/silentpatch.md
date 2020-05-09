@@ -46,5 +46,7 @@ If you want to report it as a bug (any feedback is very much appreciated), first
 (texture mods are fine, scripts - not so much). You can report a bug (.dmp file + a brief explanation on what
 you were doing when the game crashes) on the GitHub Issue page.
 
+{% include setup-instructions.html %}
+
 <a href="https://github.com/CookiePLMonster/SilentPatchBully/releases/download/BUILD-3-TEST/SilentPatchBully.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchBully" class="button github" role="button">{{ site.theme_settings.github_icon }} See source on GitHub</a>

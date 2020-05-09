@@ -31,6 +31,7 @@ flawed and introduced noticeable frame pacing issues.
   - Poker
   - Koi-koi
 
+{% include setup-instructions.html %}
 
 <a href="https://github.com/CookiePLMonster/SilentPatchYK2/releases/download/BUILD-1/SilentPatchYK2.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchYK2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

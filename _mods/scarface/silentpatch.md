@@ -27,6 +27,7 @@ most of the hitches present when driving around!
 <a href="https://i.imgur.com/XnNcJpM.png"><img src="https://i.imgur.com/XnNcJpMl.png"></a>
 </p>
 
+{% include setup-instructions.html %}
 
 <a href="https://github.com/CookiePLMonster/SilentPatchScarface/releases/download/BUILD-1/SilentPatchScarface.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

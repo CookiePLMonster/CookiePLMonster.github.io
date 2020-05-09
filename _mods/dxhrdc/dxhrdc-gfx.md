@@ -23,5 +23,7 @@ The configuration menu also allows to freely modify color grading attributes or 
 <iframe src="https://www.youtube.com/embed/b42mzApkaCw" frameborder="0" allowfullscreen></iframe>
 </div>
 
+{% include setup-instructions.html %}
+
 <a href="https://github.com/CookiePLMonster/DXHRDC-GFX/releases/download/BUILD-2/DXHRDC-GFX.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -16,6 +16,7 @@ the same way AquaNox 2 did.
 
 * Fixed issues with stuttery/unresponsive mouse and keyboard input when using mice and/or keyboards with high polling rate
 
+{% include setup-instructions.html %}
 
 <a href="https://github.com/CookiePLMonster/SilentPatchAqua/releases/download/BUILD-2/SilentPatchAqua.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchAqua" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
