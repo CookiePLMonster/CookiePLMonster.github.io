@@ -38,5 +38,5 @@ This is not the only fix included, however.
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/download/BUILD-2/SilentPatchGF.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<a href="https://github.com/CookiePLMonster/SilentPatchGF/releases/latest/download/SilentPatchGF.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchGF" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
