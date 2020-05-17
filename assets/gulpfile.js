@@ -8,7 +8,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const shell = require('gulp-shell');
 const less = require('gulp-less');
-const cssmin = require('gulp-cssmin')
+const cssmin = require('gulp-clean-css')
 const replace = require('gulp-replace');
 
 gulp.task('js', function minijs() {
