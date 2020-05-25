@@ -18,7 +18,7 @@ permalink: /about/
 <em><span style="display:inline-block">This might be surprising,</span>
 <span style="display:inline-block">but I'm not blue and fluffy.</span></em>
 </div>
-Hi, I'm **Adrian** -- game developer by day, modder and reverse engineer by night. I try to fix things.
+Hi, I'm **Adrian** -- game developer by day; modder and reverse engineer by night. I try to fix things.
 In the cyberspace, I go by **Silent** or **CookiePLMonster**.
 
 ***
@@ -29,17 +29,17 @@ and trying to modify Java scripts in Street Legal Racing Redline (with poor resu
 My first more serious work dates to 2008, when I first dived into Grand Theft Auto: San Andreas and [its scripting
 engine](https://gtamods.com/wiki/SCM_language). I eventually wanted to do more than what game scripts allowed for,
 and so, after around two years I got into reverse engineering the game and started experimenting with increasingly
-complex assembly hacks (yes, I did code in assembly prior to learning any high-level languages).
+complex assembly hacks (yes, I did code in assembly before learning any high-level languages).
 Eventually, this led to me starting to use C++ in mid-2011.
 
-Things went at their own slow pace until late 2013, when I released SilentPatch for Grand Theft Auto III and
+Things went at their own slow pace until late 2013 when I released SilentPatch for Grand Theft Auto III and
 Vice City -- a modification fixing bugs in games. This proved to be much more popular than I'd anticipated
 and led to releasing more SilentPatches, first for San Andreas a few months later; then for other games,
 totally unrelated to GTA.
 
 The most significant breakthrough came when I released [Hotline Miami 2 XP Support Patch]({% link _games/hm2.md %}#hm2-xp)
 in March 2015, a few days after the game's release.
-Not only it got officially endorsed, but also allowed me to establish first contacts in the game development scene which
+Not only it got officially endorsed, but it also allowed me to establish first contacts in the game development scene which
 eventually allowed me to get my first job (which I hold till this day).
 
 What am I up to these days? I port games for a living (see my [Portfolio]({% link pages/portfolio.md %})),
