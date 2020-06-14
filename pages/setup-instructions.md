@@ -14,6 +14,7 @@ Games used for the presentation do not have any relevance for the steps.
     * [GOG Galaxy](#gog-galaxy)
     * [Rockstar Games Launcher](#rgl)
     * [Uplay](#uplay)
+    * [Retail (disc)](#retail)
 2. [Extracting the mod files](#extracting-files)
 3. [Configuration](#configuration)
 
@@ -57,9 +58,9 @@ Games used for the presentation do not have any relevance for the steps.
     </p>
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-## Retail (disk) {#retail}
+## Retail (disc) {#retail}
 
-If you've installed the game with a traditional installer from the disk, you probably know where the game is installed.
+If you've installed the game with a traditional installer from the disc, you probably know where the game is installed.
 If not, it's easiest to locate it by following either its Desktop shortcut or the Start Menu shortcut:
 
 1. Locate the game shortcut on Desktop or the Start Menu. Usually, it's easiest to locate the shortcut in the Start Menu by typing the game name.
@@ -76,8 +77,8 @@ _If you use any of these third-party file archivers, I assume you know how to ex
 2. Set the Destination folder to the game's directory you have previously located and click *Extract*. \\
     <p align="center">
     <img src="{% link assets/img/setup/extract-all.jpg %}">
-    </p>
-    * If a prompt saying "*The destination has X files with the same names*" shows up, select "*Replace the files in the destination*".
+    </p> \\
+    If a prompt saying "*The destination has X files with the same names*" shows up, select "*Replace the files in the destination*".
 3. Files will be extracted and the extracted files will appear in the game directory. \\
     <p align="center">
     <img src="{% link assets/img/setup/mod-files.jpg %}">
