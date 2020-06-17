@@ -1,5 +1,5 @@
 <header class="site-header">
-    
+
     <!-- Logo and title -->
 	<div class="branding">
 		<a href="{{ "/" | relative_url }}">
@@ -10,18 +10,18 @@
 			<a href="{{ "/" | relative_url }}">{{ site.theme_settings.title | markdownify | strip_html }}</a>
 		</h1>
 	</div>
-    
+
     <!-- Toggle menu -->
     <nav class="clear">
     <a id="pull" class="toggle" href="#">
     <i class="fas fa-bars fa-lg"></i>
     </a>
-    
+
     <!-- Menu -->
     <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% assign name_page = "" %}
-        
+
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
         {% unless name_page contains page.title %}
@@ -34,8 +34,8 @@
         {% endunless %}
         {% assign name_page = page.title | append: name_page %}
         {% endif %}
-        {% endfor %} 
-        
+        {% endfor %}
+
         <!-- Auto Generation of SPECIAL pages in the navbar -->
         {% for item in site.theme_settings.special_page %}
           {% if item[1].enabled %}
@@ -47,7 +47,53 @@
             </li>
           {% endif %}
         {% endfor %}
+
+        <!-- Dark mode toggle -->
+        <li class="separator theme-toggle-elem"> | </li>
+        <li class="separator theme-toggle-elem"> | </li>
+        <li>
+            <a class="clear theme-toggle-elem" onclick="modeSwitcher()">
+                <i id="theme-toggle" title="Toggle Dark Mode" class="fas fa-moon" aria-hidden="true"></i>
+            </a>
+        </li>
     </ul>
-        
-	</nav>
+
+    </nav>
+
+    <!-- Dark mode script -->
+    <script>
+    function changeThemeIcon(isDark) {
+        let elem = document.getElementById("theme-toggle");
+        if (isDark) {
+            elem.title = "Toggle Light Mode";
+            elem.classList.remove("fa-moon");
+            elem.classList.add("fa-sun");
+        } else {
+            elem.title = "Toggle Dark Mode";
+            elem.classList.add("fa-moon");
+            elem.classList.remove("fa-sun");
+        }
+    }
+
+    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
+    let theme = sessionStorage.getItem('theme');
+    if (theme === "dark") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        changeThemeIcon(true);
+    } else if (theme === "light") {
+        document.documentElement.setAttribute('data-theme', 'light');
+        changeThemeIcon(false);
+    } else {
+        changeThemeIcon(systemInitiatedDark.matches);
+    }
+    </script>
+
+    <noscript>
+        <style type="text/css">
+            .theme-toggle-elem {
+            display: none !important;
+            }
+        </style>
+    </noscript>
+
 </header>

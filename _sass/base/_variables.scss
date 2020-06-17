@@ -94,7 +94,7 @@ $text-color: var(--text-color);
 $header-link-color: var(--header-link-color);
 $header-desc-text-color: var(--header-desc-text-color);
 $blockquote-color: var(--blockquote-color);
-:root {
+@mixin light-theme {
     --brand-color: #{$brand-color-light};
     --background-color: #{$background-color-light};
     --text-color: #{$text-color-light};
@@ -115,26 +115,42 @@ $blockquote-color: var(--blockquote-color);
     --blockquote-border-color: #{darken($blockquote-color-light, 20%)};
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --brand-color: #{$brand-color-dark};
-        --background-color: #{$background-color-dark};
-        --text-color: #{$text-color-dark};
-        --header-link-color: #{$header-link-color-dark};
-        --header-desc-text-color: #{$header-desc-text-color-dark};
-        --blockquote-color: #{$blockquote-color-dark};
+@mixin dark-theme {
+    --brand-color: #{$brand-color-dark};
+    --background-color: #{$background-color-dark};
+    --text-color: #{$text-color-dark};
+    --header-link-color: #{$header-link-color-dark};
+    --header-desc-text-color: #{$header-desc-text-color-dark};
+    --blockquote-color: #{$blockquote-color-dark};
 
-        --important-link-color: #{$important-color-dark};
-        --important-link-hover-color: #{darken($important-color-dark, 15%)};
+    --important-link-color: #{$important-color-dark};
+    --important-link-hover-color: #{darken($important-color-dark, 15%)};
 
-        --forums-link-color: #{$text-color-dark};
-        --forums-link-hover-color: #{darken($text-color-dark, 15%)};
+    --forums-link-color: #{$text-color-dark};
+    --forums-link-hover-color: #{darken($text-color-dark, 15%)};
 
-        --footer-text-color: #{lighten($text-color-dark, 30%)};
-        --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};
-    }
+    --footer-text-color: #{lighten($text-color-dark, 30%)};
+    --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};
 
     .fa-inverse {
         color: $background-color-dark !important; 
      }
+}
+
+html[data-theme="light"] {
+    @include light-theme;
+}
+
+html[data-theme="dark"] {
+    @include dark-theme;
+}
+
+html {
+    @extend [data-theme="light"];
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        @include dark-theme;
+    }
 } 
