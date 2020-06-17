@@ -32,7 +32,7 @@ $text-color-dark: invert($text-color-light);
 $link-color: $theme-color; // #1ABC9C;
 $selection-color: #D4D4D4; // visible when highlighting text
 $blockquote-color-light: #EEF7FA; // $background-color;
-$blockquote-color-dark: #033140;
+$blockquote-color-dark: #1B3E4A;
 $patreon-link-color: $patreon-color;
 $paypal-link-color: $paypal-color;
 
@@ -113,6 +113,13 @@ $blockquote-color: var(--blockquote-color);
 
     --footer-text-color: #{lighten($text-color-light, 30%)};
     --blockquote-border-color: #{darken($blockquote-color-light, 20%)};
+
+    --highlighter-rouge-color: rgb(36, 41, 46);
+    --highlighter-rouge-bg-color: #{transparentize($base00, 0.85)};
+
+    .theme-icon:before {
+        content: "\f186";
+    }
 }
 
 @mixin dark-theme {
@@ -132,9 +139,16 @@ $blockquote-color: var(--blockquote-color);
     --footer-text-color: #{lighten($text-color-dark, 30%)};
     --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};
 
+    --highlighter-rouge-color: rgb(219, 214, 209);
+    --highlighter-rouge-bg-color: #{invert(transparentize($base00, 0.85), 100%)};
+
     .fa-inverse {
         color: $background-color-dark !important; 
      }
+
+     .theme-icon:before {
+        content: "\f185";
+    }
 }
 
 html[data-theme="light"] {
@@ -146,7 +160,7 @@ html[data-theme="dark"] {
 }
 
 html {
-    @extend [data-theme="light"];
+    @extend html, [data-theme="light"];
 }
 
 @media (prefers-color-scheme: dark) {

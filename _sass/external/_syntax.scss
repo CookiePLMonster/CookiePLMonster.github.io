@@ -24,15 +24,10 @@ figure.highlight {
 code.highlighter-rouge {
     padding: 0.2em 0.4em;
     font-size: $font-size-code;
-    background-color: transparentize($base00, 0.85);
-    color: rgb(36, 41, 46);
+    background-color: var(--highlighter-rouge-bg-color);
+    color: var(--highlighter-rouge-color);
     border-radius: 2px;
     font-family: $monospace;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: invert(transparentize($base00, 0.85), 100%);
-        color: rgb(219, 214, 209);
-    }
 }
 
 .highlight table {
