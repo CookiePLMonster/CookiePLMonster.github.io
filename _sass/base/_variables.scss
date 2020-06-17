@@ -21,8 +21,8 @@ $background-color-dark: #333;
 
 // Other links
 $github-color: #6CC644;
-$important-color: #A50038;
-$forums-color: #333;
+$important-color-light: #A50038;
+$important-color-dark: #CC2960;
 $patreon-color: #f96854;
 $paypal-color: #0079C1;
 
@@ -33,9 +33,6 @@ $link-color: $theme-color; // #1ABC9C;
 $selection-color: #D4D4D4; // visible when highlighting text
 $blockquote-color-light: #EEF7FA; // $background-color;
 $blockquote-color-dark: #033140;
-$github-link-color: darken($github-color, 10%);
-$important-link-color: $important-color;
-$forums-link-color: $forums-color;
 $patreon-link-color: $patreon-color;
 $paypal-link-color: $paypal-color;
 
@@ -105,6 +102,15 @@ $blockquote-color: var(--blockquote-color);
     --header-desc-text-color: #{$header-desc-text-color-light};
     --blockquote-color: #{$blockquote-color-light};
 
+    --github-link-color: #{darken($github-color, 10%)};
+    --github-link-hover-color: #{darken(darken($github-color, 10%), 15%)};
+
+    --important-link-color: #{$important-color-light};
+    --important-link-hover-color: #{darken($important-color-light, 15%)};
+
+    --forums-link-color: #{$text-color-light};
+    --forums-link-hover-color: #{darken($text-color-light, 15%)};
+
     --footer-text-color: #{lighten($text-color-light, 30%)};
     --blockquote-border-color: #{darken($blockquote-color-light, 20%)};
 }
@@ -117,6 +123,12 @@ $blockquote-color: var(--blockquote-color);
         --header-link-color: #{$header-link-color-dark};
         --header-desc-text-color: #{$header-desc-text-color-dark};
         --blockquote-color: #{$blockquote-color-dark};
+
+        --important-link-color: #{$important-color-dark};
+        --important-link-hover-color: #{darken($important-color-dark, 15%)};
+
+        --forums-link-color: #{$text-color-dark};
+        --forums-link-hover-color: #{darken($text-color-dark, 15%)};
 
         --footer-text-color: #{lighten($text-color-dark, 30%)};
         --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};

@@ -44,15 +44,15 @@ a.button {
 }
 
 a.button.github {
-    color: $github-link-color;
+    color: var(--github-link-color);
 }
 
 a.button.docs {
-    color: $important-link-color;
+    color: var(--important-link-color);
 }
 
 a.button.forums {
-    color: $forums-link-color;
+    color: var(--forums-link-color);
 }
 
 a.button.patreon {
@@ -74,22 +74,22 @@ a.button.paypal {
 
 .button-link.github {
     &:hover {
-        background: $github-link-color;
-        border-color: $github-link-color;
+        background: var(--github-link-color);
+        border-color: var(--github-link-color);
     }
 }
 
 .button-link.docs {
     &:hover {
-        background: $important-link-color;
-        border-color: $important-link-color;
+        background: var(--important-link-color);
+        border-color: var(--important-link-color);
     }
 }
 
 .button-link.forums {
     &:hover {
-        background: $forums-link-color;
-        border-color: $forums-link-color;
+        background: var(--forums-link-color);
+        border-color: var(--forums-link-color);
     }
 }
 
@@ -120,15 +120,15 @@ a.round-button {
 }
 
 a.round-button.github {
-    background-color: $github-link-color;
+    background-color: var(--github-link-color);
 }
 
 a.round-button.docs {
-    background-color: $important-link-color;
+    background-color: var(--important-link-color);
 }
 
 a.round-button.forums {
-    background-color: $forums-link-color;
+    background-color: var(--forums-link-color);
 }
 
 a.round-button.patreon {
@@ -149,29 +149,29 @@ a.round-button.paypal {
 
 .round-button-link.github {
     &:hover {
-        background: darken($github-link-color, 15%);
-        border-color: darken($github-link-color, 15%);
+        background: var(--github-link-hover-color);
+        border-color: var(--github-link-hover-color);
     }
-    background: $github-link-color;
-    border-color: $github-link-color;
+    background: var(--github-link-color);
+    border-color: var(--github-link-color);
 }
 
 .round-button-link.docs {
     &:hover {
-        background: darken($important-link-color, 15%);
-        border-color: darken($important-link-color, 15%);
+        background: var(--important-link-hover-color);
+        border-color: var(--important-link-hover-color);
     }
-    background: $important-link-color;
-    border-color: $important-link-color;
+    background: var(--important-link-color);
+    border-color: var(--important-link-color);
 }
 
 .round-button-link.forums {
     &:hover {
-        background: darken($forums-link-color, 15%);
-        border-color: darken($forums-link-color, 15%);
+        background: var(--forums-link-hover-color);
+        border-color: var(--forums-link-hover-color);
     }
-    background: $forums-link-color;
-    border-color: $forums-link-color;
+    background: var(--forums-link-color);
+    border-color: var(--forums-link-color);
 }
 
 .round-button-link.patreon {
