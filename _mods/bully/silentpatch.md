@@ -7,7 +7,7 @@ date: 07-03-2020
 beta-caption: Patch may not fix all crashes yet.
 ---
 
-*Co-developed by [P3ti](https://github.com/P3ti)*
+*Co-developed with [P3ti](https://github.com/P3ti)*
 
 This game, which shares a lot of the internals with GTA games, performs fairly well in its PC incarnation as is.
 However, it's more than likely that you have at some point spotted the amount of complaints Windows 10
