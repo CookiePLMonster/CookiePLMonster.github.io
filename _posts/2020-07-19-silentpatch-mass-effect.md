@@ -71,7 +71,7 @@ PSGP is not the best documented term, but in short, it's a legacy (concerning on
 > In previous versions of DirectX, there was a path that allowed to do vertex processing called the PSGP. Applications had to take this path into account and support a path for vertex processing
 > on the processor and graphics cores.
 
-Putting it this way, it makes sense why disabling PSGP fixes artifacts on AMD -- the path taken by modern AMD processors may be somehow broken.
+Putting it this way, it makes sense why disabling PSGP fixes artifacts on AMD -- the path taken by modern AMD processors maybe somehow broken.
 How to disable it? Two ways come to mind:
 * It is possible to pass a `D3DCREATE_DISABLE_PSGP_THREADING` flag to `IDirect3D9::CreateDevice`. It's defined as: \\
   > Restrict computation to the main application thread. If the flag is not set, the runtime may perform software vertex processing and other computations in worker thread
@@ -254,7 +254,7 @@ are either too inaccurate or completely incorrect._
 
 How do we verify that hypothesis? By tests, of course!
 
-P.S.: You may be thinking -- "well, the game uses `d3dx9_31.dll` but the newest D3DX9 library is `d3dx9_43.dll`, surely that must be fixed in later revisions??".
+P.S.: You maybe thinking -- "well, the game uses `d3dx9_31.dll` but the newest D3DX9 library is `d3dx9_43.dll`, surely that must be fixed in later revisions??".
 We tried to verify that by "upgrading" the game to link against the newest DLL -- and nothing changed.
 
 [^2]: Of course, assuming they have an SSE2 instruction set, but any Intel CPU not having those instructions falls below the minimum system requirements of Mass Effect.
