@@ -49,7 +49,7 @@ This makes the issue very unique and worth looking into.
 
 Looking up existing discussions online, this issue seems to affect AMD FX and Ryzen chips. Compared to the older AMD chips, these lack a [3DNow! instruction set](https://en.wikipedia.org/wiki/3DNow!).
 Unrelated or not, the community consensus was that this was the cause of the bug and that the game tried to use those instructions upon detecting an AMD CPU.
-Given that there are no known cases of this bug occurring on Intel CPU's and that 3DNow! instructions were exclusive to AMD, it's no surprise the community assumed that this is the issue.
+Given that there are no known cases of this bug occurring on Intel CPUs and that 3DNow! instructions were exclusive to AMD, it's no surprise the community assumed that this is the issue.
 
 Is this really the issue, or is it caused by something entirely different? Let's find out!
 
