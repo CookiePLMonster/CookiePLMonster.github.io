@@ -10,9 +10,9 @@ date: 27-09-2020
 An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects, originally disabled for performance reasons when running the game in Hi-Fi mode (that mode is not present in GT2,
 but it's a leftover from GT1).
 
-<!-- <p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/hizKXrW.jpg"><img src="https://i.imgur.com/hizKXrWl.jpg"></a>
-</p> -->
+<div align="center" class="video-container">
+<iframe src="https://www.youtube.com/embed/QOQ56HKYgJg" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ### Arcade & Simulation Modes
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
