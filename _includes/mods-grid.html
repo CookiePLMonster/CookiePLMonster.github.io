@@ -1,7 +1,7 @@
 <!-- Mods Grid Section -->
 
 <div class="mods-grid">
-	{% assign items = site.games | where:"parent-series", include.series | sort: "order" %}
+	{% assign items = include.items | sort: "order" %}
     {% for item in items %}
     {% unless item.hide %}
     <div class="mods-cell"

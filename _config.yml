@@ -99,6 +99,13 @@ theme_settings:
   gtaf_icon: "<i class='fas icomoon icon-gtaf'></i>"
   codemasters_icon: "<i class='fas icomoon icon-codemasters'></i>"
 
+  # Flags
+  pl_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/pl.svg' alt='PL'>"
+  gb_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/gb.svg' alt='GB'>"
+  eu_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/eu.svg' alt='EU'>"
+  us_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/us.svg' alt='US'>"
+  jp_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/jp.svg' alt='JP'>"
+
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"

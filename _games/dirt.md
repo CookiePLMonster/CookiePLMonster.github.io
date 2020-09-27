@@ -7,4 +7,5 @@ game-series: "dirt"
 order: 17
 ---
 
-{% include mods-grid.html series=page.game-series cell-size="33%" %}
+{% assign items = site.games | where:"parent-series", page.game-series %}
+{% include mods-grid.html items=items cell-size="33%" %}

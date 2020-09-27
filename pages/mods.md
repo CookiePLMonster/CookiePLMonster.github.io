@@ -9,5 +9,11 @@ permalink: /mods/
 Looking for an easy to browse list? Try the [**Mod Index**]({% link pages/mod-index.html %})!
 
 ***
- 
-{% include mods-grid.html series="" %}
+
+{% assign games = site.games | where:"parent-series", "" | where_exp:"item","item.order < 100" %}
+{% include mods-grid.html items=games %}
+
+***
+
+{% assign consoles = site.games | where:"parent-series", "" | where_exp:"item","item.order >= 100" %}
+{% include mods-grid.html items=consoles %}

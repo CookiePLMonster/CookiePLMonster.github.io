@@ -6,10 +6,8 @@ permalink: /about/
 ---
 
 *This page is available in:*
-<a href="{% link pages/about.md %}"><span style="white-space:nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/gb.svg %}" alt="GB">*English*</span></a>
-<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/pl.svg %}" alt="PL">*polski*</span></a>
+<a href="{% link pages/about.md %}"><span style="white-space:nowrap">{{ site.theme_settings.gb_flag }}*English*</span></a>
+<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap">{{ site.theme_settings.pl_flag }}*polski*</span></a>
 
 ***
 
