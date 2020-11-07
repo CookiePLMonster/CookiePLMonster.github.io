@@ -2,7 +2,7 @@
 title: SilentPatch
 game-series: "mass-effect"
 excerpt: "Fixes black blobs on AMD CPUs."
-date: 19-07-2020
+date: 07-11-2020
 ---
 
 *Co-developed with [Rafael Rivera](https://withinrafael.com/)*
@@ -12,6 +12,7 @@ A few months later in mid-2008, the game received PC port developed by Demiurge 
 When playing the game on PCs with modern AMD processors, two areas in the game (Noveria and Ilos) show severe graphical artifacts.
 
 SilentPatch diagnoses those issues and provides a definite fix, bringing complete visual parity between Intel and AMD CPUs.
+**Warning: AMD FX and Bulldozer chips are still affected. We are investigating the issue.**
 
 ## Featured fixes:
 

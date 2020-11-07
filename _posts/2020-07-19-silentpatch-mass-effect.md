@@ -15,6 +15,11 @@ scroll down to [**Download**](#download) section for a download link.*
 
 ***
 
+**{{ "2020-11-07" | date_to_long_string | upcase }} UPDATE:**\\
+Build 2 has been released! This update resolves a bug introduced by SilentPatchME which broke enemy AI during the Virmire mission.
+
+***
+
 * [Introduction](#introduction)
 * [Part 1 -- Research](#part-1)
     * [Prelude](#prelude)
