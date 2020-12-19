@@ -10,6 +10,18 @@ tags: [Articles]
 twitter: {card: "summary_large_image"}
 ---
 
+**{{ "2020-12-19" | date_to_long_string | upcase }} UPDATE:**\\
+Today, CD Projekt RED released a patch 1.05, which includes a fix for the issue covered in this post:
+
+> [AMD SMT] Optimized default core/thread utilization for 4-core and 6-core AMD Ryzen™ processors.
+> 8-core, 12-core and 16-core processors remain unchanged and behaving as intended.
+> This change was implemented in cooperation with AMD and based on tests on both sides
+> indicating that performance improvement occurs only on CPUs with 6 cores and less.
+
+This aligns with the findings of the community regarding the range of CPUs benefiting from this change!
+
+***
+
 As we all know, Cyberpunk 2077 had a rocky start, but it's not unexpected with a game of this scope.
 It came to my attention that it's been investigated that the game doesn't take advantage of [SMT](https://en.wikipedia.org/wiki/Simultaneous_multithreading) 
 on AMD CPUs and that there's a fix for it. While the discovery was legitimate and interesting,
