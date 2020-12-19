@@ -40,6 +40,6 @@ when I tried out [Dolphin](http://dolphin-emu.org/).
 
 *Fix for the issue discussed here has been submitted back to PCSX2's repository via a [pull request](https://github.com/PCSX2/pcsx2/pull/2664).*
 
-{{ "2018-10-31" | date_to_long_string }} update: Fix has been merged into both PCSX2 and wxWidgets. Success!
+{{ "2018-10-31" | date: page.date-format }} update: Fix has been merged into both PCSX2 and wxWidgets. Success!
 
 [^1]: And seemingly me being cursed with a curse of finding issues everywhere.

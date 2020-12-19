@@ -12,7 +12,7 @@ tags: [Releases, Articles]
 *TL;DR - if you are not interested in an in-depth overview of the research done,
 scroll down to [**Part 2 -- implementation**](#part-2--implementation) section for a mod announcement and the download link.*
 
-**{{ "2020-05-02" | date_to_long_string | upcase }} UPDATE:**\\
+**{{ "2020-05-02" | date: page.date-format | upcase }} UPDATE:**\\
 Build 2 has been released! This release fixes numerous reported issues, including DoF issues and an accidental incompatibility with Windows 7.
 For a full changelog, see the [Release page on GitHub](https://github.com/CookiePLMonster/DXHRDC-GFX/releases/latest/).
 

@@ -46,4 +46,4 @@ and lately I also occasionally contribute to several console emulators
 (see my [GitHub activity](https://github.com/CookiePLMonster)).
 
 
-*Last update: {{ "2020-03-22" | date_to_long_string }}*
+*Last update: {{ "2020-03-22" | date: page.date-format }}*

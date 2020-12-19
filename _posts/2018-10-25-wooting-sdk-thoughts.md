@@ -104,4 +104,4 @@ This way the bottommost row would be a fully functional row of "pixels", for any
 
 The list may be expanded with more entries at a later point, so I'll be mentioning any changes over here.
 
-{{ "2018-10-26" | date_to_long_string }} update: Added 7.
+{{ "2018-10-26" | date: page.date-format }} update: Added 7.

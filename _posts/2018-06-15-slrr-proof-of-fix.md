@@ -123,7 +123,7 @@ It has been tailored **only** for Build 936, I do not know what are the effects 
 
 <a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
-**{{ "2018-07-14" | date_to_long_string | upcase }} UPDATE:**\\
+**{{ "2018-07-14" | date: page.date-format | upcase }} UPDATE:**\\
 A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.
 
 # Unresolved issues
