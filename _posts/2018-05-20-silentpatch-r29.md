@@ -44,7 +44,7 @@ GTA Vice City
 GTA San Andreas
 ----------
 Aside from fixes listed below, it's worth to mention that this release removes several features -- namely, *two pass rendering* and *NVC shader* are both gone.
-If you still want to continue using those, try [SkyGfx](http://gtaforums.com/topic/750681-skygfx-ps2-and-xbox-graphics-for-pc) -- it provides both features and they are far superior to my implementations.
+If you still want to continue using those, try [SkyGfx](https://gtaforums.com/topic/750681-skygfx-ps2-and-xbox-graphics-for-pc) -- it provides both features and they are far superior to my implementations.
 
 As for fixes:
 * Several vehicles now have extra animated components: Phoenix hood scoops, Sweeper brushes, Newsvan antenna, radars on several boats, extra flaps on Stuntplane and Beagle

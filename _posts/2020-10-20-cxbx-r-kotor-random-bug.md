@@ -6,7 +6,7 @@ date: 2020-10-20 23:05:00 +0200
 tags: [Articles]
 ---
 
-For the past two weeks, I've been fixing various issues in [Cxbx-Reloaded](http://cxbx-reloaded.co.uk/), the original Xbox emulator.
+For the past two weeks, I've been fixing various issues in [Cxbx-Reloaded](https://cxbx-reloaded.co.uk/), the original Xbox emulator.
 My mini-goal was to get a particular NASCAR game working, and [I succeeded in that](https://youtu.be/YVpLUdSjzZc),
 getting the game from an unbootable state to very close to playable in around one week. Things were going smoothly until I got a report
 that one of my changes breaks another game -- [Star Wars: Knights of the Old Republic](https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(series)#Star_Wars:_Knights_of_the_Old_Republic).

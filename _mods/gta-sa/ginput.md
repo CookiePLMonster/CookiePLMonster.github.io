@@ -23,8 +23,8 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 * Extended support for DualShock 3 controllers and SCP Driver Package - including pressure sensitive buttons and SIXAXIS accelerometers.
 
 <p class="mod-screenshot" align="center">
-<a href="http://i.imgur.com/bKoE8p3.jpg"><img src="http://i.imgur.com/bKoE8p3l.jpg"></a>
-<a href="http://i.imgur.com/hOVRwPV.jpg"><img src="http://i.imgur.com/hOVRwPVl.jpg"></a>
+<a href="https://i.imgur.com/bKoE8p3.jpg"><img src="https://i.imgur.com/bKoE8p3l.jpg"></a>
+<a href="https://i.imgur.com/hOVRwPV.jpg"><img src="https://i.imgur.com/hOVRwPVl.jpg"></a>
 </p>
 
 <div align="center" class="video-container">
@@ -33,7 +33,7 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 
 {% include setup-instructions.html %}
 
-<a href="http://silent.rockstarvision.com/uploads/GInputSA.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
+<a href="https://silent.rockstarvision.com/uploads/GInputSA.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://gtaforums.com/topic/562765-ginput/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
 
 Requires <a href="#asiloader">ASI Loader<a>.

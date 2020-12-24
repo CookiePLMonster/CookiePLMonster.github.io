@@ -33,8 +33,8 @@ and Next/Finish button having its caption updated!
 Fortunately, it's trivially fixable by performing retranslation when creating buttons -- and caching the result.
 This way I can fix it **and** use PCSX2 without wasting too much time and without my OCD weeping due to a single button being glitched...
 
-...and let's hope I don't feel like touching [Xenia](http://xenia.jp/) or [RPCS3](https://rpcs3.net/) soon -- as something similar happened
-when I tried out [Dolphin](http://dolphin-emu.org/).
+...and let's hope I don't feel like touching [Xenia](https://xenia.jp/) or [RPCS3](https://rpcs3.net/) soon -- as something similar happened
+when I tried out [Dolphin](https://dolphin-emu.org/).
 
 ***
 
