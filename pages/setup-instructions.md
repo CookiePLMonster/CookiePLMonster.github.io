@@ -17,6 +17,7 @@ Games used for the presentation do not have any relevance for the steps.
     * [Retail (disc)](#retail)
 2. [Extracting the mod files](#extracting-files)
 3. [Configuration](#configuration)
+4. [Proton/Wine](#proton-wine)
 
 # 1. Locating your game directory {#locating-directory}
 
@@ -92,3 +93,32 @@ _This section is applicable only to select downloads._
    it might appear without one.
 2. Double-click the file to open it in a text editor of choice -- typically Notepad.
 3. Make the necessary changes as instructed by individual mod's configuration files, and save the file.
+
+# 4. Proton/Wine {#proton-wine}
+In order to enable patch loaders you might need to perform a DLL override in your Wine prefix.
+For example, when the patch comes with the `dinput8.dll` file, you need to tell Wine explicitly that it's to be used.
+There's more than one way to achieve it.
+
+1. `WINEDLLOVERRIDES` variable lets you temporarily specify DLL overrides. It can be used from a command line as well as in the Steam launcher.
+   In case of command line, simply prepend the usual start command with `WINEDLLOVERRIDES="dinput8=n,b" `. For Steam, head to game's properties
+   and set `LAUNCH OPTIONS` to `WINEDLLOVERRIDES="dinput8=n,b" %command%`.
+    <p align="center">
+    <img src="{% link assets/img/setup/steam-wine-dll-override.png %}">
+    </p>
+2. Use `winecfg` tool to make a permanent override for a specific Wine prefix. First, you need to locate Wine prefix you wish to modify.
+   In case of Proton, Steam creates Wine prefix for each game in `$HOME/.steam/steam/steamapps/compatdata/game_id_goes_here/pfx`. For example,
+   for Yakuza 3 Remastered it will be `$HOME/.steam/steam/steamapps/compatdata/1088710/pfx` -- you can get game's id from the URL in Steam Store.
+   Then you need to run `winecfg` with the path from the previous step:
+   ```
+   WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/1088710/pfx" winecfg
+   ```
+   Select `Libraries` tab and fill the combo box with the name of the library you wish to override and hit `Add`.
+   You can verify that it's been added to the list below with `(native, builtin)` suffix. Then close the window with `OK` button.
+    <p align="center">
+    <img src="{% link assets/img/setup/winecfg-dll-override.png %}">
+    </p>
+
+
+Related Wine documentation:
+- [More on DLL overrides](https://wiki.winehq.org/Wine_User's_Guide#DLL_Overrides)
+- [More on WINEDLLOVERRIDES method](https://wiki.winehq.org/Wine_User's_Guide#WINEDLLOVERRIDES.3DDLL_Overrides)
