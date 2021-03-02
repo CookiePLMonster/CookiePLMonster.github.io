@@ -17,6 +17,7 @@ permalink: /links/
 # Other people patching older games
 * [PS2Wide](http://ps2wide.net/pc.html) -- widescreen patches for PC and console games from nemesis2000
 * [VEG's Blog](https://veg.by/en/) -- patches for Need for Speed III and Need for Speed 4
+* [Verok's Official Blog](https://verokster.blogspot.com/) -- patches for Need for Speed II SE and Need for Speed: Porsche Unleashed
 * [Vike's GTA2 update](https://gtamp.com/gta2/) -- patch for Grand Theft Auto 2
 * [Widescreen Fixes Pack](https://thirteenag.github.io/wfp) -- plugins to make or improve widescreen resolutions support in PC games from ThirteenAG
 
