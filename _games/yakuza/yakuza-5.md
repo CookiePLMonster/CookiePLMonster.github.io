@@ -7,7 +7,7 @@ feature-img: "assets/img/games/bg/yakuza-5.jpg"
 parent-series: "yakuza"
 game-series: "yakuza-5"
 bootstrap: true
-order: 2
+order: 3
 ---
 
 {% include mods-list.html series=page.game-series %}
