@@ -2,7 +2,7 @@
 title: Gold Filter Restoration
 game-series: "dxhrdc"
 excerpt: "Restores post-processing from the original Human Revolution."
-date: 10-05-2020
+date: 21-04-2021
 ---
 
 A plugin for Deus Ex: Human Revolution Director's Cut, restoring the gold filter, post processing and shading from the original Deus Ex: Human Revolution.
