@@ -5,7 +5,7 @@ order: 0
 date: 27-09-2020
 ---
 
-*Cheat originally made by HugoStanced, ported to versions other than NTSC-U 1.0 and PAL by me.*
+*Cheat originally made by HugoPocked, ported to versions other than NTSC-U 1.0 and PAL by me.*
 
 A 16:9 cheat that does not cut off the objects on screen edges.
 When using this cheat, a 16:9 Widescreen Hack should be **disabled**.
