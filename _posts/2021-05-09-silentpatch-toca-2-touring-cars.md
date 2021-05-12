@@ -133,6 +133,11 @@ This SilentPatch fixes plenty more issues, though. The full changelog is as foll
 * <i class="fas fa-cog"></i> The center interior camera now uses a full range of steering animations and gear shifting animations, just like the main interior camera. This feature can be toggled via the INI file.
 * <i class="fas fa-cog"></i> Driver's hands and the steering wheel can now be toggled on/off via the INI file independently. This feature might be useful for specific steering wheel setups to avoid a "duplicate steering wheel".
 
+# Acknowledgements
+
+Fixes related to the widescreen support have been based on the work of [AuToMaNiAk005](https://www.youtube.com/user/AuToMaNiAk005) -- his extremely useful widescreen/ultrawide tutorials saved me a lot
+of time researching the way TOCA 2 handles aspect ratios and lists resolutions.
+
 ***
 
 The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:

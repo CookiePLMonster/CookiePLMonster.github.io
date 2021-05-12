@@ -30,6 +30,9 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fas fa-cog"></i> The center interior camera now uses a full range of steering animations and gear shifting animations, just like the main interior camera. This feature can be toggled via the INI file.
 * <i class="fas fa-cog"></i> Driver's hands and the steering wheel can now be toggled on/off via the INI file independently. This feature might be useful for specific steering wheel setups to avoid a "duplicate steering wheel".
 
+## Credits
+* [AuToMaNiAk005](https://www.youtube.com/user/AuToMaNiAk005) - for his extremely useful widescreen/ultrawide tutorials I used as a base for my implementation of widescreen & high resolutions support
+
 <div align="center" class="video-container">
 <iframe src="https://www.youtube.com/embed/QVSzsOuwAA8" frameborder="0" allowfullscreen></iframe>
 </div>
