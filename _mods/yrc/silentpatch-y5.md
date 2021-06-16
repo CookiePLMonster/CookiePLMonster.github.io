@@ -1,10 +1,13 @@
 ---
 title: SilentPatch
 title-image: "assets/img/mods/silentpatch-yk2.png"
-game-series: ["yakuza-3", "yakuza-4"]
+game-series: ["yakuza-5"]
 excerpt: "Reducing CPU usage and fixing other bugs."
 date: 27-02-2021
+deprecated-caption: "DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only."
 ---
+
+**WARNING: DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only.**
 
 Yakuza Remastered Collection is a collection consisting of Yakuza 3, Yakuza 4, and Yakuza 5,
 released on PC in January 2021. While currently all 3 games have been patched officially,
@@ -20,9 +23,7 @@ especially in Yakuza 5.
 * Fixed a potential random startup crash.
 * Fixed several issues related to non-ASCII user names, most notably a freeze when using Print Circle photo booths in Yakuza 5.
 
-{% include setup-instructions.html %}
 
 **This patch only works with the Steam version of the game!**
 
-<a href="https://github.com/CookiePLMonster/SilentPatchYRC/releases/latest/download/SilentPatchYRC.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/SilentPatchYRC" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
