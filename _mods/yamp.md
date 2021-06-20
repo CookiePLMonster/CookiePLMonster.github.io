@@ -2,7 +2,7 @@
 title: "Yakuza Arcade Machines Player"
 game-series: ["vf5fs"]
 excerpt: "Play Virtua Fighter 5: Final Showdown on PC."
-date: 01-06-2021
+date: 20-06-2021
 ---
 
 Yakuza Arcade Machines Player is a launcher that allows you to run Virtua Fighter 5: Final Showdown,
