@@ -1,5 +1,5 @@
-{% assign items = site.mods | where: "game-series", include.series | sort: 'order' %}
-{% for mod in items %}
+{% assign mods_list_items = site.mods | where: "game-series", include.series | sort: 'order' %}
+{% for mod in mods_list_items %}
 <div>
     {% assign modid = mod.id | split: '/' | last %}
     <div style="display:flex;justify-content:space-between;align-items:flex-end;">
@@ -39,13 +39,13 @@
     
     <div class="panel panel-default">
     <div class="panel-heading">
-    {% if items.size > 1 %}
+    {% if mods_list_items.size > 1 %}
         <a class="expand-link" data-toggle="collapse" href="#{{modid}}-cps" role="button">Click to expand...</a>
     {% else %}
         &zwnj;
     {% endif %}
     </div>
-    {% if items.size > 1 %}
+    {% if mods_list_items.size > 1 %}
     <div class="panel-body collapse" id="{{modid}}-cps">
     {% else %}
     <div class="panel-body">

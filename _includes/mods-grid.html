@@ -1,8 +1,8 @@
 <!-- Mods Grid Section -->
 
 <div class="mods-grid">
-	{% assign items = include.items | sort: "order" %}
-    {% for item in items %}
+	{% assign mods_grid_items = include.items | sort: "order" %}
+    {% for item in mods_grid_items %}
     {% unless item.hide %}
     <div class="mods-cell"
     {% if include.cell-size %}
