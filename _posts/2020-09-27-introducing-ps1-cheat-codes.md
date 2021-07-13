@@ -10,7 +10,7 @@ tags: [Releases, Other]
 ---
 
 *TL;DR - if you are not interested in a short rant of mine and came here to get the cheat codes,
-head to the [**Sony PlayStation**]({% link _games/consoles/ps1.md %}) page for a list of games and cheat codes.*
+head to the [**Sony PlayStation**]({% link _games/misc/consoles.md %}) page for a list of games and cheat codes.*
 
 ***
 
@@ -28,7 +28,7 @@ just like mods for PC games; starting with cheat codes for PS1 games, but it may
 
 # Current and planned codes
 
-I have created a [**Sony PlayStation**]({% link _games/consoles/ps1.md %}) page, listing PS1 games I currently have codes for.
+I have created a [**Sony PlayStation**]({% link _games/misc/consoles.md %}) page, listing PS1 games I currently have codes for.
 At the moment of writing this post, it includes the following codes:
 
 * Gran Turismo

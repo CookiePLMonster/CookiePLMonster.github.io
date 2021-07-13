@@ -4,7 +4,7 @@ title: "Gran Turismo 2"
 excerpt: "My GameShark cheats for Gran Turismo 2: Widescreen Hack, 60 FPS, Metric system."
 image: "assets/img/games/gran-turismo-2.jpg"
 feature-img: "assets/img/games/bg/gran-turismo-2.jpg"
-parent-series: "ps1"
+parent-series: "consoles"
 game-series: "gran-turismo-2"
 order: 1
 bootstrap: true

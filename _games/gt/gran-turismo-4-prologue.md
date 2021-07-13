@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Gran Turismo 4 Prologue"
+excerpt: "My PNACH codes for Gran Turismo 4 Prologue: Deinterlace patch."
+image: "assets/img/games/gran-turismo-4-prologue.jpg"
+feature-img: "assets/img/games/bg/gran-turismo-4-prologue.jpg"
+parent-series: "consoles"
+game-series: "gran-turismo-4-prologue"
+order: 10
+bootstrap: true
+---
+
+{% include mods-list.html series=page.game-series %}

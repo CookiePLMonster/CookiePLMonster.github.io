@@ -142,7 +142,10 @@ Ideally, there should be a way to enable this mode for specific applications, bu
 As a plugin based on Detours, it can be injected to a newly created process as a plugin (could even use [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases)),
 or Detours utilities could be used to create a process with this DLL injected right away. Alternately, it can be loaded by the game itself, which is exactly what I did in my case.
 
-Uptime Faker can be downloaded and previewed on GitHub: \\
+For a download link, head to *Tools*: \\
+<a href="{% link _games/misc/tools.md %}#uptime-faker" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Uptime Faker</a>
+
+Uptime Faker can also be downloaded and previewed on GitHub: \\
 <a href="https://github.com/CookiePLMonster/UptimeFaker" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Check Uptime Faker on GitHub</a>
 
 ***

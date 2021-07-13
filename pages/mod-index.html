@@ -10,7 +10,7 @@ hide: true
 <ul>
 {% assign items = site.games | sort_natural: "title" %}
 {% for item in items %}
-{% unless item.hide %}
+{% unless item.hide or item.hide-on-list %}
 {% assign modlist = site.mods | where: "game-series", item.game-series %}
 {% if modlist.size > 0 %}
 <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
