@@ -8,7 +8,7 @@ hide: true
 ---
 
 <ul>
-{% assign items = site.games | sort: "title" %}
+{% assign items = site.games | sort_natural: "title" %}
 {% for item in items %}
 {% unless item.hide %}
 {% assign modlist = site.mods | where: "game-series", item.game-series %}
