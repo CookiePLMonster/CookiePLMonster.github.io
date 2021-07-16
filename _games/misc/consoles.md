@@ -10,7 +10,7 @@ order: 100
 {% assign items = site.games | where:"parent-series", page.game-series %}
 
 # PlayStation games
-*Recommended emulator: DuckStation*
+*Recommended emulator: [DuckStation](https://github.com/stenzek/duckstation/)*
 
 {% assign ps1_games = items | where_exp: "item", "item.order < 10" %}
 {% include mods-grid.html items=ps1_games cell-size="33%" %}
@@ -18,7 +18,7 @@ order: 100
 ***
 
 # PlayStation 2 games
-*Recommended emulator: PCSX2*
+*Recommended emulator: [PCSX2](https://pcsx2.net/)*
 
 {% assign ps2_games = items | where_exp: "item", "item.order >= 10" | where_exp: "item", "item.order < 100" %}
 {% include mods-grid.html items=ps2_games cell-size="33%" %}
