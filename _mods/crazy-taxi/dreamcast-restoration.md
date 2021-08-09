@@ -32,6 +32,10 @@ but also made unreachable by customers.
 <a href="https://i.imgur.com/YPt9wLw.jpg"><img src="https://i.imgur.com/YPt9wLwl.jpg"></a>
 </p>
 
+<div align="center" class="video-container">
+<iframe src="https://www.youtube.com/embed/RX2ULEL9U5w" frameborder="0" allowfullscreen></iframe>
+</div>
+
 {% include setup-instructions.html %}
 
 <a href="https://github.com/CookiePLMonster/CT-DC/releases/latest/download/CT-DC.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\

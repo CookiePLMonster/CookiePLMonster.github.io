@@ -134,6 +134,10 @@ even though this destination effectively goes unused.
 With this change, and later with restoring the original destination names, a brand new **Dreamcast Restoration 2.0** is ready! A joint effort by myself and Alexvgz, now not requiring any file replacements,
 is available for download on my Crazy Taxi page, so either continue reading for Part 2 or go straight to the [**Download**](#download) section for a download link.
 
+<div align="center" class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RX2ULEL9U5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 # Part 2 -- SilentPatch
 
 When working on Dreamcast Restoration 2.0, I couldn't help but notice a few annoyances about this version of the game. For arguably the most severe of them, the
