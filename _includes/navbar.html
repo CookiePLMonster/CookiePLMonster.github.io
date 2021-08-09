@@ -48,6 +48,26 @@
           {% endif %}
         {% endfor %}
 
+        <!-- BEGIN TEMP BUTTONS -->
+        <li class="separator"> | </li>
+        <li class="separator"> | </li>
+        <li>
+            <a href="https://twitter.com/{{ site.theme_settings.twitter }}" title="{{ site.theme_settings.str_follow_on }} Twitter">
+                <i class="fab fa-lg fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_follow_on }} GitHub">
+                <i class="fab fa-lg fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/user/{{ site.theme_settings.youtube }}" title="{{ site.theme_settings.str_follow_on }} YouTube">
+                <i class="fab fa-lg fa-youtube"></i>
+            </a>
+        </li>
+        <!-- END TEMP BUTTONS -->
+
         <!-- Dark mode toggle -->
         <li class="separator theme-toggle-elem"> | </li>
         <li class="separator theme-toggle-elem"> | </li>
