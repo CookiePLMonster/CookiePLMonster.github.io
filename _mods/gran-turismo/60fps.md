@@ -2,12 +2,12 @@
 title: 60 FPS
 game-series: "gran-turismo"
 order: 0
-date: 01-12-2020
+date: 10-08-2021
 ---
 
 *Cheat originally made by asasega. I ported it to more game versions and expanded it with more features.*
 
-An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects, originally disabled for performance reasons when running the game in Hi-Fi mode.
+An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the rear view mirror, originally disabled for performance reasons when running the game in Hi-Fi mode.
 
 <!-- <p class="mod-screenshot" align="center">
 <a href="https://i.imgur.com/hizKXrW.jpg"><img src="https://i.imgur.com/hizKXrWl.jpg"></a>
