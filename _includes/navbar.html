@@ -48,6 +48,7 @@
           {% endif %}
         {% endfor %}
 
+        {%if site.theme_settings.extra_navbar_socials %}
         <!-- BEGIN TEMP BUTTONS -->
         <li class="separator"> | </li>
         <li class="separator"> | </li>
@@ -67,6 +68,7 @@
             </a>
         </li>
         <!-- END TEMP BUTTONS -->
+        {% endif %}
 
         <!-- Dark mode toggle -->
         <li class="separator theme-toggle-elem"> | </li>
