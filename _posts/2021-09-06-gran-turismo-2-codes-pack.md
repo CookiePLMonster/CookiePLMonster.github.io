@@ -61,9 +61,9 @@ With this script, you may generate a widescreen code for all supported game vers
 </p>
 
 ## Full detail AI cars + 8MB RAM cheat
-By default, Gran Turismo and Gran Turismo 2 both use very aggressive LODs for AI cars. The highest LOD level is reserved for the player, with lower LOD levels used by the AI
-depending on distance from the camera. When playing the game on the native resolution it's nearly impossible to notice, but of course with upscaling LODs become much more obvious
-and jarring.
+By default, Gran Turismo and Gran Turismo 2 both use very aggressive LODs for AI cars. The player's car is locked to the highest LOD level, while AI cars cycle between
+three LDO models depending on distance from the camera.
+When playing the game on the native resolution it's nearly impossible to notice, but of course with upscaling LODs become much more obvious and jarring.
 
 To counter this, I created a cheat forcing all cars on the track to use the highest LOD level, previously reserved for the player. As a result, the game looks far better than originally!
 <div style="overflow:auto;padding:10px">
@@ -90,7 +90,7 @@ a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from G
 </p>
 
 **NOTE:** Earlier versions of DuckStation had a bug in the PGXP implementation where moving the polygon buffers to the 8MB RAM region caused artifacts.
-If when using these cheats and PGXP the geometry looks wobbly and/or looks as if it is falling apart, please update DuckStation.
+If the geometry looks wobbly while using these cheats with PGXP or it looks like it's falling apart, please update DuckStation.
 
 ## HUD & rear view mirror toggle
 By default, it is impossible to completely hide the UI in GT2 during races or replays. Additionally, the rear view mirror only shows in the bumper camera
