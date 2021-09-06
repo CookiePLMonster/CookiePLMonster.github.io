@@ -6,7 +6,7 @@ thumbnail: "assets/img/posts/gt2-cheats/gt2-banner.jpg"
 feature-img: "assets/img/posts/gt2-cheats/gt2-banner.jpg"
 image: "assets/img/posts/gt2-cheats/gt2-banner.jpg"
 twitter: {card: "summary_large_image"}
-date: 2021-09-06 17:52:00 +0200
+date: 2021-09-06 18:00:00 +0200
 tags: [Releases]
 ---
 
