@@ -18,5 +18,5 @@ date: 2019-08-19
 Hotline Miami Collection contains both legendary games in the neon-soaked, brutally-challenging Hotline Miami series from Dennaton Games.
 
 > I worked on ports to the aforementioned platforms as a generalist engine programmer, being responsible for porting
-> miscellaneous systems as well as bugfixing.
+> general systems as well as bugfixing.
 <div>

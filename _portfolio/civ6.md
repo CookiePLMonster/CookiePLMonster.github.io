@@ -18,5 +18,5 @@ date: 2019-11-21
 Originally created by legendary game designer Sid Meier, Civilization is a turn-based strategy game in which you attempt to build an empire to stand the test of time.
 Explore a new land, research technology, conquer your enemies, and go head-to-head with history’s most renowned leaders as you attempt to build the greatest civilization the world has ever known.
 
-> On both target platforms, I was involved in miscellaneous systems and bugfixes. On Android, I was additionally responsible for setting up the turn-limited demo functionality.
+> On both target platforms, I was involved in general porting and bugfixing. On Android, I was additionally responsible for setting up the turn-limited demo functionality.
 </div>

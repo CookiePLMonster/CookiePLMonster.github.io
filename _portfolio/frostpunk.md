@@ -19,7 +19,7 @@ Frostpunk is the first society survival game. As the ruler of the last city on E
 it is your duty to manage both its citizens and its infrastructure. What decisions will you make to ensure your society's survival?
 What will you do when pushed to breaking point? Who will you become in the process?
 
-> On macOS, I was involved in miscellaneous systems and bugfixes. On consoles, we were tasked with porting the DLCs into the console
+> On macOS, I was involved in general porting and bugfixing. On consoles, we were tasked with porting the DLCs into the console
 > version of Frostpunk. I was involved in that process, as well as in fixing whatever issues that arised and tailoring the DLC experience
 > for consoles.
 </div>
