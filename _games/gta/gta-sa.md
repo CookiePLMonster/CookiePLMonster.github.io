@@ -8,5 +8,6 @@ game-series: "gta-sa"
 order: 2
 bootstrap: true
 ---
+**This page contains modifications only for the "classic" PC version of GTA: San Andreas. The Definitive Edition is not supported.**
 
 {% include mods-list.html series=page.game-series %}

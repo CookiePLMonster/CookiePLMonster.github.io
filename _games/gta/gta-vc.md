@@ -8,5 +8,6 @@ game-series: "gta-vc"
 order: 1
 bootstrap: true
 ---
+**This page contains modifications only for the "classic" PC version of GTA: Vice City. The Definitive Edition is not supported.**
 
 {% include mods-list.html series=page.game-series %}
