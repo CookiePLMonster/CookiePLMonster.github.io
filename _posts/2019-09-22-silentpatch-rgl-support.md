@@ -30,7 +30,7 @@ and make SP only skip that specific fix.
 
 **Important note:** Rockstar Games Launcher forcibly overwrites any modified files even if you disable updates for the game!
 Because of that, my ASI Loader is nearly unusable, as it's removed every time you restart RGL. Because of this,
-I recommend using [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v4.52/Ultimate-ASI-Loader.zip), because it does not overwrite any files.
+I recommend using [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip), because it does not overwrite any files.
 
 That said, do note that RGL version receives the same level of support as a Steam release,
 that is only **some** fixes are currently supported. Those are:
