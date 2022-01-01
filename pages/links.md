@@ -15,6 +15,7 @@ permalink: /links/
 * [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/) -- blog of Raymond Chen
 
 # Other people patching older games
+* [AuToMaNiAk005's YouTube Channel](https://www.youtube.com/user/AuToMaNiAk005) -- widescreen patches for about any old racing game there is
 * [PS2Wide](http://ps2wide.net/pc.html) -- widescreen patches for PC and console games from nemesis2000
 * [VEG's Blog](https://veg.by/en/) -- patches for Need for Speed III and Need for Speed 4
 * [Verok's Official Blog](https://verokster.blogspot.com/) -- patches for Need for Speed II SE and Need for Speed: Porsche Unleashed
