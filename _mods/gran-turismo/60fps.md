@@ -9,6 +9,8 @@ date: 24-10-2021
 
 An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the rear view mirror, originally disabled for performance reasons when running the game in Hi-Fi mode.
 
+**WARNING:** When this cheat is in use, existing replays will break.
+
 <!-- <p class="mod-screenshot" align="center">
 <a href="https://i.imgur.com/hizKXrW.jpg"><img src="https://i.imgur.com/hizKXrWl.jpg"></a>
 </p> -->

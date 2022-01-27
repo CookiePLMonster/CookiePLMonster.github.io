@@ -10,6 +10,8 @@ date: 06-09-2021
 An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the rear view mirror, originally disabled for performance reasons when running the game in Hi-Fi mode
 (that mode is not present in GT2, but it's a leftover from GT1).
 
+**WARNING:** When this cheat is in use, existing replays and AI ghost in Rally events will break. Consider switching back to 30 FPS for those events.
+
 <div align="center" class="video-container">
 <iframe src="https://www.youtube.com/embed/QOQ56HKYgJg" frameborder="0" allowfullscreen></iframe>
 </div>
