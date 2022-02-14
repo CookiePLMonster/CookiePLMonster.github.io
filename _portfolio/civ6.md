@@ -8,7 +8,7 @@ date: 2019-11-21
 <div class="portfolio-page-right" markdown="1">
 **With:**<br>Abstraction
 
-**Engine:**<br>*proprietary*
+**Engine:**<br>*Proprietary*
 
 **Release date:**<br>{{ "2019-11-21" | date: page.date-format }} (X1)<br>{{ "2020-08-13" | date: page.date-format }} (Android)
 
