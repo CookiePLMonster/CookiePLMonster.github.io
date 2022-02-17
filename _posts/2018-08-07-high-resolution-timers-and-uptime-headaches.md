@@ -121,9 +121,12 @@ Now scroll back to the code snippet posted earlier -- it should now be obvious w
 
 A proper way to handle this is to keep those calculations as integers and only convert the result (which is a relative time value, which should be manageably small) to a float, like so:
 ```cpp
-timer_freq.QuadPart /= 1000; // To convert frequency from 'ticks per second' to 'ticks per millisecond'
-return static_cast<float>( (timer_act.QuadPart - timer_begin.QuadPart) / timer_freq.QuadPart );
+return static_cast<double>((timer_act.QuadPart - timer_begin.QuadPart) * 1000) / timer_freq.QuadPart;
 ```
+
+**{{ "2022-02-17" | date: page.date-format | upcase }} UPDATE:**\\
+An earlier version of this code snippet divided `timer_freq` by 1000 (as you may have noticed from the comments under the article).
+This has since been changed to a multiplication, as dividing frequency could have resulted in the loss of precision.
 
 With similar changes applied to the code, even months worth of uptime are not going to cause any problems!
 However, we need a way to reliably test it without having to leave PC running for weeks. And so for this, I have created an utility.
