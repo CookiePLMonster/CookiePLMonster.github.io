@@ -1,7 +1,7 @@
 ---
 title: "Full detail AI cars"
 game-series: "gran-turismo-2"
-order: 4
+order: 11
 date: 06-09-2021
 ---
 

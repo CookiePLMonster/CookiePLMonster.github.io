@@ -1,7 +1,7 @@
 ---
 title: Replay cameras in race
 game-series: "gran-turismo-2"
-order: 7
+order: 21
 date: 06-09-2021
 ---
 

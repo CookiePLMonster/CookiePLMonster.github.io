@@ -1,7 +1,7 @@
 ---
 title: "Slightly higher draw distance"
 game-series: "gran-turismo-2"
-order: 5
+order: 12
 date: 06-09-2021
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "True Endurance"
 game-series: "gran-turismo-2"
-order: 8
+order: 22
 date: 09-10-2021
 ---
 

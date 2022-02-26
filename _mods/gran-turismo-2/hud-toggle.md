@@ -1,7 +1,7 @@
 ---
 title: "HUD & rear view mirror toggle"
 game-series: "gran-turismo-2"
-order: 6
+order: 20
 date: 06-09-2021
 ---
 
