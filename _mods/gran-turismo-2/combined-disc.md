@@ -28,6 +28,14 @@ launch it with `python setup.py` or `python3 setup.py` in the Command Prompt.
 It's useful to easily input full paths to the Arcade and Simulation discs.
 5. Wait for the setup to complete. Please be patient -- it takes a while, as it needs to repack discs and the game assets.
 
+## Version compatibility
+The modification is compatible with all game versions, **except for NTSC-J v1.0**.
+
+## Hardware compatibility
+* PSP/PS Vita can use the full version of the mod in PBP format.
+* On PS1, the full version is compatible with [XStation](https://castlemaniagames.com/products/xstation).
+  You should opt for the lightweight version (without FMVs) **only** if burning the image on a physical CD.
+
 ## Credits
 * [Ash_735](https://twitter.com/Ash_735) - menu textures
 * [DAGINATSUKO](https://daginatsuko.com/) - CD label
