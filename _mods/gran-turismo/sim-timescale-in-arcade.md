@@ -14,5 +14,7 @@ A clip from Submaniac93 illustrating the differences well:
 <iframe src="https://www.youtube.com/embed/x-HdmE6tF0A" frameborder="0" allowfullscreen></iframe>
 </div>
 
+{% include setup-instructions.html platform="ps1" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo/Sim%20timescale%20in%20Arcade/NTSC-U%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo/Sim%20timescale%20in%20Arcade/PAL.cht" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

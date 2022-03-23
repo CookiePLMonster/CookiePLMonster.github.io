@@ -19,4 +19,6 @@ With this code, I modified one of the alternate controls sets to swap L1/R1 with
 <a href="{% link assets/img/posts/console-codes-2/td-shoulders.jpg %}"><img src="{% link assets/img/posts/console-codes-2/td-shoulders.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Test%20Drive%20Eve%20of%20Destruction/Shoulders%20control%20mapping/5D0244D3_shoulders.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>

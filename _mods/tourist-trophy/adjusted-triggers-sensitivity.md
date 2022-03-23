@@ -11,5 +11,7 @@ is tailored for analog buttons of the DualShock 2 controller, and therefore inpu
 press is already registered as a 100% input, so precise throttle control is hard. With this code, I've removed this scaling as much as reasonably possible,
 so now 100% input registers from a near full press of the trigger, therefore making the experience closer to how the later Gran Turismo games handle it.
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/FF9C0E93_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/CA9AA903_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

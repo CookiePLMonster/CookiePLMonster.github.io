@@ -16,6 +16,8 @@ To counter this, I created a cheat forcing all cars on the track to use the high
 <a href="{% link assets/img/posts/gt2-cheats/lod-race-after.jpg %}"><img src="{% link assets/img/posts/gt2-cheats/lod-race-after.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps1" %}
+
 ### Arcade & Simulation Discs
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Full%20detail%20AI%20cars/NTSC-U%201.1%2C%20NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1, NTSC-U 1.2</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Full%20detail%20AI%20cars/PAL.cht" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\

@@ -13,5 +13,7 @@ A code disabling interlacing in the game, resulting in a sharper image.
 <a href="https://i.imgur.com/gSda5j8.png"><img src="https://i.imgur.com/gSda5j8l.png"></a>
 </p>
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Deinterlace/3FB69323_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Deinterlace/EF258742_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J</a>

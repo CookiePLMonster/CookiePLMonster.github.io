@@ -29,5 +29,7 @@ Available units:
 <a href="{% link assets/img/posts/console-codes-2/gt4p-units.jpg %}"><img src="{% link assets/img/posts/console-codes-2/gt4p-units.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/3FB69323_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/EF258742_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J</a>

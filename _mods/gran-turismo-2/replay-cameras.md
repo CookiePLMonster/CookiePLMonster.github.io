@@ -12,6 +12,8 @@ By default, Gran Turismo 2 has 3 camera modes in race, but 9 modes in replays, w
 <a href="{% link assets/img/posts/gt2-cheats/cameras-2.jpg %}"><img src="{% link assets/img/posts/gt2-cheats/cameras-2.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps1" %}
+
 ### Arcade & Simulation Discs
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Replay%20cameras/NTSC-U%201.1%2C%20NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1, NTSC-U 1.2</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Replay%20cameras/PAL.cht" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

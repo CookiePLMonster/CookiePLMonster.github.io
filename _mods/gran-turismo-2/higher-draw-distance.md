@@ -13,6 +13,8 @@ With this cheat, I enabled the replay draw distance in races.
 <a href="{% link assets/img/posts/gt2-cheats/draw-distance-after.jpg %}"><img src="{% link assets/img/posts/gt2-cheats/draw-distance-after.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps1" %}
+
 ### Arcade & Simulation Discs
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Higher%20draw%20distance/NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Higher%20draw%20distance/NTSC-U%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a> \\

@@ -6,7 +6,7 @@ image: "assets/img/games/tourist-trophy.jpg"
 feature-img: "assets/img/games/bg/tourist-trophy.jpg"
 parent-series: "consoles"
 game-series: "tourist-trophy"
-order: 14
+order: 17
 bootstrap: true
 ---
 

@@ -7,7 +7,7 @@ hide: true
 ---
 
 These instructions are general and apply to every download from this website.
-Games used for the presentation do not have any relevance for the steps.
+These steps apply to any game.
 
 1. [Locating your game directory](#locating-directory)
     * [Steam](#steam)

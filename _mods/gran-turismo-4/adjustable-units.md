@@ -28,4 +28,6 @@ Available units:
 <a href="{% link assets/img/posts/console-codes-2/gt4fp-units.jpg %}"><img src="{% link assets/img/posts/console-codes-2/gt4fp-units.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20First%20Preview/Adjustable%20units/E906EA37_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J (GT4 First Preview)</a>

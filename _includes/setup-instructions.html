@@ -1,1 +1,7 @@
+{% if include.platform == 'ps1' %}
+<a href="{% link pages/setup-instructions-ps1.md %} " class="button docs" role="button" target="_blank"><i class='fas fa-wrench'></i> Setup instructions</a>
+{% elsif include.platform == 'ps2' %}
+<a href="{% link pages/setup-instructions-ps2.md %} " class="button docs" role="button" target="_blank"><i class='fas fa-wrench'></i> Setup instructions</a>
+{% else %}
 <a href="{% link pages/setup-instructions.md %} " class="button docs" role="button" target="_blank"><i class='fas fa-wrench'></i> Setup instructions</a>
+{% endif %}

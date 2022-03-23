@@ -13,6 +13,8 @@ were finished.
 <a href="{% link assets/img/posts/console-codes-2/gt2-true-endurance.jpg %}"><img src="{% link assets/img/posts/console-codes-2/gt2-true-endurance.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps1" %}
+
 ### Arcade & Simulation Discs
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a> \\

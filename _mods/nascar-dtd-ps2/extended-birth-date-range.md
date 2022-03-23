@@ -13,4 +13,6 @@ so in this cheat, I lifted it enough to future proof it for a very long time -- 
 <a href="{% link assets/img/posts/console-codes-2/nascar-birthdate.jpg %}"><img src="{% link assets/img/posts/console-codes-2/nascar-birthdate.jpg %}"></a>
 </p>
 
+{% include setup-instructions.html platform="ps2" %}
+
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Extended%20valid%20birth%20date%20range/2EA87CC5_birthdate.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
