@@ -8,7 +8,7 @@ date: 15-03-2022
 A new in-race camera mode from Gran Turismo 4 Prologue and Gran Turismo 4 First Preview.
 
 <p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/izsTmlP.jpg["><img src="https://i.imgur.com/izsTmlPl.jpg["></a>
+<a href="https://i.imgur.com/izsTmlP.jpg"><img src="https://i.imgur.com/izsTmlPl.jpg"></a>
 </p>
 
 {% include setup-instructions.html platform="ps2" %}
