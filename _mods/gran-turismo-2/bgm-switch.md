@@ -2,10 +2,10 @@
 title: "BGM Switch"
 game-series: "gran-turismo-2"
 order: 23
-date: 17-04-2022
+date: 23-04-2022
 ---
 
-This cheat allows for switching the in-race music by pressing `R3`.
+This cheat allows for switching the in-race music by pressing `R3`. Holding 'R3' will mute music instead.
 
 {% include setup-instructions.html platform="ps1" %}
 
