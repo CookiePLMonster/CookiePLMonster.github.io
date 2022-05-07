@@ -2,7 +2,7 @@
 title: SilentPatch
 game-series: "scarface"
 excerpt: "Fixed graphical corruptions and noticeable performance improvements."
-date: 12-02-2022
+date: 07-05-2022
 ---
 
 Scarface: The World is Yours is one of these games which nowadays are unplayable out of the box.
@@ -24,6 +24,11 @@ In an unlikely case this causes issues, CPU core affinity can be restored to def
 * Introduced a cache for some D3D resources used by the game, dramatically reducing the amount of stutter when roaming around the city
 * Made the game list all selectable resolutions instead of a cherry picked list
 * Moved the game's settings from the Registry to settings.ini in the game directory - this resolves possible issues with saving settings
+* <i class="fas fa-cog"></i> Added an option to adjust the camera speed from settings.ini via a `CameraSpeedMultiplier` option
+* <i class="fas fa-cog"></i> Added an option to adjust on-foot Field of View from settings.ini via a `FOV` option
+
+## Credits
+* [ermaccer](https://github.com/ermaccer) - `CameraSpeedMultiplier` and `FOV` options
 
 <p class="mod-screenshot" align="center">
 <a href="https://i.imgur.com/XnNcJpM.png"><img src="https://i.imgur.com/XnNcJpMl.png"></a>
