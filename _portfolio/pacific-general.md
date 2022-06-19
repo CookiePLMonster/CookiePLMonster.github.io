@@ -6,7 +6,7 @@ feature-img: "assets/img/portfolio/pacific-general.jpg"
 date: 2021-09-16
 ---
 <div class="portfolio-page-right" markdown="1">
-**With:**<br>*Independent*
+**With:**<br>*Independent*, for SNEG
 
 **Engine:**<br>*Proprietary*
 

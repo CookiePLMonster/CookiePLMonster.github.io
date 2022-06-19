@@ -6,7 +6,7 @@ feature-img: "assets/img/portfolio/industry-giant-2.jpg"
 date: 2022-02-14
 ---
 <div class="portfolio-page-right" markdown="1">
-**With:**<br>*Independent*
+**With:**<br>*Independent*, for Toplitz Productions
 
 **Engine:**<br>*Proprietary*
 

@@ -6,7 +6,7 @@ feature-img: "assets/img/posts/crc-extreme/crc-extreme.jpg"
 date: 2018-09-19
 ---
 <div class="portfolio-page-right" markdown="1">
-**With:**<br>*Independent*
+**With:**<br>*Independent*, for Invictus Games
 
 **Engine:**<br>*Proprietary*
 
