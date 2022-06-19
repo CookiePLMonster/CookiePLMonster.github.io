@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "SNK Heroines: Tag Team Frenzy"
 image: "assets/img/portfolio/thumb/snk-heroines.jpg"
 feature-img: "assets/img/portfolio/snk-heroines.png"

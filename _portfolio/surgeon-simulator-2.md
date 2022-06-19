@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Surgeon Simulator 2: Access All Areas"
 image: "assets/img/portfolio/thumb/ss2.jpg"
 feature-img: "assets/img/portfolio/ss2.jpg"

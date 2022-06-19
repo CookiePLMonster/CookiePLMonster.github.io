@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Stranded Deep"
 image: "assets/img/portfolio/thumb/stranded-deep.jpg"
 feature-img: "assets/img/portfolio/stranded-deep.jpg"

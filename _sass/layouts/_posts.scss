@@ -72,6 +72,13 @@ header {
         @extend %padding-regular;
         padding-bottom: 0;
     }
+    .portfolio-columns {
+        display: block;
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
     footer {
         @extend %padding-regular;
         padding-top: 0;

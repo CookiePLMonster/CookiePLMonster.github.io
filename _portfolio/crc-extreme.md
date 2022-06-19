@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Cross Racing Championship Extreme"
 image: "assets/img/portfolio/thumb/crc-extreme.jpg"
 feature-img: "assets/img/posts/crc-extreme/crc-extreme.jpg"

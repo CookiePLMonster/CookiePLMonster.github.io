@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Danganronpa 1-2: Reload"
 image: "assets/img/portfolio/thumb/danganronpa-reload.jpg"
 feature-img: "assets/img/portfolio/dr-reload.jpg"

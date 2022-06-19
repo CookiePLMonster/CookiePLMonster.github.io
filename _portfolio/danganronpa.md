@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Danganronpa: Trigger Happy Havoc"
 image: "assets/img/portfolio/thumb/danganronpa1.jpg"
 feature-img: "assets/img/portfolio/danganronpa.jpg"

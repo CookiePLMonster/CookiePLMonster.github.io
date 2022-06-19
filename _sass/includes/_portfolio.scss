@@ -57,8 +57,6 @@
 }
 
 .portfolio-page-left {
-    float: left;
-    max-width: 81.5%;
     padding-right: 1em;
 
     blockquote {
@@ -67,11 +65,21 @@
 }
 
 .portfolio-page-right {
-    width: 18.5%;
-    float: right;
+    min-width: 18.5%;
     text-align: right;
     border-left: 2px solid var(--blockquote-border-color);
     padding: 0.75em 1em;
     background-color: $blockquote-color;
     box-shadow: 0 2px 2px $border-color;
+    margin-bottom: 1em;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0.5em 0.5em;
+        text-align: center;
+        column-count: 2;
+        
+        p {
+            break-inside: avoid-column;
+        }
+    }
 }

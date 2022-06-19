@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Pacific General"
 image: "assets/img/portfolio/thumb/pacific-general.jpg"
 feature-img: "assets/img/portfolio/pacific-general.jpg"

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Hotline Miami 2: Wrong Number"
 image: "assets/img/portfolio/thumb/hm2.jpg"
 feature-img: "assets/img/portfolio/hm2.png"

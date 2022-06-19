@@ -19,7 +19,13 @@ layout: default
     {% endif %}
       
   </header>
-  <section class="post-content">
+  <section
+{% if layout.portfolio %} 
+  class="post-content portfolio-columns"
+{% else %}
+  class="post-content"
+{%endif %}
+  >
   {% if page.bootstrap %}
   <div class="bootstrap-iso">
   {% endif %}

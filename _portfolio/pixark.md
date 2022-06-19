@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "PixARK"
 image: "assets/img/portfolio/thumb/pixark.jpg"
 feature-img: "assets/img/portfolio/pixark.jpg"

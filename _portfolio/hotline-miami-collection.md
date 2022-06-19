@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Hotline Miami Collection"
 image: "assets/img/portfolio/thumb/hm-collection.jpg"
 feature-img: "assets/img/portfolio/hm-collection.jpg"
