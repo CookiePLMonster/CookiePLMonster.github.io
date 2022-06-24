@@ -9,7 +9,7 @@ permalink: /links/
 # Research
 Any research and documentation that I either made or found useful, and that doesn't belong in the mod pages.
 * [GTModTools](https://github.com/CookiePLMonster/GTModTools) -- various Python tools for Gran Turismo 2. Made by myself.
-* [mhpf-tools](https://github.com/christorrella/mhpf-tools) -- Melbourne House Pack File package tools for the PS2/PSP versions of Test Drive Unlimited. Made by Chris Torrella.
+* [TDUModTools](https://github.com/CookiePLMonster/TDUModTools) -- Melbourne House Pack File package tools for the PS2/PSP versions of Test Drive Unlimited. Made by myself.
 
 # Miscellaneous tech blogs
 * [Graphics studies of Adrian Courrèges](http://www.adriancourreges.com/blog/)
