@@ -31,8 +31,8 @@ Pierwsze poważniejsze modyfikacje zacząłem tworzyć w&nbsp;2008 roku, kiedy p
 w&nbsp;Grand Theft Auto: San Andreas i&nbsp;używany w&nbsp;nim [język skryptowy](https://gtamods.com/wiki/SCM_language).
 Po jakimś czasie zacząłem chcieć robić więcej niż pozwalały same skrypty, więc po około
 dwóch latach zacząłem zagłębiać się w&nbsp;kod gry za pomocą inżynierii zwrotnej i&nbsp;eksperymentować z&nbsp;coraz to
-bardziej złożonymi hackami w&nbsp;assemblerze (tak, zanim nauczyłem się jakiegokolwiek języka wysokiego poziomu,
-programowałem w&nbsp;assemblerze). To w&nbsp;końcu spowodowało, że w&nbsp;połowie 2011 roku zacząłem uczyć się C++.
+bardziej złożonymi hackami w&nbsp;asemblerze (tak, zanim nauczyłem się jakiegokolwiek języka wysokiego poziomu,
+programowałem w&nbsp;asemblerze). To w&nbsp;końcu spowodowało, że w&nbsp;połowie 2011 roku zacząłem uczyć się C++.
 
 Wszystko toczyło się w&nbsp;swoim dość wolnym tempie aż do końca 2013 roku, kiedy wydałem SilentPatch do Grand Theft Auto III
 i&nbsp;Vice City -- modyfikację naprawiającą błędy w&nbsp;grach. Okazała się ona dużo bardziej popularna niż pierwotnie zakładałem,
