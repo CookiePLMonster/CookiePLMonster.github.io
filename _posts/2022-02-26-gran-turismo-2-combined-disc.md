@@ -131,7 +131,7 @@ to using the Combined Disc and achievements will continue to work as expected.
 
 On real hardware:
 * PSP/PS Vita can use the full version of the mod in PBP format.
-* On PS1, the full version is compatible with [XStation](https://castlemaniagames.com/products/xstation).
+* On PS1, the full version is compatible with [XStation](https://castlemaniagames.com/products/xstation) and [PSIO](https://ps-io.com/).
   You should opt for the lightweight version (without FMVs) **only** if burning the image on a physical CD.
 
 If you are using cheat-based mods (like all my other GT2 mods), stick to codes created for the Simulation Mode.
