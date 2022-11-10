@@ -144,6 +144,7 @@ defaults:
     values:
       image: /assets/img/avatar.jpg
       date-format: "%B %-d, %Y"
+      lang: en
   - scope:
       path: ""
       type: "games"

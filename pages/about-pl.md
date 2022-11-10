@@ -4,13 +4,13 @@ title: O mnie
 excerpt: Moje krótkie bio.
 permalink: /about/pl/
 hide: true
+lang: pl
+locale: pl_PL
 ---
 
 *Ta strona dostępna jest w:*
-<a href="{% link pages/about.md %}"><span style="white-space: nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/gb.svg %}" alt="GB">*English*</span></a>
-<a href="{% link pages/about-pl.md %}"><span style="white-space: nowrap"><img style="height:1em;padding: 0 0.5em 0 1em"
-    src="{% link assets/img/flags/pl.svg %}" alt="PL">*polski*</span></a>
+<a href="{% link pages/about.md %}"><span style="white-space:nowrap" lang="en">{{ site.theme_settings.gb_flag }}*English*</span></a>
+<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap" lang="pl">{{ site.theme_settings.pl_flag }}*polski*</span></a>
 
 ***
 
