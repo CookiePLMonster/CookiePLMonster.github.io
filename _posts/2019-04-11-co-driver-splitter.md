@@ -5,6 +5,7 @@ feature-img: "assets/img/posts/codriver-splitter/codriver-splitter.jpg"
 thumbnail: "assets/img/posts/codriver-splitter/codriver-splitter.jpg"
 image: "assets/img/posts/codriver-splitter/codriver-splitter-full.jpg"
 excerpt: "Make racing more immersive by separating co-driver from the rest of the sounds."
+game-series: ["dirt-4", "dirt-rally-2.0", "dirt-rally", "f1-2014", "f1-2015", "f1-2016", "grid-2", "grid-autosport"]
 date: 2019-04-11 23:15:00 +0200
 tags: [Releases]
 ---

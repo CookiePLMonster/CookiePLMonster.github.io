@@ -5,6 +5,7 @@ excerpt: "Let's try to clarify some things and get facts straight."
 thumbnail: "assets/img/posts/cp2077-amd/banner.jpg"
 feature-img: "assets/img/posts/cp2077-amd/banner.jpg"
 image: "assets/img/posts/cp2077-amd/banner.jpg"
+game-series: "cyberpunk-2077"
 date: 2020-12-13 19:10:00 +0100
 tags: [Articles]
 twitter: {card: "summary_large_image"}

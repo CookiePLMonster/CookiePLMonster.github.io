@@ -5,6 +5,7 @@ excerpt: "Checking the official changes for fun, and adding support for Yakuza 5
 thumbnail: "assets/img/posts/spyrc-r2/bg2.jpg"
 feature-img: "assets/img/posts/spyrc-r2/bg2.jpg"
 image: "assets/img/posts/spyrc/silentpatch_yakuza.png"
+game-series: ["yakuza-3", "yakuza-4", "yakuza-5"]
 date: 2021-02-27 22:00:00 +0100
 tags: [Articles, Releases]
 twitter: {card: "summary_large_image"}

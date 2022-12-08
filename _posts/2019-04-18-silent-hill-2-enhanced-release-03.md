@@ -6,6 +6,7 @@ thumbnail: "assets/img/games/bg/sh2.jpg"
 image: "assets/img/posts/sh2-enhancement-social.jpg"
 twitter: {card: "summary_large_image"}
 excerpt: "Now also with a few improvements from myself - controller rumble and more!"
+game-series: "sh2"
 date: 2019-04-18 19:15:00 +0200
 tags: [Releases]
 ---

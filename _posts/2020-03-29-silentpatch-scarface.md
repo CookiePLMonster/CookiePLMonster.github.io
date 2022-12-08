@@ -5,6 +5,7 @@ thumbnail: "assets/img/posts/scarface/scarface.jpg"
 feature-img: "assets/img/games/bg/scarface.jpg"
 image: "assets/img/posts/scarface/scarface.jpg"
 excerpt: "Fixed graphical artifacts, major performance improvements and... Patreon."
+game-series: "scarface"
 date: 2020-03-29 19:30:00 +0200
 tags: [Releases, Articles]
 ---

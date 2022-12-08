@@ -1,0 +1,15 @@
+## Related reads:
+<div class="tag-posts">
+{% for post in related_reads_items reversed %}
+<h5 class="tag-title">
+    <a href="{{ post.url | relative_url }}">
+        <i class="far fa-file-image" aria-hidden="true"></i>
+        {{ post.title | markdownify | strip_html }}
+    </a>
+    
+    <div class="meta">
+        {{ post.date | date: page.date-format }}
+    </div>
+</h5>
+{% endfor %}
+</div>

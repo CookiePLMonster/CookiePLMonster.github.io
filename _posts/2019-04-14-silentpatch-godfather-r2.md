@@ -5,6 +5,7 @@ feature-img: "assets/img/posts/godfather/the-godfather-still.jpg"
 thumbnail: "assets/img/posts/godfather/thumbnail.jpg"
 image: "assets/img/posts/godfather/thumbnail.jpg"
 excerpt: "Was the patch not working with your game version? Got you covered now."
+game-series: "godfather"
 date: 2019-04-14 19:05:00 +0200
 tags: [Releases]
 ---

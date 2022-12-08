@@ -6,6 +6,7 @@ feature-img: "assets/img/posts/ginput-wooting.jpg"
 thumbnail: "assets/img/posts/ginput-wooting.jpg"
 image: "assets/img/posts/ginput-wooting-social.jpg"
 excerpt_separator: <!--more-->
+game-series: "gta-sa"
 twitter: {card: "summary_large_image"}
 tags: [Other]
 ---

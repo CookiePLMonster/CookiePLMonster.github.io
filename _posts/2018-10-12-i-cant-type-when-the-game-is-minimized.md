@@ -2,6 +2,7 @@
 layout: post
 title: "I can't type properly when the game is minimized, why?"
 excerpt: Sleeping with keyboard input may sound fun, but it makes everyone else upset.
+game-series: "srtt"
 date: 2018-10-12 20:30:00 +0200
 tags: [Articles]
 ---

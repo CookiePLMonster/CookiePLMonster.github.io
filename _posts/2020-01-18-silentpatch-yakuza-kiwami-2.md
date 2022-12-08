@@ -5,6 +5,7 @@ thumbnail: "assets/img/games/bg/yk2.jpg"
 feature-img: "assets/img/games/bg/yk2.jpg"
 image: "assets/img/games/bg/yk2.jpg"
 excerpt: "Peeing minigame in 30 FPS - but also more FPS related fixes."
+game-series: "yk2"
 date: 2020-01-18 14:30:00 +0100
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]

@@ -2,6 +2,7 @@
 layout: post
 title: New vehicle animations in SilentPatchSA
 excerpt: Some details people asked about.
+game-series: "gta-sa"
 redirect_from: "/2018/05/27/vehicle-anims-silentpatch.html"
 tags: [Progress Reports]
 ---

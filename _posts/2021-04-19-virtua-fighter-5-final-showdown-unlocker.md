@@ -5,6 +5,7 @@ excerpt: "Turning the arcade into a full console game!"
 thumbnail: "assets/img/games/bg/vf5fs.jpg"
 feature-img: "assets/img/games/bg/vf5fs.jpg"
 image: "assets/img/games/bg/vf5fs.jpg"
+game-series: ["yakuza-6", "yakuza-lad", "vf5fs"]
 date: 2021-04-19 23:00:00 +0200
 tags: [Releases]
 ---

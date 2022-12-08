@@ -3,6 +3,7 @@ layout: post
 title: "Coding a Single Instance Application the wrong way"
 image: "assets/img/posts/kao/card.png"
 excerpt: "Kao: Mystery of Deadlock."
+game-series: "kao-mystery-of-volcano"
 date: 2020-06-13 12:00:00 +0200
 tags: [Articles]
 ---

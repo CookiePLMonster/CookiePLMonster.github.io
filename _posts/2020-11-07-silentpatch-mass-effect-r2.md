@@ -6,6 +6,7 @@ feature-img: "assets/img/games/bg/mass-effect.jpg"
 image: "assets/img/posts/mass-effect/comparison.jpg"
 excerpt: "AI works as intended again."
 twitter: {card: "summary_large_image"}
+game-series: "mass-effect"
 date: 2020-11-07 23:55:00 +0100
 tags: [Releases]
 ---

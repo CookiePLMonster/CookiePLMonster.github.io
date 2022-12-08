@@ -5,6 +5,7 @@ excerpt: How water reflections revealed a regression in D3D9 - and how it was fi
 feature-img: "assets/img/posts/farcry/farcry.jpg"
 thumbnail: "assets/img/posts/farcry/farcry.jpg"
 image: "assets/img/posts/farcry/farcry.jpg"
+game-series: "far-cry"
 date: 2018-07-07 18:10:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]

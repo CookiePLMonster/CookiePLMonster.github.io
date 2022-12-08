@@ -4,6 +4,7 @@ title: "Cross Racing Championship Extreme releases on Steam"
 feature-img: "assets/img/posts/crc-extreme/crc-extreme.jpg"
 thumbnail: "assets/img/posts/crc-extreme/crc-extreme.jpg"
 image: "assets/img/posts/crc-extreme/crc-extreme-f.jpg"
+game-series: "crc-extreme"
 date: 2018-09-03 20:20:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Releases]

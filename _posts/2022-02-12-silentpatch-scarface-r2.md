@@ -6,6 +6,7 @@ thumbnail: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
 feature-img: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
 image: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
 twitter: {card: "summary_large_image"}
+game-series: "scarface"
 date: 2022-02-12 21:45:00 +0100
 tags: [Releases]
 ---

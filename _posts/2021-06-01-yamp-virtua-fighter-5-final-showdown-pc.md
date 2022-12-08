@@ -5,6 +5,7 @@ excerpt: "Turning an in-Yakuza Virtua Fighter 5: Final Showdown into a native PC
 thumbnail: "assets/img/games/bg/vf5fs.jpg"
 feature-img: "assets/img/games/bg/vf5fs.jpg"
 image: "assets/img/games/bg/vf5fs.jpg"
+game-series: "vf5fs"
 date: 2021-06-01 21:00:00 +0200
 tags: [Articles, Releases]
 ---

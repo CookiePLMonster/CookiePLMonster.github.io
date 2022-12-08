@@ -2,6 +2,7 @@
 layout: post
 title: Correcting "run over pedestrians" dialogues in SilentPatchSA & 10,000 YouTube subscribers
 excerpt: Running over people shall not be ignored ever again.
+game-series: "gta-sa"
 date: 2018-09-23 15:25:00 +0200
 tags: [Progress Reports]
 ---

@@ -6,6 +6,7 @@ feature-img: "assets/img/posts/y0-lighting/y0-img.jpg"
 thumbnail: "assets/img/posts/y0-lighting/y0-img.jpg"
 image: "assets/img/posts/y0-lighting/y0-img.jpg"
 twitter: {card: "summary_large_image"}
+game-series: "yakuza-0"
 date: 2019-02-24 19:50:00 +0100
 tags: [Articles]
 ---

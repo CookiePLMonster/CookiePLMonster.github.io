@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New public beta release of SilentPatchBully!"
+game-series: "bully"
 date: 2018-07-22 23:05:00 +0200
 tags: [Releases]
 ---

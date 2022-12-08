@@ -53,7 +53,7 @@ layout: page
                     </a>
                     
                     <div class="meta">
-                        {{ "today" | date: "%B %-d, %Y" }}
+                        {{ "today" | date: page.date-format }}
                     </div>
                 </h5>
                 {% endif %} 
@@ -69,7 +69,7 @@ layout: page
                     </a>
                     
                     <div class="meta">
-                        {{ post.date | date: "%B %-d, %Y" }}
+                        {{ post.date | date: page.date-format }}
                     </div>
                 </h5>
                 {% endif %} 
@@ -85,7 +85,7 @@ layout: page
                     </a>
                 
                     <div class="meta">
-                        {{ note.date | date: "%B %-d, %Y" }}
+                        {{ note.date | date: page.date-format }}
                     </div>
                 </h5>
                 {% endif %} 

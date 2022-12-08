@@ -5,6 +5,7 @@ thumbnail: "assets/img/games/bg/w101.jpg"
 feature-img: "assets/img/games/bg/w101.jpg"
 image: "assets/img/games/bg/w101.jpg"
 excerpt: "Pre-release patching."
+game-series: "w101"
 date: 2020-05-16 12:50:00 +0200
 tags: [Releases, Articles]
 ---

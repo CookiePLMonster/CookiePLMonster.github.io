@@ -5,6 +5,7 @@ excerpt: Getting through disassembly of an old game in hopes to improve it.
 feature-img: "assets/img/posts/slrr-img.jpg"
 thumbnail: "assets/img/posts/slrr-img.jpg"
 image: "assets/img/posts/slrr-img.jpg"
+game-series: "slrr"
 date: 2018-06-15 23:25:00 +0200
 redirect_from: "/2018/06/15/slrr-proof-of-fix.html"
 tags: [Articles]

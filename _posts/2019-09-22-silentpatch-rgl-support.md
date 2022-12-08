@@ -5,6 +5,7 @@ feature-img: "assets/img/posts/rgl.jpg"
 thumbnail: "assets/img/posts/rgl.jpg"
 image: "assets/img/posts/rgl.jpg"
 excerpt: "And also some new fixes for all three games, of course."
+game-series: ["gta-iii", "gta-vc", "gta-sa"]
 date: 2019-09-22 16:25:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Releases]

@@ -5,6 +5,7 @@ excerpt: "Reducing CPU usage, working around a crash."
 thumbnail: "assets/img/games/bg/yakuza.jpg"
 feature-img: "assets/img/games/bg/yakuza.jpg"
 image: "assets/img/posts/spyrc/silentpatch_yakuza.png"
+game-series: ["yakuza-3", "yakuza-4"]
 date: 2021-02-05 20:20:00 +0100
 tags: [Articles, Releases]
 twitter: {card: "summary_large_image"}

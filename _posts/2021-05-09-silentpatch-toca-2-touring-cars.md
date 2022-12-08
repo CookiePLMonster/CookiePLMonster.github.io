@@ -5,6 +5,7 @@ excerpt: "Revisiting a retro racing game with a range of compatibility fixes and
 thumbnail: "assets/img/games/bg/toca-2.jpg"
 feature-img: "assets/img/games/bg/toca-2.jpg"
 image: "assets/img/games/bg/toca-2.jpg"
+game-series: "toca-2"
 date: 2021-05-09 20:25:00 +0200
 tags: [Releases, Articles]
 ---

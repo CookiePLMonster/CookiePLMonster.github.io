@@ -6,6 +6,7 @@ feature-img: "assets/img/games/bg/mass-effect.jpg"
 image: "assets/img/posts/mass-effect/comparison.jpg"
 excerpt: "Graphical artifacts caused by a CPU, not GPU? Sure thing."
 twitter: {card: "summary_large_image"}
+game-series: "mass-effect"
 date: 2020-07-19 13:00:00 +0200
 tags: [Releases, Articles]
 ---

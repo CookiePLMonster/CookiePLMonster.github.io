@@ -5,6 +5,7 @@ feature-img: "assets/img/posts/godfather/the-godfather-still.jpg"
 thumbnail: "assets/img/posts/godfather/thumbnail.jpg"
 image: "assets/img/posts/godfather/thumbnail.jpg"
 excerpt: "Game crashing on modern systems? Let's see what we can do about it."
+game-series: "godfather"
 date: 2018-05-18 20:00:00 +0200
 twitter: {card: "summary_large_image"}
 redirect_from: "/2018/05/18/fixing-the-godfather.html"

@@ -2,6 +2,7 @@
 layout: post
 title: "Third public beta release of SilentPatch for Bully: Scholarship Edition!"
 excerpt: "Numerous new crash fixes and removed sketchy workarounds."
+game-series: "bully"
 date: 2020-03-07 18:45:00 +0100
 tags: [Releases]
 ---

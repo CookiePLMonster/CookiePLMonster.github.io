@@ -3,6 +3,7 @@ layout: post
 title: "How NOT to operate on paths - Metal Gear Rising"
 image: "assets/img/posts/MGR-social.jpg"
 excerpt: "Cue ultimate guesswork on where Documents are located (and more)."
+game-series: "metal-gear-rising"
 date: 2019-06-30 21:30:00 +0200
 tags: [Articles]
 ---

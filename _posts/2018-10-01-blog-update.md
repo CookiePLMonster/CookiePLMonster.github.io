@@ -14,7 +14,7 @@ You might have seen some changes (most notably, a new banner!) appear through th
 If I got your attention this far, why not go through all the new features!?
 
 # Categories
-This website bases on [Type on Strap](https://github.com/sylhare/Type-on-Strap) theme which supports tag, however in my version they were always disabled.
+This website bases on [Type on Strap](https://github.com/sylhare/Type-on-Strap) theme that supports tags, however in my version they were always disabled.
 As the size grows in content, I figured it's time to make those return in form of **Categories**. From now on, posts are going to be categorized:
 * **Articles** -- any "meaningful" content, like post mortems or other tech revelations from myself.
 * **Releases** -- new mod releases and other announcements.

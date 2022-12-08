@@ -6,6 +6,7 @@ thumbnail: "assets/img/posts/console-codes-2/banner.jpg"
 feature-img: "assets/img/posts/console-codes-2/banner.jpg"
 image: "assets/img/posts/console-codes-2/banner-full.jpg"
 twitter: {card: "summary_large_image"}
+game-series: ["gran-turismo", "gran-turismo-2", "gran-turismo-3", "gran-turismo-concept", "gran-turismo-4-prologue", "gran-turismo-4", "tourist-trophy", "nascar-dtd-ps2", "test-drive-eod-ps2"]
 date: 2021-10-09 14:15:00 +0200
 tags: [Releases]
 ---
