@@ -1,6 +1,6 @@
 {% assign mods_list_items = site.mods | where: "game-series", include.series | sort: 'order' %}
 {% for mod in mods_list_items %}
-<div>
+<div class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
     <div style="display:flex;justify-content:space-between;align-items:flex-end;">
     <div style="display:flex;justify-content:space-between;align-items:center;">
@@ -37,29 +37,13 @@
     </div>
     </div>
     
-    <div class="panel panel-default">
-    <div class="panel-heading">
-    {% if mods_list_items.size > 1 %}
-        <a class="expand-link" data-toggle="collapse" href="#{{modid}}-cps" role="button">Click to expand...</a>
-    {% else %}
-        &zwnj;
-    {% endif %}
-    </div>
-    {% if mods_list_items.size > 1 %}
-    <div class="panel-body collapse" id="{{modid}}-cps">
-    {% else %}
-    <div class="panel-body">
-    {% endif %}
+    <div class="mod-content">
         {{ mod }}
     </div>
-    </div>
 </div>
-{% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
 
 {% assign related_reads_items = site.posts | where: "game-series", include.series | sort: 'date' %}
 {% if related_reads_items.size != 0 %}
-<hr>
-
 {% include related-reads.html related_reads_items=related_reads_items %}
 {% endif %}

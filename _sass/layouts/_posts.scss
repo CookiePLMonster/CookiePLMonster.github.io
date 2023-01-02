@@ -1,7 +1,7 @@
 article,
 .comments {
     @extend %padding-regular;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--line-color);
     float: left;
     width: 100%;
 }
@@ -95,7 +95,7 @@ header {
 /* --- Post navigation --- */
 #post-nav {
     width: 100%;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--line-color);
     display: flex;
     float: left;
 

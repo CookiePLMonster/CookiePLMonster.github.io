@@ -181,6 +181,6 @@ code.highlighter-rouge {
 }
 
 table.dataframe {
-    border: 0 solid $border-color;
+    border: 0 solid var(--line-color);
     border-collapse: collapse;
 }

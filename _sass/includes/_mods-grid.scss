@@ -57,8 +57,12 @@
       }
 }
 
-.expand-link {
-	text-decoration: none !important
+.mod-listing {
+    .mod-content {
+        padding: 1em;
+        border-radius: 0.3em;
+        border: 1px solid var(--line-color);
+    }
 }
 
 .mod-screenshot img {

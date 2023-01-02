@@ -12,7 +12,6 @@ $padding-x-small: 2em;
 
 // Brand colours
 $theme-color: #3D7DEC;
-$border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 
 $brand-color-light: #fff;
 $background-color-light: #fff;
@@ -117,6 +116,8 @@ $blockquote-color: var(--blockquote-color);
     --highlighter-rouge-color: rgb(36, 41, 46);
     --highlighter-rouge-bg-color: #{transparentize($base00, 0.85)};
 
+    --line-color: #{transparentize($text-color-light, 0.75)};
+
     .theme-icon:before {
         content: "\f186";
     }
@@ -141,6 +142,8 @@ $blockquote-color: var(--blockquote-color);
 
     --highlighter-rouge-color: rgb(219, 214, 209);
     --highlighter-rouge-bg-color: #{invert(transparentize($base00, 0.85), 100%)};
+
+    --line-color: #{transparentize($text-color-dark, 0.25)};
 
     .fa-inverse {
         color: $background-color-dark !important; 
