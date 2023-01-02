@@ -58,10 +58,30 @@
 }
 
 .mod-listing {
+    margin-bottom: 1em;
+    .mod-title-image {
+        min-width: 150px;
+        max-width: 400px;
+
+        img {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
     .mod-content {
         padding: 1em;
         border-radius: 0.3em;
         border: 1px solid var(--line-color);
+    }
+
+    .excerpt {
+        text-align: right;
+    }
+
+    .last-update {
+        @extend .excerpt;
+        font-style: italic;
     }
 }
 
@@ -69,10 +89,6 @@
 	padding: 0;
 	margin: 0 2%;
 	max-width: 45%;
-}
-.last-update {
-	text-align: right;
-	font-style: italic;
 }
 
 .download-btns-row {
