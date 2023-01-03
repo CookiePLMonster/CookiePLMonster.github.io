@@ -6,7 +6,6 @@ image: "assets/img/games/yakuza-3.jpg"
 feature-img: "assets/img/games/bg/yakuza-3.jpg"
 parent-series: "yakuza"
 game-series: "yakuza-3"
-bootstrap: true
 order: 1
 ---
 

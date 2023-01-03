@@ -7,7 +7,6 @@ feature-img: "assets/img/games/bg/test-drive-eod.jpg"
 parent-series: "consoles"
 game-series: "test-drive-eod-ps2"
 order: 16
-bootstrap: true
 ---
 
 {% include mods-list.html series=page.game-series %}

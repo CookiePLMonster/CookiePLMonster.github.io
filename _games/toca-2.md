@@ -5,7 +5,6 @@ excerpt: "My modifications and patches for TOCA 2 Touring Cars: SilentPatch."
 image: "assets/img/games/toca-2.jpg"
 feature-img: "assets/img/games/bg/toca-2.jpg"
 game-series: "toca-2"
-bootstrap: true
 order: 21
 ---
 

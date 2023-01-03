@@ -5,7 +5,6 @@ excerpt: "Yakuza Arcade Machines Player - play Virtua Fighter 5: Final Showdown 
 image: "assets/img/games/vf5fs.jpg"
 feature-img: "assets/img/games/bg/vf5fs.jpg"
 game-series: "vf5fs"
-bootstrap: true
 order: 95
 ---
 

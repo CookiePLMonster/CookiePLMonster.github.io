@@ -5,7 +5,6 @@ excerpt: "My modifications and patches for Mafia II: Definitive Edition: SilentP
 image: "assets/img/games/m2de.jpg"
 feature-img: "assets/img/games/bg/m2de.jpg"
 game-series: "mafia2-de"
-bootstrap: true
 order: 11
 ---
 

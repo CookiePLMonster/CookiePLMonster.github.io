@@ -7,7 +7,6 @@ feature-img: "assets/img/games/bg/tourist-trophy.jpg"
 parent-series: "consoles"
 game-series: "tourist-trophy"
 order: 18
-bootstrap: true
 ---
 
 {% include mods-list.html series=page.game-series %}

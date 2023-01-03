@@ -7,7 +7,7 @@ date: 27-02-2021
 deprecated-caption: "DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only."
 ---
 
-**WARNING: DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only.**
+**<span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> DON'T</span> USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes <span style="white-space:nowrap">only. <i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i></span>**
 
 Yakuza Remastered Collection is a collection consisting of Yakuza 3, Yakuza 4, and Yakuza 5,
 released on PC in January 2021. While currently all 3 games have been patched officially,

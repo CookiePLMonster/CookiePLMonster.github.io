@@ -30,24 +30,6 @@ gulp.task("img", function imging() {
         .pipe(gulp.dest('img/'))
 });
 
-gulp.task('css', function minicss() {
-    return gulp.src('css/vendor/bootstrap-iso.css')
-        .pipe(cssmin())
-        .on('error', (err) => {
-            console.log(err.toString());
-        })
-        .pipe(concat('bootstrap-iso.min.css'))
-        .pipe(gulp.dest('css/vendor/'));
-})
-
-gulp.task("isolate-bootstrap-css", gulp.series('css', function isolating() {
-    return gulp.src('css/bootstrap-iso.less')
-        .pipe(less())
-        .pipe(replace('.bootstrap-iso html', ''))
-        .pipe(replace('.bootstrap-iso body', ''))
-        .pipe(gulp.dest('css/vendor/'));
-}));
-
 gulp.task("serve", function serving(done) {
     console.log('... not working at the moment try \ncd .. && bundle exec jekyll serve --watch\n',
                 'then go to \nhttp://localhost:4000/Type-on-Strap/');

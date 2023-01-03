@@ -7,7 +7,6 @@ feature-img: "assets/img/games/bg/nascar-dtd.jpg"
 parent-series: "consoles"
 game-series: "nascar-dtd-ps2"
 order: 15
-bootstrap: true
 ---
 
 {% include mods-list.html series=page.game-series %}

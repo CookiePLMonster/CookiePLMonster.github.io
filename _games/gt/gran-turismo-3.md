@@ -7,7 +7,6 @@ feature-img: "assets/img/games/bg/gran-turismo-3.jpg"
 parent-series: "consoles"
 game-series: "gran-turismo-3"
 order: 10
-bootstrap: true
 ---
 
 {% include mods-list.html series=page.game-series %}

@@ -5,7 +5,6 @@ excerpt: "My modifications and patches for Deus Ex: Human Revolution - Director'
 image: "assets/img/games/dxhrdc.jpg"
 feature-img: "assets/img/games/bg/dxhrdc.jpg"
 game-series: "dxhrdc"
-bootstrap: true
 order: -1
 ---
 

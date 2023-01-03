@@ -62,10 +62,28 @@
     .mod-title-image {
         min-width: 150px;
         max-width: 400px;
+        display: inline-flex;
 
         img {
             width: 100%;
             padding: 0;
+        }
+    }
+
+    .mod-label {
+        border-radius: 0.3em;
+        color: $feature-image-text-color;
+        font-weight: bold;
+        font-size: 75%;
+        padding: 0.2em 0.6em 0.3em;
+        margin-left: 0.5em;
+
+        &.label-warning {
+            background-color: #d9534f;
+        }
+
+        &.label-info {
+            background-color: $theme-color;
         }
     }
 

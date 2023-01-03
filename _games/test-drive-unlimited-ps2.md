@@ -7,7 +7,6 @@ feature-img: "assets/img/games/bg/test-drive-unlimited.jpg"
 parent-series: "consoles"
 game-series: "test-drive-unlimited-ps2"
 order: 17
-bootstrap: true
 ---
 
 {% include mods-list.html series=page.game-series %}

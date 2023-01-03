@@ -6,7 +6,6 @@ image: "assets/img/games/yk2.jpg"
 feature-img: "assets/img/games/bg/yk2.jpg"
 parent-series: "yakuza"
 game-series: "yk2"
-bootstrap: true
 redirect_from: "/mods/yk2/"
 order: 0
 ---
