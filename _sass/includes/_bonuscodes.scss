@@ -1,0 +1,66 @@
+.bonuscodes-input {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+
+    input, select {
+        color: $text-color-light;
+        border-radius: 0.3em;
+        border-width: 1px;
+        padding: 0 0.25em;
+    }
+
+    #invalid-access-code {
+        display: none;
+        font-weight: bold;
+    }
+
+    #platform-select {
+        display: none;
+    }
+}
+
+.bonuscodes-output {
+    width: max-content;
+    margin: 1em auto;
+    background-color: var(--background-color);
+    border: 1px solid $theme-color;
+    display: none;
+
+    .content {
+        padding: 1em;
+    }
+
+    .border {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .border:before {
+            content: '';
+            position: absolute;
+            border-top: 30px solid var(--background-color);
+            border-left: 30px solid var(--background-color);
+            width: 0;
+            }
+        
+    .border:after {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 1px;
+            background: $theme-color;
+            }
+    
+    .tl:before { top: -10px; left: -10px; transform: rotate(-45deg); }
+    .tl:after { top: 10px; left: -6px; transform: rotate(-45deg);}
+    
+    .tr:before { top: -10px; right: -10px; transform: rotate(45deg); }
+    .tr:after { top: 10px; right: -6px; transform: rotate(45deg); }
+    
+    .bl:before { bottom: -10px; left: -10px; transform: rotate(45deg); }
+    .bl:after { bottom: 10px; left: -6px; transform: rotate(45deg); }
+    
+    .br:before { bottom: -10px; right: -10px; transform: rotate(-45deg); }
+    .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
+}

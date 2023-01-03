@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
   {% include head.html %}
-  <body>
+  <body {% if layout.brython or page.brython %}onload="brython(1)"{% endif %}>
     {% include navbar.html %}
     <div class="content">
       {{ content }}

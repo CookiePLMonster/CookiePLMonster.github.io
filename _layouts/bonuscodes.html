@@ -1,0 +1,30 @@
+---
+layout: page
+brython: true
+---
+
+<noscript>This page requires JavaScript to be enabled. If you prefer not to do so, please try the offline version of the cheat generator.</noscript>
+<div class="no-js">
+
+{{ content }}
+
+<div class="bonuscodes-input">
+<form id="cheat-gen-form">
+    <label for="access-code">Your access code:</label>
+    <input type="number" id="access-code" name="access-code">
+    <span id="platform-select">
+        <label for="platform">Platform:</label>
+        <select id="platform" name="platform"></select>
+    </span>
+</form>
+<button id="generate" class="button" type="button" form="cheat-gen-form">Generate</button>
+<span id="invalid-access-code"><span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> Invalid</span> access code specified!</span>
+</div>
+
+<div class="bonuscodes-output" id="outbox-window-full">
+    <div class="border tr"></div>
+    <div class="content" id="output-window"></div>
+    <div class="border bl"></div>
+</div>
+
+</div>

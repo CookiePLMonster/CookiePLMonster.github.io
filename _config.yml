@@ -126,6 +126,8 @@ collections:
     permalink: /mods/:name/
   portfolio:
     output: true
+  bonuscodes:
+    output: true
 
 # SEO
 twitter:
@@ -157,6 +159,12 @@ defaults:
       type: "mods"
     values:
       excerpt: ""
+  - scope:
+      path: ""
+      type: "bonuscodes"
+    values:
+      feature-img: "assets/img/bonuscodes/bonuscodes-banner.svg"
+      subtitle: "Bonus Codes"
 
 
 # PORTFOLIO

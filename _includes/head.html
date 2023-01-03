@@ -34,6 +34,12 @@
 	<!-- Custom Icomoon icons -->
 	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/icomoon/style.css" | relative_url }}">
 
+    <!-- Brython 3.11 -->
+    {% if layout.brython or page.brython %}
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js" integrity="sha256-zplDrnHjIXfFEpMrx7IM8trr7TBv7T3lUlRxSzv9Ygc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js" integrity="sha256-bdDwHDikxAMQB2/ZUirv67Mi+/MaBLHhBxtCQVHbi5I=" crossorigin="anonymous"></script>
+    {% endif %}
+
     <!-- Google Fonts -->
     {% if site.theme_settings.google_fonts %}
     <link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet" type="text/css"> 
@@ -61,5 +67,5 @@
     <!-- seo tags -->
     {% seo %}
 
-    <noscript><style>.theme-toggle-elem { display: none !important; }</style></noscript>
+    <noscript><style>.no-js { display: none !important; }</style></noscript>
 </head>

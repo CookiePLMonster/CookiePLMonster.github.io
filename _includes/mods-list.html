@@ -3,7 +3,7 @@
 <div class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;">
-    <div style="display:flex;justify-content:flex-start;align-items:center;flex-basis:50%;">
+    <div style="display:flex;justify-content:flex-start;align-items:center;flex-basis:50%;column-gap:0.5em;">
     {% if mod.title-image %}
         <h1 id="{{ modid }}" class="mod-title-image">
             <img src="{{ mod.title-image | relative_url }}" alt="">
