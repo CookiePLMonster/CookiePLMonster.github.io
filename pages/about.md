@@ -22,7 +22,7 @@ In the cyberspace, I go by **Silent** or **CookiePLMonster**.
 ***
 
 For as long as I can remember, I've been tinkering with games in one way or another.
-The earliest "attempts" I can recall included replacing sounds in Driver or modifying textures in various freeware games,
+The earliest <q>attempts</q> I can recall included replacing sounds in Driver or modifying textures in various freeware games,
 and trying to modify Java scripts in Street Legal Racing Redline (with poor results, however).
 My first more serious work dates to 2008, when I first dived into Grand Theft Auto: San Andreas and [its scripting
 engine](https://gtamods.com/wiki/SCM_language). I eventually wanted to do more than what game scripts allowed for,

@@ -24,7 +24,7 @@ Próbuję naprawiać różne gry. W&nbsp;sieci udzielam się jako **Silent** lub
 
 ***
 
-Odkąd pamiętam, zawsze w&nbsp;jakiś sposób grzebałem w&nbsp;plikach gier. Pierwsze "próby", do których sięgam pamięcią,
+Odkąd pamiętam, zawsze w&nbsp;jakiś sposób grzebałem w&nbsp;plikach gier. Pierwsze <q>próby</q>, do których sięgam pamięcią,
 to m.in. podmienianie plików dźwiękowych w&nbsp;Driverze, modyfikowanie tekstur w&nbsp;różnych grach freeware,
 próby rozbudowywania Javowych skryptów Street Legal Racing Redline (jednak z&nbsp;marnym skutkiem).
 Pierwsze poważniejsze modyfikacje zacząłem tworzyć w&nbsp;2008 roku, kiedy po raz pierwszy zagłębiłem się
@@ -40,7 +40,7 @@ co spowodowało, że wydałem więcej SilentPatchy -- po kilku miesiącach do Sa
 kompletnie niezwiązanych z&nbsp;GTA.
 
 Przełomem dla mnie okazało się wydanie [Hotline Miami 2 XP Support Patch]({% link _games/hm2.md %}#hm2-xp)
-w&nbsp;marcu 2015 roku, kilka dni po premierze gry. Patch został zauważony przez twórców i&nbsp;oficjalnie "zatwierdzony",
+w&nbsp;marcu 2015 roku, kilka dni po premierze gry. Patch został zauważony przez twórców i&nbsp;oficjalnie <q>zatwierdzony</q>,
 a&nbsp;także okazał się moim punktem wejścia do zdobycia kontaktów w&nbsp;branży gier -- co ostatecznie pozwoliło mi zdobyć
 pierwszą pracę (w&nbsp;której jestem do dziś).
 
