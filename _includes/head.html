@@ -40,6 +40,11 @@
     <script src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js" integrity="sha256-bdDwHDikxAMQB2/ZUirv67Mi+/MaBLHhBxtCQVHbi5I=" crossorigin="anonymous"></script>
     {% endif %}
 
+    <!-- Juxtapose -->
+    {% if layout.juxtapose or page.juxtapose %}
+    <link rel="stylesheet" href="{% link assets/css/vendor/juxtapose.css %}">
+    {% endif %}
+
     <!-- Google Fonts -->
     {% if site.theme_settings.google_fonts %}
     <link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet" type="text/css"> 

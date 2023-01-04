@@ -44,3 +44,8 @@ function modeSwitcher() {
     DISQUS.reset({reload: true});
 }
 </script>
+
+<!-- Juxtapose -->
+{% if layout.juxtapose or page.juxtapose %}
+<script src="{% link assets/js/vendor/juxtapose.min.js %}"></script>
+{% endif %}
