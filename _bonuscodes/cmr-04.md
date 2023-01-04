@@ -9,9 +9,11 @@ order: 2
 <script type="text/python">
 from browser import document, html
 
+ACCESS_CODE_MAX = 99999
+
 def generateCode(accessCode, cheatID):
     # Verify domain of inputs
-    if not (accessCode >= 0 and accessCode <= 99999
+    if not (accessCode >= 0 and accessCode <= ACCESS_CODE_MAX
         and cheatID >= 0 and cheatID <= 99):
         return None
 
@@ -75,13 +77,13 @@ def generateCode(accessCode, cheatID):
     return ''.join([chr(x) for x in buffer])
 
 def onGenerate(ev):
-    accessCodeStr = document['access-code'].value
-    if not accessCodeStr:
-        exit()
-    accessCode = int(accessCodeStr)
-    if not (accessCode >= 1 and accessCode <= 99999):
+    try:
+        accessCode = int(document['access-code'].value)
+        if not (accessCode >= 1 and accessCode <= ACCESS_CODE_MAX):
+            raise ValueError 
+    except (TypeError, ValueError):
         document['invalid-access-code'].style.display = 'inline'
-        exit()
+        return
 
     document['invalid-access-code'].style.display = 'none'
     cheatCodes = ['GroupB with 2 cars', 'All Cars', 'All Tracks', 'Expert Mode', 'Auto - Upgrades', 'All Tests', 'Mirror Mode']
@@ -95,5 +97,5 @@ def onGenerate(ev):
 
 document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
-document['access-code'].max = 99999
+document['access-code'].max = ACCESS_CODE_MAX
 </script>
