@@ -359,7 +359,7 @@ To our best knowledge, the game now looks exactly how it should, without any dow
 
 ## Download
 
-The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/mass-effect.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Mass Effect</a> \\
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).

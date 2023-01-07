@@ -141,7 +141,7 @@ of time researching the way TOCA 2 handles aspect ratios and lists resolutions.
 
 ***
 
-The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/toca-2.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for TOCA 2 Touring Cars</a> \\
 After downloading, all you need to do is to extract the archive to the game's directory, and that's it! I highly recommend checking the INI files for a range of useful settings to change,

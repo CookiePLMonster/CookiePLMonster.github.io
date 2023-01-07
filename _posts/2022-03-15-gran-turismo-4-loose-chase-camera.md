@@ -66,7 +66,7 @@ With another cheat code, I managed to **add** this camera back to the in-race se
 
 # Download
 
-All listed cheats can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+All listed cheats can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/gt/gran-turismo-4.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download cheat codes for Gran Turismo 4</a> \\
 <a href="{% link _games/gt/tourist-trophy.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download cheat codes for Tourist Trophy</a>

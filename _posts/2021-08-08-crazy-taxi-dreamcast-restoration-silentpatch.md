@@ -245,7 +245,7 @@ Aside from the fixes mentioned, SilentPatch for Crazy Taxi also fixes a few othe
 
 # Download
 
-Both modifications can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+Both modifications can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/crazy-taxi.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Dreamcast Restoration 2.0 and SilentPatch for Crazy Taxi</a> \\
 After downloading, all you need to do is to extract the archives to the game's directory, and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).

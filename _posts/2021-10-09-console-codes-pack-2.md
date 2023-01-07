@@ -152,6 +152,6 @@ so in this cheat, I lifted it enough to future proof it for a very long time -- 
 </p>
 
 # Download
-All listed cheats can be downloaded in *Mods & Patches*. Click here to head to the *Consoles* page, from where you can go to the specific games' pages:
+All listed cheats can be downloaded from *Mods & Patches*. Click here to head to the *Consoles* page, from where you can go to the specific games' pages:
 
 <a href="{% link _games/misc/consoles.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download cheat codes</a>

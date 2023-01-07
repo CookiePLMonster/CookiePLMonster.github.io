@@ -85,7 +85,7 @@ A full changelog of this release is rather short:
 * Fixes to CPU core affinity have been remade, now only locking the game threads to one core, while leaving others be.
   In an unlikely case this causes issues, CPU core affinity can be restored to default by adding `SingleCoreAffinity=1` to the `settings.ini` file.
 
-The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/scarface.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Scarface</a> \\
 Upon downloading, all you need to do is to extract the archive to the game's directory and that's it!

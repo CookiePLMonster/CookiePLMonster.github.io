@@ -40,7 +40,7 @@ for modders.
 
 # Download
 
-The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/mafia2-de.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Mafia II: Definitive Edition</a> \\
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).

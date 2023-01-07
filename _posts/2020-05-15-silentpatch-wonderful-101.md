@@ -172,7 +172,7 @@ Since I wished to release SP before the game officially launches, I didn't spend
 
 # Download
 
-Without further ado, the modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly:
+Without further ado, the modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/w101.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for The Wonderful 101</a> \\
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).

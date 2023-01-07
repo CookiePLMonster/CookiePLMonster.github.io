@@ -186,7 +186,7 @@ QLOC could (and **should**) have done the same. At this point I'm not convinced 
 
 # Download
 
-The modification can be downloaded in *Mods & Patches*. Click here to head to the game's page directly (the same download works for **Yakuza 3, Yakuza 4, and Yakuza 5**):
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly (the same download works for **Yakuza 3, Yakuza 4, and Yakuza 5**):
 
 <a href="{% link _games/yakuza/yakuza-3.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Yakuza 3/Yakuza 4/Yakuza 5</a> \\
 After downloading, all you need to do is to extract the archive to the game's directory, and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
