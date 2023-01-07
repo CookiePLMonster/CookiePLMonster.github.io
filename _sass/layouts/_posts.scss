@@ -64,8 +64,8 @@ header {
         margin-bottom: 0;
         padding: $padding-large/2.5 $padding-large;
         .meta {
-            text-shadow: 1px 1px 1px rgba($text-shadow, .7);
-            color: rgba($feature-image-text-color, .7);
+            @extend .header-txt-shadow;
+            color: darken($feature-image-text-color, 15%);
         }
     }
     .post-content {
