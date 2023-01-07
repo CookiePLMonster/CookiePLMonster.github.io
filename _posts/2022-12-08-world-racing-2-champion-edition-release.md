@@ -2,9 +2,9 @@
 layout: post
 title: "World Racing 2: Champion Edition releases on Steam!"
 excerpt: "A classic racing game from 2005 now available digitally for the first time, with a fresh coat of paint."
-thumbnail: "https://cdn.cloudflare.steamstatic.com/steam/apps/1301010/library_hero.jpg"
-feature-img: "https://cdn.cloudflare.steamstatic.com/steam/apps/1301010/library_hero.jpg"
-image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1301010/logo.png"
+thumbnail: "/assets/img/portfolio/world-racing-2-ce.jpg"
+feature-img: "/assets/img/portfolio/world-racing-2-ce.jpg"
+image: "/assets/img/portfolio/world-racing-2-ce.jpg"
 game-series: "world-racing-2-ce"
 date: 2022-12-08 19:10:00 +0100
 tags: [Releases]
