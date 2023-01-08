@@ -1,0 +1,64 @@
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 0px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+
+	iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+}
+
+
+.screenshot-entry {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0.5em;
+    &.natural {
+        max-width: 90%;
+    }
+    img {
+        padding: 0;
+    }
+
+    @media screen and (min-width: 850px) {
+        width: 75%;
+        &.small {
+            width: 47.5%;
+        }
+        &.natural {
+            width: unset;
+        }
+    }
+}
+
+.screenshot-container {
+    text-align: center;
+  
+    > div {
+        display: inline-block;
+        width: 90%;
+    }
+    &.natural > div {
+        max-width: 90%;
+    }
+
+    @media screen and (min-width: 850px) {
+        > div {
+            width: 75%;
+        }
+        &.small > div {
+            width: 47.5%;
+        }
+        &.natural > div {
+            width: unset;
+        }
+    }
+}
