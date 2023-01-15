@@ -18,14 +18,6 @@ html {
 }
 
 // Typography
-::selection {
-    background: $selection-color;
-}
-
-::-moz-selection {
-    background: $selection-color;
-}
-
 body {
     color: $text-color;
     font-family: $font-family-main;
@@ -79,7 +71,7 @@ blockquote {
     border-left: 2px solid var(--blockquote-border-color);
     margin: 1em 1em;
     padding: 0.75em 1em;
-    background-color: $blockquote-color;
+    background-color: var(--blockquote-color);
     box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
 }
 

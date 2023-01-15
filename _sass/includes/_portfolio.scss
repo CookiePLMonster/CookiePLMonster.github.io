@@ -70,7 +70,7 @@
     text-align: right;
     border-left: 2px solid var(--blockquote-border-color);
     padding: 0.75em 1em;
-    background-color: $blockquote-color;
+    background-color: var(--blockquote-color);
     box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
     margin-bottom: 1em;
 

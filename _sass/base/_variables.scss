@@ -29,7 +29,6 @@ $paypal-color: #0079C1;
 $text-color-light: #383838;
 $text-color-dark: invert($text-color-light);
 $link-color: $theme-color; // #1ABC9C;
-$selection-color: #D4D4D4; // visible when highlighting text
 $blockquote-color-light: #EEF7FA; // $background-color;
 $blockquote-color-dark: #1B3E4A;
 $patreon-link-color: $patreon-color;
@@ -87,12 +86,8 @@ $base0f: #FF5370 !default;  // Deprecated, Opening/Closing Embedded Language Tag
 // Dark/light mode setup
 // TODO: Remove those eventually and only use CSS variables where applicable
 // These serve as intermediate variables
-$brand-color: var(--brand-color);
 $background-color: var(--background-color);
 $text-color: var(--text-color);
-$header-link-color: var(--header-link-color);
-$header-desc-text-color: var(--header-desc-text-color);
-$blockquote-color: var(--blockquote-color);
 @mixin light-theme {
     --brand-color: #{$brand-color-light};
     --background-color: #{$background-color-light};
