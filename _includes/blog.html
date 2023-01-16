@@ -1,7 +1,7 @@
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post-teaser">
-    {% if post.thumbnail %} 
+    {% if post.thumbnail %}
     <div class="post-img">
        <a href="{{ post.url | relative_url }}">
          <img src="{{ post.thumbnail | relative_url }}">
@@ -29,28 +29,24 @@
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-    {% if paginator.previous_page %}
-    {% if paginator.previous_page != 1 %}
-    <a href="{{ "/" | relative_url }}" style="margin-right:0" class="button">
-      <i class="fas fa-angle-double-left"></i>
-    </a>
-    {% endif %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" {% if paginator.previous_page != 1 %}style="margin-left:0"{% endif %} class="button">
-      <i class="fas fa-angle-left"></i>
-      {{ site.theme_settings.str_previous_page }}
-    </a>
-    {% endif %}
+    <span class="nav-left" style="{% unless paginator.previous_page %}visibility:hidden{% endunless %}">
+      <a href="{{ "/" | relative_url }}" style="{% unless paginator.previous_page != 1 %}visibility:hidden{% endunless %}" class="button">
+        <i class="fas fa-angle-double-left"></i>
+      </a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="button">
+        <i class="fas fa-angle-left"></i>
+        {{ site.theme_settings.str_previous_page }}
+      </a>
+    </span>
     {{ paginator.page }} / {{ paginator.total_pages }}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" {% if paginator.next_page != paginator.total_pages %}style="margin-right:0"{% endif %} class="button">
-      {{ site.theme_settings.str_next_page }}
-      <i class="fas fa-angle-right"></i>
-    </a>
-    {% if paginator.next_page != paginator.total_pages %}
-    <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages }}" style="margin-left:0" class="button">
-      <i class="fas fa-angle-double-right"></i>
-    </a>
-    {% endif %}
-    {% endif %}
+    <span class="nav-right" style="{% unless paginator.next_page %}visibility:hidden{% endunless %}">
+      <a href="{{ paginator.next_page_path | relative_url }}" class="button">
+        {{ site.theme_settings.str_next_page }}
+        <i class="fas fa-angle-right"></i>
+      </a>
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages }}" style="{% unless paginator.next_page != paginator.total_pages %}visibility:hidden{% endunless %}" class="button">
+        <i class="fas fa-angle-double-right"></i>
+      </a>
+    </span>
 </div>
 {% endif %}

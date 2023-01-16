@@ -93,15 +93,26 @@
 .pagination {
     padding: $padding-small $padding-large 0 $padding-large;
     text-align: center;
-    @media (max-width: 600px) {
-        padding: $padding-small;
+    @media screen and (max-width: 600px) {
+        padding: $padding-small 0;
     }
 
+    .nav-left {
+        margin: 0 1.5em 0 0.5em;
+        @media screen and (max-width: 600px) {
+            margin-right: 0.75em;
+        }
+    }
+    .nav-right {
+        margin: 0 0.5em 0 1.5em;
+        @media screen and (max-width: 600px) {
+            margin-left: 0.75em;
+        }
+    }
     .button {
-        margin: 0 1.5em;
+        margin: 0;
         i {
             vertical-align: middle;
         }
     }
-
 }
