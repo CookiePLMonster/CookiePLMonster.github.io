@@ -18,6 +18,9 @@ section for a download link.**_
 
 ***
 
+*[Vert-]: Vertical Minus; a method for adjusting aspect ratio for widescreen by reducing vertical FOV
+*[Hor+]: Horizontal Plus; a method for adjusting aspect ratio for widescreen by increasing horizontal FOV
+
 * [Introduction](#introduction)
 * [Chapter 1: In search of a perfect executable](#in-search-of-a-perfect-executable)
 * [Chapter 2: Regional releases and their oddities](#regional-release-oddities)
@@ -238,6 +241,8 @@ In this section, I want to highlight the most interesting and unusual improvemen
 refer to [**Changelog and download**](#changelog-and-download).
 
 ## Fixes & improvements {#fixes-fixes}
+
+{: #fix-widescreen}
 Console versions of CMR3 included a Widescreen option in Graphics Options, switching the aspect ratio from 4:3 to 16:9. While this option is gone from the PC versions,
 it's still functional -- it's just that this option is underwhelming to begin with (also in the console versions), as it only corrects the 3D aspect ratio,
 and the only UI element it corrects is the co-driver arrow. That said, it's not the worst, as it opts to fix the aspect ratio by increasing the horizontal FOV,
@@ -266,6 +271,7 @@ For more screenshots showcasing widescreen support, check [the next chapter](#hd
 
 ***
 
+{: #fix-sun-colors}
 The PC version of Colin McRae Rally 3 had a strange bug where [the sun would flash in random colors](https://www.youtube.com/watch?v=3ci8sFPCLpU){:target="_blank"}
 (**WARNING:** rapidly flashing colors) if the FSAA (anti-aliasing) option was enabled. This happens regardless of whether anti-aliasing is enabled in-game, or forced externally;
 dgVoodoo would also not help resolve it, proving that it's **not** a Direct3D 9 bug.
@@ -289,6 +295,7 @@ on the other hand, sun occlusion is now wrong with multisampling enabled, which 
 
 ***
 
+{: #fix-sun-hitch}
 This isn't the only issue related to the sun rendering -- aside from broken colors, the sun occlusion would cause a consistent and noticeable hitch every time
 the sun would either appear on screen or go off screen:
 
@@ -326,6 +333,7 @@ points out "wasting CPU cycles by waiting for queries to complete".*
 
 ***
 
+{: #fix-shadows}
 Thought we're done with issues caused by anti-aliasing? So did I, but as it turns out -- I was wrong.
 
 Car shadows in CMR3 are simple but effective. They are essentially rendered in two phases:
@@ -372,6 +380,7 @@ SHARPER_SHADOWS=0
 
 ***
 
+{: #fix-water}
 A few stages in CMR3 run next to lakes or across rivers. At the highest details, those come with a nice cubemap-based reflection and a subtle animation,
 producing an appearance of a reflective, moving water surface. However, on PC those reflections don't always look the same:
 
@@ -425,6 +434,7 @@ Fixing the Reset function to correctly reconcile those 3 missing states fixes th
 
 ***
 
+{: #fix-environment-map}
 If you've played CMR3 on PlayStation 2 or watched any footage of it, you may have noticed that the game looked a little more vibrant there,
 most prominently when it comes to car reflections. Albeit present on PC and Xbox, they always seemed a little dull. To verify, I ran the same car and stage on PC
 and in the PCSX2 emulator, and pulled the reflection data before and after it's been mapped on a sphere:
@@ -489,6 +499,7 @@ ENVMAP_SKY=0
 
 ***
 
+{: #fix-lines-width}
 (In)famously, Direct3D has no option of altering the line thickness of draws; therefore, line draws are always 1px thick. CMR3 uses lines widely (pun
 unintended) -- they are used both in 2D (in menus and graphs), and in 3D (for antennas). This wasn't an issue on consoles, as well as on PC when played
 at 640x480 -- but the larger the selected resolution is, the more noticeable it becomes that those lines become relatively thin and hard to read.
@@ -503,6 +514,7 @@ SilentPatch resolves this issue by implementing line thickness:
 
 ***
 
+{: #fix-menu-elements}
 The default CMR3 menus look notoriously inconsistent. SilentPatch fixes many inconsistently formatted texts (e.g. `CONTROLS:` on one screen, `CONTROLS :` on another)
 and imperfect menu elements -- with "line boxes" being exceptionally imperfect:
 
@@ -510,6 +522,7 @@ and imperfect menu elements -- with "line boxes" being exceptionally imperfect:
 
 ***
 
+{: #fix-split-screen}
 Just like the previous games in the franchise, Colin McRae Rally 3 comes with a split-screen feature. The issue is, on most modern PCs by default it looks like this:
 
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_C8cj6w58pT.jpg" caption="That's not what I meant when I said that I like the Horizon games." %}
@@ -525,6 +538,7 @@ are spawned -- and this happens before the screen starts to fade from white.
 
 ***
 
+{: #fix-multiple-displays}
 CMR3 comes with support for multiple displays and allows the user to specify what display to render the game to, but unless all your displays are identical,
 your typical multi-monitor experience was likely to look like this:
 
@@ -538,6 +552,7 @@ updating the display mode counts and makes sure that the selected resolution can
 
 ***
 
+{: #fix-message-pump}
 The last issue I wanted to highlight never showed up in the original game, but it's somewhat fascinating, and could serve as a cautionary tale for other developers.
 
 Initially, after implementing the windowed mode, I'd observe an issue where the game window flashes black every few seconds.
@@ -597,11 +612,14 @@ the highest priority when retrofitting fixes like this.
 That said, please don't implement this fix in your app -- fix it properly instead 👼
 
 ## New options {#fixes-new-options}
+
+{: #new-portable-settings}
 Starting with a small one -- the game is now fully portable and saves settings to a `SilentPatchCMR3.ini` file located in the game directory,
 instead of saving to the system registry. If you wished to put CMR3 on a flash drive and carry it with you, now you can.
 
 ***
 
+{: #new-graphics-options}
 Graphics Options have been expanded with several new options. My patches shipped with new options for a long time,
 both [SilentPatch for Colin McRae Rally 2.0]({% link _games/cmr/cmr-2.0.md %}#silentpatch){:target="_blank"} and
 [SilentPatch for TOCA 2 Touring Cars]({% link _games/toca-2.md %}#silentpatch){:target="_blank"} previously included
@@ -626,6 +644,7 @@ The new options are:
 
 ***
 
+{: #new-advanced-graphics-options}
 Advanced Graphics Options have received a set of new options inspired by later CMR games and modern games in general.
 
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_XzfqxTVQMs.png" caption="This isn't DiRT Rally 2.0, but a good old CMR3." %}
