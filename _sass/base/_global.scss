@@ -154,6 +154,25 @@ a {
     text-decoration: none;
 }
 
+abbr[title] {
+    text-decoration: none;
+
+    &:after {
+        content: " (" attr(title) ")";
+    }
+}
+
+@media (hover: hover) {
+    abbr[title] {
+        border-bottom: 1px dotted;
+        cursor: help;
+
+        &:after {
+            content: "";
+        }
+    }
+}
+
 iframe,
 img,
 embed,
