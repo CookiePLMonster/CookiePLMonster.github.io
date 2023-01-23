@@ -18,6 +18,9 @@
           <p class="meta">
             {{ post.date | date: "%B %-d, %Y" }}
           </p>
+          <p class="meta">
+            {% include ert.html content=post.content %} min. to read
+          </p>
         </header>
         <div class="excerpt">
             {{ post.excerpt | strip_html | escape }}

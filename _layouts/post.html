@@ -15,6 +15,9 @@ layout: default
 	{% else %}{{ page.date | date: page.date-format }}{% endif %}
     {% if page.author %} - {{ page.author }}{% endif %}
     </p>
+    <p class="meta">
+      {% include ert.html content=content %} min. to read
+    </p>
   </header>
   <section class="post-content">
     {{ content }}
