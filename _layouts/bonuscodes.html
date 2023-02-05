@@ -9,7 +9,7 @@ brython: true
 {{ content }}
 
 <div class="bonuscodes-input">
-<form id="cheat-gen-form">
+<form id="cheat-gen-form" method="dialog">
     <label for="access-code">Your access code:</label>
     <input type="number" id="access-code" name="access-code">
     <span id="platform-select">
@@ -17,7 +17,7 @@ brython: true
         <select id="platform" name="platform"></select>
     </span>
 </form>
-<button id="generate" class="button" type="button" form="cheat-gen-form">Generate</button>
+<button id="generate" class="button" type="submit" form="cheat-gen-form">Generate</button>
 <span id="invalid-access-code"><span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> Invalid</span> access code specified!</span>
 </div>
 
