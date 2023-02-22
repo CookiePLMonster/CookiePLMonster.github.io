@@ -71,9 +71,11 @@ theme_settings:
   special_page:
     search:
       icon: "search" # Assuming page link and icon are the same
+      title: "Search"
       enabled: true
     categories:
       icon: "tags"
+      title: "Categories"
       enabled: true
 
   # Localization strings
