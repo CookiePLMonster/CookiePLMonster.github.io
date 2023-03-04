@@ -2,7 +2,7 @@
 title: Adjusted triggers sensitivity
 game-series: "gran-turismo-3"
 order: 1
-date: 09-10-2021
+date: 04-03-2023
 ---
 
 Since Gran Turismo games have always offered full control remapping, it's possible to utilize triggers on modern controllers for throttle/brake,
@@ -13,5 +13,6 @@ so now 100% input registers from a near full press of the trigger, therefore mak
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/85AE91B3_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a> \\
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/85AE91B3_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.0, Original)</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/8AA991B0_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.10, Bundle)</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/B590CE04_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

@@ -2,7 +2,7 @@
 title: Adjusted triggers sensitivity
 game-series: "gran-turismo-4-prologue"
 order: 3
-date: 09-10-2021
+date: 04-03-2023
 ---
 
 Since Gran Turismo games have always offered full control remapping, it's possible to utilize triggers on modern controllers for throttle/brake,

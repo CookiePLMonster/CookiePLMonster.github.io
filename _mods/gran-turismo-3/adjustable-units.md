@@ -30,5 +30,6 @@ Available units:
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjustable%20units/85AE91B3_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a> \\
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjustable%20units/85AE91B3_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.0, Original)</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjustable%20units/8AA991B0_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.10, Bundle)</a> \\
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjustable%20units/B590CE04_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>
