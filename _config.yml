@@ -172,6 +172,7 @@ defaults:
       type: "portfolio"
     values:
       game-series: ""
+      excerpt: ""
 
 
 # PORTFOLIO
