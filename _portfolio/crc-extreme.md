@@ -4,6 +4,7 @@ title: "Cross Racing Championship Extreme"
 image: "assets/img/portfolio/thumb/crc-extreme.jpg"
 feature-img: "assets/img/posts/crc-extreme/crc-extreme.jpg"
 date: 2018-09-19
+game-series: "crc-extreme"
 ---
 <div class="portfolio-page-right" markdown="1">
 **With:**<br>*Independent*, for Invictus Games

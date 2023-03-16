@@ -19,19 +19,7 @@ layout: default
     {% endif %}
       
   </header>
-  <section
-{% if layout.portfolio %} 
-  class="post-content portfolio-columns"
-{% else %}
-  class="post-content"
-{%endif %}
-  >
+  <section class="post-content">
 	{{ content }}
   </section>
-    
-    
-  <!-- Tag list for portfolio -->
-  <!-- {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %} -->
-  <!-- {% include tags_list.html tags=tag_list %} -->
-    
 </article>

@@ -41,7 +41,4 @@
 </div>
 {% endfor %}
 
-{% assign related_reads_items = site.posts | where: "game-series", include.series | sort: 'date' %}
-{% if related_reads_items.size != 0 %}
-{% include related-reads.html related_reads_items=related_reads_items %}
-{% endif %}
+{% include related-reads.html series=include.series %}

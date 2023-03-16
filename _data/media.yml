@@ -1,0 +1,64 @@
+- url: https://jalopnik.com/ditching-licensed-cars-is-the-secret-to-preserving-retr-1849980662/
+  title: "Ditching Licensed Cars Is the Secret to Preserving Retro Racing Games \\| Jalopnik"
+  date: 2023-01-16
+  game-series: "world-racing-2-ce"
+- url: https://www.pcgamer.com/mods-restore-crazy-taxis-analog-controls-product-placement-and-more/
+  title: "Mods restore Crazy Taxi's analog controls, product placement, and more \\| PC Gamer"
+  date: 2021-08-09
+  game-series: "crazy-taxi"
+- url: https://www.eurogamer.net/crazy-taxi-on-steam-now-has-pizza-hut-kfc-and-fila-destination-names-thanks-to-modders/
+  title: "Crazy Taxi on Steam now has original Pizza Hut, KFC and FILA destination names - thanks to modders \\| Eurogamer"
+  date: 2021-08-09
+  game-series: "crazy-taxi"
+- url: https://www.dsogaming.com/news/you-can-now-play-toca-2-touring-cars-on-modern-pc-systems/
+  title: "You can now play TOCA 2: Touring Cars on modern PC systems \\| DSOGaming"
+  date: 2021-05-10
+  game-series: "toca-2"
+- url: https://kotaku.com/theres-a-full-console-port-of-virtua-fighter-5-inside-y-1846736108
+  title: "There's A Full Console Port Of Virtua Fighter 5 Inside Yakuza \\| Kotaku"
+  date: 2021-04-21
+  game-series: ["yakuza-6", "yakuza-lad"]
+- url: https://gamerant.com/virtua-fighter-5-final-showdown-full-version-hidden-yakuza-games/
+  title: "Virtua Fighter 5 Final Showdown Full Version Hidden In Yakuza Games \\| GameRant"
+  date: 2021-04-20
+  game-series: ["yakuza-6", "yakuza-lad"]
+- url: https://www.destructoid.com/stories/modder-unlocks-full-xbox-360-edition-of-virtua-fighter-5-final-showdown-within-yakuza-like-a-dragon-626586.phtml
+  title: "Modder unlocks full Xbox 360 edition of Virtua Fighter 5: Final Showdown within Yakuza: Like a Dragon \\| Destructoid"
+  date: 2021-04-20
+  game-series: ["yakuza-6", "yakuza-lad"]
+- url: https://kotaku.com/yakuza-fan-is-out-here-fixing-the-series-pc-versions-ag-1846376928/
+  title: "Yakuza Fan Is Out Here Fixing The Series' PC Versions Again \\| Kotaku"
+  date: 2021-02-28
+  game-series: ["yakuza-3", "yakuza-4", "yakuza-5"]
+- url: https://www.tomshardware.com/news/game-dev-patch-amd-ryzen-black-blob-bug-mass-effect/
+  title: "Game Dev Patches Mysterious AMD Ryzen 'Black Blob' Graphics Bug in Mass Effect \\| Tom's Hardware"
+  date: 2020-07-19
+  game-series: "mass-effect"
+- url: https://wccftech.com/the-wonderful-101-remastered-pc-patch-frame-pacing/
+  title: "The Wonderful 101: Remastered PC Gets Fan-Made Patch Before Official Release; Frame Pacing Issues Fixed and More \\| Wccftech"
+  date: 2020-05-16
+  game-series: "w101"
+- url: https://www.dsogaming.com/news/silentpatch-for-the-wonderful-101-remastered-released-fixes-broken-frame-pacing-issues/
+  title: "SilentPatch for The Wonderful 101: Remastered released, fixes broken frame pacing issues \\| DSOGaming"
+  date: 2020-05-16
+  game-series: "w101"
+- url: https://www.pcgamer.com/heres-a-patch-to-give-deus-ex-human-revolutiondirectors-cut-back-its-gold-filter/
+  title: "Here's a patch to give Deus Ex: Human Revolution—Director's Cut back its gold filter \\| PC Gamer"
+  date: 2020-04-27
+  game-series: "dxhrdc"
+- url: https://www.dsogaming.com/news/scarface-the-world-is-yours-fan-patch-fixes-graphics-glitches-improves-performance-remaster-mod/
+  title: "Scarface The World is Yours Fan Patch fixes graphics glitches, improves performance + Remaster Mod \\| DSOGaming"
+  date: 2020-03-31
+  game-series: "scarface"
+- url: https://www.pcgamesn.com/bully-scholarship-edition/pc-patch/
+  title: "Forget Bully 2 – this patch gets the original Bully running crash-free \\| PCGamesN"
+  date: 2020-03-09
+  game-series: "bully"
+- url: https://www.rockpapershotgun.com/2018/05/21/fans-still-polishing-up-gta-3-vice-city-san-andreas/
+  title: "Fans still polishing up GTA 3, Vice City & San Andreas \\| Rock Paper Shotgun"
+  date: 2018-05-21
+  game-series: ["gta-iii", "gta-vc", "gta-sa"]
+- url: https://www.pcgamer.com/grand-theft-auto-san-andreas-steam-update-removes-songs-resolution-options/
+  title: "GTA: San Andreas Steam update removes songs, resolution options \\| PC Gamer"
+  date: 2014-11-09
+  game-series: "gta-sa"

@@ -35,10 +35,11 @@
     width: 100%;
     margin-bottom: $padding-x-small/2;
     .tag-title {
-        margin-top: 0;
-        margin-bottom: 0;
-        a {
-            margin-left: $padding-x-small;
+        margin: 0;
+        @media screen and (min-width: $break) {
+            a {
+                margin-left: $padding-x-small;
+            }
         }
     }
 

@@ -167,6 +167,11 @@ defaults:
     values:
       feature-img: "assets/img/bonuscodes/bonuscodes-banner.svg"
       subtitle: "Bonus Codes"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      game-series: ""
 
 
 # PORTFOLIO
