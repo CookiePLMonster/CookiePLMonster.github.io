@@ -1,0 +1,5 @@
+{% if include.entry %}
+{% assign entries = include.entry | split: "#" %}
+<p><strong>{{ include.name }}{% if include.plural and entries.size > 1 %}s{% endif %}:</strong>
+<br>{{ entries | join: "<br>" | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+{% endif %}

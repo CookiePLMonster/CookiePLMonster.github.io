@@ -6,16 +6,13 @@ feature-img: "assets/img/portfolio/world-racing-2-ce.jpg"
 date: 2022-12-08
 game-series: "world-racing-2-ce"
 ---
-<div class="portfolio-page-right" markdown="1">
-**With:**<br>*Independent*, for UniqueGames
 
-**Engine:**<br>*Proprietary*
+{% assign portfolio-client="*Independent*, for UniqueGames" %}
+{% assign portfolio-engine="*Proprietary*" %}
+{% capture portfolio-date %}{{ "2022-12-08" | date: page.date-format }}{% endcapture %}
+{% assign portfolio-platform="PC (Steam)" %}
 
-**Release date:**<br>{{ "2022-12-08" | date: page.date-format }}
-
-**Platforms:**<br>PC (Steam)
-</div>
-<div class="portfolio-page-left" markdown="1">
+{% capture portfolio-contents %}
 World Racing 2 Champion Edition offers the full experience and the classic gameplay of the original 2005 game, plus:
 
 * Custom unlicensed cars created by modifying the original 2005 game's licensed ones, fitting in an unified "Synetic lore" of N.I.C.E., World Racing, and Crash Time
@@ -36,4 +33,6 @@ World Racing 2 Champion Edition offers the full experience and the classic gamep
 >
 > Later in development I also took upon managing production more, being responsible for identifying the project requirements
 > and looping in the right people.
-</div>
+{% endcapture %}
+
+{% include portfolio/template.html %}

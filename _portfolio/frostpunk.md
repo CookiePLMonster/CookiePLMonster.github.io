@@ -5,16 +5,13 @@ image: "assets/img/portfolio/thumb/frostpunk.jpg"
 feature-img: "assets/img/portfolio/frostpunk.jpg"
 date: 2021-02-24
 ---
-<div class="portfolio-page-right" markdown="1">
-**With:**<br>Abstraction
 
-**Engine:**<br>Liquid Engine
+{% assign portfolio-client="Abstraction" %}
+{% assign portfolio-engine="Liquid Engine" %}
+{% capture portfolio-date %}{{ "2021-02-24" | date: page.date-format }} (macOS)#{{ "2021-07-21" | date: page.date-format }} (PlayStation 4, Xbox One){% endcapture %}
+{% assign portfolio-platform="macOS#PlayStation 4 (DLC)#Xbox One (DLC)" %}
 
-**Release date:**<br>{{ "2021-02-24" | date: page.date-format }} (macOS)<br>{{ "2021-07-21" | date: page.date-format }} (PlayStation 4, Xbox One)
-
-**Platforms:**<br>macOS<br>PlayStation 4 (DLC)<br>Xbox One (DLC)
-</div>
-<div class="portfolio-page-left" markdown="1">
+{% capture portfolio-contents %}
 Frostpunk is the first society survival game. As the ruler of the last city on Earth,
 it is your duty to manage both its citizens and its infrastructure. What decisions will you make to ensure your society's survival?
 What will you do when pushed to breaking point? Who will you become in the process?
@@ -22,4 +19,6 @@ What will you do when pushed to breaking point? Who will you become in the proce
 > On macOS, I was involved in general porting and bugfixing. On consoles, we were tasked with porting the DLCs into the console
 > version of Frostpunk. I was involved in that process, as well as in fixing whatever issues that arised and tailoring the DLC experience
 > for consoles.
-</div>
+{% endcapture %}
+
+{% include portfolio/template.html %}
