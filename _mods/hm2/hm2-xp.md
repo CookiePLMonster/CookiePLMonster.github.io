@@ -1,7 +1,8 @@
 ---
 title: XP Support Patch
 game-series: "hm2"
-deprecated-caption: "DON'T USE - this patch is no longer required. It is listed here for archival purposes only."
+warning-label: DEPRECATED
+warning-title: "DON'T USE - this patch is no longer required. It is listed here for archival purposes only."
 ---
 
 **<span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> DON'T</span> USE - this patch is no longer required. It is listed here for archival purposes <span style="white-space:nowrap">only. <i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i></span>**

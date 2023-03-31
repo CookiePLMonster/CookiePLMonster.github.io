@@ -4,7 +4,7 @@ title-image: "http://www.enhanced.townofsilenthill.com/SH2/images/logo.svg"
 game-series: "sh2"
 excerpt: "A comprehensive collection of community enhancements."
 date: 14-02-2020
-contribution: true
+info-label: CONTRIBUTION
 ---
 
 *Silent Hill 2: Enhanced Edition* is **an ongoing project** of enhancement packages that add various visual, audio, and bug improvements for the PC version of the game.

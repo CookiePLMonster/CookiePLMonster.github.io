@@ -4,7 +4,8 @@ title-image: "assets/img/mods/silentpatch-yk2.png"
 game-series: ["yakuza-5"]
 excerpt: "Reducing CPU usage and fixing other bugs."
 date: 27-02-2021
-deprecated-caption: "DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only."
+warning-label: DEPRECATED
+warning-title: "DON'T USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes only."
 ---
 
 **<span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> DON'T</span> USE - for Yakuza 5, this patch is no longer required. It is listed here for archival purposes <span style="white-space:nowrap">only. <i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i></span>**

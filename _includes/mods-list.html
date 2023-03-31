@@ -13,14 +13,11 @@
             {{ mod.title | markdownify | strip_html }}
         </h1>
     {% endif %}
-    {% if mod.beta-caption %}
-        <span class="mod-label label-warning" title="{{mod.beta-caption}}">BETA</span>
+    {% if mod.warning-label %}
+        <span class="mod-label label-warning" title="{{mod.warning-title}}">{{mod.warning-label}}</span>
     {% endif %}
-    {% if mod.deprecated-caption %}
-        <span class="mod-label label-warning" title="{{mod.deprecated-caption}}">DEPRECATED</span>
-    {% endif %}
-    {% if mod.contribution %}
-        <span class="mod-label label-info">CONTRIBUTION</span>
+    {% if mod.info-label %}
+        <span class="mod-label label-info" title="{{mod.info-title}}">{{mod.info-label}}</span>
     {% endif %}
     </div>
     <div style="margin: 1.34em 0;flex-basis: 50%;">
