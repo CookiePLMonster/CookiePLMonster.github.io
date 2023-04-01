@@ -52,9 +52,9 @@ layout: page
                         {{ page.title | markdownify | strip_html }}
                     </a>
                     
-                    <div class="meta">
+                    <span class="meta">
                         {{ "today" | date: page.date-format }}
-                    </div>
+                    </span>
                 </h5>
                 {% endif %} 
             {% endfor %} 
@@ -68,9 +68,9 @@ layout: page
                         {{ post.title | markdownify | strip_html }}
                     </a>
                     
-                    <div class="meta">
+                    <span class="meta">
                         {{ post.date | date: page.date-format }}
-                    </div>
+                    </span>
                 </h5>
                 {% endif %} 
             {% endfor %} 
@@ -84,9 +84,9 @@ layout: page
                         {{ note.title | markdownify | strip_html }}
                     </a>
                 
-                    <div class="meta">
+                    <span class="meta">
                         {{ note.date | date: page.date-format }}
-                    </div>
+                    </span>
                 </h5>
                 {% endif %} 
             {% endfor %}

@@ -22,4 +22,4 @@ With this cheat, I enabled the replay draw distance in races.
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Higher%20draw%20distance/NTSC-J%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Higher%20draw%20distance/NTSC-J%201.0.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
 
-Benefits from (but does not require) a <a href="#8mb-ram">Use 8MB RAM for polygon buffers</a> cheat and an emulated console with 8MB RAM.
+Benefits from (but does not require) a [Use 8MB RAM for polygon buffers](#8mb-ram) cheat and an emulated console with 8MB RAM.

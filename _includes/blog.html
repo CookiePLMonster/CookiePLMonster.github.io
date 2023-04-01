@@ -4,28 +4,26 @@
     {% if post.thumbnail %}
     <div class="post-img">
        <a href="{{ post.url | relative_url }}">
-         <img src="{{ post.thumbnail | relative_url }}">
+         <img src="{{ post.thumbnail | relative_url }}" alt="">
        </a>
     </div>
     {% endif %}
-    <span>
-        <header>
-          <h1>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | markdownify | strip_html }}
-            </a>
-          </h1>
-          <p class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </p>
-          <p class="meta">
-            {% include ert.html content=post.content %} min. to read
-          </p>
-        </header>
-        <div class="excerpt">
-            {{ post.excerpt | strip_html | escape }}
-        </div>
-    </span>
+    <header>
+      <h1>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | markdownify | strip_html }}
+        </a>
+      </h1>
+      <p class="meta">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </p>
+      <p class="meta">
+        {% include ert.html content=post.content %} min. to read
+      </p>
+    </header>
+    <div class="excerpt">
+        {{ post.excerpt | strip_html | escape }}
+    </div>
   </div>
   {% endfor %}
 </div>

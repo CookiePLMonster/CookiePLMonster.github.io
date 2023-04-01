@@ -24,4 +24,4 @@ To counter this, I created a cheat forcing all cars on the track to use the high
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Full%20detail%20AI%20cars/NTSC-J%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Full%20detail%20AI%20cars/NTSC-J%201.0.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
 
-Requires a <a href="#8mb-ram">Use 8MB RAM for polygon buffers</a> cheat and an emulated console with 8MB RAM.
+Requires a [Use 8MB RAM for polygon buffers](#8mb-ram) cheat and an emulated console with 8MB RAM.

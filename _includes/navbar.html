@@ -6,9 +6,7 @@
 			<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt=""/>
 		</a>
 
-		<h1 class="site-title">
-			<a href="{{ "/" | relative_url }}">{{ site.theme_settings.title | markdownify | strip_html }}</a>
-		</h1>
+		<a class="site-title" href="{{ "/" | relative_url }}">{{ site.theme_settings.title | markdownify | strip_html }}</a>
 	</div>
 
     <!-- Toggle menu -->
