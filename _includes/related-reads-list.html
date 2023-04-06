@@ -6,9 +6,9 @@
         {{ item.title | markdownify | strip_html }}
     </a>
     
-    <div class="meta">
+    <span class="meta">
         {{ item.date | date: page.date-format }}
-    </div>
+    </span>
 </h5>
 {% endfor %}
 </div>
