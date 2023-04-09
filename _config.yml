@@ -100,7 +100,6 @@ theme_settings:
   github_icon: "<i class='fab fa-github'></i>"
   docs_icon: "<i class='fas fa-book'></i>"
   gtaf_icon: "<i class='fas icomoon icon-gtaf'></i>"
-  codemasters_icon: "<i class='fas icomoon icon-codemasters'></i>"
 
   # Flags
   pl_flag: "<img style='height:1em;padding: 0 0.5em' src='/assets/img/flags/pl.svg' alt='PL'>"
