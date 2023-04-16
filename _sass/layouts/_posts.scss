@@ -122,3 +122,15 @@ header {
         vertical-align: middle;
     }
 }
+
+h1, h2, h3, h4 {
+    .octicon {
+        fill: currentColor;
+        padding: 0;
+        vertical-align: middle;
+        visibility: hidden;
+    }
+    &:hover .octicon {
+        visibility: visible;
+    }
+}
