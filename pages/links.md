@@ -21,8 +21,9 @@ Any research and documentation that I either made or found useful, and that does
 * [Sutter's Mill](https://herbsutter.com/) -- Herb Sutter on software development
 * [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/) -- blog of Raymond Chen
 
-# Other people patching older games
+# Useful game-related resources from other people
 * [AuToMaNiAk005's YouTube Channel](https://www.youtube.com/user/AuToMaNiAk005) -- widescreen patches for about any old racing game there is
+* [Gran Turismo Modding Hub](https://nenkai.github.io/gt-modding-hub/) -- a central source of information about Gran Turismo games from [Nenkai](https://github.com/Nenkai)
 * [PS2Wide](http://ps2wide.net/pc.html) -- widescreen patches for PC and console games from nemesis2000
 * [VEG's Blog](https://veg.by/en/) -- patches for Need for Speed III and Need for Speed 4
 * [Verok's Official Blog](https://verokster.blogspot.com/) -- patches for Need for Speed II SE and Need for Speed: Porsche Unleashed
