@@ -36,7 +36,8 @@ layout: page
         {% for tag in tags %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw"></i> {{ tag }}</a>
-            <a href="#{{ page.title }}" style="float: right"><i class="fas fa-chevron-up" aria-hidden="true"> </i> </a>
+            <a href="/feed/by_tag/{{ tag | cgi_escape }}.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"> </i> </a>
+            <a href="#{{ page.title }}" style="float:right"><i class="fas fa-chevron-up" aria-hidden="true"> </i> </a>
 
         </h3>
 
@@ -44,19 +45,21 @@ layout: page
         <div class="tag-posts">
 
             <!-- Pages -->
-            {% for page in site.pages %} 
-                {% if page.tags contains tag %}
-                <h5 class="tag-title">
-                    <a href="{{ page.url | relative_url }}">
-                        <i class="far fa-file-image" aria-hidden="true"></i>
-                        {{ page.title | markdownify | strip_html }}
-                    </a>
-                    
-                    <span class="meta">
-                        {{ "today" | date: page.date-format }}
-                    </span>
-                </h5>
-                {% endif %} 
+            {% for page in site.pages %}
+                {% unless page.collection == 'posts' %}
+                    {% if page.tags contains tag %}
+                    <h5 class="tag-title">
+                        <a href="{{ page.url | relative_url }}">
+                            <i class="far fa-file-image" aria-hidden="true"></i>
+                            {{ page.title | markdownify | strip_html }}
+                        </a>
+                        
+                        <span class="meta">
+                            {{ "today" | date: page.date-format }}
+                        </span>
+                    </h5>
+                    {% endif %}
+                {% endunless %}
             {% endfor %} 
             
             <!-- Posts -->

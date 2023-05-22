@@ -7,7 +7,7 @@ image: "assets/img/posts/shine-o-vice/shine-o-vice-f.jpg"
 excerpt: Starting with the most urgent issue.
 date: 2018-12-23 23:10:00 +0200
 twitter: {card: "summary_large_image"}
-tags: [Progress Reports]
+tags: [Articles]
 ---
 
 With [Shine 'o Vice](https://gtaforums.com/topic/578670-shine-o-vice/) on the final stretch for Act 1 release,

@@ -120,6 +120,9 @@ theme_settings:
 paginate: 5
 paginate_path: "blog/page:num"
 
+feed:
+  tags: true
+
 collections:
   mods:
   games:

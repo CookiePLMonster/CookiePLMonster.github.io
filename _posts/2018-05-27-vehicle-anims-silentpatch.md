@@ -4,7 +4,7 @@ title: New vehicle animations in SilentPatchSA
 excerpt: Some details people asked about.
 game-series: "gta-sa"
 redirect_from: "/2018/05/27/vehicle-anims-silentpatch.html"
-tags: [Progress Reports]
+tags: [Articles]
 ---
 A week ago, new builds of SilentPatch were released (you can grab them from [Mods]({% link _games/gta.md %}) section). Looking at the changelog, one of the features added to San Andreas was:
 
