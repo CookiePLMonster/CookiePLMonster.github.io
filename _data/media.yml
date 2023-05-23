@@ -58,6 +58,14 @@
   title: "Fans still polishing up GTA 3, Vice City & San Andreas \\| Rock Paper Shotgun"
   date: 2018-05-21
   game-series: ["gta-iii", "gta-vc", "gta-sa"]
+- url: https://www.pcgamer.com/hotline-miami-2-gets-windows-xp-support-via-unofficial-patch/
+  title: "Hotline Miami 2 gets Windows XP support via unofficial patch \\| PC Gamer"
+  date: 2015-03-16
+  game-series: "hm2"
+- url: https://www.eurogamer.net/hotline-miami-2-gets-windows-xp-support/
+  title: "Hotline Miami 2 gets Windows XP support \\| Eurogamer"
+  date: 2015-03-16
+  game-series: "hm2"
 - url: https://www.pcgamer.com/grand-theft-auto-san-andreas-steam-update-removes-songs-resolution-options/
   title: "GTA: San Andreas Steam update removes songs, resolution options \\| PC Gamer"
   date: 2014-11-09
