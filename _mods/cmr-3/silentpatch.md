@@ -2,7 +2,7 @@
 title: SilentPatch
 game-series: "cmr-3"
 excerpt: "Remastered edition of the game at home."
-date: 15-01-2023
+date: 25-05-2023
 ---
 
 {% assign bekoha_link = "[Bekoha](https://twitter.com/Bek0ha){:target='_blank'}" %}
@@ -60,6 +60,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * New Graphics options added: Field of View (separate for external and internal cameras), Digital Tachometer, Vertical Split-screen.
 * New Advanced Graphics options added: Windowed/borderless mode (fully resizable), Vertical Sync, Refresh Rate, Anisotropic Filtering.
 * Changed the Bonus Codes URL to point towards [a cheat generator hosted by myself]({% link pages/bonuscodes.md %}){:target="_blank"} since the original URLs are not active anymore.
+* Added an option to toggle the HUD by pressing F5.
 
 ### Language Pack:
 * Added support for all official text translations used together - English, French, German, Spanish, Italian, Polish, and Czech.
