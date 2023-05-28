@@ -2,6 +2,7 @@
 layout: page
 title: About
 excerpt: My short bio.
+last_modified_at: 2020-03-22
 permalink: /about/
 ---
 
@@ -46,4 +47,4 @@ and lately I also occasionally contribute to several console emulators
 (see my [GitHub activity](https://github.com/CookiePLMonster)).
 
 
-*Last update: {{ "2020-03-22" | date: page.date-format }}*
+*Last update: {{ page.last_modified_at | date: page.date-format }}*

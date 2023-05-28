@@ -8,6 +8,7 @@ excerpt: "Graphical artifacts caused by a CPU, not GPU? Sure thing."
 twitter: {card: "summary_large_image"}
 game-series: "mass-effect"
 date: 2020-07-19 13:00:00 +0200
+last_modified_at: 2020-11-07 12:00:00 +0200
 tags: [Releases, Articles]
 ---
 
@@ -16,7 +17,7 @@ scroll down to [**Download**](#download) section for a download link.*
 
 ***
 
-**{{ "2020-11-07" | date: page.date-format | upcase }} UPDATE:**\\
+**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 Build 2 has been released! This update resolves a bug introduced by SilentPatchME which broke enemy AI during the Virmire mission.
 
 ***

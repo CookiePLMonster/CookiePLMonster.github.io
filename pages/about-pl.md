@@ -2,6 +2,7 @@
 layout: page
 title: O mnie
 excerpt: Moje krótkie bio.
+last_modified_at: 2020-03-22
 permalink: /about/pl/
 hide: true
 lang: pl
@@ -49,7 +50,7 @@ dalej wydaję nowe modyfikacje i&nbsp;patche dosyć regularnie (sprawdź moje [M
 a&nbsp;ostatnio też od czasu do czasu udzielam się w&nbsp;developmencie kilku emulatorów konsol
 (sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster)).
 
-{% assign lastdate = "2020-03-22" %}
+{% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}
 *Ostatnia aktualizacja:
 {{ lastdate | date: "%-d" }} {% case m %}

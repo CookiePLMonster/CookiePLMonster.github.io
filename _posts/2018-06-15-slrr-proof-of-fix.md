@@ -7,6 +7,7 @@ thumbnail: "assets/img/posts/slrr-img.jpg"
 image: "assets/img/posts/slrr-img.jpg"
 game-series: "slrr"
 date: 2018-06-15 23:25:00 +0200
+last_modified_at: 2018-07-14 12:00:00 +0200
 redirect_from: "/2018/06/15/slrr-proof-of-fix.html"
 tags: [Articles]
 ---
@@ -124,7 +125,7 @@ It has been tailored **only** for Build 936, I do not know what are the effects 
 
 <a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
-**{{ "2018-07-14" | date: page.date-format | upcase }} UPDATE:**\\
+**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.
 
 # Unresolved issues

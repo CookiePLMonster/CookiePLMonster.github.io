@@ -7,13 +7,14 @@ image: "assets/img/games/bg/dxhrdc.jpg"
 excerpt: "Researching and restoring differences in game's post-processing and lighting - with bug fixes."
 game-series: "dxhrdc"
 date: 2020-04-26 18:20:00 +0200
+last_modified_at: 2020-05-02 12:00:00 +0200
 tags: [Releases, Articles]
 ---
 
 *TL;DR - if you are not interested in an in-depth overview of the research done,
 scroll down to [**Part 2 -- implementation**](#part-2--implementation) section for a mod announcement and the download link.*
 
-**{{ "2020-05-02" | date: page.date-format | upcase }} UPDATE:**\\
+**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 Build 2 has been released! This release fixes numerous reported issues, including DoF issues and an accidental incompatibility with Windows 7.
 For a full changelog, see the [Release page on GitHub](https://github.com/CookiePLMonster/DXHRDC-GFX/releases/latest/).
 

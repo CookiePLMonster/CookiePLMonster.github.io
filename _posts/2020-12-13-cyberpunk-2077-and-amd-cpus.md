@@ -7,11 +7,12 @@ feature-img: "assets/img/posts/cp2077-amd/banner.jpg"
 image: "assets/img/posts/cp2077-amd/banner.jpg"
 game-series: "cyberpunk-2077"
 date: 2020-12-13 19:10:00 +0100
+last_modified_at: 2020-12-19 12:00:00 +0100 
 tags: [Articles]
 twitter: {card: "summary_large_image"}
 ---
 
-**{{ "2020-12-19" | date: page.date-format | upcase }} UPDATE:**\\
+**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 Today, CD Projekt RED released a patch 1.05, which includes a fix for the issue covered in this post:
 
 > [AMD SMT] Optimized default core/thread utilization for 4-core and 6-core AMD Ryzen™ processors.

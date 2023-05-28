@@ -7,6 +7,7 @@ image: "assets/img/silentpatch_banner.png"
 excerpt: "Now officially compliant with LS-RP rules, so you can roleplay with it without the risk of getting banned."
 game-series: "gta-sa"
 date: 2019-03-09 21:00:00 +0100
+last_modified_at: 2019-03-18 12:00:00 +0100
 tags: [Releases]
 ---
 Hey there! It's time for another release of SilentPatch for San Andreas!
@@ -41,7 +42,7 @@ From Build 30, SilentPatch detects when the player is playing on LS-RP and **dis
 While it has **not** been announced officially yet, it is more than likely that this and future builds of SilentPatch will be officially allowed to use without the risk of any punishment.
 When new information arrives, I will modify this post with up to date changes!
 
-{{ "2019-03-18" | date: page.date-format }} UPDATE: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
+{{ page.last_modified_at | date: page.date-format }} update: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
 
 ***
 

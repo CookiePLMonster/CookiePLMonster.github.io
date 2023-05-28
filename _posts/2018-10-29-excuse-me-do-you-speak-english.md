@@ -3,6 +3,7 @@ layout: post
 title: Excuse me PCSX2, do you sprechen Inglés?
 excerpt: Mixing languages is irytujące.
 date: 2018-10-29 23:40:00 +0200
+last_modified_at: 2018-10-31 12:00:00 +0200
 tags: [Articles]
 ---
 Recently, I upgraded [PCSX2](https://pcsx2.net/) with an intent to check it out for the first time in years.
@@ -40,6 +41,6 @@ when I tried out [Dolphin](https://dolphin-emu.org/).
 
 *Fix for the issue discussed here has been submitted back to PCSX2's repository via a [pull request](https://github.com/PCSX2/pcsx2/pull/2664).*
 
-{{ "2018-10-31" | date: page.date-format }} update: Fix has been merged into both PCSX2 and wxWidgets. Success!
+{{ page.last_modified_at | date: page.date-format }} update: Fix has been merged into both PCSX2 and wxWidgets. Success!
 
 [^1]: And seemingly me being cursed with a curse of finding issues everywhere.

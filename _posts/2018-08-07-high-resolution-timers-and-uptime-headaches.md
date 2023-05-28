@@ -5,6 +5,7 @@ excerpt: You may be dealing with very big numbers, so tread carefully.
 image: "assets/img/posts/uptime-img.png"
 game-series: "tools"
 date: 2018-08-07 2:25:00 +0200
+last_modified_at: 2022-02-17 12:00:00 +0200
 tags: [Articles]
 ---
 
@@ -125,7 +126,7 @@ A proper way to handle this is to keep those calculations as integers and only c
 return static_cast<double>((timer_act.QuadPart - timer_begin.QuadPart) * 1000) / timer_freq.QuadPart;
 ```
 
-**{{ "2022-02-17" | date: page.date-format | upcase }} UPDATE:**\\
+**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 An earlier version of this code snippet divided `timer_freq` by 1000 (as you may have noticed from the comments under the article).
 This has since been changed to a multiplication, as dividing frequency could have resulted in the loss of precision.
 
