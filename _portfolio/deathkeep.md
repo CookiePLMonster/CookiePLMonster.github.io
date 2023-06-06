@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: "DeathKeep "
+title: "DeathKeep"
 image: "assets/img/portfolio/thumb/deathkeep.jpg"
 feature-img: "assets/img/portfolio/deathkeep.jpg"
 date: 2023-03-27
