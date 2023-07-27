@@ -2,7 +2,7 @@
 title: SilentPatch
 game-series: "cmr-3"
 excerpt: "Remastered edition of the game at home."
-date: 25-05-2023
+date: 27-07-2023
 ---
 
 {% assign bekoha_link = "[Bekoha](https://twitter.com/Bek0ha){:target='_blank'}" %}
