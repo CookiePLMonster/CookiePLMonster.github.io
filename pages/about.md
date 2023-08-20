@@ -2,7 +2,7 @@
 layout: page
 title: About
 excerpt: My short bio.
-last_modified_at: 2020-03-22
+last_modified_at: 2023-08-20
 permalink: /about/
 ---
 
@@ -41,10 +41,18 @@ in March 2015, a few days after the game's release.
 Not only it got officially endorsed, but it also allowed me to establish first contacts in the game development scene which
 eventually allowed me to get my first job (which I hold till this day).
 
-What am I up to these days? I port games for a living (see my [Portfolio]({% link pages/portfolio.md %})),
-I still release new modifications and patches somewhat regularly (see my [Mods & Patches]({% link pages/mods.md %})),
-and lately I also occasionally contribute to several console emulators
-(see my [GitHub activity](https://github.com/CookiePLMonster)).
+***
 
+What am I up to these days?
+* I provide professional support and consultancy services for re-releasing old PC games on modern computers
+  (see entries marked as <q>Independent</q> in my [Portfolio]({% link pages/portfolio.md %})). I specialize in upgrading outdated proprietary codebases for modern standards,
+  ensuring compatibility with contemporary compilers, operating systems, and hardware. I am also able to fix such issues without the source code. \\
+  **If you are a publisher with plans to re-release a classic game on digital storefronts and need assistance getting it to run well,**
+  **drop me a line -- even if you don’t have access to your game's source code!**
+* I port and co-develop games as my day job (see my [Portfolio]({% link pages/portfolio.md %})).
+* I still release new modifications and patches (see my [Mods & Patches]({% link pages/mods.md %})). My hobby work spans across over 40 games on multiple platforms.
+* I occasionally contribute to numerous open-source projects, such as [OpenRCT2](https://openrct2.io/) or [PCSX2](https://pcsx2.net/)
+  (see my [GitHub activity](https://github.com/CookiePLMonster)).
+* I regularly contribute to [Redump Disc Preservation Project](http://redump.org/), concentrating my efforts on preserving PC discs.
 
 *Last update: {{ page.last_modified_at | date: page.date-format }}*

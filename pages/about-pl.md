@@ -2,7 +2,7 @@
 layout: page
 title: O mnie
 excerpt: Moje krótkie bio.
-last_modified_at: 2020-03-22
+last_modified_at: 2023-08-20
 permalink: /about/pl/
 hide: true
 lang: pl
@@ -45,10 +45,19 @@ w&nbsp;marcu 2015 roku, kilka dni po premierze gry. Patch został zauważony prz
 a&nbsp;także okazał się moim punktem wejścia do zdobycia kontaktów w&nbsp;branży gier -- co ostatecznie pozwoliło mi zdobyć
 pierwszą pracę (w&nbsp;której jestem do dziś).
 
-Czym zajmuję się obecnie? Utrzymuję się z&nbsp;portowania gier (sprawdź moje [Portfolio]({% link pages/portfolio.md %})),
-dalej wydaję nowe modyfikacje i&nbsp;patche dosyć regularnie (sprawdź moje [Mody & Patche]({% link pages/mods.md %})),
-a&nbsp;ostatnio też od czasu do czasu udzielam się w&nbsp;developmencie kilku emulatorów konsol
-(sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster)).
+***
+
+Czym zajmuję się obecnie?
+* Oferuję profesjonalne usługi wsparcia i&nbsp;doradztwa w&nbsp;zakresie wydawania starych gier PC na współczesne komputery
+  (sprawdź wpisy oznaczone jako <q>Independent</q> w&nbsp;moim [Portfolio]({% link pages/portfolio.md %})). Moją specjalnością jest modernizacja starszych projektów,
+  zapewniająca kompatybilność ze współczesnymi kompilatorami, systemami operacyjnymi oraz sprzętem. Problemy tego typu rozwiązuję również bez konieczności dostępu do kodu źródłowego gry. \\
+  **Jeśli jesteś wydawcą planującym wydanie swojej klasycznej gry na platformach cyfrowej dystrybucji i&nbsp;potrzebujesz pomocy w&nbsp;zapewnieniu, by gra działała jak należy,**
+  **daj mi znać -- nawet jeśli nie masz dostępu do kodu źródłowego tej gry!**
+* Za dnia zajmuję się portowaniem i&nbsp;współtworzeniem gier (sprawdź moje [Portfolio]({% link pages/portfolio.md %})).
+* Wciąż wydaję nowe modyfikacje i&nbsp;patche (sprawdź moje [Mody & Patche]({% link pages/mods.md %})). Moje hobby obejmuje ponad 40 gier na różnych platformach.
+* Okazjonalnie udzielam się w&nbsp;różnych projektach z&nbsp;otwartym kodem źródłowym, takich jak np. [OpenRCT2](https://openrct2.io/) czy [PCSX2](https://pcsx2.net/)
+  (sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster)).
+* Regularnie udzielam się w&nbsp;[projekcie Redump Disc Preservation](http://redump.org/). Swoją działalność skupiam na utrwalaniu płyt PC.
 
 {% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}
