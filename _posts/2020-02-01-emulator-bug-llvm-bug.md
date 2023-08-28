@@ -3,6 +3,7 @@ layout: post
 title: "Emulator bug? No, LLVM bug"
 excerpt: "The fact it sounds unlikely does not mean it's not true."
 date: 2020-02-01 21:50:00 +0100
+last_modified_at: 2020-03-05 12:00:00 +0100
 tags: [Articles]
 ---
 
@@ -27,7 +28,7 @@ Thankfully, I am able to test RPCS3 on more than one PC, which differ only in CP
 * My main PC has Intel i7 6700K -- CPU with 4 cores and 8 threads. This is the PC which has a consistent crash.
 * Another PC has Intel i7 7800X -- CPU with 6 cores, 12 threads and AVX-512. On this PC **I was unable to reproduce this crash!**
 
-Looking at differences between those two CPU's, I could identify two possible causes -- more CPU cores or presence of AVX-512.
+Looking at differences between those two CPUs, I could identify two possible causes -- more CPU cores or presence of AVX-512.
 The first claim could be tested easily by modifying CPU affinity, while the second could be verified by configuring RPCS3 to ignore presence of AVX-512.
 Sadly, neither got me any closer to the root cause -- 7800X still would not crash, whereas 6700K would refuse to work even if I tried to transfer the cache.
 
@@ -80,7 +81,7 @@ RPCS3, and in turn LLVM compiled in Debug, so a test can be redone. Sure enough,
 
 ```Unhandled exception at 0x000000000203A259 in rpcs3d.exe: 0xC0000005: Access violation reading location 0xFFFFFFFFFFFFFFFF.```
 
-"Classic" access violation, attempting to reference invalid memory. Curiously, one of the arguments to the crashing functionm `void* memory` equals `0xddddddddddddde29`, 
+"Classic" access violation, attempting to reference invalid memory. Curiously, one of the arguments to the crashing function `void* memory` equals `0xddddddddddddde29`,
 which looks like a very suspicious value and not just "random garbage". Move up the call stack to `RuntimeDyldImpl::resolveX86_64Relocation` function,
 and one of its arguments, `const SectionEntry& Section`, reveals what's up:
 
@@ -156,5 +157,6 @@ and issues can happen everywhere.
 
 ***
 
-*As of time of writing this post, Nekotekina adopted [one of the solutions](https://github.com/RPCS3/llvm/commit/9fb67ecaea741afe9ca59d4a8ba8b6428df76c99) to RPCS3's LLVM fork.* \\
-*Issue is yet to be reported to upstream LLVM.*
+*As of time of the initial submission of this post, Nekotekina adopted [one of the solutions](https://github.com/RPCS3/llvm/commit/9fb67ecaea741afe9ca59d4a8ba8b6428df76c99)*
+*to RPCS3's LLVM fork.* \\
+*As of {{ "2020-03-05" | date: page.date-format }}, an identical fix is present [in upstream LLVM](https://reviews.llvm.org/D75110).*
