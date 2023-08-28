@@ -6,6 +6,7 @@ image: "assets/img/games/dxhrdc.jpg"
 feature-img: "assets/img/games/bg/dxhrdc.jpg"
 game-series: "dxhrdc"
 order: 0
+juxtapose: true
 ---
 
 {% include mods-list.html series=page.game-series %}

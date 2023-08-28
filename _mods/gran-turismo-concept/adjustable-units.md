@@ -25,9 +25,7 @@ Available units:
   * 1 - ft.lb
   * 2 - NM
 
-<p class="mod-screenshot" align="center">
-<a href="{% link assets/img/posts/console-codes-2/gtc-units.jpg %}"><img src="{% link assets/img/posts/console-codes-2/gtc-units.jpg %}"></a>
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gtc-units.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

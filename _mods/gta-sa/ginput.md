@@ -22,14 +22,12 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 * Full co-op support - the game can make full use of two pads or bind the first pad to second player, so co-op can be played even if only one pad is connected.
 * Extended support for DualShock 3 controllers and SCP Driver Package - including pressure sensitive buttons and SIXAXIS accelerometers.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/bKoE8p3.jpg"><img src="https://i.imgur.com/bKoE8p3l.jpg"></a>
-<a href="https://i.imgur.com/hOVRwPV.jpg"><img src="https://i.imgur.com/hOVRwPVl.jpg"></a>
-</p>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/YoGUNtpC2j0" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include screenshot.html link="https://i.imgur.com/bKoE8p3.jpg" thumbnail="https://i.imgur.com/bKoE8p3l.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/hOVRwPV.jpg" thumbnail="https://i.imgur.com/hOVRwPVl.jpg" %}
 </div>
+
+{% include video.html link="https://www.youtube.com/embed/YoGUNtpC2j0" %}
 
 {% include setup-instructions.html %}
 

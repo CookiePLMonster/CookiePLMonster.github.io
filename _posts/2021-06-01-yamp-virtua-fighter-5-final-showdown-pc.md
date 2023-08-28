@@ -230,11 +230,11 @@ so adding more patches in the future should be easy.
 Yakuza Arcade Machines Player is shipped as a single executable file to be dropped in your Yakuza 6 directory.
 For a feature list and a to-do list, check the mod's downloads page.
 
-<div style="overflow:auto;padding:10px">
-<div style="width:50%;float:left;"><img src="{% link assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg %}"></div>
-<div style="width:50%;float:right;"><img src="{% link assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg %}"></div>
-<div style="width:50%;float:left;"><img src="{% link assets/img/posts/yamp/YAMP_dftKEuMb56.jpg %}"></div>
-<div style="width:50%;float:right;"><img src="{% link assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg %}"></div>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}
+{% include screenshot.html link="/assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg" %}
+{% include screenshot.html link="/assets/img/posts/yamp/YAMP_dftKEuMb56.jpg" %}
+{% include screenshot.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
 </div>
 
 <a href="{% link _games/vf5fs.md %}#yamp" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Yakuza Arcade Machines Player</a> \\

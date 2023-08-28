@@ -10,14 +10,12 @@ Gran Turismo 2, other than being one of the more fondly remembered installments 
 not seen in any other Gran Turismo to date -- it's split between two discs.
 This modification combines both discs for an ultimate and complete version of Gran Turismo 2.
 
-<p class="mod-screenshot" align="center">
-<a href="{% link assets/img/posts/gt2-combined/arcade-mode.jpg %}"><img src="{% link assets/img/posts/gt2-combined/arcade-mode.jpg %}"></a>
-<a href="{% link assets/img/posts/gt2-combined/gt-mode.jpg %}"><img src="{% link assets/img/posts/gt2-combined/gt-mode.jpg %}"></a>
-</p>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/jByvSCDQLdY" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/gt2-combined/arcade-mode.jpg" %}
+{% include screenshot.html link="/assets/img/posts/gt2-combined/gt-mode.jpg" %}
 </div>
+
+{% include video.html link="https://www.youtube.com/embed/jByvSCDQLdY" %}
 
 Due to the nature of this mod, the setup process is slightly more involved than the usual:
 1. Download the setup script. **Do note that GTVolTool used by this script is Windows only.**

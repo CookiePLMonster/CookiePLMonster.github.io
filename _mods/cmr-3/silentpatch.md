@@ -86,9 +86,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * *abbydiode* and *Cpone* for additional testing
 * Several ex-CMR3 developers who are aware of this project and were able to share their feedback 🙂
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/ipXwyzwV9k0" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/ipXwyzwV9k0" %}
 
 ## Setting up the game & SilentPatch {#silentpatch-setup}
 Please follow the following instructions **in order**:

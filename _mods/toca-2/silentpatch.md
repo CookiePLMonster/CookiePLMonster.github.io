@@ -33,9 +33,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 ## Credits
 * [AuToMaNiAk005](https://www.youtube.com/user/AuToMaNiAk005) - for his extremely useful widescreen/ultrawide tutorials I used as a base for my implementation of widescreen & high resolutions support
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/QVSzsOuwAA8" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/QVSzsOuwAA8" %}
 
 {% include setup-instructions.html %}
 

@@ -13,7 +13,7 @@ info-title: "This patch is shipped with PCSX2 starting with v1.7.4934."
 
 An improved 16:9 widescreen patch, covering both on-foot and driving segments of the game.
 
-{% include screenshot.html link="https://i.imgur.com/2KGPRAU.jpg" thumbnail="https://i.imgur.com/2KGPRAUl.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/2KGPRAU.jpg" thumbnail="https://i.imgur.com/2KGPRAUh.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

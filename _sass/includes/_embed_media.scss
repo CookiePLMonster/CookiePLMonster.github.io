@@ -1,30 +1,10 @@
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 0px;
-	height: 0;
-	overflow: hidden;
-	margin-bottom: 1.5em;
-
-	iframe, object, embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		padding: 0;
-	}
-}
-
-
-.screenshot-entry {
-    text-align: center;
+%media-entry {
     width: 90%;
     margin: 0 auto 0.5em;
     &.natural {
         max-width: 90%;
     }
-    img {
+    img, iframe, object, embed {
         padding: 0;
     }
 
@@ -39,26 +19,61 @@
     }
 }
 
-.screenshot-container {
+$video-16-9-padding: 56.25%;
+
+.video-container, .video-entry {
+    @extend %media-entry;
+	position: relative;
+	padding-bottom: $video-16-9-padding * 0.9;
+
+    iframe, object, embed {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 850px) {
+        padding-bottom: $video-16-9-padding * 0.75;
+        &.small {
+            padding-bottom: $video-16-9-padding * 0.475;
+        }
+        &.natural {
+            padding-bottom: $video-16-9-padding * 0.9;
+        }
+    }
+}
+
+.image-entry {
+    @extend %media-entry;
     text-align: center;
-  
+    vertical-align: middle;
+}
+
+.media-container {
+    text-align: center;
     > div {
         display: inline-block;
-        width: 90%;
     }
     &.natural > div {
         max-width: 90%;
     }
 
     @media screen and (min-width: 850px) {
-        > div {
-            width: 75%;
-        }
         &.small > div {
             width: 47.5%;
         }
         &.natural > div {
             width: unset;
+        }
+
+        &.small > div.video-entry {
+            padding-bottom: $video-16-9-padding * 0.475;
+        }
+        &.natural > div.video-entry {
+            padding-bottom: $video-16-9-padding * 0.9;
         }
     }
 }

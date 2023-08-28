@@ -116,7 +116,7 @@ limited -- with the range of issues ranging from a hardcoded French co-driver (r
 
 ...various UI issues...
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-broken-pl-keyboard.png" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-broken-secrets-screen.png" %}
 </div>
@@ -151,7 +151,7 @@ language in the game, CD Projekt (or Codemasters) introduced several changes to 
                 caption="These screenshots are from a patched game, but you get the idea." %}
 
 * Menu cubes received new graphics to match Polish wording:
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_NP59FE2Oim.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_Rea1oHQcc6.png" right-label="Polish"
                 start-position="75%" %}
@@ -184,9 +184,7 @@ this isn't the case -- the changes in this release are:
 I couldn't find any in-game comparisons online [other than the Polish dubbing wiki](https://polski-dubbing.fandom.com/wiki/Colin_McRae_Rally_3),
 so here is one:
 
-<div class="video-container" id="polish-codrivers">
-<iframe src="https://www.youtube.com/embed/hiMuxipp5X4" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/hiMuxipp5X4" id="polish-codrivers" %}
 
 The removal of Nicky Grist explains why the game was now shipped on 2 CDs -- while localized co-drivers only use one-shot samples that
 are played at specific triggers during the stage, Nicky Grist's pace notes are full audio recordings, created for each stage individually.
@@ -226,7 +224,7 @@ That said, there **is** something interesting about this release, and I only not
 executable appear to be identical to the international executable, it has at least one unique UI bug, not present anywhere else! I have no idea how this happened,
 but the results screens for time trials are completely broken in this release.[^sp-czech-fix]
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_Kuqw351FSw.png" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_fHCSJQmaYu.png" %}
 </div>
@@ -248,7 +246,7 @@ it's still functional -- it's just that this option is underwhelming to begin wi
 and the only UI element it corrects is the co-driver arrow. That said, it's not the worst, as it opts to fix the aspect ratio by increasing the horizontal FOV,
 rather than by shrinking it vertically:
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_F84XcsPYJ9.jpg" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_mSVB76OLLL.jpg" %}
 </div>
@@ -276,7 +274,7 @@ The PC version of Colin McRae Rally 3 had a strange bug where [the sun would fla
 (**WARNING:** rapidly flashing colors) if the FSAA (anti-aliasing) option was enabled. This happens regardless of whether anti-aliasing is enabled in-game, or forced externally;
 dgVoodoo would also not help resolve it, proving that it's **not** a Direct3D 9 bug.
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-sun1.jpg" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-sun2.jpg" %}
 </div>
@@ -438,7 +436,7 @@ Fixing the Reset function to correctly reconcile those 3 missing states fixes th
 If you've played CMR3 on PlayStation 2 or watched any footage of it, you may have noticed that the game looked a little more vibrant there,
 most prominently when it comes to car reflections. Albeit present on PC and Xbox, they always seemed a little dull. To verify, I ran the same car and stage on PC
 and in the PCSX2 emulator, and pulled the reflection data before and after it's been mapped on a sphere:
-<div class="screenshot-container natural">
+<div class="media-container natural">
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-ps2-ref.png" caption="PlayStation 2; 512x512 reflection, 128x128 sphere" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-pc-stock-ref.png" caption="PC (stock); 256x256 reflection & sphere" %}
 </div>
@@ -483,12 +481,10 @@ For SilentPatch, I went ahead and enabled sky rendering for reflections at all t
 Not only does this change make the car reflections more vibrant, but it also "fixes" the TV displays in cutscenes -- as they reuse the reflection map,
 they now display the sky correctly!
 
-<div class="screenshot-container">
 {% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_GTMDAOirDs.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_qooRyN7dkN.jpg" right-label="SilentPatch" %}
 {% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_baj8DEkpAw.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_oCjhhdT7ja.jpg" right-label="SilentPatch" %}
-</div>
 
 If for some reason you prefer the stock reflections, this change can be disabled from the `SilentPatchCMR3.ini` file -- by adding these lines at the very bottom of the file:
 
@@ -505,12 +501,10 @@ unintended) -- they are used both in 2D (in menus and graphs), and in 3D (for an
 at 640x480 -- but the larger the selected resolution is, the more noticeable it becomes that those lines become relatively thin and hard to read.
 SilentPatch resolves this issue by implementing line thickness:
 
-<div class="screenshot-container">
 {% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_pDJxlRZjOl.png" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC_0QekVJ7utN.png" right-label="SilentPatch" %}
 {% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_d5pB0mWR2G.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC_7AyM6Gu0Lo.jpg" right-label="SilentPatch" %}
-</div>
 
 ***
 
@@ -635,7 +629,7 @@ The new options are:
   your preferred FOV in the range of 30 - 150 degrees. External and internal cameras get their separate options -- something not done even
   in DiRT Rally 2.0.
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_cWlcxCu7Qg.jpg" caption="Digital tachometer" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_UDHzvaVeTM.jpg" caption="Vertical split-screen" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-min-fov.jpg" caption="30 degrees FOV" %}
@@ -674,7 +668,7 @@ the game itself looked gorgeous, but the UI was lacking.
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_6Israqewxa.jpg" caption="Feels like something is missing here." %}
 
 Bekoha's HD UI addresses this by replacing most interface assets with faithful high quality recreations:
-<div class="screenshot-container natural">
+<div class="media-container natural">
 {% capture url_speed %}{{ hd_ui_url }}/screenshots/speed.png{% endcapture %}
 {% capture url_timer %}{{ hd_ui_url }}/screenshots/timer.png{% endcapture %}
 {% capture url_results %}{{ hd_ui_url }}/screenshots/results.png{% endcapture %}
@@ -697,7 +691,7 @@ likely released HQ fonts/UI years ago. Instead, to get HD textures to look the w
 Theoretically, replacing textures in CMR3 is easy. Font files are loose DDS files, while the UI textures are DDS files packaged in BigFile archives that have been
 well understood for nearly two decades. However, a naïve texture replacement produces results that are hardly optimal:
 
-<div class="screenshot-container small">
+<div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/spcmr3/qBsfV0cO.png" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/mpc-hc64_2022-11-25_00-44-43.png" %}
 {% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_nV6WYwJk2u.png" caption="In case you forget who is the sponsor." %}
@@ -864,9 +858,7 @@ The other new options have been added to in-game menus instead.
 * Majority of in-game UI elements replaced.
 
 I've created a brief showcase of the patch in video form, you can watch it here:
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/ipXwyzwV9k0" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/ipXwyzwV9k0" %}
 
 > Unlike most of my other mods, installing this one is a little more involved. Due to the presence of DRM-free executables,
 > I only officially support those, and instead, I provide a ready solution to upgrade the latest official DRM'd executables to the DRM-free versions.

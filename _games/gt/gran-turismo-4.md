@@ -7,6 +7,7 @@ feature-img: "assets/img/games/bg/gran-turismo-4.jpg"
 parent-series: "console-ps2"
 game-series: "gran-turismo-4"
 order: 13
+juxtapose: true
 ---
 
 {% include mods-list.html series=page.game-series %}

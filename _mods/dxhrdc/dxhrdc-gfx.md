@@ -15,13 +15,14 @@ With this plugin, you can freely choose what elements of the game's visuals shou
 
 The configuration menu also allows to freely modify color grading attributes or select from 3 presets based on the data taken directly from DXHR.
 
-<p class="mod-screenshot" align="center">
-<a href="{% link assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg %}"><img src="{% link assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg %}"></a>
-</p>
+{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Detroit_HR/DC.jpg" left-label="Stock"
+                right="/assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg" right-label="Gold Filter Restoration" %}
+{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Hengsha_HR/DC.jpg" left-label="Stock"
+                right="/assets/img/posts/dxhrdc-gfx/Hengsha_HR/HR.jpg" right-label="Gold Filter Restoration" %}
+{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Picus_HR/DC.jpg" left-label="Stock"
+                right="/assets/img/posts/dxhrdc-gfx/Picus_HR/HR.jpg" right-label="Gold Filter Restoration" %}
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/b42mzApkaCw" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/b42mzApkaCw" %}
 
 {% include setup-instructions.html %}
 

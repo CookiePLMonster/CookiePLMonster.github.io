@@ -9,10 +9,10 @@ This cheats improves randomly generated events (One-Make races and Event Generat
 * A typo causing the game to pick a 2-player version of Autumn Ring instead of Apricot Hill has been fixed.
 * Autumn Ring Mini and Autumn Ring Mini Reverse, previously unused in Simulation Mode, have been added to the pool of available courses.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/IJ8ey54.png"><img src="https://i.imgur.com/IJ8ey54l.png"></a>
-<a href="https://i.imgur.com/7HXZl0n.png"><img src="https://i.imgur.com/7HXZl0nl.png"></a>
-</p>
+<div class="media-container small">
+{% include screenshot.html link="https://i.imgur.com/IJ8ey54.png" thumbnail="https://i.imgur.com/IJ8ey54l.png" %}
+{% include screenshot.html link="https://i.imgur.com/7HXZl0n.png" thumbnail="https://i.imgur.com/7HXZl0nl.png" %}
+</div>
 
 {% include setup-instructions.html platform="ps1" %}
 

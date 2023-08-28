@@ -16,13 +16,11 @@ The main reason for creating this patch were broken water reflections - landmass
 * Vertical Sync option now works as expected - it used to be ignored by the game completely, defaulting to VSync off
 * Fixed a crash occuring when using a mouse scroll wheel during loading screens
 * Fixed a crash/freeze on exit when using a 64-bit executable
- 
+
 ### Quality of life improvements
 * **-64bit** commandline option has been added - when it's used, the game will always attempt to launch using a 64-bit executable. This is useful for getting a 64-bit version of the game to work via Steam, as previously it was required to swap files around.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/hizKXrW.jpg"><img src="https://i.imgur.com/hizKXrWl.jpg"></a>
-</p>
+{% include screenshot.html link="https://i.imgur.com/hizKXrW.jpg" thumbnail="https://i.imgur.com/hizKXrWh.jpg" %}
 
 {% include setup-instructions.html %}
 

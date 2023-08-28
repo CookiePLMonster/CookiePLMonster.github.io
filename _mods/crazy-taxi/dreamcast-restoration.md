@@ -27,15 +27,13 @@ but also made unreachable by customers.
 
 **This modification does not (and will not) restore the original soundtrack from the Dreamcast version.**
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/D8oQHkc.jpg"><img src="https://i.imgur.com/D8oQHkcl.jpg"></a>
-<a href="https://i.imgur.com/1j3BgjC.jpg"><img src="https://i.imgur.com/1j3BgjCl.jpg"></a>
-<a href="https://i.imgur.com/YPt9wLw.jpg"><img src="https://i.imgur.com/YPt9wLwl.jpg"></a>
-</p>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/RX2ULEL9U5w" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include screenshot.html link="https://i.imgur.com/D8oQHkc.jpg" thumbnail="https://i.imgur.com/D8oQHkcl.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/1j3BgjC.jpg" thumbnail="https://i.imgur.com/1j3BgjCl.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/YPt9wLw.jpg" thumbnail="https://i.imgur.com/YPt9wLwl.jpg" %}
 </div>
+
+{% include video.html link="https://www.youtube.com/embed/RX2ULEL9U5w" %}
 
 {% include setup-instructions.html %}
 

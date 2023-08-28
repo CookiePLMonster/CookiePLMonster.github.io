@@ -15,12 +15,9 @@ Ever wanted to have Co-driver calls play through headphones while the other soun
 Co-Driver Splitter is a plugin for recent DiRT, GRID and F1 games splitting audio between multiple devices. Now Co-driver, Spotter and Commentator calls will be played through a Communications device,
 while everything else plays over speakers!
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/S4psNp2mhUs" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/X3FQYK2GUuk" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include video.html link="https://www.youtube.com/embed/S4psNp2mhUs" %}
+{% include video.html link="https://www.youtube.com/embed/X3FQYK2GUuk" %}
 </div>
 
 ***

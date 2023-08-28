@@ -13,10 +13,10 @@ With this cheat, I replace the stock functionality of the right analog stick (Th
 **Note: When "uninstalling" the cheat, please follow the instructions in the PNACH file!
 Removing it without first making the code unmap the newly added controls will leave camera controls permanently mapped in the savegame.**
 
-<p class="mod-screenshot" align="center">
-<a href="{% link assets/img/posts/console-codes-2/nascar-lookaround-2.jpg %}"><img src="{% link assets/img/posts/console-codes-2/nascar-lookaround-2.jpg %}"></a>
-<a href="{% link assets/img/posts/console-codes-2/nascar-lookaround-1.jpg %}"><img src="{% link assets/img/posts/console-codes-2/nascar-lookaround-1.jpg %}"></a>
-</p>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-2.jpg" %}
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-1.jpg" %}
+</div>
 
 {% include setup-instructions.html platform="ps2" %}
 

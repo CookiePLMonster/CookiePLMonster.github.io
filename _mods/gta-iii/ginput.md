@@ -21,14 +21,12 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 * Cheats input from the pad. Use classic PS2 cheats on PC!
 * Extended support for DualShock 3 controllers and SCP Driver Package - including pressure sensitive buttons and SIXAXIS accelerometers.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/K3lyEPu.jpg"><img src="https://i.imgur.com/K3lyEPul.jpg"></a>
-<a href="https://i.imgur.com/1RHu9XN.jpg"><img src="https://i.imgur.com/1RHu9XNl.jpg"></a>
-</p>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/lgspMapwDgM" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include screenshot.html link="https://i.imgur.com/K3lyEPu.jpg" thumbnail="https://i.imgur.com/K3lyEPul.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/1RHu9XN.jpg" thumbnail="https://i.imgur.com/1RHu9XNl.jpg" %}
 </div>
+
+{% include video.html link="https://www.youtube.com/embed/lgspMapwDgM" %}
 
 {% include setup-instructions.html %}
 

@@ -18,9 +18,7 @@ To do:
 
 PAL version of the cheat fixes a "*Launch speed at X mph*" text, which was wrongly labeled as showing miles per hour, but showed kilometers per hour.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/g4QySpm.png"><img src="https://i.imgur.com/g4QySpml.png"></a>
-</p>
+{% include screenshot.html link="https://i.imgur.com/g4QySpm.png" thumbnail="https://i.imgur.com/g4QySpmh.png" %}
 
 {% include setup-instructions.html platform="ps1" %}
 

@@ -13,9 +13,7 @@ By default, the code ships with stock mappings, so make sure to modify the code 
 
 **Please remember to read the instructions included in the PNACH file and adjust the code to your preferences!**
 
-<p class="mod-screenshot" align="center">
-<a href="{% link assets/img/posts/console-codes-2/gt4p-remapping.jpg %}"><img src="{% link assets/img/posts/console-codes-2/gt4p-remapping.jpg %}"></a>
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt4p-remapping.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

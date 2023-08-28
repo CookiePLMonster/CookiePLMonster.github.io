@@ -11,9 +11,7 @@ However, in the final game the player would only be able to take over Ballas' an
 This modification unlocks gang wars with all gangs (even the unused ones,
 if any modification makes use of them) so the player can quite literally take over an entire state.
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/oNEKXvUuSfQ" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/oNEKXvUuSfQ" %}
 
 {% include setup-instructions.html %}
 

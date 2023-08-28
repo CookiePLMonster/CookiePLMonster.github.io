@@ -7,6 +7,7 @@ feature-img: "assets/img/games/bg/gran-turismo-2.jpg"
 parent-series: "console-ps1"
 game-series: "gran-turismo-2"
 order: 1
+juxtapose: true
 ---
 
 ### Versions glossary

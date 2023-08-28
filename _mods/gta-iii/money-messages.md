@@ -14,13 +14,8 @@ Money pop-ups will now show when:
 * Blowing up a vehicle
 * Destroying a police helicopter
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/lFdUYLc.jpg"><img src="https://i.imgur.com/lFdUYLcl.jpg"></a>
-</p>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/9uZp9XPd9wA" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include screenshot.html link="https://i.imgur.com/lFdUYLc.jpg" thumbnail="https://i.imgur.com/lFdUYLch.jpg" %}
+{% include video.html link="https://www.youtube.com/embed/9uZp9XPd9wA" %}
 
 {% include setup-instructions.html %}
 

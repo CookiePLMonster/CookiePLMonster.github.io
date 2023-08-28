@@ -7,9 +7,7 @@ date: 15-03-2022
 
 A Gran Turismo 3-like chase camera that swings to the sides more than the final camera.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/Nppsn61.jpg"><img src="https://i.imgur.com/Nppsn61l.jpg"></a>
-</p>
+{% include screenshot.html link="https://i.imgur.com/Nppsn61.jpg" thumbnail="https://i.imgur.com/Nppsn61h.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

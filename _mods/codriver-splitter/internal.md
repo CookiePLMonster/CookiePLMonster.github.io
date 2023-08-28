@@ -3,12 +3,9 @@ Ever wanted to have Co-driver calls play through headphones while the other soun
 Co-Driver Splitter is a plugin splitting audio between multiple devices. Now Co-driver, Spotter and Radio Communication calls will be played through a Communications device, while everything else plays over speakers!
 
 {% if include.series == 'dirt' %}
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/S4psNp2mhUs" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/X3FQYK2GUuk" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include video.html link="https://www.youtube.com/embed/S4psNp2mhUs" %}
+{% include video.html link="https://www.youtube.com/embed/X3FQYK2GUuk" %}
 </div>
 {% else %}
 **NOTE:** Beware that due to the way Co-Driver Splitter works, perfect audio isolation is not possible. Therefore, some distant environment sounds are still faintly audible through headphones.

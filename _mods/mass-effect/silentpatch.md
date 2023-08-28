@@ -18,9 +18,7 @@ SilentPatch diagnoses those issues and provides a definite fix, bringing complet
 
 * Fixed an issue causing black blobs to appear with contemporary AMD CPUs.
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/jc8j6Ax.jpg"><img src="https://i.imgur.com/jc8j6Axl.jpg"></a>
-</p>
+{% include screenshot.html link="https://i.imgur.com/jc8j6Ax.jpg" thumbnail="https://i.imgur.com/jc8j6Axh.jpg" %}
 
 {% include setup-instructions.html %}
 
