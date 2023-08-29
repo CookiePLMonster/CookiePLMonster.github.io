@@ -19,9 +19,7 @@ In the spirit of the initial purpose of SilentPatches, this release revisits an 
 The patch corrects several compatibility issues with modern computers, previously requiring a manual fix, and adds full widescreen support.
 Original issues have also been corrected, and I also added some quality of life improvements, bringing the game closer to what more modern racing games can offer.
 
-<div align="center" class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QVSzsOuwAA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/QVSzsOuwAA8" %}
 
 While most of the fixes I've done for TOCA 2 are ordinary and not worth covering, the single most severe compatibility issue the game had is unique, and I think
 it's worth explaining.

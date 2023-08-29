@@ -4,7 +4,7 @@
     &.natural {
         max-width: 90%;
     }
-    img, iframe, object, embed {
+    img, video, iframe, object, embed {
         padding: 0;
     }
 
@@ -21,7 +21,7 @@
 
 $video-16-9-padding: 56.25%;
 
-.video-container, .video-entry {
+.video-entry {
     @extend %media-entry;
 	position: relative;
 	padding-bottom: $video-16-9-padding * 0.9;

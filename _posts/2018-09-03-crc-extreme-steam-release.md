@@ -20,10 +20,7 @@ Cross Racing Championship Extreme is a relatively nice racing game from [Invictu
 Sadly, it was haunted by a relatively severe graphical artifact present on nearly all modern GPUs -- driver models would be corrupted
 and trees would randomly fly around!
 
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/crc-extreme/crcbug.jpg"><br>
-<em>You are not wrong - there really are trees in the sky.</em>
-</p>
+{% include screenshot.html link="/assets/img/posts/crc-extreme/crcbug.jpg" caption="You are not wrong - there really are trees in the sky." %}
 
 With it fixed, Raxat aka [ImageCode](http://image-code.com/) (you [may remember the name from a post about Street Legal Racing Redline v2.3.1]({{ site.baseurl }}{% post_url 2018-06-15-slrr-proof-of-fix %}))
 sent the fix back to Invictus, and they **liked it so much so they immediately wanted to re-release the game on Steam!**
@@ -37,20 +34,15 @@ I can proudly say I took part in refreshing the game for modern standards -- CRC
 
 With all fixes in place, it's safe to say the game looks much better than it used to:
 
-<p align="center">
-<img src="https://pbs.twimg.com/media/DilgbKfX0AASJb2.jpg"><br>
-<em>Now we're talking.</em>
-</p>
+{% include screenshot.html link="https://pbs.twimg.com/media/DilgbKfX0AASJb2.jpg" caption="Now we're talking." %}
 
 You can see all those improvements in a short gameplay I recorded:
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/XgSFekASeQc" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/XgSFekASeQc" %}
 
 <br>
 
-I am amazingly excited all this became reality and I hope you'll like the end result! A **huge** thanks to Raxat for getting the ball rolling and keeping it all in check later -- 
+I am amazingly excited all this became reality and I hope you'll like the end result! A **huge** thanks to Raxat for getting the ball rolling and keeping it all in check later --
 if it wasn't for him, the fix would have never made it back to Invictus Games and the game would probably not make its way to Steam 😄
 
 ***

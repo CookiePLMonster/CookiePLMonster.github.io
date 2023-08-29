@@ -12,9 +12,7 @@ A week ago, new builds of SilentPatch were released (you can grab them from [Mod
 
 While it is explained pretty clearly what features were added, some people asked for more specific info and/or a showcase of those. Thus, I guess a follow up is not too much to ask for...
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/ZLvFfPGG32o" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/ZLvFfPGG32o" %}
 
 This clip shows all new animations added to the game in Build 29. As usual when adding something which is not purely a fix, I've been asked if those really belong to the 'patch and if they are custom.
 Let me briefly go through all added features and explain the choices behind them, then:
@@ -31,12 +29,7 @@ but ultimately what is shown on the vid was decided as the best choice.
 I am not sure if there are any boats which did not have this broken :)
 
 In addition to those, Build 30 will feature one[^2] more additional animation -- functional ladder on Firetruck used in End of the Line:
-
-<p align="center">
-<video preload="auto" autoplay="autoplay" loop="loop" style="max-width: 90%; height: auto;">
-  <source src="https://i.imgur.com/sLN1J3E.mp4" type="video/mp4">
-</video>
-</p>
+{% include video-mp4.html link="https://i.imgur.com/sLN1J3E.mp4" attributes="autoplay muted loop" style="natural" %}
 
 So what went wrong here? This ladder is supposed to swing left and right. However, turns out the code also supports moving it up and down, but the controls for that were disabled.
 Re-enabling them made the feature work fully correctly! Now, right analog stick on the gamepad or Num2/Num8 keys (or whatever you have bound for hydraulics) will move the ladder up,

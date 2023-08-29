@@ -74,7 +74,7 @@ Y = fmod(In.UV.x, 2.0) < 1.0 ? sample.b : sample.r
 Now we see both issues are caused by improper interpretation of texture data - interpreting it as a 32-bit 640x480 image made it show two subsequent scanlines in the same row,
 while overall green appearance was caused by interpreting the data as RGB.
 
-With remaining issues identified, fixing them was only a matter of writing a correct YUY2 -> RGB shader and some trial and error around a few other quirks. 
+With remaining issues identified, fixing them was only a matter of writing a correct YUY2 -> RGB shader and some trial and error around a few other quirks.
 Soon after, **movies finally started showing up correctly**!
 
 <p align="center">
@@ -146,7 +146,7 @@ The best solution is to preprocess image on the CPU, transforming it from YUY2 t
 (that is, without having to allocate temporary memory) like this:
 
 ```cpp
-while ( source != end )  
+while ( source != end )
 {
         const uint32_t yuy = *source++;
         *destination++ = (yuy & ~(0xFF0000)) | ((yuy & 0xFF) << 16);
@@ -177,9 +177,7 @@ Success! We can finally call it working correctly. Not only intros work fine - i
 
 It's time to see those movies in action!
 
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/tkCyBY5z5dc" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/tkCyBY5z5dc" %}
 
 Fixing other issues
 ===================
@@ -210,6 +208,6 @@ Finale
 
 That draws the end of it! Developing the fix was quite a journey, and I am hoping so was the post-mortem article documenting it. For those interested,
 full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchGF" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a> 
+<a href="https://github.com/CookiePLMonster/SilentPatchGF" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
 For the time being, enjoy a playable game and stay tuned for more fixes for various older games! **Next up: Far Cry water reflections not working properly on modern Windows versions.**

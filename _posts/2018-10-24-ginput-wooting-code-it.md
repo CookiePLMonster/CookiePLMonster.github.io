@@ -52,19 +52,15 @@ May I see it?
 =============
 
 I prepared a few previews -- treat yourself:
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/wBR2WAtnnJc" frameborder="0" allowfullscreen></iframe>
-</div>
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/2rDSIAGcIIk" frameborder="0" allowfullscreen></iframe>
+<div class="media-container small">
+{% include video.html link="https://www.youtube.com/embed/wBR2WAtnnJc" %}
+{% include video.html link="https://www.youtube.com/embed/2rDSIAGcIIk" %}
 </div>
 
 However, those previews are kind of... boring. What if we could come up with something more entertaining?
 
 I raise you a mix of LEDs and the most known cutscene from the game 😁
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/080RA4-Mccc" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/080RA4-Mccc" %}
 
 I'm sold -- let me vote!
 ========================

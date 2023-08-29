@@ -9,6 +9,7 @@ twitter: {card: "summary_large_image"}
 game-series: "yakuza-0"
 date: 2019-02-24 19:50:00 +0100
 tags: [Articles]
+juxtapose: true
 ---
 
 First of all, I **really** liked Yakuza 0. Its PC port, released in August 2018, was my entry to the series.
@@ -21,15 +22,11 @@ No game is flawless though -- if Yakuza 0 was, this article wouldn't exist in th
 
 The port has been overall well received, however there is something which was bugging people about this release -- lighting appeared to be severely downgraded in several scenes.
 This view perhaps shows it the best:
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-default.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-default.jpg" %}
 
 Surely it's not meant to be pitch black like this, right? Character seems to be lit properly (you can clearly see light reflecting on the suit!), but the environment -- not so much.
 It's even more evident in another shot, where car headlights cast no light at all:
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-default2.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-default2.jpg" %}
 
 Finding the issue
 =================
@@ -39,25 +36,16 @@ Since it's a D3D11 game, I can try to get to the bottom of it using a graphics p
 Game rendering consists of several separate render passes -- shadows, normals, colour and post processing are performed in separate render passes.
 How to find what's wrong easily? Usually you expect a render pass to have valid inputs and outputs -- if it didn't produce anything, it wouldn't make sense to have it in the first place.
 Thankfully, I could quickly fine a pass which violated that rule of thumb -- a pass consisting of a single full screen draw, outputting nothing!
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/render-pass.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/render-pass.jpg" style="natural" %}
 
 Looking at both inputs and outputs of this pass, we can immediately tell something is not quite right...
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-io.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-io.jpg" style="natural" %}
 
 There are two issues here -- one of the input buffers is not bound (ie. not specified; RenderDoc shows it in pink-ish colour), and output is completely blank!
 That can't be right. How can I identify that this is *the* buffer I am looking for?
 
 Let's see where it's used:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-lightbuf.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-lightbuf.jpg" style="natural" %}
 
 It seems very plausible -- the buffer is cleared to black, then (possibly incorrectly) rendered to, then it's used as one of the input buffers for scene rendering.
 The only fully black buffer to be used so, I might add.
@@ -90,16 +78,10 @@ Flow in this case is fairly straightforward:
     ```
 4. After modifying the call, save and reimport the capture to RenderDoc.
 5. Check how the scene looks now....
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-modified-lighting.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-modified-lighting.jpg" %}
 
 ...and it works! Verdict:
-
-<p align="center">
-<img src="https://media1.tenor.com/images/c5fb2c0949d227a39e703565f7d4c16b/tenor.gif?itemid=4128784">
-</p>
+{% include screenshot.html link="https://media1.tenor.com/images/c5fb2c0949d227a39e703565f7d4c16b/tenor.gif?itemid=4128784" style="natural" %}
 
 Clearly, there is a long way between this state and having it **actually fixed**,
 but now I at least know that lighting will be applied correctly when the render pass gets fixed.
@@ -109,16 +91,10 @@ Figuring out the issue
 
 Before we try to understand why things are broken, it's worth looking at another shot from the same scene. Despite a popular belief,
 lighting is *not* completely gone from the game! There is at least one shot where it seems to work more or less correctly:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-forest-light.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-forest-light.jpg" %}
 
 And that's how that "possible light buffer" looks at this moment:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-forest-lightmap.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-forest-lightmap.jpg" %}
 
 It looks somewhat correct, so this render pass is not *completely* broken at least...
 At this point, there are two possibilities of what causes the issue:
@@ -150,25 +126,17 @@ However, now that I had both wrong and fixed cases available easily, I could com
 At this point, it retained a purely educational value.
 
 Let's start by taking a look at the very same shot with the patch:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-patch3.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-patch3.jpg" %}
 
 Looking much better, right? Let's take a look at the light buffer:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-lightbuf-patch3.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-lightbuf-patch3.jpg" %}
 
 This makes much more sense than what was there before the patch.
 
 Now, inputs and outputs for the very same draw provide an answer on what was fixed -- compare this with an earlier screenshot:
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-io-patch3.jpg" style="natural"
+            caption="Important note: First input buffer and second output buffer are one and the same!" %}
 
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-io-patch3.jpg %}"><br>
-<em>Important note: First input buffer and second output buffer are one and the same!</em>
-</p>
 
 So it **was** an unbound buffer! Patch3 bound it correctly, and thus the light buffer is rendered correctly.
 This is **not** enough though -- it would still be good to know exactly **why** the issue surfaced in the first place!
@@ -178,11 +146,8 @@ Modifying the capture -- take #2
 
 My first theory was that the buffer was never bound.
 This quickly turned out to be untrue, as buffer binding calls are identical between the unpatched and patched versions -- here I named several resources to make it easier to understand:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-bind-comparison.jpg %}"><br>
-<em>Left - unpatched, right - patched</em>
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-bind-comparison.jpg" style="natural"
+            caption="Left - unpatched, right - patched" %}
 
 Moreover -- notice that the EID (Event ID) are identical in both cases! This means that no calls have been added or removed with the patch[^3].
 Therefore, WTF? It appears like the buffer has been correctly bound even before the patch, yet RenderDoc shows it as unbound,
@@ -199,27 +164,18 @@ Remember how both input and output point to the same depth buffer? With that in 
 
 Let's take a look at the depth buffer itself and the views it has (this is same for both unpatched and patched version).
 Once again, I named them for convenience, so as we don't need to dive into D3D11 flags to understand the meaning:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-depths.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-depths.jpg" style="natural" %}
 
 Multiple views! This starts to look very much like what Baldur described -- a read/write hazard.
 Thus, the next thing we need to do is find the D3D11 call binding output buffers for that draw,
 and compare its context. Here's how it looks before the patch:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-writable-depth.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-writable-depth.jpg" style="natural" %}
 
 **Writable** view -- plot thickens! Binding as an input buffer is a read-only bind, but here we see an attempt to bind the buffer as output for writing.
 Therefore, even though an input buffer was bound in advance, it's now unbound.
 
 Was this the problem all along? Capture from a patched version provides an answer:
-
-<p align="center">
-<img src="{% link assets/img/posts/y0-lighting/y0-readonly-depth.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/y0-lighting/y0-readonly-depth.jpg" style="natural" %}
 
 **Yes!** Looks like that was the issue, much more straightforward than one would expect.
 However, it also possibly explains why it remained unfixed for such a long time -- this type of behaviour may or may not be very platform specific,
@@ -247,10 +203,8 @@ Since we know resource IDs of both views, this becomes trivial:
 
 Next, reimport a modified capture and... **it works!** We now have two exactly identical frames with and without the fix,
 so we can compare side by side, and watch lighting unfold on the screenshot:
-
-<div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=c054710c-3868-11e9-9dba-0edaf8f81e27"></iframe>
-</div>
+{% include juxtapose.html left="/assets/img/posts/y0-lighting/y0-default.jpg" left-label="Before"
+            right="/assets/img/posts/y0-lighting/y0-fixed.jpg" right-label="After" %}
 
 ***
 

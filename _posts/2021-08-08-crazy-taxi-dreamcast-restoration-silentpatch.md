@@ -29,13 +29,9 @@ released his Dreamcast Restoration mod -- replacing the textures and hex editing
 While the result is mostly satisfactory, this approach meant several shortcomings exist:
 
 1. Texture replacements don't cover everything -- Pizza Hut and FILA buildings have their models altered, so replacing textures doesn't allow making them look identical to the original versions.
-    <p align="center">
-    <img src="{% link assets/img/posts/ct-dc-sp/chrome_l6DOIbsoeS.jpg %}">
-    </p>
-2. Hex edited names are subject to size limits (you cannot make the string longer than the original one). This means some of the names had to be shortened. 
-    <p align="center">
-    <img src="{% link assets/img/posts/ct-dc-sp/chrome_iF77rjtDiv.jpg %}">
-    </p>
+    {% include screenshot.html link="/assets/img/posts/ct-dc-sp/chrome_l6DOIbsoeS.jpg" %}
+2. Hex edited names are subject to size limits (you cannot make the string longer than the original one). This means some of the names had to be shortened.
+    {% include screenshot.html link="/assets/img/posts/ct-dc-sp/chrome_iF77rjtDiv.jpg" %}
 3. Unlike Pizza Hut, KFC, Levi's, and Tower Records, FILA did not just get renamed, but instead cut completely as a possible destination for customers. This is weird, as the game's code reveals
 that FILA has indeed been renamed to *Shoe Rack*, which suggests its complete removal may have been an afterthought.
 
@@ -54,9 +50,7 @@ if ( hash == 0xCC0B3A0 )
 ```
 
 Turns out, removing these replacements got Pizza Hut closer to the way it originally looked -- undoing the changes to the logo text, but with the hat (and the roof logos) still missing:
-<p align="center">
-<img src="{% link assets/img/posts/ct-dc-sp/Crazy_Taxi_2grdPKJ56M.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/ct-dc-sp/Crazy_Taxi_2grdPKJ56M.jpg" %}
 
 This however was a great starting point -- now I know that I need to look for some sort of hashes/UIDs. Searching for one of these brought me to a suspiciously looking function,
 that looks almost as if it's moving/scaling something...
@@ -90,9 +84,7 @@ LABEL_330:
 ```
 
 While I cannot confirm this with absolute certainty, I think this theory turned out to be true -- removing this code restored the original appearance of Pizza Hut fully!
-<p align="center">
-<img src="{% link assets/img/posts/ct-dc-sp/Crazy_Taxi_JtWQkuJuCM.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/ct-dc-sp/Crazy_Taxi_JtWQkuJuCM.jpg" %}
 
 Later, after looking into the very same function more I was able to restore FILA logos and interior props in the same way. Success!
 
@@ -101,11 +93,11 @@ A naive solution of just removing the archives in `NewTexture` resulted in textu
 After even more poking and prodding, I eventually found it! With another two functions (one for world textures, another for UI) modified not to special case any textures,
 all the original brands have been restored purely from code, no file replacements needed:
 
-<p class="mod-screenshot" align="center">
-<a href="https://i.imgur.com/D8oQHkc.jpg"><img src="https://i.imgur.com/D8oQHkcl.jpg"></a>
-<a href="https://i.imgur.com/1j3BgjC.jpg"><img src="https://i.imgur.com/1j3BgjCl.jpg"></a>
-<a href="https://i.imgur.com/YPt9wLw.jpg"><img src="https://i.imgur.com/YPt9wLwl.jpg"></a>
-</p>
+<div class="media-container small">
+{% include screenshot.html link="https://i.imgur.com/D8oQHkc.jpg" thumbnail="https://i.imgur.com/D8oQHkcl.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/1j3BgjC.jpg" thumbnail="https://i.imgur.com/1j3BgjCl.jpg" %}
+{% include screenshot.html link="https://i.imgur.com/YPt9wLw.jpg" thumbnail="https://i.imgur.com/YPt9wLwl.jpg" %}
+</div>
 
 This only leaves FILA, as at that point customers still didn't want to go there, picking Popcorn Mania or Tower Records instead. However, by a stroke of luck (and tracking memory writes
 back to their source) I eventually spotted this chunk of code in a function that appears to be assigning destinations to passengers...
@@ -128,16 +120,12 @@ if ( v9 == *v8 )
 
 These IDs are no coincidence -- skip this chunk of code, and specific passengers again want to go to FILA! As mentioned earlier, this destination has a "censored" name (the thumbnail wasn't updated though),
 even though this destination effectively goes unused.
-<p align="center">
-<img src="{% link assets/img/posts/ct-dc-sp/Crazy_Taxi_pHWw3tk0Xy.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/ct-dc-sp/Crazy_Taxi_pHWw3tk0Xy.jpg" %}
 
 With this change, and later with restoring the original destination names, a brand new **Dreamcast Restoration 2.0** is ready! A joint effort by myself and Alexvgz, now not requiring any file replacements,
 is available for download on my Crazy Taxi page, so either continue reading for Part 2 or go straight to the [**Download**](#download) section for a download link.
 
-<div align="center" class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RX2ULEL9U5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/RX2ULEL9U5w" %}
 
 # Part 2 -- SilentPatch
 
@@ -224,10 +212,10 @@ have been carried over to the 2014 release correctly, the ones activated in-game
 Thankfully, these features are left in the game code as-is, but they are unobtainable. SilentPatch restores all 3 camera modes and the speedometer feature and uses the same key combinations
 as the classic PC port. I replicated the classic hotkeys so now old cheat pages/guides from the original PC versions are also relevant for the Steam version.
 
-<p class="mod-screenshot" align="center">
-<img src="{% link assets/img/posts/ct-dc-sp/Crazy_Taxi_9YB2IulTNS.jpg %}">
-<img src="{% link assets/img/posts/ct-dc-sp/Crazy_Taxi_5XZmpAqqal.jpg %}">
-</p>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/ct-dc-sp/Crazy_Taxi_9YB2IulTNS.jpg" %}
+{% include screenshot.html link="/assets/img/posts/ct-dc-sp/Crazy_Taxi_5XZmpAqqal.jpg" %}
+</div>
 
 ## Full changelog
 Aside from the fixes mentioned, SilentPatch for Crazy Taxi also fixes a few other issues. The full changelog is as follows:

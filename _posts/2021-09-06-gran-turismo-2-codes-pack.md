@@ -9,6 +9,7 @@ twitter: {card: "summary_large_image"}
 game-series: "gran-turismo-2"
 date: 2021-09-06 18:00:00 +0200
 tags: [Releases]
+juxtapose: true
 ---
 
 *TL;DR #1 - if you are not interested in an overview of my new Gran Turismo 2 cheat codes,
@@ -39,27 +40,21 @@ I decided to pick it up again using HugoPocked's cheat as the starting point, an
 The result of my research is a widescreen cheat that is much longer than the previous one (from 7 to 70 lines!), but also patches the actual viewport data for different screens
 instead of modifying it per-code context. This is how my new cheat compares to the old one in those few previously imperfect cases:
 
-<div style="overflow:auto;padding:10px">
-<div style="width:47.5%; float:left;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=ae3ba582-0f1e-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
-<div style="width:47.5%; float:right;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1bf757b0-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
-<div style="width:47.5%; float:left;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=4367cb4a-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
-<div style="width:47.5%; float:right;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6132c47c-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
+<div class="media-container small">
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/loading-before.jpg" left-label="Old"
+            right="/assets/img/posts/gt2-cheats/loading-after.jpg" right-label="New" %}
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/race-before.jpg" left-label="Old"
+            right="/assets/img/posts/gt2-cheats/race-after.jpg" right-label="New" %}
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/gtmode-before.jpg" left-label="Old"
+            right="/assets/img/posts/gt2-cheats/gtmode-after.jpg" right-label="New" %}
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/postrace-before.jpg" left-label="Old"
+            right="/assets/img/posts/gt2-cheats/postrace-after.jpg" right-label="New" %}
 </div>
 
 This is not the only benefit of a new cheat -- since it now operates on the screen sizes, it's possible to trivially calculate proper values for any aspect ratio.
 Because of this, I now ship **16:9** and **21:9** variations of the cheat on my blog, but I have also published a Python script I used to generate these cheats.
 With this script, you may generate a widescreen code for all supported game versions (every version except for NTSC-U 1.0) for any aspect ratio you wish to use. For example, 64:9:
-<p align="center">
-<img src="{% link assets/img/posts/gt2-cheats/wide-showcase.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/wide-showcase.jpg" %}
 
 ## Full detail AI cars + 8MB RAM cheat
 By default, Gran Turismo and Gran Turismo 2 both use very aggressive LODs for AI cars. The player's car is locked to the highest LOD level, while AI cars cycle between
@@ -67,28 +62,19 @@ three LDO models depending on distance from the camera.
 When playing the game on the native resolution it's nearly impossible to notice, but of course with upscaling LODs become much more obvious and jarring.
 
 To counter this, I created a cheat forcing all cars on the track to use the highest LOD level, previously reserved for the player. As a result, the game looks far better than originally!
-<div style="overflow:auto;padding:10px">
-<div style="width:47.5%; float:left;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=c2e27316-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
-<div style="width:47.5%; float:right;"><div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d6810360-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div></div>
-</div>
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/lod-start-before.jpg" left-label="Stock"
+                right="/assets/img/posts/gt2-cheats/lod-start-after.jpg" right-label="Full detail" %}
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/lod-race-before.jpg" left-label="Stock"
+                right="/assets/img/posts/gt2-cheats/lod-race-after.jpg" right-label="Full detail" %}
 
 However, this comes at a price -- with the cheat activated, the amount of geometry visible on screen at once is so high, the game runs out of space in its polygon buffers
 and starts skipping geometry!
-<p align="center">
-<img src="{% link assets/img/posts/gt2-cheats/missing-geometry.jpg %}"><br>
-<em>Something is missing.</em>
-</p>
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/missing-geometry.jpg" caption="Something is missing." %}
 
 I fixed this with another cheat, doubling the size of the game's polygon buffers. Since a stock PS1 doesn't have enough RAM for this, this cheat code utilizes
 extra RAM from dev PS1 units instead (dev PS1 units have 8MB RAM instead of 2MB RAM). Therefore, a **8MB RAM** cheat must be used together with
 a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from Game Properties individually for each game:
-<p align="center">
-<img src="{% link assets/img/posts/gt2-cheats/duckstation-devram.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/duckstation-devram.jpg" style="natural" %}
 
 **NOTE:** Earlier versions of DuckStation had a bug in the PGXP implementation where moving the polygon buffers to the 8MB RAM region caused artifacts.
 If the geometry looks wobbly while using these cheats with PGXP or it looks like it's falling apart, please update DuckStation.
@@ -99,18 +85,18 @@ and it cannot be down in chase cameras. This cheat allows to toggle the rear vie
 and toggle the entire HUD by holding `L3`. Combined with a Pause and Frame Step features of PS1 emulators (including DuckStation), this can essentially act as
 a cheap version of Photo Mode 😉
 
-<div style="overflow:auto;padding:10px">
-<div style="width:50%;float:left;"><img src="{% link assets/img/posts/gt2-cheats/hud-1.jpg %}"></div>
-<div style="width:50%;float:right;"><img src="{% link assets/img/posts/gt2-cheats/hud-2.jpg %}"></div>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/hud-1.jpg" %}
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/hud-2.jpg" %}
 </div>
 
 ## Replay cameras in race
 By default, Gran Turismo 2 has 3 camera modes in race, but 9 modes in replays, with the cinematic camera being a separate, 10th mode.
 This cheat makes all replay cameras accessible in race, and allows to switch the cinematic camera by holding `R1`.
 
-<div style="overflow:auto;padding:10px">
-<div style="width:50%;float:left;"><img src="{% link assets/img/posts/gt2-cheats/cameras-1.jpg %}"></div>
-<div style="width:50%;float:right;"><img src="{% link assets/img/posts/gt2-cheats/cameras-2.jpg %}"></div>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/cameras-1.jpg" %}
+{% include screenshot.html link="/assets/img/posts/gt2-cheats/cameras-2.jpg" %}
 </div>
 
 ## Slightly increased draw distance
@@ -119,9 +105,8 @@ to increase it arbitrarily. However, Gran Turismo 2 has a slightly higher draw d
 With this cheat, I enabled the replay draw distance in races. Curiously, one of the things it "fixes" is a notorious hole in the ground
 at the start of Midfield!
 
-<div align="center" class="video-container">
-<iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=f4b3adce-0f1f-11ec-abb7-b9a7ff2ee17c"></iframe>
-</div>
+{% include juxtapose.html left="/assets/img/posts/gt2-cheats/draw-distance-before.jpg" left-label="Stock"
+                right="/assets/img/posts/gt2-cheats/draw-distance-after.jpg" right-label="Higher draw distance" %}
 
 Similarly to the **Full detail AI cars** cheat, this cheat might benefit from an expanded polygon buffer space. Consider using this cheat
 together with a **8MB RAM** cheat and dev console memory enabled for the game (instructions above).

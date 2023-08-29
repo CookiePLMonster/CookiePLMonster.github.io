@@ -31,9 +31,7 @@ I investigated it and found that in these versions, Arcade Mode runs at 125% spe
 is restored to 100% speed, just like in the Japanese version of GT1.
 
 This clip from Submaniac93 illustrates the differences well, so I'll just use that in place of a gameplay presentation:
-<div align="center" class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x-HdmE6tF0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/x-HdmE6tF0A" %}
 
 ## True Endurance
 #### Applies to: Gran Turismo 2
@@ -41,10 +39,7 @@ Gran Turismo 2 has a single timed Endurance race -- **Millenium In Rome 2 Hours 
 With this cheat, this race becomes a true timed Endurance race: like in PS2 Gran Turismos, the lap counter now only shows finished laps and the race ends after 2 hours, regardless of how many laps
 were finished.
 
-<p align="center">
-<img src="{% link assets/img/posts/console-codes-2/gt2-true-endurance.jpg %}"><br>
-<em>Begone "Lap 1/99".</em>
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt2-true-endurance.jpg" caption="Begone \"Lap 1/99\"." %}
 
 # PlayStation 2
 
@@ -72,10 +67,10 @@ For Gran Turismo 4 First Preview, this code only allows for modifying power and 
 
 **Please remember to read the instructions included in the PNACH file and adjust the code to your preferences!**
 
-<p class="mod-screenshot" align="center">
-<img src="{% link assets/img/posts/console-codes-2/gt3-units.jpg %}">
-<img src="{% link assets/img/posts/console-codes-2/gt4p-units.jpg %}">
-</p>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt3-units.jpg" %}
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt4p-units.jpg" %}
+</div>
 
 ## Adjusted triggers sensitivity
 #### Applies to: Gran Turismo 3, Gran Turismo Concept, Gran Turismo 4 Prologue, Gran Turismo 4, Tourist Trophy, Gran Turismo 4 Online
@@ -95,10 +90,8 @@ By default, the code ships with stock mappings, so make sure to modify the code 
 
 **Please remember to read the instructions included in the PNACH file and adjust the code to your preferences!**
 
-<p align="center">
-<img src="{% link assets/img/posts/console-codes-2/gt4p-remapping.jpg %}"><br>
-<em>Believe me, this screen shows remapped controls, as I'm gently pressing throttle on the right trigger.</em>
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt4p-remapping.jpg"
+            caption="Believe me, this screen shows remapped controls, as I'm gently pressing throttle on the right trigger." %}
 
 ## Shoulders control mapping
 #### Applies to: NASCAR: Dirt to Daytona, Test Drive: Eve of Destruction
@@ -121,10 +114,10 @@ Test Drive additionally also restores analog throttle/brake, a feature that was 
 and locked both to Digital. Leaving it this way would defeat the purpose of using triggers to accelerate/brake in the first place,
 so it's now been restored too.
 
-<p class="mod-screenshot" align="center">
-<img src="{% link assets/img/posts/console-codes-2/nascar-shoulders.jpg %}">
-<img src="{% link assets/img/posts/console-codes-2/td-shoulders.jpg %}">
-</p>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-shoulders.jpg" %}
+{% include screenshot.html link="/assets/img/posts/console-codes-2/td-shoulders.jpg" %}
+</div>
 
 ## Camera controls on the right stick
 #### Applies to: NASCAR: Dirt to Daytona
@@ -136,10 +129,10 @@ With this cheat, I replace the stock functionality of the right analog stick (Th
 **Note: When "uninstalling" the cheat, please follow the instructions in the PNACH file!
 Removing it without first making the code unmap the newly added controls will leave camera controls permanently mapped in the savegame.**
 
-<p class="mod-screenshot" align="center">
-<img src="{% link assets/img/posts/console-codes-2/nascar-lookaround-2.jpg %}">
-<img src="{% link assets/img/posts/console-codes-2/nascar-lookaround-1.jpg %}">
-</p>
+<div class="media-container small">
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-2.jpg" %}
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-1.jpg" %}
+</div>
 
 ## Extended valid birth date range
 #### Applies to: NASCAR: Dirt to Daytona
@@ -147,9 +140,7 @@ The last cheat released today is a huge nitpick 😁 When creating a new driver 
 to the **1925-1986** range. In 2021 that limit doesn't really make sense anymore (I can't set my driver's birth date to my own!),
 so in this cheat, I lifted it enough to future proof it for a very long time -- with valid dates now being in the **1900-2100** range.
 
-<p align="center">
-<img src="{% link assets/img/posts/console-codes-2/nascar-birthdate.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-birthdate.jpg" %}
 
 # Download
 All listed cheats can be downloaded from *Mods & Patches*. Click here to head to the *Consoles* page, from where you can go to the specific games' pages:

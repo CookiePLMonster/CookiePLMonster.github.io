@@ -18,12 +18,10 @@ Further research revealed the problem is not in the ASI itself -- UAL would not 
 <https://blogs.msdn.microsoft.com/larryosterman/2004/07/19/what-are-known-dlls-anyway/>
 
 Let's take a look at KnownDLLs in Windows 10 then:
-
-![KnownDLLs from Windows 10]({% link assets/img/posts/known-win10.png %})
+{% include screenshot.html link="/assets/img/posts/known-win10.png" style="natural" %}
 
 As suspected, `wininet.dll` is not there. However, what about Windows 7...?
-
-![KnownDLLs from Windows 7]({% link assets/img/posts/known-win7.png %})
+{% include screenshot.html link="/assets/img/posts/known-win7.png" style="natural" %}
 
 That's it! Since it's a Known DLL, Windows automatically assumes the DLL must be in *system32* and ignores any other possible DLLs.
 

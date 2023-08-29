@@ -39,30 +39,20 @@ I assumed that GT4 FP's camera is exactly how a GT3-style camera would have beha
 * "Damper" value determines how fast the camera self-centers. Final GT4 sets this value to `120.0`, GT4FP sets it to `30.0` -- making the spring effect 4 times stronger in the final game!
 
 With a cheat code modifying just those two values, GT4 First Preview's camera is back in the final GT4 (and Tourist Trophy)!
-
-<div align="center" class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5kk63H3nYsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/5kk63H3nYsQ" %}
 
 But what if you wanted to customize the camera further? Since the cheat code I created is intended to be as user-friendly as possible,
 adjusting parameters is trivial. For example, here I made the camera even stiffer than the default ("damper" set to `360.0`), thus emulating the GT5/GT6 chase camera:
-
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/p5wz8z" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+{% include video.html link="https://streamable.com/e/p5wz8z" %}
 
 # Far chase camera
 
 Aside from the camera stiffness, GT4 Prologue and GT4 First Preview have one more difference -- instead of the hood/roof camera, they have a second chase camera, located farther and higher from the car:
-
-<p align="center">
-<img src="{% link assets/img/posts/console-codes-2/gt4p-units.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/console-codes-2/gt4p-units.jpg" %}
 
 The final GT4 does not remove this camera entirely; instead, it is available as one of the replay cameras.
 With another cheat code, I managed to **add** this camera back to the in-race selection as a new, fourth selectable camera:
-
-<p align="center">
-<img src="{% link assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg %}">
-</p>
+{% include screenshot.html link="/assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg " %}
 
 # Download
 

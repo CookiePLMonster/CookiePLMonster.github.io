@@ -24,10 +24,7 @@ I contributed several things for this release, namely:
 - Added an option to allow movement and menu navigation with DPad, like on PlayStation 2
 
 You can watch mod's presentation on their official channel:
-
-<div align="center" class="video-container">
-<iframe src="https://www.youtube.com/embed/377H3K9jAGA" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/377H3K9jAGA" %}
 
 To keep it short, head to the mod's official website for a full changelog, installation instructions, download links and credits:
 <a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>

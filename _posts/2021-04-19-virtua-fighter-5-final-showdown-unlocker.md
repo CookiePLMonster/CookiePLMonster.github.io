@@ -43,9 +43,7 @@ A few interesting insights:
 This discovery got people hyped (as evidenced by the amount of engagement on the tweet), so I couldn't leave it at the mercy of another project of mine that might or might not work.
 Since it's a single byte change, I went ahead and created a small plugin for Yakuza 6 and Yakuza: LAD, changing the mode used by arcade machines from 1 to 0.
 With a single flag change, you now can play the full console version from inside Club SEGA!
-<div align="center" class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7oNsZClpZ_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video.html link="https://www.youtube.com/embed/7oNsZClpZ_E" %}
 
 Now, bear in mind that the sole purpose of this plugin is to unlock the game **as-is** for everyone. At the moment I have no plans to address any of the issues and shortcomings there are.
 Those include, but are not limited to:
