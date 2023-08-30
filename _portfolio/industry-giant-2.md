@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "Industry Giant 2"
 image: "assets/img/portfolio/thumb/industry-giant-2.jpg"
 feature-img: "assets/img/portfolio/industry-giant-2.jpg"

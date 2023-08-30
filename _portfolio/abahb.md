@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "A Boy and His Blob"
 image: "assets/img/portfolio/thumb/abahb.jpg"
 feature-img: "assets/img/portfolio/abahb.jpg"

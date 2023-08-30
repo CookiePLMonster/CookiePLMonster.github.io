@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Yakuza 3"
 excerpt: "My modifications and patches for Yakuza 3: SilentPatch."
 image: "assets/img/games/yakuza-3.jpg"
@@ -9,4 +8,3 @@ game-series: "yakuza-3"
 order: 1
 ---
 
-{% include mods-list.html series=page.game-series %}

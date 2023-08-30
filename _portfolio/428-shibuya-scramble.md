@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "428: Shibuya Scramble"
 image: "assets/img/portfolio/thumb/428.jpg"
 feature-img: "assets/img/portfolio/428.jpg"

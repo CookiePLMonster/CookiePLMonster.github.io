@@ -1,0 +1,18 @@
+{% if include.items.size >= site.theme_settings.min_mods_for_toc %}
+<h2 class="no_anchor">Contents:</h2>
+<div class="tag-posts">
+    {% for mod in include.items %}
+    <h5 class="tag-title">
+        {% assign modid = mod.id | split: '/' | last %}
+        <a href="#{{ modid }}">
+            <i class="far fa-list-alt" aria-hidden="true"></i>
+            {{ mod.title | markdownify | strip_html }}
+        </a>
+
+        <span class="meta">
+            {{ mod.date | date: page.date-format }}
+        </span>
+    </h5>
+    {% endfor %}
+</div>
+{% endif %}

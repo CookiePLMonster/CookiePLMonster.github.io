@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "Sid Meier's Civilization VI"
 image: "assets/img/portfolio/thumb/civ6.jpg"
 feature-img: "assets/img/portfolio/civ6.jpg"

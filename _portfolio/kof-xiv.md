@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "The King of Fighters XIV"
 image: "assets/img/portfolio/thumb/KOF14.jpg"
 feature-img: "assets/img/portfolio/KOF-XIV.png"

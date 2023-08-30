@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "World Racing 2: Champion Edition"
 image: "assets/img/portfolio/thumb/world-racing-2-ce.jpg"
 feature-img: "assets/img/portfolio/world-racing-2-ce.jpg"

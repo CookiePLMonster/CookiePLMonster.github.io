@@ -1,5 +1,4 @@
-{% assign mods_list_items = site.mods | where: "game-series", include.series | sort: 'order' %}
-{% for mod in mods_list_items %}
+{% for mod in include.items %}
 <div class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;">
@@ -26,16 +25,14 @@
         Last update: {{ mod.date | date: page.date-format }}
     </div>
     {% endif %}
-    <div class="excerpt">   
+    <div class="excerpt">
         {{ mod.excerpt }}
     </div>
     </div>
     </div>
-    
+
     <div class="mod-content">
         {{ mod }}
     </div>
 </div>
 {% endfor %}
-
-{% include related-reads.html series=include.series %}

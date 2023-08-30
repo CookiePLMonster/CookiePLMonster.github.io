@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "DeathKeep"
 image: "assets/img/portfolio/thumb/deathkeep.jpg"
 feature-img: "assets/img/portfolio/deathkeep.jpg"

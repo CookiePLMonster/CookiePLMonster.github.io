@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Gran Turismo 2"
 excerpt: "My GameShark cheats for Gran Turismo 2: Widescreen Hack, 60 FPS, Combined Disc, Metric system, and more."
 image: "assets/img/games/gran-turismo-2.jpg"
@@ -20,7 +19,3 @@ juxtapose: true
   * PSone Books -- v1.0 Arcade, v1.1 Simulation
 * PAL (Europe, Australia etc.)
   * All versions are identical
-
-***
-
-{% include mods-list.html series=page.game-series %}

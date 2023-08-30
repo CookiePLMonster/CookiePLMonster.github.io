@@ -94,7 +94,7 @@ theme_settings:
   str_previous_page: "Prev"
   str_continue_reading: "Continue reading"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
-  
+
   # Icons for buttons
   download_icon: "<i class='fas fa-download'></i>"
   github_icon: "<i class='fab fa-github'></i>"
@@ -115,6 +115,9 @@ theme_settings:
 
   # Post navigation
   post_navigation: true
+
+  # Minimum number of mods on the page for TOC to show
+  min_mods_for_toc: 3
 
 
 # PAGINATION
@@ -156,6 +159,7 @@ defaults:
       path: ""
       type: "games"
     values:
+      layout: "mods-list"
       game-series: ""
       parent-series: ""
       order: 0
@@ -174,6 +178,7 @@ defaults:
       path: ""
       type: "portfolio"
     values:
+      layout: "portfolio"
       game-series: ""
       excerpt: ""
 

@@ -1,8 +1,9 @@
 ---
 title: Silent's ASI Loader
 game-series: "gta-sa"
-order: 999
+order: 1000
 excerpt: "If you want to use any ASI mods, you need this."
+date: 07-11-2014
 ---
 My take on an ASI Loader for GTA San Andreas.
 You need this if you want to use **any** ASI mods in the game.

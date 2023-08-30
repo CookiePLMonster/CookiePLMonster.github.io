@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: "Star General"
 image: "assets/img/portfolio/thumb/star-general.jpg"
 feature-img: "assets/img/portfolio/star-general.jpg"
