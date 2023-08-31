@@ -7,14 +7,14 @@ permalink: /mods/index/
 hide: true
 ---
 
-<ul>
+<div class="tag-posts">
 {% assign items = site.games | sort_natural: "title" %}
 {% for item in items %}
 {% unless item.hide or item.hide-on-list %}
-{% assign modlist = site.mods | where: "game-series", item.game-series %}
-{% if modlist.size > 0 %}
-<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+{% assign num_mods = site.mods | where: "game-series", item.game-series | size %}
+{% if num_mods > 0 %}
+<h5 class="tag-title"><a href="{{ item.url | relative_url }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | markdownify | strip_html }}</a></h5>
 {% endif %}
 {% endunless %}
-{% endfor %} 
-</ul>
+{% endfor %}
+</div>
