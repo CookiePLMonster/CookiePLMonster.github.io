@@ -10,14 +10,15 @@ layout: default
   style="background-size: auto; background-image: url('{{ site.theme_settings.header_feature_image | relative_url }}')"
   {% endif %}
   >
-    <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
-        {{ page.title | markdownify | strip_html }}
-    </h1>
+    <div class="title-padder">
+      <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
+          {{ page.title | markdownify | strip_html }}
+      </h1>
     
-    {% if page.subtitle %}
-    <h2 class="subtitle">{{ page.subtitle }}</h2>
-    {% endif %}
-      
+      {% if page.subtitle %}
+      <h2 class="subtitle">{{ page.subtitle }}</h2>
+      {% endif %}
+    </div>
   </header>
   <section class="post-content">
     {% unless layout.no_anchor %}

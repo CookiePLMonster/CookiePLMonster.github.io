@@ -1,33 +1,61 @@
 // Mix-ins
-%padding-small {
-    padding: $padding-x-small $padding-x-small * 2;
-    @media (max-width: 1000px) {
-        padding: $padding-x-small $padding-x-small;
+%padding-nav {
+    padding: $padding-small $padding-x-large;
+
+    @media (max-width: $xl-break) {
+        padding: $padding-small $padding-large * 2;
+    }
+
+    @media (max-width: $l-break) {
+        padding: $padding-small $padding-large;
+    }
+
+    @media (max-width: $m-break) {
+        padding: $padding-small $padding-medium;
+    }
+
+    @media (max-width: $sm-break) {
+        padding: $padding-small $padding-x-small;
     }
 }
 
-%padding-regular {
-    padding: $padding-small $padding-large;
-    @media (max-width: 1000px) {
-        padding: $padding-small $padding-large / 1.6;
+%padding-post {
+    padding: $padding-x-small $padding-x-large;
+
+    @media (max-width: $xl-break) {
+        padding: $padding-x-small $padding-large * 2;
     }
-    @media (max-width: 576px) {
-        padding: $padding-small / 3.0;
+
+    @media (max-width: $l-break) {
+        padding: $padding-x-small $padding-large;
+    }
+
+    @media (max-width: $m-break) {
+        padding: $padding-x-small $padding-medium;
+    }
+
+    @media (max-width: $sm-break) {
+        padding: $padding-x-small $padding-small;
     }
 }
 
-%padding-medium {
+%padding-header {
     padding: $padding-medium $padding-large;
-    @media (max-width: 1000px) {
-        padding: $padding-medium $padding-large / 1.6;
+
+    @media (min-width: $xl-break) {
+        padding: $padding-large $padding-large;
     }
-    @media (max-width: 576px) {
-        padding: $padding-medium / 3.0;
+
+    @media (max-width: $sm-break) {
+        padding: $padding-large;
     }
 }
 
 .header-txt-shadow {
-    text-shadow: 2px 2px 3px $text-shadow, -2px 2px 3px $text-shadow, 2px -2px 3px $text-shadow, -2px -2px 3px $text-shadow;
+    text-shadow: 2px 2px 3px $text-shadow,
+        -2px 2px 3px $text-shadow,
+        2px -2px 3px $text-shadow,
+        -2px -2px 3px $text-shadow;
 }
 
 // Buttons
@@ -42,23 +70,28 @@
         -webkit-appearance: none;
         background-color: transparent;
     }
-    
-    @at-root a#{&}, button#{&} {
+
+    @at-root a#{&},
+    button#{&} {
         @extend .button-link;
         color: $link-color;
 
         &.github {
             color: var(--github-link-color);
         }
+
         &.docs {
             color: var(--important-link-color);
         }
+
         &.forums {
             color: var(--forums-link-color);
         }
+
         &.patreon {
             color: $patreon-link-color;
         }
+
         &.paypal {
             color: $paypal-link-color;
         }
@@ -79,24 +112,28 @@
             border-color: var(--github-link-color);
         }
     }
+
     &.docs {
         &:hover {
             background: var(--important-link-color);
             border-color: var(--important-link-color);
         }
     }
+
     &.forums {
         &:hover {
             background: var(--forums-link-color);
             border-color: var(--forums-link-color);
         }
     }
+
     &.patreon {
         &:hover {
             background: $patreon-link-color;
             border-color: $patreon-link-color;
         }
     }
+
     &.paypal {
         &:hover {
             background: $paypal-link-color;
@@ -119,15 +156,19 @@ a.round-button {
     &.github {
         background-color: var(--github-link-color);
     }
+
     &.docs {
         background-color: var(--important-link-color);
     }
+
     &.forums {
         background-color: var(--forums-link-color);
-    }  
+    }
+
     &.patreon {
         background-color: $patreon-link-color;
     }
+
     &.paypal {
         background-color: $paypal-link-color;
     }
@@ -138,6 +179,7 @@ a.round-button {
         border: 1px solid $link-color;
         text-decoration: none;
     }
+
     color: $background-color;
 
     &.github {
@@ -145,38 +187,47 @@ a.round-button {
             background: var(--github-link-hover-color);
             border-color: var(--github-link-hover-color);
         }
+
         background: var(--github-link-color);
         border-color: var(--github-link-color);
-    }  
+    }
+
     &.docs {
         &:hover {
             background: var(--important-link-hover-color);
             border-color: var(--important-link-hover-color);
         }
+
         background: var(--important-link-color);
         border-color: var(--important-link-color);
-    }   
+    }
+
     &.forums {
         &:hover {
             background: var(--forums-link-hover-color);
             border-color: var(--forums-link-hover-color);
         }
+
         background: var(--forums-link-color);
         border-color: var(--forums-link-color);
-    }  
+    }
+
     &.patreon {
         &:hover {
             background: darken($patreon-link-color, 15%);
             border-color: darken($patreon-link-color, 15%);
         }
+
         background: $patreon-link-color;
         border-color: $patreon-link-color;
-    }  
+    }
+
     &.paypal {
         &:hover {
             background: darken($paypal-link-color, 15%);
             border-color: darken($paypal-link-color, 15%);
         }
+
         background: $paypal-link-color;
         border-color: $paypal-link-color;
     }

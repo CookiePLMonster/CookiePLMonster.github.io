@@ -1,6 +1,6 @@
 article,
 .comments {
-    @extend %padding-regular;
+    @extend %padding-post;
     border-bottom: 1px solid var(--line-color);
     float: left;
     width: 100%;
@@ -11,9 +11,11 @@ article {
         margin-bottom: 6%;
         text-align: center;
     }
+
     a:hover {
         @extend .body-link;
     }
+
     .footnotes {
         font-size: 0.9em;
     }
@@ -26,12 +28,14 @@ footer {
     font-size: 0.9em;
     display: inline-block;
     text-align: center;
+
     .meta {
         color: rgba($text-color, .5);
         letter-spacing: 0.1em;
         display: inline;
         text-transform: uppercase;
     }
+
     a.button {
         margin-left: 1em;
     }
@@ -56,32 +60,39 @@ header {
 /* --- Feature image --- */
 .feature-image {
     padding: 0;
+
     .post-link {
         color: $feature-image-text-color;
     }
+
     header {
         color: $feature-image-text-color;
         background-size: $feature-image-size;
         margin-bottom: 0;
         padding: $padding-large/2.5 $padding-large;
+
         .meta {
             @extend .header-txt-shadow;
             color: darken($feature-image-text-color, 15%);
         }
     }
+
     .post-content {
-        @extend %padding-regular;
+        @extend %padding-post;
         padding-bottom: 0;
     }
+
     .portfolio-columns {
         display: block;
+
         @media only screen and (min-width: 1000px) {
             display: flex;
             flex-direction: row-reverse;
         }
     }
+
     footer {
-        @extend %padding-regular;
+        @extend %padding-post;
         padding-top: 0;
     }
 }
@@ -89,47 +100,21 @@ header {
 // Responsive scrolling
 .feature-image header {
     @media screen and (max-width: $break) {
-        padding: $padding-small $padding-small;
+        padding: $padding-large*1.5 $padding-small;
     }
 }
 
-/* --- Post navigation --- */
-#post-nav {
-    width: 100%;
-    border-bottom: 1px solid var(--line-color);
-    display: flex;
-    float: left;
-
-    a,
-    .page-title {
-        display: inline-block;
-    }
-
-    .page-title {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-        width: 100%;
-    }
-
-    a {
-        padding: 2em 3em;
-        border: 1px solid rgba(255, 255, 255, 0);
-        text-align: center;
-        width: 50%;
-    }
-
-    i {
-        vertical-align: middle;
-    }
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     .octicon {
         fill: currentColor;
         padding: 0;
         vertical-align: middle;
         visibility: hidden;
     }
+
     &:hover .octicon {
         visibility: visible;
     }

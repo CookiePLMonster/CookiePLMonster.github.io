@@ -1,3 +1,7 @@
+.title-padder {
+    padding: calc(#{$title-padding} + 0.5em) $title-padding;
+}
+
 h1.title {
     @extend .header-txt-shadow;
 }
