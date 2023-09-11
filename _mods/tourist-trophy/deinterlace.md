@@ -1,6 +1,6 @@
 ---
 title: Deinterlace patch
-game-series: "tourist-trophy"
+#game-series: "tourist-trophy"
 order: 0
 date: 29-06-2021
 ---
