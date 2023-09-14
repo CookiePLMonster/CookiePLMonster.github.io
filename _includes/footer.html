@@ -48,4 +48,23 @@ function modeSwitcher() {
 <!-- Juxtapose -->
 {% if layout.juxtapose or page.juxtapose %}
 <script src="{% link assets/js/vendor/juxtapose.min.js %}"></script>
+<script>
+    const juxtaposeElements = document.querySelectorAll('.juxtapose');
+
+    juxtaposeElements.forEach(function (element) {
+        const juxtaposeContainer = element.parentElement;
+        var juxtaposeRatio;
+
+        window.addEventListener('load', function (event) {
+            juxtaposeRatio = element.offsetHeight / element.offsetWidth;
+        });
+
+        window.addEventListener('resize', function (event) {
+            const newWidth = juxtaposeContainer.offsetWidth;
+            const newHeight = newWidth * juxtaposeRatio;
+            element.style.width = newWidth + 'px';
+            element.style.height = newHeight + 'px';
+        });
+    });
+</script>
 {% endif %}
