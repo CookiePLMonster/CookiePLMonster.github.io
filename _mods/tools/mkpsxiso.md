@@ -3,7 +3,8 @@ title: MKPSXISO
 order: 4
 game-series: "tools"
 excerpt: "A tool to unpack and/or build PlayStation CD images."
-date: 05-04-2023
+date: 18-09-2023
+version: "2.04"
 ---
 
 *MKPSXISO v1.x was developed by Lameguy64.* \\
@@ -31,8 +32,8 @@ date: 05-04-2023
     * XML generation: by default in strict LBA order, but can instead sort by dir for pretty output.
     * Timestamps and XA attributes are preserved.
 
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v2.03/mkpsxiso-2.03-win64.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Windows 64-bit)</a> \\
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v2.03/mkpsxiso-2.03-Linux.deb" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, DEB)</a>
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v2.03/mkpsxiso-2.03-Linux.rpm" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, RPM)</a>
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v2.03/mkpsxiso-2.03-Linux.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, ZIP)</a> \\
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-win64.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Windows 64-bit)</a> \\
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.deb" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, DEB)</a>
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.rpm" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, RPM)</a>
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, ZIP)</a> \\
 <a href="https://github.com/Lameguy64/mkpsxiso" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
