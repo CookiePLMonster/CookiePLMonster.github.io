@@ -18,7 +18,7 @@ Without further ado, here are all the changes introduced in new releases:
 GTA III
 ----------
 * `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions - speeding up streaming
-* Alt+F4 now works properly
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
 * Pathfinding for cars chasing the player has been improved (most notably, it may result in 'Bait' being much more playable)
@@ -31,7 +31,7 @@ GTA III
 GTA Vice City
 ----------
 * `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions - speeding up streaming
-* Alt+F4 now works properly
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
 * Pathfinding for cars chasing the player has been improved

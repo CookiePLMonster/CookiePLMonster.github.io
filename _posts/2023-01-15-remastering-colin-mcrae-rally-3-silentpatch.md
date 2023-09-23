@@ -382,7 +382,7 @@ SHARPER_SHADOWS=0
 A few stages in CMR3 run next to lakes or across rivers. At the highest details, those come with a nice cubemap-based reflection and a subtle animation,
 producing an appearance of a reflective, moving water surface. However, on PC those reflections don't always look the same:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-water-comparison.png" caption="From left to right - normal water, water after changing graphics options, water after Alt+Tab." %}
+{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-water-comparison.png" caption="From left to right - normal water, water after changing graphics options, water after <kbd>Alt</kbd> + <kbd>Tab</kbd>." %}
 
 Depending on your actions, reflections may appear darker or even be completely black. I investigated this issue in detail, and it is caused not by one,
 but **three** separate bugs! While one of them is a nitpick and may not even affect visuals, the other two are worth covering.
@@ -392,7 +392,7 @@ i.e. when minimizing a fullscreen game window -- historically, a device lost eve
 the game window. CMR3 is aware of that and gracefully recreates most render targets -- but not the reflection cubemap! This results in the reflection being pitch black,
 making the water look horrendous. Making the game re-render the reflection after a device lost resolves the issue.
 
-The other issue is also related to the device lost event, but it happens when the device resets (either due to Alt+Tab or a display mode change) outside of the race.
+The other issue is also related to the device lost event, but it happens when the device resets (either due to <kbd>Alt</kbd> + <kbd>Tab</kbd> or a display mode change) outside of the race.
 Since reflections are rendered at the start of the race, they should be unaffected by a reset in menus and render just fine. However, they are rendered slightly miscolored:
 
 {% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-water-reflections.png" style="natural"
@@ -830,9 +830,9 @@ The other new options have been added to in-game menus instead.
 * Fixed an issue where the resolution change countdown went into negatives when fading out.
 * Fixed an issue on wider aspect ratios where repeated menu entries would not fade correctly.
 * Fixed an issue only showing in the Polish release where leaving the 'Co-driver's voice' screen would flicker the menu animations.
-* Alt+F4 now works.
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works.
 * Removed a debug feature where invalid codepoints flickered randomly.
-* The error message displayed when the game fails to load specific game files now doesn't freeze the game and can be closed with Alt+F4.
+* The error message displayed when the game fails to load specific game files now doesn't freeze the game and can be closed with <kbd>Alt</kbd> + <kbd>F4</kbd>.
 
 ### Enhancements:
 * The game is now fully portable, as the settings have been redirected from the registry to the INI file.

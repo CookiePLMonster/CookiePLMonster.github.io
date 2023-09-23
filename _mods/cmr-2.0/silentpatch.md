@@ -15,8 +15,8 @@ That means the game will not be horribly scretched when playing in widescreen an
 * <i class="fas fa-cog"></i> The game now defaults to borderless windowed mode. This change gets rid of a DirectDraw bug on Windows 8 and newer,
 which would make the game run in a window even if fullscreen is requested, also affecting performance negatively.
 Fullscreen borderless windowed mode does not have any of these issues, and looks identical to real fullscreen.
-Both windowed and borderless can be toggled via SPCMR2.ini file.
-* When playing in windowed mode (borderless or not), the game can handle Alt+Tab properly now.
+Both windowed and borderless can be toggled via `SPCMR2.ini` file.
+* When playing in windowed mode (borderless or not), the game can handle <kbd>Alt</kbd> + <kbd>Tab</kbd> properly now.
 * All dependencies on registry keys have been removed. This makes the game fully portable and also fixes an
 occasional issue, where the game would not launch without Administrator privileges (due to an incorrect way
 the game was reading registry keys).

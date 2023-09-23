@@ -15,7 +15,7 @@ standalone and native, on PC, provided you own a Steam copy of Yakuza 6.
 * Only Yakuza 6 is supported so far, Yakuza: Like a Dragon is planned to be added later.
 * Just like when playing through in-game arcades, the game renders at fixed 720p and stretches to fullscreen. Proper high resolution rendering support may be added later.
 * Offline Versus cannot be played with a keyboard and a gamepad. For now, two gamepads are required.
-* Keyboard bindings are hardcoded for now. Please refer to `F1` -> `Controls` for a list of controls.
+* Keyboard bindings are hardcoded for now. Please refer to <kbd>F1</kbd> -> <kbd><samp>Controls</samp></kbd> for a list of controls.
 
 <div class="media-container small">
 {% include screenshot.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}

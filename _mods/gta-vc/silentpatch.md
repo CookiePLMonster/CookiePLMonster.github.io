@@ -28,7 +28,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Corrected crime codes for police dispatch audio - police dispatch now refers to player crimes correctly
 * Fixed a bug causing cheat-spawned melee weapons to be forcibly replaced by other melee weapons upon walking into a pickup
 * FILE_FLAG_NO_BUFFERING flag has been removed from IMG reading functions - speeding up streaming
-* Alt+F4 now works properly
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
 * Pathfinding for cars chasing the player has been improved

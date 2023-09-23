@@ -49,9 +49,9 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Fixed an issue where the resolution change countdown went into negatives when fading out.
 * Fixed an issue on wider aspect ratios where repeated menu entries would not fade correctly.
 * Fixed an issue only showing in the Polish release where leaving the 'Co-driver's voice' screen would flicker the menu animations.
-* Alt+F4 now works.
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works.
 * Removed a debug feature where invalid codepoints flickered randomly.
-* The error message displayed when the game fails to load specific game files now doesn't freeze the game and can be closed with Alt+F4.
+* The error message displayed when the game fails to load specific game files now doesn't freeze the game and can be closed with <kbd>Alt</kbd> + <kbd>F4</kbd>.
 
 ### Enhancements:
 * The game is now fully portable, as the settings have been redirected from the registry to the INI file.
@@ -60,7 +60,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * New Graphics options added: Field of View (separate for external and internal cameras), Digital Tachometer, Vertical Split-screen.
 * New Advanced Graphics options added: Windowed/borderless mode (fully resizable), Vertical Sync, Refresh Rate, Anisotropic Filtering.
 * Changed the Bonus Codes URL to point towards [a cheat generator hosted by myself]({% link pages/bonuscodes.md %}){:target="_blank"} since the original URLs are not active anymore.
-* Added an option to toggle the HUD by pressing F5.
+* Added an option to toggle the HUD by pressing <kbd>F5</kbd>.
 
 ### Language Pack:
 * Added support for all official text translations used together - English, French, German, Spanish, Italian, Polish, and Czech.

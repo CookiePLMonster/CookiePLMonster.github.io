@@ -166,9 +166,9 @@ It does! Frametimes are now smoother than ever, and they don't get any worse eve
 Since I wished to release SP before the game officially launches, I didn't spend much time fixing other issues. Here are the other things SilentPatch takes care of:
 * The FPS limiter can now be disabled. Since the game's logic is tied to the frame rate, an uncapped game is going to speed up and be unplayable. However, it makes sense to disable the FPS
   cap if you use Vertical Sync to limit the frame rate or use an external frame limiter software, such as RTSS.
-* The original game switches to the windowed mode when you press Escape. This is a horrible design and I don't know where did the development team get that idea from (maybe from emulators?),
+* The original game switches to the windowed mode when you press <kbd>Esc</kbd>. This is a horrible design and I don't know where did the development team get that idea from (maybe from emulators?),
   especially since the only way you can go back is to pause the game, go to options and change the display mode to Fullscreen or Borderless from there. This is incredibly clunky,
-  so I've remapped this "feature" to Alt+Enter and also made it cycle between Windowed, Fullscreen, and Borderless modes.
+  so I've remapped this "feature" to <kbd>Alt</kbd> + <kbd>Enter</kbd> and also made it cycle between Windowed, Fullscreen, and Borderless modes.
 
 # Download
 

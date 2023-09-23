@@ -33,7 +33,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Fixed ambulance and firetruck dispatch timers - they reset on New Game now
 * The game will not create more than 32 blips at once now - while this never happened in an unmodded game, it could have happened due to exploits and potentially corrupted the save
 * FILE_FLAG_NO_BUFFERING flag has been removed from IMG reading functions - speeding up streaming
-* Alt+F4 now works properly
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Some car panels now are detached after car's explosion (like they were meant to be but the code forcibly fixed them immediately after damaging)
 * Metric-to-imperial conversion constants have been replaced with more accurate ones
 * Pathfinding for cars chasing the player has been improved (most notably, it may result in 'Bait' being much more playable)

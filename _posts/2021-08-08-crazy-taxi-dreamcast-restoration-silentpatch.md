@@ -136,7 +136,7 @@ When working on Dreamcast Restoration 2.0, I couldn't help but notice a few anno
 
 The fix in question exists for several years already, but it's never been perfect. For once, it's shipped as an EXE replacement (and therefore the original Dreamcast Restoration "bundled" it).
 It also doesn't seem to be fully reliable -- it works fine for me (except for occasional erroneous driver anims), but it never worked fine for Alexvgz. Therefore, I knew right then it
-most likely can be improved. On top of that, I've been constantly annoyed by the fact I can't properly Alt+F4 from the game, etc.
+most likely can be improved. On top of that, I've been constantly annoyed by the fact I can't properly <kbd>Alt</kbd> + <kbd>F4</kbd> from the game, etc.
 
 And so, together with the first mod, a new SilentPatch is now out. You may scroll down for a full changelog and a download link, or stick around for a brief summary of the most "interesting"
 bug fixes.
@@ -222,14 +222,14 @@ Aside from the fixes mentioned, SilentPatch for Crazy Taxi also fixes a few othe
 * Issues with analog steering and pressure sensitive triggers have been fixed. This applies both to XInput and DirectInput controllers.
 * A crash when starting the game with specific DirectInput devices (e.g. steering wheels) has been fixed.
 * Analog stick deadzones have been refined slightly to improve steering responsiveness and make it feel closer to the Dreamcast release.
-* Alt + F4 now works correctly.
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works correctly.
 * When using the Windowed mode, the window size has been corrected to avoid distorting the image.
 * When using the Windowed mode, maximizing is now disallowed by disabling the Maximize button rather than by making it non-functional.
 * Restored several missing cheats/hotkeys from the original PC version. These are:
-  * Reset Camera (`Shift+Alt+F5`)
-  * Cinematic Camera (`Shift+Alt+F6`)
-  * First Person Camera (`Shift+Alt+F7`)
-  * Show Speedometer (`Shift+Alt+F8`)
+  * Reset Camera (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F5</kbd>)
+  * Cinematic Camera (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F6</kbd>)
+  * First Person Camera (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F7</kbd>)
+  * Show Speedometer (<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F8</kbd>)
 
 # Download
 

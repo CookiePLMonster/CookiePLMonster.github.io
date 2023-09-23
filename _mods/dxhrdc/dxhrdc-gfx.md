@@ -13,7 +13,7 @@ With this plugin, you can freely choose what elements of the game's visuals shou
 * Bloom - DC style, HR style
 * Lighting - DC style, DC style with fixes, HR style
 
-The configuration menu also allows to freely modify color grading attributes or select from 3 presets based on the data taken directly from DXHR.
+The configuration menu (accessed by pressing <kbd>F11</kbd>) also allows to freely modify color grading attributes or select from 3 presets based on the data taken directly from DXHR.
 
 {% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Detroit_HR/DC.jpg" left-label="Stock"
                 right="/assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg" right-label="Gold Filter Restoration" %}

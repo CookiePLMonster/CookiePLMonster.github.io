@@ -293,7 +293,7 @@ Color grading is fairly versatile, so it is possible to create a plethora of dif
 Without further ado, the modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
 <a href="{% link _games/dxhrdc.md %}#dxhrdc-gfx" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download DXHRDC-GFX</a> \\
-After downloading, all you need to do is to extract the archive to the game's directory and that's it! The in-game configuration menu is accessed by pressing `F11`.
+After downloading, all you need to do is to extract the archive to the game's directory and that's it! The in-game configuration menu is accessed by pressing <kbd>F11</kbd>.
 
 # What's next? (maybe)
 

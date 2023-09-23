@@ -88,7 +88,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Randomizer error causing prostitutes to be quiet during solicit has been fixed
 * <i class="fab fa-steam-symbol"></i> Text boxes now can show together with a Mission Passed text
 * Fixed a 1.01 only tiny memory leak which occured every time the player switched a radio station
-* <i class="fab fa-steam-symbol"></i> Fixed an occasional crash when Alt+Tabbing back to the game while standing next to a mirror
+* <i class="fab fa-steam-symbol"></i> Fixed an occasional crash when minimizing and maximizing the game while standing next to a mirror
 * <i class="fab fa-steam-symbol"></i> Mirror reflection doesn't break with Anti-Aliasing enabled anymore
 * <i class="fab fa-steam-symbol"></i> With Visual FX Quality set to Very High, mirror reflection quality has been bumped
 * <i class="fab fa-steam-symbol"></i> Anti-Aliasing option has been altered - instead of listing 1, 2, 3 options (which in fact are 2x/2x/4x MSAA), the game will now show proper MSAA values from 2x up to 16x (depending on max MSAA level supported by the graphics card)
@@ -99,7 +99,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Slightly reduced stencil shadows memory overhead
 * <i class="fab fa-steam-symbol"></i> Fixed an AI issue where enemies became too accurate after the player has been in the car earlier
 * IMGs bigger than 4GB are now handled properly
-* <i class="fab fa-steam-symbol"></i> Alt+F4 now works properly
+* <i class="fab fa-steam-symbol"></i> <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Several vehicles now have extra animated components: Phoenix hood scoops, Sweeper brushes, Newsvan antenna, radars on several boats, extra flaps on Stuntplane and Beagle
 * Animated engine components on Bandito, BF Injection and Hotknife will not animate if the engine is off
 * <i class="fab fa-steam-symbol"></i> Fixed a crash occuring when the vending machine was continuously used for an extended period of time

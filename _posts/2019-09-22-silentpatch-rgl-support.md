@@ -55,7 +55,7 @@ that is only **some** fixes are currently supported. Those are:
 * Randomizer error causing peds not to spawn in some areas has been fixed
 * Randomizer error causing prostitutes to be quiet during solicit has been fixed
 * Text boxes now can show together with a Mission Passed text
-* Fixed an occasional crash when Alt+Tabbing back to the game while standing next to a mirror
+* Fixed an occasional crash when minimizing and maximizing the game while standing next to a mirror
 * Mirror reflection doesn't break with Anti-Aliasing enabled anymore
 * With Visual FX Quality set to Very High, mirror reflection quality has been bumped
 * Anti-Aliasing option has been altered - instead of listing 1, 2, 3 options (which in fact are 2x/2x/4x MSAA), the game will now show proper MSAA values from 2x up to 16x (depending on max MSAA level supported by the graphics card)
@@ -65,7 +65,7 @@ that is only **some** fixes are currently supported. Those are:
 * Fixed an occasional crash occuring when standing next to escalators
 * Slightly reduced stencil shadows memory overhead
 * Fixed an AI issue where enemies became too accurate after the player has been in the car earlier
-* Alt+F4 now works properly
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly
 * Fixed a crash occuring when the vending machine was continuously used for an extended period of time
 * FILE_FLAG_NO_BUFFERING flag has been removed from IMG reading functions - speeding up streaming
 * Fixed a streaming related deadlock, which could occasionally result in game being stuck on black screen when entering or exiting interiors (this is the issue people used to fix by setting CPU affinity to one core)

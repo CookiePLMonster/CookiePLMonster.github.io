@@ -239,7 +239,7 @@ For a feature list and a to-do list, check the mod's downloads page.
 
 <a href="{% link _games/vf5fs.md %}#yamp" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Yakuza Arcade Machines Player</a> \\
 After downloading, all you need to do is to extract the archive to your Yakuza 6 directory (or the `vf5fs` subdirectory), and that's it!
-The in-game configuration menu is accessed by pressing `F1`.
+The in-game configuration menu is accessed by pressing <kbd>F1</kbd>.
 Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 **YAMP only works with the Steam version of Yakuza 6! It hasn't been tested with the Gamepass version, but it is unlikely to work with it.**
 
@@ -250,7 +250,7 @@ Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-inst
 * Only Yakuza 6 is supported so far, Yakuza: Like a Dragon is planned to be added later.
 * Just like when playing through in-game arcades, the game renders at fixed 720p and stretches to fullscreen. Proper high resolution rendering support may be added later.
 * Offline Versus cannot be played with a keyboard and a gamepad. For now, two gamepads are required.
-* Keyboard bindings are hardcoded for now. Please refer to `F1` -> `Controls` for a list of controls.
+* Keyboard bindings are hardcoded for now. Please refer to <kbd>F1</kbd> -> <kbd><samp>Controls</samp></kbd> for a list of controls.
 
 
 # Disclaimer

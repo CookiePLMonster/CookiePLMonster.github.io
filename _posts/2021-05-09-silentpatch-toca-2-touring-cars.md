@@ -122,7 +122,7 @@ This SilentPatch fixes plenty more issues, though. The full changelog is as foll
 * CD checks have been removed. When a Full installation is in use, the game now can be played without a CD, without the need to use a no-CD executable.
 * Fixed multiple distinct crashes occurring when minimizing the game excessively.
 * Fixed a crash when minimizing the game during a Support Car race. The crash happened because those cars don't have a name decal on the rear windshield.
-* Alt + F4 now works properly.
+* <kbd>Alt</kbd> + <kbd>F4</kbd> now works properly.
 * The process icon is now fetched from the toca2.exe file, giving the game an icon of a checkered flag.
 * <i class="fas fa-cog"></i> Field of View can now be adjusted via the INI file, with separate values for external cameras and the two interior cameras. You can select any value in the 30.0 - 150.0 range.
 * <i class="fas fa-cog"></i> HUD scaling and menu text scaling can now be adjusted via the INI file.
