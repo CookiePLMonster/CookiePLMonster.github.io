@@ -52,6 +52,5 @@ it will ask the user if they want to continue using it or not.**
 
 ***
 
-For those interested,
-full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
 <a href="https://github.com/CookiePLMonster/SilentPatchM2DE" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

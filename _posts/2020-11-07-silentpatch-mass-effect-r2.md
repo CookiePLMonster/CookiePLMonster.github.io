@@ -37,6 +37,5 @@ After downloading, all you need to do is to extract the archive to the game's di
 
 ***
 
-For those interested,
-full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
 <a href="https://github.com/CookiePLMonster/SilentPatchME" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

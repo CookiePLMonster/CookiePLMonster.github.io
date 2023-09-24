@@ -147,6 +147,5 @@ e.g. rear view mirror resolution or FOV. Not sure how to proceed? Check the [Set
 
 ***
 
-For those interested,
-full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
 <a href="https://github.com/CookiePLMonster/SilentPatchTOCA2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
