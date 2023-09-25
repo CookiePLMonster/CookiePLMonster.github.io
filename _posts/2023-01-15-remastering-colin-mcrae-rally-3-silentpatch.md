@@ -18,25 +18,13 @@ section for a download link.**_
 
 ***
 
+{::options toc_levels="1..2" /}
+
 *[Vert-]: Vertical Minus; a method for adjusting aspect ratio for widescreen by reducing vertical FOV
 *[Hor+]: Horizontal Plus; a method for adjusting aspect ratio for widescreen by increasing horizontal FOV
 
-* [Introduction](#introduction)
-* [Chapter 1: In search of a perfect executable](#in-search-of-a-perfect-executable)
-* [Chapter 2: Regional releases and their oddities](#regional-release-oddities)
-  * [Polish (3 CD) release](#polish-release)
-  * [Polish (2 CD) re-release](#polish-re-release)
-  * [Czech release](#czech-release)
-* [Chapter 3: Fixes, so many fixes](#fixes)
-  * [Fixes & improvements](#fixes-fixes)
-  * [New options](#fixes-new-options)
-* [Chapter 4: The perfect remaster -- adding an HD interface](#hd-interface)
-  * [Scaling issues](#scaling-issues)
-  * [Font filtering](#font-filtering)
-  * [Half pixel issues](#half-pixel-issues)
-* [Chapter 5: Merging regional releases together](#merging-regional-releases)
-* [Changelog and download](#changelog-and-download)
-* [Credits and acknowledgments](#acknowledgments)
+* TOC
+{:toc}
 
 {% assign bekoha_link = "[Bekoha](https://twitter.com/Bek0ha){:target='_blank'}" %}
 {% assign hd_ui_url = "https://bekoha.github.io/cmr3" %}
