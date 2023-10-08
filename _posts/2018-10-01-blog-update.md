@@ -37,7 +37,7 @@ Once again, all image assets have been provided by [Ash R.](https://twitter.com/
 
 # Support link
 Last but not least, some people have been asking if there is any way to support me -- now there is!
-If you want to buy me a cookie, some beer or provide some [cat food](https://cdn.discordapp.com/attachments/428960350772133888/485412285028892673/DSC_0005.JPG),
+If you want to buy me a cookie, some beer or provide some cat food,
 you can use a PayPal button on the very bottom of this page!
 
 Any donations are absolutely voluntary and you should **not** feel bad if you don't send one -- it's just a minor extra motivator

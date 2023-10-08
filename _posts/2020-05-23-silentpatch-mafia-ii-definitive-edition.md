@@ -32,9 +32,7 @@ What's more, I came up with an attempt to "rescue" saves placed in a wrong direc
 by running the game as an Admin, their saves will be **gone** once the issue is officially patched. SilentPatch tries its best to detect this
 event and offers a fix:
 
-<p align="center">
-<img src="https://cdn.discordapp.com/attachments/360065524681539585/713480937169748078/unknown.png">
-</p>
+{% include screenshot.html thumbnail="/assets/img/posts/mafia-ii-de-sp/info.jpg" %}
 
 If the user agrees to have their saves moved, it essentially future-proofs saves against a future official patch.
 

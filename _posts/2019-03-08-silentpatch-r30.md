@@ -34,8 +34,8 @@ GTA San Andreas
 While this release does not bring an insane amount of new fixes, it's quite important due to its internal changes:
 
 - Lightbeam fix now contains an INI exceptions list, as described in [this blog post]({% post_url 2019-02-03-clever-bug-exploitation-backface-culling %}).
-- This release marks the first time SilentPatch has a special **LS-RP Mode**. For a long time, SilentPatch has been banned from usage on [Los Santos Role Play](https://ls-rp.io/) SA-MP server
-due to the fact it [makes weapons visible through car windows](https://cdn.discordapp.com/attachments/360065524681539585/552959835587739718/unknown.png).
+- This release marks the first time SilentPatch has a special **LS-RP Mode**. For a long time, SilentPatch has been banned from usage on [Los Santos Role Play](https://ls-rp.com/) SA-MP server
+due to the fact it [makes weapons visible through car windows]({% link assets/img/posts/silentpatch-r30/windows.jpg %}){:target='_blank'}.
 This was decided to be advantageous for players who have the patch, as they had access to information stock game did not provide.
 From Build 30, SilentPatch detects when the player is playing on LS-RP and **disables** this one fix there. No other SA-MP server is affected!
 
