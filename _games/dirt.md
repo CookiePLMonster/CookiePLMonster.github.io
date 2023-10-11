@@ -3,6 +3,7 @@ layout: page
 title: "DiRT"
 excerpt: My modifications for DiRT games.
 image: "assets/img/games/dirt.jpg"
+feature-img: "assets/img/games/bg/dirt.jpg"
 game-series: "dirt"
 order: 17
 ---

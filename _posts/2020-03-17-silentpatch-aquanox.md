@@ -39,9 +39,7 @@ mentions the following under "Issues fixed":
 I received a Steam copy of the game and its sequel in order to look into this (thanks, [Sui](https://twitter.com/Suicide_pl)!)
 and sure enough -- with my 500Hz mouse the game is... less than playable. Mouse movement is very stuttery,
 sometimes not registering inputs at all or registering only parts of it:
-<video controls="controls">
-<source src="https://i.imgur.com/yA95mNN.mp4" type="video/mp4">
-</video>
+{% include video-mp4.html link="https://i.imgur.com/yA95mNN.mp4" attributes="controls" %}
 
 Interestingly enough, whatever the issue is, it was fixed in AquaNox 2! Given how similar the games "feel",
 comparing code between these two might be reasonably viable (compared to, say,
@@ -254,7 +252,7 @@ else
 
 Could it be as simple as that? Unlike growing buffers, applying this change in assembly is laughably trivial
 -- original code testing this return value looks like this:
-```asm
+```nasm
 call    dword ptr [ecx+28h] ; IDirectInputDevice8::GetDeviceData
 test    eax, eax
 jnz     Failure
@@ -265,9 +263,7 @@ in order to change the comparison from `==` to `>=`, all we have to do is change
 (jump if less [than zero]).
 
 Single byte patched, time to check it in game.
-<video controls="controls">
-<source src="https://i.imgur.com/UueyX3I.mp4" type="video/mp4">
-</video>
+{% include video-mp4.html link="https://i.imgur.com/UueyX3I.mp4" attributes="controls" %}
 Sure enough, it works! **Success!**
 
 At this point, formalizing it into a SilentPatch was easy. While this is not as important,
