@@ -37,7 +37,7 @@ layout: page
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw"></i> {{ tag }}</a>
             <a href="/feed/by_tag/{{ tag | cgi_escape }}.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"> </i> </a>
-            <a href="#{{ page.title }}" style="float:right"><i class="fas fa-chevron-up" aria-hidden="true"> </i> </a>
+            <a href="#top" class="right"><i class="fas fa-chevron-up" aria-hidden="true"> </i> </a>
 
         </h3>
 
@@ -73,6 +73,7 @@ layout: page
                     
                     <span class="meta">
                         {{ post.date | date: page.date-format }}
+                        {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: page.date-format }}){% endif %}
                     </span>
                 </h5>
                 {% endif %} 
@@ -89,6 +90,7 @@ layout: page
                 
                     <span class="meta">
                         {{ note.date | date: page.date-format }}
+                        {% if note.last_modified_at %}(edited {{ note.last_modified_at | date: page.date-format }}){% endif %}
                     </span>
                 </h5>
                 {% endif %} 

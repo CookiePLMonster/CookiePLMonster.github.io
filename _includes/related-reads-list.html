@@ -8,6 +8,7 @@
     
     <span class="meta">
         {{ item.date | date: page.date-format }}
+        {% if item.last_modified_at %}(edited {{ item.last_modified_at | date: page.date-format }}){% endif %}
     </span>
 </h5>
 {% endfor %}
