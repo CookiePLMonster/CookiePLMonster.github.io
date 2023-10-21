@@ -13,6 +13,7 @@ so now 100% input registers from a near full press of the trigger, therefore mak
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/85AE91B3_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.0, Original)</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/8AA991B0_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.10, Bundle)</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/B590CE04_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/SCUS-97102_85AE91B3_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.0, Original)</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/PBPX-95503_8AA991B0_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (1.10, Bundle)</a> \\
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/SCES-50294_B590CE04_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjusted%20triggers%20sensitivity/SCPS-15009_9DE5CF65_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J</a>
