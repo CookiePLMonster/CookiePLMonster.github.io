@@ -122,6 +122,11 @@ details,
     margin-bottom: 1em;
 }
 
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
 // KaTeX math display
 .math-display {
     display: inline-block;

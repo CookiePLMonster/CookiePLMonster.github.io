@@ -46,7 +46,7 @@ $video-16-9-padding: 56.25%;
     }
 }
 
-.image-entry {
+.fig-entry {
     @extend %media-entry;
     text-align: center;
     vertical-align: middle;
@@ -54,18 +54,18 @@ $video-16-9-padding: 56.25%;
 
 .media-container {
     text-align: center;
-    > div {
+    > div, > figure {
         display: inline-block;
     }
-    &.natural > div {
+    &.natural > div, &.natural > figure {
         max-width: 90%;
     }
 
     @media screen and (min-width: 850px) {
-        &.small > div {
+        &.small > div, &.small > figure {
             width: 47.5%;
         }
-        &.natural > div {
+        &.natural > div, &.natural > figure {
             width: unset;
         }
 

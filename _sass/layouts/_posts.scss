@@ -85,7 +85,7 @@ header {
     .portfolio-columns {
         display: block;
 
-        @media only screen and (min-width: 1000px) {
+        @media only screen and (min-width: $m-break) {
             display: flex;
             flex-direction: row-reverse;
         }
