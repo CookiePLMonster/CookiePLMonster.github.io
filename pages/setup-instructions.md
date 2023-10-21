@@ -24,39 +24,31 @@ These steps apply to any game.
 ## Steam {#steam}
 
 1. Locate the game entry in your Steam Library.
-2. Right-click on the game entry, select *Manage -> Browse local files*. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/steam.jpg %}">
-    </p>
+2. Right-click on the game entry, select <kbd><samp>Manage</samp></kbd> &rarr; <kbd><samp>Browse local files</samp></kbd>.
+   {% include screenshot.html thumbnail="/assets/img/setup/steam.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## GOG Galaxy {#gog-galaxy}
 
-1. Locate the game entry in the GOG Galaxy client in the *Installed* tab.
-2. Click on the <i class='fas icomoon icon-gog-settings'></i> icon, select *Manage installation -> Show folder*. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/gog-galaxy.jpg %}">
-    </p>
+1. Locate the game entry in the GOG Galaxy client in the <kbd><samp>Installed</samp></kbd> tab.
+2. Click on the <i class='fas icomoon icon-gog-settings'></i> icon, select <kbd><samp>Manage installation</samp></kbd> &rarr; <kbd><samp>Show folder</samp></kbd>.
+   {% include screenshot.html thumbnail="/assets/img/setup/gog-galaxy.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Rockstar Games Launcher {#rgl}
 
-1. In the RGL client, click *SETTINGS*.
-2. Click on the game entry in the *My installed games* list.
-3. Click *OPEN* next to the *View installation folder* entry. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/rgl.jpg %}">
-    </p>
+1. In the RGL client, click <kbd><samp>SETTINGS</samp></kbd>.
+2. Click on the game entry in the <kbd><samp>My installed games</samp></kbd> list.
+3. Click <kbd><samp>OPEN</samp></kbd> next to the <kbd><samp>View installation folder</samp></kbd> entry.
+  {% include screenshot.html thumbnail="/assets/img/setup/rgl.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Uplay {#uplay}
 
-1. Locate the game entry in the Uplay client in the *Games* -> *Installed* tab.
-2. Right-click on the game entry, select *View game details*.
-2. Click on *Properties*, then on *Open folder* in the *Local files* section. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/uplay.jpg %}">
-    </p>
+1. Locate the game entry in the Uplay client in the <kbd><samp>Games</samp></kbd> &rarr; <kbd><samp>Installed</samp></kbd> tab.
+2. Right-click on the game entry, select <kbd><samp>View game details</samp></kbd>.
+3. Click on <kbd><samp>Properties</samp></kbd>, then on <kbd><samp>Open folder</samp></kbd> in the <kbd><samp>Local files</samp></kbd> section.
+   {% include screenshot.html thumbnail="/assets/img/setup/uplay.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Retail (disc) {#retail}
@@ -65,25 +57,21 @@ If you've installed the game with a traditional installer from the disc, you pro
 If not, it's easiest to locate it by following either its Desktop shortcut or the Start Menu shortcut:
 
 1. Locate the game shortcut on Desktop or the Start Menu. Usually, it's easiest to locate the shortcut in the Start Menu by typing the game name.
-2. Right-click the located shortcut and select *Open file location*.
+2. Right-click the located shortcut and select <kbd><samp>Open file location</samp></kbd>.
     * On Windows 10, selecting this option on the Start Menu shortcut might take you to the location of the shortcut, not the game's executable
-      (easily identifiable by `Start Menu` in the path). If that happens, right-click the shortcut and select *Open file location* from the context menu.
-3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.   
+      (easily identifiable by `Start Menu` in the path). If that happens, right-click the shortcut and select <kbd><samp>Open file location</samp></kbd> from the context menu.
+3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 # 2. Extracting the mod files {#extracting-files}
 _This section assumes that you don't use WinZIP, WinRAR or 7-Zip and instead refers to the tools included in Windows._
 _If you use any of these third-party file archivers, I assume you know how to extract the archives._
 
-1. Right-click on the mod's archive (`.zip` file), select *Extract All...*.
-2. Set the Destination folder to the game's directory you have previously located and click *Extract*. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/extract-all.jpg %}">
-    </p> \\
-    If a prompt saying "*The destination has X files with the same names*" shows up, select "*Replace the files in the destination*".
-3. Files will be extracted and the extracted files will appear in the game directory. \\
-    <p align="center">
-    <img src="{% link assets/img/setup/mod-files.jpg %}">
-    </p>
+1. Right-click on the mod's archive (`.zip` file), select <kbd><samp>Extract All...</samp></kbd>.
+2. Set the Destination folder to the game's directory you have previously located and click <kbd><samp>Extract</samp></kbd>.
+   {% include screenshot.html thumbnail="/assets/img/setup/extract-all.jpg" %}
+    If a prompt saying '<samp>The destination has X files with the same names</samp>' shows up, select <kbd>Replace the files in the destination</kbd>.
+3. Files will be extracted and the extracted files will appear in the game directory.
+   {% include screenshot.html thumbnail="/assets/img/setup/mod-files.jpg" %}
 
 # 3. Configuration {#configuration}
 _This section is applicable only to select downloads._
@@ -102,9 +90,7 @@ There's more than one way to achieve it.
 1. `WINEDLLOVERRIDES` variable lets you temporarily specify DLL overrides. It can be used from a command line as well as in the Steam launcher.
    In case of command line, simply prepend the usual start command with `WINEDLLOVERRIDES="dinput8=n,b" `. For Steam, head to game's properties
    and set `LAUNCH OPTIONS` to `WINEDLLOVERRIDES="dinput8=n,b" %command%`.
-    <p align="center">
-    <img src="{% link assets/img/setup/steam-wine-dll-override.png %}">
-    </p>
+   {% include screenshot.html thumbnail="/assets/img/setup/steam-wine-dll-override.png" %}
 2. Use `winecfg` tool to make a permanent override for a specific Wine prefix. First, you need to locate Wine prefix you wish to modify.
    In case of Proton, Steam creates Wine prefix for each game in `$HOME/.steam/steam/steamapps/compatdata/game_id_goes_here/pfx`. For example,
    for Yakuza 3 Remastered it will be `$HOME/.steam/steam/steamapps/compatdata/1088710/pfx` -- you can get game's id from the URL in Steam Store.
@@ -112,11 +98,9 @@ There's more than one way to achieve it.
    ```
    WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/1088710/pfx" winecfg
    ```
-   Select `Libraries` tab and fill the combo box with the name of the library you wish to override and hit `Add`.
-   You can verify that it's been added to the list below with `(native, builtin)` suffix. Then close the window with `OK` button.
-    <p align="center">
-    <img src="{% link assets/img/setup/winecfg-dll-override.png %}">
-    </p>
+   Select <kbd><samp>Libraries</samp></kbd> tab and fill the combo box with the name of the library you wish to override and hit <kbd><samp>Add</samp></kbd>.
+   You can verify that it's been added to the list below with `(native, builtin)` suffix. Then close the window with <kbd><samp>OK</samp></kbd> button.
+   {% include screenshot.html thumbnail="/assets/img/setup/winecfg-dll-override.png" %}
 
 
 Related Wine documentation:
