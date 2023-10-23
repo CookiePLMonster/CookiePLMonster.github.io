@@ -209,7 +209,7 @@ or it was just not finalized yet and used sections of the existing tracks as pla
 {% include screenshot.html link="/assets/img/posts/juiced-research/aw.png" %}
 {% include screenshot.html link="/assets/img/posts/juiced-research/CH1.png" %}
 {% include screenshot.html link="/assets/img/posts/juiced-research/eng.png" %}
-<figcaption><span markdown="1">Credits: {{ eagle_link }}</span></figcaption>
+<figcaption markdown="span">Credits: {{ eagle_link }}</figcaption>
 </figure>
 
 I also have **not** fixed the crashes exclusive to this demo, so it is barely playable even patched. IMO this demo is not worth the effort, except for its rarity.
