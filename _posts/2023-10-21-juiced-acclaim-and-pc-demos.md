@@ -347,8 +347,10 @@ I want those demos to be playable, but I don't want to distort their "history" b
   marker is set to **one byte** before the end of the track. This obviously doesn't allow the game to stream more data in time,
   and that results in broken music playback. In SilentPatch, I mirrored the change made to the 2005 demos.
   <figure class="media-container small">
-  {% include figures/audio.html link="/assets/img/posts/juiced-research/music-stock.ogg" caption="By default, the music crackles quite a bit." %}
-  {% include figures/audio.html link="/assets/img/posts/juiced-research/music-fixed.ogg" caption="With SilentPatch, it sounds as expected." %}
+  {% include figures/audio.html ogg="/assets/img/posts/juiced-research/music-stock.ogg" mp3="/assets/img/posts/juiced-research/music-stock.mp3"
+              caption="By default, the music crackles quite a bit." %}
+  {% include figures/audio.html ogg="/assets/img/posts/juiced-research/music-fixed.ogg" mp3="/assets/img/posts/juiced-research/music-fixed.mp3"
+              caption="With SilentPatch, it sounds as expected." %}
   </figure>
 
 ***
