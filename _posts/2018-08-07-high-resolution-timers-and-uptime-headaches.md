@@ -2,7 +2,7 @@
 layout: post
 title: "High resolution timers and high uptime headaches"
 excerpt: You may be dealing with very big numbers, so tread carefully.
-image: "assets/img/posts/uptime-img.png"
+image: "assets/img/posts/high-resolution-timers/uptime-img.png"
 game-series: "tools"
 date: 2018-08-07 2:25:00 +0200
 last_modified_at: 2022-02-17 12:00:00 +0200
@@ -49,10 +49,8 @@ but I first asked again:
 Those following SilentPatch for San Andreas might be able to recall a very similar bug report from early 2017. It stated that dancing minigames could start to desync and stutter if PC
 had approximately over 12 days of uptime. To verify that, I faked years of uptime -- that's how dancing looks (without SilentPatch) with a fake uptime of 12 years:
 
-<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/BlushingImprobableChinesecrocodilelizard' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
-<p align="center">
-<em>For those unfamiliar with GTA San Andreas - arrows shown in the bottom part of the screen are supposed to move smoothly.</em>
-</p>
+{% include figures/video.html link="/assets/img/posts/high-resolution-timers/BlushingImprobableChinesecrocodilelizard.mp4" attributes="controls"
+        caption="For those unfamiliar with GTA San Andreas - arrows shown in the bottom part of the screen are supposed to move smoothly." %}
 
 
 That looks almost identical to what was observed with the game! In the case of GTA, this stuttering is in fact loss of precision -- queried time was converted to a floating point value,
