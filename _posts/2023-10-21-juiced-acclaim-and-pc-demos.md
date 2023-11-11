@@ -36,6 +36,7 @@ juxtapose: true
 
 *[FPU]: Floating-Point Unit; part of the CPU responsible for floating-point calculations
 *[ASIN]: Amazon Standard Identification Number
+*[EFIGS]: English, French, Italian, German, Spanish
 
 # Introduction
 
@@ -342,7 +343,7 @@ I want those demos to be playable, but I don't want to distort their "history" b
   I've already encountered such bugs multiple times in my programming career outside of reverse engineering games.
 
 * In-game music plays with crackles and pops in all 3 Acclaim demos. This bug, later fixed in THQ demos, occurs because
-  the game requests more data to be loaded from the disc after playback reaches a specific point in the audio track.
+  the game requests more data to be loaded from the disk after playback reaches a specific point in the audio track.
   In the case of THQ demos, this happens when passing a mid-point of the 1-second-long chunk of loaded music, but in Acclaim demos this
   marker is set to **one byte** before the end of the track. This obviously doesn't allow the game to stream more data in time,
   and that results in broken music playback. In SilentPatch, I mirrored the change made to the 2005 demos.
@@ -472,7 +473,7 @@ mov [esp+34h+var_C], offset aControlsDx9GTx ; "controls_dx9_g.txt"
 mov [esp+34h+var_8], offset aControlsDx9ITx ; "controls_dx9_i.txt"
 mov [esp+34h+var_4], offset aControlsDx9STx ; "controls_dx9_s.txt"
 ```
-<figcaption>April demo only supports FFIGS.</figcaption>
+<figcaption markdown="span">April demo only supports EFIGS.</figcaption>
 </figure>
 <figure markdown="1" class="fig-entry">
 ```nasm
@@ -485,7 +486,7 @@ mov [esp+40h+var_C], offset aControlsDx9CTx ; "controls_dx9_c.txt"
 mov [esp+40h+var_8], offset aControlsDx9PTx ; "controls_dx9_p.txt"
 mov [esp+40h+var_4], offset aControlsDx9RTx ; "controls_dx9_r.txt"
 ```
-<figcaption>May demo supports FFIGS, Czech, Polish, and Russian!</figcaption>
+<figcaption markdown="span">May demo supports EFIGS, Czech, Polish, and Russian!</figcaption>
 </figure>
 </figure>
 
