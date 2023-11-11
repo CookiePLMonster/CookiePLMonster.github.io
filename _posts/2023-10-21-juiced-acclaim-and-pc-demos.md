@@ -319,7 +319,7 @@ I want those demos to be playable, but I don't want to distort their "history" b
   each other's settings.
 
 * June and July demos introduced a bug where the UI elements flicker randomly, with seemingly no fix.
-  {% include video-mp4.html link="/assets/img/posts/juiced-research/juiced-flicker.mp4" attributes="controls loop"
+  {% include figures/video.html link="/assets/img/posts/juiced-research/juiced-flicker.mp4" attributes="controls loop"
       caption="In-game elements can also flicker like this (or worse), making for a miserable experience." %}
   I initially suspected this is similar to an issue present in [Scarface]({% post_url 2020-03-29-silentpatch-scarface %}) (this is the second post in
   a row where Scarface gets a shout-out), and to make matters worse, applying an identical fix (removing the `D3DLOCK_DISCARD` flag when locking the vertex buffers)

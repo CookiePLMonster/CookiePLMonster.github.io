@@ -29,7 +29,7 @@ but ultimately what is shown on the vid was decided as the best choice.
 I am not sure if there are any boats which did not have this broken :)
 
 In addition to those, Build 30 will feature one[^2] more additional animation -- functional ladder on Firetruck used in End of the Line:
-{% include video-mp4.html link="https://i.imgur.com/sLN1J3E.mp4" attributes="autoplay muted loop" style="natural" %}
+{% include figures/video.html link="https://i.imgur.com/sLN1J3E.mp4" attributes="autoplay muted loop" %}
 
 So what went wrong here? This ladder is supposed to swing left and right. However, turns out the code also supports moving it up and down, but the controls for that were disabled.
 Re-enabling them made the feature work fully correctly! Now, right analog stick on the gamepad or Num2/Num8 keys (or whatever you have bound for hydraulics) will move the ladder up,

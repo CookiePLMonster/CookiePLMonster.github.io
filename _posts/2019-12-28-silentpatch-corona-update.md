@@ -112,7 +112,7 @@ A fix has been introduced which makes Drive-By sound exactly the same as shootin
 When looking left/right/behind, camera movement is supposed to be fully restricted -- however, when using the mouse it was not fully restricted,
 and so the player could attempt to move it up/down. While moving left/right did nothing, it did give the radar some sort of an existential crisis.
 Now it's been fixed, bringing parity in camera controls across mouse and gamepad.
-{% include video-mp4.html link="https://i.imgur.com/bDWEwC5.mp4" attributes="controls muted" %}
+{% include figures/video.html link="https://i.imgur.com/bDWEwC5.mp4" attributes="controls muted" %}
 
 Miscellaneous fixes
 ===================
