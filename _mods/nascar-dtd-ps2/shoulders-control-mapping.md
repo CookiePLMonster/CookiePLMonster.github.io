@@ -15,7 +15,7 @@ a console with pressure sensitive triggers in place of PS2's shoulder buttons!
 
 With this code, I restored a full "Shoulders" controls set for the game, copied from NASCAR Heat 2002.
 
-{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-shoulders.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/nascar-shoulders.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

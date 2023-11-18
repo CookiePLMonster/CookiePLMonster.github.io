@@ -20,7 +20,7 @@ The main reason for creating this patch were broken water reflections - landmass
 ### Quality of life improvements
 * **-64bit** commandline option has been added - when it's used, the game will always attempt to launch using a 64-bit executable. This is useful for getting a 64-bit version of the game to work via Steam, as previously it was required to swap files around.
 
-{% include screenshot.html link="https://i.imgur.com/hizKXrW.jpg" thumbnail="https://i.imgur.com/hizKXrWh.jpg" %}
+{% include figures/image.html link="https://i.imgur.com/hizKXrW.jpg" thumbnail="https://i.imgur.com/hizKXrWh.jpg" %}
 
 {% include setup-instructions.html %}
 

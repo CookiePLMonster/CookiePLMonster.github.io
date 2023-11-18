@@ -25,14 +25,14 @@ These steps apply to any game.
 
 1. Locate the game entry in your Steam Library.
 2. Right-click on the game entry, select <kbd><samp>Manage</samp></kbd> &rarr; <kbd><samp>Browse local files</samp></kbd>.
-   {% include screenshot.html thumbnail="/assets/img/setup/steam.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/steam.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## GOG Galaxy {#gog-galaxy}
 
 1. Locate the game entry in the GOG Galaxy client in the <kbd><samp>Installed</samp></kbd> tab.
 2. Click on the <i class='fas icomoon icon-gog-settings'></i> icon, select <kbd><samp>Manage installation</samp></kbd> &rarr; <kbd><samp>Show folder</samp></kbd>.
-   {% include screenshot.html thumbnail="/assets/img/setup/gog-galaxy.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/gog-galaxy.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Rockstar Games Launcher {#rgl}
@@ -40,7 +40,7 @@ These steps apply to any game.
 1. In the RGL client, click <kbd><samp>SETTINGS</samp></kbd>.
 2. Click on the game entry in the <kbd><samp>My installed games</samp></kbd> list.
 3. Click <kbd><samp>OPEN</samp></kbd> next to the <kbd><samp>View installation folder</samp></kbd> entry.
-  {% include screenshot.html thumbnail="/assets/img/setup/rgl.jpg" %}
+  {% include figures/image.html thumbnail="/assets/img/setup/rgl.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Uplay {#uplay}
@@ -48,7 +48,7 @@ These steps apply to any game.
 1. Locate the game entry in the Uplay client in the <kbd><samp>Games</samp></kbd> &rarr; <kbd><samp>Installed</samp></kbd> tab.
 2. Right-click on the game entry, select <kbd><samp>View game details</samp></kbd>.
 3. Click on <kbd><samp>Properties</samp></kbd>, then on <kbd><samp>Open folder</samp></kbd> in the <kbd><samp>Local files</samp></kbd> section.
-   {% include screenshot.html thumbnail="/assets/img/setup/uplay.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/uplay.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
 ## Retail (disc) {#retail}
@@ -68,10 +68,10 @@ _If you use any of these third-party file archivers, I assume you know how to ex
 
 1. Right-click on the mod's archive (`.zip` file), select <kbd><samp>Extract All...</samp></kbd>.
 2. Set the Destination folder to the game's directory you have previously located and click <kbd><samp>Extract</samp></kbd>.
-   {% include screenshot.html thumbnail="/assets/img/setup/extract-all.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/extract-all.jpg" %}
     If a prompt saying '<samp>The destination has X files with the same names</samp>' shows up, select <kbd>Replace the files in the destination</kbd>.
 3. Files will be extracted and the extracted files will appear in the game directory.
-   {% include screenshot.html thumbnail="/assets/img/setup/mod-files.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/mod-files.jpg" %}
 
 # 3. Configuration {#configuration}
 _This section is applicable only to select downloads._
@@ -90,7 +90,7 @@ There's more than one way to achieve it.
 1. `WINEDLLOVERRIDES` variable lets you temporarily specify DLL overrides. It can be used from a command line as well as in the Steam launcher.
    In case of command line, simply prepend the usual start command with `WINEDLLOVERRIDES="dinput8=n,b" `. For Steam, head to game's properties
    and set `LAUNCH OPTIONS` to `WINEDLLOVERRIDES="dinput8=n,b" %command%`.
-   {% include screenshot.html thumbnail="/assets/img/setup/steam-wine-dll-override.png" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/steam-wine-dll-override.png" %}
 2. Use `winecfg` tool to make a permanent override for a specific Wine prefix. First, you need to locate Wine prefix you wish to modify.
    In case of Proton, Steam creates Wine prefix for each game in `$HOME/.steam/steam/steamapps/compatdata/game_id_goes_here/pfx`. For example,
    for Yakuza 3 Remastered it will be `$HOME/.steam/steam/steamapps/compatdata/1088710/pfx` -- you can get game's id from the URL in Steam Store.
@@ -100,7 +100,7 @@ There's more than one way to achieve it.
    ```
    Select <kbd><samp>Libraries</samp></kbd> tab and fill the combo box with the name of the library you wish to override and hit <kbd><samp>Add</samp></kbd>.
    You can verify that it's been added to the list below with `(native, builtin)` suffix. Then close the window with <kbd><samp>OK</samp></kbd> button.
-   {% include screenshot.html thumbnail="/assets/img/setup/winecfg-dll-override.png" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/winecfg-dll-override.png" %}
 
 
 Related Wine documentation:

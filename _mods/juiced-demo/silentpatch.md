@@ -60,25 +60,25 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * {{ juiced_modding_community_link }} for helping me find and dissect those demos and for answering all of my many questions regarding the game
 
 <figure class="media-container small">
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_xjBpXHGWs2.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_xjBpXHGWs2.jpg" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_yL91hpKxkJ.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_yL91hpKxkJ.jpg" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_zzGrgkY8YT.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_zzGrgkY8YT.jpg" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_nesTl97B8u.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_nesTl97B8u.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_xjBpXHGWs2.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_xjBpXHGWs2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_yL91hpKxkJ.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_yL91hpKxkJ.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_zzGrgkY8YT.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_zzGrgkY8YT.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_nesTl97B8u.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_nesTl97B8u.jpg" %}
 </figure>
 
 <figure class="media-container small">
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/jan-2005-viper.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-viper.jpg" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/jan-2005-sprint.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-sprint.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-viper.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-viper.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-sprint.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-sprint.jpg" %}
 </figure>
 
-{% include video.html link="https://www.youtube.com/embed/4lQ76h8KEkI" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/4lQ76h8KEkI" %}
 
 ## Installing Acclaim Demos {#acclaim-install}
 
 By default, June 2004 and July 2004 demos' installers don't include an option to change the installation directory and instead, they always install the game to
 `C:\Program Files (x86)\Acclaim Entertainment\JuicedDemo`. **Destination Folder Transform** modifies the installer flow to re-enable
 the Destination Folder screen.
-{% include screenshot.html thumbnail="/assets/img/posts/juiced-research/msiexec_HaLbpb5KTv.png" style="natural" %}
+{% include figures/image.html thumbnail="/assets/img/posts/juiced-research/msiexec_HaLbpb5KTv.png" style="natural" %}
 To use it, extract the archive to the directory where the installer is, and run it via `run.bat`.
 
 {% include setup-instructions.html %}

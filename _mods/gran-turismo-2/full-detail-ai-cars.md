@@ -11,9 +11,9 @@ and jarring.
 
 To counter this, I created a cheat forcing all cars on the track to use the highest LOD level, previously reserved for the player. As a result, the game looks far better than originally.
 
-{% include juxtapose.html left="/assets/img/posts/gt2-cheats/lod-start-before.jpg" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/gt2-cheats/lod-start-before.jpg" left-label="Stock"
                 right="/assets/img/posts/gt2-cheats/lod-start-after.jpg" right-label="Full detail" %}
-{% include juxtapose.html left="/assets/img/posts/gt2-cheats/lod-race-before.jpg" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/gt2-cheats/lod-race-before.jpg" left-label="Stock"
                 right="/assets/img/posts/gt2-cheats/lod-race-after.jpg" right-label="Full detail" %}
 
 {% include setup-instructions.html platform="ps1" %}

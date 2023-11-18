@@ -28,6 +28,6 @@ The only ways to get those voice lines to play with a stock game are:
 SilentPatchSA Build 30 modifies this feature by making those voice lines play when a ped is being ran over (pushing them against the wall does nothing now).
 If done this way, it works with any vehicle, even planes and helicopters!
 
-{% include video.html link="https://www.youtube.com/embed/5AryNzWYMYQ" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/5AryNzWYMYQ" %}
 
 As always, there is **no** ETAs on Build 30, so just sit back and follow the progress :)

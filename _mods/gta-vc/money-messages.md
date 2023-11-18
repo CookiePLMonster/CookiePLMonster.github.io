@@ -12,7 +12,7 @@ Money pop-ups will now show when:
 * Picking up a money pickup
 * Destroying a police helicopter
 
-{% include screenshot.html link="https://i.imgur.com/suQxRu3.jpg" thumbnail="https://i.imgur.com/suQxRu3h.jpg" %}
+{% include figures/image.html link="https://i.imgur.com/suQxRu3.jpg" thumbnail="https://i.imgur.com/suQxRu3h.jpg" %}
 
 {% include setup-instructions.html %}
 

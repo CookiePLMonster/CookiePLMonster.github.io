@@ -53,14 +53,14 @@ May I see it?
 
 I prepared a few previews -- treat yourself:
 <div class="media-container small">
-{% include video.html link="https://www.youtube.com/embed/wBR2WAtnnJc" %}
-{% include video.html link="https://www.youtube.com/embed/2rDSIAGcIIk" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/wBR2WAtnnJc" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/2rDSIAGcIIk" %}
 </div>
 
 However, those previews are kind of... boring. What if we could come up with something more entertaining?
 
 I raise you a mix of LEDs and the most known cutscene from the game 😁
-{% include video.html link="https://www.youtube.com/embed/080RA4-Mccc" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/080RA4-Mccc" %}
 
 I'm sold -- let me vote!
 ========================

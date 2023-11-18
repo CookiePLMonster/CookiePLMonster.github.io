@@ -39,20 +39,20 @@ I assumed that GT4 FP's camera is exactly how a GT3-style camera would have beha
 * "Damper" value determines how fast the camera self-centers. Final GT4 sets this value to `120.0`, GT4FP sets it to `30.0` -- making the spring effect 4 times stronger in the final game!
 
 With a cheat code modifying just those two values, GT4 First Preview's camera is back in the final GT4 (and Tourist Trophy)!
-{% include video.html link="https://www.youtube.com/embed/5kk63H3nYsQ" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/5kk63H3nYsQ" %}
 
 But what if you wanted to customize the camera further? Since the cheat code I created is intended to be as user-friendly as possible,
 adjusting parameters is trivial. For example, here I made the camera even stiffer than the default ("damper" set to `360.0`), thus emulating the GT5/GT6 chase camera:
-{% include video.html link="https://streamable.com/e/p5wz8z" %}
+{% include figures/video-iframe.html link="https://streamable.com/e/p5wz8z" %}
 
 # Far chase camera
 
 Aside from the camera stiffness, GT4 Prologue and GT4 First Preview have one more difference -- instead of the hood/roof camera, they have a second chase camera, located farther and higher from the car:
-{% include screenshot.html link="/assets/img/posts/console-codes-2/gt4p-units.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/gt4p-units.jpg" %}
 
 The final GT4 does not remove this camera entirely; instead, it is available as one of the replay cameras.
 With another cheat code, I managed to **add** this camera back to the in-race selection as a new, fourth selectable camera:
-{% include screenshot.html link="/assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg " %}
+{% include figures/image.html link="/assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg " %}
 
 # Download
 

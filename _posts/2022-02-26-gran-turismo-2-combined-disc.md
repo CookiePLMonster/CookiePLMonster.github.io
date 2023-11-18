@@ -18,7 +18,7 @@ scroll down to the [**Download & Instructions**](#download--instructions) sectio
 Gran Turismo 2, other than being one of the more fondly remembered installments of the franchise, has one unique aspect
 not seen in any other Gran Turismo to date -- it's split between two discs.
 
-{% include screenshot.html link="/assets/img/posts/gt2-combined/two-discs.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/two-discs.jpg" %}
 
 The amount of added content in comparison to the first game
 was so big that Polyphony could not fit it on a single 660MB CD, and therefore the game has separate discs for Arcade
@@ -63,49 +63,49 @@ For the Combined Disc to be complete, we need to do the following, using the Sim
 The first part is easy -- with **MKPSXISO[^mkpsxiso]** I can just unpack both discs and then repack the Simulation Disc with Arcade's `STREAM.DAT` added.
 This results in an image that is way too big to fit on a physical CD but is still technically valid.
 Thus, even though no real PS1 game was like that, emulators are fine with it:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/disc-size.jpg" style="natural"
+{% include figures/image.html link="/assets/img/posts/gt2-combined/disc-size.jpg" style="natural"
               caption="The real limit of the ISO9660 format is 99:59.74, so this combined disc pushes this format to the limit." %}
 
 [^mkpsxiso]: Now you see why I spent so much time perfecting this tool.
 
 For menu entries, adding a new menu action isn't much harder than modifying the existing one. For comparison,
 that's all the code required to switch from the main menu to Arcade/Sim Mode screens:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/code-comparison.jpg" style="natural"
+{% include figures/image.html link="/assets/img/posts/gt2-combined/code-comparison.jpg" style="natural"
               caption="Left - Arcade, right - Simulation" %}
 
 The initial implementation used two identical Start Game buttons, just recolored from red to blue, to match the colors of the discs:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/start-game-buttons.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/start-game-buttons.jpg" %}
 However, later I found out that those were in fact buttons from different languages (e.g. US English and UK English),
 and so this would have broke when porting the mod to the PAL version -- for example, had this been used in the PAL version in English,
 the second Start Game would've shown in French.
 To do it properly, I dissected the texture atlas format used by the game to pack all menu buttons into a single texture.
 The original atlas is a TIM texture packing individual textures with their palettes (seen as "garbage" on the bottom):
-{% include screenshot.html link="/assets/img/posts/gt2-combined/title_item_2.jpg" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/title_item_2.jpg" style="natural" %}
 
 To tackle this, I extracted the atlas definitions from the executable and developed a tool to cut them into individual images:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/textures.jpg" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/textures.jpg" style="natural" %}
 
 Then, once the packer tool was made, [Ash_735](https://twitter.com/Ash_735) could bring the mod to the next level
 by creating proper Arcade Mode and Simulation Mode buttons. When packed back to a new atlas, the results are impressive.
 The layout is entirely unlike the original packing, but this doesn't matter since atlas definitions are updated either way:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/title_item.png" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/title_item.png" style="natural" %}
 
 The in-game result, combined with the removal of a "SIMULATION MODE DISC" from the menu background, could likely pass as an official version of the game:
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/gt2-combined/arcade-mode.jpg" %}
-{% include screenshot.html link="/assets/img/posts/gt2-combined/gt-mode.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/arcade-mode.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/gt-mode.jpg" %}
 </div>
 
 Fun side note -- the color coding of red Arcade and blue Simulation buttons matches both the appearance of CDs (as seen above)
 and the demo versions of GT2:
-{% include screenshot.html link="/assets/img/posts/gt2-combined/demo.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-combined/demo.jpg" %}
 
 # Download & Instructions
 
 Gran Turismo 2 Combined Disc can be downloaded here: \\
 <a href="{% link _games/gt/gran-turismo-2.md %}#combined-disc" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Gran Turismo 2 Combined Disc</a>
 
-{% include video.html link="https://www.youtube.com/embed/jByvSCDQLdY" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/jByvSCDQLdY" %}
 
 The modification is compatible with all game versions, **except for NTSC-J v1.0**. Compatibility with mods has also been verified, Combined Disc was verified to work fine with
 those mods (and probably more):

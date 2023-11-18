@@ -12,7 +12,7 @@ A week ago, new builds of SilentPatch were released (you can grab them from [Mod
 
 While it is explained pretty clearly what features were added, some people asked for more specific info and/or a showcase of those. Thus, I guess a follow up is not too much to ask for...
 
-{% include video.html link="https://www.youtube.com/embed/ZLvFfPGG32o" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/ZLvFfPGG32o" %}
 
 This clip shows all new animations added to the game in Build 29. As usual when adding something which is not purely a fix, I've been asked if those really belong to the 'patch and if they are custom.
 Let me briefly go through all added features and explain the choices behind them, then:

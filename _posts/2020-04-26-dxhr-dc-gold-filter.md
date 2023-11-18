@@ -41,7 +41,7 @@ or just gamma correct the final image to "undo" the changes the best they can.
 With the release of the Director's Cut, the game has received numerous changes to gameplay and visuals.
 Post-processing effects and shading have been altered, and much to everyone's surprise, the gold filter was gone!
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-comp1.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-comp1.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-comp1.jpg"
                 caption="I don't know how I did it, but I managed to capture identical screenshots from both games." %}
 
@@ -79,7 +79,7 @@ While it wasn't known if DXHR Director's Cut only altered this post-processing e
 a glance at RenderDoc captures makes it obvious that it is (sadly) removed for good -- notice the absence of a 6-primitive draw in the Director's Cut
 (marked with a yellow icon in DXHR):
 
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/rd-draw-list.png" style="natural" caption="Left - DXHR. Right - DXHR Director's Cut." %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/rd-draw-list.png" style="natural" caption="Left - DXHR. Right - DXHR Director's Cut." %}
 
 The filter itself does not seem to be complicated, though. Since the game uses D3D11[^1], I have no access to the shaders as is, and have to settle on looking through the DXBC bytecode.
 In principle, it is just a color grading pixel shader with one input and one output,
@@ -117,8 +117,8 @@ To find out more, in the meantime I contacted Adrian Courrèges himself and shar
 from them. Unsurprisingly, every capture had them different, so I placed them in a serialized capture mentioned earlier so I could easily visualize how they would look on the same test scene:
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color2.jpg" %}
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color3.jpg" %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color3.jpg" %}
 </div>
 
 As you can see, the colors are quite different, which means those attributes are relevant for the final presentation.
@@ -136,7 +136,7 @@ When taking a closer look at the comparison between the games, one might notice 
 Even though it might look like it, that difference is not caused by the color filter -- it's bloom which also has been modified. To make this clear, let's compare both scenes right
 after the bloom pass **before** AA or color grading is applied:
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-bloom.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-bloom.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-bloom.jpg" %}
 
 Looking at the keypad on the right side of the scene and ceiling lights, we can observe that in the original Human Revolution bloom seems to be more spread/blurred,
@@ -144,7 +144,7 @@ but fainter. From what I can see, the Director's Cut bloom is more "concentrated
 
 If we look at only the bloom, before it's blended back to the scene, this becomes even more noticeable -- in Director's Cut, bloom is sharper and stronger:
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-bloom-only.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-bloom-only.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-bloom-only.jpg" %}
 
 In both games, bloom is realized with 5 draw calls -- 4 draw calls on bloom + 1 call merging the result back to the main scene.
@@ -178,7 +178,7 @@ This should make bloom fairly straightforward to restore later, much more straig
 The last major difference I spotted was lighting. For this let's again start with the same scene, but this time compare only the lightmaps -- that is, a render target
 which contains **only** the information about the lighting.
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-lightmap.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-lightmap.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-lightmap.jpg" %}
 
 It's pretty different, isn't it? Most of the lights seem to be darker in Director's Cut, but some light also seems to be missing.
@@ -186,14 +186,14 @@ It's pretty different, isn't it? Most of the lights seem to be darker in Directo
 Darker lights seem to be less exciting than one would think -- it indeed seems to be a change in the shader, perhaps to counter for lack of the color filter.
 In my opinion, this change is not very interesting. On the comparison below, you can see that while the light is darker, that's about the only difference.
 
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/blue-light.jpg" caption="Left - DXHR. Right - DXHR Director's Cut." %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/blue-light.jpg" caption="Left - DXHR. Right - DXHR Director's Cut." %}
 
 The other part of the lighting differences is far more interesting, however. If you look at the comparison again, you can see that almost every brown source of light is missing.
 This is most noticeable on the right side of the screen, and at the couch in the bottom left.
 
 If we isolate only the light cast on the couch, we can see the problem in greater detail.
 
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/couch.jpg" caption="Left - DXHR. Right - DXHR Director's Cut." %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/couch.jpg" caption="Left - DXHR. Right - DXHR Director's Cut." %}
 
 This light seems broken! While it is not unreasonable to think that darker lights are a legitimate design choice, this change seems to be a bug --
 no light should work this way! I can't explain what is going on here from the technical side, but I assume the shader got converted incorrectly from the source platform (possibly Wii U).
@@ -203,7 +203,7 @@ Thankfully, once again this change boils down to a modified pixel shader. Replac
 It's worth noting that this is not the only affected room in the game. From what I can see, missing lights are virtually everywhere -- for example, compare the lighting on the doors in this scene
 in DXHR and Director's Cut:
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-door.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-door.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-door.jpg" %}
 
 This is a simple fix, but the game's atmosphere should benefit greatly -- even if not using any other DXHR effects.
@@ -216,13 +216,13 @@ undo them safely and effectively.
 For example, take a look at this scene -- comparing a stock Human Revolution vs. Director's Cut with all my changes applied in (spoiler alert 😉). Even though post-processing and lighting have been re-implemented,
 something is still different. For example, Megan's back is shadowed in the Director's Cut, but it's not in Human Revolution:
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-unknown1.jpg"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/dxhr-unknown1.jpg"
                 right="/assets/img/posts/dxhrdc-gfx/dxhrdc-unknown1.jpg" %}
 
 My first thought was that more lights are missing, but this is **not** the case as lightmaps of those two scenes are virtually identical.
 However, inspecting the relevant draw call reveals that in DC it also uses a shadow map -- something Human Revolution does not use in this scene at all.
 
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/dxhrdc-shadowmap.jpg" %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/dxhrdc-shadowmap.jpg" %}
 
 Initially, I thought that maybe this shadow map is a Director's Cut addition, but [this is not true](http://www.adriancourreges.com/blog/2015/03/10/deus-ex-human-revolution-graphics-study/#shadow-maps).
 For whatever reason they are just not used in this scene, and therefore removing them from this particular scene would only result in a *whack-a-mole* situation, where I'd have to go through every scene in the game
@@ -263,16 +263,16 @@ It might sound sketchy, sure -- but it's been extensively tested and it turned o
 
 With everything set in place, the game works and looks beautiful. Comparing side-by-side, it shows how impactful the design changes between Human Revolution and Director's Cut are:
 
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Detroit_HR/DC.jpg" left-label="DC style"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Detroit_HR/DC.jpg" left-label="DC style"
                 right="/assets/img/posts/dxhrdc-gfx/Detroit_HR/HR.jpg" right-label="HR style" %}
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Hengsha_HR/DC.jpg" left-label="DC style"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Hengsha_HR/DC.jpg" left-label="DC style"
                 right="/assets/img/posts/dxhrdc-gfx/Hengsha_HR/HR.jpg" right-label="HR style" %}
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Picus_HR/DC.jpg" left-label="DC style"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/Picus_HR/DC.jpg" left-label="DC style"
                 right="/assets/img/posts/dxhrdc-gfx/Picus_HR/HR.jpg" right-label="HR style" %}
 
 
 Comparing only the lighting changes, the difference can be relatively big too:
-{% include juxtapose.html left="/assets/img/posts/dxhrdc-gfx/lighting-broken.jpg" left-label="Stock lighting"
+{% include figures/juxtapose.html left="/assets/img/posts/dxhrdc-gfx/lighting-broken.jpg" left-label="Stock lighting"
                 right="/assets/img/posts/dxhrdc-gfx/lighting-fixed.jpg" right-label="Fixed lighting" %}
 
 ## Polishing up the user experience with Dear ImGui
@@ -281,7 +281,7 @@ Switching visual styles during the game is a nice addition, but relying on funct
 options, I decided to go ahead and integrate [Dear ImGui](https://github.com/ocornut/imgui), an industry-standard UI for in-game configuration menus. Integration was easy and resulted
 in a tidy, minimalistic UI:
 
-{% include screenshot.html link="/assets/img/posts/dxhrdc-gfx/imgui.jpg" %}
+{% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/imgui.jpg" %}
 
 The UI allows to toggle every effect separately, as well as opt for "fixed DC lighting" -- which does not make lights brighter, only fixes the ones which were broken.
 
@@ -300,7 +300,7 @@ After downloading, all you need to do is to extract the archive to the game's di
 This modification is obviously not a SilentPatch (although fixed lighting is as close as it gets to an actual "fix"), but it does not mean the game is free of issues.
 The most interesting problem I was made aware of are issues with a laggy camera:
 
-{% include video.html link="https://www.youtube.com/embed/1DKuhS7KSEg" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/1DKuhS7KSEg" %}
 
 Turns out, this issue is related to high PC uptime, so rebooting the PC fixes it! [I debugged similar issues in the past]({{ site.baseurl }}{% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}),
 so I will likely look into those in the future too. SilentPatch for Deus Ex: Human Revolution **and** Director's Cut is not unlikely to happen!

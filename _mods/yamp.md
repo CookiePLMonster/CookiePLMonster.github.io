@@ -18,10 +18,10 @@ standalone and native, on PC, provided you own a Steam copy of Yakuza 6.
 * Keyboard bindings are hardcoded for now. Please refer to <kbd>F1</kbd> -> <kbd><samp>Controls</samp></kbd> for a list of controls.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_dftKEuMb56.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_dftKEuMb56.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
 </div>
 
 # Disclaimer

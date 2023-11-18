@@ -54,25 +54,25 @@ $video-16-9-padding: 56.25%;
 
 .media-container {
     text-align: center;
-    > div, > figure {
+    > figure {
         display: inline-block;
     }
-    &.natural > div, &.natural > figure {
+    &.natural > figure {
         max-width: 90%;
     }
 
     @media screen and (min-width: 850px) {
-        &.small > div, &.small > figure {
+        &.small > figure {
             width: 47.5%;
         }
-        &.natural > div, &.natural > figure {
+        &.natural > figure {
             width: unset;
         }
 
-        &.small > div.video-entry {
+        &.small > figure.video-entry {
             padding-bottom: $video-16-9-padding * 0.475;
         }
-        &.natural > div.video-entry {
+        &.natural > figure.video-entry {
             padding-bottom: $video-16-9-padding * 0.9;
         }
     }

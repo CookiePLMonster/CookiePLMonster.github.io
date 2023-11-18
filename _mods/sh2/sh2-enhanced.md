@@ -17,6 +17,6 @@ I contributed to *Silent Hill 2: Enhanced Edition* with:
 - XInput based controller vibration
 - An option to allow movement and menu navigation with DPad, like on PlayStation 2
 
-{% include video.html link="https://www.youtube.com/embed/6v1USVhtfjQ" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/6v1USVhtfjQ" %}
 
 <a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button forums" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>

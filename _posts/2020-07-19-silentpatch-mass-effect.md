@@ -40,7 +40,7 @@ Build 2 has been released! This update resolves a bug introduced by SilentPatchM
 A few months later in mid-2008, the game received PC port developed by Demiurge Studios. It was a decent port with no obvious flaws, that is until 2011 when AMD released their new Bulldozer-based CPUs.
 When playing the game on PCs with modern AMD processors, two areas in the game (Noveria and Ilos) show severe graphical artifacts:
 
-{% include screenshot.html link="/assets/img/posts/mass-effect/me1-blobs.jpg" caption="Well, this doesn't look nice." %}
+{% include figures/image.html link="/assets/img/posts/mass-effect/me1-blobs.jpg" caption="Well, this doesn't look nice." %}
 
 While not unplayable, it's definitely distracting. Thankfully, workarounds exist -- such as
 [disabling lighting via console commands](http://abesmissioncontrol.blogspot.com/2015/04/mass-effect-fixing-blocky-player-models.html)
@@ -96,7 +96,7 @@ would look different on different PCs (indicating a driver or d3d9.dll bug), the
 **does** show the bug.
 
 An AMD capture on Intel looks no different than on the hardware it was taken from:
-{% include screenshot.html link="/assets/img/posts/mass-effect/me1-pix1.jpg" %}
+{% include figures/image.html link="/assets/img/posts/mass-effect/me1-pix1.jpg" %}
 
 What does this tell us?
 * Since PIX does not "take screenshots" but instead captures the sequence of D3D commands and executes them on hardware, we can observe that executing the commands captured from an AMD box
@@ -108,13 +108,13 @@ In other words, it's almost certainly not any sort of a driver bug. Instead, the
 At this point, finding the bug is a matter of finding any jarring differences between captures. It's tedious, but that's the only viable way.
 
 After a long while spent poking the capture, a full body draw call caught my attention:
-{% include screenshot.html link="/assets/img/posts/mass-effect/me1-pix2.jpg" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/mass-effect/me1-pix2.jpg" style="natural" %}
 
 On an Intel capture, this draw outputs most of the character's body, together with lighting and textures. On an AMD capture, it outputs a plain black model. This looks like a good trail.
 
 The first obvious candidate for checking would be bound textures, but they seem to be fine and are consistent across captures.
 However, some of the pixel shader constants looked weird. Not only do they have NaNs (Not a Number), but they also seem to only appear on the AMD capture and not the Intel capture:
-{% include screenshot.html link="/assets/img/posts/mass-effect/me1-pix3.jpg" style="natural" caption="1.#QO indicates a NaN." %}
+{% include figures/image.html link="/assets/img/posts/mass-effect/me1-pix3.jpg" style="natural" caption="1.#QO indicates a NaN." %}
 
 This looks promising -- NaN values causing strange visuals are not unheard of. Funnily enough, a PlayStation 3 version of Mass Effect 2
 [had a very similar looking issue in RPCS3](https://github.com/RPCS3/rpcs3/issues/7397) which was also related to NaNs!
@@ -154,7 +154,7 @@ meanwhile, on an AMD machine, NaNs would start showing up as soon as the player 
 
 Does it mean work is done? No, far from it, as finding broken constants is only half of the success. The question remains, where do they come from, and can they be replaced?
 An in-game test replacing NaN values with zeros partially fixed the issue -- ugly black blobs disappeared, but characters were still way too dark:
-{% include screenshot.html link="/assets/img/posts/mass-effect/me1-dark-lighting.jpg" caption="Almost correct... but not quite." %}
+{% include figures/image.html link="/assets/img/posts/mass-effect/me1-dark-lighting.jpg" caption="Almost correct... but not quite." %}
 
 Given how important these light values might be for the scene, it's not feasible to settle with a workaround like this. We know we are on the right track though!
 
@@ -329,9 +329,9 @@ It works out of the box, without the need for an ASI Loader or any other third p
 To our best knowledge, the game now looks exactly how it should, without any downgrades in the lighting:
 
 <div class="media-container small">
-{% include juxtapose.html left="/assets/img/posts/mass-effect/compare/noveria-broken.jpg" left-label="Before"
+{% include figures/juxtapose.html left="/assets/img/posts/mass-effect/compare/noveria-broken.jpg" left-label="Before"
                 right="/assets/img/posts/mass-effect/compare/noveria-fixed.jpg" right-label="After" caption="Noveria" %}
-{% include juxtapose.html left="/assets/img/posts/mass-effect/compare/ilos-broken.jpg" left-label="Before"
+{% include figures/juxtapose.html left="/assets/img/posts/mass-effect/compare/ilos-broken.jpg" left-label="Before"
                 right="/assets/img/posts/mass-effect/compare/ilos-fixed.jpg" right-label="After" caption="Ilos" %}
 </div>
 

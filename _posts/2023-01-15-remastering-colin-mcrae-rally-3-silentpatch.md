@@ -105,14 +105,14 @@ limited -- with the range of issues ranging from a hardcoded French co-driver (r
 ...various UI issues...
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-broken-pl-keyboard.png" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-broken-secrets-screen.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-broken-pl-keyboard.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-broken-secrets-screen.png" %}
 </div>
 
 ...through crashes on various screens, e.g. Telemetry and Controls. While salvageable, this means that the Polish release has received a non-trivial amount of code changes.
 
 Shortly after that, I also bought my own second hand copy of the eXtra Klasyka release, so now I'm a proud owner of two CMR3 PL copies:
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-copies.jpg" caption="Because why not?" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-copies.jpg" caption="Because why not?" %}
 
 If the rabbit hole of different versions ended here, this would have been a story of how I created an international DRM-free executable by "internationalizing" the Polish one
 and removing CD Projekt's modifications to it (more on that later). There **is** one more version, though -- CMR3 was also re-released in Germany on a single DVD. As SecuROM worked with DVDs
@@ -134,19 +134,19 @@ As mentioned earlier, the Polish release is more than a straightforward text and
 language in the game, CD Projekt (or Codemasters) introduced several changes to the international version, localizing the game further:
 
 * Localized onscreen keyboard and keyboard typing -- the international version displays a basic keyboard regardless of a selected in-game language:
-{% include juxtapose.html left="/assets/img/posts/spcmr3/cmr3-english-keyboard.png" left-label="International"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/cmr3-english-keyboard.png" left-label="International"
                 right="/assets/img/posts/spcmr3/cmr3-polish-keyboard.png" right-label="Polish"
                 caption="These screenshots are from a patched game, but you get the idea." %}
 
 * Menu cubes received new graphics to match Polish wording:
 <div class="media-container small">
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_NP59FE2Oim.png" left-label="International"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_NP59FE2Oim.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_Rea1oHQcc6.png" right-label="Polish"
                 start-position="75%" %}
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_maqdLz06dg.png" left-label="International"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_maqdLz06dg.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_FhPHLUBq8f.png" right-label="Polish"
                 start-position="75%" %}
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_ccriJQ3022.png" left-label="International"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_ccriJQ3022.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_mByVxA6C4k.png" right-label="Polish"
                 start-position="75%" caption="Polish cubes are exceptionally rude." %}
 </div>
@@ -154,7 +154,7 @@ language in the game, CD Projekt (or Codemasters) introduced several changes to 
 * The Secrets screen was modified to refer to CD Projekt's resources rather than the Codemasters' ones -- this is what resulted in a previously shown "Call your Germany"
 issue if a PL executable is used with English localization:
 
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_s6Ph0TjTCs.png" left-label="International"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_s6Ph0TjTCs.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC_bdpquWzrTJ.png" right-label="Polish" %}
 
 * By the way, have you noticed how Polish fonts are spaced further apart than international ones? Odd change, but I assume they had a reason to do so.
@@ -172,7 +172,7 @@ this isn't the case -- the changes in this release are:
 I couldn't find any in-game comparisons online [other than the Polish dubbing wiki](https://polski-dubbing.fandom.com/wiki/Colin_McRae_Rally_3),
 so here is one:
 
-{% include video.html link="https://www.youtube.com/embed/hiMuxipp5X4" id="polish-codrivers" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/hiMuxipp5X4" id="polish-codrivers" %}
 
 The removal of Nicky Grist explains why the game was now shipped on 2 CDs -- while localized co-drivers only use one-shot samples that
 are played at specific triggers during the stage, Nicky Grist's pace notes are full audio recordings, created for each stage individually.
@@ -213,8 +213,8 @@ executable appear to be identical to the international executable, it has at lea
 but the results screens for time trials are completely broken in this release.[^sp-czech-fix]
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_Kuqw351FSw.png" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_fHCSJQmaYu.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_Kuqw351FSw.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_fHCSJQmaYu.png" %}
 </div>
 
 I'm disappointed, as this screen was not even changed for the localized release -- it's a completely unwarranted regression.
@@ -235,15 +235,15 @@ and the only UI element it corrects is the co-driver arrow. That said, it's not 
 rather than by shrinking it vertically:
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_F84XcsPYJ9.jpg" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_mSVB76OLLL.jpg" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_F84XcsPYJ9.jpg" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_mSVB76OLLL.jpg" %}
 </div>
 
 Curiously, the PC demo **did** list 16:9 resolutions, unlike the full version of the game -- but unlike the console versions, it is Vert-;
 the co-driver arrow also appears to be broken. In my opinion, it's possible that because of issues like this it was decided that the full
 version should limit the available options:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-demo-ws.jpg" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-demo-ws.jpg" %}
 
 SilentPatch doesn't rely on the stock widescreen support at all -- instead, much like in
 [SilentPatch for Colin McRae Rally 2.0]({% link _games/cmr/cmr-2.0.md %}#silentpatch){:target="_blank"}, I scale the game to arbitrary aspect ratios.
@@ -251,7 +251,7 @@ The entire UI and menus are positioned dynamically, ensuring that everything loo
 as literally all the UI and menus had their layouts designed with a constant 4:3 aspect ratio -- therefore, SilentPatch takes control of nearly all the UI and menus
 to keep elements aligned consistently regardless of the aspect ratio:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-wide.jpg" caption="W I D E" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-wide.jpg" caption="W I D E" style="natural" %}
 
 For more screenshots showcasing widescreen support, check [the next chapter](#hd-interface).
 
@@ -263,8 +263,8 @@ The PC version of Colin McRae Rally 3 had a strange bug where [the sun would fla
 dgVoodoo would also not help resolve it, proving that it's **not** a Direct3D 9 bug.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-sun1.jpg" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-sun2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-sun1.jpg" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-sun2.jpg" %}
 </div>
 
 I tracked down this issue to the game's occlusion queries that would return values much higher than what the game had expected when multisampling is enabled
@@ -285,7 +285,7 @@ on the other hand, sun occlusion is now wrong with multisampling enabled, which 
 This isn't the only issue related to the sun rendering -- aside from broken colors, the sun occlusion would cause a consistent and noticeable hitch every time
 the sun would either appear on screen or go off screen:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-frametime-bad.jpg" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-frametime-bad.jpg" style="natural" %}
 
 This bug, fixed only in Colin McRae Rally 2005, is caused by the game waiting for the sun occlusion query to return its results as soon as it's finished.
 I don't need to provide pseudocode, as the code flow looks nearly identical to
@@ -304,14 +304,14 @@ With this in mind, it's strange that this hitch isn't more consistent than that 
 This is exactly what happens when dgVoodoo is used to make the game use Direct3D 11, but I couldn't get it to ever happen in Direct3D 9 -- perhaps due to a runtime
 or a driver level optimization/hack:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-frametime-d3d11.jpg" style="natural"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-frametime-d3d11.jpg" style="natural"
   caption="These timings are even worse than by default, but in a way, they also make \"more sense\"." %}
 
 The fix is trivial in theory, but a little harder to implement -- instead of always waiting for the latest result, the game should keep the old sun
 occlusion data (and not start another query) for as long as the new result is not ready. This means that the value of the sun occlusion (and therefore, its brightness)
 lags behind the camera by 2-3 frames. However, in practice this is not noticeable during gameplay, and resolves any hitches completely:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-frametime-good.jpg" style="natural" caption="The stutter struggle is no more." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-frametime-good.jpg" style="natural" caption="The stutter struggle is no more." %}
 
 *Something I only noticed just now when writing this post: I don't know if the huge difference in CPU9 and CPU11 usage is related to this fix.
 However, it likely is -- the old code essentially included a CPU spin lock waiting for the GPU, and the quote from the docs I included above specifically
@@ -329,7 +329,7 @@ Car shadows in CMR3 are simple but effective. They are essentially rendered in t
 Although the effect isn't complex, it seemingly breaks with anti-aliasing enabled -- upon starting the game with FSAA, shadows were there but they were too sharp;
 even worse, changing the display mode with FSAA enabled would make the shadow vanish entirely for that game session:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-shadow-comparison.png"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-shadow-comparison.png"
     caption="From left to right - Shadows without FSAA (looking correct), shadows with FSAA (too sharp), shadows after changing graphics options (not there at all)." %}
 
 Turns out the issue lies in the "softening" pass. In theory, both shadow passes should be performed with depth test and depth write disabled;
@@ -338,7 +338,7 @@ Although the game sets up the depth states for shadow rendering correctly, an er
 Furthermore, in cases where a render target has no depth buffer associated with it, the game's graphics engine uses a fallback instead and binds the backbuffer's depth buffer!
 Therefore, downsample draws used this as depth:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-shadow-depth.jpg"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-shadow-depth.jpg"
     caption="You don't have to know what a depth buffer is to realize that this looks nothing like a car shadow." %}
 
 In theory, this should only make draws fail if the top left part of the screen was obscured (making the depth test fail),
@@ -352,7 +352,7 @@ SilentPatch fixes this issue and goes a step further -- admittedly, those "sharp
 the softening pass entirely. Thankfully, Colin McRae Rally 2005 reduces the number of soften passes from 8 to 2, making shadows a little sharper.
 I "backported" this change to Colin McRae Rally 3, making shadows a little more defined:
 
-{% include juxtapose.html left="/assets/img/posts/spcmr3/cmr3-soft-shadows.jpg" left-label="Stock (Soft)"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/cmr3-soft-shadows.jpg" left-label="Stock (Soft)"
                 right="/assets/img/posts/spcmr3/cmr3-sharp-shadows.jpg" right-label="SilentPatch (Sharper)" %}
 
 If you prefer to keep the stock, blurrier shadows, this change can be disabled from the `SilentPatchCMR3.ini` file -- by adding these lines at the very bottom of the file:
@@ -370,7 +370,7 @@ SHARPER_SHADOWS=0
 A few stages in CMR3 run next to lakes or across rivers. At the highest details, those come with a nice cubemap-based reflection and a subtle animation,
 producing an appearance of a reflective, moving water surface. However, on PC those reflections don't always look the same:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-water-comparison.png" caption="From left to right - normal water, water after changing graphics options, water after <kbd>Alt</kbd> + <kbd>Tab</kbd>." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-water-comparison.png" caption="From left to right - normal water, water after changing graphics options, water after <kbd>Alt</kbd> + <kbd>Tab</kbd>." %}
 
 Depending on your actions, reflections may appear darker or even be completely black. I investigated this issue in detail, and it is caused not by one,
 but **three** separate bugs! While one of them is a nitpick and may not even affect visuals, the other two are worth covering.
@@ -383,13 +383,13 @@ making the water look horrendous. Making the game re-render the reflection after
 The other issue is also related to the device lost event, but it happens when the device resets (either due to <kbd>Alt</kbd> + <kbd>Tab</kbd> or a display mode change) outside of the race.
 Since reflections are rendered at the start of the race, they should be unaffected by a reset in menus and render just fine. However, they are rendered slightly miscolored:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-water-reflections.png" style="natural"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-water-reflections.png" style="natural"
     caption="Left - reflections rendered correctly, right - miscolored reflections after a device reset." %}
 
 Because of the one-shot nature of those reflections (and, of course, making them re-render every frame "fixes" this bug), it was extremely hard to catch on a graphics capture.
 However, once done, PIX provided a hint -- one of the lighting render states is different between the "good" reflection render and a "bad" one:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-reflection-renderstates.png" style="natural"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-reflection-renderstates.png" style="natural"
     caption="Left - correct reflections, right - miscolored reflections." %}
 
 This essentially means that the scene is rendered to the cubemap with incorrect, possibly unpredictable, lighting -- but why? The game code correctly sets the emissive
@@ -416,7 +416,7 @@ than it truly is, and thus it's not setting the render state if it thought it's 
 
 Fixing the Reset function to correctly reconcile those 3 missing states fixes the issue, so now water looks the same at all times:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_QIF2GtpZGv.jpg" caption="This might not be Far Cry, but the water still looks nice." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_QIF2GtpZGv.jpg" caption="This might not be Far Cry, but the water still looks nice." %}
 
 ***
 
@@ -425,8 +425,8 @@ If you've played CMR3 on PlayStation 2 or watched any footage of it, you may hav
 most prominently when it comes to car reflections. Albeit present on PC and Xbox, they always seemed a little dull. To verify, I ran the same car and stage on PC
 and in the PCSX2 emulator, and pulled the reflection data before and after it's been mapped on a sphere:
 <div class="media-container natural">
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-ps2-ref.png" caption="PlayStation 2; 512x512 reflection, 128x128 sphere" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-pc-stock-ref.png" caption="PC (stock); 256x256 reflection & sphere" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-ps2-ref.png" caption="PlayStation 2; 512x512 reflection, 128x128 sphere" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-pc-stock-ref.png" caption="PC (stock); 256x256 reflection & sphere" %}
 </div>
 
 They have clearly been rendered differently, but the most noticeable difference is in the sky -- PS2's reflection has a normal sky,
@@ -464,14 +464,14 @@ Curiously, split-screen uses a full sky in reflections -- which I found peculiar
 
 For SilentPatch, I went ahead and enabled sky rendering for reflections at all times:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-pc-sp-ref.png" caption="PC (with SilentPatch); 256x256 reflection & sphere" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-pc-sp-ref.png" caption="PC (with SilentPatch); 256x256 reflection & sphere" style="natural" %}
 
 Not only does this change make the car reflections more vibrant, but it also "fixes" the TV displays in cutscenes -- as they reuse the reflection map,
 they now display the sky correctly!
 
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_GTMDAOirDs.jpg" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_GTMDAOirDs.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_qooRyN7dkN.jpg" right-label="SilentPatch" %}
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_baj8DEkpAw.jpg" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_baj8DEkpAw.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_oCjhhdT7ja.jpg" right-label="SilentPatch" %}
 
 If for some reason you prefer the stock reflections, this change can be disabled from the `SilentPatchCMR3.ini` file -- by adding these lines at the very bottom of the file:
@@ -489,9 +489,9 @@ unintended) -- they are used both in 2D (in menus and graphs), and in 3D (for an
 at 640x480 -- but the larger the selected resolution is, the more noticeable it becomes that those lines become relatively thin and hard to read.
 SilentPatch resolves this issue by implementing line thickness:
 
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_pDJxlRZjOl.png" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_pDJxlRZjOl.png" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC_0QekVJ7utN.png" right-label="SilentPatch" %}
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_d5pB0mWR2G.jpg" left-label="Stock"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_d5pB0mWR2G.jpg" left-label="Stock"
                 right="/assets/img/posts/spcmr3/Rally_3PC_7AyM6Gu0Lo.jpg" right-label="SilentPatch" %}
 
 ***
@@ -500,14 +500,14 @@ SilentPatch resolves this issue by implementing line thickness:
 The default CMR3 menus look notoriously inconsistent. SilentPatch fixes many inconsistently formatted texts (e.g. `CONTROLS:` on one screen, `CONTROLS :` on another)
 and imperfect menu elements -- with "line boxes" being exceptionally imperfect:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-boxes.png" caption="The stock boxes look like they have a ribbon in the bottom right IMO." style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-boxes.png" caption="The stock boxes look like they have a ribbon in the bottom right IMO." style="natural" %}
 
 ***
 
 {: #fix-split-screen}
 Just like the previous games in the franchise, Colin McRae Rally 3 comes with a split-screen feature. The issue is, on most modern PCs by default it looks like this:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_C8cj6w58pT.jpg" caption="That's not what I meant when I said that I like the Horizon games." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_C8cj6w58pT.jpg" caption="That's not what I meant when I said that I like the Horizon games." %}
 
 This issue, fixed in Colin McRae Rally 04, can also be worked around by setting the game affinity to just a single core. However, since that's not a threading issue,
 this likely only buys the user some time, and in the future, this method might stop working too.
@@ -524,7 +524,7 @@ are spawned -- and this happens before the screen starts to fade from white.
 CMR3 comes with support for multiple displays and allows the user to specify what display to render the game to, but unless all your displays are identical,
 your typical multi-monitor experience was likely to look like this:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/ZOKTH5ovZ7.png" caption="Yes, I would like to run the game at (NULL)." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/ZOKTH5ovZ7.png" caption="Yes, I would like to run the game at (NULL)." %}
 
 The addition of a Refresh Rate option in SilentPatch only made this issue worse, so despite using a single-display system myself, I had to take a look.
 Turns out the issue is simple -- although the game correctly refreshes the list of available resolutions as soon as you switch the selected display adapter,
@@ -571,7 +571,7 @@ S WM_WINDOWPOSCHANGING Ipwp:0019FA8C
 The key to understanding is the fact those are not **position** changes, but **style** changes -- and sometimes I'd also see the window border
 briefly change the style to the one used by windows that are hung. Indeed, the issue was essentially revealed by this feature of Windows:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/3bb3002a-31fa-4ad9-9b7b-247b7f2550c2-1.png" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/3bb3002a-31fa-4ad9-9b7b-247b7f2550c2-1.png" style="natural" %}
 
 Traditionally, Windows thinks the window is hung when its window messages are not pumped often enough, typically 5 seconds.
 However, at no point, the game was truly unresponsive, and so the chain of events that I **think** has happened there is:
@@ -618,10 +618,10 @@ The new options are:
   in DiRT Rally 2.0.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_cWlcxCu7Qg.jpg" caption="Digital tachometer" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_UDHzvaVeTM.jpg" caption="Vertical split-screen" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-min-fov.jpg" caption="30 degrees FOV" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-max-fov.jpg" caption="120 degrees FOV" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_cWlcxCu7Qg.jpg" caption="Digital tachometer" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_UDHzvaVeTM.jpg" caption="Vertical split-screen" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-min-fov.jpg" caption="30 degrees FOV" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-max-fov.jpg" caption="120 degrees FOV" %}
 </div>
 
 ***
@@ -629,7 +629,7 @@ The new options are:
 {: #new-advanced-graphics-options}
 Advanced Graphics Options have received a set of new options inspired by later CMR games and modern games in general.
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_XzfqxTVQMs.png" caption="This isn't DiRT Rally 2.0, but a good old CMR3." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_XzfqxTVQMs.png" caption="This isn't DiRT Rally 2.0, but a good old CMR3." %}
 
 Those are:
 * Display mode (Fullscreen, Windowed, Borderless) -- using the stock game's windowed mode that remained unfinished in the code,
@@ -639,7 +639,7 @@ Those are:
   but the car physics seem to work well even at hundreds of frames per second!
 * Anisotropic Filtering -- [unlike the option in CMR2005](https://twitter.com/__silent_/status/1598781224826200064){:target="_blank"}, this one actually works[^spcmr04] 🤔
 
-{% include juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_z0PIV5ZtkM.jpg" left-label="AF OFF"
+{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_z0PIV5ZtkM.jpg" left-label="AF OFF"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_7rtPTroLY3.jpg" right-label="AF x16"
                 caption="It's the details that matter." %}
 
@@ -653,7 +653,7 @@ A set of fixes and perfect widescreen support make for a nice patch, but it's no
 to work on retouching the UI and fonts in high quality. The original assets were clearly made with a 640x480 resolution in mind; so when playing at high resolutions
 the game itself looked gorgeous, but the UI was lacking.
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_6Israqewxa.jpg" caption="Feels like something is missing here." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_6Israqewxa.jpg" caption="Feels like something is missing here." %}
 
 Bekoha's HD UI addresses this by replacing most interface assets with faithful high quality recreations:
 <div class="media-container natural">
@@ -661,10 +661,10 @@ Bekoha's HD UI addresses this by replacing most interface assets with faithful h
 {% capture url_timer %}{{ hd_ui_url }}/screenshots/timer.png{% endcapture %}
 {% capture url_results %}{{ hd_ui_url }}/screenshots/results.png{% endcapture %}
 {% capture url_greece %}{{ hd_ui_url }}/screenshots/greece.png{% endcapture %}
-{% include screenshot.html link=url_speed %}
-{% include screenshot.html link=url_timer %}
-{% include screenshot.html link=url_results %}
-{% include screenshot.html link=url_greece %}
+{% include figures/image.html link=url_speed %}
+{% include figures/image.html link=url_timer %}
+{% include figures/image.html link=url_results %}
+{% include figures/image.html link=url_greece %}
 </div>
 
 More comparison screenshots (also showcasing SP's widescreen support) can be found on Bekoha's website: \\
@@ -680,9 +680,9 @@ Theoretically, replacing textures in CMR3 is easy. Font files are loose DDS file
 well understood for nearly two decades. However, a naïve texture replacement produces results that are hardly optimal:
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/spcmr3/qBsfV0cO.png" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/mpc-hc64_2022-11-25_00-44-43.png" %}
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC_nV6WYwJk2u.png" caption="In case you forget who is the sponsor." %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/qBsfV0cO.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/mpc-hc64_2022-11-25_00-44-43.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC_nV6WYwJk2u.png" caption="In case you forget who is the sponsor." %}
 </div>
 
 Albeit unusual for PC games, this behavior is perfectly explainable. The original UI design was pixel perfect, with no scaling involved -- which
@@ -722,13 +722,13 @@ setup unchanged, while the actual rendering stays unaffected and makes full use 
 Contrary to a popular belief, upscaling is not always the best solution for a high quality interface.
 Detailed textures benefit from it the best, but for pixel art there usually is a better solution -- nearest neighbor scaling:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/2-Figure2-1.png"
+{% include figures/image.html link="/assets/img/posts/spcmr3/2-Figure2-1.png"
  caption="Source: [Evaluation of Different Image Interpolation Algorithms](https://www.semanticscholar.org/paper/Evaluation-of-Different-Image-Interpolation-Prajapati-Naik/882eb0f08c5643279459183be0ea3e1496a73cf5)" %}
 
 For any textures considered pixel art, scaling them via nearest neighbor filtering (as opposed to linear filtering) retains the effect of sharp pixels
 without the need to ship assets that effectively duplicate pixels multiple times:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-nearest-filtering.png" caption="These are the same font assets, just filtered differently." style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-nearest-filtering.png" caption="These are the same font assets, just filtered differently." style="natural" %}
 
 SilentPatch opts to always use nearest filtering on a set of textures and fonts predefined by us, so they look sharper than in the stock game even without the HD UI installed.
 
@@ -744,7 +744,7 @@ However, it all changes once nearest filtering is used -- textures appear blurry
 (top image). Applying that specific fix to all UI elements ensures they always stay as sharp as possible (bottom image). Pay attention to the blurred edges, especially on
 **1**, **L**, and **R**:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/cmr3-half-pixel-big.png" thumbnail="/assets/img/posts/spcmr3/cmr3-half-pixel.png"
+{% include figures/image.html link="/assets/img/posts/spcmr3/cmr3-half-pixel-big.png" thumbnail="/assets/img/posts/spcmr3/cmr3-half-pixel.png"
     caption="This close to greatness... Click to open this image at 300% scaling, as, ironically, browsers use linear scaling when zooming in." style="natural" %}
 
 # Chapter 5: Merging regional releases together {#merging-regional-releases}
@@ -757,7 +757,7 @@ The Polish re-release also receives support for Nicky Grist's pace notes much li
 are a separate download. All regional changes made for the Polish release, such as localized cube textures and the OSD keyboard, are also present;
 not only that, but the Czech localization also receives its own OSD keyboard, while the official release did not:
 
-{% include screenshot.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.czech_B6U6sUBX6Y.png" %}
+{% include figures/image.html link="/assets/img/posts/spcmr3/Rally_3PC.1.1.czech_B6U6sUBX6Y.png" %}
 
 Since the regional releases ship their own atlases of fonts, and the Polish release goes as far as updating the codepoints from **Windows-1252** (Western Europe)
 to **Windows-1250** (Central Europe), the initial plan was to merge them all and update the game to use UTF-8. However, we ruled against it for several reasons:
@@ -846,7 +846,7 @@ The other new options have been added to in-game menus instead.
 * Majority of in-game UI elements replaced.
 
 I've created a brief showcase of the patch in video form, you can watch it here:
-{% include video.html link="https://www.youtube.com/embed/ipXwyzwV9k0" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/ipXwyzwV9k0" %}
 
 > Unlike most of my other mods, installing this one is a little more involved. Due to the presence of DRM-free executables,
 > I only officially support those, and instead, I provide a ready solution to upgrade the latest official DRM'd executables to the DRM-free versions.

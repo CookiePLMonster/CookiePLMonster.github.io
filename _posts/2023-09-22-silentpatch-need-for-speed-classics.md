@@ -47,7 +47,7 @@ by NFS2/Porsche Modern Patches (as far as we know, NFS3/NFS4 patches are spotles
 
 * As good as NFS2SE's Modern Patch is, it unfortunately also introduced at least one issue. Online races became a sub-par experience because they were rendered as if they were
   a split-screen race:
-  {% include screenshot.html link="/assets/img/posts/spnfs90s/split-screen.jpg"
+  {% include figures/image.html link="/assets/img/posts/spnfs90s/split-screen.jpg"
     caption="This is a reconstruction, but this is exactly how online races used to look." %}
   SilentPatch hooks into Modern Patch (if installed) and patches this issue.
 

@@ -14,8 +14,8 @@ With this cheat, I replace the stock functionality of the right analog stick (Th
 Removing it without first making the code unmap the newly added controls will leave camera controls permanently mapped in the savegame.**
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-2.jpg" %}
-{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-lookaround-1.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/nascar-lookaround-2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/nascar-lookaround-1.jpg" %}
 </div>
 
 {% include setup-instructions.html platform="ps2" %}

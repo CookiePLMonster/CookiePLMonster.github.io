@@ -8,7 +8,7 @@ date: 21-10-2023
 This [DNAS](https://en.wikipedia.org/wiki/DNAS) Bypass cheat allows the game to go online through [OpenSpy](http://openspy.net/)
 by bypassing a defunct authentication service from Sony. My tests were done only on the June build; July build can go online too, but I've not had much success creating a lobby.
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_SLUS-20872_20230921212557.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20230921212557.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_SLUS-20872_20230921212557.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20230921212557.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

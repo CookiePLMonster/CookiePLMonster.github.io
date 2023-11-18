@@ -177,7 +177,7 @@ Success! We can finally call it working correctly. Not only intros work fine - i
 
 It's time to see those movies in action!
 
-{% include video.html link="https://www.youtube.com/embed/tkCyBY5z5dc" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/tkCyBY5z5dc" %}
 
 Fixing other issues
 ===================

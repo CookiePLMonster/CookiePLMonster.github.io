@@ -16,8 +16,8 @@ Co-Driver Splitter is a plugin for recent DiRT, GRID and F1 games splitting audi
 while everything else plays over speakers!
 
 <div class="media-container small">
-{% include video.html link="https://www.youtube.com/embed/S4psNp2mhUs" %}
-{% include video.html link="https://www.youtube.com/embed/X3FQYK2GUuk" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/S4psNp2mhUs" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/X3FQYK2GUuk" %}
 </div>
 
 ***

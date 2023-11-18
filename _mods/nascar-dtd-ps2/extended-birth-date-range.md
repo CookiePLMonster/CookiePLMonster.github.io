@@ -9,7 +9,7 @@ When creating a new driver profile in NASCAR DtD, the birth years of the player 
 to the **1925-1986** range. In 2021 that limit doesn't really make sense anymore,
 so in this cheat, I lifted it enough to future proof it for a very long time -- with valid dates now being in the **1900-2100** range.
 
-{% include screenshot.html link="/assets/img/posts/console-codes-2/nascar-birthdate.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/nascar-birthdate.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

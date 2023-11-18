@@ -32,7 +32,7 @@ This is not the only fix included, however.
 * Game is now fully portable - dependency on installation path in registry has been removed
 * Game now defaults to desktop resolution on the first launch - so it will not default to 800x600 anymore
 
-{% include video.html link="https://www.youtube.com/embed/tkCyBY5z5dc" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/tkCyBY5z5dc" %}
 
 {% include setup-instructions.html %}
 

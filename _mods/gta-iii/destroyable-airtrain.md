@@ -9,8 +9,8 @@ This modification restores some beta GTA III code, allowing the player to blow u
 In the final game version, the player could only destroy a Dodo flying above the city,
 yet destroyable Airtrain was shown in some places before III release (such as a German TV commercial).
 
-{% include screenshot.html link="https://i.imgur.com/k1Md88u.jpg" thumbnail="https://i.imgur.com/k1Md88uh.jpg" %}
-{% include video.html link="https://www.youtube.com/embed/HH4-bRxioEo" %}
+{% include figures/image.html link="https://i.imgur.com/k1Md88u.jpg" thumbnail="https://i.imgur.com/k1Md88uh.jpg" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/HH4-bRxioEo" %}
 
 {% include setup-instructions.html %}
 

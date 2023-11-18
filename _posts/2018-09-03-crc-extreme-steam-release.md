@@ -20,7 +20,7 @@ Cross Racing Championship Extreme is a relatively nice racing game from [Invictu
 Sadly, it was haunted by a relatively severe graphical artifact present on nearly all modern GPUs -- driver models would be corrupted
 and trees would randomly fly around!
 
-{% include screenshot.html link="/assets/img/posts/crc-extreme/crcbug.jpg" caption="You are not wrong - there really are trees in the sky." %}
+{% include figures/image.html link="/assets/img/posts/crc-extreme/crcbug.jpg" caption="You are not wrong - there really are trees in the sky." %}
 
 With it fixed, Raxat aka [ImageCode](http://image-code.com/) (you [may remember the name from a post about Street Legal Racing Redline v2.3.1]({{ site.baseurl }}{% post_url 2018-06-15-slrr-proof-of-fix %}))
 sent the fix back to Invictus, and they **liked it so much so they immediately wanted to re-release the game on Steam!**
@@ -34,11 +34,11 @@ I can proudly say I took part in refreshing the game for modern standards -- CRC
 
 With all fixes in place, it's safe to say the game looks much better than it used to:
 
-{% include screenshot.html link="https://pbs.twimg.com/media/DilgbKfX0AASJb2.jpg" caption="Now we're talking." %}
+{% include figures/image.html link="https://pbs.twimg.com/media/DilgbKfX0AASJb2.jpg" caption="Now we're talking." %}
 
 You can see all those improvements in a short gameplay I recorded:
 
-{% include video.html link="https://www.youtube.com/embed/XgSFekASeQc" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/XgSFekASeQc" %}
 
 <br>
 

@@ -8,8 +8,8 @@ date: 06-09-2021
 By default, Gran Turismo 2 has 3 camera modes in race, but 9 modes in replays, with the cinematic camera being a separate, 10th mode. This cheat makes all replay cameras accessible in race, and allows to switch the cinematic camera by holding `R1`.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/gt2-cheats/cameras-1.jpg" %}
-{% include screenshot.html link="/assets/img/posts/gt2-cheats/cameras-2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-cheats/cameras-1.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-cheats/cameras-2.jpg" %}
 </div>
 
 {% include setup-instructions.html platform="ps1" %}

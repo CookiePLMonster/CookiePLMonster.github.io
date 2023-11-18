@@ -10,7 +10,7 @@ date: 06-09-2021
 A 16:9 cheat that does not cut off the objects on screen edges.
 When using this cheat, a 16:9 Widescreen Hack should be **disabled**.
 
-{% include screenshot.html link="https://i.imgur.com/Tr5NvnE.jpg" thumbnail="https://i.imgur.com/Tr5NvnEh.jpg" %}
+{% include figures/image.html link="https://i.imgur.com/Tr5NvnE.jpg" thumbnail="https://i.imgur.com/Tr5NvnEh.jpg" %}
 
 {% include setup-instructions.html platform="ps1" %}
 

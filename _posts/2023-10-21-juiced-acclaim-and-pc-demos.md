@@ -75,8 +75,8 @@ or [Off-Road Redneck Racing](https://en.wikipedia.org/wiki/Off-Road_Redneck_Raci
 that promised to feature every single car model from this Italian automaker.[^lamborghini-cars]
 
 <figure class="media-container small">
-{% include screenshot.html link="https://files.hiddenpalace.org/8/80/LamborghiniDec10_4.png" %}
-{% include screenshot.html link="https://files.hiddenpalace.org/e/e9/LamborghiniDec10_7.png" %}
+{% include figures/image.html link="https://files.hiddenpalace.org/8/80/LamborghiniDec10_4.png" %}
+{% include figures/image.html link="https://files.hiddenpalace.org/e/e9/LamborghiniDec10_7.png" %}
 </figure>
 
 Unfortunately, Rage Software
@@ -96,7 +96,7 @@ and a publishing deal with [Acclaim Entertainment](https://en.wikipedia.org/wiki
 the publishing rights for Burnout) for their new game, **Juice**.
 While the game was never officially referred to by this name, thanks to a very early prototype we know this name was in use at least until November 2003.
 
-{% include video.html link="https://www.youtube.com/embed/4rx5WTrZkTs" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/4rx5WTrZkTs" %}
 
 By the time Juice Games officially [announced the game in January 2004](https://www.ign.com/articles/2004/01/22/juice-games-announces-juiced),
 it was already known by its final name and set for a Fall 2004 release. The development process under Acclaim was relatively well documented,
@@ -123,13 +123,13 @@ and reviews stated [the game was to be released in September 2004](https://www.g
 and lists the release date as {{ "2004-09-07" | date: page.date-format }}, although this listing doesn't use Acclaim's cover art.
 Interestingly, [THQ listings](https://www.amazon.co.uk/THQ-Juiced-PS2/dp/B000219OCC/) also exist and they have a different ASIN, but that may just be an US vs. EU Amazon.
 
-{% include screenshot.html link="https://cdn.mobygames.com/promos/7167894-juiced-other-playstation-2-preliminary-box-art.jpg"
+{% include figures/image.html link="https://cdn.mobygames.com/promos/7167894-juiced-other-playstation-2-preliminary-box-art.jpg"
         style="natural" caption="Even the original box art was revealed." %}
 
 September release never happened, though -- instead, Acclaim [filed for bankruptcy in October 2004](https://www.cnet.com/tech/gaming/game-maker-acclaim-files-for-bankruptcy/)
 and the game's future became unknown. This has all happened so late so some boxed copies of the game [ended up turning up online years later](https://www.reddit.com/r/gamecollecting/comments/3r9y36/picked_up_the_cancelled_version_of_juiced_on_the/), although there is no evidence of the game reaching the store shelves.
 
-{% include video.html link="https://www.youtube.com/embed/wNuw6uVv8ng" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/wNuw6uVv8ng" %}
 
 <figure align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">- work for Rage Software<br>- develop a Lamborghini game nearly to completion<br>- studio bankrupts, game never releases<br>- move on to found Juice Games<br>- develop Juiced for Acclaim nearly to completion<br>- publisher bankrupts, new publisher modifies the game<br><br>Folks had the worst luck :( <a href="https://t.co/wIwmERTVb7">pic.twitter.com/wIwmERTVb7</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1704429355684766178?ref_src=twsrc%5Etfw">September 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -181,23 +181,23 @@ and missing PC features, to an unimplemented Quit (<kbd>Alt</kbd> + <kbd>F4</kbd
 a Nitrous button is completely unmapped in this build, and unlike later builds, this one doesn't give the player an option to redefine controls.
 
 <figure class="media-container small">
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_5XeRWcy9N2.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5XeRWcy9N2.jpg" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_5rEPO69pXg.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5rEPO69pXg.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_5XeRWcy9N2.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5XeRWcy9N2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_5rEPO69pXg.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5rEPO69pXg.jpg" %}
 </figure>
 
 It doesn't even have a game icon.
 
-{% include screenshot.html thumbnail="/assets/img/posts/juiced-research/may-icons.jpg" style="natural" %}
+{% include figures/image.html thumbnail="/assets/img/posts/juiced-research/may-icons.jpg" style="natural" %}
 
 Although this demo has 3 cars available by default, it also ships a 4th car -- **Toyota MR2**. In {{ sp_name }}, this car has been made selectable.
 Since I included this car in the mod package, it's now also available in later demos.
 
-{% include screenshot.html id="toyota-mr2" link="/assets/img/posts/juiced-research/screens/Juiced_5eOw0UtSdM.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5eOw0UtSdM.jpg"
+{% include figures/image.html id="toyota-mr2" link="/assets/img/posts/juiced-research/screens/Juiced_5eOw0UtSdM.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_5eOw0UtSdM.jpg"
         caption="Fonts don't scale either." %}
 
 Unlike later demos, a <kbd><samp>Videos</samp></kbd> menu entry is available, with 3 small game teasers available -- although their appearance is slightly glitchy.
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_RqI3nRZ7o3.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_RqI3nRZ7o3.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_RqI3nRZ7o3.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_RqI3nRZ7o3.jpg" %}
 
 {{ sp_name }} unlocks all shipped content in this demo, but there is a twist -- **in this build, the Sprint races work differently.** Rather than taking place on the straight section of the road,
 much like drag races in other games (or Sprints in the final version of the game), these Sprints take place on small sections of regular tracks.
@@ -207,9 +207,9 @@ It's just speculation, but it is possible that this demo represents a work-in-pr
 or it was just not finalized yet and used sections of the existing tracks as placeholders.
 
 <figure class="media-container small">
-{% include screenshot.html link="/assets/img/posts/juiced-research/aw.png" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/CH1.png" %}
-{% include screenshot.html link="/assets/img/posts/juiced-research/eng.png" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/aw.png" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/CH1.png" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/eng.png" %}
 <figcaption markdown="span">Credits: {{ eagle_link }}</figcaption>
 </figure>
 
@@ -226,11 +226,11 @@ This build is a prototype demo retrieved from [Duffy's Dreamcast Collection](htt
 (except for the texts not scaling to resolution) have been fixed. Comparison screenshots show several obvious differences.
 
 <figure class="media-container small">
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_laDHj6Gwf9.jpg" left-label="May 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_laDHj6Gwf9.jpg" left-label="May 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_pkIBVvtInu.jpg" right-label="June 2004" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_y3tpqe9WVS.jpg" left-label="May 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_y3tpqe9WVS.jpg" left-label="May 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_XJc5v9apQw.jpg" right-label="June 2004" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_YGROHPWmIP.jpg" left-label="May 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_YGROHPWmIP.jpg" left-label="May 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_XOMk76rR89.jpg" right-label="June 2004" %}
 </figure>
 
@@ -253,7 +253,7 @@ Based on my observations, I could identify the following differences between May
 * Controls can now be remapped, although instead of an in-game remapper, [DirectInput Mapper](https://community.pcgamingwiki.com/files/file/58-microsoft-directinput-mapper)
   ((in)famously removed from Windows Vista and newer) is used. The game must also be running in the windowed mode, or else it obscures the mapper window.
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_JGSrHwJ2h9.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_JGSrHwJ2h9.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_JGSrHwJ2h9.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_JGSrHwJ2h9.jpg" %}
 
 Aside from the compatibility issues of the configurator app, this build also introduced a peculiar issue where the HUD flickers randomly. Since the July build was also affected,
 I will explain this bug in detail [below](#acclaim-silentpatch-fixes).
@@ -272,11 +272,11 @@ This demo is similar to the June build, but with a few additional fixes:
 * Lighting (especially on cars) seems to be a little darker, as evidenced by the comparison screenshots.
 
 <figure class="media-container small">
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_5rEPO69pXg.jpg" left-label="May 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_5rEPO69pXg.jpg" left-label="May 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_YR3rVipjAJ.jpg" right-label="July 2004" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_JGSrHwJ2h9.jpg" left-label="June 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_JGSrHwJ2h9.jpg" left-label="June 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_VcNQfgLy7o.jpg" right-label="July 2004" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_3pPERfVUUc.jpg" left-label="June 2004"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_3pPERfVUUc.jpg" left-label="June 2004"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_9byolLFsSJ.jpg" right-label="July 2004"
                 id="june-july-lighting" %}
 </figure>
@@ -307,7 +307,7 @@ I want those demos to be playable, but I don't want to distort their "history" b
 * {: #acclaim-widescreen} Widescreen from the console builds has been re-enabled and further improved. The default widescreen option slightly distorts the aspect ratio and appears horizontally squashed
   compared to 4:3. SilentPatch corrects this and additionally supports arbitrary aspect ratios, which means ultra widescreen now looks as expected.
   The configuration application can now also select widescreen resolutions when in windowed mode.
-  {% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_RlmB8wyX8f.jpg" left-label="Stock"
+  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_RlmB8wyX8f.jpg" left-label="Stock"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_44IkcUPlm6.jpg" right-label="SilentPatch" %}
 
 * The default driver name `Player1` can now be overridden via the INI file.
@@ -362,7 +362,7 @@ I want those demos to be playable, but I don't want to distort their "history" b
   Furthermore, after <kbd>Alt</kbd> + <kbd>Tab</kbd>, this issue vanishes and the environments are dark regardless of whether the HUD is drawn or not.
   I haven't looked into this issue with PIX, so I am not sure which of the two states is "correct", but in my opinion the darker state makes the affected objects
   (especially the car) blend with the rest of the environment better.
-  {% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_KPTyoqw3g8.jpg" left-label="HUD"
+  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_KPTyoqw3g8.jpg" left-label="HUD"
                 right="/assets/img/posts/juiced-research/screens/thumb/Juiced_2w2s8Ynrza.jpg" right-label="No HUD"
                 caption="This looks somewhat similar to the [June/July comparison](#june-july-lighting)." %}
 
@@ -372,7 +372,7 @@ I want those demos to be playable, but I don't want to distort their "history" b
 By default, June and July demos' installers don't include an option to change the installation directory and instead, they always install the game to
 `C:\Program Files (x86)\Acclaim Entertainment\JuicedDemo`. Since these installers use InstallShield, I created a Transform file to re-enable
 the Destination Folder screen.
-{% include screenshot.html thumbnail="/assets/img/posts/juiced-research/msiexec_HaLbpb5KTv.png" style="natural" %}
+{% include figures/image.html thumbnail="/assets/img/posts/juiced-research/msiexec_HaLbpb5KTv.png" style="natural" %}
 I strongly recommend downloading it from [Downloads](#downloads) and running the installer via `run.bat`,
 instead of installing them to Program Files -- it's not a good idea, especially with such older, UAC-unaware games and with SilentPatch
 redirecting settings to the INI file.
@@ -389,7 +389,7 @@ a free custom race form of the earlier demos, THQ demos are linear:
 * Once they are done, a second race against 3 opponents (this time set in the morning) starts.
 * After the second race, the demo ends.
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/jan-2005-tuning.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-tuning.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-tuning.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-tuning.jpg" %}
 
 It's clear that this demo showcases the game better, as the player gets a taste of what the career mode looks like, and they can experiment with the game's tuning system
 on their own, instead of relying on auto-mod from the Acclaim demo.
@@ -411,7 +411,7 @@ There isn't much to talk about in this version otherwise, as it's mostly identic
 However, while working on unlocking its content, I accidentally reached a semi-broken Career screen -- despite its brokenness,
 its layout is distinctly different from the final game, more resembling a career screen from the Acclaim prototypes!
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/jan-2005-career.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-career.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-career.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-career.jpg" %}
 
 ## April 2005 Demo (v2.0)
 
@@ -423,11 +423,11 @@ Content-wise, this demo is fleshed out further, but on the technical side it onl
 this one includes all the incompatibilities of the final game 😕
 
 <figure class="media-container small">
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-fonts.jpg" left-label="January 2005"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-fonts.jpg" left-label="January 2005"
                 right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-fonts.jpg" right-label="April 2005" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-betting.jpg" left-label="January 2005"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-betting.jpg" left-label="January 2005"
                 right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-betting.jpg" right-label="April 2005" %}
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-widescreen.jpg" left-label="January 2005"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-widescreen.jpg" left-label="January 2005"
                 right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-widescreen.jpg" right-label="April 2005" %}
 </figure>
 
@@ -511,7 +511,7 @@ revealed that the game tried to access `controls_dx9_p.txt` and failed. This, co
 
 * The player's starter car can now be customized by editing the `scripts\CMSPlayersCrewCollection2.txt` file. The following cars
   are available: `gtr`, `nsx`, `supra`, `vette_zo6`, `viper`.
-  {% include screenshot.html link="/assets/img/posts/juiced-research/screens/jan-2005-viper.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-viper.jpg" %}
+  {% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-viper.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-viper.jpg" %}
 
 * Demos have optionally been made endless. Instead of the game exiting after the second race, it returns to the garage and gives an option
   of tuning the car again and starting another race. Combined with the aforementioned content unlocks, this lets the player try multiple different
@@ -567,7 +567,7 @@ Just like I [mentioned earlier](#acclaim-widescreen), all Acclaim's versions of 
 the aspect ratio is "overcorrected", causing the image to be squashed. With this patch, the widescreen proportions match 4:3 perfectly,
 the same as I did for PC demos.
 
-{% include juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20231004174952.png" left-label="4:3"
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20231004174952.png" left-label="4:3"
             right="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20231004174845.jpg" right-label="16:9 (Stock)" %}
 
 ## DNAS Bypass
@@ -583,12 +583,12 @@ With my DNAS Bypass, Acclaim prototypes can connect to OpenSpy and online play i
 but they cannot enter them -- so it is not possible to accidentally ruin someone else's fun by joining their game with the wrong version of the game.
 My tests were also done only on the June build; July build can go online too, but I've not had much success creating a lobby.
 
-{% include screenshot.html link="/assets/img/posts/juiced-research/screens/Juiced_SLUS-20872_20230921212557.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20230921212557.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_SLUS-20872_20230921212557.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20230921212557.jpg" %}
 
 # Downloads {#downloads}
 
 {{ f4mi_link }} has created a showcase of {{ sp_name }} and the improvements it makes to Acclaim's Juiced Demo -- check it out if you want to see the new content in action:
-{% include video.html link="https://www.youtube.com/embed/4lQ76h8KEkI" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/4lQ76h8KEkI" %}
 
 All known PC demos of Juiced, as well as {{ sp_name }} can be downloaded from *Mods & Patches*. Click here to head to the game's page directly: \\
 <a href="{% link _games/juiced/juiced (demo).md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Juiced Demos and {{ sp_name }}</a>

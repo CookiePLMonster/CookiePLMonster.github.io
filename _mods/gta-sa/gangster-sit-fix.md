@@ -14,7 +14,7 @@ Now you're game to can expierience what it true for means to be real gansta sitt
 
 More info - ReadMe!
 
-{% include screenshot.html link="http://i.imgur.com/yzZf7Ce.png" style="natural" %}
+{% include figures/image.html link="http://i.imgur.com/yzZf7Ce.png" style="natural" %}
 
 {% include setup-instructions.html %}
 

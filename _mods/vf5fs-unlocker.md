@@ -20,7 +20,7 @@ At the moment I don't plan to address any of the game's shortcomings in this plu
 * English texts are cut off, as this build of VF5FS seems to be a Japanese SKU with English texts
 * Pause menu is tricky to access and resuming the game does not unfreeze gameplay
 
-{% include video.html link="https://www.youtube.com/embed/7oNsZClpZ_E" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/7oNsZClpZ_E" %}
 
 {% include setup-instructions.html %}
 

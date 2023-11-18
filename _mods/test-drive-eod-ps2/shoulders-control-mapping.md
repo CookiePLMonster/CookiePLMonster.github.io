@@ -15,7 +15,7 @@ a console with pressure sensitive triggers in place of PS2's shoulder buttons!
 
 With this code, I modified one of the alternate controls sets to swap L1/R1 with L2/R2.
 
-{% include screenshot.html link="/assets/img/posts/console-codes-2/td-shoulders.jpg" %}
+{% include figures/image.html link="/assets/img/posts/console-codes-2/td-shoulders.jpg" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

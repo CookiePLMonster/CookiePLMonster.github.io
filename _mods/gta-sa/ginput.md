@@ -23,11 +23,11 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 * Extended support for DualShock 3 controllers and SCP Driver Package - including pressure sensitive buttons and SIXAXIS accelerometers.
 
 <div class="media-container small">
-{% include screenshot.html link="https://i.imgur.com/bKoE8p3.jpg" thumbnail="https://i.imgur.com/bKoE8p3l.jpg" %}
-{% include screenshot.html link="https://i.imgur.com/hOVRwPV.jpg" thumbnail="https://i.imgur.com/hOVRwPVl.jpg" %}
+{% include figures/image.html link="https://i.imgur.com/bKoE8p3.jpg" thumbnail="https://i.imgur.com/bKoE8p3l.jpg" %}
+{% include figures/image.html link="https://i.imgur.com/hOVRwPV.jpg" thumbnail="https://i.imgur.com/hOVRwPVl.jpg" %}
 </div>
 
-{% include video.html link="https://www.youtube.com/embed/YoGUNtpC2j0" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/YoGUNtpC2j0" %}
 
 {% include setup-instructions.html %}
 

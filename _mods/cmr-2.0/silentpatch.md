@@ -28,8 +28,8 @@ between them.
 * <i class="fas fa-cog"></i> Field of View can now be adjusted via the INI file. You can select any value in 30.0 - 150.0 range.
 * Support for non-Full installation methods has been removed. On the plus side, the game will never ask for a CD now.
 
-{% include screenshot.html link="https://i.imgur.com/4mdV2aV.jpg" thumbnail="https://i.imgur.com/4mdV2aVh.jpg" %}
-{% include video.html link="https://www.youtube.com/embed/p0HMeN27Rcw" %}
+{% include figures/image.html link="https://i.imgur.com/4mdV2aV.jpg" thumbnail="https://i.imgur.com/4mdV2aVh.jpg" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/p0HMeN27Rcw" %}
 
 {% include setup-instructions.html %}
 

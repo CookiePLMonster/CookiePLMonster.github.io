@@ -10,8 +10,8 @@ and it cannot be down in chase cameras. This cheat allows to toggle the rear vie
 and toggle the entire HUD by holding `L3`.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/gt2-cheats/hud-1.jpg" %}
-{% include screenshot.html link="/assets/img/posts/gt2-cheats/hud-2.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-cheats/hud-1.jpg" %}
+{% include figures/image.html link="/assets/img/posts/gt2-cheats/hud-2.jpg" %}
 </div>
 
 {% include setup-instructions.html platform="ps1" %}

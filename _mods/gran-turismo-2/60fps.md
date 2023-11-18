@@ -12,7 +12,7 @@ An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the 
 
 **WARNING:** When this cheat is in use, existing replays and AI ghost in Rally events will break. Consider switching back to 30 FPS for those events.
 
-{% include video.html link="https://www.youtube.com/embed/QOQ56HKYgJg" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/QOQ56HKYgJg" %}
 
 {% include setup-instructions.html platform="ps1" %}
 

@@ -231,10 +231,10 @@ Yakuza Arcade Machines Player is shipped as a single executable file to be dropp
 For a feature list and a to-do list, check the mod's downloads page.
 
 <div class="media-container small">
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_dftKEuMb56.jpg" %}
-{% include screenshot.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_GUGrgBQqJg.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_Vq9hoxdKCi.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_dftKEuMb56.jpg" %}
+{% include figures/image.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
 </div>
 
 <a href="{% link _games/vf5fs.md %}#yamp" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Yakuza Arcade Machines Player</a> \\

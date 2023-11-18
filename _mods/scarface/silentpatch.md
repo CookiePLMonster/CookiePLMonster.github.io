@@ -30,7 +30,7 @@ In an unlikely case this causes issues, CPU core affinity can be restored to def
 ## Credits
 * [ermaccer](https://github.com/ermaccer) - `CameraSpeedMultiplier` and `FOV` options
 
-{% include screenshot.html link="https://i.imgur.com/XnNcJpM.png" thumbnail="https://i.imgur.com/XnNcJpMh.png" %}
+{% include figures/image.html link="https://i.imgur.com/XnNcJpM.png" thumbnail="https://i.imgur.com/XnNcJpMh.png" %}
 
 {% include setup-instructions.html %}
 

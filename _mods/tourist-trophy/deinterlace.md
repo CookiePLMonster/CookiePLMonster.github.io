@@ -9,7 +9,7 @@ A code disabling interlacing in the game, resulting in a sharper image.
 
 **For this code to function correctly in PCSX2, disable any deinterlace filters in the emulator!**
 
-{% include screenshot.html link="https://i.imgur.com/kJmgif2.png" thumbnail="https://i.imgur.com/kJmgif2h.png" %}
+{% include figures/image.html link="https://i.imgur.com/kJmgif2.png" thumbnail="https://i.imgur.com/kJmgif2h.png" %}
 
 {% include setup-instructions.html platform="ps2" %}
 

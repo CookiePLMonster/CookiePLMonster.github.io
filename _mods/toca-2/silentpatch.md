@@ -33,7 +33,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 ## Credits
 * [AuToMaNiAk005](https://www.youtube.com/user/AuToMaNiAk005) - for his extremely useful widescreen/ultrawide tutorials I used as a base for my implementation of widescreen & high resolutions support
 
-{% include video.html link="https://www.youtube.com/embed/QVSzsOuwAA8" %}
+{% include figures/video-iframe.html link="https://www.youtube.com/embed/QVSzsOuwAA8" %}
 
 {% include setup-instructions.html %}
 

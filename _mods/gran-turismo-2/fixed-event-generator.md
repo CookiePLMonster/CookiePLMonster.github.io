@@ -10,8 +10,8 @@ This cheats improves randomly generated events (One-Make races and Event Generat
 * Autumn Ring Mini and Autumn Ring Mini Reverse, previously unused in Simulation Mode, have been added to the pool of available courses.
 
 <div class="media-container small">
-{% include screenshot.html link="https://i.imgur.com/IJ8ey54.png" thumbnail="https://i.imgur.com/IJ8ey54l.png" %}
-{% include screenshot.html link="https://i.imgur.com/7HXZl0n.png" thumbnail="https://i.imgur.com/7HXZl0nl.png" %}
+{% include figures/image.html link="https://i.imgur.com/IJ8ey54.png" thumbnail="https://i.imgur.com/IJ8ey54l.png" %}
+{% include figures/image.html link="https://i.imgur.com/7HXZl0n.png" thumbnail="https://i.imgur.com/7HXZl0nl.png" %}
 </div>
 
 {% include setup-instructions.html platform="ps1" %}

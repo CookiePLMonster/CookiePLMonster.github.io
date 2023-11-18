@@ -10,9 +10,9 @@ the code enables Progressive output during races, same as a 480p output in NTSC 
 
 **For this code to function correctly in PCSX2, disable any deinterlace filters in the emulator!**
 
-{% include juxtapose.html left="https://i.imgur.com/itja06U.jpg" left-label="Default"
+{% include figures/juxtapose.html left="https://i.imgur.com/itja06U.jpg" left-label="Default"
                 right="https://i.imgur.com/7fvfvkO.jpg" right-label="Deinterlaced" %}
-{% include screenshot.html link="https://i.imgur.com/PxACN6l.png" thumbnail="https://i.imgur.com/PxACN6lh.png" %}
+{% include figures/image.html link="https://i.imgur.com/PxACN6l.png" thumbnail="https://i.imgur.com/PxACN6lh.png" %}
 
 
 For a deinterlace patch for a NTSC-U version, see [No interlacing codes](https://forums.pcsx2.net/Thread-No-interlacing-codes) on PCSX2 forums.
