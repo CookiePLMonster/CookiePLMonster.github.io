@@ -82,15 +82,6 @@ header {
         padding-bottom: 0;
     }
 
-    .portfolio-columns {
-        display: block;
-
-        @media only screen and (min-width: $m-break) {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-    }
-
     footer {
         @extend %padding-post;
         padding-top: 0;
