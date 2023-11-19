@@ -5,7 +5,7 @@ excerpt: My modifications and patches for Colin McRae Rally games.
 image: "assets/img/games/cmr-series.jpg"
 feature-img: "assets/img/games/bg/cmr-series.jpg"
 game-series: "cmr"
-order: -1
+order: 0
 ---
 
 {% assign items = site.games | where:"parent-series", page.game-series %}
