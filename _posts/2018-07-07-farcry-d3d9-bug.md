@@ -9,6 +9,7 @@ game-series: "far-cry"
 date: 2018-07-07 18:10:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]
+juxtapose: true
 ---
 
 TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Far Cry**: \\
@@ -19,10 +20,7 @@ Upon downloading, all you need to do is to extract the archive to game’s direc
 
 Far Cry (developed by [Crytek](https://en.wikipedia.org/wiki/Crytek)) once a game considered an example of visual fidelity and de facto a benchmark of then-modern PCs, turns out not to be free of issues.
 The main issue bothering people for years were broken water reflections - landmass would not reflect on water if the game is played on anything newer than Windows XP:
-
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/farcry-broken.jpg">
-</p>
+{% include figures/image.html link="/assets/img/posts/farcry/farcry-broken.jpg" %}
 
 You can see trees and rocks are reflecting fine - but bigger chunks of land are not, so reflections look far less impressive than they do on XP!
 
@@ -40,15 +38,9 @@ However, one test proved this issue to be much weirder than anyone could have gu
 This didn't have a very high chance of succeeding, since PIX frames are strictly bound to user's current GPU and drivers -- so previewing captures from different PCs is not always possible.
 However, in this case it worked and revealed something bizarre...
 
-That's how a texture for water reflections displays when previewed in PIX on Windows XP:
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/refxp2.png">
-</p>
-
-Compare it with **the very same texture previewed on Windows 10**:
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/ref102.png">
-</p>
+The very same texture used for water reflections looks different when previewed on Windows XP and Windows 10:
+{% include figures/juxtapose.html left="/assets/img/posts/farcry/refxp2.png" left-label="Windows XP"
+                right="/assets/img/posts/farcry/ref102.png" right-label="Windows 10" %}{:style="max-width: 512px"}
 
 What gives!? This is exactly the same capture, exactly the same sequence of D3D calls leading to a different result! What does that mean?
 
@@ -65,23 +57,17 @@ With this in mind, I could start looking through PIX capture looking for anythin
 Turns out, Far Cry indeed uses something which I wasn't even aware of, until now -- [Clip Planes](https://docs.microsoft.com/en-us/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setclipplane).
 
 Normally, only front (near) and back (far) planes are used when rendering to cut off too close or too distant geometry:
-<p align="center">
-<img src="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/images/frustum.png">
-</p>
+{% include figures/image.html thumbnail="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/images/frustum.png" %}
 
 However, user clip planes allow developers to further customize the shape of the view frustum.
 Sounds handy, but turns out almost no one ever needed it!
 The feature was underused so much so it is not natively supported by modern hardware anymore -- instead, [it's emulated](https://stackoverflow.com/a/5618002/9214270).
 
 Let's see how the game looks if we completely disable this feature:
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/farcry-noclip.jpg">
-</p>
+{% include figures/image.html link="/assets/img/posts/farcry/farcry-noclip.jpg" %}
 
 That's... better. Landmass is reflecting, but we can also spot artifacts on the water. If we then preview water reflection map, it becomes obvious what those are:
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/ref_noclip.png">
-</p>
+{% include figures/image.html link="/assets/img/posts/farcry/ref_noclip.png" %}
 
 Turns out those are underwater models being drawn as a part of water reflection! It makes perfect sense -- developers set up a clip plane adjacent to water surface,
 so anything below it gets clipped and not included in the reflection map. However, if clip planes are broken, we can assume more geometry is clipped than it was needed.
@@ -99,10 +85,7 @@ You might ask -- why is this feature broken? MSDN **may** have the answer -- not
 That is a fundamental difference, because same set of coordinates has a completely different meaning depending on context.
 Now, if shader-based (programmable) pipeline assumes coordinates to be in clipping space (and thus change space for each rendered geometry),
 what if we assume they somehow invalidate and re-apply them before each draw?
-
-<p align="center">
-<img src="{{ site.baseurl }}/assets/img/posts/farcry/farcry-fixed.jpg">
-</p>
+{% include figures/image.html link="/assets/img/posts/farcry/farcry-fixed.jpg" %}
 
 **It works!** It was a very long shot, but turned out to be accurate enough! Saving requested clip planes and re-applying them for each draw
 (if they are enabled, of course) seems to solve the issue completely. Awesome!
