@@ -465,7 +465,7 @@ and it also seems to include more changes later seen in the regional releases in
 and possibly also some fixes later rolled out in a v1.01 patch.
 
 <figure class="media-container small">
-<figure markdown="1" class="fig-entry">
+<figure markdown="1" class="fig-entry" style="text-align: left">
 ```nasm
 mov [esp+34h+var_14], offset aControlsDx9ETx ; "controls_dx9_e.txt"
 mov [esp+34h+var_10], offset aControlsDx9FTx ; "controls_dx9_f.txt"
@@ -475,7 +475,7 @@ mov [esp+34h+var_4], offset aControlsDx9STx ; "controls_dx9_s.txt"
 ```
 <figcaption markdown="span">April demo only supports EFIGS.</figcaption>
 </figure>
-<figure markdown="1" class="fig-entry">
+<figure markdown="1" class="fig-entry" style="text-align: left">
 ```nasm
 mov [esp+40h+var_20], offset aControlsDx9ETx ; "controls_dx9_e.txt"
 mov [esp+40h+var_1C], offset aControlsDx9FTx ; "controls_dx9_f.txt"

@@ -9,49 +9,50 @@ hide: true
 These instructions are general and apply to every download from this website.
 These steps apply to any game.
 
-1. [Locating your game directory](#locating-directory)
-    * [Steam](#steam)
-    * [GOG Galaxy](#gog-galaxy)
-    * [Rockstar Games Launcher](#rgl)
-    * [Uplay](#uplay)
-    * [Retail (disc)](#retail)
-2. [Extracting the mod files](#extracting-files)
-3. [Configuration](#configuration)
-4. [Proton/Wine](#proton-wine)
+1. TOC
+{:toc}
 
-# 1. Locating your game directory {#locating-directory}
+# Locating your game directory
 
-## Steam {#steam}
+## Steam
 
 1. Locate the game entry in your Steam Library.
 2. Right-click on the game entry, select <kbd><samp>Manage</samp></kbd> &rarr; <kbd><samp>Browse local files</samp></kbd>.
    {% include figures/image.html thumbnail="/assets/img/setup/steam.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-## GOG Galaxy {#gog-galaxy}
+## GOG Galaxy
 
 1. Locate the game entry in the GOG Galaxy client in the <kbd><samp>Installed</samp></kbd> tab.
 2. Click on the <i class='fas icomoon icon-gog-settings'></i> icon, select <kbd><samp>Manage installation</samp></kbd> &rarr; <kbd><samp>Show folder</samp></kbd>.
    {% include figures/image.html thumbnail="/assets/img/setup/gog-galaxy.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-## Rockstar Games Launcher {#rgl}
+## Rockstar Games Launcher
 
 1. In the RGL client, click <kbd><samp>SETTINGS</samp></kbd>.
 2. Click on the game entry in the <kbd><samp>My installed games</samp></kbd> list.
 3. Click <kbd><samp>OPEN</samp></kbd> next to the <kbd><samp>View installation folder</samp></kbd> entry.
-  {% include figures/image.html thumbnail="/assets/img/setup/rgl.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/rgl.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-## Uplay {#uplay}
+## Ubisoft Connect
 
-1. Locate the game entry in the Uplay client in the <kbd><samp>Games</samp></kbd> &rarr; <kbd><samp>Installed</samp></kbd> tab.
+1. Locate the game entry in the Ubisoft Connect client in the <kbd><samp>Games</samp></kbd> &rarr; <kbd><samp>Installed</samp></kbd> tab.
 2. Right-click on the game entry, select <kbd><samp>View game details</samp></kbd>.
 3. Click on <kbd><samp>Properties</samp></kbd>, then on <kbd><samp>Open folder</samp></kbd> in the <kbd><samp>Local files</samp></kbd> section.
    {% include figures/image.html thumbnail="/assets/img/setup/uplay.jpg" %}
 4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-## Retail (disc) {#retail}
+## EA App
+
+1. Locate the game entry in the EA App client in the <kbd><samp>Installed games</samp></kbd> tab.
+2. Click on <kbd><samp>Manage</samp></kbd> &rarr; <kbd><samp>View properties</samp></kbd>.
+3. Click on <kbd><samp>BROWSE</samp></kbd> in the <kbd><samp>Install location</samp></kbd> section.
+   {% include figures/image.html thumbnail="/assets/img/setup/ea-app.jpg" %}
+4. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
+
+## Retail (disc)
 
 If you've installed the game with a traditional installer from the disc, you probably know where the game is installed.
 If not, it's easiest to locate it by following either its Desktop shortcut or the Start Menu shortcut:
@@ -62,7 +63,7 @@ If not, it's easiest to locate it by following either its Desktop shortcut or th
       (easily identifiable by `Start Menu` in the path). If that happens, right-click the shortcut and select <kbd><samp>Open file location</samp></kbd> from the context menu.
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 
-# 2. Extracting the mod files {#extracting-files}
+# Extracting the mod files
 _This section assumes that you don't use WinZIP, WinRAR or 7-Zip and instead refers to the tools included in Windows._
 _If you use any of these third-party file archivers, I assume you know how to extract the archives._
 
@@ -73,7 +74,7 @@ _If you use any of these third-party file archivers, I assume you know how to ex
 3. Files will be extracted and the extracted files will appear in the game directory.
    {% include figures/image.html thumbnail="/assets/img/setup/mod-files.jpg" %}
 
-# 3. Configuration {#configuration}
+# Configuration
 _This section is applicable only to select downloads._
 
 1. Locate the game directory and the mod's configuration file -- if the mod has a configuration file,
@@ -82,7 +83,9 @@ _This section is applicable only to select downloads._
 2. Double-click the file to open it in a text editor of choice -- typically Notepad.
 3. Make the necessary changes as instructed by individual mod's configuration files, and save the file.
 
-# 4. Proton/Wine {#proton-wine}
+# Proton/Wine
+_This section is applicable only when not installing mods on Windows._
+
 In order to enable patch loaders you might need to perform a DLL override in your Wine prefix.
 For example, when the patch comes with the `dinput8.dll` file, you need to tell Wine explicitly that it's to be used.
 There's more than one way to achieve it.
