@@ -6,7 +6,7 @@
     {% unless item.hide %}
     <div class="mods-cell"
     {% if include.cell-size %}
-        style="flex-basis: {{include.cell-size}};"
+        style="flex-basis: {{ include.cell-size }}"
     {% endif %}
     >
         <a href="{{ item.url | relative_url }}" class="mods-link" data-keyboard="true"> 

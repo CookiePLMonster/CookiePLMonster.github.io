@@ -9,15 +9,4 @@ twitter: {card: "summary_large_image"}
 hide: true
 ---
 
-<div class="mods-grid">
-	{% assign mods_grid_items = site.bonuscodes | sort: "order" %}
-    {% for item in mods_grid_items %}
-    {% unless item.hide %}
-    <div class="mods-cell" style="flex-basis: 33%; max-height: 450px;">
-        <a href="{{ item.url | relative_url }}" class="mods-link" data-keyboard="true"> 
-            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" title="{{ item.title }}">
-        </a>
-    </div>
-    {% endunless %}
-    {% endfor %}
-</div>
+{% include mods-grid.html items=site.bonuscodes cell-size="33%" %}
