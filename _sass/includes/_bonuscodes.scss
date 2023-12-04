@@ -29,6 +29,16 @@
 
     .content {
         padding: 1em;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            line-height: normal;
+        }
     }
 
     .border {
@@ -43,7 +53,7 @@
             border-left: 30px solid var(--background-color);
             width: 0;
             }
-        
+
     .border:after {
             content: '';
             position: absolute;
@@ -51,16 +61,16 @@
             height: 1px;
             background: $theme-color;
             }
-    
+
     .tl:before { top: -10px; left: -10px; transform: rotate(-45deg); }
     .tl:after { top: 10px; left: -6px; transform: rotate(-45deg);}
-    
+
     .tr:before { top: -10px; right: -10px; transform: rotate(45deg); }
     .tr:after { top: 10px; right: -6px; transform: rotate(45deg); }
-    
+
     .bl:before { bottom: -10px; left: -10px; transform: rotate(45deg); }
     .bl:after { bottom: 10px; left: -6px; transform: rotate(45deg); }
-    
+
     .br:before { bottom: -10px; right: -10px; transform: rotate(-45deg); }
     .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
 }

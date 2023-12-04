@@ -56,7 +56,7 @@ def onGenerate(ev):
     try:
         accessCode = int(document['access-code'].value)
         if not (accessCode >= 1 and accessCode <= ACCESS_CODE_MAX):
-            raise ValueError 
+            raise ValueError
     except (TypeError, ValueError):
         document['invalid-access-code'].style.display = 'inline'
         return
@@ -67,10 +67,13 @@ def onGenerate(ev):
 
     document['outbox-window-full'].style.display = 'block'
     document['output-window'].clear()
-    for index, cheat in enumerate(cheatCodes):
-        cryptedCode = generateCode(accessCode, index)
-        if cryptedCode:
-            document['output-window'] <= html.B(f'{cheat}: ') + html.CODE(f'{cryptedCode}') + html.BR()
+
+    def gen():
+        for index, cheat in enumerate(cheatCodes):
+            cryptedCode = generateCode(accessCode, index)
+            if cryptedCode:
+                yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
+    document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 
 document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
