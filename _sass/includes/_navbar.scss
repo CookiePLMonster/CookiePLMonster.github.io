@@ -65,13 +65,18 @@
                 }
 
             }
-
+        }
+        button {
+            all: unset;
+            &:hover {
+                color: $link-color;
+            }
         }
     }
 }
 
 
-// To clear things when we float the element inisde nav and ul 
+// To clear things when we float the element inisde nav and ul
 .clear {
     *zoom: 1;
 
@@ -126,7 +131,7 @@
             margin: 0;
             opacity: 0;
             padding: 0;
-            
+
             /* fade out, then shrink */
             transition: opacity .25s,
                         font-size .5s .25s,
