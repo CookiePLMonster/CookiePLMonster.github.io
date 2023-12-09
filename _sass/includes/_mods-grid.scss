@@ -49,12 +49,10 @@
 .mods-cell {
   flex: 0 0 50%;
   margin-bottom: 10px;
-}
 
-@media screen and (max-width: $break) {
-    .mods-cell {
-        flex-basis: 100%;
-      }
+  @media screen and (max-width: $break) {
+    flex-basis: 100%;
+  }
 }
 
 .mod-listing {
