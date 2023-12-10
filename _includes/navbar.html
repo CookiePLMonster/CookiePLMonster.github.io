@@ -2,7 +2,7 @@
 
     <!-- Logo and title -->
 	<div class="branding">
-		<a href="{{ "/" | relative_url }}">
+		<a href="{{ "/" | relative_url }}" aria-hidden="true">
 			<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="Logo image" loading="lazy"/>
 		</a>
 
@@ -11,7 +11,7 @@
 
     <!-- Toggle menu -->
     <nav class="clear">
-    <a id="pull" class="toggle" href="#">
+    <a id="pull" class="toggle" href="#" aria-hidden="true">
     <i class="fas fa-bars fa-lg"></i>
     </a>
 
@@ -39,8 +39,8 @@
           {% if item[1].enabled %}
             <li class="separator"> | </li>
             <li>
-                <a class="clear" href="{{ item[0] | relative_url }}">
-                    <i class="fas fa-{{ item[1].icon }}" title="{{item[1].title }}" aria-hidden="true"></i>
+                <a class="clear" href="{{ item[0] | relative_url }}" title="{{item[1].title }}">
+                    <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
                 </a>
             </li>
           {% endif %}
@@ -72,8 +72,8 @@
         <li class="separator no-js"> | </li>
         <li class="separator no-js"> | </li>
         <li>
-            <button class="clear no-js" onclick="modeSwitcher()">
-                <i id="theme-toggle" class="fas theme-icon" aria-hidden="true"></i>
+            <button class="clear no-js" onclick="modeSwitcher()" aria-hidden="true">
+                <i id="theme-toggle" class="fas theme-icon"></i>
             </button>
         </li>
     </ul>

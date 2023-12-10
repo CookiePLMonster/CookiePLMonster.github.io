@@ -32,21 +32,21 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
     <span class="nav-left" style="{% unless paginator.previous_page %}visibility:hidden{% endunless %}">
-      <a href="{{ "/" | relative_url }}" style="{% unless paginator.previous_page != 1 %}visibility:hidden{% endunless %}" class="button">
+      <a href="{{ '/' | relative_url }}" style="{% unless paginator.previous_page != 1 %}visibility:hidden{% endunless %}" class="button" aria-label="Go to first page">
         <i class="fas fa-angle-double-left"></i>
       </a>
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="button">
+      <a href="{{ paginator.previous_page_path | relative_url | default: '#' }}" class="button" aria-label="Go to previous page">
         <i class="fas fa-angle-left"></i>
         {{ site.theme_settings.str_previous_page }}
       </a>
     </span>
     {{ paginator.page }} / {{ paginator.total_pages }}
     <span class="nav-right" style="{% unless paginator.next_page %}visibility:hidden{% endunless %}">
-      <a href="{{ paginator.next_page_path | relative_url }}" class="button">
+      <a href="{{ paginator.next_page_path | relative_url | default: '#' }}" class="button" aria-label="Go to next page">
         {{ site.theme_settings.str_next_page }}
         <i class="fas fa-angle-right"></i>
       </a>
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages }}" style="{% unless paginator.next_page != paginator.total_pages %}visibility:hidden{% endunless %}" class="button">
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages | default: '#' }}" style="{% unless paginator.next_page != paginator.total_pages %}visibility:hidden{% endunless %}" class="button" aria-label="Go to last page">
         <i class="fas fa-angle-double-right"></i>
       </a>
     </span>
