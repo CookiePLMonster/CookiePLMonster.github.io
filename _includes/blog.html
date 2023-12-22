@@ -1,16 +1,14 @@
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post-teaser">
-    {% if post.thumbnail %}
-    <div class="post-img">
-       <a href="{{ post.url | relative_url }}">
-         <img src="{{ post.thumbnail | relative_url }}" alt="">
-       </a>
-    </div>
-    {% endif %}
     <header>
       <h1>
         <a class="post-link" href="{{ post.url | relative_url }}">
+          {% if post.thumbnail %}
+          <div class="post-img">
+            <img src="{{ post.thumbnail | relative_url }}" alt="">
+          </div>
+          {% endif %}
           {{ post.title | markdownify | strip_html }}
         </a>
       </h1>

@@ -2,17 +2,16 @@
 
     <!-- Logo and title -->
 	<div class="branding">
-		<a href="{{ "/" | relative_url }}" aria-hidden="true">
+		<a href="{{ "/" | relative_url }}">
 			<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="Logo image" loading="lazy"/>
+            <span class="site-title">{{ site.theme_settings.title | smartify }}</span>
 		</a>
-
-		<a class="site-title" href="{{ "/" | relative_url }}">{{ site.theme_settings.title | markdownify | strip_html }}</a>
 	</div>
 
     <!-- Toggle menu -->
     <nav class="clear">
-    <a id="pull" class="toggle" href="#" aria-hidden="true">
-    <i class="fas fa-bars fa-lg"></i>
+    <a id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
     </a>
 
     <!-- Menu -->
@@ -72,8 +71,8 @@
         <li class="separator no-js"> | </li>
         <li class="separator no-js"> | </li>
         <li>
-            <button class="clear no-js" onclick="modeSwitcher()" aria-hidden="true">
-                <i id="theme-toggle" class="fas theme-icon"></i>
+            <button class="clear no-js" onclick="modeSwitcher()">
+                <i id="theme-toggle" class="fas theme-icon" aria-hidden="true"></i>
             </button>
         </li>
     </ul>
