@@ -10,7 +10,7 @@
 
     <!-- Toggle menu -->
     <nav class="clear">
-    <a id="pull" class="toggle" href="#">
+    <a id="pull" class="toggle" href="#" aria-label="Toggle Menu">
     <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
     </a>
 
@@ -71,8 +71,8 @@
         <li class="separator no-js"> | </li>
         <li class="separator no-js"> | </li>
         <li>
-            <button class="clear no-js" onclick="modeSwitcher()">
-                <i id="theme-toggle" class="fas theme-icon" aria-hidden="true"></i>
+            <button id="theme-toggle" class="clear no-js" onclick="modeSwitcher()" title="Toggle Light/Dark Mode">
+                <i class="fas theme-icon" aria-hidden="true"></i>
             </button>
         </li>
     </ul>
