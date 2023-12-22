@@ -23,6 +23,9 @@ section for a download link._
 *[HLSL]: High-level Shader Language
 *[SRV]: Shader-resource View
 
+For the follow-up article, see
+[Fan research vs official fix -- EA Sports WRC decal rendering on GeForce GTX 10 series cards]({% post_url 2023-12-22-ea-sports-wrc-geforce-gtx-10-series-bug-pt2 %}).
+
 # Introduction
 
 Ever since the newest WRC game from Codemasters and EA was released on {{ "2023-11-03" | date: page.date-format }}, I've had *a lot* of fun playing it.
