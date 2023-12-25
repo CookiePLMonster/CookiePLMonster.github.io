@@ -27,17 +27,8 @@
     border: 1px solid $theme-color;
 
     .content {
+        @extend %no-bullets;
         padding: 1em;
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            line-height: normal;
-        }
     }
 
     .border {

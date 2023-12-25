@@ -73,7 +73,7 @@
 
     @at-root a#{&},
     button#{&} {
-        @extend .button-link;
+        @extend %button-link;
         color: $link-color;
 
         &.github {
@@ -98,7 +98,7 @@
     }
 }
 
-.button-link {
+%button-link {
     &:hover {
         background: $link-color;
         border: 1px solid $link-color;
@@ -151,7 +151,7 @@
 }
 
 a.round-button {
-    @extend .round-button-link;
+    @extend %round-button-link;
 
     &.github {
         background-color: var(--github-link-color);
@@ -174,7 +174,7 @@ a.round-button {
     }
 }
 
-.round-button-link {
+%round-button-link {
     &:hover {
         border: 1px solid $link-color;
         text-decoration: none;
@@ -244,6 +244,17 @@ a.round-button {
     &:hover {
         text-decoration: none;
         color: lighten($link-color, 10%);
+    }
+}
+
+%no-bullets {
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    li {
+        line-height: normal;
     }
 }
 
