@@ -1,0 +1,48 @@
+cheats:
+  - name: confidential
+    description: "Unlock all Arcade Mode content"
+  - name: mmmungo
+    description: "Stronger special ability effects"
+  - name: ragevirus
+    description: "Agro ability on all eligible vehicles"
+  - name: stayontarget
+    description: "Zone ability on all eligible vehicles"
+  - name: sushi
+    description: "Roar ability on all eligible vehicles"
+  - name: granite
+    description: "Indestructibility"
+  - name: skidlida
+    description: "Orb biker heads"
+  - name: skidlidb
+    description: "Pumpkin biker heads"
+  - name: skidlidc
+    description: "Bunny biker heads"
+  - name: skidlidd
+    description: "Snowman biker heads"
+  - name: skidlide
+    description: "Skull biker heads"
+prototype-cheats:
+  - name: all
+    description: "Unlock everything"
+  - name: cash
+    description: "Get $4.200.000"
+  - name: cities
+    description: "Unlock all cities"
+  - name: parts
+    description: "Unlock all car parts"
+  - name: cars
+    description: "Unlock all vehicles"
+  - name: allcash
+    description: "Unlock everything and get $4.200.000"
+  - name: zone
+    description: "Zone ability on all vehicles"
+  - name: agro
+    description: "Agro ability on all vehicles"
+  - name: roar
+    description: "Roar ability on all vehicles"
+  - name: normal
+    description: "Reset the ability cheats"
+  - name: cam
+    description: "Display the camera coordinates on the screen"
+  - name: fps
+    description: "[no effect]"

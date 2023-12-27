@@ -25,7 +25,6 @@
     margin: 1em auto;
     background-color: var(--background-color);
     border: 1px solid $theme-color;
-    display: none;
 
     .content {
         padding: 1em;
@@ -73,4 +72,8 @@
 
     .br:before { bottom: -10px; right: -10px; transform: rotate(-45deg); }
     .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
+}
+
+#outbox-window-full.bonuscodes-output {
+    display: none;
 }
