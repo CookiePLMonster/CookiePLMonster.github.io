@@ -26,6 +26,10 @@
     background-color: var(--background-color);
     border: 1px solid $theme-color;
 
+    output {
+        display: block;
+    }
+
     .content {
         @extend %no-bullets;
         padding: 1em;
