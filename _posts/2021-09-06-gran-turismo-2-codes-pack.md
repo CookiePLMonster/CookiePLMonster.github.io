@@ -73,7 +73,7 @@ and starts skipping geometry!
 
 I fixed this with another cheat, doubling the size of the game's polygon buffers. Since a stock PS1 doesn't have enough RAM for this, this cheat code utilizes
 extra RAM from dev PS1 units instead (dev PS1 units have 8MB RAM instead of 2MB RAM). Therefore, a **8MB RAM** cheat must be used together with
-a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from Game Properties individually for each game:
+a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from <kbd><samp>Game Properties</samp></kbd> &rarr; <kbd><samp>Console</samp></kbd> individually for each game:
 {% include figures/image.html link="/assets/img/posts/gt2-cheats/duckstation-devram.jpg" style="natural" %}
 
 **NOTE:** Earlier versions of DuckStation had a bug in the PGXP implementation where moving the polygon buffers to the 8MB RAM region caused artifacts.
