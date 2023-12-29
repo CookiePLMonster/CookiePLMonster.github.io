@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "30th Release of SilentPatch for San Andreas!"
-feature-img: "assets/img/silentpatch_banner.png"
-thumbnail: "assets/img/silentpatch_banner.png"
-image: "assets/img/silentpatch_banner.png"
+feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+thumbnail: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+image: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
 excerpt: "Now officially compliant with LS-RP rules, so you can roleplay with it without the risk of getting banned."
 game-series: "gta-sa"
 date: 2019-03-09 21:00:00 +0100

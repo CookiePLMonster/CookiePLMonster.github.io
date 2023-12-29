@@ -10,6 +10,7 @@ layout: default
   style="background-size: auto; background-image: url('{{ site.theme_settings.header_feature_image | relative_url }}')"
   {% endif %}
   >
+    {% include overlay_logo.html %}
     <div class="title-padder">
       <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
           {{ page.title | markdownify | strip_html }}

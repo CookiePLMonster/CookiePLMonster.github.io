@@ -11,6 +11,7 @@ theme_settings:
   # Meta
   title: Silent's Blog
   avatar: assets/img/avatar.jpg
+  overlay_logo: assets/img/mods/silentpatch/sp-anniversary-corner.png
   gravatar: B5015413CDD23101B12239A68DFFFC89
   extra_navbar_socials: false
 

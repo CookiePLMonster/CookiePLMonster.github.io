@@ -32,6 +32,19 @@
 
 #main {
     background-position: 100% 0, 0 center, center top;
+    position: relative;
+
+    .overlay-logo {
+        height: 10rem;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (max-width: $sm-break) {
+            height: 5rem;
+        }
+    }
 }
 
 // Post listing

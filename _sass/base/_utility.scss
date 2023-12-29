@@ -258,6 +258,13 @@ a.round-button {
     }
 }
 
+.dl-no-indent {
+    dd {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+}
+
 // States
 .disabled {
     opacity: 0.7;

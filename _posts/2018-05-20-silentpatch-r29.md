@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "New SilentPatch builds for Grand Theft Auto!"
-feature-img: "assets/img/silentpatch_banner.png"
-thumbnail: "assets/img/silentpatch_banner.png"
-image: "assets/img/silentpatch_banner.png"
+feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+thumbnail: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+image: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
 excerpt: "New builds for GTA III, GTA VC and GTA SA!"
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
 date: 2018-05-20 11:10:00 +0200

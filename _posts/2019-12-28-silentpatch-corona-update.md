@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New SilentPatch release -- \"The Corona Update\""
-feature-img: "assets/img/silentpatch_banner.png"
+feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
 thumbnail: "assets/img/posts/corona-update/coronaupdate_bg.png"
 image: "assets/img/posts/corona-update/coronaupdate_bg.png"
 excerpt: "Numerous nice fixes right for the 6th anniversary 🎂"

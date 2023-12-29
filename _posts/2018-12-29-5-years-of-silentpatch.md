@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "5 years of SilentPatch!"
-feature-img: "assets/img/silentpatch_banner.png"
-thumbnail: "assets/img/silentpatch_banner.png"
-image: "assets/img/silentpatch_banner.png"
+feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+thumbnail: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+image: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
 date: 2018-12-29 23:15:00 +0200
 tags: [Other]
 ---
@@ -27,11 +27,11 @@ but it's not going to be anything huge.
 To celebrate the anniversary, I created an interactive timeline showing all major events throughout SilentPatch development.
 Hope you'll find it entertaining!
 
-Legend for colours is as follows:
-- Blue -- SilentPatch events
-- Green -- miscellaneous events directly related to SilentPatch
-- Pink -- events related to other modifications, which were relevant for SilentPatch development nonetheless
-- Orange -- 'community spotlight' events
+The legend for colours is as follows:
+- Blue -- SilentPatch events.
+- Green -- miscellaneous events directly related to SilentPatch.
+- Pink -- events related to other modifications, which were relevant for SilentPatch development nonetheless.
+- Orange -- 'community spotlight' events.
 
 I recommend opening the timeline in a separate browser tab and viewing it fullscreen!
 <iframe width="100%" height="450" src="https://time.graphics/embed?v=1&id=202189" frameborder="0" allowfullscreen></iframe>

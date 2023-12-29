@@ -55,6 +55,22 @@
   }
 }
 
+.mod-label {
+    border-radius: 0.3em;
+    color: $feature-image-text-color;
+    font-weight: bold;
+    font-size: 75%;
+    padding: 0.2em 0.6em 0.3em;
+
+    &.label-warning {
+        background-color: #d9534f;
+    }
+
+    &.label-info {
+        background-color: $theme-color;
+    }
+}
+
 .mod-listing {
     margin-bottom: 1em;
     .mod-title-image {
@@ -65,22 +81,6 @@
         img {
             width: 100%;
             padding: 0;
-        }
-    }
-
-    .mod-label {
-        border-radius: 0.3em;
-        color: $feature-image-text-color;
-        font-weight: bold;
-        font-size: 75%;
-        padding: 0.2em 0.6em 0.3em;
-
-        &.label-warning {
-            background-color: #d9534f;
-        }
-
-        &.label-info {
-            background-color: $theme-color;
         }
     }
 
