@@ -11,8 +11,8 @@
     /* --- Responsive --- */
     @media screen and (max-width: 850px) {
         background-size: 100% auto;
-    } 
-    
+    }
+
     //For white images
     p,
     a,
@@ -22,7 +22,7 @@
     h3,
     h4,
     h5 {
-        @extend .header-txt-shadow;
+        @extend %header-txt-shadow;
     }
 
     p:last-child {
@@ -57,10 +57,8 @@
             vertical-align: middle;
             border-radius: 10px;
             overflow: hidden;
+            height: 250px;
 
-            @media (min-width: $break) {
-                height: 250px;
-            } //Smaller screen
             @media screen and (max-width: $break) {
                 height: 150px;
             }

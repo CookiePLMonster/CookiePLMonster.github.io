@@ -72,7 +72,7 @@ header {
         padding: $padding-large/2.5 $padding-large;
 
         .meta {
-            @extend .header-txt-shadow;
+            @extend %header-txt-shadow;
             color: darken($feature-image-text-color, 15%);
         }
     }

@@ -3,13 +3,13 @@
 }
 
 h1.title {
-    @extend .header-txt-shadow;
+    @extend %header-txt-shadow;
 }
 
 .subtitle {
     font-weight: normal;
     margin-top: 5px;
-    @extend .header-txt-shadow;
+    @extend %header-txt-shadow;
 }
 
 //Shared css in _post.scss

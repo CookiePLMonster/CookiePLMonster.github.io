@@ -37,9 +37,7 @@
     .tag-title {
         margin: 0;
         @media screen and (min-width: $break) {
-            a {
-                margin-left: $padding-x-small;
-            }
+            margin-left: $padding-x-small;
         }
     }
 
