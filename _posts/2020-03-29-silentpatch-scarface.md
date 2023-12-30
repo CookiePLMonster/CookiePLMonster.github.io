@@ -262,7 +262,7 @@ Fear not, paid early releases are not happening -- as of now, perks include:
 
 This is not much, but depending on the response I might end up modifying the rewards a bit.
 
-<a href="https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}" class="button patreon" role="button" target="_blank"><i class='fab fa-patreon'></i> Become a patron</a>
+<a href="https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}" rel="nofollow" class="button patreon" role="button" target="_blank"><i class='fab fa-patreon'></i> Become a patron</a>
 
 Thank you!
 
