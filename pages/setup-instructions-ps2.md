@@ -11,21 +11,17 @@ These steps apply to any game.
 
 These instructions target PCSX2 on Desktop and AetherSX2 on Android.
 
-1. [Downloading patches](#downloading-patches)
-2. [Applying patches](#applying-patches)
-    * [PCSX2 (Desktop)](#pcsx2)
-    * [AetherSX2 (Android)](#aethersx2)
+1. TOC
+{:toc}
 
-# 1. Downloading patches {#downloading-patches}
+# Downloading patches
 
-1. The download button opens a GitHub page with the patch. View the raw patch file by pressing <kbd><samp>Raw</samp></kbd>.
-2. Right click and select <kbd><samp>Save As...</samp></kbd> (PC) or press the Download button (Android) on the page with the patch.
-3. Save the file, changing its extension from `.pnach.txt` to `.pnach`. For that, you need to change the file type to <kbd><samp>All Files</samp></kbd>.
-   The rest of the filename **must be preserved!**
+1. The download button opens a GitHub page with the patch.
+2. Click on <kbd><samp><i class='fas fa-download'></i> Download raw file</samp></kbd>.
 
-# 2. Applying patches {#applying-patches}
+# Applying patches
 
-## PCSX2 {#pcsx2}
+## PCSX2
 
 1. Locate your `patches` directory. If your PCSX2 installation is portable, the directory resides next to PCSX2's executable file.
    Otherwise, it's located in `Documents\PCSX2`.
@@ -37,7 +33,7 @@ These instructions target PCSX2 on Desktop and AetherSX2 on Android.
    If everything was done correctly, a '<samp>X game patches are active.</samp>' message will show on startup in the top left corner.
    {% include figures/image.html thumbnail="/assets/img/setup/pcsx2-patches-enabled-qt.jpg" %}
 
-## AetherSX2 {#aethersx2}
+## AetherSX2
 
 1. Open AetherSX2 and launch the game you downloaded patches for.
 2. Open the pause menu and select <kbd><samp>Patch Codes</samp></kbd>. If a warning gets shown, click <kbd><samp>Yes</samp></kbd> to open the Cheat Manager.

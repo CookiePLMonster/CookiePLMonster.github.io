@@ -19,3 +19,11 @@ order: 100
 
 {% assign ps2_items = site.games | where:"parent-series", "console-ps2" %}
 {% include mods-grid.html items=ps2_items cell-size="33%" %}
+
+***
+
+# PlayStation Portable games
+*Recommended emulator: [PPSSPP](https://www.ppsspp.org/) (Desktop, Android)*
+
+{% assign psp_items = site.games | where:"parent-series", "console-psp" %}
+{% include mods-grid.html items=psp_items cell-size="33%" %}
