@@ -13,4 +13,4 @@ A code disabling interlacing in the game, resulting in a sharper image.
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tourist%20Trophy/Deinterlace/CA9AA903_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tourist%20Trophy/Deinterlace/SCES-53372_CA9AA903_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

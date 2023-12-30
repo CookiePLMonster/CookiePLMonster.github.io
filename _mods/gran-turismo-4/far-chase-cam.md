@@ -11,6 +11,6 @@ A new in-race camera mode from Gran Turismo 4 Prologue and Gran Turismo 4 First 
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204/Far%20chase%20camera/77E61C8A_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Online/Far%20chase%20camera/32A1C752_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (GT4 Online)</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204/Far%20chase%20camera/44A61C8F_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204/Far%20chase%20camera/SCUS-97328_77E61C8A_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Online/Far%20chase%20camera/SCUS-97436_32A1C752_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (GT4 Online)</a> \\
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204/Far%20chase%20camera/SCES-51719_44A61C8F_farchasecam.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>

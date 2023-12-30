@@ -20,4 +20,4 @@ Removing it without first making the code unmap the newly added controls will le
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Camera%20controls%20on%20right%20stick/2EA87CC5_lookaround.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Camera%20controls%20on%20right%20stick/SLUS-20441_2EA87CC5_lookaround.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
