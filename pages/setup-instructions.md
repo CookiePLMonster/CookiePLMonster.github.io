@@ -83,7 +83,7 @@ _This section is applicable only to select downloads._
 2. Double-click the file to open it in a text editor of choice -- typically Notepad.
 3. Make the necessary changes as instructed by individual mod's configuration files, and save the file.
 
-# Proton/Wine
+# Proton/Wine {#proton-wine}
 _This section is applicable only when not installing mods on Windows._
 
 In order to enable patch loaders you might need to perform a DLL override in your Wine prefix.
