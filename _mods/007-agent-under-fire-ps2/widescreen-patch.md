@@ -7,9 +7,11 @@ info-label: BUNDLED
 info-title: "This patch is shipped with PCSX2 starting with v1.7.4934."
 ---
 
-**<span style="white-space:nowrap"><i class="fas fa-info-circle"></i> This</span> patch is shipped with PCSX2 starting with <span style="white-space:nowrap">v1.7.4934. <i class="fas fa-info-circle"></i></span>**
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v1.7.4934.
 
-*Widescreen patch for the on-foot sequences made by Arapapa. I expanded it with a widescreen patch for the driving segments.*
+{:.credit}
+Widescreen patch for the on-foot sequences made by Arapapa. I expanded it with a widescreen patch for the driving segments.
 
 An improved 16:9 widescreen patch, covering both on-foot and driving segments of the game.
 

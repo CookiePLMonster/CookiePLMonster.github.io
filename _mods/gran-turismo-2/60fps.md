@@ -5,7 +5,8 @@ order: 2
 date: 06-09-2021
 ---
 
-*Cheat originally made by asasega. I ported it to more game versions and expanded it with more features.*
+{:.credit}
+Cheat originally made by asasega. I ported it to more game versions and expanded it with more features.
 
 An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the rear view mirror, originally disabled for performance reasons when running the game in Hi-Fi mode
 (that mode is not present in GT2, but it's a leftover from GT1).

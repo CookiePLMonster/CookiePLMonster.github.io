@@ -5,7 +5,8 @@ order: 0
 date: 06-09-2021
 ---
 
-*The original cheat made by HugoPocked. Widescreen hack 2.0 made by me.*
+{:.credit}
+The original cheat made by HugoPocked. Widescreen hack 2.0 made by me.
 
 A 16:9 cheat that does not cut off the objects on screen edges.
 When using this cheat, a 16:9 Widescreen Hack should be **disabled**.

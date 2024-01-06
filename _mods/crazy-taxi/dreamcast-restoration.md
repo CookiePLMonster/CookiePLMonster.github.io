@@ -6,7 +6,8 @@ date: 19-03-2022
 order: 1
 ---
 
-*Co-developed with [Alexvgz](https://www.youtube.com/channel/UCqDbjGuaY4awoKs8J-6DBUA)*
+{:.credit}
+Co-developed with [Alexvgz](https://www.youtube.com/channel/UCqDbjGuaY4awoKs8J-6DBUA).
 
 This plugin for Crazy Taxi restores the original licensed brands from the Arcade and Dreamcast versions.
 The original version of the mod was made by [Alexvgz](https://www.youtube.com/channel/UCqDbjGuaY4awoKs8J-6DBUA)

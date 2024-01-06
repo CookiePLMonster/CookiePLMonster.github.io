@@ -7,12 +7,14 @@ date: 01-04-2015
 warning-label: JOKE
 warning-title: "This was a joke mod created for April Fools. It works as advertised, but as you can see, its presentation is... special 🙂"
 ---
-**<span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> This</span> was a joke mod created for April Fools. It works as advertised, but as you can see, its presentation is... <span style="white-space:nowrap">special 🙂 <i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i></span>**
+
+{:.disclaimer.warning}
+This was a joke mod created for April Fools. It works as advertised, but as you can see, its presentation is... special 🙂
 
 A gr8 (gr9, even) request from fan, notice how Gangstas nevar sit? Well now a fix! Gangster Sit Fix is ~~hear~~ ~~herr~~ her!
 Now you're game to can expierience what it true for means to be real gansta sittings!
 
-More info - ReadMe!
+More info -- ReadMe!
 
 {% include figures/image.html link="http://i.imgur.com/yzZf7Ce.png" style="natural" %}
 

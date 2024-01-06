@@ -5,6 +5,9 @@ order: 3
 date: 04-03-2023
 ---
 
+{:.credit}
+Patch further improved by Aero_.
+
 Since Gran Turismo games have always offered full control remapping, it's possible to utilize triggers on modern controllers for throttle/brake,
 much like most modern games do. However, unlike in newer Gran Turismos, doing this in the PS2 games results in a mediocre experience -- analog sensitivity
 is tailored for analog buttons of the DualShock 2 controller, and therefore inputs are heavily scaled. In practice, this means that anything over ~half the trigger

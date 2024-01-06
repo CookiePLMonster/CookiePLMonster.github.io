@@ -8,8 +8,9 @@ date: 06-09-2021
 A cheat code moving the polygon buffers to the dev RAM area and doubling their size.
 Required by other cheats that make the game render more geometry on screen at once.
 
-**This cheat must be used together with a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from
-<kbd><samp>Game Properties</samp></kbd> &rarr; <kbd><samp>Console</samp></kbd> individually for each game:**
+{:.disclaimer}
+This cheat must be used together with a `Enable 8MB RAM (Dev Console)` option in DuckStation. It can be enabled from
+<kbd><samp>Game Properties</samp></kbd> &rarr; <kbd><samp>Console</samp></kbd> individually for each game:
 {% include figures/image.html link="/assets/img/posts/gt2-cheats/duckstation-devram.jpg" style="natural" %}
 
 {% include setup-instructions.html platform="ps1" %}

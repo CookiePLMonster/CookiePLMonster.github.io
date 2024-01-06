@@ -7,8 +7,9 @@ warning-label: DEPRECATED
 warning-title: "DON'T USE - this patch is no longer required. It is listed here for archival purposes only."
 ---
 
-**<span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> DON'T</span> USE - this patch is no longer required,
-as this issue has been [officially fixed in the v1.4.0 update](http://x.ea.com/78991). It is listed here for archival purposes <span style="white-space:nowrap">only. <i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i></span>**
+{:.disclaimer.warning}
+DON'T USE - this patch is no longer required,
+as this issue has been [officially fixed in the v1.4.0 update](http://x.ea.com/78991). It is listed here for archival purposes only.
 
 EA Sports WRC launched with a graphical bug exclusive to GeForce GTX 9 and 10 series cards, causing the decals, driver numbers, and their names to render broken.
 SilentPatch addresses this issue, and it also improves performance of the Livery Editor tenfold.

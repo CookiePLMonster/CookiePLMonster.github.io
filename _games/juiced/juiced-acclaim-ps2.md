@@ -10,4 +10,5 @@ redirect_from: "/mods/juiced-ps2/"
 juxtapose: true
 ---
 
-**<span style="white-space:nowrap"><i class="fas fa-info-circle"></i> This</span> page is for patches for the Acclaim PS2 prototypes of Juiced. For mods for the PC demos, see <span style="white-space:nowrap">[Juiced (Demo)]({% link _games/juiced/juiced (demo).md %}). <i class="fas fa-info-circle"></i></span>**
+{:.disclaimer.info}
+This page is for patches for the Acclaim PS2 prototypes of Juiced. For mods for the PC demos, see [Juiced (Demo)]({% link _games/juiced/juiced (demo).md %}).

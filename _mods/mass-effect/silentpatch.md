@@ -5,7 +5,8 @@ excerpt: "Fixes black blobs on AMD CPUs."
 date: 07-11-2020
 ---
 
-*Co-developed with [Rafael Rivera](https://withinrafael.com/)*
+{:.credit}
+Co-developed with [Rafael Rivera](https://withinrafael.com/).
 
 **Mass Effect** is a popular franchise of sci-fi roleplaying games. The first game was initially released by BioWare in late 2007 on Xbox 360 exclusively as a part of a publishing deal with Microsoft.
 A few months later in mid-2008, the game received PC port developed by Demiurge Studios. It was a decent port with no obvious flaws, that is until 2011 when AMD released their new Bulldozer-based CPUs.

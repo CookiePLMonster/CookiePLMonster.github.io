@@ -258,6 +258,17 @@ a.round-button {
     }
 }
 
+%fa-icon {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    &:before {
+        margin-right: 0.25em;
+    }
+    &:after {
+        margin-left: 0.25em;
+    }
+}
+
 .dl-no-indent {
     dd {
         margin-left: 0;
@@ -283,4 +294,27 @@ a.round-button {
     height: 1em;
     padding: 0 0.5em;
     vertical-align: middle;
+}
+
+.disclaimer {
+    font-weight: bold;
+
+    &.warning {
+        &:before, &:after {
+            @extend %fa-icon;
+            content: "\f071";
+            color: DarkOrange;
+        }
+    }
+
+    &.info {
+        &:before, &:after {
+            @extend %fa-icon;
+            content: "\f05a";
+        }
+    }
+}
+
+.credit {
+    font-style: italic;
 }

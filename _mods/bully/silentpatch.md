@@ -8,7 +8,8 @@ warning-label: BETA
 warning-title: "This patch may not fix all known crashes yet."
 ---
 
-*Co-developed with [P3ti](https://github.com/P3ti)*
+{:.credit}
+Co-developed with [P3ti](https://github.com/P3ti).
 
 This game, which shares a lot of the internals with GTA games, performs fairly well in its PC incarnation as is.
 However, it's more than likely that you have at some point spotted the amount of complaints Windows 10
