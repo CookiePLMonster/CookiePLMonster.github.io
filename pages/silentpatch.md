@@ -87,4 +87,5 @@ I recommend viewing the timeline fullscreen!
 {% assign media_items = site.data.media | where: 'game-series', 'silentpatch' | sort: 'date' %}
 {% include related-reads-list.html related_items=media_items %}
 
-*Last update: {{ page.last_modified_at | date: page.date-format }}*
+{:.sidenote}
+Last update: {{ page.last_modified_at | date: page.date-format }}

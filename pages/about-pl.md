@@ -9,9 +9,10 @@ lang: pl
 locale: pl_PL
 ---
 
-*Ta strona dostępna jest w:*
-<a href="{% link pages/about.md %}"><span style="white-space:nowrap" lang="en">{{ site.theme_settings.gb_flag }}*English*</span></a>
-<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap" lang="pl">{{ site.theme_settings.pl_flag }}*polski*</span></a>
+{:.sidenote}
+Ta strona dostępna jest w:
+<a href="{% link pages/about.md %}" style="white-space: nowrap" lang="en" hreflang="en">{{ site.theme_settings.gb_flag }}English</a>
+<a href="{% link pages/about-pl.md %}" style="white-space: nowrap" lang="pl" hreflang="pl">{{ site.theme_settings.pl_flag }}polski</a>
 
 ***
 
@@ -61,7 +62,8 @@ Czym zajmuję się obecnie?
 
 {% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}
-*Ostatnia aktualizacja:
+{:.sidenote}
+Ostatnia aktualizacja:
 {{ lastdate | date: "%-d" }} {% case m %}
   {% when '1' %}stycznia
   {% when '2' %}lutego
@@ -75,4 +77,4 @@ Czym zajmuję się obecnie?
   {% when '10' %}października
   {% when '11' %}listopada
   {% when '12' %}grudnia
-{% endcase %} {{ lastdate | date: "%Y" }}*
+{% endcase %} {{ lastdate | date: "%Y" }}

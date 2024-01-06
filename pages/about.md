@@ -6,9 +6,10 @@ last_modified_at: 2023-08-20
 permalink: /about/
 ---
 
-*This page is available in:*
-<a href="{% link pages/about.md %}"><span style="white-space:nowrap" lang="en">{{ site.theme_settings.gb_flag }}*English*</span></a>
-<a href="{% link pages/about-pl.md %}"><span style="white-space:nowrap" lang="pl">{{ site.theme_settings.pl_flag }}*polski*</span></a>
+{:.sidenote}
+This page is available in:
+<a href="{% link pages/about.md %}" style="white-space: nowrap" lang="en" hreflang="en">{{ site.theme_settings.gb_flag }}English</a>
+<a href="{% link pages/about-pl.md %}" style="white-space: nowrap" lang="pl" hreflang="pl">{{ site.theme_settings.pl_flag }}polski</a>
 
 ***
 
@@ -54,5 +55,7 @@ What am I up to these days?
 * I occasionally contribute to numerous open-source projects, such as [OpenRCT2](https://openrct2.io/) or [PCSX2](https://pcsx2.net/)
   (see my [GitHub activity](https://github.com/CookiePLMonster)).
 * I regularly contribute to [Redump Disc Preservation Project](http://redump.org/), concentrating my efforts on preserving PC discs.
+* I regularly contribute to [PCGamingWiki](https://www.pcgamingwiki.com/), documenting the state of various PC games and troubleshooting issues.
 
-*Last update: {{ page.last_modified_at | date: page.date-format }}*
+{:.sidenote}
+Last update: {{ page.last_modified_at | date: page.date-format }}
