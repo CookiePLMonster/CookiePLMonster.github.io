@@ -450,7 +450,7 @@ Based on my observations, I could identify the following content differences bet
 
 Officially, this patch exclusive for the demo version is supposed to only improve performance:
 
-> Juiced by Juice Games - demo v2.0 -> v2.1 patch
+> Juiced by Juice Games - demo v2.0 &rarr; v2.1 patch
 >
 > It has come to our attention that some people may have experienced performance
 > problems with Version 2 of the Juiced PC Demo.

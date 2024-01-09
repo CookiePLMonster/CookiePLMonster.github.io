@@ -123,7 +123,7 @@ Since the issue seems so trivial, reproducing it in a standalone program boils d
 {% gist 18632c532d510ddcf5fbb1c84fad672a %}
 
 Load... unload... and wait for crash to happen! Obviously, it won't crash in majority of cases -- but with Application Verifier it's possible to make it consistent.
-As mentioned in the snippet, it needs to be ran with **Basics -> Threadpool** tests enabled (I also like using **Heaps** for those cases),
+As mentioned in the snippet, it needs to be ran with **Basics &rarr; Threadpool** tests enabled (I also like using **Heaps** for those cases),
 so DLL's code gets released as soon as possible. The reason it works in most cases is because `FreeLibrary` is lazy with releasing module's code and
 it persists in memory for long enough for this task to finish. That's not contractual however, and theoretically it can change at any time.
 
@@ -159,5 +159,6 @@ and releasing as the lambda exits will be a correct fix.
 
 ***
 
-*This issue has been now [reported via the Feedback Hub](https://aka.ms/AA5rr0w).*
-*Additionally, I [submitted a pull request to PCSX2](https://github.com/PCSX2/pcsx2/pull/3053) to work around that bug as instructed in the article.*
+{:.sidenote}
+This issue has been now [reported via the Feedback Hub](https://aka.ms/AA5rr0w).
+Additionally, I [submitted a pull request to PCSX2](https://github.com/PCSX2/pcsx2/pull/3053) to work around that bug as instructed in the article.

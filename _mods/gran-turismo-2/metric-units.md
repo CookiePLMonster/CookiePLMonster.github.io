@@ -8,15 +8,15 @@ date: 06-09-2021
 A code changing measurement units in the NTSC-U version of the game from imperial to metric.
 
 Currently converted units:
-* Speed (mph -> km/h)
-* Weight (lb -> kg)
-* Distance (ft -> m)
-* Torque (lb/ft -> kg/m)
+* Speed (mph &rarr; km/h)
+* Weight (lb &rarr; kg)
+* Distance (ft &rarr; m)
+* Torque (lb/ft &rarr; kg/m)
 
 To do:
-* Spring rate (lb/in -> kg/mm)
+* Spring rate (lb/in &rarr; kg/mm)
 
-PAL version of the cheat fixes a "*Launch speed at X mph*" text, which was wrongly labeled as showing miles per hour, but showed kilometers per hour.
+PAL version of the cheat fixes a '<samp>Launch speed at X mph</samp>' text, which was wrongly labeled as showing miles per hour, but showed kilometers per hour.
 
 {% include figures/image.html link="https://i.imgur.com/g4QySpm.png" thumbnail="https://i.imgur.com/g4QySpmh.png" %}
 

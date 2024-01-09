@@ -209,15 +209,15 @@ For the sake of completeness, here listed are all the attempts:
 2. Backporting Godfather II movie player to Godfather -- that idea was dropped very quickly - Godfather II runs on a different graphics engine and most likely has a different VP6 decoder.
    Since decoder itself works fine in the first game too, this would virtually mean rewriting parts of the code from scratch and reversing GFII code does not have any measurable benefits.
 
-3. Generic DirectDraw -> D3D9Ex wrapper with hardware overlays -- the initial idea for the fix was to come up with a generic wrapper, making use of hardware overlays reintroduced in D3D9Ex for Windows 7.
+3. Generic DirectDraw &rarr; D3D9Ex wrapper with hardware overlays -- the initial idea for the fix was to come up with a generic wrapper, making use of hardware overlays reintroduced in D3D9Ex for Windows 7.
    While this idea could potentially work out for windowed applications, GF prefers exclusive fullscreen mode (and changing that would be too intrusive and potentially prone to unwanted side effects)
    It means that: only one D3D device can draw to the window **and** only one exclusive window can be displayed. \\
    Because it's impossible to obtain D3D device coupled to game’s window in a generic manner nor “upgrade” it from D3D9 to D3D9Ex (they have minor differences in behaviour which makes it
    annoyingly complicated to generalize as a drop-in replacement), this idea sadly can't work. At least it produced valid output in PIX graphics debugger...
 
-4. Generic DirectDraw -> D3D9 wrapper with a new window -- did not work for the same reasons as the previous idea. Such approach works fine in windowed mode, but not in exclusive fullscreen.
+4. Generic DirectDraw &rarr; D3D9 wrapper with a new window -- did not work for the same reasons as the previous idea. Such approach works fine in windowed mode, but not in exclusive fullscreen.
 
-5. Game specific DirectDraw -> RwD3D9 wrapper -- as we know, generic fix is not really a viable solution here. Therefore, game specific fix allows for much more freedom when it comes to
+5. Game specific DirectDraw &rarr; RwD3D9 wrapper -- as we know, generic fix is not really a viable solution here. Therefore, game specific fix allows for much more freedom when it comes to
    selecting ways of approaching the issue.  
    It was possible to use game’s D3D9 device directly, however RenderWare has its own wrapper around D3D9, called RwD3D9. Using it will make the fix coexist nicely with existing rendering in the game,
    namely extra layers of render state caches RenderWare builds on top of D3D9.

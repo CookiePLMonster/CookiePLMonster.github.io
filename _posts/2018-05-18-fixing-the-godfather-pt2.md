@@ -74,7 +74,7 @@ Y = fmod(In.UV.x, 2.0) < 1.0 ? sample.b : sample.r
 Now we see both issues are caused by improper interpretation of texture data - interpreting it as a 32-bit 640x480 image made it show two subsequent scanlines in the same row,
 while overall green appearance was caused by interpreting the data as RGB.
 
-With remaining issues identified, fixing them was only a matter of writing a correct YUY2 -> RGB shader and some trial and error around a few other quirks.
+With remaining issues identified, fixing them was only a matter of writing a correct YUY2 &rarr; RGB shader and some trial and error around a few other quirks.
 Soon after, **movies finally started showing up correctly**!
 
 <p align="center">
