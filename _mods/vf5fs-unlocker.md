@@ -5,9 +5,10 @@ excerpt: "Turns VF5FS arcades into a full console game."
 date: 19-04-2021
 ---
 
-**This page is for the in-game unlocker. For a standalone executable, check out [Yakuza Arcade Machines Player]({% link _games/vf5fs.md %}#yamp).**
+{:.disclaimer.info}
+This page is for the in-game unlocker. For a standalone executable, check out [Yakuza Arcade Machines Player]({% link _games/vf5fs.md %}#yamp).
 
-This plugin for Yakuza 6 and Yakuza: Like a Dragon modifies in-game Virtua Fighter 5: Final Showdown arcades
+This plugin for Yakuza 6: The Song of Life and Yakuza: Like a Dragon modifies in-game Virtua Fighter 5: Final Showdown arcades
 to boot into a previously hidden console mode instead of the arcade mode. This enables users to play a nearly
 complete Xbox 360 version of Virtua Fighter 5, natively on PC!
 
@@ -24,7 +25,8 @@ At the moment I don't plan to address any of the game's shortcomings in this plu
 
 {% include setup-instructions.html %}
 
-**This plugin only works with the Steam version of the game!**
+{:.disclaimer}
+This plugin only works with the Steam version of the game!
 
 <a href="https://github.com/CookiePLMonster/VF5FS-Unlocker/releases/latest/download/VF5FS-Unlocker.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/VF5FS-Unlocker" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

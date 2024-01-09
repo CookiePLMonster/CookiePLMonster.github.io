@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "SilentPatch for Yakuza Kiwami 2 releases -- fixes Toylets and more"
-thumbnail: "assets/img/games/bg/yk2.jpg"
-feature-img: "assets/img/games/bg/yk2.jpg"
-image: "assets/img/games/bg/yk2.jpg"
+thumbnail: "assets/img/games/bg/yakuza-kiwami-2.jpg"
+feature-img: "assets/img/games/bg/yakuza-kiwami-2.jpg"
+image: "assets/img/games/bg/yakuza-kiwami-2.jpg"
 excerpt: "Peeing minigame in 30 FPS - but also more FPS related fixes."
-game-series: "yk2"
+game-series: "yakuza-kiwami-2"
 date: 2020-01-18 14:30:00 +0100
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]

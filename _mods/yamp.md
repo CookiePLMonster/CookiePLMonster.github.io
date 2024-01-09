@@ -6,7 +6,7 @@ date: 20-06-2021
 ---
 
 Yakuza Arcade Machines Player is a launcher that allows you to run Virtua Fighter 5: Final Showdown,
-standalone and native, on PC, provided you own a Steam copy of Yakuza 6.
+standalone and native, on PC, provided you own a Steam copy of Yakuza 6: The Song of Life.
 
 ## Known issues and shortcomings
 
@@ -26,9 +26,10 @@ standalone and native, on PC, provided you own a Steam copy of Yakuza 6.
 
 # Disclaimer
 
-**Yakuza Arcade Machines Player does not redistribute ANY copyrighted files.**
-**You must own an original Steam copy of Yakuza 6: The Song of Life to play games via YAMP.**
-**Pirated game copies WILL NOT receive any support.**
+{:.disclaimer}
+Yakuza Arcade Machines Player does not redistribute ANY copyrighted files.
+You must own an original Steam copy of Yakuza 6: The Song of Life to play games via YAMP.
+Pirated game copies WILL NOT receive any support.
 
 All rights to Virtua Fighter 5: Final Showdown belong to SEGA.
 
