@@ -8,8 +8,6 @@ date: 09-10-2021
 A code disabling interlacing in the game, resulting in a sharper image. In the full version of Gran Turismo 4,
 the code enables Progressive output during races, same as a 480p output in NTSC versions.
 
-**For this code to function correctly in PCSX2, disable any deinterlace filters in the emulator!**
-
 {% include figures/juxtapose.html left="https://i.imgur.com/itja06U.jpg" left-label="Default"
                 right="https://i.imgur.com/7fvfvkO.jpg" right-label="Deinterlaced" %}
 {% include figures/image.html link="https://i.imgur.com/PxACN6l.png" thumbnail="https://i.imgur.com/PxACN6lh.png" %}

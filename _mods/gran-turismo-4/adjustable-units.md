@@ -5,7 +5,8 @@ order: 100
 date: 09-10-2021
 ---
 
-**This cheat code applies only to the First Preview demo. Final Gran Turismo 4 versions allow selecting units from the options menu.**
+{:.disclaimer}
+This cheat code applies only to the First Preview demo. Final Gran Turismo 4 versions allow selecting units from the options menu.
 
 We had to wait until Gran Turismo 4 to have a proper measurement units selection menu in the game. Before that units were locked to the specific game version, most notably locking NTSC-U versions of the games to use imperial units. While in Gran Turismo 1 and 2 units were fully hardcoded, turns out Gran Turismo 3 and later include code handling multiple speed, power, and torque units, although they are predetermined by the user’s choice of language.
 

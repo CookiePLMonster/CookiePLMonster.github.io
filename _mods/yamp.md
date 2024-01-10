@@ -35,7 +35,8 @@ All rights to Virtua Fighter 5: Final Showdown belong to SEGA.
 
 {% include setup-instructions.html %}
 
-**YAMP requires a Steam version of Yakuza 6!**
+{:.disclaimer}
+YAMP requires a Steam version of Yakuza 6!
 
 <a href="https://github.com/CookiePLMonster/YAMP/releases/latest/download/YAMP.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
 <a href="https://github.com/CookiePLMonster/YAMP" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
