@@ -6,7 +6,7 @@
         {% assign modid = mod.id | split: '/' | last %}
         <a href="#{{ modid }}">
             <i class="far fa-list-alt" aria-hidden="true"></i>
-            {{ mod.title | markdownify | strip_html }}
+            {{ mod.title | smartify }}
         </a>
 
         <span class="meta">
