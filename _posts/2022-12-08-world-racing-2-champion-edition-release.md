@@ -10,12 +10,17 @@ date: 2022-12-08 19:10:00 +0100
 tags: [Releases]
 ---
 
+{:.disclaimer.info}
+This page contains affiliate links, meaning I get a commission for every purchase made through them.
+
 I am happy to report that **World Racing 2: Champion Edition**, a digital re-release of World Racing 2
-I've been working on has now been released on Steam!
+I've been working on has now been released on Steam, GOG&#46;com and ZOOM Platform!
 
 <div align="center">
 <iframe src="https://store.steampowered.com/widget/1301010/" frameborder="0" width="900" height="200"></iframe>
 </div>
+
+[BUY ON ZOOM PLATFORM]({{ 'https://www.zoom-platform.com/product/world-racing-2-champion-edition?affiliate=' | append: site.theme_settings.affiliate_links.zoom_platform }}){:target="_blank" rel="nofollow"}
 
 **WR2CE** offers the full experience and the classic gameplay of the original 2005 game, plus:
 

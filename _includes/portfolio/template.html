@@ -1,6 +1,13 @@
+{% if portfolio-zoom-platform %}
+<p class="disclaimer info">This page contains affiliate links, meaning I get a commission for every purchase made through them.</p>
+{% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[ZOOM Platform](https://www.zoom-platform.com/product/'
+                        | append: portfolio-zoom-platform | append: '?affiliate=' | append: site.theme_settings.affiliate_links.zoom_platform
+                        | append: '){:target="_blank" rel="nofollow"}' %}
+{% endif %}
 <div class="portfolio-content">
 <aside>
 <dl>
+{% include portfolio/template-entry.html entry=portfolio-affiliate-links name="BUY THE GAME" %}
 {% include portfolio/template-entry.html entry=portfolio-client name="With" %}
 {% include portfolio/template-entry.html entry=portfolio-engine name="Engine" plural=true %}
 {% include portfolio/template-entry.html entry=portfolio-date name="Release date" plural=true %}

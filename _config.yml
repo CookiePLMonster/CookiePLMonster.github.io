@@ -64,6 +64,10 @@ theme_settings:
     wordpress:
     email:
 
+  # Affiliate IDs
+  affiliate_links:
+    zoom_platform: 127acd0e-6561-4d00-b3f8-7609ffa1e201
+
   # Scripts / Features
   google_analytics: UA-119160362-1
   disqus_shortname: cookieplmonster-github-io
@@ -196,4 +200,4 @@ sass:
   style: :compressed
 plugins: [jekyll-gist, jekyll-paginate, jekyll-seo-tag, jekyll-redirect-from, jekyll-feed]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js", ".idea/*", "scratch"]
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js", ".idea/*", "scratch", "*.py"]
