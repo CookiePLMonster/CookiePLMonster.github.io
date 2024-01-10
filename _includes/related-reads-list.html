@@ -1,6 +1,6 @@
-<div class="tag-posts">
+<ul class="tag-posts">
 {% for item in include.related_items reversed %}
-<h5 class="tag-title">
+<li>
     <a href="{{ item.url | relative_url }}" target="_blank">
         <i class="far fa-file-image" aria-hidden="true"></i>
         {{ item.title | markdownify | strip_html }}
@@ -10,6 +10,6 @@
         {{ item.date | date: page.date-format }}
         {% if item.last_modified_at %}(edited {{ item.last_modified_at | date: page.date-format }}){% endif %}
     </span>
-</h5>
+</li>
 {% endfor %}
-</div>
+</ul>

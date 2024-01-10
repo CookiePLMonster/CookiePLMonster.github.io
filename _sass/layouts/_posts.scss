@@ -12,8 +12,8 @@ article {
         text-align: center;
     }
 
-    a:hover {
-        @extend .body-link;
+    a {
+        @extend %body-link;
     }
 
     .footnotes {

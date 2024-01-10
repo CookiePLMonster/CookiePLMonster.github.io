@@ -58,7 +58,7 @@
         display: inline-block;
         background-size: $feature-image-size;
         p a {
-            @extend .body-link;
+            @extend %body-link;
         }
         img {
             width: 100%;

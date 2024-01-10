@@ -42,13 +42,13 @@ layout: page
         </h3>
 
         <!-- Posts and collection for each tags -->
-        <div class="tag-posts">
+        <ul class="tag-posts">
 
             <!-- Pages -->
             {% for page in site.pages %}
                 {% unless page.collection == 'posts' %}
                     {% if page.tags contains tag %}
-                    <h5 class="tag-title">
+                    <li>
                         <a href="{{ page.url | relative_url }}">
                             <i class="far fa-file-image" aria-hidden="true"></i>
                             {{ page.title | markdownify | strip_html }}
@@ -57,7 +57,7 @@ layout: page
                         <span class="meta">
                             {{ "today" | date: page.date-format }}
                         </span>
-                    </h5>
+                    </li>
                     {% endif %}
                 {% endunless %}
             {% endfor %} 
@@ -65,7 +65,7 @@ layout: page
             <!-- Posts -->
             {% for post in site.posts %} 
                 {% if post.tags contains tag %}
-                <h5 class="tag-title">
+                <li>
                     <a href="{{ post.url | relative_url }}">
                         <i class="far fa-file-alt" aria-hidden="true"></i>
                         {{ post.title | markdownify | strip_html }}
@@ -75,14 +75,14 @@ layout: page
                         {{ post.date | date: page.date-format }}
                         {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: page.date-format }}){% endif %}
                     </span>
-                </h5>
+                </li>
                 {% endif %} 
             {% endfor %} 
             
             <!-- Portfolio -->
             {% for note in site.portfolio %} 
                 {% if note.tags contains tag %}
-                <h5 class="tag-title">
+                <li>
                     <a href="{{ note.url | relative_url }}">
                         <i class="far fa-file" aria-hidden="true"></i>
                         {{ note.title | markdownify | strip_html }}
@@ -92,11 +92,11 @@ layout: page
                         {{ note.date | date: page.date-format }}
                         {% if note.last_modified_at %}(edited {{ note.last_modified_at | date: page.date-format }}){% endif %}
                     </span>
-                </h5>
+                </li>
                 {% endif %} 
             {% endfor %}
 
-        </div>
+        </ul>
         {% endfor %}
 
     </div>

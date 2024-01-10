@@ -40,7 +40,7 @@ What makes a **SilentPatch**? The released patches adhere to several core values
 
 # Supported games
 
-<div class="tag-posts">
+<ul class="tag-posts">
 {% assign filter_conditions = "mod.warning-label != 'DEPRECATED',mod.warning-label == 'DEPRECATED'" | split: "," %}
 {% for filter in filter_conditions %}
     {% assign items = site.games | sort_natural: "title" %}
@@ -48,22 +48,17 @@ What makes a **SilentPatch**? The released patches adhere to several core values
         {% unless item.hide or item.hide-on-list %}
             {% assign silentpatches = site.mods | where: "game-series", item.game-series | where_exp: "mod", "mod.title contains 'SilentPatch'" | where_exp: "mod", filter %}
             {% if silentpatches.size > 0 %}
-                <h5 class="tag-title">
+                <li>
                     {% assign mod = silentpatches | first %}
                     {% assign modid = mod.id | split: '/' | last %}
-                    <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | markdownify | strip_html }}</a>
-                    {% if mod.warning-label %}
-                        <span class="mod-label label-warning" title="{{ mod.warning-title }}">{{ mod.warning-label }}</span>
-                    {% endif %}
-                    {% if mod.info-label %}
-                        <span class="mod-label label-info" title="{{ mod.info-title }}">{{ mod.info-label }}</span>
-                    {% endif %}
-                </h5>
+                    <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a>
+                    {% include mod-label.html mod=mod %}
+                </li>
             {% endif %}
         {% endunless %}
     {% endfor %}
 {% endfor %}
-</div>
+</ul>
 
 # More resources
 

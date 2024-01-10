@@ -30,15 +30,30 @@
     }
 }
 
-.tag-posts {
+ul.tag-posts {
+    @extend %no-bullets;
+    font-size: 0.9em;
+    font-weight: bold;
     display: inline-block;
     width: 100%;
     margin-bottom: $padding-x-small/2;
-    .tag-title {
+    li {
+        font-size: 100%;
         margin: 0;
         @media screen and (min-width: $break) {
             margin-left: $padding-x-small;
         }
+        a {
+            @extend %body-link;
+            color: var(--header-link-color);
+        }
+    }
+
+    ul {
+        font-size: 0.9em;
+        list-style-type: none;
+        font-weight: normal;
+        margin-bottom: 0;
     }
 
     .meta {

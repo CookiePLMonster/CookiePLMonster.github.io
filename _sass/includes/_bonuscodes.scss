@@ -31,7 +31,9 @@
     }
 
     .content {
-        @extend %no-bullets;
+        ul {
+            @extend %no-bullets;
+        }
         padding: 1em;
     }
 

@@ -62,11 +62,11 @@
     font-size: 75%;
     padding: 0.2em 0.6em 0.3em;
 
-    &.label-warning {
+    &.warning {
         background-color: #d9534f;
     }
 
-    &.label-info {
+    &.info {
         background-color: $theme-color;
     }
 }

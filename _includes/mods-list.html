@@ -12,12 +12,7 @@
             {{ mod.title | markdownify | strip_html }}
         </h1>
     {% endif %}
-    {% if mod.warning-label %}
-        <span class="mod-label label-warning" title="{{mod.warning-title}}">{{mod.warning-label}}</span>
-    {% endif %}
-    {% if mod.info-label %}
-        <span class="mod-label label-info" title="{{mod.info-title}}">{{mod.info-label}}</span>
-    {% endif %}
+    {% include mod-label.html mod=mod %}
     </div>
     <div style="margin: 1.34em 0;flex-basis: 50%;">
     {% if mod.date %}
