@@ -7,23 +7,27 @@ permalink: /mods/index/
 hide: true
 ---
 
-<ul class="tag-posts">
-{% assign items = site.games | sort_natural: "title" %}
-{% for item in items %}
-    {% unless item.hide or item.hide-on-list %}
-        {% assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" %}
-        {% if mods.size > 0 %}
-            <li><a href="{{ item.url | relative_url }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a></li>
-            <ul>
-                {% for mod in mods %}
-                    <li>
-                        {% assign modid = mod.id | split: '/' | last %}
-                        <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ mod.title | smartify }}</a>
-                        {% include mod-label.html mod=mod %}
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endunless %}
+{% assign filter_conditions = "game.order < 100,game.order >= 100" | split: "," %}
+{% for filter in filter_conditions %}
+    <ul class="tag-posts">
+    {% assign items = site.games | where_exp: "game", filter | sort_natural: "title" %}
+    {% for item in items %}
+        {% unless item.hide %}
+            {% assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" %}
+            {% if mods.size > 0 %}
+                <li><a href="{{ item.url | relative_url }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a></li>
+                <ul>
+                    {% for mod in mods %}
+                        <li>
+                            {% assign modid = mod.id | split: '/' | last %}
+                            <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ mod.title | smartify }}</a>
+                            {% include mod-label.html mod=mod %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+    </ul>
+    {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
-</ul>

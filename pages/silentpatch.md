@@ -45,7 +45,7 @@ What makes a **SilentPatch**? The released patches adhere to several core values
 {% for filter in filter_conditions %}
     {% assign items = site.games | sort_natural: "title" %}
     {% for item in items %}
-        {% unless item.hide or item.hide-on-list %}
+        {% unless item.hide %}
             {% assign silentpatches = site.mods | where: "game-series", item.game-series | where_exp: "mod", "mod.title contains 'SilentPatch'" | where_exp: "mod", filter %}
             {% if silentpatches.size > 0 %}
                 <li>
