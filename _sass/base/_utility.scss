@@ -95,6 +95,14 @@
         &.paypal {
             color: $paypal-link-color;
         }
+
+        &.gog {
+            color: var(--gog-link-color);
+        }
+
+        &.steam {
+            color: var(--steam-link-color);
+        }
     }
 }
 
@@ -140,6 +148,20 @@
             border-color: $paypal-link-color;
         }
     }
+
+    &.gog {
+        &:hover {
+            background: var(--gog-link-color);
+            border-color: var(--gog-link-color);
+        }
+    }
+
+    &.steam {
+        &:hover {
+            background: var(--steam-link-color);
+            border-color: var(--steam-link-color);
+        }
+    }
 }
 
 .round-button {
@@ -171,6 +193,14 @@ a.round-button {
 
     &.paypal {
         background-color: $paypal-link-color;
+    }
+
+    &.gog {
+        color: var(--gog-link-color);
+    }
+
+    &.steam {
+        color: var(--steam-link-color);
     }
 }
 

@@ -119,6 +119,9 @@ $text-color: var(--text-color);
 
     --line-color: #{transparentize($text-color-light, 0.75)};
 
+    --gog-link-color: #8900d9;
+    --steam-link-color: #0a4d7f;
+
     .theme-icon:before {
         content: "\f186";
     }
@@ -146,8 +149,11 @@ $text-color: var(--text-color);
 
     --line-color: #{transparentize($text-color-dark, 0.25)};
 
+    --gog-link-color: #c900ea;
+    --steam-link-color: #0179ad;
+
     .fa-inverse {
-        color: $background-color-dark !important; 
+        color: $background-color-dark !important;
      }
 
      .theme-icon:before {
@@ -171,4 +177,4 @@ html {
     html {
         @include dark-theme;
     }
-} 
+}

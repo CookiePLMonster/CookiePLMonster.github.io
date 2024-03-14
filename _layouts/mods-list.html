@@ -3,9 +3,10 @@ layout: page
 ---
 
 {% assign mods_list_items = site.mods | where: "game-series", page.game-series | sort: 'order' %}
-{% include mods-toc.html items=mods_list_items %}
+{% include mods-list/toc.html items=mods_list_items %}
 
 {{ content }}
 
-{% include mods-list.html items=mods_list_items %}
+{% include mods-list/list.html items=mods_list_items %}
+{% include mods-list/store-pages.html series=page.game-series %}
 {% include related-reads.html series=page.game-series %}

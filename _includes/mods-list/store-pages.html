@@ -1,0 +1,18 @@
+{% assign affiliate-links = site.data.store-pages[include.series] %}
+{% if affiliate-links %}
+<h2 class="no_anchor">Buy the game:</h2>
+
+{% if affiliate-links.gog or affiliate-links.zoom_platform %}
+<p class="disclaimer info">This section contains affiliate links, meaning I get a commission for every purchase made through them.</p>
+{% endif %}
+
+{% if affiliate-links.gog %}
+    <a href="https://af.gog.com/game/{{ affiliate-links.gog.id }}?as={{ site.theme_settings.affiliate_links.gog }}"
+        class="button gog" role="button" rel="nofollow" target="_blank"><i class='fas icomoon icon-gog-dot-com'></i> Buy on GOG.com</a>
+{% endif %}
+{% if affiliate-links.steam %}
+    <a href="https://store.steampowered.com/app/{{ affiliate-links.steam.id }}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign=Portfolio"
+        class="button steam" role="button" rel="nofollow" target="_blank"><i class='fab fa-steam'></i> Buy on Steam</a>
+{% endif %}
+
+{% endif %}
