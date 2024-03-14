@@ -10,7 +10,6 @@ game-series: "world-racing-2-ce"
 {% assign portfolio-engine="*Proprietary*" %}
 {% capture portfolio-date %}{{ "2022-12-08" | date: page.date-format }} (Steam)#{{ "2023-10-26" | date: page.date-format }} (ZOOM Platform)#{{ "2023-11-27" | date: page.date-format }} (GOG){% endcapture %}
 {% assign portfolio-platform="PC (Steam, ZOOM Platform, GOG)" %}
-{% assign portfolio-zoom-platform="world-racing-2-champion-edition" %}
 
 {% capture portfolio-contents %}
 World Racing 2 Champion Edition offers the full experience and the classic gameplay of the original 2005 game, plus:

@@ -1,0 +1,47 @@
+8-bit-adventure-anthology:
+  steam: {id: 664850}
+428-shibuya-scramble:
+  steam: {id: 648580}
+  steam-jp: {id: 648590}
+a-boy-and-his-blob:
+  steam: {id: 281200}
+  gog: {id: a-boy-and-his-blob}
+  zoom_platform:
+    id: a-boy-and-his-blob
+    delisted: true
+crc-extreme:
+  steam: {id: 925550}
+danganronpa:
+  steam: {id: 413410}
+danganronpa-2:
+  steam: {id: 413420}
+deathkeep:
+  steam: {id: 2350540}
+  gog: {id: deathkeep}
+frostpunk:
+  steam: {id: 323190}
+  gog: {id: frostpunk}
+hm2:
+  steam: {id: 274170}
+  gog: {id: hotline_miami_2_wrong_number}
+industry-giant-2:
+  steam: {id: 271360}
+  gog: {id: industry_giant_2}
+kof-xiv:
+  steam: {id: 571260}
+  gog: {id: the_king_of_fighters_xiv_galaxy_edition}
+pacific-general:
+  steam: {id: 1741130}
+  gog: {id: pacific_general}
+snk-heroines:
+  steam: {id: 794580}
+star-general:
+  steam: {id: 2414340}
+  gog: {id: star_general}
+take-on-prisoners:
+  steam: {id: 2464670}
+  gog: {id: take_no_prisoners}
+world-racing-2-ce:
+  steam: {id: 1301010}
+  gog: {id: world_racing_2_champion_edition}
+  zoom_platform: {id: world-racing-2-champion-edition}

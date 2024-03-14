@@ -3,6 +3,7 @@ title: "The King of Fighters XIV"
 image: "assets/img/portfolio/thumb/KOF14.jpg"
 feature-img: "assets/img/portfolio/KOF-XIV.png"
 date: 2017-06-15
+game-series: "kof-xiv"
 ---
 
 {% assign portfolio-client="Abstraction" %}

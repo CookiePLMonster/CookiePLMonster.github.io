@@ -1,13 +1,48 @@
-{% if portfolio-zoom-platform %}
+{% assign affiliate-links = site.data.store-pages[page.game-series] %}
+{% if affiliate-links %}
+
+{% if affiliate-links.gog or affiliate-links.zoom_platform %}
 <p class="disclaimer info">This page contains affiliate links, meaning I get a commission for every purchase made through them.</p>
-{% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[ZOOM Platform](https://www.zoom-platform.com/product/'
-                        | append: portfolio-zoom-platform | append: '?affiliate=' | append: site.theme_settings.affiliate_links.zoom_platform
+{% endif %}
+
+{% if affiliate-links.gog %}
+    {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[GOG.com](https://af.gog.com/game/'
+                        | append: affiliate-links.gog.id | append: '?as=' | append: site.theme_settings.affiliate_links.gog
                         | append: '){:target="_blank" rel="nofollow"}' %}
+    {% if affiliate-links.gog.delisted %}
+        {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
+    {% endif %}
+{% endif %}
+{% if affiliate-links.zoom_platform %}
+    {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[ZOOM Platform](https://www.zoom-platform.com/product/'
+                        | append: affiliate-links.zoom_platform.id | append: '?affiliate='
+                        | append: site.theme_settings.affiliate_links.zoom_platform | append: '){:target="_blank" rel="nofollow"}' %}
+    {% if affiliate-links.zoom_platform.delisted %}
+        {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
+    {% endif %}
+{% endif %}
+{% if affiliate-links.steam %}
+    {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[Steam](https://store.steampowered.com/app/'
+                        | append: affiliate-links.steam.id
+                        | append: '?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign=Portfolio){:target="_blank" rel="nofollow"}' %}
+    {% if affiliate-links.steam.delisted %}
+        {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
+    {% endif %}
+{% endif %}
+{% if affiliate-links.steam-jp %}
+    {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[Steam (Japan)](https://store.steampowered.com/app/'
+                        | append: affiliate-links.steam-jp.id
+                        | append: '?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign=Portfolio){:target="_blank" rel="nofollow"}' %}
+    {% if affiliate-links.steam-jp.delisted %}
+        {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
+    {% endif %}
+{% endif %}
+
 {% endif %}
 <div class="portfolio-content">
 <aside>
 <dl>
-{% include portfolio/template-entry.html entry=portfolio-affiliate-links name="BUY THE GAME" %}
+{% include portfolio/template-entry.html entry=portfolio-affiliate-links name="Buy the game" style="upcase" %}
 {% include portfolio/template-entry.html entry=portfolio-client name="With" %}
 {% include portfolio/template-entry.html entry=portfolio-engine name="Engine" plural=true %}
 {% include portfolio/template-entry.html entry=portfolio-date name="Release date" plural=true %}

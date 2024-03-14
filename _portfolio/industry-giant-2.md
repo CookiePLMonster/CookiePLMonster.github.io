@@ -3,6 +3,7 @@ title: "Industry Giant 2"
 image: "assets/img/portfolio/thumb/industry-giant-2.jpg"
 feature-img: "assets/img/portfolio/industry-giant-2.jpg"
 date: 2022-02-14
+game-series: "industry-giant-2"
 ---
 
 {% assign portfolio-client="*Independent*, for Toplitz Productions" %}

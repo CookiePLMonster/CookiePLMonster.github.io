@@ -3,6 +3,7 @@ title: "Danganronpa: Trigger Happy Havoc"
 image: "assets/img/portfolio/thumb/danganronpa1.jpg"
 feature-img: "assets/img/portfolio/danganronpa.jpg"
 date: 2016-02-18
+game-series: "danganronpa"
 ---
 
 {% assign portfolio-client="Abstraction" %}

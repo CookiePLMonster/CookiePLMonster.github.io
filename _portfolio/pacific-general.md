@@ -3,6 +3,7 @@ title: "Pacific General"
 image: "assets/img/portfolio/thumb/pacific-general.jpg"
 feature-img: "assets/img/portfolio/pacific-general.jpg"
 date: 2021-09-16
+game-series: "pacific-general"
 ---
 
 {% assign portfolio-client="*Independent*, for SNEG" %}

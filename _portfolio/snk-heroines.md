@@ -3,6 +3,7 @@ title: "SNK Heroines: Tag Team Frenzy"
 image: "assets/img/portfolio/thumb/snk-heroines.jpg"
 feature-img: "assets/img/portfolio/snk-heroines.png"
 date: 2018-09-07
+game-series: "snk-heroines"
 ---
 
 {% assign portfolio-client="Abstraction" %}
