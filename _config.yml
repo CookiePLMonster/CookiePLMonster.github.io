@@ -170,6 +170,7 @@ defaults:
       layout: "mods-list"
       game-series: ""
       parent-series: ""
+      plausible-file-downloads: true
       order: 0
   - scope:
       path: ""

@@ -71,7 +71,10 @@
 
     <!-- Plausible Analytics -->
     {% if site.theme_settings.plausible_analytics %}
-    <script defer data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script.js"></script>
+    {% if page.plausible-file-downloads %}
+        {% assign plausible-extension = plausible-extension | append: ".file-downloads" %}
+    {% endif %}
+    <script defer data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script{{ plausible-extension }}.js"></script>
     {% endif %}
 
     <!-- seo tags -->
