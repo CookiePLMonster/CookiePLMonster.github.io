@@ -73,8 +73,9 @@
     {% if site.theme_settings.plausible_analytics %}
     {% if page.plausible-file-downloads %}
         {% assign plausible-extension = plausible-extension | append: ".file-downloads" %}
+        {% assign plausible-attributes = plausible-attributes | append: ' file-types="exe,dll,asi,7z,pkg,rar,gz,zip,txt,pnach,cht,ini,py"' %}
     {% endif %}
-    <script defer data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script{{ plausible-extension }}.js"></script>
+    <script defer{{ plausible-attributes }} data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script{{ plausible-extension }}.js"></script>
     {% endif %}
 
     <!-- seo tags -->
