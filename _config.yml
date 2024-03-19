@@ -71,6 +71,7 @@ theme_settings:
 
   # Scripts / Features
   google_analytics: UA-119160362-1
+  plausible_analytics: cookieplmonster.github.io
   disqus_shortname: cookieplmonster-github-io
   katex:
 

@@ -69,6 +69,11 @@
     </script>
     {% endif %}
 
+    <!-- Plausible Analytics -->
+    {% if site.theme_settings.plausible_analytics %}
+    <script defer data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script.js"></script>
+    {% endif %}
+
     <!-- seo tags -->
     {% seo %}
 
