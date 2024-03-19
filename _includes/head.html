@@ -71,9 +71,12 @@
 
     <!-- Plausible Analytics -->
     {% if site.theme_settings.plausible_analytics %}
-    {% if page.plausible-file-downloads %}
+    {% if layout.plausible-file-downloads or page.plausible-file-downloads %}
         {% assign plausible-extension = plausible-extension | append: ".file-downloads" %}
         {% assign plausible-attributes = plausible-attributes | append: ' file-types="exe,dll,asi,7z,pkg,rar,gz,zip,txt,pnach,cht,ini,py"' %}
+    {% endif %}
+    {% if layout.plausible-tagged-events or page.plausible-tagged-events %}
+        {% assign plausible-extension = plausible-extension | append: ".tagged-events" %}
     {% endif %}
     <script defer{{ plausible-attributes }} data-domain="{{ site.theme_settings.plausible_analytics }}" src="https://plausible.io/js/script{{ plausible-extension }}.js"></script>
     {% endif %}
