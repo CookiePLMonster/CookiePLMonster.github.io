@@ -58,7 +58,7 @@
     {% endif %}
 
     <!-- Google Analytics -->
-    {% if site.theme_settings.google_analytics %}
+    {% if site.theme_settings.google_analytics and jekyll.environment != "development" %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.theme_settings.google_analytics }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -70,7 +70,7 @@
     {% endif %}
 
     <!-- Plausible Analytics -->
-    {% if site.theme_settings.plausible_analytics %}
+    {% if site.theme_settings.plausible_analytics and jekyll.environment != "development" %}
     {% if layout.plausible-file-downloads or page.plausible-file-downloads %}
         {% assign plausible-extension = plausible-extension | append: ".file-downloads" %}
         {% assign plausible-attributes = plausible-attributes | append: ' file-types="exe,dll,asi,7z,pkg,rar,gz,zip,txt,pnach,cht,ini,py"' %}
