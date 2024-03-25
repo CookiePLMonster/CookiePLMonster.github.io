@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="feature-image" style="padding:0;">
   <header id="main" style="background-image: url('{{ page.feature-img | relative_url }}')">
-    <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | markdownify | strip_html }}</h1>
+    <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
     <p class="meta">
     {{ page.date | date: "%B %-d, %Y" }}
     {% if page.author %} - {{ page.author }}{% endif %}

@@ -25,7 +25,7 @@
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="{{ page.url | relative_url }}">
-                {{ page.title | markdownify | strip_html }}
+                {{ page.title | smartify }}
             </a>
         </li>
         {% endunless %}

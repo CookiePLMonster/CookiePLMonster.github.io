@@ -3,7 +3,7 @@
   <div id="previous-post" class="post-nav-post">
       <p>{{ site.theme_settings.str_previous_post }}</p>
       <a href="{{ page.previous.url | relative_url }}">
-        {{ page.previous.title | markdownify | strip_html }}
+        {{ page.previous.title | smartify }}
       </a>
   </div>
   {% endif %}
@@ -11,7 +11,7 @@
   <div id="next-post" class="post-nav-post">
       <p>{{ site.theme_settings.str_next_post }}</p>
       <a href="{{ page.next.url | relative_url }}">
-        {{ page.next.title | markdownify | strip_html }}
+        {{ page.next.title | smartify }}
       </a>
   </div>
   {% endif %}

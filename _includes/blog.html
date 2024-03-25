@@ -9,7 +9,7 @@
             <img src="{{ post.thumbnail | relative_url }}" alt="">
           </div>
           {% endif %}
-          {{ post.title | markdownify | strip_html }}
+          {{ post.title | smartify }}
         </a>
       </h1>
       <p class="meta">

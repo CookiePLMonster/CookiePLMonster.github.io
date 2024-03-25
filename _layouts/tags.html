@@ -51,7 +51,7 @@ layout: page
                     <li>
                         <a href="{{ page.url | relative_url }}">
                             <i class="far fa-file-image" aria-hidden="true"></i>
-                            {{ page.title | markdownify | strip_html }}
+                            {{ page.title | smartify }}
                         </a>
                         
                         <span class="meta">
@@ -68,7 +68,7 @@ layout: page
                 <li>
                     <a href="{{ post.url | relative_url }}">
                         <i class="far fa-file-alt" aria-hidden="true"></i>
-                        {{ post.title | markdownify | strip_html }}
+                        {{ post.title | smartify }}
                     </a>
                     
                     <span class="meta">
@@ -85,7 +85,7 @@ layout: page
                 <li>
                     <a href="{{ note.url | relative_url }}">
                         <i class="far fa-file" aria-hidden="true"></i>
-                        {{ note.title | markdownify | strip_html }}
+                        {{ note.title | smartify }}
                     </a>
                 
                     <span class="meta">

@@ -13,11 +13,11 @@ layout: default
     {% include overlay_logo.html %}
     <div class="title-padder">
       <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
-          {{ page.title | markdownify | strip_html }}
+          {{ page.title | smartify }}
       </h1>
     
       {% if page.subtitle %}
-      <h2 class="subtitle">{{ page.subtitle }}</h2>
+      <h2 class="subtitle">{{ page.subtitle | smartify }}</h2>
       {% endif %}
     </div>
   </header>

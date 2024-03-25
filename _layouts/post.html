@@ -11,7 +11,7 @@ layout: default
   >
     {% include overlay_logo.html %}
     <div class="title-padder">
-      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | markdownify | strip_html }}</h1>
+      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
       <p class="meta">
 	{% if page.custom-date %}{{ page.custom_date }}
 	{% else %}{{ page.date | date: page.date-format }}{% endif %}

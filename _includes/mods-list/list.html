@@ -9,7 +9,7 @@
         </h1>
     {% else %}
         <h1 id="{{ modid }}">
-            {{ mod.title | markdownify | strip_html }}
+            {{ mod.title | smartify }}
         </h1>
     {% endif %}
     {% include mod-label.html mod=mod %}
