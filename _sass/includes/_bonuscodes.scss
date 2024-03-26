@@ -15,7 +15,7 @@
         font-weight: bold;
     }
 
-    #platform-select {
+    #platform-select, #additional-checkbox {
         display: none;
     }
 }
@@ -71,6 +71,6 @@
     .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
 }
 
-#outbox-window-full.bonuscodes-output {
+#outbox-window-full.bonuscodes-output, #output-footnotes-full.footnotes {
     display: none;
 }

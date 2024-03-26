@@ -17,6 +17,10 @@ plausible-tagged-events: true
         <label for="platform">Platform:</label>
         <select id="platform" name="platform"></select>
     </span>
+    <span id="additional-checkbox">
+        <label id="checkbox-label" for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox"></input>
+    </span>
 </form>
 <button id="generate" class="button plausible-event-name=Generator+Use" type="submit" form="cheat-gen-form">Generate</button>
 <span id="invalid-access-code"><span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> Invalid</span> access code specified!</span>
@@ -24,8 +28,23 @@ plausible-tagged-events: true
 
 <div class="bonuscodes-output" id="outbox-window-full">
     <div class="border tr"></div>
-    <output for="access-code platform"class="content" id="output-window"></output>
+    <output for="access-code platform" class="content" id="output-window"></output>
     <div class="border bl"></div>
 </div>
+
+<div class="footnotes" id="output-footnotes-full" role="doc-endnotes">
+<ol>
+<output for="access-code platform" id="output-footnotes"></output>
+</ol>
+</div>
+
+<template id="footnote-template">
+<li id="fn:{id}" role="doc-endnote">
+<p>{note}<a b-code="for n in range(num):" href="#fnref:{id}:{n}" class="reversefootnote" role="doc-backlink">&larrhk;<sup b-code="if n != 0:">{n+1}</sup></a></p>
+</li>
+</template>
+<template id="footnote-sup">
+<sup id="fnref:{id}:{num}" role="doc-noteref"><a href="#fn:{id}" class="footnote" rel="footnote">{notenum}</a></sup>
+</template>
 
 </div>

@@ -6,9 +6,11 @@ excerpt: Related reads, resources and other interesting blogs.
 permalink: /links/
 ---
 
+# On this website
+* [Bonus Codes]({% link pages/bonuscodes.md %}) -- bonus codes generators for games from Codemasters, as well as discovered cheat codes for other games.
+
 # Research
 Any research and documentation that I either made or found useful, and that doesn't belong in the mod pages.
-* [Bonus Codes]({% link pages/bonuscodes.md %}) -- bonus codes generators for games from Codemasters, as well as discovered cheat codes for other games.
 * [GameCheat Unlockers](https://github.com/Nenkai/GameCheat-Unlockers) -- a collection of tools to generate or unlock bonus codes for games that used them such as games from Codemasters.
   Made by [Nenkai](https://github.com/Nenkai) and myself.
 * [GTModTools](https://github.com/CookiePLMonster/GTModTools) -- various Python tools for Gran Turismo 2. Made by myself.
