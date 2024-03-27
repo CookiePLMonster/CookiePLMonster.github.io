@@ -15,5 +15,5 @@ def toStr(elems):
     result = ''
     for e in elems:
         if e.html is not None:
-            result += e.html.strip()
+            result += e.html
     return result

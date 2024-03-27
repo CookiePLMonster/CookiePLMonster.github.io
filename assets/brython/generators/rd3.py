@@ -3,14 +3,6 @@ from collections import namedtuple
 
 ACCESS_CODE_MAX = 9999
 
-# TODO: Remove when #2407 is fixed in stable Brython:
-# https://github.com/brython-dev/brython/commit/70a2145abd8e88651b6897b04c77e041b3bdd528
-def powFix(base, exp, mod):
-    result = pow(base, exp, mod)
-    if result < 0:
-        result += mod
-    return result
-
 def getPlatformData(platform):
     KeyPrimes = namedtuple('KeyPrimes', ['p', 'q'])
     PlatformData = namedtuple('PlatformData', ['d', 'n'])
@@ -22,8 +14,8 @@ def getPlatformData(platform):
     e = 65537
     keys = platforms[platform]
 
-    keyNormal = PlatformData(powFix(e, -1, (keys[0].p-1) * (keys[0].q-1)), keys[0].p * keys[0].q)
-    keyHonda = PlatformData(powFix(e, -1, (keys[1].p-1) * (keys[1].q-1)), keys[1].p * keys[1].q)
+    keyNormal = PlatformData(pow(e, -1, (keys[0].p-1) * (keys[0].q-1)), keys[0].p * keys[0].q)
+    keyHonda = PlatformData(pow(e, -1, (keys[1].p-1) * (keys[1].q-1)), keys[1].p * keys[1].q)
     return (keyNormal, keyHonda)
 
 def generateCode(platformData, accessCode, cheatID):
@@ -35,7 +27,7 @@ def generateCode(platformData, accessCode, cheatID):
     xor = 14703658657559957748
     salt = platformData.n & 0xFFFF
     packed = int.from_bytes(struct.pack('<BBHH', 0, cheatID, accessCode, salt), 'little') ^ xor
-    encrypted = powFix(packed, platformData.d, platformData.n)
+    encrypted = pow(packed, platformData.d, platformData.n)
 
     result = ''
     while encrypted > 0:
