@@ -10,11 +10,20 @@ order: 22
 <script type="text/python">
 from browser import document, html
 import htmlgen
-from generators import rd3
+from generators import rd2, rd3
 
 def onGenerate(ev):
     platform = document['platform']
-    platformData = rd3.getPlatformData(platform.options[platform.selectedIndex].value)
+    platformName = platform.options[platform.selectedIndex].value
+    isPsp = platformName == 'psp'
+    if isPsp:
+        # TOCA Race Driver 3 Challenge uses RD2's PSP algorithm, but with shifted cheat IDs
+        generateFn = lambda platformData, accessCode, cheatID: rd2.generateCode(platformData, accessCode, cheatID + 9)
+        platformData = rd2.getPlatformData(platformName)
+        platformData = (platformData, platformData)
+    else:
+        generateFn = rd3.generateCode
+        platformData = rd3.getPlatformData(platformName)
 
     try:
         accessCode = int(document['access-code'].value)
@@ -25,15 +34,18 @@ def onGenerate(ev):
         return
 
     document['invalid-access-code'].style.display = 'none'
-    cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Boost for all cars', 'Turbo boost', 'Unlock toy cars', 'Unlock slot racer',
+    if isPsp:
+        cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Unlock cutscenes', 'Invincible cars']
+    else:
+        cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Boost for all cars', 'Turbo boost', 'Unlock toy cars', 'Unlock slot racer',
             'Invincible cars', 'Unlock cutscenes', '[unused]', 'Unlock Honda 2006', 'Unlock Honda', 'No streamed car sound']
 
     document['outbox-window-full'].style.display = 'block'
     document['output-window'].clear()
 
     noEffectFootnotes = 0
-    hondaOnly = document['checkbox'].checked
-    if not hondaOnly:
+    hondaOnly = document['checkbox'].checked and not isPsp
+    if not hondaOnly and not isPsp:
         cheatCodes[8] += htmlgen.toStr(htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes))
         noEffectFootnotes += 1
         cheatCodes[11] += htmlgen.toStr(htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes))
@@ -43,7 +55,7 @@ def onGenerate(ev):
         for index, cheat in enumerate(cheatCodes):
             if hondaOnly and index != 9 and index != 10:
                 continue
-            cryptedCode = rd3.generateCode(platformData[0] if index != 9 and index != 10 else platformData[1], accessCode, index)
+            cryptedCode = generateFn(platformData[0] if index != 9 and index != 10 else platformData[1], accessCode, index)
             if cryptedCode:
                 yield html.B(cheat + ': ') + html.CODE(cryptedCode)
 
@@ -54,12 +66,20 @@ def onGenerate(ev):
 
     document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 
+def onPlatformChange(ev):
+    platform = document['platform']
+    if platform.options[platform.selectedIndex].value == 'psp':
+        document['checkbox'].attrs['disabled'] = 'disabled'
+    else:
+        del document['checkbox'].attrs['disabled']
+
 document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
 document['access-code'].max = rd3.ACCESS_CODE_MAX
 
 document['platform-select'].style.display = 'inline'
-document['platform'] <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP (CMR2005 Plus)', 'psp'), ('Xbox', 'xbox')])
+document['platform'] <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP (Race Driver 3 Challenge)', 'psp'), ('Xbox', 'xbox')])
+document['platform'].bind('change', onPlatformChange)
 document['additional-checkbox'].style.display = 'inline'
 document['checkbox-label'].text = 'Honda codes only:'
 </script>
