@@ -7,6 +7,10 @@ image: "assets/img/bonuscodes/cmr-2005.jpg"
 order: 21
 ---
 
+{:.disclaimer}
+For the cheats for the Japanese releases, see
+[the publisher's website](https://web.archive.org/web/20070506191815fw_/http://www.interchannel.co.jp/game/codemasters/code.html){:target="_blank"}.
+
 <script type="text/python">
 from browser import document, html, bind
 import htmlgen

@@ -2,12 +2,17 @@
     display: flex;
     align-items: center;
     column-gap: 0.5em;
+    margin: 1em 0;
 
     input, select {
         color: $text-color-light;
         border-radius: 0.3em;
         border-width: 1px;
         padding: 0 0.25em;
+    }
+
+    button {
+        margin: 0;
     }
 
     #invalid-access-code {
