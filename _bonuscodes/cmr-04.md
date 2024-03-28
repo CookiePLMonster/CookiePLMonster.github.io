@@ -7,9 +7,10 @@ order: 2
 ---
 
 <script type="text/python">
-from browser import document, html
+from browser import document, html, bind
 from generators import cmr04
 
+@bind('#generate', 'click')
 def onGenerate(ev):
     try:
         accessCode = int(document['access-code'].value)
@@ -32,7 +33,6 @@ def onGenerate(ev):
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
     document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 
-document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
 document['access-code'].max = cmr04.ACCESS_CODE_MAX
 </script>

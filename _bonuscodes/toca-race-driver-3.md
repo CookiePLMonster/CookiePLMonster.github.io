@@ -8,10 +8,11 @@ order: 22
 ---
 
 <script type="text/python">
-from browser import document, html
+from browser import document, html, bind
 import htmlgen
 from generators import rd2, rd3
 
+@bind('#generate', 'click')
 def onGenerate(ev):
     platform = document['platform']
     platformName = platform.options[platform.selectedIndex].value
@@ -66,6 +67,7 @@ def onGenerate(ev):
 
     document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 
+@bind('#platform', 'change')
 def onPlatformChange(ev):
     platform = document['platform']
     if platform.options[platform.selectedIndex].value == 'psp':
@@ -73,13 +75,12 @@ def onPlatformChange(ev):
     else:
         del document['checkbox'].attrs['disabled']
 
-document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
 document['access-code'].max = rd3.ACCESS_CODE_MAX
 
 document['platform-select'].style.display = 'inline'
 document['platform'] <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP (Race Driver 3 Challenge)', 'psp'), ('Xbox', 'xbox')])
-document['platform'].bind('change', onPlatformChange)
+
 document['additional-checkbox'].style.display = 'inline'
 document['checkbox-label'].text = 'Honda codes only:'
 </script>

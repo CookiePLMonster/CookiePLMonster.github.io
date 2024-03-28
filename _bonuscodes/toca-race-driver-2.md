@@ -8,11 +8,12 @@ order: 21
 ---
 
 <script type="text/python">
-from browser import document, html
+from browser import document, html, bind
 import htmlgen
 from generators import rd2
 from generators.rd2 import ps2
 
+@bind('#generate', 'click')
 def onGenerate(ev):
     platform = document['platform']
     platformName = platform.options[platform.selectedIndex].value
@@ -53,7 +54,6 @@ def onGenerate(ev):
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
     document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 
-document['generate'].bind('click', onGenerate)
 document['access-code'].min = 1
 document['access-code'].max = rd2.ACCESS_CODE_MAX
 
