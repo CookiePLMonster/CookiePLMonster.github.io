@@ -4,5 +4,5 @@ excerpt: "My modifications and patches for Crazy Taxi: SilentPatch, Dreamcast Re
 image: "assets/img/games/crazy-taxi.jpg"
 feature-img: "assets/img/games/bg/crazy-taxi.jpg"
 game-series: "crazy-taxi"
-order: 9
+order: 8
 ---

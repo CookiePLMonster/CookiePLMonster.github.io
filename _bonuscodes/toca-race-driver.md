@@ -3,7 +3,7 @@ layout: bonuscodes
 title: "TOCA Race Driver"
 subtitle: "(Pro Race Driver, DTM Race Driver, V8 Supercars) Bonus Codes"
 excerpt: "Cheat Generator for TOCA Race Driver/Pro Race Driver/DTM Race Driver/V8 Supercars."
-image: "assets/img/bonuscodes/cmr-2005.jpg"
+image: "assets/img/bonuscodes/toca-race-driver.jpg"
 order: 20
 ---
 
@@ -13,6 +13,7 @@ from generators import rd1
 
 @bind('#generate', 'click')
 def onGenerate(ev):
+    plainCheats = rd1.getAlternateCodes()
     try:
         accessCode = int(document['access-code'].value)
         if not (accessCode >= 1 and accessCode <= rd1.ACCESS_CODE_MAX):
@@ -32,6 +33,9 @@ def onGenerate(ev):
         for index, cheat in enumerate(cheatCodes):
             cryptedCode = rd1.generateCode(accessCode, index)
             if cryptedCode:
+                plainCode = plainCheats.get(index)
+                if plainCode:
+                    cryptedCode += '&nbsp;/&nbsp;' + plainCode
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
     document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
 

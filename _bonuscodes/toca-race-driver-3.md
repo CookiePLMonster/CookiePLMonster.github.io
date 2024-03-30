@@ -3,9 +3,13 @@ layout: bonuscodes
 title: "TOCA Race Driver 3"
 subtitle: "(DTM Race Driver 3, V8 Supercars 3, TOCA Race Driver 3 Challenge) Bonus Codes"
 excerpt: "Cheat Generator for TOCA Race Driver 3/DTM Race Driver 3/V8 Supercars 3/TOCA Race Driver 3 Challenge."
-image: "assets/img/bonuscodes/cmr-2005.jpg"
+image: "assets/img/bonuscodes/toca-race-driver-3.jpg"
 order: 22
 ---
+
+{:.disclaimer.info}
+On PC, access code generation is broken and on 64-bit systems it always displays `????`.
+See [Access Code Fix]({% link _games/toca-race-driver/toca-race-driver-3.md %}#access-code-fix){:target="_blank"} for a fix.
 
 <script type="text/python">
 from browser import document, html, bind

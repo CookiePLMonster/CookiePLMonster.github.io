@@ -3,12 +3,16 @@ layout: bonuscodes
 title: "TOCA Race Driver 2"
 subtitle: "(DTM Race Driver 2, V8 Supercars 2, Race Driver 2006) Bonus Codes"
 excerpt: "Cheat Generator for TOCA Race Driver 2/DTM Race Driver 2/V8 Supercars 2/Race Driver 2006."
-image: "assets/img/bonuscodes/cmr-2005.jpg"
+image: "assets/img/bonuscodes/toca-race-driver-2.jpg"
 order: 21
 ---
 
+{:.disclaimer.info}
+On PC, access code generation is broken and on 64-bit systems it always displays an incorrect code `4294967`.
+See [Access Code Fix]({% link _games/toca-race-driver/toca-race-driver-2.md %}#access-code-fix){:target="_blank"} for a fix.
+
 {:.disclaimer}
-For the cheats for the Japanese releases, see
+For the Japanese releases, see
 [the publisher's website](https://web.archive.org/web/20070506191815fw_/http://www.interchannel.co.jp/game/codemasters/code.html){:target="_blank"}.
 
 <script type="text/python">
