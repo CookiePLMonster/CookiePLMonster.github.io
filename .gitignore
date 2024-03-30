@@ -26,3 +26,4 @@ jekyll-theme-type-on-strap.gemspec
 
 scratch/
 .jekyll-metadata
+.vscode
