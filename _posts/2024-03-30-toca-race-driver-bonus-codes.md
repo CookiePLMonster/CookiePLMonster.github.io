@@ -120,7 +120,7 @@ The key used by the game is 8.5 bytes long (the topmost byte only uses 4 bits),
 which technically makes the number RSA-68. This a number so relatively small it has never been even considered
 in the [RSA Factoring Challenge](https://en.wikipedia.org/wiki/RSA_Factoring_Challenge){:target="_blank"},
 and so small that Wolfram Alpha
-[does prime factorization without of that number even without explicitly being asked to](https://www.wolframalpha.com/input?i=26952959852310653999).
+[does prime factorization of that number even without explicitly being asked to](https://www.wolframalpha.com/input?i=26952959852310653999).
 That's how I "cracked" the key; I was curious to see what Wolfram Alpha would tell me about this number,
 but instead, it's done everything for me right off the bat. With primes factorized, recalculating the private key
 is trivial, and I could update my generators to cover TOCA Race Driver 3's algorithm.
