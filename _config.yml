@@ -190,6 +190,10 @@ defaults:
       layout: "portfolio"
       game-series: ""
       excerpt: ""
+  - scope:
+      path: "google*.html"
+    values:
+      sitemap: false
 
 
 # PORTFOLIO
