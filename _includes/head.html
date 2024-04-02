@@ -38,7 +38,6 @@
     {% if layout.brython or page.brython %}
     <script src="https://raw.githack.com/brython-dev/brython/master/www/src/brython.js" crossorigin="anonymous"></script>
     <script src="https://raw.githack.com/brython-dev/brython/master/www/src/brython_stdlib.js" crossorigin="anonymous"></script>
-    <brython-options pythonpath="/assets/brython" cache="true" {% if jekyll.environment == "development" %}debug="1"{% endif %}></brython-options>
     {% endif %}
 
     <!-- Juxtapose -->

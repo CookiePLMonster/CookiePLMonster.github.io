@@ -19,23 +19,21 @@ plausible-tagged-events: true
     </span>
     <span id="additional-checkbox">
         <label id="checkbox-label" for="checkbox">Checkbox:</label>
-        <input type="checkbox" id="checkbox" name="checkbox"></input>
+        <input type="checkbox" id="checkbox" name="checkbox">
     </span>
 </form>
 <button id="generate" class="button plausible-event-name=Generator+Use" type="submit" form="cheat-gen-form">Generate</button>
 <span id="invalid-access-code"><span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> Invalid</span> access code specified!</span>
 </div>
 
-<div class="bonuscodes-output" id="outbox-window-full">
+<div class="bonuscodes-output" id="output-window">
     <div class="border tr"></div>
-    <output for="access-code platform" class="content" id="output-window"></output>
+    <output for="access-code platform checkbox" class="content"></output>
     <div class="border bl"></div>
 </div>
 
-<div class="footnotes" id="output-footnotes-full" role="doc-endnotes">
-<ol>
-<output for="access-code platform" id="output-footnotes"></output>
-</ol>
+<div class="footnotes" id="output-footnotes" role="doc-endnotes">
+<output for="access-code platform checkbox"></output>
 </div>
 
 <template id="footnote-template">

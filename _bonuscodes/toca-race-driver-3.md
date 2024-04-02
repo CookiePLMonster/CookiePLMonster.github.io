@@ -45,15 +45,17 @@ def onGenerate(ev):
         cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Boost for all cars', 'Turbo boost', 'Unlock toy cars', 'Unlock slot racer',
             'Invincible cars', 'Unlock cutscenes', '[unused]', 'Unlock Honda 2006', 'Unlock Honda', 'No streamed car sound']
 
-    document['outbox-window-full'].style.display = 'block'
-    document['output-window'].clear()
+    outputBlock = document['output-window']
+    outputs = outputBlock.select_one('output')
+    outputBlock.style.display = 'block'
+    outputs.clear()
 
     noEffectFootnotes = 0
     hondaOnly = document['checkbox'].checked and not isPsp
     if not hondaOnly and not isPsp:
-        cheatCodes[8] += htmlgen.toStr(htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes))
+        cheatCodes[8] += htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes)
         noEffectFootnotes += 1
-        cheatCodes[11] += htmlgen.toStr(htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes))
+        cheatCodes[11] += htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes)
         noEffectFootnotes += 1
 
     def gen():
@@ -64,12 +66,14 @@ def onGenerate(ev):
             if cryptedCode:
                 yield html.B(cheat + ': ') + html.CODE(cryptedCode)
 
-    document['output-footnotes-full'].style.display = 'block'
-    document['output-footnotes'].clear()
+    outputFootnotesBlock = document['output-footnotes']
+    outputFootnotes = outputFootnotesBlock.select_one('output')
+    outputFootnotesBlock.style.display = 'block'
+    outputFootnotes.clear()
     if noEffectFootnotes > 0:
-        document['output-footnotes'] <= htmlgen.newElement(document['footnote-template'], id='no-effect', num=noEffectFootnotes, note='No effect.')
+        outputFootnotes <= html.OL(htmlgen.newElement(document['footnote-template'], id='no-effect', num=noEffectFootnotes, note='No effect.'))
 
-    document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
+    outputs <= html.UL(html.LI(ch) for ch in gen())
 
 @bind('#platform', 'change')
 def onPlatformChange(ev):

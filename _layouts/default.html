@@ -2,6 +2,7 @@
 <html lang="{{ page.lang }}">
   {% include head.html %}
   <body>
+    {% if layout.brython or page.brython %}<brython-options pythonpath="/assets/brython" cache="true" {% if jekyll.environment == "development" %}debug="1"{% endif %}></brython-options>{% endif %}
     {% include navbar.html %}
     <div class="content">
       {{ content }}

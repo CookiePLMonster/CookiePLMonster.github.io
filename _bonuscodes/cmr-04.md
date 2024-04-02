@@ -23,15 +23,17 @@ def onGenerate(ev):
     document['invalid-access-code'].style.display = 'none'
     cheatCodes = ['GroupB with 2 cars', 'All Cars', 'All Tracks', 'Expert Mode', 'Auto - Upgrades', 'All Tests', 'Mirror Mode']
 
-    document['outbox-window-full'].style.display = 'block'
-    document['output-window'].clear()
+    outputBlock = document['output-window']
+    outputs = outputBlock.select_one('output')
+    outputBlock.style.display = 'block'
+    outputs.clear()
 
     def gen():
         for index, cheat in enumerate(cheatCodes):
             cryptedCode = cmr04.generateCode(accessCode, index)
             if cryptedCode:
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
-    document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
+    outputs <= html.UL(html.LI(ch) for ch in gen())
 
 document['access-code'].min = 1
 document['access-code'].max = cmr04.ACCESS_CODE_MAX

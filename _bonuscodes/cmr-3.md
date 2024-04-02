@@ -24,15 +24,17 @@ def onGenerate(ev):
     cheatCodes = ['Buggy', 'Plane', 'Hovercraft', 'Battle Tank', 'RC Car', 'All Cars', 'All Tracks', 'All Parts',
                     'All Difficulties', 'Ford Super Focus']
 
-    document['outbox-window-full'].style.display = 'block'
-    document['output-window'].clear()
+    outputBlock = document['output-window']
+    outputs = outputBlock.select_one('output')
+    outputBlock.style.display = 'block'
+    outputs.clear()
 
     def gen():
         for index, cheat in enumerate(cheatCodes):
             cryptedCode = cmr3.generateCode(accessCode, index)
             if cryptedCode:
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
-    document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
+    outputs <= html.UL(html.LI(ch) for ch in gen())
 
 document['access-code'].min = 1
 document['access-code'].max = cmr3.ACCESS_CODE_MAX

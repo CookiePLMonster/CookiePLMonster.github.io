@@ -26,8 +26,10 @@ def onGenerate(ev):
     cheatCodes = ['All cars', 'All tracks', 'Realistic handling', 'Realistic damage', 'All championships', 'All Pro Challenges',
                     'Different handling', 'Invincible cars', 'Unlock credits']
 
-    document['outbox-window-full'].style.display = 'block'
-    document['output-window'].clear()
+    outputBlock = document['output-window']
+    outputs = outputBlock.select_one('output')
+    outputBlock.style.display = 'block'
+    outputs.clear()
 
     def gen():
         for index, cheat in enumerate(cheatCodes):
@@ -37,7 +39,7 @@ def onGenerate(ev):
                 if plainCode:
                     cryptedCode += '&nbsp;/&nbsp;' + plainCode
                 yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
-    document['output-window'] <= html.UL(html.LI(ch) for ch in gen())
+    outputs <= html.UL(html.LI(ch) for ch in gen())
 
 document['access-code'].min = 1
 document['access-code'].max = rd1.ACCESS_CODE_MAX

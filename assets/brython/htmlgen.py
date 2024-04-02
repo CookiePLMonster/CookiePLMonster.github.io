@@ -9,11 +9,4 @@ def newElement(template, *args, **kwargs):
     elem = html.DIV(h4ck)
     Template(h4ck).render(*args, **kwargs)
 
-    return elem.child_nodes
-
-def toStr(elems):
-    result = ''
-    for e in elems:
-        if e.html is not None:
-            result += e.html
-    return result
+    return elem.children[0].child_nodes[0]
