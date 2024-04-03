@@ -1,7 +1,7 @@
 ---
 title: "Access Code Fix"
 game-series: ['toca-race-driver-2', 'toca-race-driver-3']
-date: 29-03-2024
+date: 03-04-2024
 ---
 
 This plugin fixes a bug in TOCA Race Driver 2 and 3 where the access code wasn't generated correctly on 64-bit systems
