@@ -2,6 +2,10 @@
     width: 100%;
     display: inline-block;
     @extend %padding-nav;
+
+    > div {
+      width: 50%;
+    }
   
     a {
       width: 100%;
@@ -9,19 +13,14 @@
       margin: 0;
     }
   
-    p {
-      @extend .meta;
-    }
-  
     #previous-post {
       float: left;
-      width: 50%;
+      text-align: left;
     }
   
     #next-post {
       float: right;
       text-align: right;
-      width: 50%;
     }
   
     @media screen and (max-width: $sm-break) {
