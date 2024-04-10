@@ -191,6 +191,13 @@ defaults:
       game-series: ""
       excerpt: ""
   - scope:
+      path: ""
+      type: "posts"
+    values:
+      author:
+        name: Silent
+        twitter: __silent_
+  - scope:
       path: "google*.html"
     values:
       sitemap: false
