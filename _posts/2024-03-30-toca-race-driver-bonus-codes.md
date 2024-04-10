@@ -8,7 +8,7 @@ image: "assets/img/bonuscodes/bonuscodes-banner.png"
 game-series: ["toca-race-driver", "toca-race-driver-2", "toca-race-driver-3"]
 date: 2024-03-30 15:30:00 +0100
 twitter: {card: "summary_large_image"}
-tags: Releases
+tags: [Research, Releases]
 mathjax: true
 ---
 
