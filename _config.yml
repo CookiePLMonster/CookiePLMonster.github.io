@@ -76,11 +76,11 @@ theme_settings:
   katex:
 
   special_page:
-    search:
+    /search/:
       icon: "search" # Assuming page link and icon are the same
       title: "Search"
       enabled: true
-    categories:
+    /categories/:
       icon: "tags"
       title: "Categories"
       enabled: true
@@ -129,7 +129,7 @@ theme_settings:
 
 # PAGINATION
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "blog/page:num/"
 
 feed:
   tags: true
