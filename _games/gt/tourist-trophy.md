@@ -5,5 +5,5 @@ image: "assets/img/games/tourist-trophy.jpg"
 feature-img: "assets/img/games/bg/tourist-trophy.jpg"
 parent-series: "console-ps2"
 game-series: "tourist-trophy"
-order: 18
+order: 25
 ---
