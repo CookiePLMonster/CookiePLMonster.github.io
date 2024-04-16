@@ -12,33 +12,28 @@ On PC, access code generation is broken and on 64-bit systems it always displays
 See [Access Code Fix]({% link _games/toca-race-driver/toca-race-driver-3.md %}#access-code-fix){:target="_blank"} for a fix.
 
 <script type="text/python">
-from browser import document, html, bind
+from browser import ajax, bind, document, html
 import htmlgen
 from generators import rd2, rd3
 
-@bind('#generate', 'click')
+HONDA_ONLY_OPTION = 'honda-only'
+
+@bind('#cheat-gen-form', 'submit')
 def onGenerate(ev):
-    platform = document['platform']
-    platformName = platform.options[platform.selectedIndex].value
-    isPsp = platformName == 'psp'
+    data = ajax.form_data(ev.target)
+
+    accessCode = int(data.get('access-code'))
+    platform = data.get('platform')
+    isPsp = platform == 'psp'
     if isPsp:
         # TOCA Race Driver 3 Challenge uses RD2's PSP algorithm, but with shifted cheat IDs
         generateFn = lambda platformData, accessCode, cheatID: rd2.generateCode(platformData, accessCode, cheatID + 9)
-        platformData = rd2.getPlatformData(platformName)
+        platformData = rd2.getPlatformData(platform)
         platformData = (platformData, platformData)
     else:
         generateFn = rd3.generateCode
-        platformData = rd3.getPlatformData(platformName)
+        platformData = rd3.getPlatformData(platform)
 
-    try:
-        accessCode = int(document['access-code'].value)
-        if not (accessCode >= 1 and accessCode <= rd3.ACCESS_CODE_MAX):
-            raise ValueError
-    except (TypeError, ValueError):
-        document['invalid-access-code'].style.display = 'inline'
-        return
-
-    document['invalid-access-code'].style.display = 'none'
     if isPsp:
         cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Unlock cutscenes', 'Invincible cars']
     else:
@@ -51,7 +46,7 @@ def onGenerate(ev):
     outputs.clear()
 
     noEffectFootnotes = 0
-    hondaOnly = document['checkbox'].checked and not isPsp
+    hondaOnly = HONDA_ONLY_OPTION in data.getAll('options')
     if not hondaOnly and not isPsp:
         cheatCodes[8] += htmlgen.newElement(document['footnote-sup'], id='no-effect', notenum=1, num=noEffectFootnotes)
         noEffectFootnotes += 1
@@ -75,20 +70,21 @@ def onGenerate(ev):
 
     outputs <= html.UL(html.LI(ch) for ch in gen())
 
+hondaOnlyCheckbox = document['additional-option1']
+
 @bind('#platform', 'change')
 def onPlatformChange(ev):
     platform = document['platform']
-    if platform.options[platform.selectedIndex].value == 'psp':
-        document['checkbox'].attrs['disabled'] = 'disabled'
-    else:
-        del document['checkbox'].attrs['disabled']
+    hondaOnlyCheckbox.select_one('input').disabled = platform.options[platform.selectedIndex].value == 'psp'
 
 document['access-code'].min = 1
 document['access-code'].max = rd3.ACCESS_CODE_MAX
 
-document['platform-select'].style.display = 'inline'
-document['platform'] <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP (Race Driver 3 Challenge)', 'psp'), ('Xbox', 'xbox')])
+platformSelect = document['platform-select']
+platformSelect.style.display = 'inline'
+platformSelect.select_one('select') <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP (Race Driver 3 Challenge)', 'psp'), ('Xbox', 'xbox')])
 
-document['additional-checkbox'].style.display = 'inline'
-document['checkbox-label'].text = 'Honda codes only:'
+hondaOnlyCheckbox.style.display = 'inline'
+hondaOnlyCheckbox.select_one('label').text = 'Honda codes only:'
+hondaOnlyCheckbox.select_one('input').value = HONDA_ONLY_OPTION
 </script>

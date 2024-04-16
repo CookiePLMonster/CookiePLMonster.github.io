@@ -16,34 +16,27 @@ For the Japanese releases, see
 [the publisher's website](https://web.archive.org/web/20070506191815fw_/http://www.interchannel.co.jp/game/codemasters/code.html){:target="_blank"}.
 
 <script type="text/python">
-from browser import document, html, bind
+from browser import ajax, bind, document, html
 import htmlgen
 from generators import rd2
 from generators.rd2 import ps2
 
-@bind('#generate', 'click')
+@bind('#cheat-gen-form', 'submit')
 def onGenerate(ev):
-    platform = document['platform']
-    platformName = platform.options[platform.selectedIndex].value
-    if ps2.supportsPlatform(platformName):
+    data = ajax.form_data(ev.target)
+
+    accessCode = int(data.get('access-code'))
+    platform = data.get('platform')
+    if ps2.supportsPlatform(platform):
         generateFn = ps2.generateCode
         platformData = None
     else:
         generateFn = rd2.generateCode
-        platformData = rd2.getPlatformData(platformName)
-
-    try:
-        accessCode = int(document['access-code'].value)
-        if not (accessCode >= 1 and accessCode <= rd2.ACCESS_CODE_MAX):
-            raise ValueError
-    except (TypeError, ValueError):
-        document['invalid-access-code'].style.display = 'inline'
-        return
+        platformData = rd2.getPlatformData(platform)
 
     numFootnotes = 0
-    document['invalid-access-code'].style.display = 'none'
     cheatCodes = ['Unlock championships', 'Unlock bonus championships', 'Double engine power', 'Swap FWD to RWD and vice versa', 'Invincible cars', 'Unlock cutscenes']
-    if platformName == 'psp':
+    if platform == 'psp':
         cheatCodes.append('Unlock all Trans World Cup events' + htmlgen.newElement(document['footnote-sup'], id='rd2006-only', notenum=1, num=0))
         numFootnotes += 1
 
@@ -69,6 +62,7 @@ def onGenerate(ev):
 document['access-code'].min = 1
 document['access-code'].max = rd2.ACCESS_CODE_MAX
 
-document['platform-select'].style.display = 'inline'
-document['platform'] <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP', 'psp'), ('Xbox', 'xbox')])
+platformSelect = document['platform-select']
+platformSelect.style.display = 'inline'
+platformSelect.select_one('select') <= (html.OPTION(n, value=i) for n, i in [('PC', 'pc'), ('PS2', 'ps2'), ('PSP', 'psp'), ('Xbox', 'xbox')])
 </script>

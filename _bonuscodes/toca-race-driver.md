@@ -8,21 +8,15 @@ order: 20
 ---
 
 <script type="text/python">
-from browser import document, html, bind
+from browser import ajax, bind, document, html
 from generators import rd1
 
-@bind('#generate', 'click')
+@bind('#cheat-gen-form', 'submit')
 def onGenerate(ev):
-    plainCheats = rd1.getAlternateCodes()
-    try:
-        accessCode = int(document['access-code'].value)
-        if not (accessCode >= 1 and accessCode <= rd1.ACCESS_CODE_MAX):
-            raise ValueError
-    except (TypeError, ValueError):
-        document['invalid-access-code'].style.display = 'inline'
-        return
+    data = ajax.form_data(ev.target)
 
-    document['invalid-access-code'].style.display = 'none'
+    accessCode = int(data.get('access-code'))
+    plainCheats = rd1.getAlternateCodes()
     cheatCodes = ['All cars', 'All tracks', 'Realistic handling', 'Realistic damage', 'All championships', 'All Pro Challenges',
                     'Different handling', 'Invincible cars', 'Unlock credits']
 

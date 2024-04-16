@@ -7,20 +7,14 @@ order: 2
 ---
 
 <script type="text/python">
-from browser import document, html, bind
+from browser import ajax, bind, document, html
 from generators import cmr04
 
-@bind('#generate', 'click')
+@bind('#cheat-gen-form', 'submit')
 def onGenerate(ev):
-    try:
-        accessCode = int(document['access-code'].value)
-        if not (accessCode >= 1 and accessCode <= cmr04.ACCESS_CODE_MAX):
-            raise ValueError
-    except (TypeError, ValueError):
-        document['invalid-access-code'].style.display = 'inline'
-        return
-
-    document['invalid-access-code'].style.display = 'none'
+    data = ajax.form_data(ev.target)
+    
+    accessCode = int(data.get('access-code'))
     cheatCodes = ['GroupB with 2 cars', 'All Cars', 'All Tracks', 'Expert Mode', 'Auto - Upgrades', 'All Tests', 'Mirror Mode']
 
     outputBlock = document['output-window']

@@ -10,30 +10,29 @@ plausible-tagged-events: true
 {{ content }}
 
 <div class="bonuscodes-input">
-<form id="cheat-gen-form" method="dialog">
+<form id="cheat-gen-form" method="dialog" class="plausible-event-name=Generator+Use">
     <label for="access-code">Your access code:</label>
-    <input type="number" id="access-code" name="access-code">
+    <input type="number" id="access-code" name="access-code" required>
     <span id="platform-select">
         <label for="platform">Platform:</label>
         <select id="platform" name="platform"></select>
     </span>
-    <span id="additional-checkbox">
-        <label id="checkbox-label" for="checkbox">Checkbox:</label>
-        <input type="checkbox" id="checkbox" name="checkbox">
+    <span id="additional-option1">
+        <label id="checkbox-label" for="option1">Checkbox:</label>
+        <input type="checkbox" id="option1" name="options">
     </span>
 </form>
-<button id="generate" class="button plausible-event-name=Generator+Use" type="submit" form="cheat-gen-form">Generate</button>
-<span id="invalid-access-code"><span style="white-space:nowrap"><i class="fas fa-exclamation-triangle" style="color:DarkOrange"></i> Invalid</span> access code specified!</span>
+<button class="button" type="submit" form="cheat-gen-form">Generate</button>
 </div>
 
 <div class="bonuscodes-output" id="output-window">
     <div class="border tr"></div>
-    <output for="access-code platform checkbox" class="content"></output>
+    <output for="access-code platform option1" class="content"></output>
     <div class="border bl"></div>
 </div>
 
 <div class="footnotes" id="output-footnotes" role="doc-endnotes">
-<output for="access-code platform checkbox"></output>
+<output for="access-code platform option1"></output>
 </div>
 
 <template id="footnote-template">
