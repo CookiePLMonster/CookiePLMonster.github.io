@@ -63,18 +63,6 @@
     </script>
     {% endif %}
 
-    <!-- Google Analytics -->
-    {% if site.theme_settings.google_analytics and jekyll.environment != "development" %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.theme_settings.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.theme_settings.google_analytics }}', { 'anonymize_ip': true });
-    </script>
-    {% endif %}
-
     <!-- Plausible Analytics -->
     {% if site.theme_settings.plausible_analytics and jekyll.environment != "development" %}
     {% if layout.plausible-file-downloads or page.plausible-file-downloads %}
