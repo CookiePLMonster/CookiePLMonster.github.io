@@ -16,7 +16,6 @@ layout: default
 	{% if page.custom-date %}{{ page.custom_date }}
 	{% else %}{{ page.date | date: page.date-format }}{% endif %}
       {% if page.last_modified_at %}(edited {{ page.last_modified_at | date: page.date-format }}){% endif %}
-      {% if page.author %} - {{ page.author }}{% endif %}
       </p>
       <p class="meta">
         {% include ert.html content=content %} min. to read

@@ -6,7 +6,6 @@ layout: default
     <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
     <p class="meta">
     {{ page.date | date: "%B %-d, %Y" }}
-    {% if page.author %} - {{ page.author }}{% endif %}
     </p>
   </header>
   <section class="post-content">
