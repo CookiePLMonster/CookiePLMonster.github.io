@@ -6,12 +6,9 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
-const shell = require('gulp-shell');
-const less = require('gulp-less');
-const cssmin = require('gulp-clean-css')
-const replace = require('gulp-replace');
+const cleanCSS = require('gulp-clean-css');
 
-gulp.task('js', function minijs() {
+gulp.task('js', function() {
     return gulp.src(['js/partials/**.js'])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
@@ -21,7 +18,7 @@ gulp.task('js', function minijs() {
         .pipe(gulp.dest("js/"))
 });
 
-gulp.task("img", function imging() {
+gulp.task("img", function() {
     return gulp.src('img/**/*.{png,svg,jpg,gif}')
         .pipe(imagemin())
         .on('error', (err) => {
@@ -30,13 +27,14 @@ gulp.task("img", function imging() {
         .pipe(gulp.dest('img/'))
 });
 
-gulp.task("serve", function serving(done) {
-    console.log('... not working at the moment try \ncd .. && bundle exec jekyll serve --watch\n',
-                'then go to \nhttp://localhost:4000/Type-on-Strap/');
-    shell.task([
-        "python -m webbrowser 'http://localhost:4000/Type-on-Strap/'; cd .. && bundle exec jekyll serve --watch"
-    ]);
-    done();
-});
+gulp.task('css', function() {
+    return gulp.src('css/vendor/juxtapose.css')
+      .pipe(cleanCSS())
+      .on('error', (err) => {
+        console.log(err.toString())
+      })
+      .pipe(concat('juxtapose.min.css'))
+      .pipe(gulp.dest('css/vendor/'));
+  });
 
 gulp.task("default", gulp.series(gulp.parallel('js', 'css', 'img')));

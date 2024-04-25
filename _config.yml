@@ -72,7 +72,6 @@ theme_settings:
   # Scripts / Features
   plausible_analytics: cookieplmonster.github.io
   disqus_shortname: cookieplmonster-github-io
-  katex:
 
   special_page:
     /search/:
