@@ -5,6 +5,9 @@ order: 0
 date: 09-10-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v1.7.5746.
+
 NASCAR Heat 2002, the first PS2 game from Monster Games, shipped with 4 control schemes to choose from.
 One of those control schemes was called "Shoulders", and mapped throttle/brake to R2/L2.
 This translates really well to modern gamepads, allowing the player to use triggers for precise throttle control.
