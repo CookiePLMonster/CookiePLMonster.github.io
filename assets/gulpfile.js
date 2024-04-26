@@ -4,19 +4,35 @@
  */
 const gulp = require('gulp');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-terser');
 const cleanCSS = require('gulp-clean-css');
 
-gulp.task('js', function() {
-    return gulp.src(['js/partials/**.js'])
+gulp.task('js', gulp.parallel(function() {
+    return gulp.src(['js/partials/main/**.js'])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .on('error', (err) => {
             console.log(err.toString());
         })
         .pipe(gulp.dest("js/"))
-});
+    }, function() {
+        return gulp.src(['js/partials/disqus/**.js'])
+            .pipe(concat('disqus.min.js'))
+            .pipe(uglify())
+            .on('error', (err) => {
+                console.log(err.toString());
+            })
+            .pipe(gulp.dest("js/"))
+    }, function() {
+        return gulp.src(['js/vendor/juxtapose.min.js'])
+        .pipe(concat('juxtapose.min.js'))
+        .pipe(uglify())
+        .on('error', (err) => {
+            console.log(err.toString());
+        })
+        .pipe(gulp.dest("js/"))
+    })
+);
 
 gulp.task("img", function() {
     return gulp.src('img/**/*.{png,svg,jpg,gif}')

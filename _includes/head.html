@@ -34,13 +34,14 @@
 	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/icomoon/style.css" | relative_url }}">
 
     {%- if layout.brython or page.brython %}
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.12.5/brython.min.js" integrity="sha512-pIOxl5S363+2G1loPRafWsA/0aes0xjwusOexVpl2gEAvX/K6SLzsOZiZhU2M0hjJxD7eMxOfISIgToD1yK8/g==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.12.5/brython_stdlib.js" integrity="sha512-KjAOqGpyHdAFbpM4rEGF7OxfvPQainrRahBqkAp0xBUuUHLDo2OgPn6nzVCXybReeA+gywNOo/6jbinJP7zB0w==" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/brython@3.12.5/brython.min.js" integrity="sha512-pIOxl5S363+2G1loPRafWsA/0aes0xjwusOexVpl2gEAvX/K6SLzsOZiZhU2M0hjJxD7eMxOfISIgToD1yK8/g==" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/brython@3.12.5/brython_stdlib.js" integrity="sha512-KjAOqGpyHdAFbpM4rEGF7OxfvPQainrRahBqkAp0xBUuUHLDo2OgPn6nzVCXybReeA+gywNOo/6jbinJP7zB0w==" crossorigin="anonymous"></script>
     {%- endif %}
 
     <!-- Juxtapose -->
     {% if layout.juxtapose or page.juxtapose %}
     <link rel="stylesheet" href="{% link assets/css/vendor/juxtapose.min.css %}">
+    <script defer src="{% link assets/js/juxtapose.min.js %}"></script>
     {% endif %}
 
     <!-- MathJax -->

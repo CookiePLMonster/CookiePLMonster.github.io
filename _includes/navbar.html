@@ -76,30 +76,5 @@
             </button>
         </li>
     </ul>
-
     </nav>
-
-    <!-- Dark mode script -->
-    <script>
-    function changeIconTitle(isDark) {
-        let elem = document.getElementById("theme-toggle");
-        if (isDark) {
-            elem.title = "Toggle Light Mode";
-        } else {
-            elem.title = "Toggle Dark Mode";
-        }
-    }
-
-    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
-    let theme = sessionStorage.getItem('theme');
-    if (theme === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        changeIconTitle(true);
-    } else if (theme === "light") {
-        document.documentElement.setAttribute('data-theme', 'light');
-        changeIconTitle(false);
-    } else {
-        changeIconTitle(systemInitiatedDark.matches);
-    }
-    </script>
 </header>
