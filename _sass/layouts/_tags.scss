@@ -34,9 +34,6 @@ ul.tag-posts {
     @extend %no-bullets;
     font-size: 0.9em;
     font-weight: bold;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: $padding-x-small/2;
     li {
         font-size: 100%;
         @media screen and (min-width: $break) {

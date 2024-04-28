@@ -46,24 +46,14 @@
     @media only screen and (min-width: $m-break) {
         display: flex;
         flex-direction: row-reverse;
-    }
-
-    main {
-        padding-right: 1em;
-
-        blockquote {
-            margin: 1em 0;
-        }
+        column-gap: 1em;
     }
 
     aside {
+        @extend %quote-block;
         min-width: 18.5%;
         height: fit-content;
         text-align: right;
-        border-left: 2px solid var(--blockquote-border-color);
-        padding: 0.75em 1em;
-        background-color: var(--blockquote-color);
-        box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
         margin-bottom: 1em;
 
         @media screen and (max-width: $m-break) {
@@ -71,15 +61,23 @@
             text-align: center;
             column-count: 2;
         }
+
+        dd,
+        dl {
+            margin: 0;
+        }
+
+        div {
+            break-inside: avoid-column;
+            margin-bottom: 1em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
-    dd,
-    dl {
-        margin: 0;
-    }
-
-    .term-group {
-        break-inside: avoid-column;
-        margin-bottom: 1em;
+    blockquote {
+        margin: 1em 0;
     }
 }

@@ -6,9 +6,8 @@ h1.title {
     @extend %header-txt-shadow;
 }
 
-.subtitle {
+h2.subtitle {
     font-weight: normal;
-    margin-top: 5px;
     @extend %header-txt-shadow;
 }
 

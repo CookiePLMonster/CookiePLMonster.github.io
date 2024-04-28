@@ -1,52 +1,26 @@
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post-teaser">
-    <header>
-      <h1>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {% if post.thumbnail %}
-          <div class="post-img">
-            <img src="{{ post.thumbnail | relative_url }}" alt="">
-          </div>
-          {% endif %}
-          {{ post.title | smartify }}
-        </a>
-      </h1>
-      <p class="meta">
-        {{ post.date | date: "%B %-d, %Y" }}
-        {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
-      </p>
-      <p class="meta">
-        {% include ert.html content=post.content %} min. to read
-      </p>
-    </header>
+  <section>
+    <h2 class="heading-big">
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {% if post.thumbnail %}
+        <span class="post-img">
+          <img src="{{ post.thumbnail | relative_url }}" alt="">
+        </span>
+        {% endif %}
+        {{ post.title | smartify }}
+      </a>
+    </h2>
+    <p class="meta">
+      {{ post.date | date: "%B %-d, %Y" }}
+      {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
+    </p>
+    <p class="meta">
+      {% include ert.html content=post.content %} min. to read
+    </p>
     <div class="excerpt">
         {{ post.excerpt | strip_html | escape }}
     </div>
-  </div>
+  </section>
   {% endfor %}
 </div>
-
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-    <span class="nav-left" style="{% unless paginator.previous_page %}visibility:hidden{% endunless %}">
-      <a href="{{ '/' | relative_url }}" style="{% unless paginator.previous_page != 1 %}visibility:hidden{% endunless %}" class="button" aria-label="Go to first page">
-        <i class="fas fa-angle-double-left"></i>
-      </a>
-      <a href="{{ paginator.previous_page_path | relative_url | default: '#' }}" class="button" aria-label="Go to previous page">
-        <i class="fas fa-angle-left"></i>
-        {{ site.theme_settings.str_previous_page }}
-      </a>
-    </span>
-    {{ paginator.page }} / {{ paginator.total_pages }}
-    <span class="nav-right" style="{% unless paginator.next_page %}visibility:hidden{% endunless %}">
-      <a href="{{ paginator.next_page_path | relative_url | default: '#' }}" class="button" aria-label="Go to next page">
-        {{ site.theme_settings.str_next_page }}
-        <i class="fas fa-angle-right"></i>
-      </a>
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages | default: '#' }}" style="{% unless paginator.next_page != paginator.total_pages %}visibility:hidden{% endunless %}" class="button" aria-label="Go to last page">
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </span>
-</div>
-{% endif %}

@@ -38,7 +38,7 @@
           {% if item[1].enabled %}
             <li class="separator"> | </li>
             <li>
-                <a class="clear" href="{{ item[0] | relative_url }}" title="{{item[1].title }}">
+                <a class="clear" href="{{ item[0] | relative_url }}" title="{{ item[1].title }}">
                     <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
                 </a>
             </li>

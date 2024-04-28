@@ -40,7 +40,7 @@ h6 {
     }
 }
 
-h1 {
+h1, .heading-big {
     font-size: 2.3em;
 }
 
@@ -71,11 +71,8 @@ q {
 }
 
 blockquote {
-    border-left: 2px solid var(--blockquote-border-color);
+    @extend %quote-block;
     margin: 1em 1em;
-    padding: 0.75em 1em;
-    background-color: var(--blockquote-color);
-    box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
 }
 
 blockquote p:last-child,
@@ -219,7 +216,7 @@ summary {
 /* ---- Responsive ---- */
 
 @media screen and (max-width: $break) {
-    h1 {
+    h1, .heading-big {
         font-size: 2em;
     }
 
@@ -266,7 +263,7 @@ summary {
 }
 
 @media screen and (max-width: $sm-break) {
-    h1 {
+    h1, .heading-big {
         font-size: 1.5em;
     }
 

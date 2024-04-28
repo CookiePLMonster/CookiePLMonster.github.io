@@ -16,7 +16,7 @@ theme_settings:
   extra_navbar_socials: false
 
   # Header and footer text
-  header_text: Personal, modding and reverse engineering related content.<br>Blog may or may not feature cookies.
+  header_text: Personal, modding and reverse engineering related content.
   header_feature_image: assets/img/site-header.jpg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>

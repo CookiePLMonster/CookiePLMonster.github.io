@@ -2,8 +2,6 @@
 layout: page
 ---
 
-<div class="home">
-
 <!-- cycles through posts to get tags -->
 {% assign rawtags = "" %}
 {% for post in site.posts %}
@@ -32,8 +30,8 @@ layout: page
 {% include tags_list.html tags=rawtags %}
 
     <!-- Displays the posts and pages that contains the tag-->
-    <div class="posts">
-        {% for tag in tags %}
+    {% for tag in tags %}
+    <section>    
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw"></i> {{ tag }}</a>
             <a href="/feed/by_tag/{{ tag | cgi_escape }}.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"> </i> </a>
@@ -97,7 +95,5 @@ layout: page
             {% endfor %}
 
         </ul>
-        {% endfor %}
-
-    </div>
-</div>
+    </section>
+    {% endfor %}

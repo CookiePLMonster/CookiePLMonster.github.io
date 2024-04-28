@@ -1,6 +1,6 @@
 {% if include.entry %}
 {% assign entries = include.entry | split: "#" %}
-<div class="term-group">
+<div>
 <dt class="{{ include.style }}">{{ include.name }}{% if include.plural and entries.size > 1 %}s{% endif %}:</dt>
 {% for entry in entries %}{% if entry.size > 0 %}<dd markdown="span">{{ entry }}</dd>{% endif %}{% endfor %}
 </div>

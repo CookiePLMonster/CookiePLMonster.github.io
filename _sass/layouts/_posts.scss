@@ -1,17 +1,13 @@
-article,
+.comments,
+.page-body { 
+    border-bottom: 1px solid var(--line-color);
+}
+
 .comments {
     @extend %padding-post;
-    border-bottom: 1px solid var(--line-color);
-    float: left;
-    width: 100%;
 }
 
 article {
-    header {
-        margin-bottom: 6%;
-        text-align: center;
-    }
-
     a {
         @extend %body-link;
     }
@@ -40,8 +36,8 @@ footer {
     }
 }
 
-header {
-    h1 {
+header, .posts {
+    h1, h2 {
         margin: 0;
     }
 }
@@ -57,18 +53,16 @@ header {
 
 
 /* --- Feature image --- */
-.feature-image {
-    padding: 0;
-
-    .post-link {
-        color: $feature-image-text-color;
-    }
-
+.page-body {
     header {
         color: $feature-image-text-color;
-        background-size: $feature-image-size;
         margin-bottom: 0;
         padding: $padding-large/2.5 $padding-large;
+        text-align: center;
+
+        @media screen and (max-width: $break) {
+            padding: $padding-large*1.5 $padding-small;
+        }
 
         .meta {
             @extend %header-txt-shadow;
@@ -84,13 +78,6 @@ header {
     footer {
         @extend %padding-post;
         padding-top: 0;
-    }
-}
-
-// Responsive scrolling
-.feature-image header {
-    @media screen and (max-width: $break) {
-        padding: $padding-large*1.5 $padding-small;
     }
 }
 

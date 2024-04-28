@@ -39,18 +39,6 @@
     }
 }
 
-%padding-header {
-    padding: $padding-medium $padding-large;
-
-    @media (min-width: $xl-break) {
-        padding: $padding-large $padding-large;
-    }
-
-    @media (max-width: $sm-break) {
-        padding: $padding-large;
-    }
-}
-
 %header-txt-shadow {
     text-shadow: 2px 2px 3px $text-shadow,
         -2px 2px 3px $text-shadow,
@@ -270,6 +258,13 @@ a.round-button {
     }
 }
 
+%quote-block {
+    border-left: 2px solid var(--blockquote-border-color);
+    padding: 0.75em 1em;
+    background-color: var(--blockquote-color);
+    box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
+}
+
 .post-link {
     &:hover {
         text-decoration: none;
@@ -279,7 +274,7 @@ a.round-button {
 
 %no-bullets {
     list-style-type: none;
-    margin: 0;
+    margin-left: 0;
     line-height: normal;
 }
 

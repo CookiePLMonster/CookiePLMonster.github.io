@@ -48,7 +48,6 @@ $navbar-separator-opacity: 0;
 
 // Feature image for articles
 $feature-image-text-color: #FFF;
-$feature-image-size: cover; // options include "cover", "contain", "auto"
 // Header description box
 $header-desc-background-color: $theme-color;
 $header-desc-text-color-light: #FFF;
@@ -99,7 +98,6 @@ $text-color: var(--text-color);
     --background-color: #{$background-color-light};
     --text-color: #{$text-color-light};
     --header-link-color: #{$header-link-color-light};
-    --header-desc-text-color: #{$header-desc-text-color-light};
     --blockquote-color: #{$blockquote-color-light};
 
     --github-link-color: #{darken($github-color, 10%)};
@@ -132,7 +130,6 @@ $text-color: var(--text-color);
     --background-color: #{$background-color-dark};
     --text-color: #{$text-color-dark};
     --header-link-color: #{$header-link-color-dark};
-    --header-desc-text-color: #{$header-desc-text-color-dark};
     --blockquote-color: #{$blockquote-color-dark};
 
     --important-link-color: #{$important-color-dark};
