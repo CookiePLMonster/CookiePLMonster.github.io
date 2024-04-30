@@ -138,7 +138,7 @@ $text-color: var(--text-color);
     --forums-link-color: #{$text-color-dark};
     --forums-link-hover-color: #{darken($text-color-dark, 15%)};
 
-    --footer-text-color: #{lighten($text-color-dark, 30%)};
+    --footer-text-color: #{$text-color-dark};
     --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};
 
     --highlighter-rouge-color: rgb(219, 214, 209);
@@ -148,10 +148,6 @@ $text-color: var(--text-color);
 
     --gog-link-color: #c900ea;
     --steam-link-color: #0179ad;
-
-    .fa-inverse {
-        color: $background-color-dark !important;
-     }
 
      .theme-icon:before {
         content: "\f185";
@@ -168,10 +164,13 @@ html[data-theme="dark"] {
 
 html {
     @extend html, [data-theme="light"];
-}
 
-@media (prefers-color-scheme: dark) {
-    html {
+    @media (prefers-color-scheme: dark) {
         @include dark-theme;
+    }
+
+    // Work around FontAwesome 5 not having a --fa-inverse variable
+    .fa-inverse {
+        color: var(--background-color);
     }
 }
