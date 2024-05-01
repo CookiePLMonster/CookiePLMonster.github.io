@@ -51,7 +51,9 @@
 
     <!-- Google Fonts -->
     {% if site.theme_settings.google_fonts %}
-    <link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family={{ site.theme_settings.google_fonts }}&display=swap" rel="stylesheet">
     {% endif %}
 
     {%- if site.theme_settings.plausible_analytics and jekyll.environment != "development" %}

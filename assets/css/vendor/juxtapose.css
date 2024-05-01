@@ -3,7 +3,8 @@
  */
 div.juxtapose {
 	width: 100%;
-	font-family: Helvetica, Arial, sans-serif;
+	/* Removed so we get Source Sans 3 if available */
+	/* font-family: Helvetica, Arial, sans-serif; */
 }
 
 div.jx-slider {
@@ -323,8 +324,9 @@ a.jx-knightlab span.juxtapose-name {
 	display: table-cell;
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	/* Removed so we get Source Sans 3 if available */
+	/* font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300; */
 	color: white;
 	font-size: 10px;
 	padding-left: 0.375em;
