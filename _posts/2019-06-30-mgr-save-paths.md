@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How NOT to operate on paths - Metal Gear Rising"
+title: "How NOT to operate on paths -- Metal Gear Rising"
 image: "assets/img/posts/MGR-social.jpg"
 excerpt: "Cue ultimate guesswork on where Documents are located (and more)."
 game-series: "metal-gear-rising"
@@ -29,10 +29,8 @@ PCGamingWiki outlines issues such as:
 That all sounds... scary, so let's actually find out how the game behaves! Technically, I should be partially affected by this -- while my `Users` directory is on C drive, my `Documents` have been relocated to D drive.
 I run the game, and... sure enough, MGR creates a new `Documents` directory inside `Users\[username]`, just for itself:
 
-<p align="center">
-<img src="{% link assets/img/posts/mgr-documents.png %}"><br>
-<em>Yes, I <b>do</b> have more documents on this account. Just not here.</em>
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/mgr-documents.png" style="natural"
+            caption="Yes, I **do** have more documents on this account. Just not here." %}
 
 Yes, this is still a C drive, but it's important to note that nowadays Windows always assumes the installation partition is C, **and you cannot change it**.
 So while it was possible not to have a C drive on Windows XP (which MGR still supported), it's not possible on anything newer -- and you really shouldn't care about XP in mid-2019 ¯\\\_(ツ)\_/¯
@@ -43,7 +41,7 @@ Despite this, we can still look into the code and try to figure out what is real
 
 It didn't take long to find code responsible for saving and loading. While every case is slightly different, they more or less all look like this code opening a `GraphicOption` file,
 which stores all settings:
-```cpp
+```c
 getenv_s(&ReturnSize, DstBuf, 256, "USERPROFILE");
 sprintf_s(FileName, 256, "%s\\Documents\\MGR\\SaveData\\GraphicOption", DstBuf);
 fileHandle = CreateFileA(FileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -104,7 +102,7 @@ With most of the saving/loading code rewritten to correct all listed issues (and
 saving and loading already works flawlessly, even if Documents directory has been relocated to something as crazy as `X:\\ŻąłóРстуぬねのは-documents`.
 This also means Steam Cloud will sync saves correctly in all cases!
 
-Check SilentPatch for Metal Gear Rising on GitHub: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchMGR" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Check on GitHub</a>
+Check SilentPatch for Metal Gear Rising on GitHub:
+<a href="https://github.com/CookiePLMonster/SilentPatchMGR" class="button github" target="_blank">{{ site.theme_settings.github_icon }} Check on GitHub</a>
 
 This is not the only fix I intend to include, so it may take some more time before the release is ready -- so if you're interested, check back in a few days for an update!

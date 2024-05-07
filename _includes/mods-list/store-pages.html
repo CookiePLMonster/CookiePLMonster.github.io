@@ -2,17 +2,38 @@
 {% if affiliate-links %}
 <h2 class="no_anchor">Buy the game:</h2>
 
-{% if affiliate-links.gog or affiliate-links.zoom_platform %}
+{% assign promo-links = affiliate-links.gog or affiliate-links.zoom_platform %}
+{% assign other-links = affiliate-links.steam %}
+{% assign needs-headers = promo-links and other-links %}
+
+{% if promo-links %}
+<div class="outline-box">
+
+{% if needs-headers %}
+<h3 class="no_anchor">Support me:</h3>
+{% endif %}
 <p class="disclaimer info">This section contains affiliate links, meaning I get a commission for every purchase made through them.</p>
+
+<p class="left-page-margin flexible-buttons">
+{% if affiliate-links.gog %}
+<a href="https://af.gog.com/game/{{ affiliate-links.gog.id }}?as={{ site.theme_settings.affiliate_links.gog }}"
+    class="button gog" rel="nofollow" target="_blank"><i class='icomoon icon-gog-dot-com'></i> Buy on GOG.com</a>
+{% endif %}
+</p>
+</div>
 {% endif %}
 
-{% if affiliate-links.gog %}
-    <a href="https://af.gog.com/game/{{ affiliate-links.gog.id }}?as={{ site.theme_settings.affiliate_links.gog }}"
-        class="button gog" role="button" rel="nofollow" target="_blank"><i class='fas icomoon icon-gog-dot-com'></i> Buy on GOG.com</a>
+{% if other-links %}
+{% if needs-headers %}
+<h3 class="no_anchor">Also available on:</h3>
 {% endif %}
+
+<p class="left-page-margin flexible-buttons">
 {% if affiliate-links.steam %}
-    <a href="https://store.steampowered.com/app/{{ affiliate-links.steam.id }}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign=Portfolio"
-        class="button steam" role="button" rel="nofollow" target="_blank"><i class='fab fa-steam'></i> Buy on Steam</a>
+<a href="https://store.steampowered.com/app/{{ affiliate-links.steam.id }}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign=Portfolio"
+    class="button steam" rel="nofollow" target="_blank"><i class='fab fa-steam'></i> Buy on Steam</a>
+{% endif %}
+</p>
 {% endif %}
 
 {% endif %}

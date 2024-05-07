@@ -12,4 +12,6 @@ The table and wood textures are kept as-is.
 
 {% include setup-instructions.html %}
 
-<a href="https://community.pcgamingwiki.com/files/file/2866-mahjong-numbers-for-yakuza-0-yakuza-kiwami/" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+***
+
+<a href="https://community.pcgamingwiki.com/files/file/2866-mahjong-numbers-for-yakuza-0-yakuza-kiwami/" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>

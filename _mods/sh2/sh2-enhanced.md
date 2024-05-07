@@ -19,4 +19,6 @@ I contributed to *Silent Hill 2: Enhanced Edition* with:
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/6v1USVhtfjQ" %}
 
-<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button forums" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>
+***
+
+<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button forums" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>

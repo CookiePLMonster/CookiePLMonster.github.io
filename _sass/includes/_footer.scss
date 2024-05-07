@@ -1,25 +1,24 @@
 .site-footer {
     @extend %padding-post;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
     color: var(--footer-text-color);
-    font-size: 0.9em;
 
-    .footer-icons {
-        ul {
-            list-style: none;
-            li {
-                display: inline;
-            }
+    ul {
+        @extend %no-bullets;
+        @extend %flexible-2d-block;
+        justify-content: center;
+    }
+
+    .top-row {
+        a:hover {
+            color: darken($link-color, 15%);
         }
-        .top-row {
-            a:hover {
-                color: darken($link-color, 15%);
-            }
-        }
-        .fa-stack {
-            width: 2em;
-        }
+    }
+
+    .bottom-row {
+        margin-bottom: 0;
+    }
+
+    .fa-stack {
+        width: 2em;
     }
 }

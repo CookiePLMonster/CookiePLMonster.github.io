@@ -43,6 +43,10 @@ to using the Combined Disc and achievements will continue to work as expected.
 * [Ash_735](https://twitter.com/Ash_735) - menu textures
 * [DAGINATSUKO](https://daginatsuko.com/) - CD label
 
-<a href="https://github.com/CookiePLMonster/GT2-Combined-Disc/releases/latest/download/GT2-Combined-Disc.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/GT2-Combined-Disc" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a> \\
-<a href="{% link assets/img/posts/gt2-combined/gt2-combined-disc-label.png %}" class="button" role="button">{{ site.theme_settings.download_icon }} CD label (4K)</a>
+***
+
+<a href="https://github.com/CookiePLMonster/GT2-Combined-Disc/releases/latest/download/GT2-Combined-Disc.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/GT2-Combined-Disc" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+
+<a href="{% link assets/img/posts/gt2-combined/gt2-combined-disc-label.png %}" class="button" target="_blank">{{ site.theme_settings.download_icon }} CD label (4K)</a>

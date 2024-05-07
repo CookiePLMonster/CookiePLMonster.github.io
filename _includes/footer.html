@@ -1,14 +1,11 @@
 {% if site.theme_settings.footer_text %}
 <footer class="site-footer">
-    <p class="text">{{ site.theme_settings.footer_text }}</p>
-            <div class="footer-icons">
-                <!-- Social icons from Font Awesome, if enabled -->
-                <ul class="top-row">
-                {% include icons.html %}
-                </ul>
-                <ul class="bottom-row">
-                {% include icons-2.html %}
-                </ul>
-            </div>
+    <p>{{ site.theme_settings.footer_text }}</p>
+    <ul class="top-row">
+        {% include icons.html %}
+    </ul>
+    <ul class="bottom-row">
+        {% include icons-2.html %}
+    </ul>
 </footer>
 {% endif %}

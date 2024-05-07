@@ -131,7 +131,7 @@ I've now updated this cheat to be safer and merged Arcade and Simulation cheat i
 
 All listed cheats can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/gt/gran-turismo-2.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download cheat codes for Gran Turismo 2</a>
+<a href="{% link _games/gt/gran-turismo-2.md %}" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download cheat codes for Gran Turismo 2</a>
 
 # What's next?
 

@@ -16,5 +16,10 @@ so now 100% input registers from a near full press of the trigger, therefore mak
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjusted%20triggers%20sensitivity/SCES-52438_3FB69323_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjusted%20triggers%20sensitivity/SCPS-15055_EF258742_triggers.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjusted%20triggers%20sensitivity/SCES-52438_3FB69323_triggers.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjusted%20triggers%20sensitivity/SCPS-15055_EF258742_triggers.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjusted%20triggers%20sensitivity" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

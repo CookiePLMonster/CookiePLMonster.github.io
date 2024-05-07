@@ -12,7 +12,7 @@ tags: [Releases, Articles]
 
 *TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed,
 scroll down to [**Download**](#changelog-and-download) section for a link and
-a [Patreon](https://www.patreon.com/{{ site.theme_settings.patreon }}) announcement.*
+a [Patreon](https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}){:target="_blank" rel="nofollow"} announcement.*
 
 ***
 
@@ -240,7 +240,8 @@ The full changelog is as follows:
 Head to *Mods & Patches* via the button below to download SilentPatch for Scarface.
 But before you do, **stick with me for a bit longer!**
 
-<a href="{% link _games/scarface.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Scarface</a> \\
+<a href="{% link _games/scarface.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Scarface</a>
+
 Upon downloading, all you need to do is to extract the archive to the game's directory and that's it!
 When asked whether to overwrite files, select Yes.
 
@@ -262,12 +263,12 @@ Fear not, paid early releases are not happening -- as of now, perks include:
 
 This is not much, but depending on the response I might end up modifying the rewards a bit.
 
-<a href="https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}" rel="nofollow" class="button patreon" role="button" target="_blank"><i class='fab fa-patreon'></i> Become a patron</a>
+<a href="https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}" rel="nofollow" class="button patreon" target="_blank"><i class='fab fa-patreon'></i> Become a patron</a>
 
 Thank you!
 
 ***
 
 For those interested,
-full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the patch has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

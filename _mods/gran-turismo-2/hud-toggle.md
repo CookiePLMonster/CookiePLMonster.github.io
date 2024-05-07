@@ -16,9 +16,15 @@ and toggle the entire HUD by holding `L3`.
 
 {% include setup-instructions.html platform="ps1" %}
 
+***
+
 ### Arcade & Simulation Discs
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-U%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle/PAL.cht" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-J%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-J%201.0.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-U 1.2.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-U 1.1.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/HUD%20toggle/PAL.cht" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-J 1.1.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/HUD%20toggle/NTSC-J 1.0.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/HUD%20toggle" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

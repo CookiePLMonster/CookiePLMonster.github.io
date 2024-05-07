@@ -12,8 +12,8 @@ tags: [Releases, Articles]
 juxtapose: true
 ---
 
-TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Far Cry**: \\
-<a href="{% link _games/far-cry.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Far Cry</a> \\
+TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Far Cry**:
+<a href="{% link _games/far-cry.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Far Cry</a>
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it!
 
 # Overview
@@ -103,5 +103,5 @@ especially since the current fix has proven to have absolutely no disadvantages.
 ***
 
 For those interested,
-full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the patch has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

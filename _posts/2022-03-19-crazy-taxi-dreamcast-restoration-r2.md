@@ -35,11 +35,11 @@ Crazy Taxi Vita can be [downloaded from VitaDB](https://vitadb.rinnegatamante.it
 
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/crazy-taxi.md %}#dreamcast-restoration" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Dreamcast Restoration 2.0 for Crazy Taxi</a> \\
+<a href="{% link _games/crazy-taxi.md %}#dreamcast-restoration" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Dreamcast Restoration 2.0 for Crazy Taxi</a>
+
 After downloading, all you need to do is to extract the archives to the game's directory, and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 ***
 
-For those interested,
-full source codes of both mods has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/CT-DC" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See Dreamcast Restoration 2.0 on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/CT-DC" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See Dreamcast Restoration 2.0 on GitHub</a>

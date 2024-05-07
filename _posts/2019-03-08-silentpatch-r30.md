@@ -46,7 +46,7 @@ When new information arrives, I will modify this post with up to date changes!
 
 ***
 
-The newest build can be downloaded from *Mods & Patches*: \\
-<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
+The newest build can be downloaded from *Mods & Patches*:
+<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
 As always, enjoy! I hope this release enables even more people to enjoy improvements brought by the 'patch.

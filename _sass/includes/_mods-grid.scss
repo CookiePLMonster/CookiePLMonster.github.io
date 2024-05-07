@@ -1,17 +1,18 @@
 .mods-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-
+    // TODO: Make this %flexible-2d-block
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
-.mods-cell {
-  flex: 0 0 50%;
-  margin-bottom: 10px;
 
-  @media screen and (max-width: $break) {
-    flex-basis: 100%;
-  }
+.mods-cell {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $break) {
+        flex-basis: 100%;
+    }
 }
 
 .mod-label {
@@ -32,6 +33,7 @@
 
 .mod-listing {
     margin-bottom: 1em;
+
     .mod-title-image {
         min-width: 150px;
         max-width: 400px;
@@ -47,6 +49,10 @@
         padding: 1em;
         border-radius: 0.3em;
         border: 1px solid var(--line-color);
+
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
     .excerpt {
@@ -55,6 +61,11 @@
 
     .last-update {
         @extend .excerpt;
-        font-style: italic;
+        @extend .sidenote;
+    }
+
+    // Flexible mod buttons, like in .flexible-buttons
+    & :has(> .button) {
+        @extend %flexible-2d-block;
     }
 }

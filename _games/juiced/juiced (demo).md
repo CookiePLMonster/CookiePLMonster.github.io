@@ -23,7 +23,9 @@ This page is for the PC demos of Juiced. For patches for the Acclaim PS2 prototy
 {% assign may_2005_download_links = "[DOWNLOAD](https://www.gamepressure.com/download.asp?ID=7892),
             [MIRROR](https://www.moddb.com/games/juiced/downloads/juiced-demo-2-0-to-2-1-patch)" %}
 
-### Demo downloads
+## Demo downloads:
+
+<div class="left-page-margin" markdown="1">
 * Acclaim demos:
   * May 2004: {{ may_2004_download_links }}
   * June 2004: {{ june_2004_download_links }}
@@ -32,5 +34,6 @@ This page is for the PC demos of Juiced. For patches for the Acclaim PS2 prototy
   * January 2005: {{ january_2005_download_links }}
   * April 2005 (v2.0): {{ april_2005_download_links }}
   * May 2005 (v2.1 patch, requires v2.0 to be installed): {{ may_2005_download_links }}
+</div>
 
 See [Installing Acclaim Demos](#acclaim-install) for an add-on to June and July installers, re-enabling a Destination Folder screen.

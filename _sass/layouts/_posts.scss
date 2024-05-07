@@ -24,16 +24,6 @@ footer {
     font-size: 0.9em;
     display: inline-block;
     text-align: center;
-
-    .meta {
-        color: rgba($text-color, .5);
-        letter-spacing: 0.1em;
-        display: inline;
-    }
-
-    a.button {
-        margin-left: 1em;
-    }
 }
 
 header, .posts {
@@ -43,12 +33,12 @@ header, .posts {
 }
 
 .meta {
+    @extend .upcase;
     color: rgba($text-color, .5);
     font-size: 0.9em;
     font-weight: 600;
     letter-spacing: 0.1em;
     margin: 0;
-    text-transform: uppercase;
 }
 
 

@@ -237,7 +237,8 @@ For a feature list and a to-do list, check the mod's downloads page.
 {% include figures/image.html link="/assets/img/posts/yamp/YAMP_ml0nXhWrBF.jpg" %}
 </div>
 
-<a href="{% link _games/vf5fs.md %}#yamp" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Yakuza Arcade Machines Player</a> \\
+<a href="{% link _games/vf5fs.md %}#yamp" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Yakuza Arcade Machines Player</a>
+
 After downloading, all you need to do is to extract the archive to your Yakuza 6 directory (or the `vf5fs` subdirectory), and that's it!
 The in-game configuration menu is accessed by pressing <kbd>F1</kbd>.
 Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
@@ -264,5 +265,5 @@ All rights to Virtua Fighter 5: Final Showdown belong to SEGA.
 ***
 
 For those interested,
-the full source code of Yakuza Arcade Machine Player has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/YAMP" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of Yakuza Arcade Machine Player has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/YAMP" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

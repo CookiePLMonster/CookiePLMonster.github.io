@@ -11,4 +11,4 @@ juxtapose: true
 ---
 
 {:.disclaimer.info}
-This page is for the Acclaim PS2 prototypes of Juiced. For mods for the PC demos, see [Need for Speed]({% link _games/juiced/juiced (demo).md %}).
+This page is for the Acclaim PS2 prototypes of Juiced. For mods for the PC demos, see [Juiced (Demo)]({% link _games/juiced/juiced (demo).md %}).

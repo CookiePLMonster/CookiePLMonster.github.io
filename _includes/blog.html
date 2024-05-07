@@ -2,7 +2,7 @@
   {% for post in paginator.posts %}
   <section>
     <h2 class="heading-big">
-      <a class="post-link" href="{{ post.url | relative_url }}">
+      <a href="{{ post.url | relative_url }}">
         {% if post.thumbnail %}
         <span class="post-img">
           <img src="{{ post.thumbnail | relative_url }}" alt="">

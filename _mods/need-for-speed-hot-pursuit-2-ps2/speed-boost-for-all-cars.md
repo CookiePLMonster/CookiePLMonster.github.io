@@ -12,5 +12,10 @@ Speed Boost can be activated with the <kbd>R3</kbd> button.
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Speed%20Boost%20for%20all%20cars/SLUS-20362_1D2818AF_nitro.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Speed%20Boost%20for%20all%20cars/SLES-50731_1D2818AF_nitro.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Speed%20Boost%20for%20all%20cars/SLUS-20362_1D2818AF_nitro.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Speed%20Boost%20for%20all%20cars/SLES-50731_1D2818AF_nitro.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Speed%20Boost%20for%20all%20cars" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

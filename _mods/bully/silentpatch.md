@@ -50,5 +50,8 @@ you were doing when the game crashes) on the GitHub Issue page.
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchBully/releases/latest/download/SilentPatchBully.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchBully" class="button github" role="button">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchBully/releases/latest/download/SilentPatchBully.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/SilentPatchBully" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -8,11 +8,14 @@ Co-Driver Splitter is a plugin splitting audio between multiple devices. Now Co-
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/X3FQYK2GUuk" %}
 </div>
 {% else %}
-**NOTE:** Beware that due to the way Co-Driver Splitter works, perfect audio isolation is not possible. Therefore, some distant environment sounds are still faintly audible through headphones.
+**NOTE:** Do note that due to the way Co-Driver Splitter works, perfect audio isolation is not possible. Therefore, some distant environment sounds are still faintly audible through headphones.
 {% endif %}
 
 {% include setup-instructions.html %}
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="button docs" target="_blank">{{ site.theme_settings.docs_icon }} Setup instructions on GitHub Wiki</a>
 
-<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="button docs" role="button">{{ site.theme_settings.docs_icon }} See setup instructions on GitHub Wiki</a> \\
-{% if include.bitness == 32 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/latest/download/Co-Driver-Splitter-32-bit.zip" class="button download" role="button">{{ site.theme_settings.download_icon }} Download (32-bit version)</a>{% elsif include.bitness == 64 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/latest/download/Co-Driver-Splitter-64-bit.zip" class="button download" role="button">{{ site.theme_settings.download_icon }} Download (64-bit version)</a>{% endif %} \\
-<a href="https://github.com/CookiePLMonster/CoDriver-Splitter" class="button github" role="button">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+{% if include.bitness == 32 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/latest/download/Co-Driver-Splitter-32-bit.zip" class="button download">{{ site.theme_settings.download_icon }} Download (32-bit version)</a>{% elsif include.bitness == 64 %}<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases/latest/download/Co-Driver-Splitter-64-bit.zip" class="button download">{{ site.theme_settings.download_icon }} Download (64-bit version)</a>{% endif %}
+
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

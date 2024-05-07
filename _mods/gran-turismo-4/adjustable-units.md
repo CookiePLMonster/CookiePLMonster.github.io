@@ -29,4 +29,8 @@ Available units:
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20First%20Preview/Adjustable%20units/PCPX-96649_E906EA37_units.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J (GT4 First Preview)</a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20First%20Preview/Adjustable%20units/PCPX-96649_E906EA37_units.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J (GT4 First Preview)</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20First%20Preview/Adjustable%20units" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

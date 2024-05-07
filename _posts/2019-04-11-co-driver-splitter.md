@@ -25,8 +25,8 @@ while everything else plays over speakers!
 This is a modification I wanted to do for a long time. I wanted to have calls playing through headphones, with everything else left as is.
 Some people claimed it's just impossible due to the way audio is handled on PC -- so I decided to give it a shot myself, and it turned out to be absolutely doable!
 
-Without further ado, you can grab Co-Driver Splitter from here. **Make sure you read the note to know if the game you want to use Co-Driver Splitter with needs 32-bit or 64-bit libraries!** \\
-<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Download Co-Driver Splitter from GitHub</a>
+Without further ado, you can grab Co-Driver Splitter from here. **Make sure you read the note to know if the game you want to use Co-Driver Splitter with needs 32-bit or 64-bit libraries!**
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases" class="button github" target="_blank">{{ site.theme_settings.github_icon }} Download Co-Driver Splitter from GitHub</a>
 
 # Setting up audio
 
@@ -45,5 +45,5 @@ Co-Driver Splitter is designed to be able to work as a wrapper around XAudio 2.7
 
 ***
 
-If you are interested in getting Co-Driver Splitter to work with GRID or F1 games, check back here and on repository's wiki soon -- I'll be posting detailed set-up information there! \\
-<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="button docs" role="button" target="_blank">{{ site.theme_settings.docs_icon }} Visit the Wiki</a>
+If you are interested in getting Co-Driver Splitter to work with GRID or F1 games, check back here and on repository's wiki soon -- I'll be posting detailed set-up information there!
+<a href="https://github.com/CookiePLMonster/CoDriver-Splitter/wiki" class="button docs" target="_blank">{{ site.theme_settings.docs_icon }} Visit the Wiki</a>

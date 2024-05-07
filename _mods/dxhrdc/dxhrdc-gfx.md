@@ -26,5 +26,8 @@ The configuration menu (accessed by pressing <kbd>F11</kbd>) also allows to free
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/DXHRDC-GFX/releases/latest/download/DXHRDC-GFX.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/DXHRDC-GFX/releases/latest/download/DXHRDC-GFX.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

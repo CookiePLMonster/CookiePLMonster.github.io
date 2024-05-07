@@ -13,4 +13,8 @@ so in this cheat, I lifted it enough to future proof it for a very long time -- 
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Extended%20valid%20birth%20date%20range/SLUS-20441_2EA87CC5_birthdate.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U</a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/NASCAR%20Dirt%20to%20Daytona/Extended%20valid%20birth%20date%20range/SLUS-20441_2EA87CC5_birthdate.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Extended%20valid%20birth%20date%20range" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

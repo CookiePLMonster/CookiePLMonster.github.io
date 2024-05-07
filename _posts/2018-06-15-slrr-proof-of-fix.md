@@ -123,7 +123,7 @@ Proper fix for that is to scrap this "optimization" and replace it with a `strnc
 All documented fixes have been assembled into a proof-of-concept plugin.
 It has been tailored **only** for Build 936, I do not know what are the effects of running it with a newer/older game version.
 
-<a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
 **{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
 A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.

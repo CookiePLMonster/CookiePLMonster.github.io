@@ -22,4 +22,6 @@ SilentPatch addresses this issue, and it also improves performance of the Livery
 {% include figures/juxtapose.html left="/assets/img/posts/ea-wrc/screens/thumb/20231119194714_1.jpg" left-label="GTX 1070 (v1.3.0)"
                 right="/assets/img/posts/ea-wrc/screens/thumb/20231119194407_1.jpg" right-label="GTX 1070 (SilentPatch)" %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchEAWRC" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchEAWRC" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

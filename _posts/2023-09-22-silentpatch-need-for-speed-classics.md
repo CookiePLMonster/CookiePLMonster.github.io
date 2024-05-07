@@ -89,15 +89,17 @@ fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly. Each game page also links to their respective Modern Patch,
 which I strongly recommend using together with SilentPatch. That said, they are not mandatory and SP is compatible with stock games too.
 
-<a href="{% link _games/need-for-speed/need-for-speed-2-special-edition.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS2: Special Edition</a>
-<a href="{% link _games/need-for-speed/need-for-speed-3.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS3: Hot Pursuit</a>
-<a href="{% link _games/need-for-speed/need-for-speed-4.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS4: High Stakes</a>
-<a href="{% link _games/need-for-speed/need-for-speed-porsche-unleashed.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS: Porsche Unleashed</a> \\
+{:.flexible-buttons}
+<a href="{% link _games/need-for-speed/need-for-speed-2-special-edition.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS2: Special Edition</a>
+<a href="{% link _games/need-for-speed/need-for-speed-3.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS3: Hot Pursuit</a>
+<a href="{% link _games/need-for-speed/need-for-speed-4.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS4: High Stakes</a>
+<a href="{% link _games/need-for-speed/need-for-speed-porsche-unleashed.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for NFS: Porsche Unleashed</a>
+
 After downloading, all you need to do is to extract the archive to the game's directory, and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 
 ***
 
 For those interested,
-the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

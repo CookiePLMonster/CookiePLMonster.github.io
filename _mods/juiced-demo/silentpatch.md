@@ -83,6 +83,9 @@ To use it, extract the archive to the directory where the installer is, and run 
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo/releases/latest/download/SilentPatchJuicedDemo.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download SilentPatch</a>
-<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo/releases/latest/download/InstallerDestinationFolderTransform.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download Installer Destination Folder Transform</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo/releases/latest/download/SilentPatchJuicedDemo.zip" class="button">{{ site.theme_settings.download_icon }} Download SilentPatch</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo/releases/latest/download/InstallerDestinationFolderTransform.zip" class="button">{{ site.theme_settings.download_icon }} Download Installer Destination Folder Transform</a>
+
+<a href="https://github.com/CookiePLMonster/SilentPatchJuicedDemo" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -667,7 +667,7 @@ Bekoha's HD UI addresses this by replacing most interface assets with faithful h
 {% include figures/image.html link=url_greece %}
 </div>
 
-More comparison screenshots (also showcasing SP's widescreen support) can be found on Bekoha's website: \\
+More comparison screenshots (also showcasing SP's widescreen support) can be found on Bekoha's website:
 <a href="{{ hd_ui_url }}/screenshots" target="_blank" class="button"><i class='fas fa-globe'></i> CMR3 HD UI Screenshots</a>
 
 ***
@@ -853,8 +853,9 @@ I've created a brief showcase of the patch in video form, you can watch it here:
 > If you don't do this before installing SilentPatch, you will be greeted with a warning message on startup.
 > The mod's download page includes detailed setup instructions to walk you through this process step by step.
 
-The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly: \\
-<a href="{% link _games/cmr/cmr-3.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Colin McRae Rally 3 (and addons)</a> \\
+The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
+<a href="{% link _games/cmr/cmr-3.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Colin McRae Rally 3 (and addons)</a>
+
 Please follow the installation instructions **carefully** and extract the components into your game directory in order.
 Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
@@ -873,7 +874,7 @@ Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-inst
 
 ***
 
-For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
 
 ***

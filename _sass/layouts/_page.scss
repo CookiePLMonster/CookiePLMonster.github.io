@@ -11,4 +11,21 @@ h2.subtitle {
     @extend %header-txt-shadow;
 }
 
+.outline-box {
+    position: relative;
+
+    &::before {
+        @extend %highlight-block;
+        content: '';
+        position: absolute;
+        inset: -10px;
+        padding: 0;
+        z-index: -1;
+
+        @media screen and (min-width: $break) {
+            inset: -10px -20px;
+        }
+    }
+}
+
 //Shared css in _post.scss

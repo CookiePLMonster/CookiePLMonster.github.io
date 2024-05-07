@@ -8,11 +8,6 @@
         font-size: 1.1em;
     }
 
-    a.button {
-        margin: 0.1em;
-        padding: 0.2em 0.4em;
-    }
-
     p {
         margin: 0;
         padding: 0 0.2em 0 0;
@@ -35,10 +30,8 @@ ul.tag-posts {
     font-size: 0.9em;
     font-weight: bold;
     li {
+        @extend .left-page-margin;
         font-size: 100%;
-        @media screen and (min-width: $break) {
-            margin-left: $padding-x-small;
-        }
         a {
             @extend %body-link;
             color: var(--header-link-color);

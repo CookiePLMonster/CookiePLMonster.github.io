@@ -11,8 +11,8 @@ twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]
 ---
 
-TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Yakuza Kiwami 2**: \\
-<a href="{% link _games/yakuza/yakuza-kiwami-2.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Yakuza Kiwami 2</a> \\
+TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just follow the link to check out a concise changelog and grab **SilentPatch for Yakuza Kiwami 2**:
+<a href="{% link _games/yakuza/yakuza-kiwami-2.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Yakuza Kiwami 2</a>
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it!
 
 ***
@@ -129,5 +129,5 @@ so they run at 60 FPS regardless of the FPS cap set by the user.
 ***
 
 For those interested,
-full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchYK2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the patch has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchYK2" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

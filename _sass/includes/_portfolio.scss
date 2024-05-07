@@ -50,7 +50,7 @@
     }
 
     aside {
-        @extend %quote-block;
+        @extend %highlight-block;
         min-width: 18.5%;
         height: fit-content;
         text-align: right;

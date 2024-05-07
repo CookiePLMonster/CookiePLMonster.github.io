@@ -151,8 +151,8 @@ In both games, bloom is realized with 5 draw calls -- 4 draw calls on bloom + 1 
 Curiously, differences don't only boil down to different shaders, so it's worth comparing each draw separately.
 One of the draw calls is identical in both games, and I marked it with **bold**.
 
-<div align="center">
-<div style="display:inline-block;text-align:left;padding:10px" markdown="1">
+<div class="center-blocks-container">
+<div markdown="1">
 Human Revolution:
 1. Extract light elements from the image (shader A).
 2. **Redraw using shader B.**
@@ -160,7 +160,7 @@ Human Revolution:
 4. Redraw using shader D.
 5. Merge bloom back using shader E and intensity 1.5.
 </div>
-<div style="display:inline-block;text-align:left;padding:10px" markdown="1">
+<div markdown="1">
 Director's Cut:
 1. Extract light elements from the image (shader A').
 2. **Redraw using shader B.**
@@ -292,7 +292,7 @@ Color grading is fairly versatile, so it is possible to create a plethora of dif
 
 Without further ado, the modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/dxhrdc.md %}#dxhrdc-gfx" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download DXHRDC-GFX</a> \\
+<a href="{% link _games/dxhrdc.md %}#dxhrdc-gfx" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download DXHRDC-GFX</a>
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! The in-game configuration menu is accessed by pressing <kbd>F11</kbd>.
 
 # What's next? (maybe)
@@ -307,5 +307,5 @@ so I will likely look into those in the future too. SilentPatch for Deus Ex: Hum
 
 ***
 
-For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/DXHRDC-GFX" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

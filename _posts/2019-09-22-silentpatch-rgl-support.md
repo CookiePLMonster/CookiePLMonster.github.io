@@ -135,10 +135,12 @@ GTA III
 
 ***
 
-The newest builds can be downloaded from *Mods & Patches* section here: \\
-<a href="{% link _games/gta/gta-iii.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
-<a href="{% link _games/gta/gta-vc.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
-<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
+The newest builds can be downloaded from the *Mods & Patches* section:
+
+{:.flexible-buttons}
+<a href="{% link _games/gta/gta-iii.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
+<a href="{% link _games/gta/gta-vc.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
+<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
 
 As always, enjoy! Rockstar Games Launcher support should allow SilentPatch to be introduced to more people who are new to the game,
 and I hope it will benefit them greatly.

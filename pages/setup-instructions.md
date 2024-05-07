@@ -24,7 +24,7 @@ These steps apply to any game.
 ## GOG Galaxy
 
 1. Locate the game entry in the GOG Galaxy client in the <kbd><samp>Installed</samp></kbd> tab.
-2. Click on the <i class='fas icomoon icon-gog-settings'></i> icon, select <kbd><samp>Manage installation</samp></kbd> &rarr; <kbd><samp>Show folder</samp></kbd>.
+2. Click on the <i class='icomoon icon-gog-settings'></i> icon, select <kbd><samp>Manage installation</samp></kbd> &rarr; <kbd><samp>Show folder</samp></kbd>.
    {% include figures/image.html thumbnail="/assets/img/setup/gog-galaxy.jpg" %}
 3. An Explorer window will open, revealing your game directory. You'll want to put your mod files here.
 

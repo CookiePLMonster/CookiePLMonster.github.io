@@ -9,7 +9,9 @@ order: 1
 juxtapose: true
 ---
 
-### Versions glossary
+## Versions glossary:
+
+<div class="left-page-margin" markdown="1">
 * NTSC-U (USA, Canada):
   * Initial release -- v1.0 Arcade, v1.0 Simulation
   * First re-release -- v1.1 Arcade, v1.1 Simulation
@@ -19,3 +21,4 @@ juxtapose: true
   * PSone Books -- v1.0 Arcade, v1.1 Simulation
 * PAL (Europe, Australia etc.)
   * All versions are identical
+</div>

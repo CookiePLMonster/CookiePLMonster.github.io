@@ -103,13 +103,15 @@ Please follow the following instructions **in order**:
 
 {% include setup-instructions.html %}
 
+***
+
 ### Mandatory components:
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/SilentPatchCMR3.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download SilentPatch</a>
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3Patcher.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download DRM-free Patcher</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/SilentPatchCMR3.zip" class="button">{{ site.theme_settings.download_icon }} Download SilentPatch</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3Patcher.zip" class="button">{{ site.theme_settings.download_icon }} Download DRM-free Patcher</a>
 
 ### Addons:
-<a href="{{ hd_ui_url }}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download HD UI (by Bekoha)</a>
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3LanguagePack.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download Language Pack</a>
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3NickyGristPack.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download Nicky Grist Pack</a>
+<a href="{{ hd_ui_url }}" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download HD UI (by **Bekoha**)</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3LanguagePack.zip" class="button">{{ site.theme_settings.download_icon }} Download Language Pack</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3/releases/latest/download/CMR3NickyGristPack.zip" class="button">{{ site.theme_settings.download_icon }} Download Nicky Grist Pack</a>
 
-<a href="https://github.com/CookiePLMonster/SilentPatchCMR3" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCMR3" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

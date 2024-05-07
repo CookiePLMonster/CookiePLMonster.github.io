@@ -87,12 +87,12 @@ A full changelog of this release is rather short:
 
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/scarface.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Scarface</a> \\
+<a href="{% link _games/scarface.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Scarface</a> \\
 Upon downloading, all you need to do is to extract the archive to the game's directory and that's it!
 When asked whether to overwrite files, select Yes.
 
 ***
 
 For those interested,
-full source code of the patch has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the patch has been published on GitHub, so it can be freely used as a reference: \\
+<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

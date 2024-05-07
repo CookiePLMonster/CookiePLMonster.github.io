@@ -33,8 +33,12 @@ MKPSXISO v2.x is co-developed by G4Vi, spicyjpeg, Chromaryu, and myself.
     * XML generation: by default in strict LBA order, but can instead sort by dir for pretty output.
     * Timestamps and XA attributes are preserved.
 
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-win64.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Windows 64-bit)</a> \\
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.deb" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, DEB)</a>
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.rpm" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, RPM)</a>
-<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, ZIP)</a> \\
-<a href="https://github.com/Lameguy64/mkpsxiso" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-win64.zip" class="button">{{ site.theme_settings.download_icon }} Download (Windows 64-bit)</a>
+
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.deb" class="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, DEB)</a>
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.rpm" class="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, RPM)</a>
+<a href="https://github.com/Lameguy64/mkpsxiso/releases/download/v{{ page.version }}/mkpsxiso-{{ page.version }}-Linux.zip" class="button">{{ site.theme_settings.download_icon }} Download (Linux 64-bit, ZIP)</a>
+
+<a href="https://github.com/Lameguy64/mkpsxiso" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

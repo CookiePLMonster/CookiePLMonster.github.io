@@ -12,7 +12,7 @@ tags: [Releases]
 juxtapose: true
 ---
 
-🎂 Happy Birthday SilentPatch! On December 29th 2013, the very first SilentPatch builds were released! 🎂
+🎂 Happy Birthday SilentPatch! On {{ "2013-12-29" | date: page.date-format }}, the very first SilentPatch builds were released! 🎂
 
 For this occasion, new builds have been released for GTA III, Vice City and San Andreas!
 For the first time the releases have received a name! Due to the amount of fixes related to coronas and lights,
@@ -29,7 +29,7 @@ Coronas
 * An interesting PS2 vs PC difference
 [has been identified on GTAForums recently](https://gtaforums.com/topic/669045-silentpatch/?do=findComment&comment=1070991808).
 GTA III, Vice City and San Andreas on PS2 rotate light coronas as camera gets closer for them for a nice, subtle effect.
-For what I theoretize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC --but not anymore!
+For what I theoretize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC -- but not anymore!
 Starting with Build 32, this has been fixed.
 {% include figures/video-iframe.html link="https://streamable.com/s/lhe9m/pyrzkq" %}
 
@@ -43,8 +43,8 @@ causing moon to appear stretched. This has now been fixed.
 {% include figures/image.html link="https://i.imgur.com/2TV3MK4.png" thumbnail="https://i.imgur.com/2TV3MK4h.png" %}
 
 * Highlight of this release (pun intended) -- sirens of emergency vehicles received correct placements, so they now actually match models!
-In GTA III and Vice City, most sirens had misplaced coronas -- with this update, they have all been fixed. \\
-  \\
+In GTA III and Vice City, most sirens had misplaced coronas -- with this update, they have all been fixed.
+
   Affected vehicles:
   - Fire Truck (GTA III & Vice City)
   - Ambulance (GTA III & Vice City)
@@ -134,8 +134,9 @@ Changes to existing SilentPatch code:
 
 ***
 
-The newest builds can be downloaded from *Mods & Patches* section here: \\
-<a href="{% link _games/gta/gta-iii.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
-<a href="{% link _games/gta/gta-vc.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
-<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>
+The newest builds can be downloaded from the *Mods & Patches* section:
 
+{:.flexible-buttons}
+<a href="{% link _games/gta/gta-iii.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA III</a>
+<a href="{% link _games/gta/gta-vc.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA Vice City</a>
+<a href="{% link _games/gta/gta-sa.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download for GTA San Andreas</a>

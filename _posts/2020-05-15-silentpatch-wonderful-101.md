@@ -174,7 +174,8 @@ Since I wished to release SP before the game officially launches, I didn't spend
 
 Without further ado, the modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/w101.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for The Wonderful 101</a> \\
+<a href="{% link _games/w101.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for The Wonderful 101</a>
+
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 # What's next? (maybe)
@@ -189,5 +190,5 @@ and make it better than I originally planned 😀
 
 ***
 
-For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchW101" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchW101" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -49,12 +49,23 @@
 // Buttons
 .button {
     border-radius: 0.3em;
-    border: 1px solid;
+    border: 2px solid;
     display: inline-block;
-    margin: 1em 0;
     padding: 0.5em 0.75em;
+    font-weight: 500;
+
+
+    &.smaller {
+        padding: 0.2em 0.4em;
+    }
+
+    &.thinner {
+        border-width: 1px;
+        font-weight: 400;
+    }
 
     @at-root button#{&} {
+        @extend .thinner;
         -webkit-appearance: none;
         background-color: transparent;
     }
@@ -94,10 +105,14 @@
     }
 }
 
+.flexible-buttons {
+    @extend %flexible-2d-block;
+}
+
 %button-link {
     &:hover {
         background: $link-color;
-        border: 1px solid $link-color;
+        border-color: $link-color;
         color: $background-color;
         text-decoration: none;
     }
@@ -137,6 +152,13 @@
         }
     }
 
+    &.ko-fi {
+        &:hover {
+            background: $ko-fi-link-color;
+            border-color: $ko-fi-link-color;
+        }
+    }
+
     &.gog {
         &:hover {
             background: var(--gog-link-color);
@@ -152,11 +174,11 @@
     }
 }
 
+// TODO: This will eventually become 'button rounder inverse'
 .round-button {
     border-radius: 1.5em;
     border: 1px solid;
     display: inline-block;
-    margin: 1em 0;
     padding: 0.5em 0.75em;
 }
 
@@ -183,6 +205,10 @@ a.round-button {
         background-color: $paypal-link-color;
     }
 
+    &.ko-fi {
+        background-color: $ko-fi-link-color;
+    }
+
     &.gog {
         color: var(--gog-link-color);
     }
@@ -194,7 +220,7 @@ a.round-button {
 
 %round-button-link {
     &:hover {
-        border: 1px solid $link-color;
+        border-color: $link-color;
         text-decoration: none;
     }
 
@@ -249,6 +275,16 @@ a.round-button {
         background: $paypal-link-color;
         border-color: $paypal-link-color;
     }
+
+    &.ko-fi {
+        &:hover {
+            background: darken($ko-fi-link-color, 15%);
+            border-color: darken($ko-fi-link-color, 15%);
+        }
+
+        background: $ko-fi-link-color;
+        border-color: $ko-fi-link-color;
+    }
 }
 
 %body-link {
@@ -258,24 +294,24 @@ a.round-button {
     }
 }
 
-%quote-block {
+%flexible-2d-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25em;
+}
+
+%highlight-block {
     border-left: 2px solid var(--blockquote-border-color);
     padding: 0.75em 1em;
     background-color: var(--blockquote-color);
     box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
 }
 
-.post-link {
-    &:hover {
-        text-decoration: none;
-        color: lighten($link-color, 10%);
-    }
-}
-
 %no-bullets {
     list-style-type: none;
     margin-left: 0;
-    line-height: normal;
+    line-height: 1.25;
 }
 
 %fa-icon {
@@ -296,14 +332,11 @@ a.round-button {
     }
 }
 
-// States
-.disabled {
-    opacity: 0.7;
-}
-
 // Custom
-.text-center {
-    text-align: center;
+.center-blocks-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.25em;
 }
 
 .right {
@@ -314,10 +347,10 @@ a.round-button {
     text-transform: uppercase;
 }
 
-.flag {
-    height: 1em;
-    padding: 0 0.5em;
-    vertical-align: middle;
+.left-page-margin {
+    @media screen and (min-width: $break) {
+        margin-left: $padding-x-small;
+    }
 }
 
 .disclaimer {

@@ -30,5 +30,8 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 
 {% include setup-instructions.html %}
 
-<a href="https://silent.rockstarvision.com/uploads/GInputIII.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://gtaforums.com/topic/562765-ginput/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+***
+
+<a href="https://silent.rockstarvision.com/uploads/GInputIII.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://gtaforums.com/topic/562765-ginput/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

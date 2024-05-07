@@ -13,6 +13,9 @@ To allow using Uptime Faker as a general purpose fix for games and/or applicatio
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/UptimeFaker/releases/latest/download/UptimeFaker32.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (32-bit version)</a>
-<a href="https://github.com/CookiePLMonster/UptimeFaker/releases/latest/download/UptimeFaker64.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (64-bit version)</a> \\
-<a href="https://github.com/CookiePLMonster/UptimeFaker" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/UptimeFaker/releases/latest/download/UptimeFaker32.zip" class="button">{{ site.theme_settings.download_icon }} Download (32-bit version)</a>
+<a href="https://github.com/CookiePLMonster/UptimeFaker/releases/latest/download/UptimeFaker64.zip" class="button">{{ site.theme_settings.download_icon }} Download (64-bit version)</a>
+
+<a href="https://github.com/CookiePLMonster/UptimeFaker" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

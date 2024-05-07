@@ -141,11 +141,12 @@ of time researching the way TOCA 2 handles aspect ratios and lists resolutions.
 
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/toca-2.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for TOCA 2 Touring Cars</a> \\
+<a href="{% link _games/toca-2.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for TOCA 2 Touring Cars</a>
+
 After downloading, all you need to do is to extract the archive to the game's directory, and that's it! I highly recommend checking the INI files for a range of useful settings to change,
 e.g. rear view mirror resolution or FOV. Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 ***
 
-For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchTOCA2" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchTOCA2" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -14,14 +14,7 @@ These instructions target PCSX2 on Desktop and AetherSX2 on Android.
 1. TOC
 {:toc}
 
-# Downloading patches
-
-1. The download button opens a GitHub page with the patch.
-2. Click on <kbd><samp><i class='fas fa-download'></i> Download raw file</samp></kbd>.
-
-# Applying patches
-
-## PCSX2
+# PCSX2
 
 When installing cheat codes, refer to the instructions related to "cheats". Otherwise, refer to "patches".
 
@@ -30,12 +23,12 @@ When installing cheat codes, refer to the instructions related to "cheats". Othe
 2. Put the downloaded `.pnach` file in that directory, ensure the file extension is **not** `.pnach.txt`.
 3. Launch PCSX2, right click the game you've installed content for on the Game List and select <kbd><samp>Properties...</samp></kbd>.
 4. Navigate to <kbd><samp>Patches</samp></kbd> (or <kbd><samp>Cheats</samp></kbd>) and enable the item(s) you want to use by ticking the <kbd><samp>Enabled</samp></kbd> box.
-   {% include figures/image.html thumbnail="/assets/img/setup/pcsx2-patch-screen.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/pcsx2-patch-screen.jpg" style="natural" %}
 5. Verify that patches (or cheats) have been activated correctly by launching the game.
    If everything was done correctly, a '<samp>X game patches are active.</samp>' (or '<samp>X cheat patches are active.</samp>') message will show on startup in the top left corner.
-   {% include figures/image.html thumbnail="/assets/img/setup/pcsx2-patches-enabled-qt.jpg" %}
+   {% include figures/image.html thumbnail="/assets/img/setup/pcsx2-patches-enabled-qt.jpg" style="natural" %}
 
-## AetherSX2
+# AetherSX2
 
 1. Open AetherSX2 and launch the game you downloaded patches for.
 2. Open the pause menu and select <kbd><samp>Patch Codes</samp></kbd>. If a warning gets shown, click <kbd><samp>Yes</samp></kbd> to open the Cheat Manager.

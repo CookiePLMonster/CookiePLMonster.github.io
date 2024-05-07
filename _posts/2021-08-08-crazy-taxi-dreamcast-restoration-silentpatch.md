@@ -235,12 +235,14 @@ Aside from the fixes mentioned, SilentPatch for Crazy Taxi also fixes a few othe
 
 Both modifications can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/crazy-taxi.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Dreamcast Restoration 2.0 and SilentPatch for Crazy Taxi</a> \\
+<a href="{% link _games/crazy-taxi.md %}" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Dreamcast Restoration 2.0 and SilentPatch for Crazy Taxi</a>
+
 After downloading, all you need to do is to extract the archives to the game's directory, and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 ***
 
+{:.flexible-buttons}
 For those interested,
-full source codes of both mods has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/CT-DC" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See Dreamcast Restoration 2.0 on GitHub</a>
-<a href="https://github.com/CookiePLMonster/SilentPatchCT" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See SilentPatch on GitHub</a>
+full source codes of both mods have been published on GitHub, so they can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/CT-DC" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See Dreamcast Restoration 2.0 on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchCT" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See SilentPatch on GitHub</a>

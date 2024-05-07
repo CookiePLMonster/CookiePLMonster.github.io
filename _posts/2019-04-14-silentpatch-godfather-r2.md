@@ -18,14 +18,13 @@ Changelog:
 
 This release also ships with an updated Ultimate ASI Loader, so please grab all the files from the archive, not just the ASI.
 
-
 The first issue actually ended up being relatively interesting, but I'm not sure if it makes sense to detail it here.
 Let me know in the comments if you'd like to see a writeup on this particular bug, since the issue behind this code is not game specific
 -- most notably, it's the same kind of issue which plagues [SkyGfx mod for GTA when used with SA-MP](https://gtaforums.com/topic/752667-relsasamp-sampgraphicrestore/).
 
 ***
 
-The newest build can be downloaded from *Mods & Patches*: \\
-<a href="{% link _games/godfather.md %}#silentpatch" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a>
+The newest build can be downloaded from *Mods & Patches*:
+<a href="{% link _games/godfather.md %}#silentpatch" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
 As always, enjoy!

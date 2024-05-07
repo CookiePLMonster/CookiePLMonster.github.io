@@ -56,5 +56,6 @@ Happy playing! I hope you'll now be able to enjoy this game the way it should've
 
 ***
 
-The newest build can be downloaded from *Mods & Patches* section here: \\
-<a href="{% link _games/bully.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+The newest build can be downloaded from the *Mods & Patches* section:
+
+<a href="{% link _games/bully.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>

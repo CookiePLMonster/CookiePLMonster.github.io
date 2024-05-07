@@ -19,8 +19,12 @@ _"I use it on every installation so I can fight with the best sound" -Ash_
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/VBdec/releases/latest/download/vbdec.asi" class="button" role="button">{{ site.theme_settings.download_icon }} Download (VBDec)</a>
-<a href="https://github.com/CookiePLMonster/audio-samples/releases/latest/download/audio-samples-10.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download (Audio Samples)</a> \\
-<a href="https://github.com/CookiePLMonster/VBdec" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See VBDec source on GitHub</a>
-<a href="https://github.com/CookiePLMonster/audio-samples" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See Audio Samples source on GitHub</a> \\
-<a href="https://gtaforums.com/topic/881485-vbdec/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+***
+
+<a href="https://github.com/CookiePLMonster/VBdec/releases/latest/download/vbdec.asi" class="button">{{ site.theme_settings.download_icon }} Download (VBDec)</a>
+<a href="https://github.com/CookiePLMonster/audio-samples/releases/latest/download/audio-samples-10.zip" class="button">{{ site.theme_settings.download_icon }} Download (Audio Samples)</a>
+
+<a href="https://github.com/CookiePLMonster/VBdec" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See VBDec source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/audio-samples" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See Audio Samples source on GitHub</a>
+
+<a href="https://gtaforums.com/topic/881485-vbdec/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

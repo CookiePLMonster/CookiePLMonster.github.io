@@ -34,5 +34,8 @@ In an unlikely case this causes issues, CPU core affinity can be restored to def
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchScarface/releases/latest/download/SilentPatchScarface.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchScarface/releases/latest/download/SilentPatchScarface.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/SilentPatchScarface" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

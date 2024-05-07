@@ -71,13 +71,14 @@ q {
 }
 
 blockquote {
-    @extend %quote-block;
-    margin: 1em 1em;
+    @extend %highlight-block;
+    margin: 1em;
 }
 
-blockquote p:last-child,
-footer p:last-child {
-    margin-bottom: 0;
+blockquote, footer {
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
 
 table {
@@ -125,15 +126,19 @@ figcaption {
 
 // Lists within lists
 li {
-    p {
+    p,
+    figcaption {
         font-size: inherit;
-        display: inline;
     }
 
+    p,
     &>ul,
     &>ol {
-        margin-bottom: 0;
-        margin-left: 1em;
+        margin-bottom: 0.5em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

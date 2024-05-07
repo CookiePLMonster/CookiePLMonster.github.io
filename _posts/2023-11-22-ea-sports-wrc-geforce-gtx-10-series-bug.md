@@ -279,7 +279,7 @@ to be completely sure no unintended side effects occur.
 
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/ea-sports-wrc.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for EA Sports WRC</a>
+<a href="{% link _games/ea-sports-wrc.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for EA Sports WRC</a>
 
 After downloading, you set up the patch with the following:
 1. Extract the archive to the game directory, so the `d3d11.dll` file resides next to the `WRC.exe` file.
@@ -290,5 +290,5 @@ Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-inst
 ***
 
 For those interested,
-the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchEAWRC" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchEAWRC" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

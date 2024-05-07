@@ -48,5 +48,8 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s/releases/latest/download/SilentPatchNFS90s.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s/releases/latest/download/SilentPatchNFS90s.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/SilentPatchNFS90s" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

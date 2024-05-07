@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qom947');
-  src:  url('fonts/icomoon.eot?qom947#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qom947') format('truetype'),
-    url('fonts/icomoon.woff?qom947') format('woff'),
-    url('fonts/icomoon.svg?qom947#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4movbe');
+  src:  url('fonts/icomoon.eot?4movbe#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4movbe') format('truetype'),
+    url('fonts/icomoon.woff?4movbe') format('woff'),
+    url('fonts/icomoon.svg?4movbe#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,17 +13,23 @@
 .icomoon [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
-  font-weight: normal !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-gog-dot-com:before {
+.icon-ko-fi:before {
   content: "\e902";
-  color: #86328a;
+}
+.icon-gog-dot-com:before {
+  content: "\e904";
 }
 .icon-gog-settings:before {
   content: "\e903";

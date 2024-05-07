@@ -131,9 +131,9 @@ and the game's future became unknown. This has all happened so late so some boxe
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/wNuw6uVv8ng" %}
 
-<figure align="center">
+<div align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">- work for Rage Software<br>- develop a Lamborghini game nearly to completion<br>- studio bankrupts, game never releases<br>- move on to found Juice Games<br>- develop Juiced for Acclaim nearly to completion<br>- publisher bankrupts, new publisher modifies the game<br><br>Folks had the worst luck :( <a href="https://t.co/wIwmERTVb7">pic.twitter.com/wIwmERTVb7</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1704429355684766178?ref_src=twsrc%5Etfw">September 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</figure>
+</div>
 
 Before long, [THQ](https://en.wikipedia.org/wiki/THQ) and Take-Two [both bid](https://www.gamespot.com/articles/take-two-squeezing-juiced/1100-6108179/) to acquire rights to Juiced;
 Electronics Arts also attempted to join the bid but failed to meet the deadline (and, honestly, it's good that they didn't manage to buy a direct competitor
@@ -590,11 +590,11 @@ My tests were also done only on the June build; July build can go online too, bu
 {{ f4mi_link }} has created a showcase of {{ sp_name }} and the improvements it makes to Acclaim's Juiced Demo -- check it out if you want to see the new content in action:
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/4lQ76h8KEkI" %}
 
-All known PC demos of Juiced, as well as {{ sp_name }} can be downloaded from *Mods & Patches*. Click here to head to the game's page directly: \\
-<a href="{% link _games/juiced/juiced (demo).md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Juiced Demos and {{ sp_name }}</a>
+All known PC demos of Juiced, as well as {{ sp_name }} can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
+<a href="{% link _games/juiced/juiced (demo).md %}" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Juiced Demos and {{ sp_name }}</a>
 
-For patches targetting the PlayStation 2 prototypes, go here: \\
-<a href="{% link _games/juiced/juiced-acclaim-ps2.md %}" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Juiced (Acclaim, PS2) Downloads</a>
+For patches targetting the PlayStation 2 prototypes, go to:
+<a href="{% link _games/juiced/juiced-acclaim-ps2.md %}" class="button" target="_blank">{{ site.theme_settings.download_icon }} Juiced (Acclaim, PS2) Downloads</a>
 
 # Credits and acknowledgments
 

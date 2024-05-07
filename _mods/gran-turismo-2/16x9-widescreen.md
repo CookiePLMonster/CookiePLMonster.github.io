@@ -15,12 +15,18 @@ When using this cheat, a 16:9 Widescreen Hack should be **disabled**.
 
 {% include setup-instructions.html platform="ps1" %}
 
-### Arcade & Simulation Discs
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-U%201.2.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-U%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen/PAL.cht" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-J%201.1.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-J%201.0.cht" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+***
 
-For aspect ratios other than 16:9 and 21:9, cheats can be generated with a script: \\
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Tools/gt2-widescreen-gen.py" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} Gran Turismo 2 Widescreen Cheat Generator</a>
+### Arcade & Simulation Discs
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-U 1.2.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-U 1.1.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/16x9%20Widescreen/PAL.cht" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-J 1.1.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/16x9%20Widescreen/NTSC-J 1.0.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/16x9%20Widescreen" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+
+For aspect ratios other than 16:9 and 21:9, cheats can be generated with a script:
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Tools/gt2-widescreen-gen.py" class="button github" target="_blank">{{ site.theme_settings.github_icon }} GT2 Widescreen Cheat Generator</a>

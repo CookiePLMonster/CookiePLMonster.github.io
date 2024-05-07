@@ -23,5 +23,8 @@ SilentPatch diagnoses those issues and provides a definite fix, bringing complet
 
 {% include setup-instructions.html %}
 
-<a href="https://github.com/CookiePLMonster/SilentPatchME/releases/latest/download/SilentPatchME.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/SilentPatchME" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/SilentPatchME/releases/latest/download/SilentPatchME.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/SilentPatchME" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -8,4 +8,6 @@ Native IMG Builder for GTA III, GTA Vice City and GTA San Andreas.
 
 This tool allows you to build IMG files straight from directories, similarly to how Rockstar North built theirs.
 
-<a href="https://github.com/CookiePLMonster/IMG-Builder" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+***
+
+<a href="https://github.com/CookiePLMonster/IMG-Builder" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -43,9 +43,7 @@ as of the time of writing this post.
 # Celebrating 10 years of fixes
 
 1. As the SilentPatch name lives as its own "brand" now, I've created a page specifically dedicated to it:
-   \\
    {% include buttons/silentpatch.html %}
-   \\
    On this page, I included a list of all supported games and an explanation of what SilentPatch is -- as more often than not, once a patch reaches
    a community previously unaware of my work, people assume "silent" shall be taken literally, and these patches mute sounds in the game 😅
 

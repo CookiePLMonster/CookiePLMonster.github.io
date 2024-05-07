@@ -102,8 +102,8 @@ and the demo versions of GT2:
 
 # Download & Instructions
 
-Gran Turismo 2 Combined Disc can be downloaded here: \\
-<a href="{% link _games/gt/gran-turismo-2.md %}#combined-disc" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download Gran Turismo 2 Combined Disc</a>
+Gran Turismo 2 Combined Disc can be downloaded here:
+<a href="{% link _games/gt/gran-turismo-2.md %}#combined-disc" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Gran Turismo 2 Combined Disc</a>
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/jByvSCDQLdY" %}
 

@@ -18,6 +18,12 @@ A modified version from me might come later, since the existing NTSC-U deinterla
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Online/Deinterlace/SCUS-97436_32A1C752_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} NTSC-U (GT4 Online)</a> \\
-<!-- <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204/Deinterlace/SCES-51719_44A61C8F_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.eu_flag }} PAL</a> \\ -->
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20First%20Preview/Deinterlace/PCPX-96649_E906EA37_deinterlace.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.jp_flag }} NTSC-J (GT4 First Preview)</a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Online/Deinterlace/SCUS-97436_32A1C752_deinterlace.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U (GT4 Online)</a>
+
+<!-- <a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204/Deinterlace/SCES-51719_44A61C8F_deinterlace.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a> -->
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20First%20Preview/Deinterlace/PCPX-96649_E906EA37_deinterlace.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J (GT4 First Preview)</a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Online" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

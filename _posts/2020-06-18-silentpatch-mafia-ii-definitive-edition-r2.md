@@ -42,7 +42,8 @@ for modders.
 
 The modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
 
-<a href="{% link _games/mafia2-de.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Mafia II: Definitive Edition</a> \\
+<a href="{% link _games/mafia2-de.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download SilentPatch for Mafia II: Definitive Edition</a>
+
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! Not sure how to proceed? Check the [Setup Instructions]({% link pages/setup-instructions.md %}).
 
 **DISCLAIMER: The following patch has been made with the 18.06 patch version in mind.
@@ -52,5 +53,5 @@ it will ask the user if they want to continue using it or not.**
 
 ***
 
-For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a point of reference: \\
-<a href="https://github.com/CookiePLMonster/SilentPatchM2DE" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+For those interested, the full source code of the mod has been published on GitHub, so it can be freely used as a reference:
+<a href="https://github.com/CookiePLMonster/SilentPatchM2DE" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

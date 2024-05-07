@@ -23,10 +23,13 @@ At the moment I don't plan to address any of the game's shortcomings in this plu
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/7oNsZClpZ_E" %}
 
-{% include setup-instructions.html %}
-
 {:.disclaimer}
 This plugin only works with the Steam version of the game!
 
-<a href="https://github.com/CookiePLMonster/VF5FS-Unlocker/releases/latest/download/VF5FS-Unlocker.zip" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://github.com/CookiePLMonster/VF5FS-Unlocker" class="button github" role="button" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+{% include setup-instructions.html %}
+
+***
+
+<a href="https://github.com/CookiePLMonster/VF5FS-Unlocker/releases/latest/download/VF5FS-Unlocker.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://github.com/CookiePLMonster/VF5FS-Unlocker" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

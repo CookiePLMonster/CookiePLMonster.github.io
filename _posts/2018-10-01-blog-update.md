@@ -24,7 +24,7 @@ As the size grows in content, I figured it's time to make those return in form o
 Bear in mind that this list may change at some point.
 
 # Finished Mods & Patches page
-Until now, that page was a mess, but no more! Now the page contains most mods sorted by game -- or, in the case of GTA, sorted by series, then games.\\
+Until now, that page was a mess, but no more! Now the page contains most mods sorted by game -- or, in the case of GTA, sorted by series, then games.
 That also means all SilentPatches are finally listed on the website -- better late than never!
 
 All image assets and design for this have been done by [Ash R.](https://twitter.com/Ash_735) -- kudos to the man!
@@ -32,7 +32,7 @@ All image assets and design for this have been done by [Ash R.](https://twitter.
 **NOTE:** Not all mods are listed yet -- expect the other entries to appear very soon! I also plan to introduce a **Tools** section in nearby future.
 
 # Polished Portfolio page
-Portfolio page also has received a minor makeover -- now entries are more consistent styling wise, and display their respective game logos upon hovering.\\
+Portfolio page also has received a minor makeover -- now entries are more consistent styling wise, and display their respective game logos upon hovering.
 Once again, all image assets have been provided by [Ash R.](https://twitter.com/Ash_735)!
 
 # Support link

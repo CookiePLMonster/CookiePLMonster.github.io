@@ -12,5 +12,9 @@ by bypassing a defunct authentication service from Sony. My tests were done only
 
 {% include setup-instructions.html platform="ps2" %}
 
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/DNAS%20Bypass/SLUS-20872_778AE49E_dnas.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} {{ "2004-06-11" | date: page.date-format }} build</a>
-<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/DNAS%20Bypass/SLUS-20872_F8B52006_dnas.pnach" class="button" role="button" target="_blank">{{ site.theme_settings.us_flag }} {{ "2004-07-28" | date: page.date-format }} build </a>
+***
+
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/DNAS%20Bypass/SLUS-20872_778AE49E_dnas.pnach" %} class="button">{{ site.theme_settings.us_flag }} {{ "2004-06-11" | date: page.date-format }} build</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/DNAS%20Bypass/SLUS-20872_F8B52006_dnas.pnach" %} class="button">{{ site.theme_settings.us_flag }} {{ "2004-07-28" | date: page.date-format }} build </a>
+
+<a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/DNAS%20Bypass" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

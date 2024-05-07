@@ -11,8 +11,8 @@ twitter: {card: "summary_large_image"}
 redirect_from: "/2018/05/18/fixing-the-godfather.html"
 tags: [Articles]
 ---
-TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just go here to grab SilentPatch for The Godfather: \\
-<a href="{% link _games/godfather.md %}#silentpatch" class="button" role="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+TL;DR - if you are not interested in an in-depth overview of what was wrong with the game and how it was fixed, just go here to grab SilentPatch for The Godfather:
+<a href="{% link _games/godfather.md %}#silentpatch" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
 
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it! If you have movies removed or renamed, don’t forget to restore them, since they will work just fine now.
 

@@ -20,7 +20,10 @@ More info -- ReadMe!
 
 {% include setup-instructions.html %}
 
-<a href="https://www.dropbox.com/s/x4jpw422zrakhj6/GangsterSitFix.zip?dl=0" class="button" role="button">{{ site.theme_settings.download_icon }} Download</a> \\
-<a href="https://gtaforums.com/topic/781311-sarelsit-gangster-sit-fix/" class="button forums" role="button">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+***
+
+<a href="https://www.dropbox.com/s/x4jpw422zrakhj6/GangsterSitFix.zip?dl=0" class="button">{{ site.theme_settings.download_icon }} Download</a>
+
+<a href="https://gtaforums.com/topic/781311-sarelsit-gangster-sit-fix/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
 
 Requires [ASI Loader](#asiloader).

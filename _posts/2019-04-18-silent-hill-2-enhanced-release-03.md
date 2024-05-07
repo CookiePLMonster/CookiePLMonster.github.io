@@ -27,12 +27,12 @@ You can watch mod's presentation on their official channel:
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/377H3K9jAGA" %}
 
 To keep it short, head to the mod's official website for a full changelog, installation instructions, download links and credits:
-<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button" role="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>
+<a href="http://www.enhanced.townofsilenthill.com/SH2/" class="button" target="_blank"><i class='fas fa-door-open'></i> Visit the official website</a>
 
 You may also want to follow **Town of Silent Hill** on Twitter:
 <https://twitter.com/WhereAllBegins>
 
 ***
 
-This also marks the first time I'm including a mod in my [Mods & Patches list](/mods) whose I'm not a main/sole author of.
+This also marks the first time I'm including a mod in my [Mods & Patches list]({% link pages/mods.md %}) whose I'm not a main/sole author of.
 Any such listings will be marked clearly with a blue **CONTRIBUTION** badge.
