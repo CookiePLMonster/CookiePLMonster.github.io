@@ -176,6 +176,10 @@ details[open] > summary {
     color: $link-color;
 }
 
+pre {
+    overflow-x: auto; /*add scrollbars to wide code blocks*/
+}
+
 abbr[title] {
     text-decoration: none;
 
