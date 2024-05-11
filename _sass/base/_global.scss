@@ -222,6 +222,10 @@ summary {
     cursor: pointer;
 }
 
+#markdown-toc {
+    font-weight: bold;
+}
+
 /* ---- Responsive ---- */
 
 @media screen and (max-width: $break) {
