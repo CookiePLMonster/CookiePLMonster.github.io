@@ -22,4 +22,4 @@ Money pop-ups will now show when:
 
 <a href="https://github.com/CookiePLMonster/Money-Messages" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
 
-<a href="https://gtaforums.com/topic/727863-iiivcrel-money-messages/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/727863-iiivcrel-money-messages/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

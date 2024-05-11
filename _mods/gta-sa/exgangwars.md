@@ -22,6 +22,6 @@ if any modification makes use of them) so the player can quite literally take ov
 
 <a href="https://github.com/CookiePLMonster/ExGangWars" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
 
-<a href="https://gtaforums.com/topic/682194-extended-gang-wars/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/682194-extended-gang-wars/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
 
 Requires [ASI Loader](#asiloader).

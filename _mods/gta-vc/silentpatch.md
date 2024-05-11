@@ -57,4 +57,4 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 <a href="https://silent.rockstarvision.com/uploads/SilentPatchVC.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
 <a href="https://silent.rockstarvision.com/uploads/SilentPatchDDraw.zip" class="button">{{ site.theme_settings.download_icon }} Download DDraw Component</a>
 
-<a href="https://gtaforums.com/topic/669045-silentpatch/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/669045-silentpatch/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

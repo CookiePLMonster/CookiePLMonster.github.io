@@ -27,4 +27,4 @@ _"I use it on every installation so I can fight with the best sound" -Ash_
 <a href="https://github.com/CookiePLMonster/VBdec" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See VBDec source on GitHub</a>
 <a href="https://github.com/CookiePLMonster/audio-samples" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See Audio Samples source on GitHub</a>
 
-<a href="https://gtaforums.com/topic/881485-vbdec/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/881485-vbdec/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>

@@ -35,6 +35,6 @@ If any of these apply to you, **GInput** is the mod you've been looking for! Thi
 
 <a href="https://silent.rockstarvision.com/uploads/GInputSA.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
-<a href="https://gtaforums.com/topic/562765-ginput/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/562765-ginput/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
 
 Requires [ASI Loader](#asiloader).

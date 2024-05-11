@@ -20,4 +20,4 @@ yet destroyable Airtrain was shown in some places before III release (such as a 
 
 <a href="https://github.com/CookiePLMonster/Destroyable-Airtrain" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
 
-<a href="https://gtaforums.com/topic/738229-iiivcrel-destroyable-airtrain/" class="button forums">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
+<a href="https://gtaforums.com/topic/738229-iiivcrel-destroyable-airtrain/" class="button forums" target="_blank">{{ site.theme_settings.gtaf_icon }} Discuss on GTAForums</a>
