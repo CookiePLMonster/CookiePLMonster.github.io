@@ -34,13 +34,37 @@
 .mod-listing {
     margin-bottom: 1em;
 
+    // Semi-temporary
+    // This might have to be cleaned up, for now it's just been moved from HTML to here
+    .mod-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+        .left-column {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-basis: 50%;
+            column-gap: 0.5em;
+        }
+
+        .right-column {
+            margin-bottom: 1.34em;
+            flex-basis: 50%;
+        }
+    }
+
     .mod-title-image {
         min-width: 150px;
         max-width: 400px;
         display: inline-flex;
+        align-items: center;
 
         img {
             width: 100%;
+            height: auto;
             padding: 0;
         }
     }
