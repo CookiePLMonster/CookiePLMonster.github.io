@@ -8,6 +8,7 @@ permalink: /links/
 
 # On this website
 * [Bonus Codes]({% link pages/bonuscodes.md %}) -- bonus codes generators for games from Codemasters, as well as discovered cheat codes for other games.
+* [SilentPatch]({% link pages/silentpatch.md %}) -- history of SilentPatch, a list of supported games, and more.
 
 # Research
 Any research and documentation that I either made or found useful, and that doesn't belong in the mod pages.
