@@ -2,19 +2,6 @@
     background-position: 100% 0, 0%, center top;
     background-image: url("/assets/img/site-header.jpg");
     background-size: auto;
-    position: relative;
-
-    .overlay-logo {
-        height: 10rem;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        @media screen and (max-width: $sm-break) {
-            height: 5rem;
-        }
-    }
 }
 
 // Post listing
