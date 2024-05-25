@@ -48,6 +48,7 @@ $video-16-9-padding: 56.25%;
 
 .fig-entry {
     @extend %media-entry;
+    text-align: center;
     line-height: 1.25;
     & > div.juxtapose {
         display: inline-block;
@@ -59,6 +60,7 @@ $video-16-9-padding: 56.25%;
     margin: 0 auto 0.5em;
     > figure {
         display: inline-block;
+        vertical-align: middle;
     }
     > .fig-entry, > .video-entry {
         margin-bottom: 0;
