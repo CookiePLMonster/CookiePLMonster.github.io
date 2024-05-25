@@ -12,6 +12,9 @@ a-boy-and-his-blob:
 aquanox:
   steam: {id: 39630}
   gog: {id: aquanox}
+buccaneer:
+  steam: {id: 2702120}
+  gog: {id: buccaneer}
 crazy-taxi:
   steam: {id: 71230}
 crc-extreme:
@@ -63,6 +66,9 @@ take-on-prisoners:
   gog: {id: take_no_prisoners}
 w101:
   steam: {id: 1190400}
+warbreeds:
+  steam: {id: 2464660}
+  gog: {id: warbreeds}
 world-racing-2-ce:
   steam: {id: 1301010}
   gog: {id: world_racing_2_champion_edition}
