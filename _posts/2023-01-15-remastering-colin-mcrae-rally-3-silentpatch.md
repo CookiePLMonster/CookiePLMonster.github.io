@@ -134,27 +134,26 @@ As mentioned earlier, the Polish release is more than a straightforward text and
 language in the game, CD Projekt (or Codemasters) introduced several changes to the international version, localizing the game further:
 
 * Localized onscreen keyboard and keyboard typing -- the international version displays a basic keyboard regardless of a selected in-game language:
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/cmr3-english-keyboard.png" left-label="International"
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/cmr3-english-keyboard.png" left-label="International"
                 right="/assets/img/posts/spcmr3/cmr3-polish-keyboard.png" right-label="Polish"
                 caption="These screenshots are from a patched game, but you get the idea." %}
 
 * Menu cubes received new graphics to match Polish wording:
-<div class="media-container small">
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_NP59FE2Oim.png" left-label="International"
+  <div class="media-container small">
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_NP59FE2Oim.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_Rea1oHQcc6.png" right-label="Polish"
                 start-position="75%" %}
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_maqdLz06dg.png" left-label="International"
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_maqdLz06dg.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_FhPHLUBq8f.png" right-label="Polish"
                 start-position="75%" %}
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_ccriJQ3022.png" left-label="International"
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_ccriJQ3022.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_mByVxA6C4k.png" right-label="Polish"
                 start-position="75%" caption="Polish cubes are exceptionally rude." %}
-</div>
+  </div>
 
 * The Secrets screen was modified to refer to CD Projekt's resources rather than the Codemasters' ones -- this is what resulted in a previously shown "Call your Germany"
-issue if a PL executable is used with English localization:
-
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_s6Ph0TjTCs.png" left-label="International"
+  issue if a PL executable is used with English localization:
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC_s6Ph0TjTCs.png" left-label="International"
                 right="/assets/img/posts/spcmr3/Rally_3PC_bdpquWzrTJ.png" right-label="Polish" %}
 
 * By the way, have you noticed how Polish fonts are spaced further apart than international ones? Odd change, but I assume they had a reason to do so.
@@ -638,8 +637,7 @@ Those are:
 * Vertical Sync -- the game's UI [has some issues with high frame rates](https://twitter.com/__silent_/status/1598446635130015751){:target="_blank"},
   but the car physics seem to work well even at hundreds of frames per second!
 * Anisotropic Filtering -- [unlike the option in CMR2005](https://twitter.com/__silent_/status/1598781224826200064){:target="_blank"}, this one actually works[^spcmr04] 🤔
-
-{% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_z0PIV5ZtkM.jpg" left-label="AF OFF"
+  {% include figures/juxtapose.html left="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_z0PIV5ZtkM.jpg" left-label="AF OFF"
                 right="/assets/img/posts/spcmr3/Rally_3PC.1.1.drmfree_7rtPTroLY3.jpg" right-label="AF x16"
                 caption="It's the details that matter." %}
 

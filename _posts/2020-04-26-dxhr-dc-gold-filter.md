@@ -291,15 +291,14 @@ Color grading is fairly versatile, so it is possible to create a plethora of dif
 # Download
 
 Without further ado, the modification can be downloaded from *Mods & Patches*. Click here to head to the game's page directly:
-
 <a href="{% link _games/dxhrdc.md %}#dxhrdc-gfx" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download DXHRDC-GFX</a>
+
 After downloading, all you need to do is to extract the archive to the game's directory and that's it! The in-game configuration menu is accessed by pressing <kbd>F11</kbd>.
 
 # What's next? (maybe)
 
 This modification is obviously not a SilentPatch (although fixed lighting is as close as it gets to an actual "fix"), but it does not mean the game is free of issues.
 The most interesting problem I was made aware of are issues with a laggy camera:
-
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/1DKuhS7KSEg" %}
 
 Turns out, this issue is related to high PC uptime, so rebooting the PC fixes it! [I debugged similar issues in the past]({{ site.baseurl }}{% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}),

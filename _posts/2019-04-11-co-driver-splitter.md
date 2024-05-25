@@ -26,6 +26,7 @@ This is a modification I wanted to do for a long time. I wanted to have calls pl
 Some people claimed it's just impossible due to the way audio is handled on PC -- so I decided to give it a shot myself, and it turned out to be absolutely doable!
 
 Without further ado, you can grab Co-Driver Splitter from here. **Make sure you read the note to know if the game you want to use Co-Driver Splitter with needs 32-bit or 64-bit libraries!**
+
 <a href="https://github.com/CookiePLMonster/CoDriver-Splitter/releases" class="button github" target="_blank">{{ site.theme_settings.github_icon }} Download Co-Driver Splitter from GitHub</a>
 
 # Setting up audio
@@ -33,8 +34,8 @@ Without further ado, you can grab Co-Driver Splitter from here. **Make sure you 
 You don't need to do much to make sure Co-Driver Splitter picks correct audio devices. All you need to do is to ensure that in Sound, your Default Communications Device is set to headphones,
 while Default Device -- speakers or other device you want to play environment sounds through.
 
-Example: \\
-![Correctly set up audio devices]({% link assets/img/posts/codriver-splitter/audio-devices.jpg %})
+Example:
+{% include figures/image.html thumbnail="/assets/img/posts/codriver-splitter/audio-devices.jpg" style="natural" %}
 
 # How does it work?
 

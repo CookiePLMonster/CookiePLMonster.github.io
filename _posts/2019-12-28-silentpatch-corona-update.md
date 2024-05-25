@@ -27,23 +27,23 @@ Coronas
 =======
 
 * An interesting PS2 vs PC difference
-[has been identified on GTAForums recently](https://gtaforums.com/topic/669045-silentpatch/?do=findComment&comment=1070991808).
-GTA III, Vice City and San Andreas on PS2 rotate light coronas as camera gets closer for them for a nice, subtle effect.
-For what I theoretize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC -- but not anymore!
-Starting with Build 32, this has been fixed.
-{% include figures/video-iframe.html link="https://streamable.com/s/lhe9m/pyrzkq" %}
+  [has been identified on GTAForums recently](https://gtaforums.com/topic/669045-silentpatch/?do=findComment&comment=1070991808).
+  GTA III, Vice City and San Andreas on PS2 rotate light coronas as camera gets closer for them for a nice, subtle effect.
+  For what I theoretize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC -- but not anymore!
+  Starting with Build 32, this has been fixed.
+  {% include figures/video-iframe.html link="https://streamable.com/s/lhe9m/pyrzkq" %}
 
 * For the longest time "shadows under pickups" have been fixed and showing up correctly in PC versions of GTA III and GTA Vice City.
-However, turns out San Andreas needed this fix to correctly light up the ground under fires! With this fixed,
-fires should have visual parity with a PS2 version.
-{% include figures/image.html link="https://i.imgur.com/UZgtS22.png" thumbnail="https://i.imgur.com/UZgtS22h.png" %}
+  However, turns out San Andreas needed this fix to correctly light up the ground under fires! With this fixed,
+  fires should have visual parity with a PS2 version.
+  {% include figures/image.html link="https://i.imgur.com/UZgtS22.png" thumbnail="https://i.imgur.com/UZgtS22h.png" %}
 
 * Moon phases have been fixed in San Andreas for a while. However, that fix would not play nice with a widescreen fix,
-causing moon to appear stretched. This has now been fixed.
-{% include figures/image.html link="https://i.imgur.com/2TV3MK4.png" thumbnail="https://i.imgur.com/2TV3MK4h.png" %}
+  causing moon to appear stretched. This has now been fixed.
+  {% include figures/image.html link="https://i.imgur.com/2TV3MK4.png" thumbnail="https://i.imgur.com/2TV3MK4h.png" %}
 
 * Highlight of this release (pun intended) -- sirens of emergency vehicles received correct placements, so they now actually match models!
-In GTA III and Vice City, most sirens had misplaced coronas -- with this update, they have all been fixed.
+  In GTA III and Vice City, most sirens had misplaced coronas -- with this update, they have all been fixed.
 
   Affected vehicles:
   - Fire Truck (GTA III & Vice City)
@@ -85,34 +85,34 @@ Other highlights
 Not only coronas were given attention in this release. Other changes include, but are not limited to:
 
 * Sirens of FBI vehicles in both GTA III and Vice City have been improved. In GTA III, secondary siren would sound together with car's horn,
-and for Vice City, FBI Washington used a Vice Cheetah siren sound. It's now been changed to the FBI siren sound, same as FBI Rancher:
-{% include figures/video-iframe.html link="https://www.youtube.com/embed/xcLHBxALc2A" %}
+  and for Vice City, FBI Washington used a Vice Cheetah siren sound. It's now been changed to the FBI siren sound, same as FBI Rancher:
+  {% include figures/video-iframe.html link="https://www.youtube.com/embed/xcLHBxALc2A" %}
 
 * A glitch present in all trilogy games which allowed vehicles to spawn without any extras has been fixed.
-In layman's terms this means that a bug allowing "lightless taxis" (in III/Vice City) and "engineless bikes" (in San Andreas) to spawn
-is now gone! If you want to stock up on those truly unique vehicles, do it before updating SilentPatch --
-your existing trophy vehicles will **not** be affected by this fix, so you can keep them even with this bug fixed!
-{% include figures/image.html link="https://i.imgur.com/gB8lbx5.png" thumbnail="https://i.imgur.com/gB8lbx5h.png" %}
+  In layman's terms this means that a bug allowing "lightless taxis" (in III/Vice City) and "engineless bikes" (in San Andreas) to spawn
+  is now gone! If you want to stock up on those truly unique vehicles, do it before updating SilentPatch --
+  your existing trophy vehicles will **not** be affected by this fix, so you can keep them even with this bug fixed!
+  {% include figures/image.html link="https://i.imgur.com/gB8lbx5.png" thumbnail="https://i.imgur.com/gB8lbx5h.png" %}
 
 * GTA III has a few models which were supposed to have very high draw distance. However, this caused them to be treated as LOD models and
-would cause them to disappear when camera is near. This was undesirable and caused models like cranes and window lights to disappear when the player got closer!
-This has now been fixed and should make Liberty City look a bit nicer, especially with window lights working properly:
-<div class="media-container small">
-{% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-crane-before.jpg" left-label="Before"
+  would cause them to disappear when camera is near. This was undesirable and caused models like cranes and window lights to disappear when the player got closer!
+  This has now been fixed and should make Liberty City look a bit nicer, especially with window lights working properly:
+  <div class="media-container small">
+  {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-crane-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/iii-crane-after.jpg" right-label="After" %}
-{% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-window-before.jpg" left-label="Before"
+  {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-window-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/iii-window-after.jpg" right-label="After" %}
-</div>
+  </div>
 
 * An oversight during GTA Vice City development resulted in an issue which made all submachine guns sound the same when
-the player was performing a Drive-By. This naturally was not an issue to GTA III, as it had only a single weapon the player could use to fire from cars.
-A fix has been introduced which makes Drive-By sound exactly the same as shooting on foot, introducing some much needed variety and consistency.
+  the player was performing a Drive-By. This naturally was not an issue to GTA III, as it had only a single weapon the player could use to fire from cars.
+  A fix has been introduced which makes Drive-By sound exactly the same as shooting on foot, introducing some much needed variety and consistency.
 
 * When controlling an in-car camera with mouse in San Andreas, you may have noticed an issue not present when controlling the camera with the gamepad.
-When looking left/right/behind, camera movement is supposed to be fully restricted -- however, when using the mouse it was not fully restricted,
-and so the player could attempt to move it up/down. While moving left/right did nothing, it did give the radar some sort of an existential crisis.
-Now it's been fixed, bringing parity in camera controls across mouse and gamepad.
-{% include figures/video.html link="https://i.imgur.com/bDWEwC5.mp4" attributes="controls muted" %}
+  When looking left/right/behind, camera movement is supposed to be fully restricted -- however, when using the mouse it was not fully restricted,
+  and so the player could attempt to move it up/down. While moving left/right did nothing, it did give the radar some sort of an existential crisis.
+  Now it's been fixed, bringing parity in camera controls across mouse and gamepad.
+  {% include figures/video.html link="https://i.imgur.com/bDWEwC5.mp4" attributes="controls muted" %}
 
 Miscellaneous fixes
 ===================
