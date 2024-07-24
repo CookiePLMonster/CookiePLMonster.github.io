@@ -34,10 +34,10 @@
 	<!-- Custom Icomoon icons -->
 	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/icomoon/style.css" | relative_url }}">
 
-    <!-- Brython 3.11 -->
+    <!-- Brython 3.12 -->
     {% if layout.brython or page.brython %}
-    <script src="https://raw.githack.com/brython-dev/brython/master/www/src/brython.js" crossorigin="anonymous"></script>
-    <script src="https://raw.githack.com/brython-dev/brython/master/www/src/brython_stdlib.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.12.4/brython.min.js" integrity="sha512-2uWY53z9lhFfey4iHT5Fof+/+DcfSSv9LIa4RYz6/yZ3FDMYohTcP7iH7uxsJ1vpkMYZPT4/jDTSqeh9Zetv1w==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3.12.4/brython_stdlib.js" integrity="sha512-I9WiGg3L0URvCVphCM19N3DWj1/q7P5uJmP2YSViK82hCh6uyDSmR9vWnDIwXMp1zQweMc6VXmb2toq2jZtFkQ==" crossorigin="anonymous"></script>
     {% endif %}
 
     <!-- Juxtapose -->
@@ -47,8 +47,7 @@
 
     <!-- MathJax -->
     {% if layout.mathjax or page.mathjax %}
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha512-tiaNmAzpy3KcgtuiLwT9WSlSsqGqtDB5ylMwxoqG5ysNIyzkBw24k6UFTuXGgyXJLJ8aM/ho1h67NRKedPx++Q==" crossorigin="anonymous"></script>
     {% endif %}
 
     <!-- Google Fonts -->
