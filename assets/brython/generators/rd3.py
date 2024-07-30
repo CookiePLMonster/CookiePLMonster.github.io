@@ -30,7 +30,8 @@ def generateCode(platformData, accessCode, cheatID):
     encrypted = pow(packed, platformData.d, platformData.n)
 
     result = ''
-    while encrypted > 0:
+    # As discovered by HOR163, generated cheat strings must always be 13 characters long
+    for _ in range(13):
         byte = encrypted & 0x1F
         ch = chr(byte + ord('0'))
         if ch >= ':':
