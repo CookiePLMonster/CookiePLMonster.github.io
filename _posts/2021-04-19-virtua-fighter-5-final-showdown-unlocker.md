@@ -31,9 +31,7 @@ game from the main menu. **Mode 0** is inaccessible from the vanilla game, but w
 
 Turns out it does more than anyone had expected -- it activates a complete, nearly fully working console version of the game!
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now an absolute banger - Virtua Fighter 5 in Yakuza 6 and Yakuza LAD appears to be FULL CONSOLE VERSION 😱 By default, it can only boot to Arcade Mode or VS Mode directly, but boot it to mode 0 and this happens. Netplay/leaderboards/achievements obviously don&#39;t work... (1/2) <a href="https://t.co/vB6aKBqKlr">pic.twitter.com/vB6aKBqKlr</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1383886736585940997?ref_src=twsrc%5Etfw">April 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Now an absolute banger - Virtua Fighter 5 in Yakuza 6 and Yakuza LAD appears to be FULL CONSOLE VERSION 😱 By default, it can only boot to Arcade Mode or VS Mode directly, but boot it to mode 0 and this happens. Netplay/leaderboards/achievements obviously don&#39;t work... (1/2) <a href="https://t.co/vB6aKBqKlr">pic.twitter.com/vB6aKBqKlr</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1383886736585940997?ref_src=twsrc%5Etfw">April 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A few interesting insights:
 * The game appears to be based upon the Xbox 360 port, with references to Xbox LIVE left in the menus.
@@ -67,9 +65,7 @@ As those arcade games are DLL files separate from the game executable, for the p
 in fact, that's how I found this unused "console mode" in the first place!
 At the moment, my standalone game reaches the title screen only, so it's too early to say whether it's going to be doable or not.
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">3 weeks ago, I was wondering if arcades from Yakuza 6 could run standalone. Today, I finally have Virtua Fighter 5 reach the title screen 🎉 Audio and input are not functional yet, but that&#39;s a great start! <a href="https://t.co/zVo13ux0Kw">pic.twitter.com/zVo13ux0Kw</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1383456664557293572?ref_src=twsrc%5Etfw">April 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">3 weeks ago, I was wondering if arcades from Yakuza 6 could run standalone. Today, I finally have Virtua Fighter 5 reach the title screen 🎉 Audio and input are not functional yet, but that&#39;s a great start! <a href="https://t.co/zVo13ux0Kw">pic.twitter.com/zVo13ux0Kw</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1383456664557293572?ref_src=twsrc%5Etfw">April 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I plan to continue looking into that though, and if I manage to progress it further I will be publishing the results!
 

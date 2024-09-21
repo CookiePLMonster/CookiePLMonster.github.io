@@ -27,7 +27,7 @@ GTA San Andreas
 * Several stat counters now reset on New Game - so the player will not level up quicker after starting New Game from a save
 * "To stop Carl..." message now resets properly on New Game
 * Pay 'n Spray will not clean the car BEFORE garage doors close anymore - now it cleans them while the car is hidden behind the garage door
-* "True Invicibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invicibility cheat enabled (can be toggled on/off; DISABLED by default)
+* "True Invincibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invincibility cheat enabled (can be toggled on/off; DISABLED by default)
 
 ***
 

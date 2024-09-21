@@ -32,6 +32,7 @@ ul.tag-posts {
     li {
         @extend .left-page-margin;
         font-size: 100%;
+        display: flow-root list-item;
         a {
             @extend %body-link;
             color: var(--header-link-color);

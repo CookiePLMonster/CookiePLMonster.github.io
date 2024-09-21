@@ -1,56 +1,62 @@
-const systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
+const modeSwitcher = (function () {
+    const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-function _changeIconTitle(isDark) {
-    const elem = document.getElementById("theme-toggle");
-    if (isDark) {
-        elem.title = "Toggle Light Mode";
-    } else {
-        elem.title = "Toggle Dark Mode";
+    function updateSiteElements(isDark) {
+        const themeName = isDark ? 'dark' : 'light';
+
+        // HTML data theme
+        document.documentElement.setAttribute('data-theme', themeName);
+
+        // Theme toggle text
+        document.getElementById('theme-toggle').title = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+
+        // Data theme for unrendered tweets
+        document.querySelectorAll('.twitter-tweet').forEach(e => {
+            e.setAttribute('data-theme', themeName);
+        });
+
+        // URL query value swap for rendered tweets
+        document.querySelectorAll('[data-tweet-id]').forEach(e => {
+            const url = new URL(e.getAttribute('src'));
+            url.searchParams.set('theme', themeName);
+            e.setAttribute('src', url.toString());
+        });
     }
-}
 
-function modeSwitcher() {
+    function modeSwitcher() {
+        const theme = sessionStorage.getItem('theme');
+        let setDark;
+        if (theme === 'dark') {
+            setDark = false;
+        } else if (theme === 'light') {
+            setDark = true;
+        } else {
+            setDark = !systemInitiatedDark.matches;
+        }
+
+        sessionStorage.setItem('theme', setDark ? 'dark' : 'light');
+        updateSiteElements(setDark);
+        if (typeof DISQUS !== 'undefined') {
+            DISQUS.reset({ reload: true });
+        }
+    }
+
     const theme = sessionStorage.getItem('theme');
-    let setDark = true;
-    if (theme === "dark") {
-        setDark = false;
-    } else if (theme === "light") {
-        setDark = true;
-    } else if (systemInitiatedDark.matches) {
-        setDark = false;
-    }
-
-    if (setDark) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        sessionStorage.setItem('theme', 'dark');
+    if (theme === 'dark') {
+        updateSiteElements(true);
+    } else if (theme === 'light') {
+        updateSiteElements(false);
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        sessionStorage.setItem('theme', 'light');
-    }
-    _changeIconTitle(setDark);
-    if (typeof DISQUS !== 'undefined') {
-        DISQUS.reset({ reload: true });
-    }
-}
-
-(function () {
-    const theme = sessionStorage.getItem('theme');
-    if (theme === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        _changeIconTitle(true);
-    } else if (theme === "light") {
-        document.documentElement.setAttribute('data-theme', 'light');
-        _changeIconTitle(false);
-    } else {
-        _changeIconTitle(systemInitiatedDark.matches);
+        updateSiteElements(systemInitiatedDark.matches);
     }
 
-    systemInitiatedDark.addEventListener('change', function (systemDark) {
-        _changeIconTitle(systemDark.matches);
-        document.documentElement.removeAttribute('data-theme');
+    systemInitiatedDark.addEventListener('change', systemDark => {
+        updateSiteElements(systemDark.matches);
         sessionStorage.removeItem('theme');
         if (typeof DISQUS !== 'undefined') {
             DISQUS.reset({ reload: true });
         }
     });
+
+    return modeSwitcher;
 })();

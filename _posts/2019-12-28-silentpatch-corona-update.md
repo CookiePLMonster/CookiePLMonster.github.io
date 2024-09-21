@@ -29,7 +29,7 @@ Coronas
 * An interesting PS2 vs PC difference
   [has been identified on GTAForums recently](https://gtaforums.com/topic/669045-silentpatch/?do=findComment&comment=1070991808).
   GTA III, Vice City and San Andreas on PS2 rotate light coronas as camera gets closer for them for a nice, subtle effect.
-  For what I theoretize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC -- but not anymore!
+  For what I theorize to have been a mistake in deleting wrong code, this feature was broken in San Andreas on PC -- but not anymore!
   Starting with Build 32, this has been fixed.
   {% include figures/video-iframe.html link="https://streamable.com/s/lhe9m/pyrzkq" %}
 
@@ -56,7 +56,7 @@ Coronas
   - Vice Cheetah (Vice City only)
   - Police Chopper (GTA III & Vice City) -- search light has been misplaced in both games, red tail light was misplaced only in Vice City
 
-  <div class="media-container small">
+  <figure class="media-container small">
   {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-firetruck-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/iii-firetruck-after.jpg" right-label="After" %}
   {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-taxi-before.jpg" left-label="Before"
@@ -73,7 +73,7 @@ Coronas
               right="/assets/img/posts/corona-update/vc-washington-after.jpg" right-label="After" %}
   {% include figures/juxtapose.html left="/assets/img/posts/corona-update/vc-maverick-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/vc-maverick-after.jpg" right-label="After" %}
-  </div>
+  </figure>
 
   Do note -- this fix can be **disabled** from the INI file if you happen to use modified vehicles which account for those misplacements.
   For GTA Vice City, [Fixed Xbox Vehicles](https://gtaforums.com/topic/942192-vc-fixed-xbox-vehicles/) have been adapted to fit fixed placements
@@ -94,15 +94,16 @@ Not only coronas were given attention in this release. Other changes include, bu
   your existing trophy vehicles will **not** be affected by this fix, so you can keep them even with this bug fixed!
   {% include figures/image.html link="https://i.imgur.com/gB8lbx5.png" thumbnail="https://i.imgur.com/gB8lbx5h.png" %}
 
+{: #cranes-fix}
 * GTA III has a few models which were supposed to have very high draw distance. However, this caused them to be treated as LOD models and
   would cause them to disappear when camera is near. This was undesirable and caused models like cranes and window lights to disappear when the player got closer!
   This has now been fixed and should make Liberty City look a bit nicer, especially with window lights working properly:
-  <div class="media-container small">
+  <figure class="media-container small">
   {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-crane-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/iii-crane-after.jpg" right-label="After" %}
   {% include figures/juxtapose.html left="/assets/img/posts/corona-update/iii-window-before.jpg" left-label="Before"
               right="/assets/img/posts/corona-update/iii-window-after.jpg" right-label="After" %}
-  </div>
+  </figure>
 
 * An oversight during GTA Vice City development resulted in an issue which made all submachine guns sound the same when
   the player was performing a Drive-By. This naturally was not an issue to GTA III, as it had only a single weapon the player could use to fire from cars.

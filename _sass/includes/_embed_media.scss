@@ -19,12 +19,26 @@
     }
 }
 
-$video-16-9-padding: 56.25%;
+@mixin iframe-padding($padding) {
+    padding-bottom: $padding * 0.9;
+    @media screen and (min-width: 850px) {
+        padding-bottom: $padding * 0.75;
+        &.small {
+            padding-bottom: $padding * 0.475;
+        }
+    }
+}
 
-.video-entry {
+$video-16-9-padding: 56.25%;
+$video-4-3-padding: 75%;
+
+.iframe-entry {
     @extend %media-entry;
 	position: relative;
-	padding-bottom: $video-16-9-padding * 0.9;
+    @include iframe-padding($video-16-9-padding);
+    &.narrower {
+        @include iframe-padding($video-4-3-padding);
+    }
 
     iframe, object, embed {
         border: 0;
@@ -33,16 +47,6 @@ $video-16-9-padding: 56.25%;
         left: 0;
         width: 100%;
         height: 100%;
-    }
-
-    @media screen and (min-width: 850px) {
-        padding-bottom: $video-16-9-padding * 0.75;
-        &.small {
-            padding-bottom: $video-16-9-padding * 0.475;
-        }
-        &.natural {
-            padding-bottom: $video-16-9-padding * 0.9;
-        }
     }
 }
 
@@ -60,32 +64,32 @@ $video-16-9-padding: 56.25%;
     margin: 0 auto 0.5em;
     > figure {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
     }
-    > .fig-entry, > .video-entry {
+    > .fig-entry, > .iframe-entry {
         margin-bottom: 0;
     }
     &.natural {
-        > .fig-entry, > .video-entry {
+        > .fig-entry, > .iframe-entry {
             max-width: 90%;
         }
     }
 
     @media screen and (min-width: 850px) {
         &.small {
-            > .fig-entry, > .video-entry {
+            > .fig-entry, > .iframe-entry {
                 width: 47.5%;
             }
-            > .video-entry {
+            > .iframe-entry {
                 padding-bottom: $video-16-9-padding * 0.475;
+                &.narrower {
+                    padding-bottom: $video-4-3-padding * 0.475;
+                }
             }
         }
         &.natural {
-            > .fig-entry, > .video-entry {
+            > .fig-entry {
                 width: fit-content;
-            }
-            > .video-entry {
-                padding-bottom: $video-16-9-padding * 0.9;
             }
         }
     }

@@ -47,8 +47,8 @@ for filename in os.listdir(directory):
 
                 if not os.path.isfile(thumb_path):
                     image.thumbnail(THUMB_SIZE)
-                    # If has_transparency is Flalse then the alpha channel exists but is all 255
+                    # If has_transparency is False then the alpha channel exists but is all 255
                     if has_transparency is False:
                         image = image.convert('RGB')
 
-                    image.save(thumb_path, quality=JPEG_QUALITY, optimize=True, subsampling=0)
+                    image.save(thumb_path, quality=JPEG_QUALITY, optimize=True, progressive=True, subsampling=0)

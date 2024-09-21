@@ -13,8 +13,9 @@ This page is available in:
 
 ***
 
+<div style="display: flow-root" markdown="1">
 <div style="max-width:35%;float:right;text-align:center" >
-<img style="padding:0 5%;float:right" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
+<img style="padding:0 5%" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
 <em><span style="display:inline-block">This might be surprising,</span>
 <span style="display:inline-block">but I'm not blue and fluffy.</span></em>
 </div>
@@ -22,6 +23,7 @@ Hi, I'm **Adrian** -- game developer by day; modder and reverse engineer by nigh
 In the cyberspace, I go by **Silent** or **CookiePLMonster**.
 
 ***
+{:style="display: flow-root"}
 
 For as long as I can remember, I've been tinkering with games in one way or another.
 The earliest <q>attempts</q> I can recall included replacing sounds in Driver or modifying textures in various freeware games,
@@ -43,6 +45,7 @@ Not only it got officially endorsed, but it also allowed me to establish first c
 eventually allowed me to get my first job (which I hold till this day).
 
 ***
+{:style="display: flow-root"}
 
 What am I up to these days?
 * I provide professional support and consultancy services for re-releasing old PC games on modern computers
@@ -59,3 +62,4 @@ What am I up to these days?
 
 {:.sidenote}
 Last update: {{ page.last_modified_at | date: page.date-format }}
+</div>

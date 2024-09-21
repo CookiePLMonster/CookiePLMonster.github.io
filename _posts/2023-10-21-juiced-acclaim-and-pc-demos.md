@@ -131,9 +131,7 @@ and the game's future became unknown. This has all happened so late so some boxe
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/wNuw6uVv8ng" %}
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">- work for Rage Software<br>- develop a Lamborghini game nearly to completion<br>- studio bankrupts, game never releases<br>- move on to found Juice Games<br>- develop Juiced for Acclaim nearly to completion<br>- publisher bankrupts, new publisher modifies the game<br><br>Folks had the worst luck :( <a href="https://t.co/wIwmERTVb7">pic.twitter.com/wIwmERTVb7</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1704429355684766178?ref_src=twsrc%5Etfw">September 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">- work for Rage Software<br>- develop a Lamborghini game nearly to completion<br>- studio bankrupts, game never releases<br>- move on to found Juice Games<br>- develop Juiced for Acclaim nearly to completion<br>- publisher bankrupts, new publisher modifies the game<br><br>Folks had the worst luck :( <a href="https://t.co/wIwmERTVb7">pic.twitter.com/wIwmERTVb7</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1704429355684766178?ref_src=twsrc%5Etfw">September 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Before long, [THQ](https://en.wikipedia.org/wiki/THQ) and Take-Two [both bid](https://www.gamespot.com/articles/take-two-squeezing-juiced/1100-6108179/) to acquire rights to Juiced;
 Electronics Arts also attempted to join the bid but failed to meet the deadline (and, honestly, it's good that they didn't manage to buy a direct competitor
@@ -226,12 +224,12 @@ This build is a prototype demo retrieved from [Duffy's Dreamcast Collection](htt
 (except for the texts not scaling to resolution) have been fixed. Comparison screenshots show several obvious differences.
 
 <figure class="media-container small">
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_laDHj6Gwf9.jpg" left-label="May 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_pkIBVvtInu.jpg" right-label="June 2004" %}
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_y3tpqe9WVS.jpg" left-label="May 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_XJc5v9apQw.jpg" right-label="June 2004" %}
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_YGROHPWmIP.jpg" left-label="May 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_XOMk76rR89.jpg" right-label="June 2004" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_laDHj6Gwf9.jpg" left-label="May 2004"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_pkIBVvtInu.jpg" right-label="June 2004" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_y3tpqe9WVS.jpg" left-label="May 2004"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_XJc5v9apQw.jpg" right-label="June 2004" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_YGROHPWmIP.jpg" left-label="May 2004"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_XOMk76rR89.jpg" right-label="June 2004" %}
 </figure>
 
 Based on my observations, I could identify the following differences between May and June builds:
@@ -273,11 +271,11 @@ This demo is similar to the June build, but with a few additional fixes:
 
 <figure class="media-container small">
 {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_5rEPO69pXg.jpg" left-label="May 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_YR3rVipjAJ.jpg" right-label="July 2004" %}
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_YR3rVipjAJ.jpg" right-label="July 2004" %}
 {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_JGSrHwJ2h9.jpg" left-label="June 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_VcNQfgLy7o.jpg" right-label="July 2004" %}
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_3pPERfVUUc.jpg" left-label="June 2004"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_9byolLFsSJ.jpg" right-label="July 2004"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_VcNQfgLy7o.jpg" right-label="July 2004" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_3pPERfVUUc.jpg" left-label="June 2004"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_9byolLFsSJ.jpg" right-label="July 2004"
                 id="june-july-lighting" %}
 </figure>
 
@@ -307,8 +305,8 @@ I want those demos to be playable, but I don't want to distort their "history" b
 * {: #acclaim-widescreen} Widescreen from the console builds has been re-enabled and further improved. The default widescreen option slightly distorts the aspect ratio and appears horizontally squashed
   compared to 4:3. SilentPatch corrects this and additionally supports arbitrary aspect ratios, which means ultra widescreen now looks as expected.
   The configuration application can now also select widescreen resolutions when in windowed mode.
-  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_RlmB8wyX8f.jpg" left-label="Stock"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_44IkcUPlm6.jpg" right-label="SilentPatch" %}
+  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_RlmB8wyX8f.jpg" left-label="Stock"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_44IkcUPlm6.jpg" right-label="SilentPatch" %}
 
 * The default driver name `Player1` can now be overridden via the INI file.
 
@@ -362,8 +360,8 @@ I want those demos to be playable, but I don't want to distort their "history" b
   Furthermore, after <kbd>Alt</kbd> + <kbd>Tab</kbd>, this issue vanishes and the environments are dark regardless of whether the HUD is drawn or not.
   I haven't looked into this issue with PIX, so I am not sure which of the two states is "correct", but in my opinion the darker state makes the affected objects
   (especially the car) blend with the rest of the environment better.
-  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_KPTyoqw3g8.jpg" left-label="HUD"
-                right="/assets/img/posts/juiced-research/screens/thumb/Juiced_2w2s8Ynrza.jpg" right-label="No HUD"
+  {% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_KPTyoqw3g8.jpg" left-label="HUD"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_2w2s8Ynrza.jpg" right-label="No HUD"
                 caption="This looks somewhat similar to the [June/July comparison](#june-july-lighting)." %}
 
 ## Demo installer issues {#acclaim-installers}
@@ -423,12 +421,12 @@ Content-wise, this demo is fleshed out further, but on the technical side it onl
 this one includes all the incompatibilities of the final game 😕
 
 <figure class="media-container small">
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-fonts.jpg" left-label="January 2005"
-                right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-fonts.jpg" right-label="April 2005" %}
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-betting.jpg" left-label="January 2005"
-                right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-betting.jpg" right-label="April 2005" %}
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/jan-2005-widescreen.jpg" left-label="January 2005"
-                right="/assets/img/posts/juiced-research/screens/thumb/apr-2005-widescreen.jpg" right-label="April 2005" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/jan-2005-fonts.jpg" left-label="January 2005"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/apr-2005-fonts.jpg" right-label="April 2005" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/jan-2005-betting.jpg" left-label="January 2005"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/apr-2005-betting.jpg" right-label="April 2005" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/jan-2005-widescreen.jpg" left-label="January 2005"
+                right="/assets/img/posts/juiced-research/screens/juxtapose/apr-2005-widescreen.jpg" right-label="April 2005" %}
 </figure>
 
 Generally, this demo appears to be identical to the final game, with all design locked in place.
@@ -567,8 +565,8 @@ Just like I [mentioned earlier](#acclaim-widescreen), all Acclaim's versions of 
 the aspect ratio is "overcorrected", causing the image to be squashed. With this patch, the widescreen proportions match 4:3 perfectly,
 the same as I did for PC demos.
 
-{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20231004174952.png" left-label="4:3"
-            right="/assets/img/posts/juiced-research/screens/thumb/Juiced_SLUS-20872_20231004174845.jpg" right-label="16:9 (Stock)" %}
+{% include figures/juxtapose.html left="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_SLUS-20872_20231004174952.webp" left-label="4:3"
+            right="/assets/img/posts/juiced-research/screens/juxtapose/Juiced_SLUS-20872_20231004174845.webp" right-label="16:9 (Stock)" %}
 
 ## DNAS Bypass
 

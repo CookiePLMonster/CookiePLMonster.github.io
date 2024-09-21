@@ -49,9 +49,7 @@ As you can see, the Simulation Disc can be considered more "complete" of the two
 In practice, with a Simulation Disc, all it takes to get to Arcade Mode is a simple edit of the Main Menu code to load
 Arcade Mode instead of Simulation. As I teased on Twitter, I had a proof of concept of this change back in late August:
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hold up... this is *not* a Gran Turismo 2 Arcade Disc <a href="https://t.co/EGjDjTNNpe">pic.twitter.com/EGjDjTNNpe</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1431627926202630148?ref_src=twsrc%5Etfw">August 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Hold up... this is *not* a Gran Turismo 2 Arcade Disc <a href="https://t.co/EGjDjTNNpe">pic.twitter.com/EGjDjTNNpe</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1431627926202630148?ref_src=twsrc%5Etfw">August 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Attempting the combination for real
 

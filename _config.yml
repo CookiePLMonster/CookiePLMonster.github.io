@@ -195,10 +195,6 @@ defaults:
       author:
         name: Silent
         twitter: __silent_
-  - scope:
-      path: "google*.html"
-    values:
-      sitemap: false
 
 
 # PORTFOLIO

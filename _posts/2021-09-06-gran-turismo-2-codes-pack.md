@@ -137,9 +137,7 @@ All listed cheats can be downloaded from *Mods & Patches*. Click here to head to
 
 This batch of cheats might not be the last. I've been working on combining Arcade and Simulation discs, with promising results:
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">OK, maybe combining Gran Turismo 2 discs can be viable after all... <a href="https://t.co/gdzDnQtsDt">pic.twitter.com/gdzDnQtsDt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1431682023270268928?ref_src=twsrc%5Etfw">August 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">OK, maybe combining Gran Turismo 2 discs can be viable after all... <a href="https://t.co/gdzDnQtsDt">pic.twitter.com/gdzDnQtsDt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1431682023270268928?ref_src=twsrc%5Etfw">August 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I also attempted to give AI cars their own engine sounds, but this causes the emulated console... to run out of audio RAM! Unlike normal RAM, it's impossible to expand it so that
 improvement will probably not be realized anytime soon, if ever.

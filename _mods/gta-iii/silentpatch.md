@@ -21,7 +21,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Headlight coronas now display properly (as they do on PS2, XBOX and PC Steam versions)
 * Purple Nines Glitch has been fixed
 * Game now performs a bit better on high FPS. It doesn't freeze on fadeouts anymore, although it still has issues with car physics, gravity and sounds. Therefore it's still recommended to play with Frame Limiter set to ON
-* Rhino spawned via a cheatcode doesn't stay on map forever anymore
+* Rhino spawned via a cheat code doesn't stay on the map forever anymore
 * Blista now can be lifted by a car crusher crane - instead, now it cannot lift Coach
 * Shooting from M16 in 1st person mode now increments bullets fired stat properly (so you can't score Accuracy to be more than 100%)
 * Wet road reflections render properly again (just like with Road Reflections Fix)

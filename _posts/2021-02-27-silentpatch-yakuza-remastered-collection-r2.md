@@ -128,9 +128,7 @@ The rest still applies, so I'll list it in hopes of bringing more visibility to 
 
 Just as I was wrapping this blog post, I was made aware of a bug seemingly only present in Yakuza 5:
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yakuza 5 enters the list of &quot;games which cannot handle non-ASCII user names&quot; with it&#39;s photo booth crash 😐 <a href="https://t.co/87JmrvXJe1">https://t.co/87JmrvXJe1</a><a href="https://twitter.com/qlocsa?ref_src=twsrc%5Etfw">@qlocsa</a> śhóułd hąvę ręąłły ćhęćkęd ćąśęś łikę thiś, it&#39;ś vęry ęąśy with Półiśh diąćritićś...<br>For now, I guess that means Yakuza 5 <a href="https://twitter.com/hashtag/SilentPatchIt?src=hash&amp;ref_src=twsrc%5Etfw">#SilentPatchIt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1364503326126198784?ref_src=twsrc%5Etfw">February 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Yakuza 5 enters the list of &quot;games which cannot handle non-ASCII user names&quot; with it&#39;s photo booth crash 😐 <a href="https://t.co/87JmrvXJe1">https://t.co/87JmrvXJe1</a><a href="https://twitter.com/qlocsa?ref_src=twsrc%5Etfw">@qlocsa</a> śhóułd hąvę ręąłły ćhęćkęd ćąśęś łikę thiś, it&#39;ś vęry ęąśy with Półiśh diąćritićś...<br>For now, I guess that means Yakuza 5 <a href="https://twitter.com/hashtag/SilentPatchIt?src=hash&amp;ref_src=twsrc%5Etfw">#SilentPatchIt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1364503326126198784?ref_src=twsrc%5Etfw">February 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Sounds familiar? Indeed, it's a topic I've been covering more times than I'd want by now, yet again an example of a game not handling Unicode paths correctly.
 Thankfully, in the case of Yakuza 5, it's not completely broken -- only the photo booth functionality seems to be affected, as it saves photos to a separate user directory!

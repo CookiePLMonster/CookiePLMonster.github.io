@@ -12,7 +12,16 @@ These games are surely great, nonetheless they have some issues. This modificati
 Fixes marked with <i class="fab fa-steam-symbol"></i> are supported in 1.0, Steam and Rockstar Games Launcher versions. Fixes without that symbol require 1.0.\\
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file. These options are enabled by default, unless stated otherwise.
 
-**Featured fixes:**
+## Featured fixes:
+
+{% capture critical-fixes %}
+* Fixed one bug[^wesser]
+* Fixed another bug[^fire_head]
+* Another fix from Wesser[^wesser]
+{% endcapture %}
+{% include elements/details.html content=critical-fixes summary="Critical \"*fixes*\"" %}
+
+{% capture test-fixes %}
 * <i class="fab fa-steam-symbol"></i> 14ms frame delay has been removed. As a result, game now locks properly on 30 FPS instead of 25 FPS
 * <i class="fab fa-steam-symbol"></i> More precise frame limiter, reducing lag spikes a bit when playing with Frame Limiter on
 * Game timers now tick in a more accurate manner, making them not freeze if framerate exceeds 1000 frames per second; in other words, this fixes occasional freezes on fadeouts if playing with Frame Limiter off
@@ -124,7 +133,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * DFT-30 left middle wheel now displays properly (game now accepts a typo present in its naming)
 * Pushing pedestrians against the wall with a vehicle will not trigger passenger's voice lines anymore - instead, now they are triggered when player runs over pedestrians
 * Pay 'n Spray will not clean the car BEFORE garage doors close anymore - now it cleans them while the car is hidden behind the garage door
-* <i class="fas fa-cog"></i> "True Invicibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invicibility cheat enabled (off by default)
+* <i class="fas fa-cog"></i> "True Invincibility" option has been added - with the option enabled, police helicopter will not hurt the player when they have an Invincibility cheat enabled (off by default)
 * <i class="fas fa-cog"></i> Made the game select metric/imperial units basing on system locale settings
 * Fixed a bug where paintjobs would vanish from cars stored in garage if they were stored without looking at them
 * <i class="fab fa-steam-symbol"></i> Coronas now properly rotate as camera is getting closer to them, like on PS2
@@ -138,6 +147,12 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Steam/RGL version of the game will not reject 1.0/1.01 saves anymore (still, a compatible SCM is needed for the save to work)
 * <i class="fab fa-steam-symbol"></i> Censorships from Steam and RGL versions for German players have been removed
 * <i class="fab fa-steam-symbol"></i> Steam/RGL versions will now default Steer with Mouse option to disabled, like in 1.0/1.01
+{% endcapture %}
+{% include elements/details.html content=test-fixes summary="Test fixes" %}
+
+***
+
+## Credits
 
 {% include setup-instructions.html %}
 

@@ -48,7 +48,7 @@ h2 {
     font-size: 1.75em;
 }
 
-h3 {
+h3, summary {
     font-size: 1.5em;
 }
 
@@ -75,7 +75,7 @@ blockquote {
     margin: 1em;
 }
 
-blockquote, footer {
+blockquote, footer, details {
     > :last-child {
         margin-bottom: 0;
     }
@@ -172,8 +172,20 @@ kbd {
     white-space: nowrap;
 }
 
+summary {
+    font-weight: bold;
+    line-height: 1.3;
+    &::marker {
+        @extend %fa-icon;
+        content: '\f054  ';
+    }
+}
+
 details[open] > summary {
-    color: $link-color;
+    margin-bottom: 0.67em;
+    &::marker {
+        content: '\f077  ';
+    }
 }
 
 pre {
@@ -222,7 +234,7 @@ summary {
     cursor: pointer;
 }
 
-#markdown-toc {
+#markdown-toc, .additional-toc {
     font-weight: bold;
 }
 
@@ -237,7 +249,7 @@ summary {
         font-size: 1.5em;
     }
 
-    h3 {
+    h3, summary {
         font-size: 1em;
     }
 
@@ -284,7 +296,7 @@ summary {
         font-size: 1em;
     }
 
-    h3 {
+    h3, summary {
         font-size: 0.9em;
     }
 

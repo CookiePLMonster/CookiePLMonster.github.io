@@ -16,7 +16,7 @@ This page contains affiliate links, meaning I get a commission for every purchas
 I am happy to report that **World Racing 2: Champion Edition**, a digital re-release of World Racing 2
 I've been working on has now been released on Steam, GOG&#46;com and ZOOM Platform!
 
-<div align="center">
+<div class="center-blocks">
 <iframe src="https://store.steampowered.com/widget/1301010/" frameborder="0" width="900" height="200"></iframe>
 </div>
 

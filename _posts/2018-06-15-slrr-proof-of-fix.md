@@ -14,10 +14,8 @@ tags: [Articles]
 
 This is a follow-up to a tweet I posted a few days ago:
 
-<div align="center">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Developer not finding several memory corruption issues which could lead to random crashes?<br>Hold my beer.<a href="https://twitter.com/hashtag/SilentPatchIt?src=hash&amp;ref_src=twsrc%5Etfw">#SilentPatchIt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1005960668950990848?ref_src=twsrc%5Etfw">10 June 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Developer not finding several memory corruption issues which could lead to random crashes?<br>Hold my beer.<a href="https://twitter.com/hashtag/SilentPatchIt?src=hash&amp;ref_src=twsrc%5Etfw">#SilentPatchIt</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1005960668950990848?ref_src=twsrc%5Etfw">10 June 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 # The game
 A quick introduction to the subject -- I am analyzing **Street Legal Racing: Redline v2.3.1** -- officially endorsed expansion/enhancement of original Street Legal Racing: Redline,
@@ -26,7 +24,7 @@ original developers.
 
 Original game was released back in 2003 so it's not possible to obtain it digitally anywhere. However, v2.3.1 can be obtained from Steam:
 
-<div align="center">
+<div class="center-blocks">
 <iframe src="https://store.steampowered.com/widget/497180/" frameborder="0" width="900" height="200"></iframe>
 </div>
 

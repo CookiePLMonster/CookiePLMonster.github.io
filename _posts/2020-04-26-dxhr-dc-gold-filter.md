@@ -116,10 +116,10 @@ To find out more, in the meantime I contacted Adrian Courrèges himself and shar
 (I've only ever played Director's Cut, so getting to any other locations in the original game would've taken plenty of time) and was able to extract the constant buffer contents
 from them. Unsurprisingly, every capture had them different, so I placed them in a serialized capture mentioned earlier so I could easily visualize how they would look on the same test scene:
 
-<div class="media-container small">
+<figure class="media-container small">
 {% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color2.jpg" %}
 {% include figures/image.html link="/assets/img/posts/dxhrdc-gfx/dxhr-color3.jpg" %}
-</div>
+</figure>
 
 As you can see, the colors are quite different, which means those attributes are relevant for the final presentation.
 Sadly, I tried to look for any remains of those attributes in the Director's Cut and currently did not manage to find anything.
@@ -151,7 +151,7 @@ In both games, bloom is realized with 5 draw calls -- 4 draw calls on bloom + 1 
 Curiously, differences don't only boil down to different shaders, so it's worth comparing each draw separately.
 One of the draw calls is identical in both games, and I marked it with **bold**.
 
-<div class="center-blocks-container">
+<figure class="center-blocks">
 <div markdown="1">
 Human Revolution:
 1. Extract light elements from the image (shader A).
@@ -168,7 +168,7 @@ Director's Cut:
 4. Redraw using shader D'.
 5. Merge bloom back using shader E' and intensity 2.0.
 </div>
-</div>
+</figure>
 
 Thankfully, all the constant buffers involved in the bloom pass are immutable -- and thus I have a guarantee that they don't change during the gameplay.
 This should make bloom fairly straightforward to restore later, much more straightforward than the gold filter.

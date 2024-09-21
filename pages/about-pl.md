@@ -16,8 +16,9 @@ Ta strona dostępna jest w:
 
 ***
 
+<div style="display: flow-root" markdown="1">
 <div style="max-width:35%;float:right;text-align:center" >
-<img style="padding:0 5%;float:right" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
+<img style="padding:0 5%" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
 <em><span style="display:inline-block">To może dziwić, ale</span>
 <span style="display:inline-block">nie jestem niebieski ani futrzasty.</span></em>
 </div>
@@ -25,6 +26,7 @@ Hej, jestem **Adrian** -- za dnia pracuję przy programowaniu gier, wieczorami m
 Próbuję naprawiać różne gry. W&nbsp;sieci udzielam się jako **Silent** lub **CookiePLMonster**.
 
 ***
+{:style="display: flow-root"}
 
 Odkąd pamiętam, zawsze w&nbsp;jakiś sposób grzebałem w&nbsp;plikach gier. Pierwsze <q>próby</q>, do których sięgam pamięcią,
 to m.in. podmienianie plików dźwiękowych w&nbsp;Driverze, modyfikowanie tekstur w&nbsp;różnych grach freeware,
@@ -47,6 +49,7 @@ a&nbsp;także okazał się moim punktem wejścia do zdobycia kontaktów w&nbsp;b
 pierwszą pracę (w&nbsp;której jestem do dziś).
 
 ***
+{:style="display: flow-root"}
 
 Czym zajmuję się obecnie?
 * Oferuję profesjonalne usługi wsparcia i&nbsp;doradztwa w&nbsp;zakresie wydawania starych gier PC na współczesne komputery
@@ -78,3 +81,4 @@ Ostatnia aktualizacja:
   {% when '11' %}listopada
   {% when '12' %}grudnia
 {% endcase %} {{ lastdate | date: "%Y" }}
+</div>

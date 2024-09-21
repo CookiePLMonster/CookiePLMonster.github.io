@@ -27,9 +27,7 @@ the camera (it took until GT Sport for this to become an option) -- until now.
 Interestingly, Polyphony made that change **very** late in development -- GT4 First Preview, one of the demos released well after GT4 Prologue
 still has a GT3-like chase camera!
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I never before compared an &quot;old&quot; Gran Turismo chase camera with the &quot;new&quot; one introduced in GT4, so I wasn&#39;t sure how big of a deal it is. Now comparing GT4 and GT4 First Preview (still using &quot;old&quot; chase camera), the difference is indeed major. Interesting! <a href="https://t.co/l4GgPLel6f">pic.twitter.com/l4GgPLel6f</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1449783924654235651?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">I never before compared an &quot;old&quot; Gran Turismo chase camera with the &quot;new&quot; one introduced in GT4, so I wasn&#39;t sure how big of a deal it is. Now comparing GT4 and GT4 First Preview (still using &quot;old&quot; chase camera), the difference is indeed major. Interesting! <a href="https://t.co/l4GgPLel6f">pic.twitter.com/l4GgPLel6f</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1449783924654235651?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 In the past, there have been attempts at bringing a GT3-style camera back to GT4, but none of them replicated the behaviour exactly.
 With my approach, I investigated the **exact** differences between GT4 First Preview and the final GT4. For what I need,

@@ -24,11 +24,11 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * The game now lists all available display resolutions, lifting the limit of 128 resolutions and the 4:3 aspect ratio constraint.
 * The game will now try to pick the closest matching resolution instead of crashing on startup if launched with an invalid resolution specified in the config.
 * The game now defaults to desktop resolution on the first boot.
-* Several issues related to the sun rendering have been fixed - sun flickering with anti-aliasing enabled has been fixed, and a consistent hitch when the sun was about to appear on screen was resolved.
+* Several issues related to the sun rendering have been fixed -- sun flickering with anti-aliasing enabled has been fixed, and a consistent hitch when the sun was about to appear on screen was resolved.
 * Fixed multiple distinct issues causing water reflections to appear either too dark or completely black.
 * Fixed car shadows appearing overly sharp, or not appearing at all when anti-aliasing is enabled.
 * Fixed a crash when switching between display adapters with different numbers of resolutions, and made the resolutions list automatically refresh when switching adapters, eliminating a possible crash.
-* The game now handles arbitrary aspect ratios correctly - with all 3D elements and the entire UI fixed for widescreen and positioning dynamically.
+* The game now handles arbitrary aspect ratios correctly -- with all 3D elements and the entire UI fixed for widescreen and positioning dynamically.
 * Fixed a possible out of bounds read when the supplied translation file did not contain all the strings the game needs (for example, when using the PL executable with EN data).
 * Improved the overall precision of in-game timers.
 * Fixed an issue where split-screen would not work correctly on modern PCs with fast enough CPUs unless the game was forced to use a single CPU core.
@@ -39,7 +39,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Half pixel issues have been corrected across the UI, improving the overall clarity of the interface, and fixing numerous issues where fullscreen backgrounds would leave a single pixel-wide line (or a seam in the middle) with multisampling enabled.
 * Improved the visual consistency of numerous race UI elements.
 * Improved the visual consistency of the digital tachometer by using a scissor feature for rendering, improving its accuracy and resolving a possible flicker.
-* Support for texture replacements and new fonts has been improved - the game can now handle higher resolution assets without glitching.
+* Support for texture replacements and new fonts has been improved -- the game can now handle higher resolution assets without glitching.
 * UI elements and fonts with sharp pixels now use nearest neighbor filtering instead of linear filtering for improved clarity.
 * Improved the presentation of line boxes used e.g. in the onscreen keyboard and Car Setup, fixing gaps, overlapping lines, and misplaced fill.
 * Legend lines on the Telemetry screen now fade out together with the rest of the menu.
@@ -63,8 +63,8 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * Added an option to toggle the HUD by pressing <kbd>F5</kbd>.
 
 ### Language Pack:
-* Added support for all official text translations used together - English, French, German, Spanish, Italian, Polish, and Czech.
-* Added support for all official co-drivers together - English, French, German, Spanish, Polish (Janusz Kulig), Polish (Janusz Wituch), and Czech.
+* Added support for all official text translations used together -- English, French, German, Spanish, Italian, Polish, and Czech.
+* Added support for all official co-drivers together -- English, French, German, Spanish, Polish (Janusz Kulig), Polish (Janusz Wituch), and Czech.
 * Re-added support for Nicky Grist's pace notes in the Polish re-release.
 * Revised some capitalization inconsistencies in all languages.
 * Revised Italian translation.

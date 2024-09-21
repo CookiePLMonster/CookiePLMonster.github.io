@@ -18,9 +18,7 @@ While I initially thought they were removed from the files, turns out I was wron
 * Fixed Z-fighting on re-enabled FILA and Pizza Hut logos. This means they will not flicker anymore.
 
 This release in action -- Alexvgz published a teaser for restored voices a while ago. Now, with Z-fighting fixed, we're finally making this release official:
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Would you look at that, license voices have been restored!<br>It only took 3 different crazy taxi port assembly just to find the code that was keeping them mute. <a href="https://t.co/94Ji5tFmzO">pic.twitter.com/94Ji5tFmzO</a></p>&mdash; Alexvgz (@alexvgz) <a href="https://twitter.com/alexvgz/status/1430001643769065474?ref_src=twsrc%5Etfw">August 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Would you look at that, license voices have been restored!<br>It only took 3 different crazy taxi port assembly just to find the code that was keeping them mute. <a href="https://t.co/94Ji5tFmzO">pic.twitter.com/94Ji5tFmzO</a></p>&mdash; Alexvgz (@alexvgz) <a href="https://twitter.com/alexvgz/status/1430001643769065474?ref_src=twsrc%5Etfw">August 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Additionally, just yesterday Rinnegatamante published an update for his Crazy Taxi Vita that **integrates Dreamcast Restoration 2.0!**
 In fact, his findings made this update possible, as I was finally able to fix the Z-fighting =)

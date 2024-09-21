@@ -114,10 +114,8 @@ Official patch
 Shortly after I [first posted about this research on Twitter](https://twitter.com/__silent_/status/1093615584955322368),
 this issue has been fixed in an official patch:
 
-<div align="center">
-<blockquote class="twitter-tweet" data-cards="hidden" data-lang="pl"><p lang="en" dir="ltr">A new Yakuza 0 patch is available on the community test branch! <br><br>Includes:<br>Shadow/lighting fixes<br>Particle effect fixes<br>Improved ultrawide support<br>FOV slider<br>+ Much more<br><br>Full patch notes and instructions are available here:<a href="https://t.co/WhuWRRM0GZ">https://t.co/WhuWRRM0GZ</a></p>&mdash; Lab42 Games (@Lab42Games) <a href="https://twitter.com/Lab42Games/status/1094915065470439424?ref_src=twsrc%5Etfw">11 February 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">A new Yakuza 0 patch is available on the community test branch! <br><br>Includes:<br>Shadow/lighting fixes<br>Particle effect fixes<br>Improved ultrawide support<br>FOV slider<br>+ Much more<br><br>Full patch notes and instructions are available here:<a href="https://t.co/WhuWRRM0GZ">https://t.co/WhuWRRM0GZ</a></p>&mdash; Lab42 Games (@Lab42Games) <a href="https://twitter.com/Lab42Games/status/1094915065470439424?ref_src=twsrc%5Etfw">11 February 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 Relief? Of course -- for numerous reasons. People complained about the issue quite a lot, at that point I didn't know if it's fixable via an unofficial fix,
 plus even if I fixed it most people would still prefer an official fix. As far as I'm concerned, having this fixed officially was a win-win.

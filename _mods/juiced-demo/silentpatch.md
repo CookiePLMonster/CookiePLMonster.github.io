@@ -61,7 +61,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 
 <figure class="media-container small">
 {% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_xjBpXHGWs2.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_xjBpXHGWs2.jpg" %}
-{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_yL91hpKxkJ.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_yL91hpKxkJ.jpg" %}
+{% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_yL91hpKxkJ.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_yL91hpKxkJ.jpg" %}
 {% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_zzGrgkY8YT.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_zzGrgkY8YT.jpg" %}
 {% include figures/image.html link="/assets/img/posts/juiced-research/screens/Juiced_nesTl97B8u.png" thumbnail="/assets/img/posts/juiced-research/screens/thumb/Juiced_nesTl97B8u.jpg" %}
 </figure>

@@ -12,7 +12,7 @@ tags: [Releases]
 
 It's real -- a single bugfix for a graphical issue caused a chain of events, and now CRC Extreme is (almost) **out on Steam!**
 
-<div align="center">
+<div class="center-blocks">
 <iframe src="https://store.steampowered.com/widget/925550/" frameborder="0" width="900" height="200"></iframe>
 </div>
 

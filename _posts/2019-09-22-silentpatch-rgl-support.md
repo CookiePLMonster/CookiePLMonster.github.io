@@ -99,9 +99,7 @@ For those curious, when working on the RGL version I figured out some things abo
 * It is supposed to accept 1.0 EU saves, but those will crash due to SCM differences between 1.0 and later versions!
 * Rockstar **attempted** to fix mouse issues, as I mentioned on Twitter!
 
-<div align="center">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gotta give <a href="https://twitter.com/RockstarGames?ref_src=twsrc%5Etfw">@RockstarGames</a> some credit for San Andreas on RGL, it seems like they moved away from DirectInput based mouse in favour of Windows messages based mouse!<br>What this means for users - mouse should not be breaking anymore!? <a href="https://t.co/Wa4gB6vATs">pic.twitter.com/Wa4gB6vATs</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1175106767325487104?ref_src=twsrc%5Etfw">September 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Gotta give <a href="https://twitter.com/RockstarGames?ref_src=twsrc%5Etfw">@RockstarGames</a> some credit for San Andreas on RGL, it seems like they moved away from DirectInput based mouse in favour of Windows messages based mouse!<br>What this means for users - mouse should not be breaking anymore!? <a href="https://t.co/Wa4gB6vATs">pic.twitter.com/Wa4gB6vATs</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1175106767325487104?ref_src=twsrc%5Etfw">September 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Sadly, this fix is incomplete and mouse still breaks for most users. Still, have to give Rockstar credit where it's due.
 

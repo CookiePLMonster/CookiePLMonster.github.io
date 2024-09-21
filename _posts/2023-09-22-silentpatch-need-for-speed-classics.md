@@ -57,9 +57,7 @@ by NFS2/Porsche Modern Patches (as far as we know, NFS3/NFS4 patches are spotles
   by changing the device enumeration to only list gamepads, so the game does not require a wrapper to run. As a bonus,
   this also fixed an issue where the game enumerated... more than it should, even with `dinputto8`.
   For example, on my PC it would even enumerate USB audio and AIO devices:
-  <div align="center">
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Good job detecting my AIO as an input device, NFS Porsche <a href="https://t.co/WXxVCv2JKi">pic.twitter.com/WXxVCv2JKi</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1556361034549661696?ref_src=twsrc%5Etfw">August 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
+  <blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Good job detecting my AIO as an input device, NFS Porsche <a href="https://t.co/WXxVCv2JKi">pic.twitter.com/WXxVCv2JKi</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1556361034549661696?ref_src=twsrc%5Etfw">August 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Changelog and download
 
