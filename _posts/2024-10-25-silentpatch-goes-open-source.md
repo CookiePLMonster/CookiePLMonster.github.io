@@ -29,7 +29,7 @@ If you want to jump straight to SilentPatch or check the source code, **go to th
 
 Tomorrow, on October 26th, 2024, GTA San Andreas turns 20 years old. I haven't had the chance to play it upon its release in 2004 -- I was a kid
 who, back then, played exclusively on PC and played Vice City whenever my parents would allow me. My first experience with San Andreas was
-in mid-2005, when the game was released on PC; little did I know back then how influential GTA in general, but most specifically San Andreas,
+in mid-2005 when the game was released on PC; little did I know back then how influential GTA in general, but most specifically San Andreas,
 would later be for my life and my professional career -- and that nearly two decades later, well into my adult life, I would still be fixing
 it to make it as enjoyable an experience as I possibly can.
 
@@ -41,13 +41,13 @@ for which I sincerely apologize.
 
 However, this delay comes with a silver lining -- what I initially planned to be a simple upload of the source code
 cleaned up for a public release turned into the biggest content update I've ever released.
-This release contains not only a wide selection of new fixes, I also went back to many older fixes and upgraded them to be safer, simpler,
+This release contains not only a wide selection of new fixes; I also went back to many older fixes and upgraded them to be safer, simpler,
 more compatible with other modifications, and free of side effects. Numerous minor regressions introduced by SilentPatch are now resolved,
-ensuring that the patch goes open source in as perfect state as possible.
+ensuring that the patch goes open source in as perfect a state as possible.
 
 In this blog post, I'll break down the most significant fixes introduced in this update, a culmination of approximately 10 months of development
 (although not without breaks), and a lot of testing over **nine** Release Candidate builds. My explanations may get a bit more technical
-than the usual, but I did my best to keep them digestible. No code names this time! The last time I tried that,
+than usual, but I did my best to keep them digestible. No code names this time! The last time I tried that,
 my code name of choice aged poorly very quickly 😑.
 
 ***
@@ -83,7 +83,7 @@ Affects: All trilogy games.
 
 To provide some variety in the game world, traffic vehicles act with a degree of randomness. One of the random decisions
 they make is the moment they turn the lights on at night, or when it gets foggy or rainy. For each vehicle in the world,
-a random "threshold" gets picked, deciding how dark, rainy or foggy it has to be for the vehicle to turn the headlights on.
+a random "threshold" gets picked, deciding how dark, rainy, or foggy it has to be for the vehicle to turn the headlights on.
 
 However, this tiny feature suffers from a difference in how randomness works on PC vs PS2 -- the range of randomness
 is lower on PC (`0-32767`) than it is on PS2 (`0-65535`), but the code calculating the thresholds has not been updated.
@@ -134,7 +134,7 @@ With this fix, the first vehicle explosion simply kills the player 😥
 {:.sidenote}
 Affects: GTA III, GTA Vice City.
 
-In III and Vice City, environment mapping wasn't applied on vehicle extras. This resulted in all extras appearing matte
+In III and Vice City, environment mapping wasn't applied to vehicle extras. This resulted in all extras appearing matte
 (with no specularity), which is fine for parts like leather roofs on Stallion and Mesa Grande, but not necessarily
 on metallic extras, like Stinger's roof, that now matches the way Yakuza Stinger looks:
 
@@ -181,8 +181,8 @@ so they end on the previous camera cut instead.
 {:.sidenote}
 Affects: All trilogy games.
 
-This is one of the issues that make lives of speedrunners harder: in all three trilogy games,
-the bigger your selected resolution is, the longer the mission title and mission completion/failure texts stay on screen!
+This is one of the issues that make the lives of speedrunners harder: in all three trilogy games,
+the bigger your selected resolution is, the longer the mission title and mission completion/failure texts stay on the screen!
 At first, this sounds completely crazy and I wouldn't blame anyone for thinking it's a lie or placebo -- alas, it's true.
 
 It all only comes together thanks to one of the pre-release clips from GTA III. Pay attention to the "Reward" text:
@@ -214,7 +214,7 @@ and therefore it makes no sense to enable it.
 Affects: GTA Vice City, GTA San Andreas.
 
 The games have an unused, yet mostly finished mode of displaying the HUD -- when it's enabled, only the clock displays continuously.
-Money, the weapon icon, wanted level stars and the energy bars only display when their statuses change (e.g. you lose health, or pick up money),
+Money, the weapon icon, wanted level stars, and the energy bars only display when their statuses change (e.g. you lose health, or pick up money),
 and after that, they fade out after several seconds. SilentPatch fixes multiple visual bugs this feature exhibited,
 and can optionally enable it via the INI file.
 
@@ -223,13 +223,13 @@ and, unlike in GTA IV, it's not possible to show the entire HUD on demand, so yo
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_aV44c4zODc.jpg" thumbnail="auto" caption="Very... minimal." %}
 
-Minimal HUD in San Andreas isn't introduced in this update -- it existed in SilentPatch since **late 2017**, and was first made public in Build 29 released
-[in May 2018]({% post_url 2018-05-20-silentpatch-r29 %}). However, for some reason I never documented this option,
+Minimal HUD in San Andreas isn't introduced in this update -- it existed in SilentPatch since **late 2017** and was first made public in Build 29 released
+[in May 2018]({% post_url 2018-05-20-silentpatch-r29 %}). However, for some reason, I never documented this option,
 so it remained "hidden" and the users had to add it to the INI file by themselves.
 With this build, I finally officially documented it, so it appears in the configuration file, and consequently,
 also in the [debug menu](https://github.com/aap/debugmenu){:target="_blank"}.
 
-However, it **is** new for Vice City -- as only recently I was made aware that this feature existed also in there! Therefore, in this update,
+However, it **is** new for Vice City -- as only recently I was made aware that this feature existed also there! Therefore, in this update,
 Minimal HUD can now also be enabled in VC. Be mindful that the same shortcomings as in San Andreas apply.
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/10_gta-vc_o7iNtRF2Ce.jpg" thumbnail="auto" %}
@@ -240,15 +240,15 @@ Minimal HUD can now also be enabled in VC. Be mindful that the same shortcomings
 
 * *(All trilogy):*{:.sidenote} Script randomness has now been made 16-bit, like on the PS2, instead of 15-bit.
   The results are the most noticeable in GTA III:
-  * "Bling-bling Scramble" has three possible checkpoint paths on the PS2, but the script could only pick two on PC.
-  * The ambulance in "Plaster Blaster" can pick three possible destinations on the PS2, but only two on PC.
+  * "Bling-bling Scramble" has three possible checkpoint paths on the PS2, but the script could only pick two on the PC.
+  * The ambulance in "Plaster Blaster" can pick three possible destinations on the PS2, but only two on the PC.
 
   This fix makes those two missions reach feature parity with the original PS2 version.
 * *(GTA III, GTA VC):*{:.sidenote} Text lines read in `CPlane::LoadPath` and `CTrain::ReadAndInterpretTrackFile` are now null-terminated.
   This technical-sounding issue has an amusing and easily noticeable effect: under very specific conditions that are only possible
   to happen in modded games, the Z values of predefined train, plane, and yacht paths could be read incorrectly,
   leading to them resetting back to 0. Funny enough, I unknowingly hit that issue 11 years ago, when working on III Aircraft -- and even
-  recorded it in one of the test gameplays! In this video, starting from 0:40, you may observe the plane flying at the sea level,
+  recorded it in one of the test gameplays! In this video, starting from 0:40, you may observe the plane flying at sea level,
   exactly because of... some long file names causing this issue:
   {% include figures/video-iframe.html link="https://www.youtube.com/embed/NcXtlT6UcsQ?start=40" %}
 
@@ -257,19 +257,19 @@ Minimal HUD can now also be enabled in VC. Be mindful that the same shortcomings
 ## Grand Theft Auto III
 
 {:.additional-toc}
-* [Boat driving anims](#boat-driving-anims)
-* [Platform specific diving for your life?](#platform-specific-diving-for-your-life)
-* [Platform specific speeding for your life??](#platform-specific-speeding-for-your-life)
+* [Boat driving animations](#boat-driving-animations)
+* [Platform-specific diving for your life?](#platform-specific-diving-for-your-life)
+* [Platform-specific speeding for your life??](#platform-specific-speeding-for-your-life)
 * [Stealth FBI cars](#stealth-fbi-cars)
 * ["Nasty game" with improvements](#nasty-game-with-improvements)
 * [Why is this radar so ugly?](#why-is-this-radar-so-ugly)
 * [Other fixes](#other-fixes-gta-iii)
 
-### Boat driving anims
+### Boat driving animations
 
 Careful observers likely noticed a long time ago that in GTA III, Speeder is the only boat with a driver's seat.
 This doesn't stop Claude from standing inside that seat, though, as only in Vice City Rockstar had introduced a flag indicating
-that the boat driver should use the sitting animation. **Fire_Head** also noticed this issue years ago,
+that the boat driver should use the sitting animation. **Fire_Head** also noticed this issue years ago
 and made a fix for it. In this update of SilentPatch, Fire_Head's work has been integrated:
 
 <figure class="media-container small">
@@ -281,13 +281,13 @@ and made a fix for it. In this update of SilentPatch, Fire_Head's work has been 
 
 Together with this change, Fire_Head also backported a small fix from Vice City: now, a small delay between entering
 the boat and the game considering Claude to be inside one has been removed; the game was waiting for the entering animation to finish,
-but boats don't have one, so that made no sense. This fix has also been integrated in SilentPatch.
+but boats don't have one, so that made no sense. This fix has also been integrated into SilentPatch.
 
 Good news for III Aircraft users -- for this change, SilentPatch applies an identical fix to Skimmer.
 
 ***
 
-### Platform specific diving for your life?
+### Platform-specific diving for your life?
 
 The PC version of GTA III has an interesting gameplay regression compared to the original PS2 release.
 Usually, pedestrians can react to incoming cars in three ways -- they can:
@@ -299,13 +299,13 @@ On PC, raising hands and stepping away works fine. However, pedestrians dive... 
 
 {% include figures/video.html link="/assets/img/posts/sp-2024-update/10_gta3_Xp6OaZF9uY.mp4" attributes="autoplay muted loop"
       caption="Does this not constitute an insurance fraud? Also hats off to the police arriving at the scene,
-              I could never achieve a better comedic timing if I tried doing it on purpose." %}
+              I could never have achieved better comedic timing if I tried doing it on purpose." %}
 
 It's difficult to know exactly what happened in this instance, but I have my guess based on a particular quirk
 of this feature: when the "threatening" vehicle is honking, this makes the NPC more alert and they **always** try to dive out of the way.
-Coincidentally, in this scenario, the bug doesn't manifest. I can only theorize basing on the code differences between PS2 and PC,
+Coincidentally, in this scenario, the bug doesn't manifest. I can only theorize based on the code differences between PS2 and PC,
 but the fact PC is missing some calculations makes me believe that this bug was introduced by a failed code
-optimization -- it is possible that someone misread the code, thought the dive angle is calculated twice, and introduced a bug,
+optimization -- someone may have misread the code, then thought the dive angle was calculated twice, and introduced a bug,
 since the two calculations happened under different circumstances.
 
 In this update, SilentPatch restores the missing code from the PS2 release, making the dive behave just like it did originally:
@@ -314,7 +314,7 @@ In this update, SilentPatch restores the missing code from the PS2 release, maki
 
 ***
 
-### Platform specific speeding for your life??
+### Platform-specific speeding for your life??
 
 In GTA III, drivers may react in several ways to being shot at. When bullets hit their car, they randomly pick one of the three actions:
 * Speed up and escape in the car,
@@ -325,8 +325,8 @@ This list may have raised eyebrows -- do you feel like you've never encountered 
 as this feature is bugged on all platforms, in more ways than one.
 
 All entities in the game world have a random seed value assigned to them,
-allowing different pedestrians and cars to behave differently, yet ensuring that each entity remains consistent in their own actions.
-On the PS2, this random seed is an integer value in range `0-65535`, on PC (and likely Xbox too) it's `0-32767`.
+allowing different pedestrians and cars to behave differently, yet ensuring that each entity remains consistent in its actions.
+On the PS2, this random seed is an integer value in the range `0-65535`, on PC (and likely Xbox too) it's `0-32767`.
 The issue with the drivers' behavior lies in the function assigning those behaviors to the random seed:
 * `0-34999` -- flee in car.
 * `35000-69999` -- do nothing.
@@ -334,7 +334,7 @@ The issue with the drivers' behavior lies in the function assigning those behavi
 
 Do you see the issue now? An incorrect assumption about the range of the random seed led to one (on PS2) or two (on PC/Xbox)
 cases being unreachable. In SilentPatch, the ranges have been rescaled for the real range of the random seed,
-so now drivers may either ignore the bullets, or flee on foot, for the first time.
+so now drivers may either ignore the bullets or flee on foot, for the first time.
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/10_gta3_N8FrQFphLN.jpg" thumbnail="auto" %}
 
@@ -342,11 +342,11 @@ so now drivers may either ignore the bullets, or flee on foot, for the first tim
 
 ### Stealth FBI cars
 
-In all 3D era games, FBI vehicles are pitch black. However, this does not apply to some FBI Kurumas in GTA III.
+In all 3D-era games, FBI vehicles are pitch black. However, this does not apply to some FBI Kurumas in GTA III.
 Unlike the later games, in GTA III, the car's `carcols.dat` entry specifies a dark grey body color with unpainted bumpers.
 Cars that spawn in roadblocks and cars imported via the Import/Export cranes adhere to this setting,
-while the chasing units are forcibly set to black via the game's code. This leads to a discrepancy between the cars depending on where they come from,
-and also causes the pitch black Kurumas to permanently change their color when resprayed.
+while the chasing units are forcibly set to black via the game's code. This leads to a discrepancy between the cars depending on where they come from
+and also causes the pitch-black Kurumas to permanently change their color when resprayed.
 
 <figure class="media-container small">
 {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_0zot9q3bRy.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_0zot9q3bRy.jpg"
@@ -363,7 +363,7 @@ so all FBI cars use the colors specified in `carcols.dat`.
 
 ### "Nasty game" with improvements
 
-Exclusively in the PS2 and PC versions of GTA III, it was possible for the player to shoot limbs off the other characters.
+Exclusively in the PS2 and PC versions of GTA III, the player could shoot limbs off the other characters.
 However, the detached limbs never looked quite right, but not because the models weren't detailed enough -- a simple code mistake
 caused both the normal model and the LOD model to show at once, ignoring the game's LOD system. This has now been fixed.
 
@@ -401,15 +401,15 @@ In this update, both issues are fixed, so the entire radar scales correctly.
 
 ### Other fixes {#other-fixes-gta-iii}
 
-* In the version 1.0, the Stats menu now has a correct font, like in the 1.1 and Steam versions.
+* In version 1.0, the Stats menu now has the correct font, like in the 1.1 and Steam versions.
   {% include figures/juxtapose.html left="/assets/img/posts/sp-2024-update/juxtapose/10_gta3_0emL5bqZA9.jpg" left-label="Stock 1.0"
           right="/assets/img/posts/sp-2024-update/juxtapose/10_gta3_UtqngYRw3a.jpg" right-label="SilentPatch" %}
 
 * **Nick007J** contributed a fix to `CCarCtrl::PickNextNodeRandomly` (backported from Vice City) that allows traffic
-  to turn right from one way roads. Previously, they could only go straight or turn left.
+  to turn right from one-way roads. Previously, they could only go straight or turn left.
   {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/10_gta3_9g8QPzE2Gs.jpg" thumbnail="auto" %}
 
-* Bilinear filtering is now applied on the player skin, just like in Vice City, or when SkyGfx is installed.
+* Bilinear filtering is now applied on the player's skin, just like in Vice City, or when SkyGfx is installed.
   This makes Claude's skin texture look smoother when viewed close up.
   <figure class="media-container small">
    {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_GoqJFGSgSl.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_GoqJFGSgSl.jpg"
@@ -418,7 +418,7 @@ In this update, both issues are fixed, so the entire radar scales correctly.
             caption="Oh Fido, you look so handsome now." %}
    </figure>
 
-* Temporary pickups (like money) are now properly cleaned up if there is too many of them, fixing a possible object leak.
+* Temporary pickups (like money) are now properly cleaned up if there are too many of them, fixing a possible object leak.
   This issue, officially fixed in Vice City, is now also resolved in GTA III.
 * Dodo keyboard controls were previously not enabled for all cars when the "Flying Vehicles" cheat was activated.
   This issue, officially fixed in Vice City, is now also resolved in GTA III.
@@ -448,17 +448,17 @@ Vice City had multiple issues with the pickup objects fixed:
 
 * Almost all pickups have predefined text colors for cases where something (like a price or collected revenue) displays over them.
   However, this wasn't the case for the asset money pickup, which led to the pickup text having random colors (on the PS2)
-  or flickering colors every frame (on PC). In this update, a generic red color (also used e.g. by the clothes) has been assigned to this pickup.
+  or flickering colors every frame (on the PC). In this update, a generic red color (also used e.g. by the clothes) has been assigned to this pickup.
   {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/10_gta-vc_IuoYYhgM5A.jpg" thumbnail="auto" %}
 
-* Every weapon type has an unique color of the glow.[^corona] For sniper rifles, the glow is pink, while for heavy weapons, it is purple.
-  However, minigun's glow was much brighter than the one of the flamethrower or an RPG, closer to the glow of a sniper rifle.
+* Every weapon type has a unique color of the glow.[^corona] For sniper rifles, the glow is pink, while for heavy weapons, it is purple.
+  However, the minigun's glow was much brighter than the one of a flamethrower or an RPG, closer to the glow of a sniper rifle.
   While this initially looked like a wrong color assignment, turns out it's because the pickup of a minigun consists of two models -- the static base
-  and a rotating barrel. For some reason, this barrel was given a white glow, so it had an additional white glowing spot, and also lightened the overall
+  and a rotating barrel. For some reason, this barrel was given a white glow, so it had an additional white glowing spot and also lightened the overall
   weapon pickup. This has now been corrected.
   <figure class="media-container small">
    {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta-vc_7Oq3BKWNDg.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta-vc_7Oq3BKWNDg.jpg"
-            caption="By default, the minigun's glow is more pink than purple, and looks closer to the color of the sniper rifle." %}
+            caption="By default, the minigun's glow is more pink than purple and looks closer to the color of the sniper rifle." %}
    {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta-vc_bwQupxNW2C.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta-vc_bwQupxNW2C.jpg"
             caption="With SilentPatch, it's consistent with the other heavy weapons." %}
    </figure>
@@ -469,13 +469,13 @@ Vice City had multiple issues with the pickup objects fixed:
 
 ### Backface culling fixes
 
-While it is a useful GPU performance improvement, backface culling wasn't always a thing in the 3D era GTAs:[^bfc-explanation]
+While it is a useful GPU performance improvement, backface culling wasn't always a thing in the 3D-era GTAs:[^bfc-explanation]
 * No original version of GTA III has it enabled.
 * GTA Vice City enables it on PC, but not the PS2.
 * GTA San Andreas enables it on all platforms.
 
 While Rockstar fixed many models in the PC version of Vice City to render correctly with backface culling, many more were missed.
-In this update, I implemented several exceptions to the backface culling, similarly to what was done in the mobile versions of GTA III and Vice City:
+In this update, I implemented several exceptions to the backface culling, similar to what was done in the mobile versions of GTA III and Vice City:
 
 * Backface culling was always disabled on vehicles, but that did not extend to the detached car parts.
   This was fixed in SilentPatch for San Andreas for the longest time, but now it's also present in Vice City.
@@ -509,10 +509,10 @@ In this update, I implemented several exceptions to the backface culling, simila
 
 ### Construction Site LOD
 
-In the infamous "Demolition Man" mission, the player is tasked with destroying a construction site with the use of a remote controlled helicopter.
+In the infamous "Demolition Man" mission, the player is tasked with destroying a construction site with the use of a remote-controlled helicopter.
 Due to a bug in the mission's script, when the regular construction site model gets swapped for the damaged model, the building's LOD model becomes "orphaned"
-(as in, it loses a link its corresponding high-quality model) and starts showing at all times, resulting in the low quality building rendering "inside" the damaged model.
-Starting from this update, the LOD gets re-linked to the newly swapped damaged model, and thus retains the correct behavior.
+(as in, it loses a link to its corresponding high-quality model) and starts showing at all times, resulting in the low-quality building rendering "inside" the damaged model.
+Starting from this update, the LOD gets re-linked to the newly swapped damaged model and thus retains the correct behavior.
 
 {% include figures/juxtapose.html left="/assets/img/posts/sp-2024-update/juxtapose/10_gta-vc_WXShkKj3SL.jpg" left-label="Stock"
         right="/assets/img/posts/sp-2024-update/juxtapose/10_gta-vc_C2NDoIpPxA.jpg" right-label="SilentPatch"
@@ -526,7 +526,7 @@ and Rockstar most likely introduced it to fix cranes disappearing up close. If t
 
 ### *Greetings from Vice City...* but not for this long, please!
 
-The outro splash in the PC version of Vice City kind seems to take forever, doesn't it?
+The outro splash in the PC version of Vice City kind of seems to take forever, doesn't it?
 
 {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/outro-vc.webp" style="natural" %}
 
@@ -544,14 +544,14 @@ it actually takes **33.(3)ms * 150 = ~5 seconds**! With the Frame Limiter disabl
 this time would be proportionally shorter.
 
 The fix in SilentPatch is to re-time the fade -- if we increase the counter every 33ms, and count up to 45, the splash takes around 1.5 seconds
-regardless of the frame rate. I implemented this fix, but then realized that while the original 5s was way too long, 1.5s is also kind of short.
+regardless of the frame rate. I implemented this fix but then realized that while the original 5s was way too long, 1.5s is also kind of short.
 Therefore, SilentPatch now settles on a time of 2.5 seconds (**33ms * 75**).
 
 ***
 
 ### Giving a finger in style
 
-In both GTA III and Vice City, the protagonists shake their fists[^shake-fist] at incoming traffic vehicles. Usually, this is supposed to happen when the player is unarmed,
+In both GTA III and Vice City, the protagonists shake their fists[^shake-fist] at incoming traffic vehicles. Usually, this is supposed to happen when the player is unarmed
 or holds a melee weapon, pistol, or an SMG. However, in Vice City, this feature had several distinct bugs, now all fixed in SilentPatch:
 * Holding Brass Knuckles made Tommy never shake his fist.
 * Holding the Chainsaw didn't prevent Tommy from shaking his fist, even though it's a two-handed weapon.
@@ -572,7 +572,7 @@ Radar again? Yep, but this time, it's even worse.
 The issue [I mentioned earlier in the context of GTA III](#why-is-this-radar-so-ugly) is still present, and on top of that, new issues have appeared:
 in Vice City, the radar disc has been rescaled and re-styled -- the outer disc now extends 6 pixels around the map, and a fancy shadow effect has been added 2
 pixels below the disc. This worked fine on PS2, but is broken in multiple ways on other platforms:
-* The shadow doesn't scale to resolution either, so at high resolutions it's hardly noticeable.
+* The shadow doesn't scale to resolution either, so at high resolutions, it's hardly noticeable.
 * Making the radar disc scale reveals another issue: its size of 6 pixels (or 6 "units", when scaling) is too much, and there is now a gap between the bottom half of
   the radar disc and the map! I initially thought I incorrectly scaled this element, but... the same gap shows in the Xbox version! Pay close attention
   to the radar in a timestamped segment of this gameplay video, and you'll notice a 1-2 pixel wide gap, through which the scene can be seen:
@@ -592,7 +592,7 @@ SilentPatch rolls out multiple fixes to make the radar look consistent and tidy:
 {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta-vc_5aU7jfvA1R.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta-vc_5aU7jfvA1R.jpg"
             caption="By default, the radar is too close to the edge of the screen, the shadow effect is almost non-existent, and the destination blip has a 1px outline." %}
 {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta-vc_AOgkVUIIjm.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta-vc_AOgkVUIIjm.jpg"
-            caption="With SilentPatch, radar's placement and all elements scale to resolution correctly. Its overall appearance is now much more tidy." %}
+            caption="With SilentPatch, the radar's placement and all elements scale to resolution correctly. Its overall appearance is now much more tidy." %}
 </figure>
 
 Additionally, the onscreen counter bar's shadow and the loading bar outline now also scale to resolution:
@@ -617,10 +617,10 @@ Additionally, the onscreen counter bar's shadow and the loading bar outline now 
 * Fixed an issue where looking at a shopkeeper while using Classic controls counted as aiming at them. This happened because the
   `IS_PLAYER_TARGETTING_CHAR` script command, updated for Standard controls on PC, didn't previously differentiate between those control styles.
   This fix was also contributed by **Wesser**.
-* Starting a New Game would previously reset the mouse sensitivity, same as when restoring settings to defaults. This has now been resolved.
+* Starting a New Game would previously reset the mouse sensitivity, the same as when restoring settings to defaults. This has now been resolved.
 * In this release, I revisited the Rosenberg Audio fix, famously very the first fix made for SilentPatch.
-  The results are surprising -- 12 years later, it turns out this fix **was placebo all along**! Contrary to a popular belief, this feature was never broken on PC
-  after all, and all of Rosenberg's lines can be heard even without mods. It is possible that the perceived difference in frequency of those lines boils down
+  The results are surprising -- 12 years later, it turns out this fix **was placebo all along**! Contrary to popular belief, this feature was never broken on PC
+  after all, and all of Rosenberg's lines can be heard even without mods. The perceived difference in frequency of those lines may boil down
   to a different randomness function across platforms. Therefore, just for a good measure, together with the removal of a placebo fix,
   I also made this feature use a PS2 randomness function, to ensure the odds of this audio playing match the console.
 * [Ped Speech Patch](https://gtaforums.com/topic/817075-ped-speech-patch-gta-vc/){:target="_blank"} from **Sergenaur** has now been integrated into SilentPatch.
@@ -630,7 +630,7 @@ Additionally, the onscreen counter bar's shadow and the loading bar outline now 
   Previously, screwdriver was the only weapon that was completely quiet.
 * Tear gas can now deal damage to Tommy and other mission characters, like in the PS2 version.
 * Thanks to **Tomasak**, more interiors have been updated to have their outside areas visible from the inside.
-* The rain streams effect on roads, which displays for a short period after the rain stops, now resets on loading a save. This prevents the effect from showing
+* The rain stream effect on roads, which displays for a short period after the rain stops, now resets on loading a save. This prevents the effect from showing
   when the weather in the loaded save is sunny.
 
 ***
@@ -648,7 +648,7 @@ After all, its 20th anniversary is just around the corner:
 * [BOOM! Where did that wheel go?](#boom-where-did-that-wheel-go)
 * [That's not a bazooka, Zero](#thats-not-a-bazooka-zero)
 * [Where are you going, homie? We got work to do!](#where-are-you-going-homie-we-got-work-to-do)
-* [UFO, shooting star, both?](#ufo-shooting-star-both)
+* [UFO, shooting star, or both?](#ufo-shooting-star-or-both)
 * [Ninja jacking begone!](#ninja-jacking-begone)
 * [Multiple monitors, multiple problems](#multiple-monitors-multiple-problems)
 * [I'm dizzy, hazy, and I see funny under the water](#im-dizzy-hazy-and-i-see-funny-under-the-water)
@@ -658,7 +658,7 @@ After all, its 20th anniversary is just around the corner:
 
 For this release, **Wesser** has contributed several fixes related to CJ's animations in vehicles:
 * CJ's clothes are being moved by the wind when driving a bike, but not when driving the Quad. This is now corrected.
-* When coasting at low speeds, Quad's handle bar movements didn't match CJ's animations. This is now corrected.
+* When coasting at low speeds, Quad's handlebar movements didn't match CJ's animations. This is now corrected.
 * Inverse to a fix [featured previously in GTA III](#boat-driving-anims), changing radio stations while driving a boat
   where CJ stands upright would make him play the sitting animation. This is now corrected, although the game lacks a suitable
   animation for changing radio stations when upright, so now this is done with no animation at all.
@@ -677,7 +677,7 @@ of the game, only in 1.0, so it was assumed that it was just fixed there.
 However, **Wesser** found out there's more to that.
 This is not a game bug -- instead, it was a mistake made when HOODLUM initially defeated SecuROM in the 1.0 executable back in 2005!
 A chunk of code obfuscated by DRM was decrypted incorrectly, resulting in this breakage, which has later been carried over by **listener**
-to his famous Compact EXE. Wesser figured out this issue in detail, and reimplemented the missing chunk of code that's now also included in SilentPatch.
+to his famous Compact EXE. Wesser figured out this issue in detail and reimplemented the missing chunk of code that's now also included in SilentPatch.
 
 If only listener was still around to update the Compact EXE... 😔
 
@@ -721,7 +721,7 @@ is actually the same as the one used by the gang members, and thus it's not code
 loses pursuit!
 
 In SilentPatch, I updated the code to check if a cop aborting pursuit has a `TASK_SIMPLE_GANG_DRIVEBY` task active,
-and if they do, cancel it. It works great and fixes one of the game's quirks that used to annoy a 11-year-old Silent 😅.
+and if they do, cancel it. It works great and fixes one of the game's quirks that used to annoy an 11-year-old Silent 😅.
 
 ***
 
@@ -729,15 +729,15 @@ and if they do, cancel it. It works great and fixes one of the game's quirks tha
 
 In GTA III and Vice City, exploding vehicles would always lose their front left wheel. In an attempt to improve this feature
 in San Andreas, the developers made it detach a random wheel on explosion instead. However,
-Rockstar half-baked this improvement -- the wheel may have detached visually just fine, but as far as the physics were concerned,
+Rockstar half-baked this improvement -- the wheel may have detached visually just fine, but as far as the physics was concerned,
 the old behavior of always losing the front left wheel persisted. This results in a new visual glitch, where the wrong wheel sinks:
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_2EBUGkr5z3.jpg" thumbnail="auto"
-      caption="That... isn't how physics work." %}
+      caption="That... isn't how physics works." %}
 
 In this update, I fixed multiple bugs related to this feature:
 * The detached wheel now matches "visually" and "physically".
-* The rear right wheel can now also be detached. Previously, the random function would only consider the front wheels, and the rear left wheel.
+* The rear right wheel can now also be detached. Previously, the random function would only consider the front wheels and the rear left wheel.
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_VpNpSA8TP6.jpg" thumbnail="auto"
       caption="Much better." %}
@@ -753,14 +753,14 @@ multiple wheels, eventually leaving a wreck with all four wheels detached!
 
 "Air Raid", the first mission given to the player by Zero, is an interesting case of Rockstar trying to fix script errors...
 and failing. This mission places CJ in a turret mode operating a minigun that is given to him only for the duration of the mission.
-In the original PS2 version, and in PC 1.0, this mission "steals" the player's heavy weapon entirely, and there is no way to avoid it.
-In 2.0, Rockstar attempted to fix it by saving information about the existing weapon on this slot, and it's given back to the player afterwards.
+In the original PS2 version, and PC 1.0, this mission "steals" the player's heavy weapon entirely, and there is no way to avoid it.
+In 2.0, Rockstar attempted to fix it by saving information about the existing weapon on this slot, and it was given back to the player afterward.
 However, the script fails to load the weapon model, so the player... is given back an invisible weapon instead. Don't try to use it -- your game will crash!
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_10nRIQhRy2.jpg" thumbnail="auto"
       caption="Don't touch that ~~dial~~ gun." %}
 
-Thankfully, this mistake wasn't severe, and simply saving the game, then reloading that save, fixes it.
+Thankfully, this mistake wasn't severe, and simply saving the game, and then reloading that save, fixes it.
 Nonetheless, in this update SilentPatch injects a proper fix to this mission, ensuring that the weapon is preserved,
 and the model is loaded correctly.
 
@@ -770,19 +770,19 @@ and the model is loaded correctly.
 
 Amidst the chaos of the Los Santos riots in the final parts of San Andreas' story, the game presents a rather frustrating quirk.
 At random points, gang members in CJ's group can abandon him and flee, seemingly for no reason.
-While this might add some interesting dynamics during freeroam, it can be a deal breaker during missions. Therefore, **Nick007J** dived into the code
-to thoroughly understand this events.
-1. At regular intervals, the police chopper flying above the city targets a random gang member. This can be someone from CJ's group, or any other random person.
+While this might add some interesting dynamics during free roam, it can be a deal breaker during missions. Therefore, **Nick007J** dived into the code
+to thoroughly understand these events.
+1. At regular intervals, the police chopper flying above the city targets a random gang member. This can be someone from CJ's group or any other random person.
 2. The targeted person starts fleeing, trying to escape the chopper.
 
 SilentPatch refines this feature slightly to prevent it from being a hindrance -- during missions, CJ's group can no longer be targeted by the chopper.
 
 ***
 
-### UFO, shooting star, both?
+### UFO, shooting star, or both?
 
 One of the mysteries "haunting" San Andreas since the dawn of time is the presence of unusual black dots rapidly moving in the sky.
-People theorized it may be a strange rain drop, a shooting star, or... UFO. This was something I was aware of for a while,
+People theorized it may be a strange raindrop, a shooting star, or... UFO. This was something I was aware of for a while,
 but only after **Bob El Aventurero** made a detailed video trying the unravel this mystery I looked into this phenomenon in more detail:
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/3-Dr2zcT3sw" %}
@@ -798,7 +798,7 @@ the cloud texture, ignoring alpha. The fix, as usual, is trivial -- draw the sta
 
 ### Ninja jacking begone!
 
-Twitter user **Radiant Eclipse** asked Obbe Vermeij an interesting question regarding a well known, yet mysterious bug/feature:
+Twitter user **Radiant Eclipse** asked Obbe Vermeij an interesting question regarding a well-known, yet mysterious bug/feature:
 
 <blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Hi <a href="https://twitter.com/ObbeVermeij?ref_src=twsrc%5Etfw">@ObbeVermeij</a>, in GTA SA when you steal a car through the passenger door while holding the run button the driver leaves the car dead. Do you know of this is intentional or is it a bug? I&#39;m asking this because the game never talks about it. I made a short video showing this <a href="https://t.co/WnsqlYEnQE">pic.twitter.com/WnsqlYEnQE</a></p>&mdash; Radiant Eclipse (@RadiantEclips10) <a href="https://twitter.com/RadiantEclips10/status/1794440479901098141?ref_src=twsrc%5Etfw">May 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -808,7 +808,7 @@ It turns out that in the event of the player holding the throttle and/or brake b
 * If the driver is dead, make them step out of the car as normal.
 
 This sounds... backwards, especially since a different code path in the same function had those checks switched around.
-We theorized that this is likely just a mistake and the conditions were meant to be swapped, but only once **ultragirl468** ran tests themselves,
+We theorized that this was likely just a mistake and the conditions were meant to be swapped, but only once **ultragirl468** ran tests themselves,
 we had definite proof. They managed to jack the car from an already dead driver, and...
 {% include figures/video.html link="/assets/img/posts/sp-2024-update/sa-jack-car-dead-ped.mp4" style="natural" attributes="controls"
     caption="The driver leaves the car, then promptly dies (again)." %}
@@ -829,17 +829,17 @@ You could say that someone... *told Obbe it happened again* ;)
 This section contains affiliate links, meaning I get a commission for every purchase made through them.
 
 Recently, I was invited to a promo campaign and received a [JSAUX FlipGo](https://www.jsaux.com/products/flipgo-portable-dual-monitor?sca_ref=6671512.IBblIIjr8x){:target="_blank" rel="nofollow"},
-a portable dual-screen monitor. Before, I only had a single monitor, so only now I realized how strange the monitor selection dialog in GTA San Andreas is. Since I was now "affected" by it,
-I fixed several annoyances present in that dialog, and enhanced it with some QoL improvements.
+a portable dual-screen monitor. Before I only had a single monitor, so only now I realized how strange the monitor selection dialog in GTA San Andreas is. Since I was now "affected" by it,
+I fixed several annoyances present in that dialog and enhanced it with some QoL improvements.
 
 <figure class="media-container small">
 {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/res-dialog-old.png" caption="The stock dialog looks a bit sad and lists the GPU names, which can be confusing." %}
-{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/res-dialog-new.png" caption="With SilentPatch, the dialog looks modern, uses user friendly monitor names, and can be skipped."%}
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/res-dialog-new.png" caption="With SilentPatch, the dialog looks modern, uses user-friendly monitor names, and can be skipped."%}
 </figure>
 
 * Remade the dialog with modern Common Controls, so it looks native, instead of being limited to Win9x style controls.
-* Made the dialog user friendly monitor names (on Windows 7 and newer) instead of the DirectX 9 adapter names, which for most people just duplicated the GPU names.
-  In my case, I had three `NVIDIA GeForce GTX 1070` entries, while now they are named after the screens.
+* Made the dialog user-friendly monitor names (on Windows 7 and newer) instead of the DirectX 9 adapter names, which for most people just duplicated the GPU names.
+  In my case, I had three `NVIDIA GeForce GTX 1070` entries, and now they are named after the screens.
 * The dialog ignored the X control and the <kbd>Esc</kbd> button, now it closes on those properly.
 * The dialog now gets keyboard focus on creation.
 * The taskbar icon now shows reliably, and the title bar displays a small icon.
@@ -854,11 +854,11 @@ I fixed several annoyances present in that dialog, and enhanced it with some QoL
 
 ### I'm dizzy, hazy, and I see funny under the water
 
-Thought we're done with the resolution scaling issues, after all the problems I already detailed earlier? Haha, no.
+Thought we were done with the resolution scaling issues, after all the problems I already detailed earlier? Haha, no.
 
-San Andreas post effects are not only the most elaborate out of all 3D era games, but also quite different between PS2 and the other platforms.
-That said, heat haze effect appears to be identical between PS2 and PC... at least if you don't keep changing resolution in-game.
-If you do, weird things can happen -- here's how the effect looks if you run the game in 4K, then change the resolution to 640x480:
+San Andreas post effects are not only the most elaborate out of all 3D-era games but also quite different between PS2 and the other platforms.
+That said, the heat haze effect appears to be identical between PS2 and PC... at least if you don't keep changing the resolution in-game.
+If you do, weird things can happen -- here's how the effect looks if you run the game in 4K, and then change the resolution to 640x480:
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_hI9FOMH1LF.jpg"
       caption="This edible ain't shi-" %}
@@ -888,11 +888,11 @@ This has now been fixed, so the effect looks consistent:
 * A significant memory leak when taking photos with an in-game camera has been fixed.
 * **Wesser** contributed a fix to the gang members taking a photo of CJ. Previously, holding a sniper rifle changed the camera "crosshair"
   to the sniper rifle crosshair. This has now been resolved.
-* Racing checkpoints are now correctly colored even if no enex markers displayed on-screen before.
+* Racing checkpoints are now correctly colored even if no enex markers were displayed on-screen before.
   This obscure bug was practically impossible to witness in a stock game, but could easily be seen with mods, or in MTA races.
   <figure class="media-container small">
   {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/compact_gta_sa_UjkQ0BxFYu.jpg" link="/assets/img/posts/sp-2024-update/screens/full/compact_gta_sa_UjkQ0BxFYu.jpg"
-        caption="RenderWare geometry instancing are in full swing -- the arrow geometry got instanced without the material colors." %}
+        caption="RenderWare geometry instancing memes are in full swing -- the arrow geometry got instanced without the material colors." %}
   {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/compact_gta_sa_wYArX9B9LE.jpg" link="/assets/img/posts/sp-2024-update/screens/full/compact_gta_sa_wYArX9B9LE.jpg"
         caption="With SilentPatch, it's no longer an issue." %}
   </figure>
@@ -903,10 +903,10 @@ This has now been fixed, so the effect looks consistent:
 	> `CPlayerPed::ProcessControl` handles the gang recruitment which in turn can result in homies dropping cigarettes or bottles.
 	> When this happens, they are destroyed **immediately**. If those props are in the moving list right after the PlayerPed,
 	> this corrupts a pre-cached `node->next` pointer and references an already freed entity.
-	> To fix this, queue the entity for a delayed destruction instead of destroying immediately,
+	> To fix this, queue the entity for delayed destruction instead of destroying it immediately,
   > and let it destroy itself in `CWorld::Process` later.
 * **Wesser** contributed a fix to the SCM interpreter, where spawning a biker cop (`lapdm1`) with a type
-  `PEDTYPE_COP` spawned a normal cop instead. This issue doesn't affect the default script, but might have affected mods.
+  `PEDTYPE_COP` spawned a normal cop instead. This issue doesn't affect the default script but might have affected mods.
 * Impound garages can now only impound cars and bikes (and their subtypes), as other vehicle types are either too big or cannot leave
   the garage without exploding. This puts a stop to helicopters and boats being impounded.
   {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_rern5vrm2H.jpg" thumbnail="auto"
@@ -914,7 +914,7 @@ This has now been fixed, so the effect looks consistent:
 * Several more crashes related to replays have been fixed:
   * A crash occurred when starting a cutscene after playing a replay where CJ wore different clothes from what he is currently wearing.
   * A crash occurred when playing back a replay with CJ having a different body type (fat/muscular/normal) than his current one.
-* Spawning logic of planes has been slightly improved. While they can still crash after spawning, this should now occur less frequently.
+* The spawning logic of planes has been slightly improved. While they can still crash after spawning, this should now occur less frequently.
 * Hovering with a jetpack is now possible using the keyboard controls by holding the next/previous weapon buttons simultaneously (<kbd>Q</kbd> + <kbd>E</kbd> by default).
   {% include figures/video.html link="/assets/img/posts/sp-2024-update/compact_gta_sa_vBJEQfYyk5.mp4" attributes="autoplay muted loop"
       caption="I never realized before how much easier the jetpack is to control when you can hover effortlessly." %}
@@ -933,7 +933,7 @@ This has now been fixed, so the effect looks consistent:
   </figure>
 
 * **Wesser** contributed a fix for a well-known script glitch in the Driving and Bike Schools. Previously, an error in how these scripts
-  destroyed the cones used in lessons could cause random object to be removed from the game. This glitch was most famously known as
+  destroyed the cones used in lessons could cause random objects to be removed from the game. This glitch was most famously known
   as the "Blackboard glitch". Unfortunately, SilentPatch cannot repair saves already affected by this issue.
 
 ***
@@ -944,7 +944,7 @@ Aside from all the new fixes, for this release, the codebase of SilentPatch has 
 and multiple fixes have been... *well, fixed*. Some of those changes are well worth highlighting.
 
 **Some of those points might get a little technical**, but they may be useful for modders who want to be mindful
-of keeping compatibility with SilentPatch, or are looking for tips on how to make their projects
+of keeping compatibility with SilentPatch or are looking for tips on how to make their projects
 apply code patches in a more resilient way.
 
 * The most severe regression introduced by SilentPatch has finally been addressed. Ever since the first build,
@@ -956,38 +956,38 @@ apply code patches in a more resilient way.
 * Migrated several fixes to use `HookEach`. These fixes would hook multiple calls to a function,
   and add my own changes on top. However, previously SilentPatch assumed all those calls were pointing
   to the same function, which is true for an unmodded game, but another modification installed alongside
-  SP may have broke this assumption. With `HookEach`, each instance is treated separately, without the risk
+  SP may have broken this assumption. With `HookEach`, each instance is treated separately, without the risk
   of stomping on another hook, and "stacking" with other modifications gracefully.
   In fact, multiple fixes within SilentPatch also stack on each other like this, and they're completely unaware
   of each other, even when they hook the same call in the code.
 
 * All SilentPatches released after May 2021 use **transactional patterns**. For this release,
-  I upgraded the codebase to use those too. Previously, if **any** pattern failed to match while the patch was applying,
-  the entire library would unload and either crash the game, or just do nothing.
+  I upgraded the codebase to use those too. Previously, if **any** pattern failed to match while the patch was applied,
+  the entire library would unload and either crash the game or just do nothing.
   With transactional patterns, every single fix is applied separately, and if any pattern forming a particular fix fails to match,
   an exception is thrown and the entire fix is aborted without making any changes to the game's memory.
 
-  For the patch code, this simplifies the way fixes are applied to the game, and makes it impossible
+  For the patch code, this simplifies the way fixes are applied to the game and makes it impossible
   for me to accidentally break the entire patch if I forget to account e.g. for another mod making changes to the code.
   This comes with benefits for users too, as compatibility with other mods should be improved even further!
   Other recent SilentPatches showed that with transactional patterns, it's nearly impossible to "break" SP completely.
 
 * SilentPatch for San Andreas introduced this fix several releases ago:
-  > * Muzzle flash will now show up when firing the last bullet from the clip.
+  > * A muzzle flash will now show up when firing the last bullet from the clip.
 
   However, this introduced a regression where "firing" from an empty gun while on a jetpack still displayed the muzzle flash:
   {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/gta_sa_nAHcd3qnmv.jpg" thumbnail="auto" %}
   This fix has been remade, addressing the issue.
 
-* SilentPatch for San Andreas has this fix ever since the first release:
+* SilentPatch for San Andreas has had this fix ever since the first release:
   > * Detached vehicle parts will now remain the same color as the vehicle they came from.
 
   In this release, this fix has received multiple improvements:
   * Recently, it was discovered that this change would cause the game to crash if a part detached from a modded vehicle
     had more than 15 materials. This has now been resolved.
   * While the colors of the detached parts were always preserved, turns out they were never correctly lit. Furthermore,
-    later SilentPatch updates removed the auxillary vehicle light in favour of a properly working directional lighting,
-    and so the lighting appeared as if it had regressed. In this update, detached parts are now lit the same way the cars are.
+    later SilentPatch updates removed the auxiliary vehicle light in favor of properly working directional lighting,
+    so the lighting appeared as if it had regressed. In this update, detached parts are now lit the same way the cars are.
 
 * Earlier releases of SilentPatch for San Andreas rolled out multiple fixes for the license plates not working correctly.
   Recently, it's been discovered that this fix would cause the license plates to stop generating if a vehicle with custom plates was fitted with tuning parts.
@@ -999,16 +999,16 @@ apply code patches in a more resilient way.
   in SA-MP, it's now disabled in multiplayer, unless Graphics Restore is installed.
   <figure class="media-container small">
   {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/compact_gta_sa_V50SgMrU4c.jpg" link="/assets/img/posts/sp-2024-update/screens/full/compact_gta_sa_V50SgMrU4c.jpg"
-        caption="In \"The Corona Update\", the parachute animated correctly, but looked kind of bright." %}
+        caption="In \"The Corona Update\", the parachute was animated correctly but looked kind of bright." %}
   {% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/compact_gta_sa_uSsu8BO7Gs.jpg" link="/assets/img/posts/sp-2024-update/screens/full/compact_gta_sa_uSsu8BO7Gs.jpg"
         caption="In this update, both lighting and animations work fine." %}
   </figure>
 
 * In the last update, this fix present in GTA III and Vice City has been rewritten:
-  > * Reintroduced light glows under weapon/health/armour pickups, bribes, hidden packages and money pickups -- they showed only on PS2 due to a bug in all PC versions.
+  > * Reintroduced light glows under weapon/health/armor pickups, bribes, hidden packages, and money pickups -- they showed only on PS2 due to a bug in all PC versions.
 
-  However, back then I haven't noticed that my rewrite caused those light glows to disappear when "light boxes" on cars rendered on-screen
-  (because the widescreen fix disables those boxes). I now updated this fix again to resolve this issue,
+  However, back then I didn't notice that my rewrite caused those light glows to disappear when "light boxes" on cars were rendered on-screen
+  (because the widescreen fix disables those boxes). I now updated this fix again to resolve this issue
   and bring parity with the San Andreas version of this change.
 
 * In III and Vice City, variable resets like the Pay 'n Spray flag have been upgraded to use the same, less invasive,
@@ -1028,7 +1028,7 @@ apply code patches in a more resilient way.
   If ASLR wasn't disabled, this exploit would have been much harder to create; the code comments in the proof-of-concept exploit even mention a "static base address"
   specifically.
 
-* In all 3 games, fixes related to randomness now use the same randomness engine, based off the PS2 algorithm.
+* In all 3 games, fixes related to randomness now use the same randomness engine, based on the PS2 algorithm.
   It's unlikely to result in any noticeable differences, but it simplifies the code.
 
 * In all 3 games, the INI options listing vehicle model IDs (like `RotorFixExceptions`) now can also accept model names.
@@ -1048,7 +1048,7 @@ The latest SilentPatch builds can be downloaded from the *Mods & Patches* sectio
 Those new to SilentPatch are encouraged to check the [Setup Instructions]({% link pages/setup-instructions.md %}){:target="_blank"}.
 However, the easiest way to install SP boils down to:
 * For GTA III and Vice City, get both downloads for the respective game and extract them to the game directory.
-* For GTA San Andreas, players using a 1.0 or Steam versions can use [my ASI Loader]({% link _games/gta/gta-sa.md %}#asiloader){:target="_blank"}.
+* For GTA San Andreas, players using a 1.0 or Steam version can use [my ASI Loader]({% link _games/gta/gta-sa.md %}#asiloader){:target="_blank"}.
   Rockstar Games Launcher versions of the game need to use
   [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip){:target="_blank"} instead.
 
@@ -1063,7 +1063,7 @@ Wish to check out the source code instead? Check it out on GitHub. I have also i
 
 This update was only possible thanks to the contributions of many individuals. Multiple modders generously shared their findings and fixes,
 which were later integrated into SilentPatch. Others took their time to test the patch through its many iterations to ensure I could ship it
-in a near perfect state:
+in a near-perfect state:
 
 ### Contributors:
 * B1ack_Wh1te
@@ -1088,7 +1088,7 @@ trivia he's shared with the world, and most importantly, for all the work he put
 
 Will there ever be another SilentPatch for the GTA games? *I don't know.* Half a decade passed between "The Corona Update"
 and this post, so if that's any indicator, it's likely there won't be. However, I am acutely aware I've said "no more new fixes" at least
-twice throughout the lifespan of SilentPtatch for San Andreas, so... you never know.
+twice throughout the lifespan of SilentPatch for San Andreas, so... you never know.
 
 SilentPatch has since thrived as a "brand" outside of GTA, breathing new life into many other old (and newer) games.
 Whether or not GTA receives more updates in the future, I'm sure many more releases and blog posts are to come.
