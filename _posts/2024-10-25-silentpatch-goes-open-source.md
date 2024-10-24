@@ -2,9 +2,10 @@
 layout: post
 title: "SilentPatch for Grand Theft Auto goes open source!"
 excerpt: "A long overdue update packed with new fixes and a public source code release."
-feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
-thumbnail: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
-image: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+feature-img: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+thumbnail: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+image: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+game-series: ["gta-iii", "gta-vc", "gta-sa"]
 date: 2024-10-25 14:00:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]
@@ -43,7 +44,7 @@ However, this delay comes with a silver lining -- what I initially planned to be
 cleaned up for a public release turned into the biggest content update I've ever released.
 This release contains not only a wide selection of new fixes; I also went back to many older fixes and upgraded them to be safer, simpler,
 more compatible with other modifications, and free of side effects. Numerous minor regressions introduced by SilentPatch are now resolved,
-ensuring that the patch goes open source in as perfect a state as possible.
+ensuring the patch goes open source in as perfect a state as possible.
 
 In this blog post, I'll break down the most significant fixes introduced in this update, a culmination of approximately 10 months of development
 (although not without breaks), and a lot of testing over **nine** Release Candidate builds. My explanations may get a bit more technical
@@ -82,7 +83,7 @@ Numerous fixes included in this update apply to multiple games from the trilogy.
 Affects: All trilogy games.
 
 To provide some variety in the game world, traffic vehicles act with a degree of randomness. One of the random decisions
-they make is the moment they turn the lights on at night, or when it gets foggy or rainy. For each vehicle in the world,
+they make is when they turn the lights on at night, or when it gets foggy or rainy. For each vehicle in the world,
 a random "threshold" gets picked, deciding how dark, rainy, or foggy it has to be for the vehicle to turn the headlights on.
 
 However, this tiny feature suffers from a difference in how randomness works on PC vs PS2 -- the range of randomness
@@ -263,6 +264,7 @@ Minimal HUD can now also be enabled in VC. Be mindful that the same shortcomings
 * [Stealth FBI cars](#stealth-fbi-cars)
 * ["Nasty game" with improvements](#nasty-game-with-improvements)
 * [Why is this radar so ugly?](#why-is-this-radar-so-ugly)
+* [Are car models broken on PC? No, the code is](#are-car-models-broken-on-pc-no-the-code-is)
 * [Other fixes](#other-fixes-gta-iii)
 
 ### Boat driving animations
@@ -396,6 +398,48 @@ but with modern resolutions like 4K, the issue becomes so pronounced that the ra
 You've likely noticed that the positioning has changed too -- that's because the horizontal position also didn't scale to resolution
 (even though the **vertical** position does), so the radar was always a constant 40 pixels away from the screen edge.
 In this update, both issues are fixed, so the entire radar scales correctly.
+
+***
+
+### Are car models broken on PC? No, the code is
+
+In the GTA modding circles it's relatively well known that a few pieces of code from an early version of Vice City made their way
+to the PC version of GTA III; helicopter physics, bike hierarchy (but no other bike leftovers!), etc. For example, III Aircraft was only possible thanks to those leftovers.
+This theory has also been confirmed by Obbe Vermeij himself:
+
+<blockquote class="twitter-tweet" data-align="center" data-conversation="none"><p lang="en" dir="ltr">For a number of months, the pc version of gta3 and Vice City shared a codebase.<br>So it&#39;s probably stuff that was done for Vice that &#39;leaked back&#39; into gta3-pc.</p>&mdash; Obbe Vermeij (@ObbeVermeij) <a href="https://twitter.com/ObbeVermeij/status/1848524615574032617?ref_src=twsrc%5Etfw">October 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Just a few days before this post goes live, we learned about yet another PS2 vs PC difference that is a consequence of this code mixup: cars in GTA III have separate
+`taillights` and `brakelights` dummies,[^more-dummies] while Vice City only kept the former! This had an adverse effect on the way these lights work.
+That's how they were intended to function:
+* During the day, when the lights are off, brake and reverse lights use the `brakelights` dummy.
+* At night, when the lights are on, all lights use the `taillight` dummy, and the tail light's corona changes intensity or color accordingly.
+  This also means that the reverse lights "move" to another spot at night.
+
+With the brake lights dummy gone, III on PC fell back to the Vice City behavior: that is, always putting all the lights on a `taillight` dummy.
+In this SilentPatch update, I re-introduced the missing code to the PC version, restoring feature parity. It's quite a neat detail,
+so I'm glad to see it working again. On many cars, the differences are hard to spot, but on others it's much more prominent:
+
+<figure class="media-container small">
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_Gj10tW8xHj.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_Gj10tW8xHj.jpg" %}
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_rrLKsoozpK.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_rrLKsoozpK.jpg" %}
+<figcaption markdown="span">Sentinel's rear lamps now see more use. The reverse lights have a dummy placed in the white area of the lamp, but sadly the game does not use it,
+and the reverse lights go where the brake lights are.</figcaption>
+</figure>
+
+<figure class="media-container small">
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_XITnO313p6.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_XITnO313p6.jpg" %}
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_Rj0Hf1WQvL.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_Rj0Hf1WQvL.jpg" %}
+<figcaption markdown="span">Patriot's brake lights are placed in quite an unusual spot.</figcaption>
+</figure>
+
+<figure class="media-container small">
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_PWegamZSwR.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_PWegamZSwR.jpg" %}
+{% include figures/image.html thumbnail="/assets/img/posts/sp-2024-update/10_gta3_RFG9vdPTwL.jpg" link="/assets/img/posts/sp-2024-update/screens/full/10_gta3_RFG9vdPTwL.jpg" %}
+<figcaption markdown="span">Multiple large vehicles, like the Enforcer, are supposed to have their brake lights placed up top.</figcaption>
+</figure>
+
+[^more-dummies]: `reverselights` and `indicators` dummies also exist on GTA III's models, but they were never used, even on the PS2.
 
 ***
 
@@ -643,7 +687,7 @@ After all, its 20th anniversary is just around the corner:
 {:.additional-toc}
 * [Improving vehicles, one animation at a time](#improving-vehicles-one-animation-at-a-time)
 * [Can't recruit anyone? That's what you get for playing without a disc!](#cant-recruit-anyone-thats-what-you-get-for-playing-without-a-disc)
-* [Fire! Fire! Oh wait...](#fire-fire-oh-wait)
+* [Fire! Fire! Oh, wait...](#fire-fire-oh-wait)
 * [Carl Johnson is an innocent man!](#carl-johnson-is-an-innocent-man)
 * [BOOM! Where did that wheel go?](#boom-where-did-that-wheel-go)
 * [That's not a bazooka, Zero](#thats-not-a-bazooka-zero)
@@ -683,7 +727,7 @@ If only listener was still around to update the Compact EXE... 😔
 
 ***
 
-### Fire! Fire! Oh wait...
+### Fire! Fire! Oh, wait...
 
 
 Has this ever happened to you? You're minding your business somewhere in San Andreas, then out of nowhere, a **🔥 fire 🔥** breaks out! You don't have a fire extinguisher with you,
@@ -935,6 +979,10 @@ This has now been fixed, so the effect looks consistent:
 * **Wesser** contributed a fix for a well-known script glitch in the Driving and Bike Schools. Previously, an error in how these scripts
   destroyed the cones used in lessons could cause random objects to be removed from the game. This glitch was most famously known
   as the "Blackboard glitch". Unfortunately, SilentPatch cannot repair saves already affected by this issue.
+* The cursor on the Map screen now scales to resolution and it can now always reach the top left corner of the map, regardless of resolution. This fix was contributed by **Wesser**.
+* The inner 4-pixel padding of the text boxes with a background now scales to resolution correctly. This fix was contributed by **Wesser**.
+* Nitrous will no longer regenerate faster when reversing the car. Instead, recharging speed while reversing is now identical to when the car is stationary.
+  Once again, this fix was contributed by **Wesser**.
 
 ***
 
@@ -1031,7 +1079,7 @@ apply code patches in a more resilient way.
 * In all 3 games, fixes related to randomness now use the same randomness engine, based on the PS2 algorithm.
   It's unlikely to result in any noticeable differences, but it simplifies the code.
 
-* In all 3 games, the INI options listing vehicle model IDs (like `RotorFixExceptions`) now can also accept model names.
+* In all 3 games, the INI options listing vehicle model IDs (like `RotorFixExceptions`) can now also accept model names.
 
 [^beamng-drive]: Regular followers on my Twitter know how vocal I am about this particular issue, to the point of being annoying.
     I don't intend to stop, as it's for the benefit of all the players, including myself.
