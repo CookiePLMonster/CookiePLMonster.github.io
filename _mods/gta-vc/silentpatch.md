@@ -77,7 +77,7 @@ All the remaining, non-critical fixes.
 * Fixed an issue where Tommy wouldn't shake his fist at incoming traffic when holding Brass Knuckles, yet would do it when holding a chainsaw.
 * Fixed an issue where Tommy wouldn't shake his fist at stopped traffic when holding any weapons introduced in Vice City.
 * Hitting vehicles and objects with a screwdriver now produces an impact sound.
-* Pedestrians and Tommy are now much more talkative, like in the PS2 version (integrated Ped Speech Patch from **Sergenaur**).
+* Pedestrians and Tommy are now much more talkative, like in the PS2 version (integrated Ped Speech Patch from **Sergeanur**).
 * Tear gas can now deal damage to Tommy and other mission characters, like in the PS2 version.
 * <i class="fas fa-cog"></i> Fixed siren corona placements in Police, Firetruck, Ambulance, Enforcer, Vice Cheetah, and FBI Washington.
 * <i class="fas fa-cog"></i> Added siren corona to FBI Washington.
@@ -104,7 +104,7 @@ SilentPatch includes code contributions from:
 * Fire_Head
 * Nick007J
 * NTAuthority
-* Sergenaur
+* Sergeanur
 * spaceeinstein
 * Wesser
 

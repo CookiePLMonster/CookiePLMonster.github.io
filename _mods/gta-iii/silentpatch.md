@@ -77,7 +77,7 @@ All the remaining, non-critical fixes.
 * Drivers now behave correctly when shot at. In the PC versions, they would always speed away, but now they can also do nothing, like in the PS2 version. Additionally, a third, previously inaccessible behavior where drivers abandon the car and flee on foot is now working correctly.
 * Dodo keyboard controls are now active when the All Cars Fly cheat is enabled.
 * Temporary pickups (like money) are now properly cleaned up if there are too many of them, fixing a possible object leak.
-* Car reflections are now displayed correctly in the Steam version (integrated Steam Car Colour Fix from **Sergenaur**).
+* Car reflections are now displayed correctly in the Steam version (integrated Steam Car Colour Fix from **Sergeanur**).
 * Made Claude sit when riding in a Speeder, the same as **Fire_Head**'s SitInBoat. This change also applies to Skimmer if III Aircraft is installed.
 * All FBI Kurumas now spawn in a dark grey color with unpainted bumpers, rather than pitch black.
 * Detached limbs now have properly working LODs, instead of rendering the normal and low-detail models at the same time.
@@ -105,7 +105,7 @@ SilentPatch includes code contributions from:
 * Fire_Head
 * Nick007J
 * NTAuthority
-* Sergenaur
+* Sergeanur
 * spaceeinstein
 * Wesser
 

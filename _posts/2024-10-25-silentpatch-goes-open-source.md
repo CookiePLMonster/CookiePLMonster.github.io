@@ -29,7 +29,7 @@ If you want to jump straight to SilentPatch or check the source code, **go to th
 # Introduction
 
 Tomorrow, on October 26th, 2024, GTA San Andreas turns 20 years old. I haven't had the chance to play it upon its release in 2004 -- I was a kid
-who, back then, played exclusively on PC and played Vice City whenever my parents would allow me. My first experience with San Andreas was
+who, back then, played exclusively on PC and would play Vice City whenever my parents allowed me. My first experience with San Andreas was
 in mid-2005 when the game was released on PC; little did I know back then how influential GTA in general, but most specifically San Andreas,
 would later be for my life and my professional career -- and that nearly two decades later, well into my adult life, I would still be fixing
 it to make it as enjoyable an experience as I possibly can.
@@ -468,7 +468,7 @@ and the reverse lights go where the brake lights are.</figcaption>
   This issue, officially fixed in Vice City, is now also resolved in GTA III.
 * Timers now reset on the New Game, preventing the playtime from carrying over from the saves.
 * A semi-placebo fix for broken car reflections in the Steam version of GTA III has been replaced with a proper fix,
-  integrating [Steam Car Colour Fix](https://gtaforums.com/topic/816604-steam-car-colour-fix-gta-iii/){:target="_blank"} from **Sergenaur**.
+  integrating [Steam Car Colour Fix](https://gtaforums.com/topic/816604-steam-car-colour-fix-gta-iii/){:target="_blank"} from **Sergeanur**.
 * A bug in the way the game saves the Brightness option has been fixed, allowing lower brightness values to save and load properly.
   Because the game stored a 2-byte long brightness variable as a 1-byte value in the configuration file, the option was only loaded partially.
   This caused increased brightness values to load correctly, while the decreased values appeared overly bright.
@@ -662,12 +662,12 @@ Additionally, the onscreen counter bar's shadow and the loading bar outline now 
   `IS_PLAYER_TARGETTING_CHAR` script command, updated for Standard controls on PC, didn't previously differentiate between those control styles.
   This fix was also contributed by **Wesser**.
 * Starting a New Game would previously reset the mouse sensitivity, the same as when restoring settings to defaults. This has now been resolved.
-* In this release, I revisited the Rosenberg Audio fix, famously very the first fix made for SilentPatch.
+* In this release, I revisited the Rosenberg Audio fix, famously the very first fix made for SilentPatch.
   The results are surprising -- 12 years later, it turns out this fix **was placebo all along**! Contrary to popular belief, this feature was never broken on PC
   after all, and all of Rosenberg's lines can be heard even without mods. The perceived difference in frequency of those lines may boil down
   to a different randomness function across platforms. Therefore, just for a good measure, together with the removal of a placebo fix,
   I also made this feature use a PS2 randomness function, to ensure the odds of this audio playing match the console.
-* [Ped Speech Patch](https://gtaforums.com/topic/817075-ped-speech-patch-gta-vc/){:target="_blank"} from **Sergenaur** has now been integrated into SilentPatch.
+* [Ped Speech Patch](https://gtaforums.com/topic/817075-ped-speech-patch-gta-vc/){:target="_blank"} from **Sergeanur** has now been integrated into SilentPatch.
   This makes pedestrians and Tommy much more talkative than by default.
   My variation of this fix also includes a fix for improper randomness of the chat initiation action -- the odds of that now match the PS2 version.
 * Hitting vehicles and objects with a screwdriver now produces an impact sound.
@@ -1117,7 +1117,7 @@ in a near-perfect state:
 * B1ack_Wh1te
 * Fire_Head
 * Nick007J
-* Sergenaur
+* Sergeanur
 * Wesser
 
 ### Testing and socials:
