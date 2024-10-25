@@ -4,6 +4,7 @@ url: "https://cookieplmonster.github.io"
 title: Silent's Blog
 description: "A blog and portfolio of Silent" # used by search engines
 permalink: pretty
+future: true
 
 
 # THEME-SPECIFIC CONFIGURATION
