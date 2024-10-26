@@ -18,8 +18,8 @@ Survive the desert by learning the ways of the Fremen. Expand your potential thr
 As guild intrigue and warfare rage, control the spice and cling to power.
 
 > For the first time in my career I am working on an Unreal Engine project as a Gameplay Programmer.
-> Ever since I joined Dune: Awakening, I've been responsible for coding several various gameplay systems,
-> as well for assisting content designers with their usage. I am currently the owner of an unspecified gameplay system.
+> Ever since I joined Dune: Awakening, I've been responsible for coding several various gameplay systems
+> and for assisting content designers with their usage. I am currently the owner of an unspecified gameplay system.
 {% endcapture %}
 
 {% include portfolio/template.html %}

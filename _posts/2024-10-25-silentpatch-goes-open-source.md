@@ -882,7 +882,7 @@ I fixed several annoyances present in that dialog and enhanced it with some QoL 
 </figure>
 
 * Remade the dialog with modern Common Controls, so it looks native, instead of being limited to Win9x style controls.
-* Made the dialog user-friendly monitor names (on Windows 7 and newer) instead of the DirectX 9 adapter names, which for most people just duplicated the GPU names.
+* Made the dialog use user-friendly monitor names (on Windows 7 and newer) instead of the DirectX 9 adapter names, which for most people just duplicated the GPU names.
   In my case, I had three `NVIDIA GeForce GTX 1070` entries, and now they are named after the screens.
 * The dialog ignored the X control and the <kbd>Esc</kbd> button, now it closes on those properly.
 * The dialog now gets keyboard focus on creation.
@@ -1052,7 +1052,7 @@ apply code patches in a more resilient way.
         caption="In this update, both lighting and animations work fine." %}
   </figure>
 
-* In the last update, this fix present in GTA III and Vice City has been rewritten:
+* In the last update, this fix present in GTA III and Vice City was rewritten:
   > * Reintroduced light glows under weapon/health/armor pickups, bribes, hidden packages, and money pickups -- they showed only on PS2 due to a bug in all PC versions.
 
   However, back then I didn't notice that my rewrite caused those light glows to disappear when "light boxes" on cars were rendered on-screen
