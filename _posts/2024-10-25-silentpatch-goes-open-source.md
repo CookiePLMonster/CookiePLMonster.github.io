@@ -7,6 +7,7 @@ thumbnail: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
 image: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
 date: 2024-10-25 14:00:00 +0200
+last_modified_at: 2024-11-02 14:00:00 +0100 
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]
 juxtapose: true
@@ -22,6 +23,10 @@ If you want to jump straight to SilentPatch or check the source code, **go to th
 
 *[ASLR]: Address Space Layout Randomization
 *[enex]: Entry/Exit
+
+**{{ "2024-11-02" | date: page.date-format | upcase }} UPDATE:** Hotfix #1 has been released for GTA III, Vice City, and San Andreas!
+This hotfix addresses several known issues introduced by the latest update, and addresses compatibility issues with multiple modifications.
+Updating is strongly recommended.
 
 * TOC
 {:toc}
@@ -150,8 +155,8 @@ which gives Mesa Grande a reflective rear windshield:
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/10_gta-vc_8GsQjiOJpW.jpg" thumbnail="auto" %}
 
-For custom models, the fix is simple: just make sure that your extras have specularity set correctly.
-This value is simply ignored without SilentPatch.
+For custom models, the fix is simple: just make sure that your extras have specularity and the environment map coefficient set correctly.
+This value is simply ignored on extras without SilentPatch.
 
 ***
 
@@ -703,7 +708,7 @@ After all, its 20th anniversary is just around the corner:
 For this release, **Wesser** has contributed several fixes related to CJ's animations in vehicles:
 * CJ's clothes are being moved by the wind when driving a bike, but not when driving the Quad. This is now corrected.
 * When coasting at low speeds, Quad's handlebar movements didn't match CJ's animations. This is now corrected.
-* Inverse to a fix [featured previously in GTA III](#boat-driving-anims), changing radio stations while driving a boat
+* Inverse to a fix [featured previously in GTA III](#boat-driving-animations), changing radio stations while driving a boat
   where CJ stands upright would make him play the sitting animation. This is now corrected, although the game lacks a suitable
   animation for changing radio stations when upright, so now this is done with no animation at all.
   {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_rucVAWSHi9.jpg" thumbnail="auto"

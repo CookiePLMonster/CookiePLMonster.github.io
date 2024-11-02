@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-sa"
 excerpt: "Fixes countless issues in your favorite game."
-date: 25-10-2024
+date: 2-11-2024
 ---
 
 SilentPatch for the 3D-era Grand Theft Auto games is the first and flagship release of the "SilentPatch family", providing numerous fixes for this beloved franchise.
@@ -116,6 +116,7 @@ All the remaining, non-critical fixes.
 * <i class="fab fa-steam-symbol"></i> The boundaries of the cursor on the Map screen, and the cursor itself now scale to resolution correctly (contributed by **Wesser**).
 * <i class="fab fa-steam-symbol"></i> The inner padding of the text boxes with a background now scales to resolution correctly (contributed by **Wesser**).
 * <i class="fab fa-steam-symbol"></i> Nitrous will no longer regenerate faster when reversing the car (contributed by **Wesser**).
+* <i class="fab fa-steam-symbol"></i> Hydra's jet thrusters no longer randomly fail to appear (contributed by **B1ack_Wh1te**).
 * Detached vehicle parts will now keep the same color and lighting as the vehicle they came from.
 * Detached vehicle parts are now rendered from both sides.
 * Resolved single-pixel wide seams showing on the Map screen with Anti-Aliasing enabled.
@@ -200,6 +201,7 @@ Any changes that don't strictly fix game bugs.
 
 SilentPatch includes code contributions from:
 * aap
+* B1ack_Wh1te
 * DK22Pac
 * Fire_Head
 * Nick007J

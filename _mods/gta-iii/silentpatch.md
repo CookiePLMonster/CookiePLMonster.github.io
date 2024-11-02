@@ -4,7 +4,7 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes countless issues in your favorite game."
-date: 25-10-2024
+date: 2-11-2024
 ---
 
 SilentPatch for the 3D-era Grand Theft Auto games is the first and flagship release of the "SilentPatch family", providing numerous fixes for this beloved franchise.
@@ -62,6 +62,8 @@ All the remaining, non-critical fixes.
 * The radar's horizontal position and its disc texture now scale to resolution correctly, resolving color bleed issues at high resolutions.
 * Credits now scale to resolution correctly, and they don't cut to an empty screen at the very end anymore.
 * Mission title and 'Mission Passed' texts now stay on screen for the same duration, regardless of screen resolution.
+* The inner padding of the text boxes with a background now scales to resolution correctly.
+* The position of the dialog question text in the main menu now scales to resolution correctly.
 * `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions -- speeding up streaming.
 * Free resprays will not carry on a New Game now.
 * Fixed ambulance and firetruck dispatch timers -- they reset on New Game now.
@@ -101,6 +103,7 @@ Any changes that don't strictly fix game bugs.
 
 SilentPatch includes code contributions from:
 * aap
+* B1ack_Wh1te
 * DK22Pac
 * Fire_Head
 * Nick007J
