@@ -1,6 +1,6 @@
 ACCESS_CODE_MAX = 99999
 
-def generateCode(accessCode, cheatID):
+def generateCode(accessCode, cheatID, prototype=False):
     # Verify domain of inputs
     if not (accessCode >= 0 and accessCode <= ACCESS_CODE_MAX
         and cheatID >= 0 and cheatID <= 99):
@@ -28,15 +28,18 @@ def generateCode(accessCode, cheatID):
             seed = 1
         return seed
 
-    def calcFeedback(items):
-        result = sum(items)
-        return toSigned32(result)
+    if prototype:
+        cheatIDMagic = (0x13CB5B * cheatID) & 0xffffffff
+        accessCodeMagic = ((accessCode % 100) ^ (0x20B9 * cheatIDMagic)) & 0xffffffff
 
-    cheatIDMagic = 0x13CB5B * cheatID % 0x26DD
-    accessCodeMagic = (accessCode % 0x3E8) ^ (0x20B9 * cheatIDMagic)
+        seed1 = calcSeed(accessCodeMagic % 0x853)
+        seed2 = calcSeed((((accessCodeMagic ^ 0x114CF1) * ((0x41B * cheatIDMagic) ^ (accessCode // 100 % 100))) & 0xffffffff) % 0x8CB)
+    else:
+        cheatIDMagic = toSigned32(0x13CB5B * cheatID % 0x26DD)
+        accessCodeMagic = toSigned32((accessCode % 1000) ^ (0x20B9 * cheatIDMagic))
 
-    seed1 = calcSeed(accessCodeMagic % 0x853)
-    seed2 = calcSeed(rem(toSigned32((accessCodeMagic ^ 0x114CF1) * ((0x41B * cheatIDMagic) ^ rem(idiv(accessCode, 0x3E8), 0x3E8))), 0x8CB))
+        seed1 = calcSeed(rem(accessCodeMagic, 0x853))
+        seed2 = calcSeed(rem(toSigned32((accessCodeMagic ^ 0x114CF1) * ((0x41B * cheatIDMagic) ^ (accessCode // 1000 % 1000))), 0x8CB))
 
     buffer = [0] * 6
 
@@ -47,10 +50,13 @@ def generateCode(accessCode, cheatID):
     buffer[4] = rem(idiv(seed2, 676), 26) + ord('A')
     buffer[5] = rem(seed2, 26) + ord('A')
 
-    bufMidXor = calcFeedback(buffer[:-1])
     feedback1 = toSigned32((buffer[0] << 24) + (buffer[1] << 16) + (buffer[2] << 8) + buffer[3])
-    feedback2 = toSigned32((buffer[4] << 24) + (buffer[5] << 16) + ((bufMidXor + rem(cheatIDMagic ^ 0x197ABD9, seed1 & 0xFFFFFFFF)) << 8)
-                + bufMidXor + rem(cheatIDMagic ^ 0x13478FDD, seed2 & 0xFFFFFFFF))
+    if prototype:
+        feedback2 = toSigned32((buffer[4] << 24) + (buffer[5] << 16) + (buffer[0] << 8) + buffer[1])
+    else:
+        sumAllButLast = toSigned32(sum(buffer[:-1]))
+        feedback2 = toSigned32((buffer[4] << 24) + (buffer[5] << 16) + ((sumAllButLast + rem(cheatIDMagic ^ 0x197ABD9, seed1 & 0xFFFFFFFF)) << 8)
+                    + sumAllButLast + rem(cheatIDMagic ^ 0x13478FDD, seed2 & 0xFFFFFFFF))
 
     IV = [491, 563, 613, 661, 733, 797, 857, 919, 983, 1039]
 

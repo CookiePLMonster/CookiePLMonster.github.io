@@ -49,11 +49,11 @@ def generateCode(platformData, accessCode, cheatID):
             result += item ^ 0x13C501
         return toSigned32(result)
 
-    cheatIDMagic = 0x13CB5B * cheatID % 0x26DD
-    accessCodeMagic = (accessCode % 0x3E8) ^ (0x20B9 * cheatIDMagic)
+    cheatIDMagic = toSigned32(0x13CB5B * cheatID % 0x26DD)
+    accessCodeMagic = toSigned32((accessCode % 1000) ^ (0x20B9 * cheatIDMagic))
 
-    seed1 = calcSeed(accessCodeMagic % 0x9AD)
-    seed2 = calcSeed(rem(toSigned32((accessCodeMagic ^ 0x114CF1) * ((0x41B * cheatIDMagic) ^ rem(idiv(accessCode, 0x3E8), 0x3E8))), 0x91D))
+    seed1 = calcSeed(rem(accessCodeMagic, 0x9AD))
+    seed2 = calcSeed(rem(toSigned32((accessCodeMagic ^ 0x114CF1) * ((0x41B * cheatIDMagic) ^ (accessCode // 1000 % 1000))), 0x91D))
 
     buffer = [0] * 6
 

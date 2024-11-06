@@ -34,8 +34,8 @@ def generateCode(platformData, accessCode, cheatID):
             seed = 1
         return seed
 
-    seed1 = calcSeed(rem(cheatID, 100) ^ rem(accessCode, 100) ^ rem(platformData[0], 100), rem(idiv(platformData[0], 10000), 100))
-    seed2 = calcSeed(rem(cheatID, 100) ^ rem(idiv(platformData[0], 100), 100) ^ rem(idiv(accessCode, 100), 100), rem(idiv(platformData[0], 1000000), 100))
+    seed1 = calcSeed((cheatID % 100) ^ (accessCode % 100) ^ (platformData[0] % 100), (platformData[0] // 10000 % 100))
+    seed2 = calcSeed((cheatID % 100) ^ (platformData[0] // 100 % 100) ^ (accessCode // 100 % 100), (platformData[0] // 1000000 % 100))
 
     buffer = [0] * 8
 
