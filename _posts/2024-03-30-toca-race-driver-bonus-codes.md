@@ -7,6 +7,7 @@ thumbnail: "assets/img/bonuscodes/bonuscodes-banner.svg"
 image: "assets/img/bonuscodes/bonuscodes-banner.png"
 game-series: ["toca-race-driver", "toca-race-driver-2", "toca-race-driver-3"]
 date: 2024-03-30 15:30:00 +0100
+last_modified_at: 2024-11-07 10:30:00 +0100
 twitter: {card: "summary_large_image"}
 tags: [Research, Releases]
 mathjax: true
@@ -40,12 +41,16 @@ directly in the web browser.
 
 Thanks to Wayback Machine, we can assemble a mostly complete list of games using Bonus Codes. Aside from the games I already cover on the website,
 those games most likely also used Bonus Codes. Some of them **may** have been using regular cheat codes, but Wayback Machine hasn't preserved enough web pages to know.
+
+{:.sidenote}
+Last update: {{ page.last_modified_at | date: page.date-format }}
+
 * Brian Lara International Cricket 2005
 * Clive Barker's Jericho
 * Colin McRae DiRT
 * Race Driver: GRID
 * Heatseeker
-* Hospital Tycoon
+* ~~Hospital Tycoon~~ (no access codes, only regular cheats)
 * LMA Manager 2007
 * Manchester United Soccer 2005
 * Micro Machines V4
