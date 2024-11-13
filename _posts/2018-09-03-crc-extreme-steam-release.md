@@ -22,7 +22,7 @@ and trees would randomly fly around!
 
 {% include figures/image.html link="/assets/img/posts/crc-extreme/crcbug.jpg" caption="You are not wrong - there really are trees in the sky." %}
 
-With it fixed, Raxat aka [ImageCode](http://image-code.com/) (you [may remember the name from a post about Street Legal Racing Redline v2.3.1]({{ site.baseurl }}{% post_url 2018-06-15-slrr-proof-of-fix %}))
+With it fixed, Raxat aka [ImageCode](http://image-code.com/) (you [may remember the name from a post about Street Legal Racing Redline v2.3.1]({% post_url 2018-06-15-slrr-proof-of-fix %}))
 sent the fix back to Invictus, and they **liked it so much so they immediately wanted to re-release the game on Steam!**
 
 I can proudly say I took part in refreshing the game for modern standards -- CRC Extreme on Steam can boast improvements such as:

@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .site-footer {
     @extend %padding-post;
     color: var(--footer-text-color);
@@ -10,7 +12,7 @@
 
     .top-row {
         a:hover {
-            color: darken($link-color, 15%);
+            color: color.adjust($link-color, $lightness: -15%);
         }
     }
 

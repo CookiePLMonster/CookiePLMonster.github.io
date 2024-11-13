@@ -18,7 +18,7 @@ So I sent the EXE off to have it checked by somebody else, and after I while I a
 > --- _Is it working OK? Worked great for me so I think we can ship it._\\
 > --- _Nope, it's super slow, like 5FPS!_\\
 > --- _Seriously?_\\
-> --- _Yep -- it's just like [the last game]({{ site.baseurl }}{% post_url 2018-06-15-slrr-proof-of-fix %})._
+> --- _Yep -- it's just like [the last game]({% post_url 2018-06-15-slrr-proof-of-fix %})._
 
 How is it possible? It was literally impossible for a newer compiler to generate "unoptimized" code which performs so badly for one person,
 and perfectly well for another. More info arrived soon:

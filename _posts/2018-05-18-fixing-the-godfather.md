@@ -17,8 +17,8 @@ TL;DR - if you are not interested in an in-depth overview of what was wrong with
 Upon downloading, all you need to do is to extract the archive to game’s directory and that’s it! If you have movies removed or renamed, don’t forget to restore them, since they will work just fine now.
 
 This article is split in two parts:
-* [Part 1: Prelude to fixing]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather %})
-* [Part 2: Implementation]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather-pt2 %})
+* [Part 1: Prelude to fixing]({% post_url 2018-05-18-fixing-the-godfather %})
+* [Part 2: Implementation]({% post_url 2018-05-18-fixing-the-godfather-pt2 %})
 
 Prelude to fixing
 =================
@@ -276,4 +276,4 @@ RwCameraShowRaster( rwCamera ); // Original call we are overwriting
 
 Queue gets populated by *UpdateOverlay* calls issued by the game. With both parts in place...
 
-...we have reached the end of Part 1! If you are not too overwhelmed by technicalities already, follow the links below to jump to [Part 2]({{ site.baseurl }}{% post_url 2018-05-18-fixing-the-godfather-pt2 %}). Otherwise, come back soon!
+...we have reached the end of Part 1! If you are not too overwhelmed by technicalities already, follow the links below to jump to [Part 2]({% post_url 2018-05-18-fixing-the-godfather-pt2 %}). Otherwise, come back soon!

@@ -120,7 +120,31 @@ I could prove it trivially by placing a breakpoint at the very end of the lambda
 
 Since the issue seems so trivial, reproducing it in a standalone program boils down to literally a few lines:
 
-{% gist 18632c532d510ddcf5fbb1c84fad672a %}
+```c
+// Simple test program for Windows 10's dinput8.dll premature deinitialization bug
+// Adrian Zdanowicz (Silent), 2019
+
+// This basic program showcases an issue with how dinput8 queues a work item in its own DllMain.
+// The issue comes from a fact that unloading dinput8 does not wait for this work item to finish,
+// so if it's not quick enough, DLL will get unloaded while a thread pool still executes this work item.
+
+// To observe the crash:
+// - With a ready executable, add it to Application Verifier.
+// - Uncheck all tests excepts Basic -> Threadpool test and save changes.
+// - Launch the executable.
+// - Observe it closes.
+
+// So far this issue has been identified with Windows 10 1803, 1809 and 1903.
+
+#include <Windows.h>
+
+int main()
+{
+	// To keep the sample straightforward, assume LoadLibrary succeeds
+	FreeLibrary(LoadLibrary(TEXT("dinput8")));
+	for ( ;; ) Sleep(1); // Just wait for the crash now!
+}
+```
 
 Load... unload... and wait for crash to happen! Obviously, it won't crash in majority of cases -- but with Application Verifier it's possible to make it consistent.
 As mentioned in the snippet, it needs to be ran with **Basics &rarr; Threadpool** tests enabled (I also like using **Heaps** for those cases),

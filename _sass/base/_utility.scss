@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Mix-ins
 %padding-nav {
     padding: $padding-small $padding-x-large;
@@ -258,8 +260,8 @@ a.round-button {
 
     &.patreon {
         &:hover {
-            background: darken($patreon-link-color, 15%);
-            border-color: darken($patreon-link-color, 15%);
+            background: color.adjust($patreon-link-color, $lightness: -15%);
+            border-color: color.adjust($patreon-link-color, $lightness: -15%);
         }
 
         background: $patreon-link-color;
@@ -268,8 +270,8 @@ a.round-button {
 
     &.paypal {
         &:hover {
-            background: darken($paypal-link-color, 15%);
-            border-color: darken($paypal-link-color, 15%);
+            background: color.adjust($paypal-link-color, $lightness: -15%);
+            border-color: color.adjust($paypal-link-color, $lightness: -15%);
         }
 
         background: $paypal-link-color;
@@ -278,8 +280,8 @@ a.round-button {
 
     &.ko-fi {
         &:hover {
-            background: darken($ko-fi-link-color, 15%);
-            border-color: darken($ko-fi-link-color, 15%);
+            background: color.adjust($ko-fi-link-color, $lightness: -15%);
+            border-color: color.adjust($ko-fi-link-color, $lightness: -15%);
         }
 
         background: $ko-fi-link-color;
@@ -290,7 +292,7 @@ a.round-button {
 %body-link {
     &:hover {
         text-decoration: underline;
-        color: darken($link-color, 15%);
+        color: color.adjust($link-color, $lightness: -15%);
     }
 }
 

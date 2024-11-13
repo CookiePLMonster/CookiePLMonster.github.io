@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Typography
 $font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
 $font-size: 1.25em;
@@ -105,17 +107,17 @@ $text-color: var(--text-color);
     --header-link-color: #{$header-link-color-light};
     --blockquote-color: #{$blockquote-color-light};
 
-    --github-link-color: #{darken($github-color, 10%)};
-    --github-link-hover-color: #{darken(darken($github-color, 10%), 15%)};
+    --github-link-color: #{color.adjust($github-color, $lightness: -10%)};
+    --github-link-hover-color: #{color.adjust(color.adjust($github-color, $lightness: -10%), $lightness: -15%)};
 
     --important-link-color: #{$important-color-light};
-    --important-link-hover-color: #{darken($important-color-light, 15%)};
+    --important-link-hover-color: #{color.adjust($important-color-light, $lightness: -15%)};
 
     --forums-link-color: #{$text-color-light};
-    --forums-link-hover-color: #{darken($text-color-light, 15%)};
+    --forums-link-hover-color: #{color.adjust($text-color-light, $lightness: -15%)};
 
     --footer-text-color: #{lighten($text-color-light, 30%)};
-    --blockquote-border-color: #{darken($blockquote-color-light, 20%)};
+    --blockquote-border-color: #{color.adjust($blockquote-color-light, $lightness: -20%)};
 
     --highlighter-rouge-color: rgb(36, 41, 46);
     --highlighter-rouge-bg-color: #{transparentize($base00, 0.85)};
@@ -138,10 +140,10 @@ $text-color: var(--text-color);
     --blockquote-color: #{$blockquote-color-dark};
 
     --important-link-color: #{$important-color-dark};
-    --important-link-hover-color: #{darken($important-color-dark, 15%)};
+    --important-link-hover-color: #{color.adjust($important-color-dark, $lightness: -15%)};
 
     --forums-link-color: #{$text-color-dark};
-    --forums-link-hover-color: #{darken($text-color-dark, 15%)};
+    --forums-link-hover-color: #{color.adjust($text-color-dark, $lightness: -15%)};
 
     --footer-text-color: #{$text-color-dark};
     --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};

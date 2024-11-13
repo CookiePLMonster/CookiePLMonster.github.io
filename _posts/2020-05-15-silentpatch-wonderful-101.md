@@ -57,7 +57,7 @@ curFrameTimeQPC = GetProcessTime();
 curFrameTime3Ms = (unsigned int)(GetInvFrequency() * (double)GetProcessTime() * 3.0);
 ```
 
-Deja vu? Indeed, this frame limiter code is structured similarly to the one seen in Yakuza Kiwami 2, [which was also broken]({{ site.baseurl }}{% post_url 2020-01-18-silentpatch-yakuza-kiwami-2 %}#broken-frame-pacing).
+Deja vu? Indeed, this frame limiter code is structured similarly to the one seen in Yakuza Kiwami 2, [which was also broken]({% post_url 2020-01-18-silentpatch-yakuza-kiwami-2 %}#broken-frame-pacing).
 At the first glance, both issues are identical so I'll just quote the post regarding YK2:
 
 > Can you spot the issue? It's right here, called `sleep(1)`.
@@ -79,7 +79,7 @@ Looking at the guides detailing how Special K fixes frame pacing issues, we can 
 
 Since my fix is equivalent to SK disabling sleeps on the render thread, it's also affected. But how is this possible? Patches can't undo themselves, which means there must be another bug creeping in the code.
 
-Cue floating-point precision, something [I wrote about a long time ago]({{ site.baseurl }}{% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}). To understand what's going on,
+Cue floating-point precision, something [I wrote about a long time ago]({% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}). To understand what's going on,
 I should explain what do the functions used in the frame limiter code return:
 - `GetProcessTime()` returns the time since the game has started in `QueryPerformanceCounter` units (a difference between the current time and process start time). It returns an `uint64`.
 - `GetInvFrequency()` the inverse of `QueryPerformanceFrequency`, multiplied by 1000.0. It returns a `float`.
@@ -148,7 +148,7 @@ T = (InvFrequency * (processTime-lastProcessTime) * 3.0);
 ```
 
 On paper, both expressions always give the same result; in computer science, they don't.
-[I discussed this in greater detail]({{ site.baseurl }}{% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}#floating-point-precision) in one of my older blog posts,
+[I discussed this in greater detail]({% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}#floating-point-precision) in one of my older blog posts,
 so here I'll just remind you that the original calculations lose precision because `InvFrequency` is a very small number, while `processTime` is a very big number. Therefore, simplifying
 the expression to use `processTime-lastProcessTime` prevents inaccuracies, because the result of this subtraction (performed on integer variables, thus without losing any precision)
 will always be a relatively small number, which can be expressed as a double and multiplied by `InvFrequency` without losing precision.

@@ -91,7 +91,7 @@ any changes to the game, it's a perfectly fine way of doing it. As long as you s
 
 ## PIX
 As always with graphical issues, PIX is likely the most useful tool one could use to diagnose them. We captured similar scenes from Intel and AMD hardware and compared the results.
-One difference was instantly noticeable -- unlike with my past projects, where [captures did not carry the bug with them]({{ site.baseurl }}{% post_url 2018-07-07-farcry-d3d9-bug %}) and the same capture
+One difference was instantly noticeable -- unlike with my past projects, where [captures did not carry the bug with them]({% post_url 2018-07-07-farcry-d3d9-bug %}) and the same capture
 would look different on different PCs (indicating a driver or d3d9.dll bug), these captures carry the bug with them! In other words, a capture from an AMD hardware opened on a PC with Intel hardware
 **does** show the bug.
 

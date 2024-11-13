@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:math";
+
 .comments,
 .page-body { 
     border-bottom: 1px solid var(--line-color);
@@ -47,7 +50,7 @@ header, .posts {
     header {
         color: $feature-image-text-color;
         margin-bottom: 0;
-        padding: $padding-large/2.5 $padding-large;
+        padding: math.div($padding-large, 2.5) $padding-large;
         text-align: center;
 
         @media screen and (max-width: $break) {
@@ -56,7 +59,7 @@ header, .posts {
 
         .meta {
             @extend %header-txt-shadow;
-            color: darken($feature-image-text-color, 15%);
+            color: color.adjust($feature-image-text-color, $lightness: -15%);
         }
     }
 

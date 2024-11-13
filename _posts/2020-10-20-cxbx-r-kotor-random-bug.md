@@ -154,7 +154,7 @@ in this specific case my conclusions are:
 * `memset` is a relic from C, but sometimes it's still a good solution -- especially when used on primitive types or
 trivially constructible structures. Sadly, it is sometimes easy to accidentally make the structure or class non-trivial while
 still using `memset` and/or `memcpy`, which just leads to hard to troubleshoot issues.
-* D3DX is evil and [this is not the first time it bit me]({{ site.baseurl }}{% post_url 2020-07-19-silentpatch-mass-effect %}).
+* D3DX is evil and [this is not the first time it bit me]({% post_url 2020-07-19-silentpatch-mass-effect %}).
 One more reason for me to avoid it at all costs.
 
 ***

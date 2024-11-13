@@ -62,7 +62,7 @@ I started my analysis by taking a C++ capture from both DXHR and DXHR Director's
 [NVIDIA Nsight Graphics](https://developer.nvidia.com/nsight-graphics). This works far better than using [RenderDoc](https://renderdoc.org/) alone,
 since the end product of such capture is C++ code, and therefore it is trivially editable. This allowed me to prototype and tinker with the game's
 visuals much more efficiently than when I was editing RenderDoc captures
-for [my previous projects]({{ site.baseurl }}{% post_url 2019-02-24-yakuza-0-fixing-attempts %}).
+for [my previous projects]({% post_url 2019-02-24-yakuza-0-fixing-attempts %}).
 
 With both scenes ready for the analysis, I started by taking a close look at the post-processing.
 
@@ -301,7 +301,7 @@ This modification is obviously not a SilentPatch (although fixed lighting is as 
 The most interesting problem I was made aware of are issues with a laggy camera:
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/1DKuhS7KSEg" %}
 
-Turns out, this issue is related to high PC uptime, so rebooting the PC fixes it! [I debugged similar issues in the past]({{ site.baseurl }}{% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}),
+Turns out, this issue is related to high PC uptime, so rebooting the PC fixes it! [I debugged similar issues in the past]({% post_url 2018-08-07-high-resolution-timers-and-uptime-headaches %}),
 so I will likely look into those in the future too. SilentPatch for Deus Ex: Human Revolution **and** Director's Cut is not unlikely to happen!
 
 ***

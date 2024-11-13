@@ -1,6 +1,8 @@
+@use "sass:math";
+
 .share-buttons {
     text-align: center;
-    padding: $padding-x-small/2 0;
+    padding: math.div($padding-x-small, 2) 0;
 
     .meta {
         margin-right: 0.5em;

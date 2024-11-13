@@ -23,7 +23,7 @@ that allows you to run Virtua Fighter 5: Final Showdown, standalone and native, 
 
 # Technical overview
 
-This sounds familiar -- [wasn't this already done before]({{ site.baseurl }}{% post_url 2021-04-19-virtua-fighter-5-final-showdown-unlocker %})?
+This sounds familiar -- [wasn't this already done before]({% post_url 2021-04-19-virtua-fighter-5-final-showdown-unlocker %})?
 While this idea may seem similar to a previously released **VF5FS Unlocker**, it's anything but the same -- VF5FS Unlocker transforms the in-game arcades,
 while YAMP allows running VF5FS outside of Yakuza, effectively making it work as a "proper" PC version of the game.
 At the moment, YAMP supports only VF5FS from Yakuza 6 (despite the name hinting otherwise) and no other arcades, but support might be expanded in the future.

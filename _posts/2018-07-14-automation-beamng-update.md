@@ -46,4 +46,4 @@ Also, there are some things I would love to see implemented:
 
 ***
 
-*This is not a tech post at all, but hey -- [I did warn you]({{ site.baseurl }}{% post_url 2018-05-12-launching-blog %}).*
+*This is not a tech post at all, but hey -- [I did warn you]({% post_url 2018-05-12-launching-blog %}).*
