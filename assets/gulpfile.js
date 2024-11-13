@@ -34,16 +34,7 @@ gulp.task('js', gulp.parallel(function() {
     })
 );
 
-gulp.task("img", function() {
-    return gulp.src('img/**/*.{png,svg,jpg,gif}')
-        .pipe(imagemin())
-        .on('error', (err) => {
-            console.log(err.toString());
-        })
-        .pipe(gulp.dest('img/'))
-});
-
-gulp.task('css', function() {
+gulp.task('css', gulp.parallel(function() {
     return gulp.src('css/vendor/juxtapose.css')
       .pipe(cleanCSS())
       .on('error', (err) => {
@@ -51,6 +42,14 @@ gulp.task('css', function() {
       })
       .pipe(concat('juxtapose.min.css'))
       .pipe(gulp.dest('css/vendor/'));
-  });
+  }, function() {
+    return gulp.src('css/icomoon/style.css')
+      .pipe(cleanCSS())
+      .on('error', (err) => {
+        console.log(err.toString())
+      })
+      .pipe(concat('style.min.css'))
+      .pipe(gulp.dest('css/icomoon/'));
+  }));
 
-gulp.task("default", gulp.series(gulp.parallel('js', 'css', 'img')));
+gulp.task("default", gulp.series(gulp.parallel('js', 'css')));
