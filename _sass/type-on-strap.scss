@@ -5,6 +5,12 @@
 @import 'external/reset';
 @import 'external/syntax';
 
+// Font Awesome
+@import "external/fontawesome/fontawesome.scss";
+@import "external/fontawesome/solid.scss";
+@import "external/fontawesome/regular.scss";
+@import "external/fontawesome/brands.scss";
+
 // Base
 @import 'base/global';
 @import 'base/utility';

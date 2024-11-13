@@ -2,6 +2,10 @@
 $font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
 $font-size: 1.25em;
 
+// Font Awesome
+$fa-font-path: 'fontawesome';
+$fa-inverse: var(--background-color);
+
 
 /* PADDING */
 $padding-x-large: 23%;
@@ -168,10 +172,5 @@ html {
 
     @media (prefers-color-scheme: dark) {
         @include dark-theme;
-    }
-
-    // Work around FontAwesome 5 not having a --fa-inverse variable
-    .fa-inverse {
-        color: var(--background-color);
     }
 }
