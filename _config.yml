@@ -26,6 +26,7 @@ theme_settings:
   email_address: zdanio95@gmail.com
   behance:
   bitbucket:
+  bluesky: https://cookieplmonster.bsky.social/
   dribbble:
   discord:
   facebook:
@@ -33,11 +34,11 @@ theme_settings:
   gitlab:
   github: CookiePLMonster
   github_sponsors: true
-  google_plus:
   instagram:
   keybase:
   ko-fi: CookiePLMonster
   linkedin:  # Full URL
+  mastodon: "https://mastodon.gamedev.place/@cookie"
   pinterest:
   patreon: 32437453
   paypal: AdrianZdanowicz
@@ -55,7 +56,6 @@ theme_settings:
   share_buttons:
     facebook: true
     twitter: true
-    google_plus:
     tumblr:
     pinterest:
     pocket:

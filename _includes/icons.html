@@ -1,4 +1,4 @@
-{% if site.theme_settings.rss %}
+{%- if site.theme_settings.rss %}
 <li>
 	<a href="{{ "feed.xml" | absolute_url }}" title="{{ site.theme_settings.str_rss_follow }}">
 		<span class="fa-stack fa-lg">
@@ -7,257 +7,268 @@
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.email_address %}
+{%- if site.theme_settings.email_address %}
 <li>
-	<a href="mailto:{{ site.theme_settings.email_address }}" title="{{ site.theme_settings.str_email }}">
+	<a target="_blank" href="mailto:{{ site.theme_settings.email_address }}" title="{{ site.theme_settings.str_email }}">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.behance %}
+{%- if site.theme_settings.behance %}
 <li>
-	<a href="https://www.behance.net/{{ site.theme_settings.behance }}" title="{{ site.theme_settings.str_follow_on }} Behance">
+	<a rel="me" target="_blank" href="https://www.behance.net/{{ site.theme_settings.behance }}" title="{{ site.theme_settings.str_follow_on }} Behance">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-behance fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.bitbucket %}
+{%- if site.theme_settings.bitbucket %}
 <li>
-	<a href="https://bitbucket.org/{{ site.theme_settings.bitbucket }}" title="{{ site.theme_settings.str_follow_on }} Bitbucket">
+	<a rel="me" target="_blank" href="https://bitbucket.org/{{ site.theme_settings.bitbucket }}" title="{{ site.theme_settings.str_follow_on }} Bitbucket">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-bitbucket fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.dribbble %}
+{%- if site.theme_settings.dribbble %}
 <li>
-	<a href="https://dribbble.com/{{ site.theme_settings.dribbble }}" title="{{ site.theme_settings.str_follow_on }} Dribbble">
+	<a rel="me" target="_blank" href="https://dribbble.com/{{ site.theme_settings.dribbble }}" title="{{ site.theme_settings.str_follow_on }} Dribbble">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.facebook %}
+{%- if site.theme_settings.facebook %}
 <li>
-	<a href="https://www.facebook.com/{{ site.theme_settings.facebook }}" title="{{ site.theme_settings.str_follow_on }} Facebook">
+	<a rel="me" target="_blank" href="https://www.facebook.com/{{ site.theme_settings.facebook }}" title="{{ site.theme_settings.str_follow_on }} Facebook">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.flickr %}
+{%- if site.theme_settings.flickr %}
 <li>
-	<a href="https://www.flickr.com/photos/{{ site.theme_settings.flickr }}" title="{{ site.theme_settings.str_follow_on }} Flickr">
+	<a rel="me" target="_blank" href="https://www.flickr.com/photos/{{ site.theme_settings.flickr }}" title="{{ site.theme_settings.str_follow_on }} Flickr">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-flickr fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.discord %}
+{%- if site.theme_settings.discord %}
 <li>
-	<a href="https://discord.gg/{{ site.theme_settings.discord }}" title="{{ site.theme_settings.str_discord }}">
+	<a rel="me" target="_blank" href="https://discord.gg/{{ site.theme_settings.discord }}" title="{{ site.theme_settings.str_discord }}">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.github %}
+{%- if site.theme_settings.github %}
 <li>
-	<a href="https://github.com/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_follow_on }} GitHub">
+	<a rel="me" target="_blank" href="https://github.com/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_follow_on }} GitHub">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-github fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.google_plus %}
+{%- if site.theme_settings.instagram %}
 <li>
-	<a href="https://plus.google.com/{{ site.theme_settings.google_plus }}" title="{{ site.theme_settings.str_follow_on }} Google+">
-		<span class="fa-stack fa-lg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-google-plus fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
-</li>
-{% endif %}
-
-{% if site.theme_settings.instagram %}
-<li>
-	<a href="http://instagram.com/{{ site.theme_settings.instagram }}" title="{{ site.theme_settings.str_follow_on }} Instagram">
+	<a rel="me" target="_blank" href="http://instagram.com/{{ site.theme_settings.instagram }}" title="{{ site.theme_settings.str_follow_on }} Instagram">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.keybase %}
+{%- if site.theme_settings.keybase %}
 <li>
-	<a href="https://keybase.io/{{ site.theme_settings.keybase }}" title="{{ site.theme_settings.str_follow_on }} Keybase">
+	<a rel="me" target="_blank" href="https://keybase.io/{{ site.theme_settings.keybase }}" title="{{ site.theme_settings.str_follow_on }} Keybase">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-key fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.linkedin %}
+{%- if site.theme_settings.linkedin %}
 <li>
-	<a href="{{ site.theme_settings.linkedin }}" title="{{ site.theme_settings.str_follow_on }} LinkedIn">
+	<a rel="me" target="_blank" href="{{ site.theme_settings.linkedin }}" title="{{ site.theme_settings.str_follow_on }} LinkedIn">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.pinterest %}
+{%- if site.theme_settings.pinterest %}
 <li>
-	<a href="http://www.pinterest.com/{{ site.theme_settings.pinterest }}" title="{{ site.theme_settings.str_follow_on }} Pinterest">
+	<a rel="me" target="_blank" href="http://www.pinterest.com/{{ site.theme_settings.pinterest }}" title="{{ site.theme_settings.str_follow_on }} Pinterest">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.reddit %}
+{%- if site.theme_settings.reddit %}
 <li>
-	<a href="https://www.reddit.com/user/{{ site.theme_settings.reddit }}" title="{{ site.theme_settings.str_follow_on }} Reddit">
+	<a rel="me" target="_blank" href="https://www.reddit.com/user/{{ site.theme_settings.reddit }}" title="{{ site.theme_settings.str_follow_on }} Reddit">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.soundcloud %}
+{%- if site.theme_settings.soundcloud %}
 <li>
-	<a href="https://soundcloud.com/{{ site.theme_settings.soundcloud }}" title="{{ site.theme_settings.str_follow_on }} SoundCloud">
+	<a rel="me" target="_blank" href="https://soundcloud.com/{{ site.theme_settings.soundcloud }}" title="{{ site.theme_settings.str_follow_on }} SoundCloud">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-soundcloud fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.stack_exchange %}
+{%- if site.theme_settings.stack_exchange %}
 <li>
-	<a href="{{ site.theme_settings.stack_exchange }}" title="{{ site.theme_settings.str_follow_on }} Stack Exchange">
+	<a rel="me" target="_blank" href="{{ site.theme_settings.stack_exchange }}" title="{{ site.theme_settings.str_follow_on }} Stack Exchange">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-stack-exchange fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.steam %}
+{%- if site.theme_settings.steam %}
 <li>
-	<a href="https://steamcommunity.com/id/{{ site.theme_settings.steam }}" title="{{ site.theme_settings.str_follow_on }} Steam">
+	<a rel="me" target="_blank" href="https://steamcommunity.com/id/{{ site.theme_settings.steam }}" title="{{ site.theme_settings.str_follow_on }} Steam">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-steam-symbol fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.tumblr %}
+{%- if site.theme_settings.tumblr %}
 <li>
-	<a href="http://{{ site.theme_settings.tumblr }}.tumblr.com/" title="{{ site.theme_settings.str_follow_on }} Tumblr">
+	<a rel="me" target="_blank" href="http://{{ site.theme_settings.tumblr }}.tumblr.com/" title="{{ site.theme_settings.str_follow_on }} Tumblr">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-tumblr fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.gitlab %}
+{%- if site.theme_settings.gitlab %}
 <li>
-	<a href="https://gitlab.com/{{ site.theme_settings.gitlab }}" title="{{ site.theme_settings.str_follow_on }} Gitlab">
+	<a rel="me" target="_blank" href="https://gitlab.com/{{ site.theme_settings.gitlab }}" title="{{ site.theme_settings.str_follow_on }} Gitlab">
         <span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.twitter %}
+{%- if site.theme_settings.twitter %}
 <li>
-	<a href="https://twitter.com/{{ site.theme_settings.twitter }}" title="{{ site.theme_settings.str_follow_on }} Twitter" class="type">
+	<a rel="me" target="_blank" href="https://twitter.com/{{ site.theme_settings.twitter }}" title="{{ site.theme_settings.str_follow_on }} X/Twitter">
         <span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.vimeo %}
+{%- if site.theme_settings.bluesky %}
 <li>
-	<a href="https://vimeo.com/{{ site.theme_settings.vimeo }}" title="{{ site.theme_settings.str_follow_on }} Vimeo" class="type">
+	<a rel="me" target="_blank" href="{{ site.theme_settings.bluesky }}" title="{{ site.theme_settings.str_follow_on }} Bluesky">
+        <span class="fa-stack fa-lg">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-bluesky fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{%- endif -%}
+
+{%- if site.theme_settings.mastodon %}
+<li>
+	<a rel="me" target="_blank" href="{{ site.theme_settings.mastodon }}" title="{{ site.theme_settings.str_follow_on }} Mastodon">
+        <span class="fa-stack fa-lg">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{%- endif -%}
+
+{%- if site.theme_settings.vimeo %}
+<li>
+	<a rel="me" target="_blank" href="https://vimeo.com/{{ site.theme_settings.vimeo }}" title="{{ site.theme_settings.str_follow_on }} Vimeo">
         <span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-vimeo fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.wordpress %}
+{%- if site.theme_settings.wordpress %}
 <li>
-	<a href="https://{{ site.theme_settings.wordpress }}.wordpress.com/" title="{{ site.theme_settings.str_follow_on }} WordPress">
+	<a rel="me" target="_blank" href="https://{{ site.theme_settings.wordpress }}.wordpress.com/" title="{{ site.theme_settings.str_follow_on }} WordPress">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-wordpress fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.youtube %}
+{%- if site.theme_settings.youtube %}
 <li>
-	<a href="https://www.youtube.com/{{ site.theme_settings.youtube }}" title="{{ site.theme_settings.str_follow_on }} YouTube">
+	<a rel="me" target="_blank" href="https://www.youtube.com/{{ site.theme_settings.youtube }}" title="{{ site.theme_settings.str_follow_on }} YouTube">
 		<span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
         </span>
 	</a>
 </li>
-{% endif %}
+{%- endif -%}

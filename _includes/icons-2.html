@@ -1,31 +1,31 @@
-{% if site.theme_settings.patreon %}
+{%- if site.theme_settings.patreon %}
 <li>
 	<a href="https://www.patreon.com/bePatron?u={{ site.theme_settings.patreon }}" rel="nofollow" class="round-button patreon" target="_blank" title="Become a patron">
         <i class="fab fa-patreon"></i> Become a patron
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.github_sponsors %}
+{%- if site.theme_settings.github_sponsors %}
 <li>
 	<a href="https://github.com/sponsors/{{ site.theme_settings.github }}" rel="nofollow" class="round-button github" target="_blank" title="Become a sponsor">
         <i class="fab fa-github-alt"></i> Become a sponsor
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.ko-fi %}
+{%- if site.theme_settings.ko-fi %}
 <li>
 	<a href="https://ko-fi.com/{{ site.theme_settings.ko-fi }}" rel="nofollow" class="round-button ko-fi" target="_blank" title="{{ site.theme_settings.str_support_on }} Ko-fi">
         <i class="icomoon icon-ko-fi"></i> {{ site.theme_settings.str_support_on }} Ko-fi
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
 
-{% if site.theme_settings.paypal %}
+{%- if site.theme_settings.paypal %}
 <li>
 	<a href="https://paypal.me/{{ site.theme_settings.paypal }}/0usd" rel="nofollow" class="round-button paypal" target="_blank" title="{{ site.theme_settings.str_support_via }} PayPal">
         <i class="fab fa-paypal"></i> {{ site.theme_settings.str_support_via }} PayPal
 	</a>
 </li>
-{% endif %}
+{%- endif -%}
