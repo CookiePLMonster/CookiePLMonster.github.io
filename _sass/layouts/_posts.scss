@@ -1,3 +1,5 @@
+@use "base/variables";
+@use "base/utility";
 @use "sass:color";
 @use "sass:math";
 
@@ -37,7 +39,7 @@ header, .posts {
 
 .meta {
     @extend .upcase;
-    color: rgba($text-color, .5);
+    color: rgba(variables.$text-color, .5);
     font-size: 0.9em;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -48,18 +50,18 @@ header, .posts {
 /* --- Feature image --- */
 .page-body {
     header {
-        color: $feature-image-text-color;
+        color: variables.$feature-image-text-color;
         margin-bottom: 0;
-        padding: math.div($padding-large, 2.5) $padding-large;
+        padding: math.div(variables.$padding-large, 2.5) variables.$padding-large;
         text-align: center;
 
-        @media screen and (max-width: $break) {
-            padding: $padding-large*1.5 $padding-small;
+        @media screen and (max-width: variables.$break) {
+            padding: variables.$padding-large*1.5 variables.$padding-small;
         }
 
         .meta {
             @extend %header-txt-shadow;
-            color: color.adjust($feature-image-text-color, $lightness: -15%);
+            color: color.adjust(variables.$feature-image-text-color, $lightness: -15%);
         }
     }
 

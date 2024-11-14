@@ -1,3 +1,6 @@
+@use "base/variables";
+@use "base/utility";
+
 .mods-grid {
     // TODO: Make this %flexible-2d-block
     display: flex;
@@ -10,14 +13,14 @@
     flex: 0 0 50%;
     margin-bottom: 10px;
 
-    @media screen and (max-width: $break) {
+    @media screen and (max-width: variables.$break) {
         flex-basis: 100%;
     }
 }
 
 .mod-label {
     border-radius: 0.3em;
-    color: $feature-image-text-color;
+    color: variables.$feature-image-text-color;
     font-weight: bold;
     font-size: 75%;
     padding: 0.2em 0.6em 0.3em;
@@ -27,7 +30,7 @@
     }
 
     &.info {
-        background-color: $theme-color;
+        background-color: variables.$theme-color;
     }
 }
 

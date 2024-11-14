@@ -1,3 +1,5 @@
+@use "base/variables";
+
 // Inspired by: https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes/_syntax.scss
 
 // ==========================================================================
@@ -8,12 +10,12 @@ div.highlighter-rouge,
 figure.highlight {
     position: relative;
     margin-bottom: 1em;
-    background: $base00;
-    color: $base05;
-    font-family: $monospace;
-    font-size: $font-size-code;
+    background: variables.$base00;
+    color: variables.$base05;
+    font-family: variables.$monospace;
+    font-size: variables.$font-size-code;
     line-height: 1.8;
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
     > pre,
     pre.highlight {
         margin: 0;
@@ -23,11 +25,11 @@ figure.highlight {
 
 code.highlighter-rouge {
     padding: 0.2em 0.4em;
-    font-size: $font-size-code;
+    font-size: variables.$font-size-code;
     background-color: var(--highlighter-rouge-bg-color);
     color: var(--highlighter-rouge-color);
     border-radius: 2px;
-    font-family: $monospace;
+    font-family: variables.$monospace;
 }
 
 .highlight table {
@@ -43,8 +45,8 @@ code.highlighter-rouge {
         &.rouge-gutter {
             padding-right: 1em;
             width: 2em;
-            color: $base04;
-            border-right: 1px solid $base04;
+            color: variables.$base04;
+            border-right: 1px solid variables.$base04;
             text-align: right
         }
 
@@ -61,72 +63,72 @@ code.highlighter-rouge {
 }
 
 .highlight pre{ width:100%}
-.highlight .hll{ background-color:$base06}
+.highlight .hll{ background-color:variables.$base06}
 
 .highlight{ 
- .c{ /* Comment */ color:$base04}
- .err{ /* Error */ color:$base08}
- .k{ /* Keyword */ color:$base0e}
- .l{ /* Literal */ color:$base09}
- .n{ /* Name */ color:$base05}
- .o{ /* Operator */ color:$base0c}
- .p{ /* Punctuation */ color:$base05}
- .cm{ /* Comment.Multiline */ color:$base04}
- .cp{ /* Comment.Preproc */ color:$base04}
- .c1{ /* Comment.Single */ color:$base04}
- .cs{ /* Comment.Special */ color:$base04}
- .gd{ /* Generic.Deleted */ color:$base08}
+ .c{ /* Comment */ color:variables.$base04}
+ .err{ /* Error */ color:variables.$base08}
+ .k{ /* Keyword */ color:variables.$base0e}
+ .l{ /* Literal */ color:variables.$base09}
+ .n{ /* Name */ color:variables.$base05}
+ .o{ /* Operator */ color:variables.$base0c}
+ .p{ /* Punctuation */ color:variables.$base05}
+ .cm{ /* Comment.Multiline */ color:variables.$base04}
+ .cp{ /* Comment.Preproc */ color:variables.$base04}
+ .c1{ /* Comment.Single */ color:variables.$base04}
+ .cs{ /* Comment.Special */ color:variables.$base04}
+ .gd{ /* Generic.Deleted */ color:variables.$base08}
  .ge{ /* Generic.Emph */ font-style:italic}
- .gh{ /* Generic.Heading */ color:$base05;  font-weight:bold}
- .gi{ /* Generic.Inserted */ color:$base0b}
- .gp{ /* Generic.Prompt */ color:$base04;  font-weight:bold}
+ .gh{ /* Generic.Heading */ color:variables.$base05;  font-weight:bold}
+ .gi{ /* Generic.Inserted */ color:variables.$base0b}
+ .gp{ /* Generic.Prompt */ color:variables.$base04;  font-weight:bold}
  .gs{ /* Generic.Strong */ font-weight:bold}
- .gu{ /* Generic.Subheading */ color:$base0c;  font-weight:bold}
- .kc{ /* Keyword.Constant */ color:$base0e}
- .kd{ /* Keyword.Declaration */ color:$base0e}
- .kn{ /* Keyword.Namespace */ color:$base0c}
- .kp{ /* Keyword.Pseudo */ color:$base0e}
- .kr{ /* Keyword.Reserved */ color:$base0e}
- .kt{ /* Keyword.Type */ color:$base0a}
- .ld{ /* Literal.Date */ color:$base0b}
- .m{ /* Literal.Number */ color:$base09}
- .s{ /* Literal.String */ color:$base0b}
- .na{ /* Name.Attribute */ color:$base0d}
- .nb{ /* Name.Builtin */ color:$base05}
- .nc{ /* Name.Class */ color:$base0a}
- .no{ /* Name.Constant */ color:$base08}
- .nd{ /* Name.Decorator */ color:$base0c}
- .ni{ /* Name.Entity */ color:$base05}
- .ne{ /* Name.Exception */ color:$base08}
- .nf{ /* Name.Function */ color:$base0d}
- .nl{ /* Name.Label */ color:$base05}
- .nn{ /* Name.Namespace */ color:$base0a}
- .nx{ /* Name.Other */ color:$base0d}
- .py{ /* Name.Property */ color:$base05}
- .nt{ /* Name.Tag */ color:$base0c}
- .nv{ /* Name.Variable */ color:$base08}
- .ow{ /* Operator.Word */ color:$base0c}
- .w{ /* Text.Whitespace */ color:$base05}
- .mf{ /* Literal.Number.Float */ color:$base09}
- .mh{ /* Literal.Number.Hex */ color:$base09}
- .mi{ /* Literal.Number.Integer */ color:$base09}
- .mo{ /* Literal.Number.Oct */ color:$base09}
- .sb{ /* Literal.String.Backtick */ color:$base0b}
- .sc{ /* Literal.String.Char */ color:$base05}
- .sd{ /* Literal.String.Doc */ color:$base04}
- .s2{ /* Literal.String.Double */ color:$base0b}
- .se{ /* Literal.String.Escape */ color:$base09}
- .sh{ /* Literal.String.Heredoc */ color:$base0b}
- .si{ /* Literal.String.Interpol */ color:$base09}
- .sx{ /* Literal.String.Other */ color:$base0b}
- .sr{ /* Literal.String.Regex */ color:$base0b}
- .s1{ /* Literal.String.Single */ color:$base0b}
- .ss{ /* Literal.String.Symbol */ color:$base0b}
- .bp{ /* Name.Builtin.Pseudo */ color:$base05}
- .vc{ /* Name.Variable.Class */ color:$base08}
- .vg{ /* Name.Variable.Global */ color:$base08}
- .vi{ /* Name.Variable.Instance */ color:$base08}
- .il{ /* Literal.Number.Integer.Long */ color:$base09}
+ .gu{ /* Generic.Subheading */ color:variables.$base0c;  font-weight:bold}
+ .kc{ /* Keyword.Constant */ color:variables.$base0e}
+ .kd{ /* Keyword.Declaration */ color:variables.$base0e}
+ .kn{ /* Keyword.Namespace */ color:variables.$base0c}
+ .kp{ /* Keyword.Pseudo */ color:variables.$base0e}
+ .kr{ /* Keyword.Reserved */ color:variables.$base0e}
+ .kt{ /* Keyword.Type */ color:variables.$base0a}
+ .ld{ /* Literal.Date */ color:variables.$base0b}
+ .m{ /* Literal.Number */ color:variables.$base09}
+ .s{ /* Literal.String */ color:variables.$base0b}
+ .na{ /* Name.Attribute */ color:variables.$base0d}
+ .nb{ /* Name.Builtin */ color:variables.$base05}
+ .nc{ /* Name.Class */ color:variables.$base0a}
+ .no{ /* Name.Constant */ color:variables.$base08}
+ .nd{ /* Name.Decorator */ color:variables.$base0c}
+ .ni{ /* Name.Entity */ color:variables.$base05}
+ .ne{ /* Name.Exception */ color:variables.$base08}
+ .nf{ /* Name.Function */ color:variables.$base0d}
+ .nl{ /* Name.Label */ color:variables.$base05}
+ .nn{ /* Name.Namespace */ color:variables.$base0a}
+ .nx{ /* Name.Other */ color:variables.$base0d}
+ .py{ /* Name.Property */ color:variables.$base05}
+ .nt{ /* Name.Tag */ color:variables.$base0c}
+ .nv{ /* Name.Variable */ color:variables.$base08}
+ .ow{ /* Operator.Word */ color:variables.$base0c}
+ .w{ /* Text.Whitespace */ color:variables.$base05}
+ .mf{ /* Literal.Number.Float */ color:variables.$base09}
+ .mh{ /* Literal.Number.Hex */ color:variables.$base09}
+ .mi{ /* Literal.Number.Integer */ color:variables.$base09}
+ .mo{ /* Literal.Number.Oct */ color:variables.$base09}
+ .sb{ /* Literal.String.Backtick */ color:variables.$base0b}
+ .sc{ /* Literal.String.Char */ color:variables.$base05}
+ .sd{ /* Literal.String.Doc */ color:variables.$base04}
+ .s2{ /* Literal.String.Double */ color:variables.$base0b}
+ .se{ /* Literal.String.Escape */ color:variables.$base09}
+ .sh{ /* Literal.String.Heredoc */ color:variables.$base0b}
+ .si{ /* Literal.String.Interpol */ color:variables.$base09}
+ .sx{ /* Literal.String.Other */ color:variables.$base0b}
+ .sr{ /* Literal.String.Regex */ color:variables.$base0b}
+ .s1{ /* Literal.String.Single */ color:variables.$base0b}
+ .ss{ /* Literal.String.Symbol */ color:variables.$base0b}
+ .bp{ /* Name.Builtin.Pseudo */ color:variables.$base05}
+ .vc{ /* Name.Variable.Class */ color:variables.$base08}
+ .vg{ /* Name.Variable.Global */ color:variables.$base08}
+ .vi{ /* Name.Variable.Instance */ color:variables.$base08}
+ .il{ /* Literal.Number.Integer.Long */ color:variables.$base09}
 }
 
 // Fix Github syntax display

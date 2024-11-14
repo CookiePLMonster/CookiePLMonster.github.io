@@ -1,51 +1,53 @@
+@use "variables";
+@use "external/fontawesome-glue" as fa;
 @use "sass:color";
 
 // Mix-ins
 %padding-nav {
-    padding: $padding-small $padding-x-large;
+    padding: variables.$padding-small variables.$padding-x-large;
 
-    @media (max-width: $xl-break) {
-        padding: $padding-small $padding-large * 2;
+    @media (max-width: variables.$xl-break) {
+        padding: variables.$padding-small variables.$padding-large * 2;
     }
 
-    @media (max-width: $l-break) {
-        padding: $padding-small $padding-large;
+    @media (max-width: variables.$l-break) {
+        padding: variables.$padding-small variables.$padding-large;
     }
 
-    @media (max-width: $m-break) {
-        padding: $padding-small $padding-medium;
+    @media (max-width: variables.$m-break) {
+        padding: variables.$padding-small variables.$padding-medium;
     }
 
-    @media (max-width: $sm-break) {
-        padding: $padding-small $padding-x-small;
+    @media (max-width: variables.$sm-break) {
+        padding: variables.$padding-small variables.$padding-x-small;
     }
 }
 
 %padding-post {
-    padding: $padding-x-small $padding-x-large;
+    padding: variables.$padding-x-small variables.$padding-x-large;
 
-    @media (max-width: $xl-break) {
-        padding: $padding-x-small $padding-large * 2;
+    @media (max-width: variables.$xl-break) {
+        padding: variables.$padding-x-small variables.$padding-large * 2;
     }
 
-    @media (max-width: $l-break) {
-        padding: $padding-x-small $padding-large;
+    @media (max-width: variables.$l-break) {
+        padding: variables.$padding-x-small variables.$padding-large;
     }
 
-    @media (max-width: $m-break) {
-        padding: $padding-x-small $padding-medium;
+    @media (max-width: variables.$m-break) {
+        padding: variables.$padding-x-small variables.$padding-medium;
     }
 
-    @media (max-width: $sm-break) {
-        padding: $padding-x-small $padding-small;
+    @media (max-width: variables.$sm-break) {
+        padding: variables.$padding-x-small variables.$padding-small;
     }
 }
 
 %header-txt-shadow {
-    text-shadow: 2px 2px 3px $text-shadow,
-        -2px 2px 3px $text-shadow,
-        2px -2px 3px $text-shadow,
-        -2px -2px 3px $text-shadow;
+    text-shadow: 2px 2px 3px variables.$text-shadow,
+        -2px 2px 3px variables.$text-shadow,
+        2px -2px 3px variables.$text-shadow,
+        -2px -2px 3px variables.$text-shadow;
 }
 
 // Buttons
@@ -75,7 +77,7 @@
     @at-root a#{&},
     button#{&} {
         @extend %button-link;
-        color: $link-color;
+        color: variables.$link-color;
 
         &.github {
             color: var(--github-link-color);
@@ -90,11 +92,11 @@
         }
 
         &.patreon {
-            color: $patreon-link-color;
+            color: variables.$patreon-link-color;
         }
 
         &.paypal {
-            color: $paypal-link-color;
+            color: variables.$paypal-link-color;
         }
 
         &.gog {
@@ -113,9 +115,9 @@
 
 %button-link {
     &:hover {
-        background: $link-color;
-        border-color: $link-color;
-        color: $background-color;
+        background: variables.$link-color;
+        border-color: variables.$link-color;
+        color: variables.$background-color;
         text-decoration: none;
     }
 
@@ -142,22 +144,22 @@
 
     &.patreon {
         &:hover {
-            background: $patreon-link-color;
-            border-color: $patreon-link-color;
+            background: variables.$patreon-link-color;
+            border-color: variables.$patreon-link-color;
         }
     }
 
     &.paypal {
         &:hover {
-            background: $paypal-link-color;
-            border-color: $paypal-link-color;
+            background: variables.$paypal-link-color;
+            border-color: variables.$paypal-link-color;
         }
     }
 
     &.ko-fi {
         &:hover {
-            background: $ko-fi-link-color;
-            border-color: $ko-fi-link-color;
+            background: variables.$ko-fi-link-color;
+            border-color: variables.$ko-fi-link-color;
         }
     }
 
@@ -200,15 +202,15 @@ a.round-button {
     }
 
     &.patreon {
-        background-color: $patreon-link-color;
+        background-color: variables.$patreon-link-color;
     }
 
     &.paypal {
-        background-color: $paypal-link-color;
+        background-color: variables.$paypal-link-color;
     }
 
     &.ko-fi {
-        background-color: $ko-fi-link-color;
+        background-color: variables.$ko-fi-link-color;
     }
 
     &.gog {
@@ -222,11 +224,11 @@ a.round-button {
 
 %round-button-link {
     &:hover {
-        border-color: $link-color;
+        border-color: variables.$link-color;
         text-decoration: none;
     }
 
-    color: $background-color;
+    color: variables.$background-color;
 
     &.github {
         &:hover {
@@ -260,39 +262,39 @@ a.round-button {
 
     &.patreon {
         &:hover {
-            background: color.adjust($patreon-link-color, $lightness: -15%);
-            border-color: color.adjust($patreon-link-color, $lightness: -15%);
+            background: color.adjust(variables.$patreon-link-color, $lightness: -15%);
+            border-color: color.adjust(variables.$patreon-link-color, $lightness: -15%);
         }
 
-        background: $patreon-link-color;
-        border-color: $patreon-link-color;
+        background: variables.$patreon-link-color;
+        border-color: variables.$patreon-link-color;
     }
 
     &.paypal {
         &:hover {
-            background: color.adjust($paypal-link-color, $lightness: -15%);
-            border-color: color.adjust($paypal-link-color, $lightness: -15%);
+            background: color.adjust(variables.$paypal-link-color, $lightness: -15%);
+            border-color: color.adjust(variables.$paypal-link-color, $lightness: -15%);
         }
 
-        background: $paypal-link-color;
-        border-color: $paypal-link-color;
+        background: variables.$paypal-link-color;
+        border-color: variables.$paypal-link-color;
     }
 
     &.ko-fi {
         &:hover {
-            background: color.adjust($ko-fi-link-color, $lightness: -15%);
-            border-color: color.adjust($ko-fi-link-color, $lightness: -15%);
+            background: color.adjust(variables.$ko-fi-link-color, $lightness: -15%);
+            border-color: color.adjust(variables.$ko-fi-link-color, $lightness: -15%);
         }
 
-        background: $ko-fi-link-color;
-        border-color: $ko-fi-link-color;
+        background: variables.$ko-fi-link-color;
+        border-color: variables.$ko-fi-link-color;
     }
 }
 
 %body-link {
     &:hover {
         text-decoration: underline;
-        color: color.adjust($link-color, $lightness: -15%);
+        color: color.adjust(variables.$link-color, $lightness: -15%);
     }
 }
 
@@ -307,23 +309,25 @@ a.round-button {
     border-left: 2px solid var(--blockquote-border-color);
     padding: 0.75em 1em;
     background-color: var(--blockquote-color);
-    box-shadow: 0 2px 2px transparentize($text-color-light, 0.75);
+    box-shadow: 0 2px 2px color.adjust(variables.$text-color-light, $alpha: -0.75);
 }
 
 %no-bullets {
     list-style-type: none;
-    margin-left: 0;
+    margin-inline-start: 0;
     line-height: 1.25;
 }
 
-%fa-icon {
-    font-weight: 900;
-    font-family: "Font Awesome 6 Free";
+%fa-before-after-icon {
+    &:before, &:after {
+        @extend %fa-icon;
+        @extend .fa-solid;
+    }
     &:before {
-        margin-right: 0.25em;
+        margin-inline-end: 0.25em;
     }
     &:after {
-        margin-left: 0.25em;
+        margin-inline-start: 0.25em;
     }
 }
 
@@ -350,8 +354,8 @@ a.round-button {
 }
 
 .left-page-margin {
-    @media screen and (min-width: $break) {
-        margin-left: $padding-x-small;
+    @media screen and (min-width: variables.$break) {
+        margin-left: variables.$padding-x-small;
     }
 }
 
@@ -359,21 +363,26 @@ a.round-button {
     font-weight: bold;
 
     &.warning {
+        @extend %fa-before-after-icon;
         &:before, &:after {
-            @extend %fa-icon;
-            content: "\f071";
+            content: fa.fa-content(fa.$fa-var-triangle-exclamation);
             color: DarkOrange;
         }
     }
 
     &.info {
+        @extend %fa-before-after-icon;
         &:before, &:after {
-            @extend %fa-icon;
-            content: "\f05a";
+            content: fa.fa-content(fa.$fa-var-circle-info);
         }
     }
 }
 
 .credit, .sidenote {
     font-style: italic;
+}
+
+.theme-icon {
+    @extend %fa-icon;
+    @extend .fa-solid;
 }

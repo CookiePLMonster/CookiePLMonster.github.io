@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "base/variables";
+@use "base/utility";
+
 #main {
     background-position: 100% 0, 0%, center top;
     background-image: url("/assets/img/site-header.jpg");
@@ -16,7 +20,7 @@
         }
 
         a:hover {
-            color: lighten($link-color, 10%);
+            color: color.adjust(variables.$link-color, $lightness: 10%);
         }
 
         .post-img {
@@ -25,7 +29,7 @@
             display: block;
             height: 250px;
 
-            @media screen and (max-width: $break) {
+            @media screen and (max-width: variables.$break) {
                 height: 150px;
             }
 
@@ -57,10 +61,10 @@
 
 // Pagination
 .pagination {
-    padding: $padding-small $padding-large 0 $padding-large;
+    padding: variables.$padding-small variables.$padding-large 0 variables.$padding-large;
     text-align: center;
     @media screen and (max-width: 600px) {
-        padding: $padding-small 0;
+        padding: variables.$padding-small 0;
     }
 
     .nav-left {

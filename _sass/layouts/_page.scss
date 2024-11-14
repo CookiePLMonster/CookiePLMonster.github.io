@@ -1,5 +1,8 @@
+@use "base/variables";
+@use "base/utility";
+
 .title-padder {
-    padding: calc(#{$title-padding} + 0.5em) $title-padding;
+    padding: calc(#{variables.$title-padding} + 0.5em) variables.$title-padding;
 }
 
 h1.title {
@@ -22,7 +25,7 @@ h2.subtitle {
         padding: 0;
         z-index: -1;
 
-        @media screen and (min-width: $break) {
+        @media screen and (min-width: variables.$break) {
             inset: -10px -20px;
         }
     }

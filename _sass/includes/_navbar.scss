@@ -1,9 +1,11 @@
+@use "base/variables";
+
 .site-header {
     padding: 2% 2% 1% 2%;
 
     .separator {
         user-select: none;
-        opacity: $navbar-separator-opacity;
+        opacity: variables.$navbar-separator-opacity;
 
         &:first-child {
             display: none;
@@ -51,7 +53,7 @@
         }
         a {
             &:hover {
-                color: $link-color;
+                color: variables.$link-color;
             }
             &#pull {
                 i {
@@ -64,7 +66,7 @@
         button {
             all: unset;
             &:hover {
-                color: $link-color;
+                color: variables.$link-color;
             }
             &:focus {
                 outline: revert;
@@ -91,13 +93,13 @@
 
 /* ---- Responsive ---- */
 
-@media (min-width: $break) {
+@media (min-width: variables.$break) {
     a#pull {
         display: none;
     }
 }
 
-@media screen and (max-width: $break) {
+@media screen and (max-width: variables.$break) {
     .site-header {
         img.avatar {
             margin-top: -7px

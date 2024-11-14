@@ -10,7 +10,7 @@ date: 2020-06-18 22:45:00 +0200
 tags: [Releases]
 ---
 
-A small note before I start -- the website now has a dark/light mode switch! Click a <i class="fas theme-icon"></i> button in the top right corner (might have to expand the menu with a <i class="fas fa-bars"></i> button on mobile devices first) to switch the theme!
+A small note before I start -- the website now has a dark/light mode switch! Click a <i class="theme-icon"></i> button in the top right corner (might have to expand the menu with a <i class="fas fa-bars"></i> button on mobile devices first) to switch the theme!
 
 ***
 

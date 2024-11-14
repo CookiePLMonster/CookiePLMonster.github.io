@@ -1,3 +1,6 @@
+@use "base/variables";
+@use 'base/utility';
+
 .bonuscodes-input {
     display: flex;
     align-items: center;
@@ -5,7 +8,7 @@
     margin-bottom: 1em;
 
     input, select {
-        color: $text-color-light;
+        color: variables.$text-color-light;
         border-radius: 0.3em;
         border-width: 1px;
         padding: 0 0.25em;
@@ -20,7 +23,7 @@
     width: max-content;
     margin: 1em auto;
     background-color: var(--background-color);
-    border: 1px solid $theme-color;
+    border: 1px solid variables.$theme-color;
 
     output {
         display: block;
@@ -52,7 +55,7 @@
             position: absolute;
             width: 32px;
             height: 1px;
-            background: $theme-color;
+            background: variables.$theme-color;
             }
 
     .tl:before { top: -10px; left: -10px; transform: rotate(-45deg); }

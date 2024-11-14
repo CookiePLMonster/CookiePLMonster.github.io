@@ -1,3 +1,6 @@
+@use "base/variables";
+@use "base/utility";
+
 #post-nav {
     width: 100%;
     display: inline-block;
@@ -17,7 +20,7 @@
       text-align: right;
     }
   
-    @media screen and (max-width: $sm-break) {
+    @media screen and (max-width: variables.$sm-break) {
       a, p {
         font-size: 0.8em;
       }

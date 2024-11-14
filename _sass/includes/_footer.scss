@@ -1,3 +1,5 @@
+@use "base/variables";
+@use "base/utility";
 @use "sass:color";
 
 .site-footer {
@@ -12,7 +14,7 @@
 
     .top-row {
         a:hover {
-            color: color.adjust($link-color, $lightness: -15%);
+            color: color.adjust(variables.$link-color, $lightness: -15%);
         }
     }
 

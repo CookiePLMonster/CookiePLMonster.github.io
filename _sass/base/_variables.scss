@@ -4,11 +4,6 @@
 $font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
 $font-size: 1.25em;
 
-// Font Awesome
-$fa-font-path: 'fontawesome';
-$fa-inverse: var(--background-color);
-
-
 /* PADDING */
 $padding-x-large: 23%;
 $padding-large: 9%;
@@ -35,7 +30,7 @@ $ko-fi-color: #13C3FF;
 
 // Typography colours
 $text-color-light: #383838;
-$text-color-dark: invert($text-color-light);
+$text-color-dark: color.invert($text-color-light);
 $link-color: $theme-color; // #1ABC9C;
 $blockquote-color-light: #E6EDf4; // $background-color;
 $blockquote-color-dark: #204060;
@@ -44,7 +39,7 @@ $paypal-link-color: $paypal-color;
 $ko-fi-link-color: $ko-fi-color;
 
 //Search color
-$link-shadow: transparentize($link-color, .6); //rgba(26, 188, 156, 0.6);
+$link-shadow: color.adjust($link-color, $alpha: -.6); //rgba(26, 188, 156, 0.6);
 $text-shadow: #2f2f2f;
 $search-color: #999;
 
@@ -116,13 +111,13 @@ $text-color: var(--text-color);
     --forums-link-color: #{$text-color-light};
     --forums-link-hover-color: #{color.adjust($text-color-light, $lightness: -15%)};
 
-    --footer-text-color: #{lighten($text-color-light, 30%)};
+    --footer-text-color: #{color.adjust($text-color-light, $lightness: 30%)};
     --blockquote-border-color: #{color.adjust($blockquote-color-light, $lightness: -20%)};
 
     --highlighter-rouge-color: rgb(36, 41, 46);
-    --highlighter-rouge-bg-color: #{transparentize($base00, 0.85)};
+    --highlighter-rouge-bg-color: #{color.adjust($base00, $alpha: -0.85)};
 
-    --line-color: #{transparentize($text-color-light, 0.75)};
+    --line-color: #{color.adjust($text-color-light, $alpha: -0.75)};
 
     --gog-link-color: #8900d9;
     --steam-link-color: #0a4d7f;
@@ -146,12 +141,12 @@ $text-color: var(--text-color);
     --forums-link-hover-color: #{color.adjust($text-color-dark, $lightness: -15%)};
 
     --footer-text-color: #{$text-color-dark};
-    --blockquote-border-color: #{lighten($blockquote-color-dark, 20%)};
+    --blockquote-border-color: #{color.adjust($blockquote-color-dark, $lightness: 20%)};
 
     --highlighter-rouge-color: rgb(219, 214, 209);
-    --highlighter-rouge-bg-color: #{invert(transparentize($base00, 0.85), 100%)};
+    --highlighter-rouge-bg-color: #{color.invert(color.adjust($base00, $alpha: -0.85), 100%)};
 
-    --line-color: #{transparentize($text-color-dark, 0.25)};
+    --line-color: #{color.adjust($text-color-dark, $alpha: -0.25)};
 
     --gog-link-color: #c900ea;
     --steam-link-color: #0179ad;
