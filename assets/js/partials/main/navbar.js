@@ -14,11 +14,29 @@
     /*
      * Make the header images move on scroll
      */
-    window.addEventListener('scroll', () => {
-        const offset = -(window.scrollY || document.body.scrollTop) / 3;
-        const main = document.getElementById('main');
-        if (main) {
-            main.style.backgroundPosition = '100% ' + offset + 'px' + ', 0%, center top';
+    const main = document.getElementById('main');
+    if (main) {
+        let imageAspect = 0, imageHeight = 0;
+        if (main.style.backgroundSize == 'cover') {
+            const imageUrl = main.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+            var image = new Image();
+            image.onload = () => {
+                imageHeight = image.naturalHeight;
+                imageAspect = image.naturalWidth / image.naturalHeight;
+            };
+            image.src = imageUrl;
         }
-    });
+        window.addEventListener('scroll', () => {
+            const containerAspect = main.offsetWidth / main.offsetHeight;
+            let offset = 0;
+            if (containerAspect > imageAspect) {
+                offset = -(window.scrollY || document.body.scrollTop);
+                if (imageHeight > 0) {
+                    const imageMaxOffset = (imageHeight * (imageAspect / containerAspect)) - imageHeight;
+                    offset = Math.max(offset, imageMaxOffset);
+                }
+            }
+            main.style.backgroundPosition = 'center ' + (offset / 3) + 'px';
+        });
+    }
 })();
