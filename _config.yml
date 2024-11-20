@@ -13,7 +13,6 @@ theme_settings:
   title: Silent's Blog
   avatar: assets/img/avatar.jpg
   gravatar: B5015413CDD23101B12239A68DFFFC89
-  extra_navbar_socials: false
 
   # Header and footer text
   header_text: Personal, modding and reverse engineering related content.

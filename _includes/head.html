@@ -6,10 +6,10 @@
     <meta name="msapplication-navbutton-color" content="#002A50">
     <meta name="apple-mobile-web-app-status-bar-style" content="#002A50">
 
-    <link rel="preload" as="image" href="{{ page.feature-img | default: site.theme_settings.header_feature_image | relative_url }}">
+    <link rel="preload" as="image" href="{% link {{ page.feature-img | default: site.theme_settings.header_feature_image }} %}">
 
-    <script defer src="{{ "/assets/js/main.min.js" | relative_url }}"></script>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script defer src="{% link assets/js/main.min.js %}"></script>
+    <link rel="stylesheet" href="{% link assets/css/main.scss %}">
 
     <!--Favicon and metadata-->
     <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/icons/apple-touch-icon.png %}">
@@ -66,9 +66,8 @@
     <!-- seo tags -->
     {% seo %}
     {% if page.layout == 'post' %}
-    {% capture meta_ert %}{% include ert.html content=content %}{% endcapture %}
     <meta name="twitter:label1" content="Reading time">
-    <meta name="twitter:data1" content="{{ meta_ert | strip }} min. to read">
+    <meta name="twitter:data1" content="{% include ert.html content=content %} min. to read">
     {% endif %}
 
     <noscript><style>.no-js { display: none !important; }</style></noscript>
