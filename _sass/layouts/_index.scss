@@ -10,13 +10,13 @@
 
 // Post listing
 .posts {
-    @extend %padding-post;
-    padding-bottom: 0;
-
+    &.smaller-gaps section {
+        margin-block-end: 2em;
+    }
     section {
-        margin-bottom: 3em;
+        margin-block-end: 3em;
         &:last-child {
-            margin-bottom: 0;
+            margin-block-end: 0;
         }
 
         a:hover {
@@ -55,7 +55,16 @@
         }
     }
     .excerpt {
-        margin: 1em 0;
+        margin-block: 1em;
+        &.read-more {
+            > p:last-of-type {
+                display: inline;
+            }
+            > a p {
+                display: inline;
+                @extend .sidenote;
+            }
+        }
     }
 }
 

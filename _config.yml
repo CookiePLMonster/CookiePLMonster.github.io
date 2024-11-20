@@ -132,6 +132,8 @@ paginate_path: "blog/page:num/"
 
 feed:
   tags: true
+  collections:
+    - updates
   disable_in_development: true
 
 collections:
@@ -142,6 +144,9 @@ collections:
   portfolio:
     output: true
   bonuscodes:
+    output: true
+  updates:
+    permalink: /:collection/:year/:month/:day/:title/
     output: true
 
 # SEO
