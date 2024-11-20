@@ -2,6 +2,7 @@
 
 .site-header {
     padding: 2% 2% 1% 2%;
+    display: flow-root;
 
     .separator {
         user-select: none;
@@ -72,22 +73,6 @@
                 outline: revert;
             }
         }
-    }
-}
-
-
-// To clear things when we float the element inisde nav and ul
-.clear {
-    *zoom: 1;
-
-    &:after {
-        clear: both;
-    }
-
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
     }
 }
 

@@ -1,15 +1,12 @@
 <header class="site-header">
 
     <!-- Logo and title -->
-	<div class="branding">
-		<a href="{{ "/" | relative_url }}">
-			<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="Logo image">
-            <span class="site-title">{{ site.theme_settings.title | smartify }}</span>
-		</a>
-	</div>
-
+	<a href="{{ "/" | relative_url }}">
+		<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="Logo image">
+        <span class="site-title">{{ site.theme_settings.title | smartify }}</span>
+	</a>
     <!-- Toggle menu -->
-    <nav class="clear">
+    <nav>
     <a id="pull" class="toggle" href="#" aria-label="Toggle Menu">
     <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
     </a>
@@ -17,28 +14,28 @@
     <!-- Menu -->
     <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
-        {% for page in site.pages %}
-        {% if page.title and page.hide != true %}
+        {% for page in site.pages -%}
+        {%- if page.title and page.hide != true -%}
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="{{ page.url | relative_url }}">
                 {{ page.title | smartify }}
             </a>
         </li>
-        {% endif %}
-        {% endfor %}
+        {%- endif -%}
+        {%- endfor %}
 
         <!-- Auto Generation of SPECIAL pages in the navbar -->
-        {% for item in site.theme_settings.special_page %}
-          {% if item[1].enabled %}
+        {% for item in site.theme_settings.special_page -%}
+          {%- if item[1].enabled -%}
             <li class="separator"> | </li>
             <li>
                 <a class="clear" href="{{ item[0] | relative_url }}" title="{{ item[1].title }}">
                     <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
                 </a>
             </li>
-          {% endif %}
-        {% endfor %}
+          {%- endif -%}
+        {%- endfor %}
 
         <!-- Dark mode toggle -->
         <li class="separator no-js"> | </li>

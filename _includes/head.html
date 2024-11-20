@@ -67,7 +67,7 @@
     {% seo %}
     {% if page.layout == 'post' %}
     <meta name="twitter:label1" content="Reading time">
-    <meta name="twitter:data1" content="{% include ert.html content=content %} min. to read">
+    <meta name="twitter:data1" content="{% include_cached ert.html document=page %} min. to read">
     {% endif %}
 
     <noscript><style>.no-js { display: none !important; }</style></noscript>

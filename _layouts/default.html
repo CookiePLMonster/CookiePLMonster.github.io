@@ -2,9 +2,11 @@
 <html lang="{{ page.lang }}">
   {% include head.html %}
   <body>
-    {% if layout.brython or page.brython %}<brython-options pythonpath="/assets/brython" cache="true" {% if jekyll.environment == "development" %}debug="1"{% endif %}></brython-options>{% endif %}
-    {% include navbar.html %}
+    {% if layout.brython or page.brython -%}
+    <brython-options pythonpath="/assets/brython" cache="true" {% if jekyll.environment == "development" %}debug="1"{% endif %}></brython-options>
+    {%- endif %}
+    {% include_cached navbar.html %}
     {{ content }}
-    {% include footer.html %}
+    {% include_cached footer.html %}
   </body>
 </html>

@@ -16,7 +16,7 @@
       {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
     </p>
     <p class="meta">
-      {% include ert.html content=post.content %} min. to read
+      {% include_cached ert.html document=post %} min. to read
     </p>
     <div class="excerpt">
         {{ post.excerpt | strip_html | escape }}
