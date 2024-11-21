@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog update - now (nearly) feature complete!
+title: Blog update -- now (nearly) feature complete!
 date: 2018-10-01 10:55:00 +0200
 image: "assets/img/site-header.jpg"
 excerpt: Refreshed look, new content, more cookies.

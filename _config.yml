@@ -92,7 +92,6 @@ theme_settings:
   str_share_on: "Share on"
   str_add_to: "Add to"
   str_email: "Email"
-  str_tweet: "Tweet"
   str_pin_it: "Pin it"
   str_next_post: "Next post"
   str_previous_post: "Previous post"

@@ -17,10 +17,10 @@
             {% assign url_utm = absolute_page_url | append:
             '?utm_source=Twitter&utm_medium=social&utm_campaign=Share+Button' %}
             {% assign twitter_title = page.title | append: ' | ' | append: site.title %}
-            <a href="https://twitter.com/intent/tweet?text={{ twitter_title | cgi_escape }}&url={{ url_utm | cgi_escape }}"
-                target="_blank" title="{{ site.theme_settings.str_tweet }}"
-                aria-label="{{ site.theme_settings.str_tweet }}">
-                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+            <a href="https://x.com/intent/post?text={{ twitter_title | cgi_escape }}&url={{ url_utm | cgi_escape }}"
+                target="_blank" title="{{ site.theme_settings.str_share_on }} X/Twitter"
+                aria-label="{{ site.theme_settings.str_share_on }} X/Twitter">
+                <i class="fab fa-square-x-twitter fa-2x" aria-hidden="true"></i>
             </a>
         </li>
         {% endif %} {% if site.theme_settings.share_buttons.reddit %}
