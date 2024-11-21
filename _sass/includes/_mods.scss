@@ -1,23 +1,6 @@
 @use "base/variables";
 @use "base/utility";
 
-.mods-grid {
-    // TODO: Make this %flexible-2d-block
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.mods-cell {
-    flex: 0 0 50%;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: variables.$break) {
-        flex-basis: 100%;
-    }
-}
-
 .mod-label {
     border-radius: 0.3em;
     color: variables.$feature-image-text-color;
@@ -68,7 +51,6 @@
         img {
             width: 100%;
             height: auto;
-            padding: 0;
         }
     }
 

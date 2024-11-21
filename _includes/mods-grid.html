@@ -1,18 +1,10 @@
-<!-- Mods Grid Section -->
-
-<div class="mods-grid">
-	{% assign mods_grid_items = include.items | sort: "order" %}
-    {% for item in mods_grid_items %}
-    {% unless item.hide %}
-    <div class="mods-cell"
-    {% if include.cell-size %}
-        style="flex-basis: {{ include.cell-size }}"
-    {% endif %}
-    >
-        <a href="{{ item.url | relative_url }}" title="{{ item.title }}" data-keyboard="true"> 
+<div class="{{ 'item-grid ' | append: include.style | strip }}">
+	{%- assign mods_grid_items = include.items | sort: "order" -%}
+    {%- for item in mods_grid_items -%}
+        {%- unless item.hide -%}
+        <a href="{{ item.url | relative_url }}" title="{{ item.title }}" data-keyboard="true">
             <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
         </a>
-    </div>
-    {% endunless %}
-    {% endfor %}
+        {%- endunless -%}
+    {%- endfor %}
 </div>

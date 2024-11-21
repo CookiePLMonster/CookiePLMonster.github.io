@@ -12,7 +12,7 @@ order: 100
 Recommended emulator: DuckStation ([Desktop](https://github.com/stenzek/duckstation/), [Android](https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation))
 
 {% assign ps1_items = site.games | where:"parent-series", "console-ps1" %}
-{% include mods-grid.html items=ps1_items cell-size="33%" %}
+{% include mods-grid.html items=ps1_items %}
 
 ***
 
@@ -22,7 +22,7 @@ Recommended emulator: DuckStation ([Desktop](https://github.com/stenzek/duckstat
 Recommended emulator: [PCSX2](https://pcsx2.net/) (Desktop), [AetherSX2](https://play.google.com/store/apps/details?id=xyz.aethersx2.android) (Android)
 
 {% assign ps2_items = site.games | where:"parent-series", "console-ps2" %}
-{% include mods-grid.html items=ps2_items cell-size="33%" %}
+{% include mods-grid.html items=ps2_items %}
 
 ***
 
@@ -32,4 +32,4 @@ Recommended emulator: [PCSX2](https://pcsx2.net/) (Desktop), [AetherSX2](https:/
 Recommended emulator: [PPSSPP](https://www.ppsspp.org/) (Desktop, Android)
 
 {% assign psp_items = site.games | where:"parent-series", "console-psp" %}
-{% include mods-grid.html items=psp_items cell-size="33%" %}
+{% include mods-grid.html items=psp_items %}

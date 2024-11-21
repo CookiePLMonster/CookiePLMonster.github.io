@@ -1,0 +1,49 @@
+@use "base/variables";
+@use "base/utility";
+
+.item-grid {
+    @extend %flexible-2d-block;
+    justify-content: center;
+    margin-block-end: 1em;
+
+    > * {
+        flex: 0 0 calc((100% - 0.5em) / 3); // 2/3 of the gap
+
+        @media screen and (max-width: variables.$break) {
+            flex-basis: calc(50% - 0.125em); // 1/2 of the gap
+        }
+
+        @media screen and (max-width: variables.$x-sm-break) {
+            flex-basis: 100%;
+        }
+
+        position: relative;
+        .cell-front {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            /* ---- Responsive ---- */
+            @media (hover: hover) {
+                opacity: 0;
+                -webkit-transition: all ease .5s;
+                -moz-transition: all ease .5s;
+                transition: all ease .5s;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &.larger > * {
+        flex-basis: calc(50% - 0.125em); // 1/2 of the gap
+        @media screen and (max-width: variables.$break) {
+            flex-basis: 100%;
+        }
+    }
+}

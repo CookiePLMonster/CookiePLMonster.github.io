@@ -1,48 +1,6 @@
 @use "base/variables";
 @use "base/utility";
 
-.portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.portfolio-cell {
-    flex: 0 0 33%;
-    position: relative;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: variables.$break) {
-        flex-basis: 50%;
-    }
-
-    .cell-back {
-        z-index: 1;
-    }
-
-    .cell-front {
-        z-index: 2;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        /* ---- Responsive ---- */
-        @media (hover: hover) {
-            opacity: 0;
-            -webkit-transition: all ease .5s;
-            -moz-transition: all ease .5s;
-            transition: all ease .5s;
-        }
-
-        @media (hover: hover) {
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-}
-
 .portfolio-content {
     display: block;
 

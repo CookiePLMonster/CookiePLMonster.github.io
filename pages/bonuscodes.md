@@ -9,4 +9,4 @@ twitter: {card: "summary_large_image"}
 hide: true
 ---
 
-{% include mods-grid.html items=site.bonuscodes cell-size="33%" %}
+{% include mods-grid.html items=site.bonuscodes %}

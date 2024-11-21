@@ -220,9 +220,6 @@ embed,
 object,
 video {
     max-width: 100%;
-    padding: 0 9%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 img[align=left] {
@@ -278,15 +275,6 @@ summary {
 
     li li * {
         font-size: 100%;
-    }
-
-    iframe,
-    img,
-    embed,
-    object,
-    video {
-        max-width: 100%;
-        padding: 0 1%;
     }
 }
 

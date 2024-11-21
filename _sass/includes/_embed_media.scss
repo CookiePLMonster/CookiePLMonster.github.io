@@ -4,9 +4,6 @@
     &.natural {
         max-width: 90%;
     }
-    img, video, iframe, object, embed {
-        padding: 0;
-    }
 
     @media screen and (min-width: 850px) {
         width: 75%;
