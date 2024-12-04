@@ -8,4 +8,4 @@ A simple proof-of-concept of pseudo 3D rendering on the Flipper Zero, modelled a
 
 {% include figures/image.html link="https://raw.githubusercontent.com/CookiePLMonster/flipper-bakery/refs/heads/main/mode7_demo/screens/flipper-mode7-demo.gif" %}
 
-<a href="{% link _games/misc/flipper-zero.md %}#mode7-demo" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+<a href="{% link _games/misc/flipper-zero.md %}#mode7-demo" class="button">{{ site.theme_settings.download_icon }} Download</a>

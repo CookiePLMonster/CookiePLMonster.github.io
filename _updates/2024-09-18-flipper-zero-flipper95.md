@@ -9,4 +9,4 @@ much like Prime95 does.
 
 {% include figures/image.html link="https://raw.githubusercontent.com/CookiePLMonster/flipper-bakery/refs/heads/main/flipper95/.catalog/screens/screen0.png" %}
 
-<a href="{% link _games/misc/flipper-zero.md %}#flipper95" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download</a>
+<a href="{% link _games/misc/flipper-zero.md %}#flipper95" class="button">{{ site.theme_settings.download_icon }} Download</a>
