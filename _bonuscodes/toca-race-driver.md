@@ -32,8 +32,8 @@ def onGenerate(ev):
                 plainCode = plainCheats.get(index)
                 if plainCode:
                     cryptedCode += '&nbsp;/&nbsp;' + plainCode
-                yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
-    outputs <= html.UL(html.LI(ch) for ch in gen())
+                yield cheat, cryptedCode
+    outputs <= html.DL(html.DIV(html.DT(term + ':') + ' ' + html.DD(code)) for term, code in gen())
 
 document['access-code'].min = 1
 document['access-code'].max = rd1.ACCESS_CODE_MAX

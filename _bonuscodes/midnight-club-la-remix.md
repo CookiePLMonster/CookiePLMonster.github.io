@@ -9,27 +9,27 @@ order: 10
 
 {% assign mcla_remix_cheats = site.data.cheat-codes['midnight-club-la-remix'] %}
 
-<div class="bonuscodes-output">
+<div class="bonuscodes output">
     <div class="border tr"></div>
     <div class="content">
-      <ul>
+      <dl>
          {% for cheat in mcla_remix_cheats['cheats'] %}
-            <li><b>{{ cheat.description }}:</b> <code>{{ cheat.name }}</code></li>
+            <div><dt>{{ cheat.description }}:</dt> <dd>{{ cheat.name }}</dd></div>
          {% endfor %}
-      </ul>
+      </dl>
     </div>
     <div class="border bl"></div>
 </div>
 
 Prototype-only cheat codes check against the prototype serial. They can be accessed once this check is patched out:
-<div class="bonuscodes-output">
+<div class="bonuscodes output">
     <div class="border tr"></div>
     <div class="content">
-      <ul>
+      <dl>
          {% for cheat in mcla_remix_cheats['prototype-cheats'] %}
-            <li><b>{{ cheat.description }}:</b> <code>{{ cheat.name }}</code></li>
+            <div><dt>{{ cheat.description }}:</dt> <dd>{{ cheat.name }}</dd></div>
          {% endfor %}
-      </ul>
+      </dl>
     </div>
     <div class="border bl"></div>
 </div>

@@ -1,76 +1,86 @@
 @use "base/variables";
 @use 'base/utility';
 
-.bonuscodes-input {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5em;
-    margin-bottom: 1em;
+.bonuscodes {
+    &.input {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5em;
+        margin-bottom: 1em;
 
-    input, select {
-        color: variables.$text-color-light;
-        border-radius: 0.3em;
-        border-width: 1px;
-        padding: 0 0.25em;
-    }
-
-    #platform-select, #additional-option1 {
-        display: none;
-    }
-}
-
-.bonuscodes-output {
-    width: max-content;
-    margin: 1em auto;
-    background-color: var(--background-color);
-    border: 1px solid variables.$theme-color;
-
-    output {
-        display: block;
-    }
-
-    .content {
-        ul {
-            @extend %no-bullets;
-            margin-bottom: 0;
+        input, select {
+            color: variables.$text-color-light;
+            border-radius: 0.3em;
+            border-width: 1px;
+            padding: 0 0.25em;
         }
-        padding: 1em;
+
+        #platform-select, #additional-option1 {
+            display: none;
+        }
     }
 
-    .border {
-        position: relative;
-        width: 100%;
-        height: 100%;
+    &.output {
+        width: max-content;
+        margin: 1em auto;
+        background-color: var(--background-color);
+        border: 1px solid variables.$theme-color;
+
+        output {
+            display: block;
+        }
+
+        .content {
+            dl {
+                margin-block: 0;
+                line-height: 1.25;
+            }
+            dt, dd {
+                display: inline;
+                margin-inline: 0;
+            }
+            dd {
+                font-family: monospace, monospace;
+            }
+            padding: 1em;
+        }
+
+        .border {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border-top: 30px solid var(--background-color);
+                border-left: 30px solid var(--background-color);
+                width: 0;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 32px;
+                height: 1px;
+                background: variables.$theme-color;
+            }
+        }
+
+        .tl:before { top: -10px; left: -10px; transform: rotate(-45deg); }
+        .tl:after { top: 10px; left: -6px; transform: rotate(-45deg);}
+
+        .tr:before { top: -10px; right: -10px; transform: rotate(45deg); }
+        .tr:after { top: 10px; right: -6px; transform: rotate(45deg); }
+
+        .bl:before { bottom: -10px; left: -10px; transform: rotate(45deg); }
+        .bl:after { bottom: 10px; left: -6px; transform: rotate(45deg); }
+
+        .br:before { bottom: -10px; right: -10px; transform: rotate(-45deg); }
+        .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
     }
-    .border:before {
-            content: '';
-            position: absolute;
-            border-top: 30px solid var(--background-color);
-            border-left: 30px solid var(--background-color);
-            width: 0;
-            }
-
-    .border:after {
-            content: '';
-            position: absolute;
-            width: 32px;
-            height: 1px;
-            background: variables.$theme-color;
-            }
-
-    .tl:before { top: -10px; left: -10px; transform: rotate(-45deg); }
-    .tl:after { top: 10px; left: -6px; transform: rotate(-45deg);}
-
-    .tr:before { top: -10px; right: -10px; transform: rotate(45deg); }
-    .tr:after { top: 10px; right: -6px; transform: rotate(45deg); }
-
-    .bl:before { bottom: -10px; left: -10px; transform: rotate(45deg); }
-    .bl:after { bottom: 10px; left: -6px; transform: rotate(45deg); }
-
-    .br:before { bottom: -10px; right: -10px; transform: rotate(-45deg); }
-    .br:after { bottom: 10px; right: -6px; transform: rotate(-45deg); }
 }
 
-#output-window.bonuscodes-output, #output-footnotes.footnotes {
+#output-window.bonuscodes.output, #output-footnotes.footnotes {
     display: none;
 }

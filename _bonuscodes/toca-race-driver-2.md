@@ -56,8 +56,8 @@ def onGenerate(ev):
         for index, cheat in enumerate(cheatCodes):
             cryptedCode = generateFn(platformData, accessCode, index)
             if cryptedCode:
-                yield html.B(cheat + ': ') + html.CODE(cryptedCode)
-    outputs <= html.UL(html.LI(ch) for ch in gen())
+                yield cheat, cryptedCode
+    outputs <= html.DL(html.DIV(html.DT(term + ':') + ' ' + html.DD(code)) for term, code in gen())
 
 document['access-code'].min = 1
 document['access-code'].max = rd2.ACCESS_CODE_MAX

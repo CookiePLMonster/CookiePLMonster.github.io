@@ -29,8 +29,8 @@ def onGenerate(ev):
         for index, cheat in enumerate(cheatCodes):
             cryptedCode = cmr04.generateCode(accessCode, index, prototype)
             if cryptedCode:
-                yield html.B(f'{cheat}: ') + html.CODE(cryptedCode)
-    outputs <= html.UL(html.LI(ch) for ch in gen())
+                yield cheat, cryptedCode
+    outputs <= html.DL(html.DIV(html.DT(term + ':') + ' ' + html.DD(code)) for term, code in gen())
 
 prototypeCheckbox = document['additional-option1']
 prototypeCheckbox.style.display = 'inline'

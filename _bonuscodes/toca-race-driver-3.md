@@ -59,7 +59,7 @@ def onGenerate(ev):
                 continue
             cryptedCode = generateFn(platformData[0] if index != 9 and index != 10 else platformData[1], accessCode, index)
             if cryptedCode:
-                yield html.B(cheat + ': ') + html.CODE(cryptedCode)
+                yield cheat, cryptedCode
 
     outputFootnotesBlock = document['output-footnotes']
     outputFootnotes = outputFootnotesBlock.select_one('output')
@@ -68,7 +68,7 @@ def onGenerate(ev):
     if noEffectFootnotes > 0:
         outputFootnotes <= html.OL(htmlgen.newElement(document['footnote-template'], id='no-effect', num=noEffectFootnotes, note='No effect.'))
 
-    outputs <= html.UL(html.LI(ch) for ch in gen())
+    outputs <= html.DL(html.DIV(html.DT(term + ':') + ' ' + html.DD(code)) for term, code in gen())
 
 hondaOnlyCheckbox = document['additional-option1']
 
