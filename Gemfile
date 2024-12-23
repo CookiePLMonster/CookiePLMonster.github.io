@@ -8,4 +8,4 @@ group :jekyll_plugins do
 	gem 'jekyll-sitemap', '~> 1.4'
 	gem 'jekyll-include-cache', '~> 0.2.1'
 end
-gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+gem "wdm", "~> 0.2.0", :install_if => Gem.win_platform?
