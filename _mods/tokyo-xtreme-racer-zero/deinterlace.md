@@ -3,9 +3,12 @@ title: Deinterlace patch
 game-series: "tokyo-xtreme-racer-zero"
 order: 1
 date: 23-12-2024
-#info-label: BUNDLED
-#info-title: "This patch is shipped with PCSX2 starting with v1.7.4934."
+info-label: BUNDLED
+info-title: "This patch is shipped with PCSX2 starting with v2.3.83."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.3.83.
 
 {:.credit}
 The original deinterlace patch made by asasega. I expanded the patch to also deinterlace the car previews in the menus, and the rear view mirror,
