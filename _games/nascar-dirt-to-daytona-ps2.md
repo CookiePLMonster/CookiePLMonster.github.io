@@ -5,5 +5,5 @@ image: "assets/img/games/nascar-dtd.jpg"
 feature-img: "assets/img/games/bg/nascar-dtd.jpg"
 parent-series: "console-ps2"
 game-series: "nascar-dtd-ps2"
-order: 15
+order: "nascar dirt to daytona"
 ---

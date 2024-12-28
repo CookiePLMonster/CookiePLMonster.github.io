@@ -5,5 +5,5 @@ image: "assets/img/games/gran-turismo.jpg"
 feature-img: "assets/img/games/bg/gran-turismo.jpg"
 parent-series: "console-ps1"
 game-series: "gran-turismo"
-order: 0
+order: "gran turismo 1"
 ---

@@ -5,5 +5,5 @@ image: "assets/img/games/test-drive-eod.jpg"
 feature-img: "assets/img/games/bg/test-drive-eod.jpg"
 parent-series: "console-ps2"
 game-series: "test-drive-eod-ps2"
-order: 20
+order: "test drive eve of destruction"
 ---

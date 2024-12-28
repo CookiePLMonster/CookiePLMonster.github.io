@@ -5,7 +5,7 @@ image: "assets/img/games/need-for-speed-hot-pursuit-2.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-hot-pursuit-2.jpg"
 parent-series: "console-ps2"
 game-series: "need-for-speed-hot-pursuit-2-ps2"
-order: 17
+order: "need for speed hot pursuit 2"
 ---
 
 {:.disclaimer.info}

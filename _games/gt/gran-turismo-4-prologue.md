@@ -5,5 +5,5 @@ image: "assets/img/games/gran-turismo-4-prologue.jpg"
 feature-img: "assets/img/games/bg/gran-turismo-4-prologue.jpg"
 parent-series: "console-ps2"
 game-series: "gran-turismo-4-prologue"
-order: 12
+order: "gran turismo 3.9"
 ---

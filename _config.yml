@@ -172,9 +172,6 @@ defaults:
       type: "games"
     values:
       layout: "mods-list"
-      game-series: ""
-      parent-series: ""
-      order: 0
   - scope:
       path: ""
       type: "mods"

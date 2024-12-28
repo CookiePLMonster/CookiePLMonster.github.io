@@ -3,7 +3,9 @@ layout: page
 title: "Consoles"
 excerpt: My cheats and modifications for various console games.
 image: "assets/img/misc/consoles.jpg"
-order: 100
+game-series: "consoles"
+parent-series: "non-game"
+order: 0
 ---
 
 # PlayStation games {#ps1}

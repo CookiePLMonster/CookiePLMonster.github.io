@@ -7,7 +7,7 @@ permalink: /mods/index/
 hide: true
 ---
 
-{% assign filter_conditions = "game.order < 100,game.order >= 100" | split: "," %}
+{% assign filter_conditions = "game.parent-series != 'non-game',game.parent-series == 'non-game'" | split: "," %}
 {% for filter in filter_conditions %}
     <ul class="tag-posts">
     {% assign items = site.games | where_exp: "game", filter | sort_natural: "title" %}

@@ -5,5 +5,5 @@ image: "assets/img/games/gran-turismo-3.jpg"
 feature-img: "assets/img/games/bg/gran-turismo-3.jpg"
 parent-series: "console-ps2"
 game-series: "gran-turismo-3"
-order: 10
+order: "gran turismo 3"
 ---

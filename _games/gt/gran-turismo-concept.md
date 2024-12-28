@@ -5,5 +5,5 @@ image: "assets/img/games/gran-turismo-concept.jpg"
 feature-img: "assets/img/games/bg/gran-turismo-concept.jpg"
 parent-series: "console-ps2"
 game-series: "gran-turismo-concept"
-order: 11
+order: "gran turismo 3.5"
 ---

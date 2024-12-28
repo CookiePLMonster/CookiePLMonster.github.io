@@ -11,11 +11,10 @@ For details about the latest updates, visit the [**Updates**]({% link pages/upda
 
 ***
 
-{% assign all_games = site.games | where: "parent-series", "" %}
-{% assign games = all_games | where_exp: "item","item.order < 100" %}
+{% assign games = site.games | where: "parent-series", empty %}
 {% include mods-grid.html items=games style="larger" %}
 
 ***
 
-{% assign consoles = all_games | where_exp: "item","item.order >= 100" %}
-{% include mods-grid.html items=consoles style="larger" %}
+{% assign nongames = site.games | where: "parent-series", "non-game" %}
+{% include mods-grid.html items=nongames style="larger" %}

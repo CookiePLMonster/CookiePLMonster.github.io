@@ -5,6 +5,6 @@ image: "assets/img/games/gran-turismo-4.jpg"
 feature-img: "assets/img/games/bg/gran-turismo-4.jpg"
 parent-series: "console-ps2"
 game-series: "gran-turismo-4"
-order: 13
+order: "gran turismo 4"
 juxtapose: true
 ---
