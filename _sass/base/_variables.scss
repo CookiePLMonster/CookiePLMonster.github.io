@@ -1,7 +1,7 @@
 @use "sass:color";
 
 // Typography
-$font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
+$font-family: 'Source Sans 3', 'Sans 3 Fallback 1', 'Sans 3 Fallback 2', 'Sans 3 Fallback 3', sans-serif;
 $font-size: 1.25em;
 
 /* PADDING */

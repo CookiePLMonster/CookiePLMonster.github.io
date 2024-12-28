@@ -131,11 +131,6 @@ code.highlighter-rouge {
  .il{ /* Literal.Number.Integer.Long */ color:variables.$base09}
 }
 
-// Fix Github syntax display
-.gist .blob-num {
-    width: 3.5% !important;
-}
-
 // Fix nbconvert dataframe
 .dataframe tbody {
     font-size: 0.8em;

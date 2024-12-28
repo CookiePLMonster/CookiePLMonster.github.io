@@ -11,16 +11,29 @@ figure {
     margin: 0;
 }
 
-// For correct line number width in Github Gists
-.gist table tbody tr td {
-    box-sizing: content-box;
-}
-
 html {
     background: variables.$background-color;
 }
 
 // Typography
+@font-face {
+    font-family: 'Sans 3 Fallback 1';
+    size-adjust: 94.25%;
+    src: local('Arial');
+}
+
+@font-face {
+    font-family: 'Sans 3 Fallback 2';
+    size-adjust: 94.25%;
+    src: local('Helvetica');
+}
+
+@font-face {
+    font-family: 'Sans 3 Fallback 3';
+    size-adjust: 94.0%;
+    src: local('Roboto');
+}
+
 body {
     color: variables.$text-color;
     font-family: variables.$font-family;
