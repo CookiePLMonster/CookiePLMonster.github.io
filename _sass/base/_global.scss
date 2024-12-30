@@ -18,8 +18,16 @@ html {
 // Typography
 @font-face {
     font-family: 'Sans 3 Fallback 1';
-    size-adjust: 94.25%;
+    size-adjust: 92.85%;
+    font-weight: 400;
     src: local('Arial');
+}
+
+@font-face {
+    font-family: 'Sans 3 Fallback 1';
+    size-adjust: 92.85%;
+    font-weight: 700;
+    src: local('Arial Bold');
 }
 
 @font-face {
