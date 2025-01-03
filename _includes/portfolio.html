@@ -1,8 +1,10 @@
 <div class="{{ 'item-grid ' | append: include.style | strip }}">
     {%- for item in site.portfolio reversed -%}
     <a href="{{ item.url | relative_url }}" title="{{ item.title }}" data-keyboard="true">
-        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-        <img class="cell-front" src="{{ item.image | relative_url | replace: "/thumb/", "/thumb/hover/" | replace: ".jpg", ".png" }}" loading="lazy" alt="">
+        {%- assign image_url = item.image | relative_url -%}
+        {%- assign hover_url = image_url | replace: "/thumb/", "/thumb/hover/" | replace: ".jpg", ".png" %}
+        <img src="{{ image_url }}" alt="{{ image_url }}" {% imagesize image_url:props %}>
+        <img class="cell-front" src="{{ hover_url }}" loading="lazy" alt="" {% imagesize hover_url:props %}>
     </a>
     {%- endfor -%}
 </div>

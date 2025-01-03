@@ -5,7 +5,8 @@
       <a href="{{ post.url | relative_url }}">
         {% if post.thumbnail %}
         <span class="post-img">
-          <img src="{{ post.thumbnail | relative_url }}" alt="">
+          {%- assign image_url = post.thumbnail | relative_url %}
+          <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
         </span>
         {% endif %}
         {{ post.title | smartify }}

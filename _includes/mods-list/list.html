@@ -5,7 +5,8 @@
     <div class="left-column">
     {% if mod.title-image %}
         <h1 id="{{ modid }}" class="mod-title-image">
-            <img src="{{ mod.title-image | relative_url }}" alt="">
+            {%- assign image_url = mod.title-image | relative_url %}
+            <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
         </h1>
     {% else %}
         <h1 id="{{ modid }}">

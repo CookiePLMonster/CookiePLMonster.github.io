@@ -3,7 +3,8 @@
     {%- for item in mods_grid_items -%}
         {%- unless item.hide -%}
         <a href="{{ item.url | relative_url }}" title="{{ item.title }}" data-keyboard="true">
-            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+            {%- assign image_url = item.image | relative_url -%}
+            <img src="{{ image_url }}" alt="{{ item.title }}" {% imagesize image_url:props %}>
         </a>
         {%- endunless -%}
     {%- endfor %}

@@ -18,7 +18,8 @@ Ta strona dostępna jest w:
 
 <div style="display: flow-root" markdown="1">
 <div style="max-width:35%;float:right;text-align:center" >
-<img style="padding:0 5%" src="https://i.imgur.com/nnXmF1k.jpg" alt="Photo">
+{% assign image_url = "https://i.imgur.com/nnXmF1k.jpg" %}
+<img style="padding:0 5%" src="{{ image_url }}" alt="Photo" {% imagesize image_url:props %}>
 <em><span style="display:inline-block">To może dziwić, ale</span>
 <span style="display:inline-block">nie jestem niebieski ani futrzasty.</span></em>
 </div>
