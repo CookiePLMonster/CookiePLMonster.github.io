@@ -7,7 +7,7 @@
 {%- endif -%}
 <figure class="{{ 'fig-entry' | append: ' ' | append: include.style | strip }}" id="{{ include.id }}">
     {%- if include.link -%}<a href="{{ include.link | relative_url }}" target="_blank">{%- endif -%}
-    <img src="{{ thumbnail }}" alt="" {% imagesize thumbnail:props %}>
+    <img src="{{ thumbnail }}" alt="" {% unless jekyll.environment == "development" %}{% imagesize thumbnail:props %}{% endunless %}>
     {%- if include.link -%}</a>{%- endif -%}
     {%- if include.caption -%}<figcaption markdown="span">{{ include.caption }}</figcaption>{%- endif -%}
 </figure>
