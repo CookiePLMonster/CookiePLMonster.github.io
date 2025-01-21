@@ -13,7 +13,7 @@ tags: [Releases]
 It's real -- a single bugfix for a graphical issue caused a chain of events, and now CRC Extreme is (almost) **out on Steam!**
 
 <div class="center-blocks">
-<iframe src="https://store.steampowered.com/widget/925550/" frameborder="0" width="900" height="200"></iframe>
+<iframe src="https://store.steampowered.com/widget/925550/" frameborder="0" width="646" height="190"></iframe>
 </div>
 
 Cross Racing Championship Extreme is a relatively nice racing game from [Invictus Games](http://invictus.com/), released in 2005.

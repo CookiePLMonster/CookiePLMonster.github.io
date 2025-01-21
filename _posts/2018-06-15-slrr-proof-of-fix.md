@@ -25,7 +25,7 @@ original developers.
 Original game was released back in 2003 so it's not possible to obtain it digitally anywhere. However, v2.3.1 can be obtained from Steam:
 
 <div class="center-blocks">
-<iframe src="https://store.steampowered.com/widget/497180/" frameborder="0" width="900" height="200"></iframe>
+<iframe src="https://store.steampowered.com/widget/497180/" frameborder="0" width="646" height="190"></iframe>
 </div>
 
 Concept of this game is pretty great, and I have pretty fond memories of playing v2.2.1 Miran Wichur Mod (yet another unofficial patch/expansion to the game, made by fellow Poles) around 2006.
