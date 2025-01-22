@@ -11,6 +11,9 @@ permalink: /links/
 * [Mod Index]({% link pages/mod-index.html %}) -- alphabetical list of all mods featured on this page.
 * [SilentPatch]({% link pages/silentpatch.md %}) -- history of SilentPatch, a list of supported games, and more.
 
+# Tutorials
+* [Importing custom decals into Tokyo Xtreme Racer (2025)]({% link pages/txr2025-custom-decals.md %})
+
 # Research
 Any research and documentation that I either made or found useful, and that doesn't belong in the mod pages.
 * [GameCheat Unlockers](https://github.com/Nenkai/GameCheat-Unlockers) -- a collection of tools to generate or unlock bonus codes for games that used them such as games from Codemasters.

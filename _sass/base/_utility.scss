@@ -353,6 +353,12 @@ a.round-button {
     text-transform: uppercase;
 }
 
+.pre-wrap {
+    pre {
+        text-wrap-mode: wrap;
+    }
+}
+
 .left-page-margin {
     @media screen and (min-width: variables.$break) {
         margin-left: variables.$padding-x-small;
