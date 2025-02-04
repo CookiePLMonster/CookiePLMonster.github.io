@@ -28,4 +28,4 @@ The main reason for creating this patch were broken water reflections - landmass
 
 <a href="https://github.com/CookiePLMonster/SilentPatchFarCry/releases/latest/download/SilentPatchFarCry.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
-<a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="button github">{{ site.theme_settings.github_icon }} See source on GitHub</a>
+<a href="https://github.com/CookiePLMonster/SilentPatchFarCry" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
