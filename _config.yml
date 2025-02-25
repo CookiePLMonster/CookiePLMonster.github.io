@@ -113,6 +113,7 @@ theme_settings:
   us_flag: "<span class='fi fi-us'></span>"
   jp_flag: "<span class='fi fi-jp'></span>"
   kr_flag: "<span class='fi fi-kr'></span>"
+  ru_flag: "<span class='fi fi-ru'></span>"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
