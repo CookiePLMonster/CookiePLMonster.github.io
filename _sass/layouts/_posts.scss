@@ -49,7 +49,7 @@ header, .posts {
 
 /* --- Feature image --- */
 .page-body {
-    header {
+    header#main {
         color: variables.$feature-image-text-color;
         margin-bottom: 0;
         padding: math.div(variables.$padding-large, 2.5) variables.$padding-large;

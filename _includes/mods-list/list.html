@@ -1,34 +1,31 @@
 {% for mod in include.items %}
-<div class="mod-listing">
+<section class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
-    <div class="mod-header">
-    <div class="left-column">
-    {% if mod.title-image %}
-        <h1 id="{{ modid }}" class="mod-title-image">
-            {%- assign image_url = mod.title-image | relative_url %}
-            <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
-        </h1>
-    {% else %}
-        <h1 id="{{ modid }}">
-            {{ mod.title | smartify }}
-        </h1>
-    {% endif %}
-    {% include mod-label.html mod=mod %}
-    </div>
-    <div class="right-column">
-    {% if mod.date %}
-    <div class="last-update">
-        Last update: {{ mod.date | date: page.date-format }}
-    </div>
-    {% endif %}
-    <div class="excerpt">
-        {{ mod.excerpt }}
-    </div>
-    </div>
-    </div>
-
-    <div class="mod-content">
+    <header>
+        <div class="title">
+            <h2 id="{{ modid }}">
+            {%- if mod.title-image -%}
+                {%- assign image_url = mod.title-image | relative_url -%}
+                <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
+            {%- else -%}
+                {{- mod.title | smartify -}}
+            {%- endif -%}
+            </h2>
+            {% include elements/mod-label.html mod=mod %}
+        </div>
+        <div class="misc">
+        {% if mod.date -%}
+        <p class="last-update">
+            Last update: {{ mod.date | date: page.date-format }}
+        </p>
+        {%- endif %}
+        <p>
+            {{- mod.excerpt -}}
+        </p>
+        </div>
+    </header>
+    <div class="content">
         {{ mod }}
     </div>
-</div>
+</section>
 {% endfor %}

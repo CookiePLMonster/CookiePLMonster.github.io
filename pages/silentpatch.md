@@ -52,7 +52,7 @@ What makes a **SilentPatch**? The released patches adhere to several core values
                     {% assign mod = silentpatches | first %}
                     {% assign modid = mod.id | split: '/' | last %}
                     <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a>
-                    {% include mod-label.html mod=mod %}
+                    {% include elements/mod-label.html mod=mod %}
                 </li>
             {% endif %}
         {% endunless %}

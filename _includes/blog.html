@@ -19,9 +19,9 @@
     <p class="meta">
       {% include_cached ert.html document=post %} min. to read
     </p>
-    <div class="excerpt">
+    <p class="excerpt">
         {{ post.excerpt | strip_html | escape }}
-    </div>
+    </p>
   </section>
   {% endfor %}
 </div>

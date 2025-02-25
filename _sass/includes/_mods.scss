@@ -1,5 +1,6 @@
 @use "base/variables";
 @use "base/utility";
+@use "base/global";
 
 .mod-label {
     border-radius: 0.3em;
@@ -18,59 +19,59 @@
 }
 
 .mod-listing {
-    margin-bottom: 1em;
+    margin-block-end: 2em;
 
-    // Semi-temporary
-    // This might have to be cleaned up, for now it's just been moved from HTML to here
-    .mod-header {
+    header {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         flex-wrap: wrap;
+        margin-block: 1em;
+        row-gap: 0.25em;
 
-        .left-column {
+        h2 {
+            @extend .heading-big;
+            margin-block: 0;
+        }
+
+        img {
+            min-width: 150px;
+            max-width: 400px;
+            vertical-align: middle;
+        }
+
+        .last-update {
+            @extend .sidenote;
+        }
+
+        .title {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            flex-basis: 50%;
+            flex-basis: calc(50% - 0.5em);
+            flex-grow: 1;
             column-gap: 0.5em;
         }
 
-        .right-column {
-            margin-bottom: 1.34em;
-            flex-basis: 50%;
+        .misc {
+            min-width: 30%;
+            flex-grow: 0;
+            text-align: right;
+            margin-inline-start: auto;
+            p {
+                margin: 0;
+            }
         }
     }
 
-    .mod-title-image {
-        min-width: 150px;
-        max-width: 400px;
-        display: inline-flex;
-        align-items: center;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .mod-content {
+    .content {
         padding: 1em;
         border-radius: 0.3em;
         border: 1px solid var(--line-color);
 
         > :last-child {
-            margin-bottom: 0;
+            margin-block-end: 0;
         }
-    }
-
-    .excerpt {
-        text-align: right;
-    }
-
-    .last-update {
-        @extend .excerpt;
-        @extend .sidenote;
     }
 
     // Flexible mod buttons, like in .flexible-buttons

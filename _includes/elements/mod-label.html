@@ -1,6 +1,6 @@
-{% if include.mod.warning-label %}
+{%- if include.mod.warning-label -%}
     <span class="mod-label warning" title="{{ mod.warning-title }}">{{ include.mod.warning-label }}</span>
-{% endif %}
-{% if include.mod.info-label %}
+{%- endif -%}
+{%- if include.mod.info-label -%}
     <span class="mod-label info" title="{{ mod.info-title }}">{{ include.mod.info-label }}</span>
-{% endif %}
+{%- endif -%}
