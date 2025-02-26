@@ -7,6 +7,3 @@ parent-series: "console-ps2"
 game-series: "need-for-speed-hot-pursuit-2-ps2"
 order: "need for speed hot pursuit 2"
 ---
-
-{:.disclaimer.info}
-This page is for the PS2 version of Need for Speed: Hot Pursuit 2. For mods for the PC versions of Need for Speed games, see [Need for Speed]({% link _games/need-for-speed (series).md %}).

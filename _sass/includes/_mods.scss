@@ -41,6 +41,10 @@
             vertical-align: middle;
         }
 
+        p {
+            margin: 0;
+        }
+
         .last-update {
             @extend .sidenote;
         }
@@ -57,9 +61,6 @@
             flex: 0 1 auto;
             text-align: right;
             margin-inline-start: auto;
-            p {
-                margin: 0;
-            }
         }
     }
 

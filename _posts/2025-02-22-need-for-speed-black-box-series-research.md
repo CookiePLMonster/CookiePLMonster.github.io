@@ -3,6 +3,7 @@ layout: post
 title: Black Box-era Need for Speed -- series research
 date: 2025-02-22 15:20:00 +0100
 excerpt: Miscellaneous pieces of info about the Black Box-era Need for Speed games.
+game-series: ["need-for-speed-most-wanted-ps2", "need-for-speed-carbon-ps2", "need-for-speed-prostreet-ps2", "need-for-speed-undercover-ps2"]
 image: "assets/img/games/bg/need-for-speed-underground.jpg"
 thumbnail: "assets/img/games/bg/need-for-speed-underground.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-underground.jpg"
