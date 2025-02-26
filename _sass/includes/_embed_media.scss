@@ -1,3 +1,5 @@
+@use "base/variables";
+
 %media-entry {
     width: 90%;
     margin: 0 auto 0.5em;
@@ -12,6 +14,16 @@
         }
         &.natural {
             width: fit-content;
+        }
+    }
+
+    &.aside {
+        max-width: 35%;
+        float: right;
+        margin-left: 0.5em;
+
+        @media screen and (max-width: variables.$break) {
+            max-width: 50%;
         }
     }
 }

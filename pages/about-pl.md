@@ -17,12 +17,7 @@ Ta strona dostępna jest w:
 ***
 
 <div style="display: flow-root" markdown="1">
-<div style="max-width:35%;float:right;text-align:center" >
-{% assign image_url = "https://i.imgur.com/nnXmF1k.jpg" %}
-<img style="padding:0 5%" src="{{ image_url }}" alt="Photo" {% imagesize image_url:props %}>
-<em><span style="display:inline-block">To może dziwić, ale</span>
-<span style="display:inline-block">nie jestem niebieski ani futrzasty.</span></em>
-</div>
+{% include figures/image.html thumbnail="https://i.imgur.com/nnXmF1k.jpg" caption="To może dziwić, ale nie jestem niebieski ani futrzasty." style="natural aside" %}
 Hej, jestem **Adrian** -- za dnia pracuję przy programowaniu gier, wieczorami moduję i&nbsp;zajmuję się inżynierią zwrotną.
 Próbuję naprawiać różne gry. W&nbsp;sieci udzielam się jako **Silent** lub **CookiePLMonster**.
 

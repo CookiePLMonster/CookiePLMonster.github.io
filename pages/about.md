@@ -14,12 +14,7 @@ This page is available in:
 ***
 
 <div style="display: flow-root" markdown="1">
-<div style="max-width:35%;float:right;text-align:center" >
-{% assign image_url = "https://i.imgur.com/nnXmF1k.jpg" %}
-<img style="padding:0 5%" src="{{ image_url }}" alt="Photo" {% imagesize image_url:props %}>
-<em><span style="display:inline-block">This might be surprising,</span>
-<span style="display:inline-block">but I'm not blue and fluffy.</span></em>
-</div>
+{% include figures/image.html thumbnail="https://i.imgur.com/nnXmF1k.jpg" caption="This might be surprising, but I'm not blue or fluffy." style="natural aside" %}
 Hi, I'm **Adrian** -- game developer by day; modder and reverse engineer by night. I try to fix things.
 In the cyberspace, I go by **Silent** or **CookiePLMonster**.
 
