@@ -27,7 +27,7 @@
         align-items: flex-end;
         flex-wrap: wrap;
         margin-block: 1em;
-        row-gap: 0.25em;
+        gap: 0.25em;
 
         h2 {
             @extend .heading-big;
@@ -37,6 +37,7 @@
         img {
             min-width: 150px;
             max-width: 400px;
+            width: 100%;
             vertical-align: middle;
         }
 
@@ -48,14 +49,12 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            flex-basis: calc(50% - 0.5em);
-            flex-grow: 1;
+            flex: 1 1 auto;
             column-gap: 0.5em;
         }
 
         .misc {
-            min-width: 30%;
-            flex-grow: 0;
+            flex: 0 1 auto;
             text-align: right;
             margin-inline-start: auto;
             p {
