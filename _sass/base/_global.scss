@@ -302,6 +302,10 @@ summary {
     li li * {
         font-size: 100%;
     }
+
+    * {
+        --fa-li-margin: 1em;
+    }
 }
 
 @media screen and (max-width: variables.$sm-break) {

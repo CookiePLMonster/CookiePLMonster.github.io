@@ -1,7 +1,10 @@
 // Font Awesome
 @use "external/fontawesome-glue" with (
     $fa-font-path: 'fontawesome',
-    $fa-inverse: var(--background-color)
+    $fa-inverse: var(--background-color),
+    $fa-li-margin: 2em,
+    $fa-li-width: 1.5em,
+    $fa-stack-width: 2em
 );
 
 // Variables

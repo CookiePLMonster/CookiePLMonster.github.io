@@ -361,7 +361,7 @@ a.round-button {
 
 .left-page-margin {
     @media screen and (min-width: variables.$break) {
-        margin-inline-start: variables.$padding-x-small;
+        margin-inline-start: 2em;
     }
 }
 

@@ -40,7 +40,7 @@ What makes a **SilentPatch**? The released patches adhere to several core values
 
 # Supported games
 
-<ul class="tag-posts">
+<ul class="list-icons">
 {% assign filter_conditions = "mod.warning-label != 'DEPRECATED',mod.warning-label == 'DEPRECATED'" | split: "," %}
 {% for filter in filter_conditions %}
     {% assign items = site.games | sort_natural: "title" %}
@@ -49,10 +49,11 @@ What makes a **SilentPatch**? The released patches adhere to several core values
             {% assign silentpatches = site.mods | where: "game-series", item.game-series | where_exp: "mod", "mod.title contains 'SilentPatch'" | where_exp: "mod", filter %}
             {% if silentpatches.size > 0 %}
                 <li>
-                    {% assign mod = silentpatches | first %}
-                    {% assign modid = mod.id | split: '/' | last %}
-                    <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a>
-                    {% include elements/mod-label.html mod=mod %}
+                    <span class="fa-li"><i class="far fa-list-alt"></i></span>
+                    {%- assign mod = silentpatches | first -%}
+                    {%- assign modid = mod.id | split: '/' | last -%}
+                    <a href="{{ item.url | relative_url }}#{{ modid }}">{{ item.title | smartify }}</a>
+                    {% include elements/mod-label.html mod=mod -%}
                 </li>
             {% endif %}
         {% endunless %}

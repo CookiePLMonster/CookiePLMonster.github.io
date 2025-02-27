@@ -1,5 +1,6 @@
 @use "base/variables";
 @use 'base/utility';
+@use "external/fontawesome-glue" as fa;
 
 .tag-list {
     @extend %flexible-2d-block;
@@ -22,13 +23,14 @@
     }
 }
 
-ul.tag-posts {
-    @extend %no-bullets;
-    font-size: 0.9em;
+.list-icons {
+    @extend .fa-ul;
     font-weight: bold;
+    @media screen and (min-width: variables.$break) {
+        font-size: 0.9em;
+    }
+
     li {
-        @extend .left-page-margin;
-        font-size: 100%;
         display: flow-root list-item;
         a {
             @extend %body-link;
@@ -36,17 +38,16 @@ ul.tag-posts {
         }
     }
 
-    ul {
+    ul, ol {
+        @extend .fa-ul;
         font-size: 0.9em;
-        list-style-type: none;
         font-weight: normal;
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .meta {
-        display: inline;
         float: right;
-        font-size: 0.7em;
-        line-height: normal;
+        font-size: 0.75em;
+        line-height: 2;
     }
 }

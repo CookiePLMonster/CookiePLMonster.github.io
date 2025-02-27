@@ -9,21 +9,21 @@ hide: true
 
 {% assign filter_conditions = "game.parent-series != 'non-game',game.parent-series == 'non-game'" | split: "," %}
 {% for filter in filter_conditions %}
-    <ul class="tag-posts">
+    <ul class="list-icons">
     {% assign items = site.games | where_exp: "game", filter | sort_natural: "title" %}
     {% for item in items %}
         {% unless item.hide %}
             {% assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" %}
             {% if mods.size > 0 %}
-                <li><a href="{{ item.url | relative_url }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ item.title | smartify }}</a></li>
+                <li><span class="fa-li"><i class="far fa-list-alt"></i></span><a href="{{ item.url | relative_url }}">{{ item.title | smartify }}</a></li>
                 <ul>
-                    {% for mod in mods %}
-                        <li>
-                            {% assign modid = mod.id | split: '/' | last %}
-                            <a href="{{ item.url | relative_url }}#{{ modid }}"><i class="far fa-list-alt" aria-hidden="true"></i> {{ mod.title | smartify }}</a>
-                            {% include elements/mod-label.html mod=mod %}
+                    {%- for mod in mods -%}
+                        <li><span class="fa-li"><i class="far fa-list-alt"></i></span>
+                            {%- assign modid = mod.id | split: '/' | last -%}
+                            <a href="{{ item.url | relative_url }}#{{ modid }}">{{ mod.title | smartify }}</a>
+                            {% include elements/mod-label.html mod=mod -%}
                         </li>
-                    {% endfor %}
+                    {%- endfor -%}
                 </ul>
             {% endif %}
         {% endunless %}

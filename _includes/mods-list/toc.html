@@ -1,18 +1,18 @@
 {% if include.items.size >= site.theme_settings.min_mods_for_toc %}
 <h2 class="no_anchor">Contents:</h2>
-<ul class="tag-posts">
-    {% for mod in include.items %}
+<ul class="list-icons">
+    {%- for mod in include.items -%}
     <li>
-        {% assign modid = mod.id | split: '/' | last %}
+        <span class="fa-li"><i class="far fa-list-alt"></i></span>
+        {%- assign modid = mod.id | split: '/' | last -%}
         <a href="#{{ modid }}">
-            <i class="far fa-list-alt" aria-hidden="true"></i>
-            {{ mod.title | smartify }}
+            {{- mod.title | smartify -}}
         </a>
 
         <span class="meta">
-            {{ mod.date | date: page.date-format }}
+            {{- mod.date | date: page.date-format -}}
         </span>
     </li>
-    {% endfor %}
+    {%- endfor -%}
 </ul>
-{% endif %}
+{%- endif -%}

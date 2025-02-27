@@ -1,15 +1,15 @@
-<ul class="tag-posts">
-{% for item in include.related_items reversed %}
+<ul class="list-icons">
+{%- for item in include.related_items reversed -%}
 <li>
+    <span class="fa-li"><i class="far fa-file-image"></i></span>
     <a href="{{ item.url | relative_url }}" target="_blank">
-        <i class="far fa-file-image" aria-hidden="true"></i>
-        {{ item.title | smartify }}
+        {{- item.title | smartify -}}
     </a>
-    
+
     <span class="meta">
-        {{ item.date | date: page.date-format }}
-        {% if item.last_modified_at %}(edited {{ item.last_modified_at | date: page.date-format }}){% endif %}
+        {{- item.date | date: page.date-format -}}
+        {%- if item.last_modified_at %} (edited {{ item.last_modified_at | date: page.date-format }}){% endif -%}
     </span>
 </li>
-{% endfor %}
+{%- endfor -%}
 </ul>

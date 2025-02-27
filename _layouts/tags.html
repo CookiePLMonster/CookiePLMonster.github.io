@@ -31,7 +31,7 @@ layout: page
 
     <!-- Displays the posts and pages that contains the tag-->
     {% for tag in tags %}
-    <section>    
+    <section>
         <h2 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw"></i> {{ tag }}</a>
             <a href="/feed/by_tag/{{ tag | cgi_escape }}.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"> </i> </a>
@@ -40,58 +40,55 @@ layout: page
         </h2>
 
         <!-- Posts and collection for each tags -->
-        <ul class="tag-posts">
+        <ul class="list-icons">
 
             <!-- Pages -->
             {% for page in site.pages %}
                 {% unless page.collection == 'posts' %}
                     {% if page.tags contains tag %}
-                    <li>
+                    <li><span class="fa-li"><i class="far fa-file-image"></i></span>
                         <a href="{{ page.url | relative_url }}">
-                            <i class="far fa-file-image" aria-hidden="true"></i>
-                            {{ page.title | smartify }}
+                            {{- page.title | smartify -}}
                         </a>
-                        
+
                         <span class="meta">
-                            {{ "today" | date: page.date-format }}
+                            {{- "today" | date: page.date-format -}}
                         </span>
                     </li>
                     {% endif %}
                 {% endunless %}
-            {% endfor %} 
-            
+            {% endfor %}
+
             <!-- Posts -->
-            {% for post in site.posts %} 
+            {% for post in site.posts %}
                 {% if post.tags contains tag %}
-                <li>
+                <li><span class="fa-li"><i class="far fa-file-alt"></i></span>
                     <a href="{{ post.url | relative_url }}">
-                        <i class="far fa-file-alt" aria-hidden="true"></i>
-                        {{ post.title | smartify }}
+                        {{- post.title | smartify -}}
                     </a>
-                    
+
                     <span class="meta">
-                        {{ post.date | date: page.date-format }}
-                        {% if post.last_modified_at %}(edited {{ post.last_modified_at | date: page.date-format }}){% endif %}
+                        {{- post.date | date: page.date-format -}}
+                        {%- if post.last_modified_at %} (edited {{ post.last_modified_at | date: page.date-format }}){% endif -%}
                     </span>
                 </li>
-                {% endif %} 
-            {% endfor %} 
-            
+                {% endif %}
+            {% endfor %}
+
             <!-- Portfolio -->
-            {% for note in site.portfolio %} 
+            {% for note in site.portfolio %}
                 {% if note.tags contains tag %}
-                <li>
+                <li><span class="fa-li"><i class="far fa-file"></i></span>
                     <a href="{{ note.url | relative_url }}">
-                        <i class="far fa-file" aria-hidden="true"></i>
-                        {{ note.title | smartify }}
+                        {{- note.title | smartify -}}
                     </a>
-                
+
                     <span class="meta">
-                        {{ note.date | date: page.date-format }}
-                        {% if note.last_modified_at %}(edited {{ note.last_modified_at | date: page.date-format }}){% endif %}
+                        {{- note.date | date: page.date-format -}}
+                        {%- if note.last_modified_at %} (edited {{ note.last_modified_at | date: page.date-format }}){% endif -%}
                     </span>
                 </li>
-                {% endif %} 
+                {% endif %}
             {% endfor %}
 
         </ul>
