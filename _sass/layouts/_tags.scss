@@ -2,18 +2,12 @@
 @use 'base/utility';
 
 .tag-list {
-    width: 100%;
-    font-size: 0.9em;
-    padding-bottom: variables.$padding-x-small;
+    @extend %flexible-2d-block;
+    justify-content: center;
+    padding-block-end: variables.$padding-x-small;
 
-    span.meta {
-        margin-right: 0.5em;
-        font-size: 1.1em;
-    }
-
-    p {
-        margin: 0;
-        padding: 0 0.2em 0 0;
+    a {
+        font-size: 0.81em;
     }
 }
 

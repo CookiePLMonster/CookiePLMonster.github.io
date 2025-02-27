@@ -22,15 +22,6 @@ article {
     }
 }
 
-footer {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 0.9em;
-    display: inline-block;
-    text-align: center;
-}
-
 header, .posts {
     h1, h2 {
         margin: 0;
@@ -67,12 +58,12 @@ header, .posts {
 
     .page-content {
         @extend %padding-post;
-        padding-bottom: 0;
+        padding-block-end: 0;
     }
 
     footer {
         @extend %padding-post;
-        padding-top: 0;
+        padding-block-start: 0;
     }
 }
 

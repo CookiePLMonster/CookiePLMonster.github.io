@@ -5,6 +5,8 @@
 .site-footer {
     @extend %padding-post;
     color: var(--footer-text-color);
+    font-size: 0.9em;
+    text-align: center;
 
     ul {
         @extend %no-bullets;
@@ -19,7 +21,7 @@
     }
 
     .bottom-row {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .fa-stack {

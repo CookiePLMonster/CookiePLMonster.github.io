@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         column-gap: 0.5em;
-        margin-bottom: 1em;
+        margin-block-end: 1em;
 
         input, select {
             color: variables.$text-color-light;

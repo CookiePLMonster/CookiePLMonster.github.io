@@ -1,23 +1,17 @@
-{% assign tags = include.tags | split:'|' | sort | uniq %}
+{%- assign tags = include.tags | split:'|' | sort | uniq -%}
 
+<div class="tag-list">
 {% if tags.size > 0 %}
-<footer>
-  <div class="tag-list">
-    {% if tags.size == 1 %}
-      <span class="meta">Category</span>
-    {% else %}
-      <span class="meta">Categories</span>
-    {% endif %}
+  {% if tags.size == 1 %}
+    <span class="meta">Category</span>
+  {% else %}
+    <span class="meta">Categories</span>
+  {% endif %}
 
-    {% for tag in tags %}
-    <a class="button smaller" href="{% link pages/categories.html %}#{{ tag | cgi_escape }}">
-      <p><i class="fas fa-tag fa-fw"></i> {{ tag }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</footer>
-{% else %}
-<footer>
-  <div class="tag-list"></div>
-</footer>
+  {% for tag in tags %}
+  <a class="button smaller" href="{% link pages/categories.html %}#{{ tag | cgi_escape }}">
+    <i class="fas fa-tag fa-fw"></i> {{ tag }}
+  </a>
+  {% endfor %}
 {% endif %}
+</div>

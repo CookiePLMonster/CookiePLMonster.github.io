@@ -101,7 +101,7 @@ blockquote {
 
 blockquote, footer, details {
     > :last-child {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 }
 

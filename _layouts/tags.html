@@ -32,12 +32,12 @@ layout: page
     <!-- Displays the posts and pages that contains the tag-->
     {% for tag in tags %}
     <section>    
-        <h3 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
+        <h2 id="{{ tag | cgi_escape }}" class="tag-anchor no_anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw"></i> {{ tag }}</a>
             <a href="/feed/by_tag/{{ tag | cgi_escape }}.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"> </i> </a>
             <a href="#top" class="right"><i class="fas fa-chevron-up" aria-hidden="true"> </i> </a>
 
-        </h3>
+        </h2>
 
         <!-- Posts and collection for each tags -->
         <ul class="tag-posts">

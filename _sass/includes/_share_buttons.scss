@@ -1,25 +1,18 @@
 @use "base/variables";
+@use 'base/utility';
 
 @use "sass:math";
 
 .share-buttons {
-    text-align: center;
-    padding: math.div(variables.$padding-x-small, 2) 0;
+    @extend %flexible-2d-block;
+    justify-content: center;
 
-    .meta {
-        margin-right: 0.5em;
-    }
+    padding-block-start: math.div(variables.$padding-x-small, 2);
+    margin-block-end: 0.5em;
 
     ul {
-        display: inline-block;
-        list-style: none;
-        margin: 0;
-
-        li {
-            display: inline-block;
-            a:hover {
-                text-decoration: none;
-            }
-        }
+        @extend %no-bullets;
+        @extend %flexible-2d-block;
+        margin-block-end: 0;
     }
 }

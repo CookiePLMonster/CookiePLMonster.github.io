@@ -2,6 +2,7 @@
 
 .search-bar {
     display: block;
+    margin-block-end: 1em;
     width: 100%;
     height: 46px;
     padding: 6px 12px;
@@ -46,11 +47,21 @@
     }
 }
 
-.search-title a {
-    h3 {
-        margin: 0;
+.search-results {
+    > div {
+        > a {
+            h2 {
+                margin: 0;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        > .meta {
+            display: flow-root;
+        }
     }
-    &:hover {
-        text-decoration: none;
+    > hr:last-of-type {
+        display: none;
     }
 }
