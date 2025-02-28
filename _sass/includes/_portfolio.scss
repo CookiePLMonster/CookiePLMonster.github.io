@@ -4,7 +4,7 @@
 .portfolio-content {
     display: block;
 
-    @media only screen and (min-width: variables.$m-break) {
+    @media not (max-width: variables.$m-break) {
         display: flex;
         flex-direction: row-reverse;
         column-gap: 1em;
@@ -15,9 +15,9 @@
         min-width: 18.5%;
         height: fit-content;
         text-align: right;
-        margin-bottom: 1em;
+        margin-block-end: 1em;
 
-        @media screen and (max-width: variables.$m-break) {
+        @media (max-width: variables.$m-break) {
             padding: 0.5em 0.5em;
             text-align: center;
             column-count: 2;
@@ -30,10 +30,10 @@
 
         div {
             break-inside: avoid-column;
-            margin-bottom: 1em;
+            margin-block-end: 1em;
 
             &:last-child {
-                margin-bottom: 0;
+                margin-block-end: 0;
             }
         }
     }

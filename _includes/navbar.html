@@ -7,7 +7,7 @@
 	</a>
     <!-- Toggle menu -->
     <nav>
-    <a id="pull" class="toggle" href="#" aria-label="Toggle Menu">
+    <a id="pull" href="#" aria-label="Toggle Menu">
     <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
     </a>
 
@@ -16,10 +16,9 @@
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% for page in site.pages -%}
         {%- if page.title and page.hide != true -%}
-        <li class="separator"> | </li>
         <li>
-            <a class="clear" href="{{ page.url | relative_url }}">
-                {{ page.title | smartify }}
+            <a href="{{ page.url | relative_url }}">
+                {{- page.title | smartify -}}
             </a>
         </li>
         {%- endif -%}
@@ -28,22 +27,21 @@
         <!-- Auto Generation of SPECIAL pages in the navbar -->
         {% for item in site.theme_settings.special_page -%}
           {%- if item[1].enabled -%}
-            <li class="separator"> | </li>
             <li>
-                <a class="clear" href="{{ item[0] | relative_url }}" title="{{ item[1].title }}">
+                <a href="{{ item[0] | relative_url }}" title="{{ item[1].title }}">
                     <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
+                    <span class="navbar-icon-text">{{ item[1].title | smartify }}</span>
                 </a>
             </li>
           {%- endif -%}
         {%- endfor %}
 
         <!-- Dark mode toggle -->
-        <li class="separator no-js"> | </li>
-        <li class="separator no-js"> | </li>
-        <li>
-            <button id="theme-toggle" class="clear no-js" onclick="modeSwitcher()" title="Toggle Light/Dark Mode">
+        <li class="no-js">
+            <a id="theme-toggle" onclick="modeSwitcher()" href="#" title="Toggle Light/Dark Mode">
                 <i class="theme-icon" aria-hidden="true"></i>
-            </button>
+                <span class="navbar-icon-text"></span>
+            </a>
         </li>
     </ul>
     </nav>

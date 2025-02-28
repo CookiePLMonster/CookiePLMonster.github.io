@@ -4,15 +4,6 @@
     padding: 2% 2% 1% 2%;
     display: flow-root;
 
-    .separator {
-        user-select: none;
-        opacity: variables.$navbar-separator-opacity;
-
-        &:first-child {
-            display: none;
-        }
-    }
-
     a {
         color: var(--header-link-color);
     }
@@ -44,13 +35,15 @@
             list-style: none;
             line-height: 1.5;
             float: right;
-            text-align: right;
             display: block;
         }
         li {
-            display: inline;
-            float: left;
-            margin-right: 0.4em;
+            display: inline-block;
+            margin-inline-start: 0.9em;
+
+            &:first-child {
+                margin-inline-start: 0.45em;
+            }
         }
         a {
             &:hover {
@@ -58,19 +51,11 @@
             }
             &#pull {
                 i {
-                    margin-top: 13px;
+                    margin-top: 22px;
+                    margin-right: 18px;
                     float: right;
                 }
 
-            }
-        }
-        button {
-            all: unset;
-            &:hover {
-                color: variables.$link-color;
-            }
-            &:focus {
-                outline: revert;
             }
         }
     }
@@ -78,8 +63,8 @@
 
 /* ---- Responsive ---- */
 
-@media (min-width: variables.$break) {
-    a#pull {
+@media not (max-width: variables.$break) {
+    a#pull, .navbar-icon-text {
         display: none;
     }
 }
@@ -96,55 +81,40 @@
         nav {
             height: auto;
 
-            .separator {
-                display: none !important;
-            }
-
             ul {
                 width: 100%;
-                overflow: hidden;
+                transition: opacity .25s 0s, font-size .25s 0s;
 
-                transition: font-size .25s,
-                    margin .25s,
-                    padding .25s,
-                    opacity .5s .25s;
-            }
-
-            ul.hide {
-                font-size: 0;
-                margin: 0;
-                opacity: 0;
-                padding: 0;
-
-                /* fade out, then shrink */
-                transition: opacity .25s,
-                            font-size .5s .25s,
-                            margin .5s .25s,
-                            padding .5s .25s;
+                &.hide {
+                    font-size: 0;
+                    margin: 0;
+                    opacity: 0;
+                    padding: 0;
+                }
             }
 
             li {
                 width: 100%;
-                float: left;
-                position: relative;
+                text-align: center;
+                font-size: 1em;
+                margin-inline: 0 !important;
             }
 
             a {
-                text-align: left;
                 width: 100%;
+                display: block;
+            }
 
-                &#pull {
-                    display: block;
-                    width: 100%;
-                    position: relative;
+            @media (scripting: none) {
+                a#pull {
+                    display: none;
+                }
 
-                    &:after {
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        right: 15px;
-                        top: 10px;
-                    }
+                ul.hide {
+                    font-size: inherit;
+                    margin: inherit;
+                    opacity: inherit;
+                    padding: inherit;
                 }
             }
         }

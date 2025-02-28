@@ -360,7 +360,7 @@ a.round-button {
 }
 
 .left-page-margin {
-    @media screen and (min-width: variables.$break) {
+    @media not (max-width: variables.$break) {
         margin-inline-start: 2em;
     }
 }

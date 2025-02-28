@@ -25,7 +25,7 @@ h2.subtitle {
         padding: 0;
         z-index: -1;
 
-        @media screen and (min-width: variables.$break) {
+        @media screen and not (max-width: variables.$break) {
             inset: -10px -20px;
         }
     }

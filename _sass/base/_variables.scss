@@ -58,8 +58,8 @@ $header-desc-text-color-dark: #D7D7D7;
 /* MOBILE */
 $xl-break: 2000px;
 $l-break: 1400px;
-$m-break: 1000px;
-$break: 768px;
+$m-break: 1000px; // Paddings, portfolio. Used with max-width
+$break: 826px; // Mobile navigation bar and general sizing. Used with max-width
 $sm-break: 576px;
 $x-sm-break: 320px;
 

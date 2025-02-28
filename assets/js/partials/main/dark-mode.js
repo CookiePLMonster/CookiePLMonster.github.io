@@ -8,7 +8,16 @@ const modeSwitcher = (function () {
         document.documentElement.setAttribute('data-theme', themeName);
 
         // Theme toggle text
-        document.getElementById('theme-toggle').title = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        let themeSwitcher = document.getElementById('theme-toggle');
+        let themeSwitcherText = themeSwitcher.getElementsByClassName('navbar-icon-text');
+        if (isDark) {
+            themeSwitcher.title = 'Toggle Light Mode';
+            themeSwitcherText[0].innerHTML = 'Light';
+        }
+        else {
+            themeSwitcher.title = 'Toggle Dark Mode';
+            themeSwitcherText[0].innerHTML = 'Dark';
+        }
 
         // Data theme for unrendered tweets
         document.querySelectorAll('.twitter-tweet').forEach(e => {
