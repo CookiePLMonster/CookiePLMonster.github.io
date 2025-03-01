@@ -15,10 +15,7 @@ Today's test subject started as a crash found in [RPCS3](https://rpcs3.net/) whe
 one of the demos I own - FIFA 17 Demo[^1]. While this game runs really well on my PC, it's building up a really big SPU cache -- 5 or so minutes of playtime
 would result in over 20.000 SPU objects being cached!
 
-<p align="center">
-<img src="{% link assets/img/posts/llvm-bug/spu-cache.png %}"><br>
-<em>This takes a while, but later saves CPU time when actually playing - nice.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/llvm-bug/spu-cache.png" style="natural" caption="This takes a while, but later saves the CPU time when playing. Nice." %}
 
 This worked fine on the first try, but trying to compile them again on the next boot
 (RPCS3 compiles all cached SPU objects on startup, so subsequent sessions perform better as they don't need to do this work on runtime)
@@ -84,10 +81,7 @@ RPCS3, and in turn LLVM compiled in Debug, so a test can be redone. Sure enough,
 "Classic" access violation, attempting to reference invalid memory. Curiously, one of the arguments to the crashing function `void* memory` equals `0xddddddddddddde29`,
 which looks like a very suspicious value and not just "random garbage". Move up the call stack to `RuntimeDyldImpl::resolveX86_64Relocation` function,
 and one of its arguments, `const SectionEntry& Section`, reveals what's up:
-
-<p align="center">
-<img src="{% link assets/img/posts/llvm-bug/nice-object.png %}"><br>
-</p>
+{% include figures/image.html link="/assets/img/posts/llvm-bug/nice-object.png" style="natural" %}
 
 ＵＳＥ  ＡＦＴＥＲ  ＦＲＥＥ．
 
@@ -129,11 +123,7 @@ Looking at the code, it seems like `Sections` needs to allow for random access (
 for random access **and** guarantees reference stability when growing -- `std::deque`.
 
 This change is way too simple -- change the type, recompile LLVM and RPCS3, run the game again and...
-
-<p align="center">
-<img src="{% link assets/img/posts/llvm-bug/fifa.png %}"><br>
-<em>Woop woop.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/llvm-bug/fifa.png" caption="Woop woop." %}
 
 **It works!** Not just an one off -- it works consistently, both in Release and Debug, with and without page heap (which elevates such memory issues). **Success!**
 

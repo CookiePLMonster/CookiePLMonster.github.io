@@ -26,10 +26,7 @@ Before jumping to a debugger, I took advice from [RibShark](https://twitter.com/
 Of course, it's there, uses no CPU time and memory stays at a constant low value. This hints that the process is stuck on something.
 We may be able to find out what it's stuck on by using `Analyze wait chain`. This little dialog shows if the process is waiting for another process,
 and if it does -- what process it's waiting for. Sure enough, the launcher is waiting for... `nvcontainer.exe`.
-
-<p align="center">
-<img src="{% link assets/img/posts/kao/wait-chain.jpg %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/kao/wait-chain.jpg" style="natural" %}
 
 The issue isn't about this one specific process, however -- I've also seen it waiting for `devenv.exe` (Visual Studio) earlier,
 so it appears that for some bizarre reason, the launcher is waiting for random running processes.

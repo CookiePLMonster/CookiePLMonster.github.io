@@ -8,11 +8,7 @@ tags: [Articles]
 ---
 Recently, I upgraded [PCSX2](https://pcsx2.net/) with an intent to check it out for the first time in years.
 I got to the Quick Start wizard and selected a preferred language, just to have next page's navigation buttons end up looking like this:
-
-<p align="center">
-<img src="{% link assets/img/posts/lang-mix.png %}"><br>
-<em>Hold on a sec, that's not English.</em>
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/lang-mix.png" style="natural" caption="Hold on a sec, that's not English." %}
 
 Aside from the text being obviously too long[^1] (who came up with this translation? That's not how Polish localizations handle navigation buttons *at all*),
 it's also not displayed in the language it should be! This causes the navigation bar to look kind of like a frankenstein of languages.

@@ -23,9 +23,7 @@ This release in action -- Alexvgz published a teaser for restored voices a while
 Additionally, just yesterday Rinnegatamante published an update for his Crazy Taxi Vita that **integrates Dreamcast Restoration 2.0!**
 In fact, his findings made this update possible, as I was finally able to fix the Z-fighting =)
 
-<p align="center">
-<img src="https://vitadb.rinnegatamante.it/screenshots/1250844e9b98308b37b42a2d9810a48fc329faab35fe53c9e90e9cb835fe0353.png">
-</p>
+{% include figures/image.html link="https://vitadb.rinnegatamante.it/screenshots/1250844e9b98308b37b42a2d9810a48fc329faab35fe53c9e90e9cb835fe0353.png" %}
 
 Crazy Taxi Vita can be [downloaded from VitaDB](https://vitadb.rinnegatamante.it/#/info/728) and requires a (free) copy of Crazy Taxi for Android.
 

@@ -10,12 +10,15 @@ date: 2018-05-18 20:10:00 +0200
 twitter: {card: "summary_large_image"}
 redirect_from: "/2018/05/18/fixing-the-godfather-pt2.html"
 tags: [Articles]
+mathjax: true
 ---
 This article is split in two parts:
+
+{:.additional-toc}
 * [Part 1: Prelude to fixing]({% post_url 2018-05-18-fixing-the-godfather %})
 * [Part 2: Implementation]({% post_url 2018-05-18-fixing-the-godfather-pt2 %})
 
-If you haven't read [Part 1]({% post_url 2018-05-18-fixing-the-godfather %}) yet, I strongly encourage to go back and read it first before proceeding with this post.
+If you haven't read Part 1 yet, I strongly encourage to go back and read it first before proceeding with this post.
 
 Implementation
 =================================
@@ -23,26 +26,20 @@ Implementation
 In Part 1, we have researched the crash and figured out the exact cause of it. As it was listed, there were a few possible approaches to fixing the issue,
 but finally only one of them ended up being viable. Now, with most of the code in place, we can check if anything shows up...
 
-Blue rectangle - the breakthrough
+Blue rectangle -- the breakthrough
 =================================
 
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image18.jpg %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/godfather/image18.jpg" %}
 
 This is a screenshot from the very first attempt of testing a RwD3D9 wrapper which gave visible results. While it doesn’t seem like it, this blue rectangle is in fact a breakthrough -
-it’s drawn using newly written wrapper, which means **we can use it to draw anything we want to**. In other words, this simple example basically proves the idea works out and can be
+it’s drawn using my newly written wrapper, which means **we can use it to draw anything we want to**. In other words, this simple example basically proves the idea works out and can be
 polished further to display movie data instead of a static image!
 
 Since we are now using D3D9, it is **not** possible to directly display a non-RGB image. However, it is possible to write a shader which outputs RGB data when given a non-RGB texture -
 and this is exactly what we are going to do here.
 
 First, replacing static blue fill with data provided by VP6 decoder (without specifying a shader or anything fancy) gives us a first view on the movies. Getting there!
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image5.png %}"><br>
-<em>The very first time movies are displayed on Windows 10 in game (note this is 640x240, for the time being displayed in the corner and not stretched at all).</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/godfather/image5.png" style="natural" caption="The very first time movies are displayed on Windows 10 in game (note this is 640x240, for the time being displayed in the corner and not stretched at all)." %}
 
 Let’s identify and isolate issues we can see here:
 
@@ -56,10 +53,7 @@ Image formats - YUY2, YUV, RGB
 ------------------------------
 
 YUY2 is a 16-bit 4:2:2 format, which is a variation of YUV color format typically used to encode videos. With YUY2, each 32-bit value defines a pair of pixels. Data is laid out as presented:
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image16.png %}">
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/godfather/image16.png" style="natural" %}
 
 Every pixel has its own Y (luminance) value, with U and V values shared between two neighbouring pixels.
 
@@ -76,28 +70,20 @@ while overall green appearance was caused by interpreting the data as RGB.
 
 With remaining issues identified, fixing them was only a matter of writing a correct YUY2 &rarr; RGB shader and some trial and error around a few other quirks.
 Soon after, **movies finally started showing up correctly**!
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image23.png %}"><br>
-<em>It lives! Still in 640x480, but otherwise fully working!</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/godfather/image23.png" style="natural" caption="It lives! Still in 640x480, but otherwise fully working!" %}
 
 This point was finally reached after five attempts and around 2 months of prototyping - finally, both in-game and intro movies show up!
 
-Watching The Godfather trailer from within the game has certain charm to it... (note - at this point in-game movies had a minor filtering issue
-which shows on this screenshot as fake “aliasing” around the edges)
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image4.png %}"><br>
-<em>I’m gonna make him an offer he can’t refuse.</em>
-</p>
+Watching The Godfather trailer from within the game has certain charm to it (note - at this point in-game movies had a minor filtering issue
+which shows on this screenshot as fake “aliasing” around the edges)...
+{% include figures/image.html link="/assets/img/posts/godfather/image4.png" style="natural" caption="I'm gonna make him an offer he can't refuse." %}
 
 New features, new problems
 ==========================
 
 On the first glance, everything seems fine. However, we don’t really want to display videos in a tiny 640x480 rectangle, right? I’ve created three different display modes for overlay render queue:
 
-1.  Stretch - stretches the video to fill the entire screen, ignoring aspect ratio. This matches the original behaviour on Windows XP. but is not too visually pleasing -
+1.  Stretch - stretches the video to fill the entire screen, ignoring the aspect ratio. This matches the original behaviour on Windows XP. but is not too visually pleasing -
     640x480 videos stretched to 1080p don’t look right at all.
 2.  Letterbox - stretches the video to fill the entire screen, preserving original aspect ratio by adding black horizontal or vertical bars at screen edges. This matches the behaviour of most video players.
 3.  Fill - stretches the video to fill the entire screen, cutting off edges of the video. This works best for movies with black borders included on them (like The Godfather trailer shown earlier),
@@ -105,23 +91,16 @@ On the first glance, everything seems fine. However, we don’t really want to d
 
 While coding those was trivial, upscaling videos revealed a previously overlooked issue. If you take a look at this frame from an upscaled intro video (here rendered in Letterbox mode,
 so it ends up being rendered as 1440x1080), you can notice it doesn’t look quite right...
+{% include figures/image.html link="/assets/img/posts/godfather/image11.png" caption="The artifacts are not obvious, but are clearly noticeable when the logo is fullscreen." %}
 
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image11.png %}"><br>
-<em>Artifacts are not obvious, but are clearly noticeable when the logo is fullscreen</em>
-</p>
-
-What happens here? This clip is being a victim of a fairly severe problem coming from **non-linear texture scaling**. We can clearly see this phenomenon when providing the game with a regular pattern.
+What is happening here? This clip is being a victim of a fairly severe problem coming from **non-linear texture scaling**. We can clearly see this phenomenon when providing the game with a regular pattern.
 In this example, I have prepared a 640x480 texture consisting of a 1px white column, followed by 1px black column - repeated. Then, this texture was drawn as 1440x1080 on screen:
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image13.png %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/godfather/image13.png" %}
 
 Notice something wrong? One doesn’t need to zoom in to notice how irregular this pattern is, even though the source texture was completely regular! Why is this happening?
 Take a look at the factor source texture had to be upscaled:
 
-```1440 / 640 = 2.25```
+$$ \frac{1440}{640} = 2.25 $$
 
 That’s where term **non-integer scaling** comes from - texture needs to be upscaled by a value which is not an integer!
 This means it is impossible for an upscaled image to be a perfect representation of the source image - for that, each 1 pixel from the source image would have to be represented
@@ -132,10 +111,7 @@ Usually, an image upscaled this way would have some of the pixels duplicated, bu
 corresponds to two rendered pixels (remember a shader code snippet mentioned earlier), so scaling leads to duplicating pairs of output pixels!
 This causes them to display out of order - mountain shown on the Paramount logo makes it obvious:
 
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image7.png %}"><br>
-<em>Since we are displaying some pixels out of order, mountain becomes jaggy</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/godfather/image7.png" style="natural" caption="Since we are displaying some pixels out of order, the mountain becomes jaggy." %}
 
 Solution - image preprocessing
 ------------------------------
@@ -155,25 +131,14 @@ while ( source != end )
 ```
 
 After this transformation, data is laid out like this:
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image12.png %}">
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/godfather/image12.png" style="natural" %}
 
 Now, each pixel from source texture corresponds to exactly one output pixel, so pixel shader does not need to check what “side” the pixel is on!
 This solves all scaling issues we had and also allows to opt for bilinear filtering instead of nearest filtering, resulting in a more visually pleasing output image:
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image22.png %}"><br>
-<em>Perfect! Not stretched and with no filtering issues.</em>
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/godfather/image22.png" caption="Perfect! Not stretched and with no filtering issues." %}
 
 Success! We can finally call it working correctly. Not only intros work fine - in game clips display just as well:
-
-<p align="center">
-<img src="{% link assets/img/posts/godfather/image8.png %}"><br>
-<em>While these tutorial clips don’t have too much educational value, it’s good to see them work fine.</em>
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/godfather/image8.png" caption="While these tutorial clips don’t have too much educational value, it’s good to see them work fine." %}
 
 It's time to see those movies in action!
 

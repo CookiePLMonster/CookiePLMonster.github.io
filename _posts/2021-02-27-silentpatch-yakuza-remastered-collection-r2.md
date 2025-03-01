@@ -25,7 +25,7 @@ Because of that, this post now consists of two parts, with Part 1 being the "ori
 
 It's been a bit over three weeks since
 [I released a SilentPatch for Yakuza 3 and 4]({% post_url 2021-02-05-silentpatch-yakuza-remastered-collection %})
-and around a week ago those games (together with Yakuza 5) received [official patches](https://store.steampowered.com/news/app/1088710/view/3041589319532558479).
+and around a week ago those games (together with Yakuza 5) received [official patches](https://store.steampowered.com/news/app/1088710/view/3041589319532558479){:target="_blank"}.
 The majority of the changelog is shared across three games, with only Yakuza 3 receiving a single "exclusive" fix.
 
 Let's have a look at this shared changelog!
@@ -46,11 +46,8 @@ causing the needlessly high CPU usage and fixed some of them. My approach had so
 * Loading times got significantly longer.
 * I was not able to easily patch the biggest offender, `pxd::server_job`. Throttling that thread affected performance negatively, and a proper fix was invasive.
 
-A quick test run with [Special K](https://special-k.info/) (and without CPU usage fixes from SilentPatch) shows that the CPU usage is indeed significantly lower:
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/y3-cpu-usage-before.png %}">
-</p>
+A quick test run with [Special K](https://special-k.info/){:target="_blank"} (and without CPU usage fixes from SilentPatch) shows that the CPU usage is indeed significantly lower:
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/y3-cpu-usage-before.jpg" %}
 
 `pxd::server_job` thread is now reasonable with its CPU usage! A quick dive into the disassembly reveals that QLOC made this thread wait for jobs on a **condition variable**,
 whereas a pre-patch version periodically checked if it has any jobs to serve and slept otherwise. Great job (pun unintended)! That's exactly how I would have solved this problem
@@ -65,10 +62,7 @@ Although...
 I did say I removed *most* fixes because QLOC did not identify one of the CPU hogs I found. As you can see on the screenshot above,
 `message_pump_thread` is still spinning even after the official patch. My fix still works as-is and relieves the CPU further in both Yakuza 3 and 4.
 Now the CPU usage looks exactly like I envisioned it to be when I started the first version of the patch!
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/y3-cpu-usage-after.jpg %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/y3-cpu-usage-after.jpg" %}
 
 FWIW the fact QLOC did not include this particular fix also makes me confident that they did **not** investigate my patch when working on their fixes.
 While the code for all the other fixes is largely useless for developers with source access, this one fix could have been easily referenced in source code.
@@ -95,11 +89,7 @@ Additionally, I elaborated on that in the code comments:
 
 Much to my disappointment, when I dissected a patched Yakuza 3 and checked QLOC's changes to this particular function,
 they... seemed to have applied an identical workaround!
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/y3-crash-hack.jpg %}"><br>
-<em>Coincidentally, it matches down to the same register usage.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/y3-crash-hack.jpg" style="natural" caption="Coincidentally, it matches down to the same register usage." %}
 
 Note -- I did not verify if QLOC did anything else to fix this bug (admittedly, it would be hard to prove),
 but in my opinion the part I am aware of a rushed way to fix this issue. The real fix would not have touched this function in the first place,
@@ -135,16 +125,8 @@ Thankfully, in the case of Yakuza 5, it's not completely broken -- only the phot
 
 As always with issues like this, first I modified the game's code to use fake paths to user directories, then used
 [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) to log all IO calls, and sure enough, there it is -- not all paths passed to the API are well-formed:
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/40180893.780000016_image.png %}">
-</p>
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/40209212.1_image.png %}"><br>
-<em markdown="1">Process Monitor can even show what was the specific API call used and where did it come from. Insanely useful! In this case, I see the game made a call to `GetFileAttributesA`,
-erroneously passing a UTF-8 path.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/40180893.780000016_image.png" style="natural" %}
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/40209212.1_image.png" style="natural" caption="Process Monitor can even show what was the specific API call used and where did it come from. Insanely useful! In this case, I see the game made a call to `GetFileAttributesA`, erroneously passing a UTF-8 path." %}
 
 Thankfully, the usual set of fixes works fine:
 * I assumed all ANSI functions used in the game are given UTF-8 paths and converted them properly before passing to the wide char equivalents.
@@ -153,16 +135,10 @@ Thankfully, the usual set of fixes works fine:
 Those fixes may have been a bit more overreaching than needed, but they work fine! Photo booths now work properly even with my weird debug user paths 🍪⟑η∏☉ⴤℹ︎∩₲ ₱⟑♰⫳🐱.
 
 Is this everything? Obviously not! Just like Yakuza 3 and 4, Yakuza 5 likes hogging CPU threads a bit more than it should, although it does so in a different way than the first two games:
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/Yakuza5.exe.unpacked_IoQoR9dYjJ.jpg %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/Yakuza5.exe.unpacked_IoQoR9dYjJ.jpg" %}
 
 This time, `rt_resize_thread` is a culprit. What does it do when spinning? Not much -- in fact, most of the time it's endlessly looping on this tiny chunk of code!
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/thread-loop.png %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/thread-loop.png" %}
 
 Later on, I identified this thread as the one responsible for controlling the dynamic resolution feature. This makes the entire issue awkward -- a feature which is intended
 to help maintain performance in GPU bound scenarios ends up contributing towards CPU bottlenecks by spinning an entire CPU core endlessly 😅
@@ -175,10 +151,7 @@ Thankfully, I got lucky there. Based on my findings, I think this thread perform
 With this knowledge, I inserted an additional event wait to this hot loop and I signal it once on game startup and once when the boolean variable gets set.
 The result is **greatly** reduced CPU usage and dynamic resolution still working fine -- in fact, `rt_resize_thread` now uses no resources and has vanished
 from Special K's performance metrics!
-
-<p align="center">
-<img src="{% link assets/img/posts/spyrc-r2/Yakuza5.exe.unpacked_0ihiUdWxgs.jpg %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/spyrc-r2/Yakuza5.exe.unpacked_0ihiUdWxgs.jpg" %}
 
 QLOC could (and **should**) have done the same. At this point I'm not convinced it will be patched officially, but... who knows?
 

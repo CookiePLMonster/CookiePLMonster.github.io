@@ -23,16 +23,8 @@ Build 2 has been released! This update resolves a bug introduced by SilentPatchM
 
 ***
 
-* [Introduction](#introduction)
-* [Part 1 -- Research](#part-1)
-    * [Prelude](#prelude)
-    * [PIX](#pix)
-* [Part 2 -- A closer look into D3DX](#part-2)
-* [Part 3 -- Standalone tests](#part-3)
-* [Part 4 -- Putting it all together](#part-4)
-    * [Download](#download)
-
-***
+* TOC
+{:toc}
 
 # Introduction {#introduction}
 
@@ -260,6 +252,8 @@ After several attempts basing on data collected from Intel and AMD chips and wit
 The results are as follows, ✔️ indicating success (results were equal) and ❌ indicating failure (results were not equal). The last column indicates whether the game handles this data fine
 or if it glitches out. We deliberately did not take imprecision of floating-point maths into the account and instead compared the results with `memcmp`:
 
+<figure markdown="1">
+
 | Data source    | Intel SSE2 | AMD SSE2 | Intel x86 | AMD x86 | Accepted by game? |
 | -------------: | ---------- | -------- | --------- | ------- | ----------------- |
 | **Intel SSE2** | ✔️ | ❌ | ❌ | ❌ | ✔️ |
@@ -267,9 +261,8 @@ or if it glitches out. We deliberately did not take imprecision of floating-poin
 | **Intel x86**  | ❌ | ❌ | ✔️ | ✔️ | ✔️ |
 | **AMD x86**    | ❌ | ❌ | ✔️ | ✔️ | ✔️ |
 
-<p align="center">
-<em>Tests results for D3DXMatrixInverse</em>
-</p>
+<figcaption markdown="span">Test results for `D3DXMatrixInverse`.</figcaption>
+</figure>
 
 Interesting -- the results show that:
 * Calculations with SSE2 do not transfer across Intel and AMD machines.
@@ -294,14 +287,15 @@ I hacked it together quickly, sent it off to Rafael and...
 What we were sure to be an issue coming from tiny differences in SSE2 instructions may have been a purely numerical issue after all. Despite also using SSE2, `XMMatrixInverse` gave perfect results
 on both Intel and AMD. Therefore, we re-ran the same tests and the results were surprising, to say the least:
 
+<figure markdown="1">
+
 | Data source    | Intel | AMD | Accepted by game? |
 | -------------: | ----- | --- | ----------------- |
 | **Intel** | ✔️ | ✔️ | ✔️ |
 | **AMD**   | ✔️ | ✔️ | ✔️ |
 
-<p align="center">
-<em>Tests results for XMMatrixInverse</em>
-</p>
+<figcaption markdown="span">Test results for `XMMatrixInverse`.</figcaption>
+</figure>
 
 Not only the game works fine, but results are perfectly identical and transfer across machines!
 
@@ -328,12 +322,12 @@ It works out of the box, without the need for an ASI Loader or any other third p
 
 To our best knowledge, the game now looks exactly how it should, without any downgrades in the lighting:
 
-<div class="media-container small">
+<figure class="media-container small">
 {% include figures/juxtapose.html left="/assets/img/posts/mass-effect/compare/noveria-broken.jpg" left-label="Before"
                 right="/assets/img/posts/mass-effect/compare/noveria-fixed.jpg" right-label="After" caption="Noveria" %}
 {% include figures/juxtapose.html left="/assets/img/posts/mass-effect/compare/ilos-broken.jpg" left-label="Before"
                 right="/assets/img/posts/mass-effect/compare/ilos-fixed.jpg" right-label="After" caption="Ilos" %}
-</div>
+</figure>
 
 ## Download
 

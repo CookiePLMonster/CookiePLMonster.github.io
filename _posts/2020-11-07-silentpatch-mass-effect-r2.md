@@ -16,13 +16,10 @@ we're releasing an update for SilentPatch for Mass Effect!
 
 This time, the changelog is **very** short -- after a [report showing that the enemy AI breaks in the Virmire mission when SP is used](https://github.com/CookiePLMonster/SilentPatchME/issues/4)...
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/475132/98448081-87e9b100-20de-11eb-9c1f-2bd8716179a1.gif">
-</p>
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/475132/98448155-05152600-20df-11eb-9702-45b1d9b84fcb.gif">
-</p>
+<figure class="media-container small">
+{% include figures/image.html link="https://user-images.githubusercontent.com/475132/98448081-87e9b100-20de-11eb-9c1f-2bd8716179a1.gif" %}
+{% include figures/image.html link="https://user-images.githubusercontent.com/475132/98448155-05152600-20df-11eb-9702-45b1d9b84fcb.gif" %}
+</figure>
 
 ...Rafael Rivera investigated the issue and found an inconsistency in our implementation of `D3DXMatrixInverse` which mishandled NaN values.
 With this fix in place, AI should be back to normal. Sorry for the inconvenience!

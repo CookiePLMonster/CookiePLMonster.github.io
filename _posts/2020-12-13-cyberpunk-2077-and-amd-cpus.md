@@ -30,9 +30,10 @@ on AMD CPUs and that there's a fix for it. While the discovery was legitimate an
 it was quickly followed by misinformation and strong statements. In this post,
 I'll summarize my findings previously scattered around Reddit and **try** to clarify some of the statements.
 
-**DISCLAIMER: I tried to present those findings the best I could. However, it is not possible to be 100% certain about the choices made
+{:.disclaimer.info}
+I tried to present those findings the best I could. However, it is not possible to be 100% certain about the choices made
 by the dev team nor whether the fix is universally beneficial. You may rely on profiling data gathered from the community,
-but only in-depth profiling of the game's code can provide an indisputable answer. This is not something we can do.**
+but only in-depth profiling of the game's code can provide an indisputable answer. This is not something we can do.
 
 ***
 

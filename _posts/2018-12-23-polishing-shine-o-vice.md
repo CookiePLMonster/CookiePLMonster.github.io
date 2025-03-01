@@ -118,9 +118,7 @@ Despite the comment, code analysis reveals that IDs `248` and `249` are in fact 
 and we can recycle them! We can move `wheel_rim` to ID `249` and test it.
 
 Does it help?
-<p align="center">
-<img src="{% link assets/img/posts/shine-o-vice/sov-screen.jpg %}"><br>
-</p>
+{% include figures/image.html link="/assets/img/posts/shine-o-vice/sov-screen.jpg" %}
 
 Yes, it indeed does! With this one little change, Shine 'o Vice can save its progress without much issue -- our job is done!
 
