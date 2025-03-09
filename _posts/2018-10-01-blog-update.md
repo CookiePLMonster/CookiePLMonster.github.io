@@ -14,12 +14,12 @@ You might have seen some changes (most notably, a new banner!) appear through th
 If I got your attention this far, why not go through all the new features!?
 
 # Categories
-This website bases on [Type on Strap](https://github.com/sylhare/Type-on-Strap) theme that supports tags, however in my version they were always disabled.
+This website bases on [Type on Strap](https://github.com/sylhare/Type-on-Strap){:target="_blank"} theme that supports tags, however in my version they were always disabled.
 As the size grows in content, I figured it's time to make those return in form of **Categories**. From now on, posts are going to be categorized:
 * **Articles** -- any "meaningful" content, like post mortems or other tech revelations from myself.
 * **Releases** -- new mod releases and other announcements.
 * **Progress Reports** -- mod-related posts which do not fit in neither of the above. I can't promise Progress Reports as exciting as the ones posted by Dolphin or RPCS3 developers, however.
-* **Other** -- everything else! Rants, personal opinions on games and anything else, announcements like this or, occasionally, [cats](https://i.redd.it/oomaydkommo11.jpg).
+* **Other** -- everything else! Rants, personal opinions on games and anything else, announcements like this or, occasionally, [cats](https://i.redd.it/oomaydkommo11.jpg){:target="_blank"}.
 
 Bear in mind that this list may change at some point.
 
@@ -27,13 +27,13 @@ Bear in mind that this list may change at some point.
 Until now, that page was a mess, but no more! Now the page contains most mods sorted by game -- or, in the case of GTA, sorted by series, then games.
 That also means all SilentPatches are finally listed on the website -- better late than never!
 
-All image assets and design for this have been done by [Ash R.](https://twitter.com/Ash_735) -- kudos to the man!
+All image assets and design for this have been done by [Ash R.](https://twitter.com/Ash_735){:target="_blank"} -- kudos to the man!
 
 **NOTE:** Not all mods are listed yet -- expect the other entries to appear very soon! I also plan to introduce a **Tools** section in nearby future.
 
 # Polished Portfolio page
 Portfolio page also has received a minor makeover -- now entries are more consistent styling wise, and display their respective game logos upon hovering.
-Once again, all image assets have been provided by [Ash R.](https://twitter.com/Ash_735)!
+Once again, all image assets have been provided by [Ash R.](https://twitter.com/Ash_735){:target="_blank"}!
 
 # Support link
 Last but not least, some people have been asking if there is any way to support me -- now there is!
