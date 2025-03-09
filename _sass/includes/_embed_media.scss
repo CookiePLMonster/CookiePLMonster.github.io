@@ -3,16 +3,16 @@
 %media-entry {
     width: 90%;
     margin: 0 auto 0.5em;
-    &.natural {
+    &.natural, .media-container.natural > & {
         max-width: 90%;
     }
 
     @media screen and (min-width: 850px) {
         width: 75%;
-        &.small {
+        &.small, .media-container.small > & {
             width: 47.5%;
         }
-        &.natural {
+        &.natural, .media-container.natural > & {
             width: fit-content;
         }
     }
@@ -29,11 +29,11 @@
 }
 
 @mixin iframe-padding($padding) {
-    padding-bottom: $padding * 0.9;
+    padding-block-end: $padding * 0.9;
     @media screen and (min-width: 850px) {
-        padding-bottom: $padding * 0.75;
-        &.small {
-            padding-bottom: $padding * 0.475;
+        padding-block-end: $padding * 0.75;
+        &.small, .media-container.small > & {
+            padding-block-end: $padding * 0.475;
         }
     }
 }
@@ -45,7 +45,7 @@ $video-4-3-padding: 75%;
     @extend %media-entry;
 	position: relative;
     @include iframe-padding($video-16-9-padding);
-    &.narrower {
+    &.narrower, .media-container.narrower > & {
         @include iframe-padding($video-4-3-padding);
     }
 
@@ -56,6 +56,10 @@ $video-4-3-padding: 75%;
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .media-container > & {
+        vertical-align: baseline;
     }
 }
 
@@ -74,32 +78,6 @@ $video-4-3-padding: 75%;
     > figure {
         display: inline-block;
         vertical-align: top;
-    }
-    > .fig-entry, > .iframe-entry {
-        margin-bottom: 0;
-    }
-    &.natural {
-        > .fig-entry, > .iframe-entry {
-            max-width: 90%;
-        }
-    }
-
-    @media screen and (min-width: 850px) {
-        &.small {
-            > .fig-entry, > .iframe-entry {
-                width: 47.5%;
-            }
-            > .iframe-entry {
-                padding-bottom: $video-16-9-padding * 0.475;
-                &.narrower {
-                    padding-bottom: $video-4-3-padding * 0.475;
-                }
-            }
-        }
-        &.natural {
-            > .fig-entry {
-                width: fit-content;
-            }
-        }
+        margin-block-end: 0;
     }
 }
