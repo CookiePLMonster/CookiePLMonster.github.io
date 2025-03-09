@@ -5,7 +5,7 @@ excerpt: About SilentPatch.
 feature-img: "assets/img/mods/silentpatch/silentpatch-banner.png"
 image: "assets/img/mods/silentpatch/silentpatch-banner.png"
 permalink: /silentpatch/
-last_modified_at: 2023-12-29
+last_modified_at: 2025-03-09
 twitter: {card: "summary_large_image"}
 hide: true
 ---
@@ -15,28 +15,27 @@ hide: true
 
 # What is SilentPatch?
 
-**SilentPatch** is a series of unofficial modifications led by me, Silent, aiming to fix bugs and improve compatibility with modern hardware in various PC games.
-First released in 2013 as modifications for the classic Grand Theft Auto games (GTA III, Vice City, San Andreas),
-**SilentPatch** has since expanded into over 25 games and gained a degree of recognition in the PC gaming space by players and developers alike.
+**SilentPatch** is a series of unofficial modifications led by me, Silent, aimed at fixing bugs and improving compatibility with modern hardware in various PC games.
+Originally released in 2013 for the classic Grand Theft Auto titles (GTA III, Vice City, San Andreas),
+**SilentPatch** has since expanded to over 25 games and gained recognition from both players and developers in the PC gaming space.
 
-What makes a **SilentPatch**? The released patches adhere to several core values that set it apart from the other, more broadly defined, unofficial patches:
+What makes a **SilentPatch**? The released patches adhere to several core values that set them apart from other, more broadly defined, unofficial patches:
 
 {: .dl-no-indent }
 "Be free for everyone"
-: Downloads are never hidden behind a paywall.
+: **SilentPatch** downloads are never hidden behind a paywall.
 
 "Stick to a silent installation"
-: The setup is hassle-free. With very few exceptions, **SilentPatches** are installed by just extracting a few files in the game directory.
+: Installation is hassle-free. With very few exceptions, **SilentPatches** require nothing more than extracting a few files into the game directory.
 
 "Patch with surgical precision"
-: Changes are as non-invasive as possible, and code changes are applied with utmost care. This ensures wide compatibility with different revisions of games,
-  as well as with other modifications installed alongside the patch.
+: Changes are as non-invasive as possible, and code changes are applied with utmost care. This ensures wide compatibility across different game versions
+  and allows **SilentPatch** to work seamlessly with other installed modifications.
 
 "Preserve the developers' vision"
-: **SilentPatches** are designed to be used on either the first or subsequent playthroughs, providing an enhanced gaming experience
-  while maintaining the original gameplay. To achieve this, games' original design choices are preserved as much as possible. **SilentPatch** never alters gameplay and/or balancing of the game,
-  unless it is entirely provable that those are a result of a bug. In rare cases where **SilentPatch** makes changes that cannot be justified as fixes,
-  they are always toggleable from the configuration file.
+: **SilentPatches** are designed to enhance the gaming experience while maintaining the original gameplay, making them suitable for both first-time and returning players.
+  Original design choices are preserved as much as possible -- **SilentPatch** never alters gameplay or balancing unless it is provably the result of a bug.
+  In rare cases where changes extend beyond pure bug fixes, they are always toggleable via the configuration file.
 
 # Supported games
 
