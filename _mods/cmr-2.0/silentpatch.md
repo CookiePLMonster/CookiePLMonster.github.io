@@ -9,8 +9,8 @@ Here we have the first non-GTA related game in the SilentPatch series, this time
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.
 
-## Featured fixes:
-* The game now handles ALL aspect ratios properly.
+## Featured fixes
+* The game now handles all aspect ratios properly.
 That means the game will not be horribly scretched when playing in widescreen anymore.
 * <i class="fas fa-cog"></i> The game now defaults to borderless windowed mode. This change gets rid of a DirectDraw bug on Windows 8 and newer,
 which would make the game run in a window even if fullscreen is requested, also affecting performance negatively.

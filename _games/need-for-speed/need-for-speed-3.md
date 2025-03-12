@@ -5,5 +5,5 @@ image: "assets/img/games/need-for-speed-3.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-3.jpg"
 parent-series: "need-for-speed"
 game-series: "need-for-speed-3"
-order: 1
+order: "need for speed 3"
 ---

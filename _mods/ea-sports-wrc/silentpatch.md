@@ -14,7 +14,7 @@ as this issue has been [officially fixed in the v1.4.0 update](http://x.ea.com/7
 EA Sports WRC launched with a graphical bug exclusive to GeForce GTX 9 and 10 series cards, causing the decals, driver numbers, and their names to render broken.
 SilentPatch addresses this issue, and it also improves performance of the Livery Editor tenfold.
 
-## Featured fixes:
+## Featured fixes
 
 * Broken liveries, driver numbers, and driver name stickers on GeForce GTX 9 and 10 series cards have been fixed.
 * Performance issues in the Livery Editor on GeForce GTX 9 and 10 series cards have been fixed.

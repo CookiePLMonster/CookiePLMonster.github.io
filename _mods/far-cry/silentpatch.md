@@ -10,7 +10,7 @@ Far Cry, once a game considered an example of visual fidelity and de facto a ben
 
 The main reason for creating this patch were broken water reflections - landmass would not reflect on water if the game is played on anything newer than Windows XP. This patch aims to fix this issue without a need for any D3D wrappers.
 
-## Featured fixes:
+## Featured fixes
 ### Crash and bug fixes
 * Water reflections now work as expected on modern Windows versions
 * Vertical Sync option now works as expected - it used to be ignored by the game completely, defaulting to VSync off

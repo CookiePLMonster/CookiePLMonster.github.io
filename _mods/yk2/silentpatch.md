@@ -13,8 +13,7 @@ That said, this not only is mostly redundant, but also not always correct -- mos
 Toylets minigame is still essentially unplayable. To make matters worse, the way frame limiting was performed was notoriously
 flawed and introduced noticeable frame pacing issues.
 
-## Featured fixes:
-### Bug fixes
+## Featured fixes
 
 * Frame pacing has been drastically improved when "Framelimit" option is not set to "Unlimited"
 * Toylets minigame has been capped to 30 FPS, essentially making it playable without having to change game settings

@@ -13,7 +13,7 @@ demos published under Acclaim Entertainment present a state of the game that is 
 For this reason, I see value in SilentPatch improving the technical state of those demos (including the THQ ones) and unlocking all content included in them.
 These early demos are a showcase of Juiced that "never came to be", so I want everyone to enjoy them to the fullest.
 
-## Featured fixes:
+## Featured fixes
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.
 

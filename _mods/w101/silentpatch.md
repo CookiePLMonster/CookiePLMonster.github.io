@@ -15,7 +15,7 @@ the original and remastered soundtracks!
 Notice: This patch has only been tested with version 1.0.0. Future official patches (if applicable) may have fixed some of those issues,
 in which case SilentPatch will skip them.
 
-## Featured fixes:
+## Featured fixes
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.
 
 * The game's frame limiter has been rewritten for greater accuracy. Previously it would lock the game at 59 FPS and calculations would drift

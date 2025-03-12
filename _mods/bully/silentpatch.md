@@ -21,7 +21,7 @@ gameplay experience by improving frame pacing, as well as fixing a few other iss
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.
 
-## Featured fixes:
+## Featured fixes
 ### Crash and bug fixes
 * Collision loading code has been improved, fixing occasional crashes on initial game load
 * Fixed game's objects pool usage, fixing possible crashes

@@ -16,7 +16,8 @@ most of the hitches present when driving around!
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the `settings.ini` file.
 
-## Featured fixes:
+## Featured fixes
+
 * Game-breaking graphical corruptions have been fixed, making the game playable on modern multicore machines
 * <i class="fas fa-cog"></i> Allowed the game to use all CPU cores (instead of locking to one core), dramatically improving performance.
 In an unlikely case this causes issues, CPU core affinity can be restored to default by adding `SingleCoreAffinity=1` to the INI file

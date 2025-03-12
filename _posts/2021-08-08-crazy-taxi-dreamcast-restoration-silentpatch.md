@@ -15,6 +15,9 @@ scroll down to the [**Download**](#download) section for a download link for bot
 
 ***
 
+* TOC
+{:toc}
+
 In case a single mod release was not enough, this time I present to you a simultaneous release of two mods -- **Dreamcast Restoration 2.0** and **SilentPatch** for the Steam version of
 **Crazy Taxi**! For this reason, this post is split into two sections, one per mod.
 
@@ -241,8 +244,8 @@ After downloading, all you need to do is to extract the archives to the game's d
 
 ***
 
+For those interested, the full source codes of both mods have been published on GitHub, so they can be freely used as a reference:
+
 {:.flexible-buttons}
-For those interested,
-full source codes of both mods have been published on GitHub, so they can be freely used as a reference:
 <a href="https://github.com/CookiePLMonster/CT-DC" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See Dreamcast Restoration 2.0 on GitHub</a>
 <a href="https://github.com/CookiePLMonster/SilentPatchCT" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See SilentPatch on GitHub</a>

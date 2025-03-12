@@ -15,7 +15,7 @@ or (in the case of NFS2SE and NFS Porsche) caused by them.
 
 <i class="fas fa-info-circle"></i> **[Modern Patch]({{ modern_patch_url }}) is strongly recommended, although not mandatory. SilentPatch can work with or without it.{% if include.game == 'need-for-speed-porsche' %} Do note that with Modern Patch installed, multiplayer races don't work correctly and they crash very often.{% endif %}** <i class="fas fa-info-circle"></i>
 
-## Featured fixes:
+## Featured fixes
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.
 

@@ -12,7 +12,7 @@ some of the CPU usage issues remain unfixed, and SilentPatch addresses them. Add
 SilentPatch improves compatibility for users with non-ASCII characters in user names,
 especially in Yakuza 5 Remastered.
 
-## Featured fixes:
+## Featured fixes
 
 * CPU usage has been significantly cut down in all 3 games.
 * A low level keyboard hook potentially causing issues with slow typing speed has been removed.

@@ -16,7 +16,7 @@ Developed right for the 20th anniversary of Colin McRae Rally 3, SilentPatch del
 numerous compatibility fixes, new technical features, Quality of Life improvements, and a scratch-made high definition UI optimized for 4K displays,
 it brings an experience comparable to an unofficial remaster of this classic 2002 rally game.
 
-## Featured fixes:
+## Featured fixes
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file. The other new options have been added to in-game menus instead.
 

@@ -15,7 +15,7 @@ When playing the game on PCs with modern AMD processors, two areas in the game (
 SilentPatch diagnoses those issues and provides a definite fix, bringing complete visual parity between Intel and AMD CPUs.
 **Warning: AMD FX and Bulldozer chips are still affected. We are investigating the issue.**
 
-## Featured fixes:
+## Featured fixes
 
 * Fixed an issue causing black blobs to appear with contemporary AMD CPUs.
 

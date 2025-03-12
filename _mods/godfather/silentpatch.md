@@ -15,7 +15,7 @@ some content) is to play on 2000 or XP!
 SilentPatch aims to fix this annoyance, so now movie player works flawlessly on any operating system.
 This is not the only fix included, however.
 
-## Featured fixes:
+## Featured fixes
 ### Crash and bug fixes
 * Movie player has been rewritten to work on any operating system
 * Game has been disallowed from writing registry keys to `HKEY_LOCAL_MACHINE` - those writes were

@@ -17,7 +17,7 @@ A "quick" patch for Mafia 2: Definitive Edition, resolving one of the high-prior
 A bug exclusive to the Definitive Edition makes it impossible to save without making changes to the OS configuration -- this SilentPatch release
 resolves the issue in the same way it will (hopefully) be resolved in an official patch, thus making the changes future-proof.
 
-## Featured fixes:
+## Featured fixes
 * Fixed a number of saving-related issues when the path to Documents contains any non-ASCII characters.
 * ~~Fixed a bug where copying saves from the original Mafia 2 would fail quietly.~~ **- fixed in an official patch.**
 * Introduced a temporary 'emergency' save migration as an attempt to move the saves from a wrong save directory, if any were created. This could have happened if at any point the user ran the game as an Administrator in an attempt to 'fix' the saving issue.

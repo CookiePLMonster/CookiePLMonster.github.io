@@ -2,11 +2,13 @@
 layout: post
 title: Black Box-era Need for Speed -- series research
 date: 2025-02-22 15:20:00 +0100
+last_modified_at: 2025-03-12 19:35:00 +0100
 excerpt: Miscellaneous pieces of info about the Black Box-era Need for Speed games.
-game-series: ["need-for-speed-most-wanted-ps2", "need-for-speed-carbon-ps2", "need-for-speed-prostreet-ps2", "need-for-speed-undercover-ps2"]
-image: "assets/img/games/bg/need-for-speed-underground.jpg"
-thumbnail: "assets/img/games/bg/need-for-speed-underground.jpg"
-feature-img: "assets/img/games/bg/need-for-speed-underground.jpg"
+game-series: ["need-for-speed-underground", "need-for-speed-underground-ps2", "need-for-speed-most-wanted-ps2",
+            "need-for-speed-carbon-ps2", "need-for-speed-prostreet-ps2", "need-for-speed-undercover-ps2"]
+image: "assets/img/games/bg/need-for-speed-carbon.jpg"
+thumbnail: "assets/img/games/bg/need-for-speed-carbon.jpg"
+feature-img: "assets/img/games/bg/need-for-speed-carbon.jpg"
 tags: [Research]
 ---
 
@@ -37,7 +39,7 @@ $10.000 is awarded if a save from NFS Underground 2 is found. On the PS2, the ga
 $10.000 is awarded if a save from NFS Most Wanted is found. On the PS2 (other platforms unconfirmed), this feature has a bug -- **by default,
 this feature only works with base Most Wanted saves, as the NTSC-U versions check for Most Wanted Black Edition using a wrong serial (`SLAJ-25075`),
 while PAL-E versions do not include a BE serial at all!**
-I submitted [a patch to the PCSX2 patch database](https://github.com/PCSX2/pcsx2_patches/pull/499) to fix this.
+I submitted [a patch to the PCSX2 patch database](https://github.com/PCSX2/pcsx2_patches/pull/499){:target="_blank"} to fix this.
 
 The game also has a function to list Underground 2 saves that uses the same list of serials as Most Wanted,
 so it may have been planned to grant bonuses for either UG2 or MW saves. However, those remain unused, either intentionally or through an oversight.
@@ -61,8 +63,16 @@ You **must** start a new career through the <kbd>NEW CAREER</kbd> option.
 Exient's PS2/Wii version of NFS Undercover is NFS Carbon in disguise, and so the code carries over all the checks from Carbon (including a wrong serial for MW Black Edition).
 However, these go unused, and the game grants no loyalty bonuses at all.
 
+# NFS Underground Magazine 22
+
+For my NFS Underground playthrough, I looked into the infamous Drift Score magazine unlock conditions. Turns out they were bugged, and I now released a SilentPatch
+for PC and PS2 versions of the game fixing this bug, as well as a few others.
+
+Due to the significance of this bug fix, I detailed it in [a separate post]({% post_url 2025-03-12-need-for-speed-underground-magazine-22-silentpatch %}).
+
 ***
 
 # Post changelog
 
+* {{ "2025-03-12" | date: page.date-format }} -- NFS Underground Magazine 22 issues researched.
 * {{ page.date | date: page.date-format }} -- initial version. Later edited to clarify missing MW Black Edition serials in PAL releases of Carbon and ProStreet.
