@@ -4,6 +4,7 @@
 
 .site-footer {
     @extend %padding-post;
+    @extend %body-link;
     color: var(--footer-text-color);
     font-size: 0.9em;
     text-align: center;
@@ -12,15 +13,5 @@
         @extend %no-bullets;
         @extend %flexible-2d-block;
         justify-content: center;
-    }
-
-    .top-row {
-        a:hover {
-            color: color.adjust(variables.$link-color, $lightness: -15%);
-        }
-    }
-
-    .bottom-row {
-        margin-block-end: 0;
     }
 }

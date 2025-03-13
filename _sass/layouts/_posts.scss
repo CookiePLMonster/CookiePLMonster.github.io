@@ -13,9 +13,7 @@
 }
 
 article {
-    a {
-        @extend %body-link;
-    }
+    @extend %body-link;
 
     .footnotes {
         font-size: 0.9em;

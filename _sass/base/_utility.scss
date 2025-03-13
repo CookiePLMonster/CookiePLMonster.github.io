@@ -51,13 +51,35 @@
 }
 
 // Buttons
+$button-colors: (
+    docs: (color: var(--important-link-color), hover: var(--important-link-hover-color)),
+    github: (color: var(--github-link-color), hover: var(--github-link-hover-color)),
+    forums: (color: var(--forums-link-color), hover: var(--forums-link-hover-color)),
+    patreon: (color: variables.$patreon-link-color),
+    paypal: (color: variables.$paypal-link-color),
+    ko-fi: (color: variables.$ko-fi-link-color),
+    gog: (color: var(--gog-link-color), hover: var(--gog-link-hover-color)),
+    steam: (color: var(--steam-link-color), hover: var(--steam-link-hover-color))
+);
+
+@mixin button-coloring($color, $inverse-hover-color) {
+    color: $color;
+
+    &:hover, &.inverse {
+        background-color: $color;
+    }
+
+    &.inverse:hover {
+        background-color: if($inverse-hover-color, $inverse-hover-color, color.adjust($color, $lightness: -15%));
+    }
+}
+
 .button {
     border-radius: 0.3em;
     border: 2px solid;
     display: inline-block;
     padding: 0.5em 0.75em;
     font-weight: 500;
-
 
     &.smaller {
         padding: 0.25em 0.375em;
@@ -68,6 +90,15 @@
         font-weight: 400;
     }
 
+    &.rounder {
+        border-radius: 1.5em;
+    }
+
+    &:hover, &.inverse {
+        color: variables.$background-color !important;
+        border-color: transparent;
+    }
+
     @at-root button#{&} {
         @extend .thinner;
         -webkit-appearance: none;
@@ -76,35 +107,15 @@
 
     @at-root a#{&},
     button#{&} {
-        @extend %button-link;
-        color: variables.$link-color;
-
-        &.github {
-            color: var(--github-link-color);
+        &:hover {
+            text-decoration: none !important;
         }
+    }
 
-        &.docs {
-            color: var(--important-link-color);
-        }
-
-        &.forums {
-            color: var(--forums-link-color);
-        }
-
-        &.patreon {
-            color: variables.$patreon-link-color;
-        }
-
-        &.paypal {
-            color: variables.$paypal-link-color;
-        }
-
-        &.gog {
-            color: var(--gog-link-color);
-        }
-
-        &.steam {
-            color: var(--steam-link-color);
+    @include button-coloring(variables.$link-color, null);
+    @each $name, $colors in $button-colors {
+        &.#{$name} {
+            @include button-coloring(map-get($colors, color), map-get($colors, hover));
         }
     }
 }
@@ -113,186 +124,8 @@
     @extend %flexible-2d-block;
 }
 
-%button-link {
-    &:hover {
-        background: variables.$link-color;
-        border-color: variables.$link-color;
-        color: variables.$background-color;
-        text-decoration: none;
-    }
-
-    &.github {
-        &:hover {
-            background: var(--github-link-color);
-            border-color: var(--github-link-color);
-        }
-    }
-
-    &.docs {
-        &:hover {
-            background: var(--important-link-color);
-            border-color: var(--important-link-color);
-        }
-    }
-
-    &.forums {
-        &:hover {
-            background: var(--forums-link-color);
-            border-color: var(--forums-link-color);
-        }
-    }
-
-    &.patreon {
-        &:hover {
-            background: variables.$patreon-link-color;
-            border-color: variables.$patreon-link-color;
-        }
-    }
-
-    &.paypal {
-        &:hover {
-            background: variables.$paypal-link-color;
-            border-color: variables.$paypal-link-color;
-        }
-    }
-
-    &.ko-fi {
-        &:hover {
-            background: variables.$ko-fi-link-color;
-            border-color: variables.$ko-fi-link-color;
-        }
-    }
-
-    &.gog {
-        &:hover {
-            background: var(--gog-link-color);
-            border-color: var(--gog-link-color);
-        }
-    }
-
-    &.steam {
-        &:hover {
-            background: var(--steam-link-color);
-            border-color: var(--steam-link-color);
-        }
-    }
-}
-
-// TODO: This will eventually become 'button rounder inverse'
-.round-button {
-    border-radius: 1.5em;
-    border: 1px solid;
-    display: inline-block;
-    padding: 0.5em 0.75em;
-}
-
-a.round-button {
-    @extend %round-button-link;
-
-    &.github {
-        background-color: var(--github-link-color);
-    }
-
-    &.docs {
-        background-color: var(--important-link-color);
-    }
-
-    &.forums {
-        background-color: var(--forums-link-color);
-    }
-
-    &.patreon {
-        background-color: variables.$patreon-link-color;
-    }
-
-    &.paypal {
-        background-color: variables.$paypal-link-color;
-    }
-
-    &.ko-fi {
-        background-color: variables.$ko-fi-link-color;
-    }
-
-    &.gog {
-        color: var(--gog-link-color);
-    }
-
-    &.steam {
-        color: var(--steam-link-color);
-    }
-}
-
-%round-button-link {
-    &:hover {
-        border-color: variables.$link-color;
-        text-decoration: none;
-    }
-
-    color: variables.$background-color;
-
-    &.github {
-        &:hover {
-            background: var(--github-link-hover-color);
-            border-color: var(--github-link-hover-color);
-        }
-
-        background: var(--github-link-color);
-        border-color: var(--github-link-color);
-    }
-
-    &.docs {
-        &:hover {
-            background: var(--important-link-hover-color);
-            border-color: var(--important-link-hover-color);
-        }
-
-        background: var(--important-link-color);
-        border-color: var(--important-link-color);
-    }
-
-    &.forums {
-        &:hover {
-            background: var(--forums-link-hover-color);
-            border-color: var(--forums-link-hover-color);
-        }
-
-        background: var(--forums-link-color);
-        border-color: var(--forums-link-color);
-    }
-
-    &.patreon {
-        &:hover {
-            background: color.adjust(variables.$patreon-link-color, $lightness: -15%);
-            border-color: color.adjust(variables.$patreon-link-color, $lightness: -15%);
-        }
-
-        background: variables.$patreon-link-color;
-        border-color: variables.$patreon-link-color;
-    }
-
-    &.paypal {
-        &:hover {
-            background: color.adjust(variables.$paypal-link-color, $lightness: -15%);
-            border-color: color.adjust(variables.$paypal-link-color, $lightness: -15%);
-        }
-
-        background: variables.$paypal-link-color;
-        border-color: variables.$paypal-link-color;
-    }
-
-    &.ko-fi {
-        &:hover {
-            background: color.adjust(variables.$ko-fi-link-color, $lightness: -15%);
-            border-color: color.adjust(variables.$ko-fi-link-color, $lightness: -15%);
-        }
-
-        background: variables.$ko-fi-link-color;
-        border-color: variables.$ko-fi-link-color;
-    }
-}
-
 %body-link {
-    &:hover {
+    a:hover {
         text-decoration: underline;
         color: color.adjust(variables.$link-color, $lightness: -15%);
     }

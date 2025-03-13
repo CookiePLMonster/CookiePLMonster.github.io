@@ -120,7 +120,10 @@ $text-color: var(--text-color);
     --line-color: #{color.adjust($text-color-light, $alpha: -0.75)};
 
     --gog-link-color: #8900d9;
+    --gog-link-hover-color: #{color.adjust(#8900d9, $lightness: -15%)};
+
     --steam-link-color: #0a4d7f;
+    --steam-link-hover-color: #{color.adjust(#0a4d7f, $lightness: -15%)};
 
     .theme-icon:before {
         content: "\f186";
@@ -149,7 +152,10 @@ $text-color: var(--text-color);
     --line-color: #{color.adjust($text-color-dark, $alpha: -0.25)};
 
     --gog-link-color: #c900ea;
+    --gog-link-hover-color: #{color.adjust(#c900ea, $lightness: -15%)};
+
     --steam-link-color: #0179ad;
+    --steam-link-hover-color: #{color.adjust(#0179ad, $lightness: -15%)};
 
      .theme-icon:before {
         content: "\f185";

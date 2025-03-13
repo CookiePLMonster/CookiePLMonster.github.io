@@ -5,21 +5,22 @@
     width: 100%;
     display: inline-block;
     @extend %padding-nav;
+    @extend %body-link;
 
     > div {
       width: 50%;
     }
-  
+
     #previous-post {
       float: left;
       text-align: left;
     }
-  
+
     #next-post {
       float: right;
       text-align: right;
     }
-  
+
     @media screen and (max-width: variables.$sm-break) {
       a, p {
         font-size: 0.8em;

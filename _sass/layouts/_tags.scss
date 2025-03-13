@@ -32,8 +32,8 @@
 
     li {
         display: flow-root list-item;
+        @extend %body-link;
         a {
-            @extend %body-link;
             color: var(--header-link-color);
         }
     }
