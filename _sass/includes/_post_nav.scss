@@ -5,7 +5,6 @@
     width: 100%;
     display: inline-block;
     @extend %padding-nav;
-    @extend %body-link;
 
     > div {
       width: 50%;

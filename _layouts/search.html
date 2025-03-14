@@ -16,7 +16,7 @@ no_anchor: true
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
             json: '{% link assets/data/search.json %}',
-            searchResultTemplate: '<div><a href="{url}"><h2>{title}</h2></a><span class="meta">{date} <span class="right"><i class="fas fa-folder"></i> {category}  {tags}</span></span><p>{excerpt}</p></div><hr> ',
+            searchResultTemplate: '<div><h2><a href="{url}">{title}</a></h2><span class="meta">{date} <span class="right"><i class="fas fa-folder"></i> {category}  {tags}</span></span><p>{excerpt}</p></div><hr> ',
             noResultsText: '<p>No results found.</p>',
             limit: 25,
             fuzzy: false,

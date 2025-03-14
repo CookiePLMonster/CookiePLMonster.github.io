@@ -12,17 +12,6 @@
     }
 }
 
-.tag-anchor {
-    margin-bottom: variables.$padding-x-small;
-    a {
-        color: variables.$link-color;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
-
 .list-icons {
     @extend .fa-ul;
     font-weight: bold;
@@ -32,10 +21,7 @@
 
     li {
         display: flow-root list-item;
-        @extend %body-link;
-        a {
-            color: var(--header-link-color);
-        }
+        @extend %uncolored-link;
     }
 
     ul, ol {

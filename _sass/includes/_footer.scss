@@ -4,8 +4,6 @@
 
 .site-footer {
     @extend %padding-post;
-    @extend %body-link;
-    color: var(--footer-text-color);
     font-size: 0.9em;
     text-align: center;
 

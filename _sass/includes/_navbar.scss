@@ -1,12 +1,10 @@
 @use "base/variables";
+@use "base/utility";
 
 .site-header {
+    @extend %uncolored-link;
     padding: 2% 2% 1% 2%;
     display: flow-root;
-
-    a {
-        color: var(--header-link-color);
-    }
 
     .avatar {
         height: 3em;
@@ -45,17 +43,11 @@
                 margin-inline-start: 0.45em;
             }
         }
-        a {
-            &:hover {
-                color: variables.$link-color;
-            }
-            &#pull {
-                i {
-                    margin-top: 22px;
-                    margin-right: 18px;
-                    float: right;
-                }
-
+        a#pull {
+            i {
+                margin-top: 22px;
+                margin-right: 18px;
+                float: right;
             }
         }
     }

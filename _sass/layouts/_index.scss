@@ -19,10 +19,6 @@
             margin-block-end: 0;
         }
 
-        a:hover {
-            color: color.adjust(variables.$link-color, $lightness: 10%);
-        }
-
         .post-img {
             border-radius: 10px;
             overflow: hidden;

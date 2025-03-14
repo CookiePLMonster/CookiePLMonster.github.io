@@ -124,10 +124,14 @@ $button-colors: (
     @extend %flexible-2d-block;
 }
 
-%body-link {
-    a:hover {
-        text-decoration: underline;
-        color: color.adjust(variables.$link-color, $lightness: -15%);
+%uncolored-link {
+    a {
+        color: unset;
+
+        &:hover {
+            color: color.adjust(variables.$link-color, $lightness: 10%);
+            text-decoration: unset;
+        }
     }
 }
 

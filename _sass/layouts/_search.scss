@@ -49,13 +49,8 @@
 
 .search-results {
     > div {
-        > a {
-            h2 {
-                margin: 0;
-            }
-            &:hover {
-                text-decoration: none;
-            }
+        > h2:first-of-type {
+            margin: 0;
         }
         > .meta {
             display: flow-root;
