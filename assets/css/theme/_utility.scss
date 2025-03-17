@@ -1,6 +1,7 @@
 @use "variables";
 @use "external/fontawesome-glue" as fa;
 @use "sass:color";
+@use "sass:map";
 
 // Mix-ins
 %padding-nav {
@@ -115,7 +116,7 @@ $button-colors: (
     @include button-coloring(variables.$link-color, null);
     @each $name, $colors in $button-colors {
         &.#{$name} {
-            @include button-coloring(map-get($colors, color), map-get($colors, hover));
+            @include button-coloring(map.get($colors, color), map.get($colors, hover));
         }
     }
 }

@@ -8,6 +8,7 @@
 
     > * {
         flex: 0 0 calc((100% - 0.5em) / 3); // 2/3 of the gap
+        position: relative;
 
         @media screen and (max-width: variables.$break) {
             flex-basis: calc(50% - 0.125em); // 1/2 of the gap
@@ -17,7 +18,6 @@
             flex-basis: 100%;
         }
 
-        position: relative;
         .cell-front {
             z-index: 1;
             position: absolute;
