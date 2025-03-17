@@ -1,4 +1,59 @@
 ---
 ---
 
-@use "type-on-strap";
+@use 'theme/variables';
+
+@use 'external/fontawesome-glue' with (
+    $fa-font-path: 'fontawesome',
+    $fa-inverse: var(--background-color),
+    $fa-li-margin: 2em,
+    $fa-li-width: 1.5em,
+    $fa-stack-width: 2em
+);
+
+// External
+@use 'external/reset';
+@use 'external/syntax' with (
+    $monospace: variables.$monospace,
+    $font-size-code: variables.$font-size-code,
+    $border-radius: variables.$border-radius,
+    $base00: variables.$base00,
+    $base01: variables.$base01,
+    $base02: variables.$base02,
+    $base03: variables.$base03,
+    $base04: variables.$base04,
+    $base05: variables.$base05,
+    $base06: variables.$base06,
+    $base07: variables.$base07,
+    $base08: variables.$base08,
+    $base09: variables.$base09,
+    $base0a: variables.$base0a,
+    $base0b: variables.$base0b,
+    $base0c: variables.$base0c,
+    $base0d: variables.$base0d,
+    $base0e: variables.$base0e,
+    $base0f: variables.$base0f,
+);
+@use 'external/icomoon';
+
+@use 'theme/global';
+@use 'theme/utility';
+
+// Posts
+@use 'theme/layouts/posts';
+@use 'theme/layouts/index';
+@use 'theme/layouts/page';
+@use 'theme/layouts/tags';
+@use 'theme/layouts/search';
+
+// Includes
+@use 'theme/includes/theme';
+@use 'theme/includes/footer';
+@use 'theme/includes/post_nav';
+@use 'theme/includes/navbar';
+@use 'theme/includes/mods';
+@use 'theme/includes/portfolio';
+@use 'theme/includes/item-grid';
+@use 'theme/includes/share_buttons';
+@use 'theme/includes/embed_media';
+@use 'theme/includes/bonuscodes';

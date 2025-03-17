@@ -1,6 +1,5 @@
-@use "base/variables";
-@use "base/utility";
-@use "sass:color";
+@use "../variables";
+@use "../utility";
 
 .site-footer {
     @extend %padding-post;

@@ -1,5 +1,5 @@
-@use "base/variables";
-@use "base/utility";
+@use "../variables";
+@use "../utility";
 
 .title-padder {
     padding: calc(#{variables.$title-padding} + 0.5em) variables.$title-padding;

@@ -1,5 +1,5 @@
-@use "base/variables";
-@use 'base/utility';
+@use "../variables";
+@use '../utility';
 @use "external/fontawesome-glue" as fa;
 
 .tag-list {

@@ -1,0 +1,81 @@
+@use "sass:color";
+@use "../variables";
+
+@mixin light-theme {
+    --brand-color: #{variables.$brand-color-light};
+    --background-color: #{variables.$background-color-light};
+    --text-color: #{variables.$text-color-light};
+    --blockquote-color: #{variables.$blockquote-color-light};
+
+    --github-link-color: #{color.adjust(variables.$github-color, variables.$lightness: -10%)};
+    --github-link-hover-color: #{color.adjust(color.adjust(variables.$github-color, variables.$lightness: -10%), variables.$lightness: -15%)};
+
+    --important-link-color: #{variables.$important-color-light};
+    --important-link-hover-color: #{color.adjust(variables.$important-color-light, variables.$lightness: -15%)};
+
+    --forums-link-color: #{variables.$text-color-light};
+    --forums-link-hover-color: #{color.adjust(variables.$text-color-light, variables.$lightness: -15%)};
+
+    --blockquote-border-color: #{color.adjust(variables.$blockquote-color-light, variables.$lightness: -20%)};
+
+    --highlighter-rouge-color: rgb(36, 41, 46);
+    --highlighter-rouge-bg-color: #{color.adjust(variables.$base00, variables.$alpha: -0.85)};
+
+    --line-color: #{color.adjust(variables.$text-color-light, variables.$alpha: -0.75)};
+
+    --gog-link-color: #8900d9;
+    --gog-link-hover-color: #{color.adjust(#8900d9, variables.$lightness: -15%)};
+
+    --steam-link-color: #0a4d7f;
+    --steam-link-hover-color: #{color.adjust(#0a4d7f, variables.$lightness: -15%)};
+
+    .theme-icon:before {
+        content: "\f186";
+    }
+}
+
+@mixin dark-theme {
+    --brand-color: #{variables.$brand-color-dark};
+    --background-color: #{variables.$background-color-dark};
+    --text-color: #{variables.$text-color-dark};
+    --blockquote-color: #{variables.$blockquote-color-dark};
+
+    --important-link-color: #{variables.$important-color-dark};
+    --important-link-hover-color: #{color.adjust(variables.$important-color-dark, variables.$lightness: -15%)};
+
+    --forums-link-color: #{variables.$text-color-dark};
+    --forums-link-hover-color: #{color.adjust(variables.$text-color-dark, variables.$lightness: -15%)};
+
+    --blockquote-border-color: #{color.adjust(variables.$blockquote-color-dark, variables.$lightness: 20%)};
+
+    --highlighter-rouge-color: rgb(219, 214, 209);
+    --highlighter-rouge-bg-color: #{color.invert(color.adjust(variables.$base00, variables.$alpha: -0.85), 100%)};
+
+    --line-color: #{color.adjust(variables.$text-color-dark, variables.$alpha: -0.25)};
+
+    --gog-link-color: #c900ea;
+    --gog-link-hover-color: #{color.adjust(#c900ea, variables.$lightness: -15%)};
+
+    --steam-link-color: #0179ad;
+    --steam-link-hover-color: #{color.adjust(#0179ad, variables.$lightness: -15%)};
+
+     .theme-icon:before {
+        content: "\f185";
+    }
+}
+
+html[data-theme="light"] {
+    @include light-theme;
+}
+
+html[data-theme="dark"] {
+    @include dark-theme;
+}
+
+html {
+    @extend html, [data-theme="light"];
+
+    @media (prefers-color-scheme: dark) {
+        @include dark-theme;
+    }
+}

@@ -1,11 +1,10 @@
-/* 
- * Use `npm install` to install all the dependencies located in package.json 
+/*
+ * Use `npm install` to install all the dependencies located in package.json
  * Then `gulp default` to minimize css and images.
  */
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-terser');
-const cleanCSS = require('gulp-clean-css');
 
 gulp.task('js', gulp.parallel(function() {
     return gulp.src(['js/partials/main/**.js'])
@@ -34,14 +33,4 @@ gulp.task('js', gulp.parallel(function() {
     })
 );
 
-gulp.task('css', gulp.parallel(function() {
-    return gulp.src('css/vendor/juxtapose.css')
-      .pipe(cleanCSS())
-      .on('error', (err) => {
-        console.log(err.toString())
-      })
-      .pipe(concat('juxtapose.min.css'))
-      .pipe(gulp.dest('css/vendor/'));
-  }));
-
-gulp.task("default", gulp.series(gulp.parallel('js', 'css')));
+gulp.task("default", 'js');

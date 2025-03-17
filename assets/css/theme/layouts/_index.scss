@@ -1,6 +1,6 @@
 @use "sass:color";
-@use "base/variables";
-@use "base/utility";
+@use "../variables";
+@use "../utility";
 
 #main {
     background-position: center top;
