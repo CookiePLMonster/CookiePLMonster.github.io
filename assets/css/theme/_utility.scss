@@ -198,9 +198,7 @@ $button-colors: (
 }
 
 .left-page-margin {
-    @media not (max-width: variables.$break) {
-        margin-inline-start: 2em;
-    }
+    margin-inline-start: 1em;
 }
 
 .disclaimer {
