@@ -11,7 +11,7 @@ order: 0
 # PlayStation games {#ps1}
 
 {:.sidenote}
-Recommended emulator: DuckStation ([Desktop](https://github.com/stenzek/duckstation/), [Android](https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation))
+Recommended emulator: DuckStation ([Desktop](https://github.com/stenzek/duckstation/){:target="_blank"}, [Android](https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation){:target="_blank"})
 
 {% assign ps1_items = site.games | where:"parent-series", "console-ps1" %}
 {% include mods-grid.html items=ps1_items %}
@@ -21,7 +21,7 @@ Recommended emulator: DuckStation ([Desktop](https://github.com/stenzek/duckstat
 # PlayStation 2 games {#ps2}
 
 {:.sidenote}
-Recommended emulator: [PCSX2](https://pcsx2.net/) (Desktop), [AetherSX2](https://play.google.com/store/apps/details?id=xyz.aethersx2.android) (Android)
+Recommended emulator: [PCSX2](https://pcsx2.net/){:target="_blank"} (Desktop), [AetherSX2](https://play.google.com/store/apps/details?id=xyz.aethersx2.android){:target="_blank"} (Android)
 
 {% assign ps2_items = site.games | where:"parent-series", "console-ps2" %}
 {% include mods-grid.html items=ps2_items %}
@@ -31,7 +31,7 @@ Recommended emulator: [PCSX2](https://pcsx2.net/) (Desktop), [AetherSX2](https:/
 # PlayStation Portable games {#psp}
 
 {:.sidenote}
-Recommended emulator: [PPSSPP](https://www.ppsspp.org/) (Desktop, Android)
+Recommended emulator: [PPSSPP](https://www.ppsspp.org/){:target="_blank"} (Desktop, Android)
 
 {% assign psp_items = site.games | where:"parent-series", "console-psp" %}
 {% include mods-grid.html items=psp_items %}

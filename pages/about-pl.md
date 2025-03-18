@@ -11,8 +11,8 @@ locale: pl_PL
 
 {:.sidenote}
 Ta strona dostępna jest w:
-<a href="{% link pages/about.md %}" style="white-space: nowrap" lang="en" hreflang="en">{{ site.theme_settings.gb_flag }} English</a>
-<a href="{% link pages/about-pl.md %}" style="white-space: nowrap" lang="pl" hreflang="pl">{{ site.theme_settings.pl_flag }} polski</a>
+[{{ site.theme_settings.gb_flag }} English]({% link pages/about.md %}){:style="white-space:nowrap" lang="en" hreflang="en"}
+[{{ site.theme_settings.pl_flag }} polski]({% link pages/about-pl.md %}){:style="white-space:nowrap" lang="pl" hreflang="pl"}
 
 ***
 
@@ -28,7 +28,7 @@ Odkąd pamiętam, zawsze w&nbsp;jakiś sposób grzebałem w&nbsp;plikach gier. P
 to m.in. podmienianie plików dźwiękowych w&nbsp;Driverze, modyfikowanie tekstur w&nbsp;różnych grach freeware,
 próby rozbudowywania Javowych skryptów Street Legal Racing Redline (jednak z&nbsp;marnym skutkiem).
 Pierwsze poważniejsze modyfikacje zacząłem tworzyć w&nbsp;2008 roku, kiedy po raz pierwszy zagłębiłem się
-w&nbsp;Grand Theft Auto: San Andreas i&nbsp;używany w&nbsp;nim [język skryptowy](https://gtamods.com/wiki/SCM_language).
+w&nbsp;Grand Theft Auto: San Andreas i&nbsp;używany w&nbsp;nim [język skryptowy](https://gtamods.com/wiki/SCM_language){:target="_blank"}.
 Po jakimś czasie zacząłem chcieć robić więcej niż pozwalały same skrypty, więc po około
 dwóch latach zacząłem zagłębiać się w&nbsp;kod gry za pomocą inżynierii zwrotnej i&nbsp;eksperymentować z&nbsp;coraz to
 bardziej złożonymi hackami w&nbsp;asemblerze (tak, zanim nauczyłem się jakiegokolwiek języka wysokiego poziomu,
@@ -55,9 +55,9 @@ Czym zajmuję się obecnie?
   **daj mi znać -- nawet jeśli nie masz dostępu do kodu źródłowego tej gry!**
 * Za dnia zajmuję się portowaniem i&nbsp;współtworzeniem gier (sprawdź moje [Portfolio]({% link pages/portfolio.md %})).
 * Wciąż wydaję nowe modyfikacje i&nbsp;patche (sprawdź moje [Mody & Patche]({% link pages/mods.md %})). Moje hobby obejmuje ponad 40 gier na różnych platformach.
-* Okazjonalnie udzielam się w&nbsp;różnych projektach z&nbsp;otwartym kodem źródłowym, takich jak np. [OpenRCT2](https://openrct2.io/) czy [PCSX2](https://pcsx2.net/)
-  (sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster)).
-* Regularnie udzielam się w&nbsp;[projekcie Redump Disc Preservation](http://redump.org/). Swoją działalność skupiam na utrwalaniu płyt PC.
+* Okazjonalnie udzielam się w&nbsp;różnych projektach z&nbsp;otwartym kodem źródłowym, takich jak np. [OpenRCT2](https://openrct2.io/){:target="_blank"} czy [PCSX2](https://pcsx2.net/){:target="_blank"}
+  (sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster){:target="_blank"}).
+* Regularnie udzielam się w&nbsp;[projekcie Redump Disc Preservation](http://redump.org/){:target="_blank"}. Swoją działalność skupiam na utrwalaniu płyt PC.
 
 {% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}

@@ -8,8 +8,8 @@ permalink: /about/
 
 {:.sidenote}
 This page is available in:
-<a href="{% link pages/about.md %}" style="white-space: nowrap" lang="en" hreflang="en">{{ site.theme_settings.gb_flag }} English</a>
-<a href="{% link pages/about-pl.md %}" style="white-space: nowrap" lang="pl" hreflang="pl">{{ site.theme_settings.pl_flag }} polski</a>
+[{{ site.theme_settings.gb_flag }} English]({% link pages/about.md %}){:style="white-space:nowrap" lang="en" hreflang="en"}
+[{{ site.theme_settings.pl_flag }} polski]({% link pages/about-pl.md %}){:style="white-space:nowrap" lang="pl" hreflang="pl"}
 
 ***
 
@@ -25,7 +25,7 @@ For as long as I can remember, I've been tinkering with games in one way or anot
 The earliest <q>attempts</q> I can recall included replacing sounds in Driver or modifying textures in various freeware games,
 and trying to modify Java scripts in Street Legal Racing Redline (with poor results, however).
 My first more serious work dates to 2008, when I first dived into Grand Theft Auto: San Andreas and [its scripting
-engine](https://gtamods.com/wiki/SCM_language). I eventually wanted to do more than what game scripts allowed for,
+engine](https://gtamods.com/wiki/SCM_language){:target="_blank"}. I eventually wanted to do more than what game scripts allowed for,
 and so, after around two years I got into reverse engineering the game and started experimenting with increasingly
 complex assembly hacks (yes, I did code in assembly before learning any high-level languages).
 Eventually, this led to me starting to use C++ in mid-2011.
@@ -51,10 +51,10 @@ What am I up to these days?
   **drop me a line -- even if you don’t have access to your game's source code!**
 * I port and co-develop games as my day job (see my [Portfolio]({% link pages/portfolio.md %})).
 * I still release new modifications and patches (see my [Mods & Patches]({% link pages/mods.md %})). My hobby work spans across over 40 games on multiple platforms.
-* I occasionally contribute to numerous open-source projects, such as [OpenRCT2](https://openrct2.io/) or [PCSX2](https://pcsx2.net/)
-  (see my [GitHub activity](https://github.com/CookiePLMonster)).
-* I regularly contribute to [Redump Disc Preservation Project](http://redump.org/), concentrating my efforts on preserving PC discs.
-* I regularly contribute to [PCGamingWiki](https://www.pcgamingwiki.com/), documenting the state of various PC games and troubleshooting issues.
+* I occasionally contribute to numerous open-source projects, such as [OpenRCT2](https://openrct2.io/){:target="_blank"} or [PCSX2](https://pcsx2.net/){:target="_blank"}
+  (see my [GitHub activity](https://github.com/CookiePLMonster){:target="_blank"}).
+* I regularly contribute to [Redump Disc Preservation Project](http://redump.org/){:target="_blank"}, concentrating my efforts on preserving PC discs.
+* I regularly contribute to [PCGamingWiki](https://www.pcgamingwiki.com/){:target="_blank"}, documenting the state of various PC games and troubleshooting issues.
 
 {:.sidenote}
 Last update: {{ page.last_modified_at | date: page.date-format }}
