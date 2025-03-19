@@ -78,20 +78,6 @@ h4 {
     font-size: 1.15em;
 }
 
-q {
-    &:lang(pl) {
-        quotes: "\201E" "\201D" "\00BB" "\00AB";
-    }
-
-    &:before {
-        content: open-quote;
-    }
-
-    &:after {
-        content: close-quote;
-    }
-}
-
 blockquote {
     @extend %highlight-block;
     margin: 1em;
