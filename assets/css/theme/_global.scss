@@ -8,14 +8,6 @@
     box-sizing: border-box;
 }
 
-figure {
-    margin: 0;
-}
-
-html {
-    background: variables.$background-color;
-}
-
 // Typography
 @font-face {
     font-family: 'Sans 3 Fallback 1';
@@ -43,8 +35,9 @@ html {
     src: local('Roboto');
 }
 
-body {
+:root {
     color: variables.$text-color;
+    background: variables.$background-color;
     font-family: variables.$font-family;
     font-optical-sizing: auto;
     font-size: variables.$font-size;
@@ -291,7 +284,7 @@ summary {
         font-size: 100%;
     }
 
-    * {
+    :root {
         --fa-li-margin: 1em;
     }
 }

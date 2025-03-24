@@ -72,7 +72,7 @@ html[data-theme="dark"] {
     @include dark-theme;
 }
 
-html {
+:root {
     @extend html, [data-theme="light"];
 
     @media (prefers-color-scheme: dark) {
