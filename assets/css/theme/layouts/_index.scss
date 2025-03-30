@@ -65,22 +65,26 @@
 
 // Pagination
 .pagination {
-    padding: variables.$padding-small variables.$padding-large 0 variables.$padding-large;
+    padding: variables.$padding-small variables.$padding-large 0;
     text-align: center;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: variables.$sm-break) {
         padding: variables.$padding-small 0;
     }
 
     .nav-left {
         margin-right: 1.5em;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: variables.$sm-break) {
             margin-right: 0.75em;
         }
     }
     .nav-right {
         margin-left: 1.5em;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: variables.$sm-break) {
             margin-left: 0.75em;
         }
+    }
+
+    .hide {
+        visibility: hidden;
     }
 }

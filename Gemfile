@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'sass-embedded', '~> 1.85', '>= 1.85.1'
+gem 'sass-embedded', '~> 1.86'
 group :jekyll_plugins do
-	gem 'jekyll-paginate', '~> 1.1'
+	gem 'jekyll-paginate-v2', '~> 3.0'
 	gem 'jekyll-seo-tag', '~> 2.8'
 	gem 'jekyll-redirect-from', '~> 0.16.0'
 	gem 'jekyll-feed', '~> 0.17.0'

@@ -25,7 +25,7 @@ you're experiencing issues listed there, they will be resolved soon!
 Notable mod releases on my blog usually accompany a blog post, but smaller ones are not. Therefore, if you are not following
 me on any social media and are not checking the Mods pages regularly, you may have missed the release of e.g.
 [Triggers Control Mappings for NFS Hot Pursuit 2 (PS2)]({% link _games/need-for-speed/need-for-speed-hot-pursuit-2-ps2.md %}#triggers-control-mappings).
-I now come up with a solution -- in the top navigation bar, you may find a new [**Updates**]({% link pages/updates.md %}) feed!
+I now come up with a solution -- in the top navigation bar, you may find a new [**Updates**](/updates/) feed!
 Available as a page or an RSS feed, the **Updates** feed will list information about:
 * New mod releases.
 * Mod updates, no matter how small.

@@ -4,15 +4,20 @@ title: Updates
 subtitle: Mod updates, blog additions, new releases.
 excerpt: Mod updates, blog additions, new releases.
 permalink: /updates/
+pagination:
+  enabled: true
+  per_page: 10
+  collection: updates
 ---
 
-This list is also available as an RSS feed:
+<p>This list is also available as an RSS feed:
 <a href="{{ site.baseurl }}/feed/updates.xml" title="{{ site.theme_settings.str_rss_follow }}"><i class="fas fa-rss"></i></a>
+</p>
 
-***
+<hr>
 
 <div class="posts smaller-gaps">
-  {% for entry in site.updates reversed %}
+  {% for entry in paginator.posts %}
   <section>
     <h2 class="heading-big">
       <a href="{{ entry.url | relative_url }}">

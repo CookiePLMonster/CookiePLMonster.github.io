@@ -15,7 +15,7 @@
     <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% for page in site.pages -%}
-        {%- if page.title and page.hide != true -%}
+        {%- if page.title and page.hide != true and page.autogen == nil -%}
         <li>
             <a href="{{ page.url | relative_url }}">
                 {{- page.title | smartify -}}

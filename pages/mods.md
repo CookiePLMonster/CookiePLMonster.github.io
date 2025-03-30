@@ -7,7 +7,7 @@ permalink: /mods/
 ---
 
 Looking for an easy-to-browse list? Check out the [**Mod Index**]({% link pages/mod-index.html %})!
-For details about the latest updates, visit the [**Updates**]({% link pages/updates.md %}) page.
+For details about the latest updates, visit the [**Updates**](/updates/) page.
 
 ***
 

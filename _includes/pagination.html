@@ -1,21 +1,29 @@
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
-    <span class="nav-left" style="{% unless paginator.previous_page %}visibility:hidden{% endunless %}">
-      <a href="{{ '/' | relative_url }}" style="{% unless paginator.previous_page != 1 %}visibility:hidden{% endunless %}" class="button thinner" aria-label="Go to first page">
+    <span class="nav-left
+      {%- if paginator.previous_page == nil %} hide{% endif -%}
+    ">
+      <a href="{{ paginator.first_page_path | default: '#' }}" class="button thinner
+        {%- if paginator.previous_page == paginator.first_page %} hide{% endif -%}
+      " aria-label="Go to first page">
         <i class="fas fa-angles-left"></i>
       </a>
-      <a href="{{ paginator.previous_page_path | relative_url | default: '#' }}" class="button thinner" aria-label="Go to previous page">
+      <a href="{{ paginator.previous_page_path | default: '#' }}" class="button thinner" aria-label="Go to previous page">
         <i class="fas fa-angle-left"></i>
         {{ site.theme_settings.str_previous_page }}
       </a>
     </span>
     {{ paginator.page }} / {{ paginator.total_pages }}
-    <span class="nav-right" style="{% unless paginator.next_page %}visibility:hidden{% endunless %}">
-      <a href="{{ paginator.next_page_path | relative_url | default: '#' }}" class="button thinner" aria-label="Go to next page">
+    <span class="nav-right
+      {%- if paginator.next_page == nil %} hide{% endif -%}
+    ">
+      <a href="{{ paginator.next_page_path | default: '#' }}" class="button thinner" aria-label="Go to next page">
         {{ site.theme_settings.str_next_page }}
         <i class="fas fa-angle-right"></i>
       </a>
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages | default: '#' }}" style="{% unless paginator.next_page != paginator.total_pages %}visibility:hidden{% endunless %}" class="button thinner" aria-label="Go to last page">
+      <a href="{{ paginator.last_page_path | default: '#' }}" class="button thinner
+        {%- if paginator.next_page == paginator.last_page %} hide{% endif -%}
+      " aria-label="Go to last page">
         <i class="fas fa-angles-right"></i>
       </a>
     </span>
