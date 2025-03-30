@@ -52,10 +52,10 @@
     .excerpt {
         margin-block: 1em;
         &.read-more {
-            > p:last-of-type {
+            > p:nth-last-child(2) {
                 display: inline;
             }
-            > a p {
+            > :last-child p {
                 display: inline;
                 @extend .sidenote;
             }
