@@ -21,7 +21,6 @@ Originally released in 2013 for the classic Grand Theft Auto titles (GTA III, Vi
 
 What makes a **SilentPatch**? The released patches adhere to several core values that set them apart from other, more broadly defined, unofficial patches:
 
-{: .dl-no-indent }
 "Be free for everyone"
 : **SilentPatch** downloads are never hidden behind a paywall.
 
