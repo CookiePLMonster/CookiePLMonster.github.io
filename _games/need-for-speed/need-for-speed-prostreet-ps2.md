@@ -5,5 +5,5 @@ image: "assets/img/games/need-for-speed-prostreet.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-prostreet.jpg"
 parent-series: "console-ps2"
 game-series: "need-for-speed-prostreet-ps2"
-order: "need for speed prostreet"
+order: "need for speed 12"
 ---

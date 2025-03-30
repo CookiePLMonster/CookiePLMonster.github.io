@@ -5,5 +5,5 @@ image: "assets/img/games/need-for-speed-carbon.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-carbon.jpg"
 parent-series: "console-ps2"
 game-series: "need-for-speed-carbon-ps2"
-order: "need for speed carbon"
+order: "need for speed 10"
 ---

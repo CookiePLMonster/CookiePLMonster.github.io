@@ -5,7 +5,7 @@ image: "assets/img/games/need-for-speed-underground.jpg"
 feature-img: "assets/img/games/bg/need-for-speed-underground.jpg"
 parent-series: "console-ps2"
 game-series: "need-for-speed-underground-ps2"
-order: "need for speed underground"
+order: "need for speed 07"
 ---
 
 {:.disclaimer.info}
