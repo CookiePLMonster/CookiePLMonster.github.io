@@ -6,7 +6,13 @@
     justify-content: center;
     margin-block-end: 1em;
 
-    > * {
+    // Make sure the size is preserved if the image fails to load
+    img {
+        width: 100%;
+        display: inline-block;
+    }
+
+    > a {
         flex: 0 0 calc((100% - 0.5em) / 3); // 2/3 of the gap
         position: relative;
 
