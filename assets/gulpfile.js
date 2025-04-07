@@ -23,7 +23,7 @@ gulp.task('js', gulp.parallel(function() {
             })
             .pipe(gulp.dest("js/"))
     }, function() {
-        return gulp.src(['js/vendor/juxtapose.min.js'])
+        return gulp.src(['js/partials/juxtapose/**.js'])
         .pipe(concat('juxtapose.min.js'))
         .pipe(uglify())
         .on('error', (err) => {

@@ -215,5 +215,5 @@ sass:
   quiet_deps: true
 plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-redirect-from, jekyll-feed, jekyll-sitemap, jekyll-include-cache, jekyll-image-size]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
-exclude: [".ruby-version", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/package-lock.json", "assets/node_modules", "assets/gulpfile.js", ".idea/*", "scratch", "assets/img/*.py"]
+exclude: [".ruby-version", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/package-lock.json", "assets/node_modules", "assets/gulpfile.js", ".idea/*", "scratch", "assets/img/*.py", "assets/js/partials"]
 include: ["__init__.py"]
