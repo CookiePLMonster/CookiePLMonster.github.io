@@ -6,6 +6,10 @@
     display: inline-block;
     @extend %padding-nav;
 
+    a {
+      line-height: 1.5;
+    }
+
     > div {
       width: 50%;
     }
