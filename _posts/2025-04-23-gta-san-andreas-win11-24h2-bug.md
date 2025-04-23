@@ -85,7 +85,7 @@ the game froze in a very small loop in `CPlane::PreRender`, attempting to normal
 
 ```cpp
 this->m_fBladeAngle = CTimer::ms_fTimeStep * this->m_fBladeSpeed + this->m_fBladeAngle;
-while (v12 > 6.2831855)
+while (this->m_fBladeAngle > 6.2831855)
 {
   this->m_fBladeAngle = this->m_fBladeAngle - 6.2831855;
 }
