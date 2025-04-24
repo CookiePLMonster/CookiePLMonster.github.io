@@ -34,10 +34,7 @@ There are a few other issues reported (such as DoF not scaling above 1080p), but
 ## Broken frame pacing
 
 First of all, let's use RTSS to visualize the current frame times:
-<p align="center">
-<img src="{% link assets/img/posts/spw101/rtss1.jpg %}"><br>
-<em>Yikes.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/spw101/rtss1.jpg" caption="Yikes." %}
 
 I'm usually the last person to complain about uneven framerates, but this indeed looks bad. Not only the framerate is all over the place, but it also never reaches stable 60 at all.
 This is something worth looking into.
@@ -89,9 +86,7 @@ What seems to happen here is that after around 75-80 minutes of gameplay, those 
 then at 4 hours it springs up to 62 FPS (presumably due to `double`'s exponent value changing, but I have not measured that).
 
 As a test, I faked the game's uptime of 20 hours and compared the calculated frame times with a fresh session. At that point, the game's frame limiter just "gave up" and my game was locked to around 120 FPS.
-<p align="center">
-<img src="{% link assets/img/posts/spw101/limping-frametime.jpg %}">
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/spw101/limping-frametime.jpg" style="natural" %}
 
 Note: While the output says 50ms, it is, in fact, 50/3ms -- notice how the frame limiter code multiplies the frame time by 3.0. It's done because `16.6(6) * 3 = 5`, and therefore
 comparisons can be performed on integers.
@@ -113,7 +108,7 @@ void EndFrame_Hook()
 
 	// Platinum (recreated)
 	static unsigned int lastPlatinumTime;
-	unsigned int prevPlatinumTime = std::exchange( lastPlatinumTime, GetInvFrequency() * static_cast<double>(GetProcessTime()) * 3.0 ); 
+	unsigned int prevPlatinumTime = std::exchange( lastPlatinumTime, GetInvFrequency() * static_cast<double>(GetProcessTime()) * 3.0 );
 
 	assert( (lastFrameTime - prevTime) == (lastPlatinumTime - prevPlatinumTime) );
 
@@ -125,7 +120,7 @@ void EndFrame_Hook()
 
 Replicating that code allowed me to finally understand where the inaccuracies come from. Calculations are performed like this:
 ```cpp
-do 
+do
 {
     processTime = GetProcessTime();
     T = (InvFrequency * processTime * 3.0) - LastT;
@@ -154,10 +149,7 @@ the expression to use `processTime-lastProcessTime` prevents inaccuracies, becau
 will always be a relatively small number, which can be expressed as a double and multiplied by `InvFrequency` without losing precision.
 
 Does it help? Let's see:
-<p align="center">
-<img src="{% link assets/img/posts/spw101/rtss2.jpg %}"><br>
-<em>Nice!</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/spw101/rtss2.jpg" caption="Nice!" %}
 
 It does! Frametimes are now smoother than ever, and they don't get any worse even if the game was to run for weeks. **Success!** With this, SilentPatch for The Wonderful 101 is ready.
 

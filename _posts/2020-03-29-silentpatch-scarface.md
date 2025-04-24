@@ -29,11 +29,11 @@ an answer -- at the time of writing this post, you can see the issue listed as o
 
 This doesn't tell much about how bad is it, so what does it look like?
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/screen-bug.png %}"><br>
-<img src="{% link assets/img/posts/scarface/ET0GUT7XgAo5jp4.jfif %}"><br>
-<img src="{% link assets/img/posts/scarface/ET0GVjTX0AUC6Ii.jfif %}">
-</p>
+<figure class="media-container small">
+{% include figures/image.html link="/assets/img/posts/scarface/screen-bug.jpg" %}
+{% include figures/image.html link="/assets/img/posts/scarface/ET0GUT7XgAo5jp4.jpg" %}
+{% include figures/image.html link="/assets/img/posts/scarface/ET0GVjTX0AUC6Ii.jpg" %}
+</figure>
 
 It is... very bad. While results vary across different PC's greatly, nearly **every** modern PC displays this
 broken mess, rendering the game unplayable. Of course, community came up with workarounds, but they sadly have their drawbacks:
@@ -51,7 +51,7 @@ a virtual machine, I can proceed to figuring this issue out.
 # Part one -- critical bugs
 
 Step one to figuring out such issues is of course attaching a debugger. This time, since the issue seems to be
-specific to D3D, I aided myself with [DirectX Wrappers](https://github.com/elishacloud/DirectX-Wrappers)
+specific to D3D, I aided myself with [DirectX Wrappers](https://github.com/elishacloud/DirectX-Wrappers){:target="_blank"}
 from Elisha Riedlinger. Having a minimal `d3d9.dll` wrapper is excellent for prototyping,
 since it allows me to instantly and reliably tap into game's rendering code without any game specific hacking.
 
@@ -59,7 +59,7 @@ That said, this issue could really be anything. That's where experience helps, s
 by just observing how the bug looks visually:
 * When in game, moving around makes those *shapes* move, possibly corresponding player character's animations.
 This means that at least part of this garbage is in fact Tony's model.
-* Results vary every session, and on some machines it might even look very different -- for example, 
+* Results vary every session, and on some machines it might even look very different -- for example,
 I have seen variations where most of the environment was not corrupted, but people were T-posing.
 
 I theoretized that this issue relates to vertex buffers not updating properly. At this point it's worth
@@ -96,9 +96,7 @@ However, game **always** locks entire buffers:
 Analyzing the code further though, I was not fully convinced that after discarding game always fills the entire buffer.
 So what if we assume the flag is added there wrongly and remove it?
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/ET-b9GeWsAI9uqk.jfif %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/ET-b9GeWsAI9uqk.jpg" %}
 
 It **works**! It doesn't seem to be a fluke either -- the game was consistently fixed for me and several other people
 who tested.
@@ -132,9 +130,7 @@ return hr;
 
 Much to my relief, the result was more or less what I expected:
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/garbage-vertices.png %}">
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/garbage-vertices.png" style="natural" %}
 
 Graphics were once again broken, which proves that game locks buffers with a `D3DLOCK_DISCARD` flag **and**
 expects the contents not to be thrown away! For me that's a satisfactory enough proof of API misuse,
@@ -152,20 +148,14 @@ Are we done? Well...
 I could technically finish here, as the most important issue has been fixed, and the game is playable.
 However, something was still off...
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/EUIv96BXsAAknUi.jfif %}"><br>
-<em>I have a i7-6700K and GTX 1070, mind you.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/EUIv96BXsAAknUi.jpg" caption="I have a i7-6700K and GTX 1070, mind you." %}
 
 My PC is nowhere close to "bad", yet I was unable to maintain stable 60 FPS -- in the area presented on a screenshot,
 I in fact got consistent 40-45 FPS. To say it's "terrible" would be an understatement.
 
 However, looking up process affinity in Task Manager reveals something... interesting:
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/ET-nl3yX0AI6fdl.png %}"><br>
-<em>It is like this on every game launch.</em>
-</p>
+{% include figures/image.html thumbnail="/assets/img/posts/scarface/ET-nl3yX0AI6fdl.png" style="natural" caption="It is like this on every game launch." %}
 
 Looking into the game's code again, it seems like the game voluntarily sets itself to run on only one core.
 Why? I don't know for sure, but I theoretized that this might have been a workaround for the aforementioned
@@ -179,10 +169,7 @@ Remove this code so game runs on all cores, and sure enough -- it's smooth as bu
 It also does not seem to have any visible race conditions (which could have been "hidden" by setting CPU affinity),
 because people tested it for hours and encountered no crashes or new bugs.
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/EUIv_AYWsAY_TWB.jfif %}"><br>
-<em>Now we're talking.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/EUIv_AYWsAY_TWB.jpg" caption="Now we're talking." %}
 
 On top of that, I also identified the game was creating the D3D device with a multithreaded flag -- which is said
 to degrade performance, and was absolutely unneeded for the game. Another performance gain!
@@ -191,7 +178,7 @@ to degrade performance, and was absolutely unneeded for the game. Another perfor
 
 Is there more we can do? Turns out, yes.
 
-When testing these fixes, [aap](https://github.com/aap) observed that the game ran really poorly on his PC -- technically,
+When testing these fixes, [aap](https://github.com/aap){:target="_blank"} observed that the game ran really poorly on his PC -- technically,
 it was full speed, but when driving around it'd hitch a lot. I also observed the same when debugging the game
 on a virtual machine, sometimes having the game pause for seconds at a time!
 
@@ -199,10 +186,7 @@ I checked it in a debugger, and much to my surprise, during those hitches the ga
 releasing buffers! I fired up PIX and immediately noticed how happy the game is to create new buffers (and thus
 unload old buffers) when driving around:
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/EUMgDBOXsAEvyCb.png %}"><br>
-<em>Load it all.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/EUMgDBOXsAEvyCb.png" style="natural" caption="Load it all." %}
 
 This is really unhealthy. There is no reason the game can't reuse buffers instead of throwing them away
 and creating new ones. Luckily, the game has only two types of vertex buffers (static buffers in a managed pool,
@@ -218,10 +202,7 @@ I settled on implementing a simplistic cache with the following behaviour:
 I implemented the cache and ran the same test -- it was really smooth in comparison for both me and aap!
 PIX graphs also looked much, much better now:
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface/EUOB65VXkAAzzAO.png %}"><br>
-<em>Reuse it all.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface/EUOB65VXkAAzzAO.png" style="natural" caption="Reuse it all." %}
 
 With this fix implemented, I finally was satisfied with the state of the game.
 Few final touches, and **SilentPatch for Scarface** is good to go!

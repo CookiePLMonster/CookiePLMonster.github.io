@@ -22,34 +22,25 @@ It was met with a positive response since it made the game playable for many, bu
 One of the fixes was to undo the CPU affinity changes the game made to itself, forcing itself to run on only one core.
 This promised great performance benefits, and it delivered, but it also came at a price:
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface-r2/glitches.jpg %}"><br>
-<em>Where did the road go? Oh, looks like streaming has locked up.</em>
-</p>
-
-<p align="center">
-<img src="{% link assets/img/posts/scarface-r2/redbox.jpg %}"><br>
-<em>There should be text here, but changing the CPU affinity broke it.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface-r2/glitches.jpg" caption="Where did the road go? Oh, looks like streaming has locked up." %}
+{% include figures/image.html link="/assets/img/posts/scarface-r2/redbox.jpg" caption="There should be text here, but changing the CPU affinity broke it." %}
 
 Depending on luck, PC configuration, and possibly also the stars, users would encounter a range of newly introduced issues like:
-* Streaming locking up
-* Infinite loading screens
-* Profiles not loading
-* Random crashes
+* Streaming locking up.
+* Infinite loading screens.
+* Profiles not loading.
+* Random crashes.
 
 Turns out, those are entirely on me and they are all side effects of allowing the game to run on any CPU core,
 opening a Pandora's box full of race conditions in the game that are probably harmless while contained to a single core,
 but not as much when it can run on 8+ threads.
 
-However, the alternative (that is undoing that change and confining the game to a single core) is also bad. 
+However, the alternative (that is undoing that change and confining the game to a single core) is also bad.
 Here's Scarface (with CPU affinity locked to one core) running on an i9-12900K,
 at the time of writing this post one of the best consumer CPUs on the market -- it struggles to keep stable 60 FPS even in the intro mission!
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface-r2/perf.jpg %}"><br>
-<em markdown="1">Fun fact -- it's just as slow as it [was in 2020 on an i7-6700K]({% post_url 2020-03-29-silentpatch-scarface %}#part-two--performance).</em>
-</p>
+{% capture perf_caption %}Fun fact -- it's just as slow as it [was in 2020 on an i7-6700K]({% post_url 2020-03-29-silentpatch-scarface %}#part-two--performance).{% endcapture %}
+{% include figures/image.html link="/assets/img/posts/scarface-r2/perf.jpg" caption=perf_caption %}
 
 Can we do better than this? Turns out, apparently so.
 Fast forward from March 2020 to January 2022, **CrabJournal** [submits a Pull Request](https://github.com/ThirteenAG/WidescreenFixesPack/pull/1045)
@@ -70,10 +61,7 @@ This approach to affinity is essentially no different from
 I integrated a near-identical change to Scarface and sure enough, it seems to work well! On my machine, I previously could reproduce the streaming issue consistently.
 However, with this change applied, my game is both fast **and** stable.
 
-<p align="center">
-<img src="{% link assets/img/posts/scarface-r2/goodperf.jpg %}"><br>
-<em>That's better.</em>
-</p>
+{% include figures/image.html link="/assets/img/posts/scarface-r2/goodperf.jpg" caption="That's better." %}
 
 The change was also tested by several users who previously encountered issues. In all cases, the issues disappeared, but I still want to play it safe this time.
 Starting with Build 2, users can add a `SingleCoreAffinity=1` option to `settings.ini` to opt-out of the affinity changes and revert to locking the game

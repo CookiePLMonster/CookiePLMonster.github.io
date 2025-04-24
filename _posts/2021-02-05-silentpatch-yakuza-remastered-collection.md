@@ -43,7 +43,7 @@ The next issue may not be obvious, but something is definitely wrong -- both Yak
 [much more than Yakuza 0 and even Yakuza Kiwami 2](https://x.com/__silent_/status/1355595366327066626){:target="_blank"}!
 My 4-core, 8-thread CPU regularly saw 50-60% overall CPU load, with some cutscenes going as far as 90%.
 
-{% include figures/image.html link="/assets/img/posts/spyrc/y3-cpu-usage.jfif" caption="A simple cutscene using 90% CPU time? Hmmm." %}
+{% include figures/image.html link="/assets/img/posts/spyrc/y3-cpu-usage.jpg" caption="A simple cutscene using 90% CPU time? Hmmm." %}
 
 A quick look at Steam forums reveals it's a widespread issue. Even worse, for some people, it seems to have caused performance issues
 (it is possible if the CPU heats up and throttles or if threads are starving each other for CPU time).
