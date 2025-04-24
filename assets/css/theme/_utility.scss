@@ -95,11 +95,6 @@ $button-colors: (
         border-radius: 1.5em;
     }
 
-    &:hover, &.inverse {
-        color: variables.$background-color !important;
-        border-color: transparent;
-    }
-
     @at-root button#{&} {
         @extend .thinner;
         -webkit-appearance: none;
@@ -118,6 +113,11 @@ $button-colors: (
         &.#{$name} {
             @include button-coloring(map.get($colors, color), map.get($colors, hover));
         }
+    }
+
+    &:hover, &.inverse {
+        color: variables.$background-color;
+        border-color: transparent;
     }
 }
 
