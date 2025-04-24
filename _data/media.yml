@@ -1,3 +1,11 @@
+- url: https://www.theregister.com/2025/04/24/something_broke_on_windows_11/
+  title: "Decades-old bug in Grand Theft Auto: San Andreas pops out | The Register"
+  date: 2025-04-24
+  game-series: ["gta-sa", "silentpatch"]
+- url: https://www.neowin.net/news/windows-11-24h2-resurrects-a-20-year-old-bug-in-gta-san-andreas-here-is-how/
+  title: "Windows 11 24H2 resurrects a 20-year-old bug in GTA San Andreas, here is how | Neowin"
+  date: 2025-04-23
+  game-series: ["gta-sa", "silentpatch"]
 - url: https://x.com/ObbeVermeij/status/1853059466486325639
   title: "\"Games have bugs and GTA is no exception.\" | Obbe Vermeij on X/Twitter"
   date: 2024-11-03
