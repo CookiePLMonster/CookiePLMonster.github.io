@@ -85,9 +85,9 @@ the game froze in a very small loop in `CPlane::PreRender`, attempting to normal
 
 ```cpp
 this->m_fBladeAngle = CTimer::ms_fTimeStep * this->m_fBladeSpeed + this->m_fBladeAngle;
-while (this->m_fBladeAngle > 6.2831855)
+while (this->m_fBladeAngle > 6.2831855f)
 {
-  this->m_fBladeAngle = this->m_fBladeAngle - 6.2831855;
+  this->m_fBladeAngle = this->m_fBladeAngle - 6.2831855f;
 }
 ```
 
@@ -95,7 +95,7 @@ In the debugged session, `this->m_fBladeSpeed` was `3.73340132e+29`. This value 
 entirely ineffective due to the difference in floating point exponents of these two values.[^fp-explanation] But why is the blade speed so ridiculously high?
 The blade speed is derived from the following formula:
 ```cpp
-this->m_fBladeSpeed = (v34 - this->m_fBladeSpeed) * CTimer::ms_fTimeStep / 100.0 + this->m_fBladeSpeed;
+this->m_fBladeSpeed = (v34 - this->m_fBladeSpeed) * CTimer::ms_fTimeStep / 100.0f + this->m_fBladeSpeed;
 ```
 
 [^fp-explanation]: In other words, due to the way floating point values are represented,
@@ -113,7 +113,7 @@ named `CCarCtrl::CreateCarForScript`. This function spawns a vehicle with a spec
 so I know they are correct. However, this function transforms the supplied Z coordinate slightly:
 
 ```cpp
-if (posZ <= 100.0)
+if (posZ <= 100.0f)
 {
   posZ = CWorld::FindGroundZForCoord(posX, posY);
 }
@@ -182,7 +182,7 @@ for (int i = 0; i < 4; i++)
   float wheelScale = i != 0 && i != 2 ? modelInfo->m_frontWheelScale : modelInfo->m_rearWheelScale;
 
   posn.z += pHandling->fSuspensionLowerLimit - pHandling->fSuspensionUpperLimit;
-  posn.z -= wheelScale / 2.0;
+  posn.z -= wheelScale / 2.0f;
   colModel->lines[i].p1 = posn;
 }
 ```
@@ -260,8 +260,8 @@ static int sscanf_Defaults(const char* s, const char* format, int* objID, char* 
 {
   *wheelModelID = -1;
   // Why 0.7 and not 1.0, I'll explain later
-  *frontWheelSize = 0.7;
-  *rearWheelSize = 0.7;
+  *frontWheelSize = 0.7f;
+  *rearWheelSize = 0.7f;
   *wheelUpgradeClass = -1;
 
   return orgSscanf(s, format, objID, modelName, texName, type, handlingID, gameName, anims, vehClass,

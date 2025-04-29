@@ -3,7 +3,9 @@
   {% include head.html %}
   <body>
     {% if layout.brython or page.brython -%}
-    <brython-options pythonpath="/assets/brython" cache="true" {% if jekyll.environment == "development" %}debug="1"{% endif %}></brython-options>
+    {%- if jekyll.environment == "development" -%}
+    <brython-options pythonpath="/assets/brython" debug="1"></brython-options>
+    {%- endif -%}
     {%- endif %}
     {% include_cached navbar.html %}
     {{ content }}

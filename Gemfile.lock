@@ -80,7 +80,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.3.9)
-    rouge (4.5.1)
+    rouge (4.5.2)
     safe_yaml (1.0.5)
     sass-embedded (1.86.0)
       google-protobuf (~> 4.30)
@@ -104,8 +104,9 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.16.0)
   jekyll-seo-tag (~> 2.8)
   jekyll-sitemap (~> 1.4)
+  rouge (~> 4.5, >= 4.5.2)
   sass-embedded (~> 1.86)
   wdm (~> 0.2.0)
 
 BUNDLED WITH
-   2.6.6
+   2.6.8
