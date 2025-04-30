@@ -66,10 +66,13 @@
 
     <!-- seo tags -->
     {% seo %}
-    {% if page.layout == 'post' %}
+    {% if jekyll.environment != "development" and page.image -%}
+    {% imagesize page.image:opengraph %}
+    {%- endif %}
+    {% if page.layout == 'post' -%}
     <meta name="twitter:label1" content="Reading time">
-    <meta name="twitter:data1" content="{% include_cached ert.html document=page %} min. to read">
-    {% endif %}
+    <meta name="twitter:data1" content="{% include_cached ert.html document=page %} min read">
+    {%- endif %}
 
     <noscript><style>.no-js { display: none !important; }</style></noscript>
 </head>
