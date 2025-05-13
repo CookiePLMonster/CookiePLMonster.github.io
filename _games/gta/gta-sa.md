@@ -9,3 +9,6 @@ order: 2
 ---
 {:.disclaimer.warning}
 This page contains modifications only for the "classic" PC version of GTA: San Andreas. The Definitive Edition is not supported.
+
+{:.disclaimer.info}
+This page is for the PC version of GTA: San Andreas. For patches for the PS2 version, see [Grand Theft Auto San Andreas (PS2)]({% link _games/gta/grand-theft-auto-san-andreas-ps2.md %}).
