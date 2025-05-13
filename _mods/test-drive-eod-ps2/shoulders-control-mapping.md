@@ -26,6 +26,6 @@ With this code, I modified one of the alternate controls sets to swap <kbd>L1</k
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Test%20Drive%20Eve%20of%20Destruction/Shoulders%20control%20mapping/SLUS-20910_5D0244D3_shoulders.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Test%20Drive%20Eve%20of%20Destruction/Shoulders%20control%20mapping/SLUS-20910_5D0244D3_shoulders.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Test%20Drive%20Eve%20of%20Destruction/Shoulders%20control%20mapping" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

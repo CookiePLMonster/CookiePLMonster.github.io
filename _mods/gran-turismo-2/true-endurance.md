@@ -16,11 +16,11 @@ were finished.
 ***
 
 ### Arcade & Simulation Discs
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U 1.2.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U 1.1.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U 1.2.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.2</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-U 1.1.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.1</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/PAL.cht" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/PAL.cht" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-J 1.1.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/True%20Endurance/NTSC-J 1.1.cht" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J 1.1</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/True%20Endurance" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

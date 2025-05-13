@@ -12,6 +12,6 @@ and swapping <kbd>L1</kbd>/<kbd>R1</kbd> buttons for <kbd>L2</kbd>/<kbd>R2</kbd>
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Test%20Drive%20Unlimited/Triggers%20control%20mapping/SLUS-21490_A4303F5A_triggers.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Test%20Drive%20Unlimited/Triggers%20control%20mapping/SLUS-21490_A4303F5A_triggers.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Test%20Drive%20Unlimited/Triggers%20control%20mapping" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

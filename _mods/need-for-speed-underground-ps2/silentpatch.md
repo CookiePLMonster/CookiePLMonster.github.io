@@ -29,12 +29,12 @@ Additionally, several smaller bugs have also been fixed.
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLUS-20811_CB99CD12_silentpatch.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLUS-20811_CB99CD12_silentpatch.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLES-51967_FDA10318_silentpatch.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLES-51967_FDA10318_silentpatch.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLPM-65471_4608D01A_silentpatch.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J (Original)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLPM-65471_4608D01A_silentpatch.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J (Original)</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLKA-25136_C5D0EBD2_silentpatch.pnach" %} class="button">{{ site.theme_settings.kr_flag }} NTSC-K</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Underground/SilentPatch/SLKA-25136_C5D0EBD2_silentpatch.pnach" %} class="button">{% include elements/flag.html flag="kr" %} NTSC-K</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Need%20for%20Speed%20Underground/SilentPatch" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

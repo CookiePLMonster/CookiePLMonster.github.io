@@ -31,7 +31,7 @@ Available units:
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjustable%20units/SCES-50858_60013EBD_units.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL (Tokyo-Geneva)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjustable%20units/SCES-50858_60013EBD_units.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL (Tokyo-Geneva)</a>
 
 <a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjustable%20units/SCPS-55903_6810C3BC_units.pnach" %} class="button">ASIA (Tokyo-Geneva)</a>
 

@@ -106,15 +106,6 @@ theme_settings:
   docs_icon: "<i class='fas fa-book'></i>"
   gtaf_icon: "<i class='icomoon icon-gtaf'></i>"
 
-  # Flags
-  pl_flag: "<span class='fi fi-pl'></span>"
-  gb_flag: "<span class='fi fi-gb'></span>"
-  eu_flag: "<span class='fi fi-eu'></span>"
-  us_flag: "<span class='fi fi-us'></span>"
-  jp_flag: "<span class='fi fi-jp'></span>"
-  kr_flag: "<span class='fi fi-kr'></span>"
-  ru_flag: "<span class='fi fi-ru'></span>"
-
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
   google_fonts: "Source+Sans+3:ital,wght@0,400..700;1,400..700"

@@ -19,8 +19,8 @@ By default, the code ships with stock mappings, so make sure to modify the code 
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Remappable%20controls/SCES-52438_3FB69323_remapping.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Remappable%20controls/SCES-52438_3FB69323_remapping.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Remappable%20controls/SCPS-15055_EF258742_remapping.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Remappable%20controls/SCPS-15055_EF258742_remapping.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Remappable%20controls" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

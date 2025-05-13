@@ -31,8 +31,8 @@ Available units:
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/SCES-52438_3FB69323_units.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/SCES-52438_3FB69323_units.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/SCPS-15055_EF258742_units.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units/SCPS-15055_EF258742_units.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%204%20Prologue/Adjustable%20units" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

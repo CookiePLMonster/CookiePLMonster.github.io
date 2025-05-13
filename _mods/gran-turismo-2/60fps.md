@@ -20,16 +20,16 @@ An improved 60 FPS cheat. I expanded it to re-enable tire smoke effects and the 
 ***
 
 ### Arcade & Simulation Discs
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-U 1.2.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-U 1.1.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-U 1.2.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.2</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-U 1.1.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.1</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/PAL.cht" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/PAL.cht" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
 ### Arcade Disc
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.0 Arcade.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.0 Arcade.cht" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J 1.0</a>
 
 ### Simulation Disc
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.1.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.1</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.0 Simulation.cht" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J 1.0</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.1.cht" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/60%20FPS/NTSC-J 1.0 Simulation.cht" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J 1.0</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/60%20FPS" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

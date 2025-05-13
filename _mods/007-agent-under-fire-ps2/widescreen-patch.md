@@ -21,10 +21,10 @@ An improved 16:9 widescreen patch, covering both on-foot and driving segments of
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLUS-20265_79646C72_widescreen.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLUS-20265_79646C72_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLES-50539_992B46DC_widescreen.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLES-50539_992B46DC_widescreen.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLPM-67505_60666E72_widescreen.pnach" %} class="button">{{ site.theme_settings.kr_flag }} NTSC-K</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/007%20Agent%20Under%20Fire/Widescreen/SLPM-67505_60666E72_widescreen.pnach" %} class="button">{% include elements/flag.html flag="kr" %} NTSC-K</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/007%20Agent%20Under%20Fire/Widescreen" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

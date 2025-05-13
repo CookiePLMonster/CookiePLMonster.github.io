@@ -33,11 +33,11 @@ Available units:
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCUS-97102_85AE91B3_units.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U (1.0, Original)</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/PBPX-95503_8AA991B0_units.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U (1.10, Bundle)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCUS-97102_85AE91B3_units.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U (1.0, Original)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/PBPX-95503_8AA991B0_units.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U (1.10, Bundle)</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCES-50294_B590CE04_units.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCES-50294_B590CE04_units.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCPS-15009_9DE5CF65_units.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%203/Adjustable%20units/SCPS-15009_9DE5CF65_units.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Gran%20Turismo%203/Adjustable%20units" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

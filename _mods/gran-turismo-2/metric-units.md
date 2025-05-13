@@ -25,9 +25,9 @@ PAL version of the cheat fixes a '<samp>Launch speed at X mph</samp>' text, whic
 ***
 
 ### Arcade & Simulation Discs
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/NTSC-U 1.2.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.2</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/NTSC-U 1.1.cht" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U 1.1</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/NTSC-U 1.2.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.2</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/NTSC-U 1.1.cht" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U 1.1</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/PAL.cht" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS1/Gran%20Turismo%202/Metric%20units/PAL.cht" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS1/Gran%20Turismo%202/Metric%20units" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

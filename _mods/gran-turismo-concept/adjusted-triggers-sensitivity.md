@@ -18,7 +18,7 @@ so now 100% input registers from a near full press of the trigger, therefore mak
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjusted%20triggers%20sensitivity/SCES-50858_60013EBD_triggers.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL (Tokyo-Geneva)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjusted%20triggers%20sensitivity/SCES-50858_60013EBD_triggers.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL (Tokyo-Geneva)</a>
 
 <a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Gran%20Turismo%20Concept/Adjusted%20triggers%20sensitivity/SCPS-55903_6810C3BC_triggers.pnach" %} class="button">ASIA (Tokyo-Geneva)</a>
 

@@ -27,8 +27,8 @@ This patch adds four "modern" control schemes to the game, with throttle/brake s
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLUS-20362_1D2818AF_triggers.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLUS-20362_1D2818AF_triggers.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLES-50731_1D2818AF_triggers.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Need for Speed Hot Pursuit 2/Triggers control mapping/SLES-50731_1D2818AF_triggers.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Need%20for%20Speed%20Hot%20Pursuit%202/Triggers%20control%20mapping" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

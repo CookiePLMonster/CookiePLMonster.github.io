@@ -23,6 +23,6 @@ With this cheat, I replace the stock functionality of the right analog stick (Th
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/NASCAR%20Dirt%20to%20Daytona/Camera%20controls%20on%20right%20stick/SLUS-20441_2EA87CC5_lookaround.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/NASCAR%20Dirt%20to%20Daytona/Camera%20controls%20on%20right%20stick/SLUS-20441_2EA87CC5_lookaround.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/NASCAR%20Dirt%20to%20Daytona/Camera%20controls%20on%20right%20stick" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

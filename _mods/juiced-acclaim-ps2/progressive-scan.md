@@ -13,6 +13,6 @@ while the {{ "2004-06-11" | date: page.date-format }} build doesn't implement th
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Progressive%20Scan/SLUS-20872_778AE49E_progressive.pnach" %} class="button">{{ site.theme_settings.us_flag }} {{ "2004-06-11" | date: page.date-format }} build</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Progressive%20Scan/SLUS-20872_778AE49E_progressive.pnach" %} class="button">{% include elements/flag.html flag="us" %} {{ "2004-06-11" | date: page.date-format }} build</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/Progressive%20Scan" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

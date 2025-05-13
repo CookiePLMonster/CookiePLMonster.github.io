@@ -15,8 +15,8 @@ so now 100% input registers from a near full press of the trigger, therefore mak
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/SCUS-97502_FF9C0E93_triggers.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/SCUS-97502_FF9C0E93_triggers.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/SCES-53372_CA9AA903_triggers.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity/SCES-53372_CA9AA903_triggers.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tourist%20Trophy/Adjusted%20triggers%20sensitivity" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

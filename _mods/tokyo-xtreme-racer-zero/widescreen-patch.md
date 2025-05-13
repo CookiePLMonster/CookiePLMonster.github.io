@@ -22,10 +22,10 @@ An improved 16:9 widescreen patch, fully fixing the tachometer.
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLUS-20189_C1760287_widescreen.pnach" %} class="button">{{ site.theme_settings.us_flag }} NTSC-U</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLUS-20189_C1760287_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLES-50115_073D7FB5_widescreen.pnach" %} class="button">{{ site.theme_settings.eu_flag }} PAL</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLES-50115_073D7FB5_widescreen.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLPS-25028_F9D5C6A6_widescreen.pnach" %} class="button">{{ site.theme_settings.jp_flag }} NTSC-J</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen/SLPS-25028_F9D5C6A6_widescreen.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J</a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/tree/master/PS2/Tokyo%20Xtreme%20Racer%20Zero/Widescreen" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
