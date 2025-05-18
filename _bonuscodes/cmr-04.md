@@ -37,6 +37,6 @@ prototypeCheckbox.style.display = 'inline'
 prototypeCheckbox.select_one('label').text = 'Prototype:'
 prototypeCheckbox.select_one('input').value = PROTOTYPE_OPTION
 
-document['access-code'].min = 1
+document['access-code'].min = 0
 document['access-code'].max = cmr04.ACCESS_CODE_MAX
 </script>
