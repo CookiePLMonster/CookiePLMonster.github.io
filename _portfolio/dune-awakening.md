@@ -1,15 +1,14 @@
 ---
 title: "Dune: Awakening"
-subtitle: "(in development)"
 image: "assets/img/portfolio/thumb/dune-awakening.jpg"
 feature-img: "assets/img/portfolio/dune-awakening.jpg"
-date: 2025-01-01
+date: 2025-06-10
 game-series: "dune-awakening"
 ---
 
 {% assign portfolio-client="Abstraction" %}
 {% assign portfolio-engine="Unreal Engine 5" %}
-{% capture portfolio-date %}{{ "2025-01-01" | date: "%Y" }}{% endcapture %}
+{% capture portfolio-date %}{{ "2025-06-10" | date: page.date-format }}{% endcapture %}
 {% assign portfolio-platform="PC (Steam)" %}
 
 {% capture portfolio-contents %}
@@ -19,7 +18,7 @@ As guild intrigue and warfare rage, control the spice and cling to power.
 
 > For the first time in my career I am working on an Unreal Engine project as a Gameplay Programmer.
 > Ever since I joined Dune: Awakening, I've been responsible for coding several various gameplay systems
-> and for assisting content designers with their usage. I am currently the owner of an unspecified gameplay system.
+> and for assisting content designers with their usage. I am currently the owner of the dialogue system.
 {% endcapture %}
 
 {% include portfolio/template.html %}
