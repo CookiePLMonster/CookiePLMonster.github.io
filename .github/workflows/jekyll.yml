@@ -44,12 +44,9 @@ jobs:
           cache: 'pip'
           cache-dependency-path: ./assets/js/partials/brython/requirements.txt
       - name: Install and set up Brython
-        # cd into assets/brython to work around a bug in Brython 3.13.1 where --src-dir is ignored
         run: |
           pip install -r ./assets/js/partials/brython/requirements.txt
-          pushd ./assets/brython
-          brython-cli make_package --output-path ../js/blog.brython.js blog
-          popd
+          brython-cli make_package --src-dir ./assets/brython --output-path ./assets/js/blog.brython.js blog
           rm -r ./assets/brython
       - name: Setup Pages
         id: pages
