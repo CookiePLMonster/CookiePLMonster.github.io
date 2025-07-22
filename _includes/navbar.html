@@ -28,7 +28,7 @@
         {% for item in site.theme_settings.special_page -%}
           {%- if item[1].enabled -%}
             <li>
-                <a href="{{ item[0] | relative_url }}" title="{{ item[1].title }}">
+                <a href="{{ item[0] | relative_url }}" title="{{ item[1].title | escape }}">
                     <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
                     <span class="navbar-icon-text">{{ item[1].title | smartify }}</span>
                 </a>

@@ -6,7 +6,7 @@
             <h2 id="{{ modid }}">
             {%- if mod.title-image -%}
                 {%- assign image_url = mod.title-image | relative_url -%}
-                <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
+                <img src="{{ image_url }}" alt="{{ mod.title | escape }}" {% imagesize image_url:props %}>
             {%- else -%}
                 {{- mod.title | smartify -}}
             {%- endif -%}

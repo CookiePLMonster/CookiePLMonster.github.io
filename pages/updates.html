@@ -18,20 +18,22 @@ pagination:
 
 <div class="posts smaller-gaps">
   {% for entry in paginator.posts %}
-  <section>
-    <h2 class="heading-big">
-      <a href="{{ entry.url | relative_url }}">
-        {{ entry.title | smartify }}
+  <article>
+    <header>
+      <a class="post-link" href="{{ entry.url | relative_url }}" aria-label="View full post: {{ entry.title | escape }}">
+        <h2 class="heading-big">
+          {{- entry.title | smartify -}}
+        </h2>
       </a>
-    </h2>
-    <p class="meta">
-      {{ entry.date | date: "%B %-d, %Y" }}
-      {% if entry.last_modified_at %}(edited {{ entry.last_modified_at | date: "%B %-d, %Y" }}){% endif %}
-    </p>
+      <p class="meta">
+        {{- entry.date | date: "%B %-d, %Y" -}}
+        {%- if entry.last_modified_at %} (edited {{ entry.last_modified_at | date: "%B %-d, %Y" }}){% endif -%}
+      </p>
+    </header>
     <div class="excerpt read-more">
-        {{ entry.excerpt }}
-        <a href="{{ entry.url | relative_url }}"><p>(Read more...)</p></a>
+        {{- entry.excerpt -}}
+        <a href="{{ entry.url | relative_url }}" aria-label="View full post: {{ entry.title | escape }}"><p>(Read more...)</p></a>
     </div>
-  </section>
+  </article>
   {% endfor %}
 </div>

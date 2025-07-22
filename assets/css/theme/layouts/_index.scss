@@ -10,42 +10,46 @@
 
 // Post listing
 .posts {
-    &.smaller-gaps section {
+    &.smaller-gaps > * {
         margin-block-end: 2em;
     }
-    section {
+    > * {
         margin-block-end: 3em;
         &:last-child {
             margin-block-end: 0;
         }
+    }
+    .post-link {
+        @extend %uncolored-text;
+        h2 {
+            display: inline;
+        }
+    }
+    .post-img {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 250px;
 
-        .post-img {
-            border-radius: 10px;
-            overflow: hidden;
-            display: block;
-            height: 250px;
+        @media screen and (max-width: variables.$break) {
+            height: 150px;
+        }
 
-            @media screen and (max-width: variables.$break) {
-                height: 150px;
-            }
+        img {
+            width: 100%;
+            height: auto;
 
-            img {
-                width: 100%;
-                height: auto;
+            -moz-transition-timing-function: ease-out;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 
-                -moz-transition-timing-function: ease-out;
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
+            -moz-transition: all 2s;
+            -webkit-transition: all 2s;
+            transition: all 2s;
 
-                -moz-transition: all 2s;
-                -webkit-transition: all 2s;
-                transition: all 2s;
-
-                &:hover {
-                    -moz-transform: scale(1.1);
-                    -webkit-transform: scale(1.1);
-                    transform: scale(1.1);
-                }
+            &:hover {
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
             }
         }
     }

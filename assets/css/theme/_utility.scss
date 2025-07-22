@@ -125,14 +125,18 @@ $button-colors: (
     @extend %flexible-2d-block;
 }
 
+%uncolored-text {
+    color: unset;
+
+    &:hover {
+        color: color.adjust(variables.$link-color, $lightness: 10%);
+        text-decoration: unset;
+    }
+}
+
 %uncolored-link {
     a {
-        color: unset;
-
-        &:hover {
-            color: color.adjust(variables.$link-color, $lightness: 10%);
-            text-decoration: unset;
-        }
+        @extend %uncolored-text;
     }
 }
 

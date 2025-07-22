@@ -2,8 +2,8 @@
 {%- assign right_url = include.right | relative_url -%}
 <figure class="{{ 'fig-entry' | append: ' ' | append: include.style | strip }}" id="{{ include.id }}">
     <div class="juxtapose" data-startingposition="{{ include.start-position }}">
-        <img src="{{ left_url }}" data-label="{{ include.left-label }}" alt="{{ include.left-label }}" {% unless jekyll.environment == "development" %}{% imagesize left_url:props %}{% endunless %}>
-        <img src="{{ right_url }}" data-label="{{ include.right-label }}" alt="{{ include.right-label }}" {% unless jekyll.environment == "development" %}{% imagesize right_url:props %}{% endunless %}>
+        <img src="{{ left_url }}" data-label="{{ include.left-label | escape }}" alt="{{ include.left-label | escape }}" {% unless jekyll.environment == "development" %}{% imagesize left_url:props %}{% endunless %}>
+        <img src="{{ right_url }}" data-label="{{ include.right-label | escape }}" alt="{{ include.right-label | escape }}" {% unless jekyll.environment == "development" %}{% imagesize right_url:props %}{% endunless %}>
     </div>
     {%- if include.caption -%}<figcaption markdown="span">{{ include.caption }}</figcaption>{%- endif -%}
 </figure>
