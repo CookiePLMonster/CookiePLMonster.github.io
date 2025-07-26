@@ -29,10 +29,12 @@ layout: default
   </section>
 
 
-  {% include share_buttons.html %}
+  <footer>
+    {%- include share_buttons.html -%}
 
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
+    {%- assign tag_list = page.tags | join: "|" -%}
+    {%- include tags_list.html tags=tag_list -%}
+  </footer>
 </article>
 
 <!-- Disqus -->

@@ -1,48 +1,34 @@
 <div class="share-buttons">
     <span class="meta">Share</span>
-    {% assign absolute_page_url = page.url | absolute_url %}
-    <ul>
-        {% if site.theme_settings.share_buttons.facebook %}
-        <li>
-            {% assign url_utm = absolute_page_url | append:
-            '?utm_source=Facebook&utm_medium=social&utm_campaign=Share+Button' %}
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ url_utm | cgi_escape }}" target="_blank"
-                title="{{ site.theme_settings.str_share_on }} Facebook"
-                aria-label="{{ site.theme_settings.str_share_on }} Facebook">
-                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
-            </a>
-        </li>
-        {% endif %} {% if site.theme_settings.share_buttons.twitter %}
-        <li>
-            {% assign url_utm = absolute_page_url | append:
-            '?utm_source=Twitter&utm_medium=social&utm_campaign=Share+Button' %}
-            {% assign twitter_title = page.title | append: ' | ' | append: site.title %}
-            <a href="https://x.com/intent/post?text={{ twitter_title | cgi_escape }}&url={{ url_utm | cgi_escape }}"
-                target="_blank" title="{{ site.theme_settings.str_share_on }} X/Twitter"
-                aria-label="{{ site.theme_settings.str_share_on }} X/Twitter">
-                <i class="fab fa-square-x-twitter fa-2x" aria-hidden="true"></i>
-            </a>
-        </li>
-        {% endif %} {% if site.theme_settings.share_buttons.reddit %}
-        <li>
-            {% assign url_utm = absolute_page_url | append:
-            '?utm_source=Reddit&utm_medium=social&utm_campaign=Share+Button' %}
-            <a href="https://www.reddit.com/submit?url={{ url_utm | cgi_escape }}&title={{ page.title | cgi_escape }}&type=LINK"
-                target="_blank" title="{{ site.theme_settings.str_share_on }} Reddit"
-                aria-label="{{ site.theme_settings.str_share_on }} Reddit">
-                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
-            </a>
-        </li>
-        {% endif %} {% if site.theme_settings.share_buttons.hacker_news %}
-        <li>
-            {% assign url_utm = absolute_page_url | append:
-            '?utm_source=Hacker+News&utm_medium=social&utm_campaign=Share+Button' %}
-            <a href="https://news.ycombinator.com/submitlink?u={{ url_utm | cgi_escape }}&t={{ page.title | uri_escape }}"
-                target="_blank" title="{{ site.theme_settings.str_share_on }} Hacker News"
-                aria-label="{{ site.theme_settings.str_share_on }} Hacker News">
-                <i class="fab fa-hacker-news-square fa-2x" aria-hidden="true"></i>
-            </a>
-        </li>
-        {% endif %}
-    </ul>
+    {% assign absolute_page_url = page.url | absolute_url -%}
+    {%- if site.theme_settings.share_buttons.facebook -%}
+        {%- assign url_utm = absolute_page_url | append:
+        '?utm_source=Facebook&utm_medium=social&utm_campaign=Share+Button' -%}
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url_utm | cgi_escape }}" target="_blank"
+            title="{{ site.theme_settings.str_share_on }} Facebook">
+            <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </a>
+    {%- endif -%} {%- if site.theme_settings.share_buttons.twitter -%}
+        {%- assign url_utm = absolute_page_url | append:
+        '?utm_source=Twitter&utm_medium=social&utm_campaign=Share+Button' -%}
+        {%- assign twitter_title = page.title | append: ' | ' | append: site.title -%}
+        <a href="https://x.com/intent/post?text={{ twitter_title | cgi_escape }}&url={{ url_utm | cgi_escape }}"
+            target="_blank" title="{{ site.theme_settings.str_share_on }} X/Twitter">
+            <i class="fab fa-square-x-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+    {%- endif -%} {%- if site.theme_settings.share_buttons.reddit -%}
+        {%- assign url_utm = absolute_page_url | append:
+        '?utm_source=Reddit&utm_medium=social&utm_campaign=Share+Button' -%}
+        <a href="https://www.reddit.com/submit?url={{ url_utm | cgi_escape }}&title={{ page.title | cgi_escape }}&type=LINK"
+            target="_blank" title="{{ site.theme_settings.str_share_on }} Reddit">
+            <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+        </a>
+    {%- endif -%} {%- if site.theme_settings.share_buttons.hacker_news -%}
+        {%- assign url_utm = absolute_page_url | append:
+        '?utm_source=Hacker+News&utm_medium=social&utm_campaign=Share+Button' -%}
+        <a href="https://news.ycombinator.com/submitlink?u={{ url_utm | cgi_escape }}&t={{ page.title | uri_escape }}"
+            target="_blank" title="{{ site.theme_settings.str_share_on }} Hacker News">
+            <i class="fab fa-hacker-news-square fa-2x" aria-hidden="true"></i>
+        </a>
+    {%- endif %}
 </div>

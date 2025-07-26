@@ -11,4 +11,8 @@
         @extend %flexible-2d-block;
         justify-content: center;
     }
+
+    > :last-child {
+        margin-block-end: 0;
+    }
 }

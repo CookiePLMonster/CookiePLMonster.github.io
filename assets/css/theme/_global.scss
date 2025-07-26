@@ -76,7 +76,7 @@ blockquote {
     margin: 1em;
 }
 
-blockquote, footer, details {
+blockquote, details {
     > :last-child {
         margin-block-end: 0;
     }

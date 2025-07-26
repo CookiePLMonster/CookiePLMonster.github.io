@@ -5,7 +5,7 @@
 .tag-list {
     @extend %flexible-2d-block;
     justify-content: center;
-    padding-block-end: variables.$padding-x-small;
+    margin-block-end: 1em;
 
     a {
         font-size: 0.81em;

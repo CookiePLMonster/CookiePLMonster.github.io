@@ -1,18 +1,7 @@
-@use "../variables";
 @use '../utility';
-
-@use "sass:math";
 
 .share-buttons {
     @extend %flexible-2d-block;
     justify-content: center;
-
-    padding-block-start: math.div(variables.$padding-x-small, 2);
     margin-block-end: 0.5em;
-
-    ul {
-        @extend %no-bullets;
-        @extend %flexible-2d-block;
-        margin-block-end: 0;
-    }
 }
