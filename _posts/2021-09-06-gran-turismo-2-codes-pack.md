@@ -12,13 +12,20 @@ tags: [Releases]
 juxtapose: true
 ---
 
-*TL;DR #1 - if you are not interested in an overview of my new Gran Turismo 2 cheat codes,
-scroll down to the [**Download**](#download) section for download links.*
+<aside class="sidenote" markdown="1">
+TL;DR #1 - if you are not interested in an overview of my new Gran Turismo 2 cheat codes,
+scroll down to the [**Download**](#download) section for download links.
 
-*TL;DR #2 - if you are currently using **any** of my Gran Turismo 2 cheats, please redownload them.
-Every single GT2 cheat published on my website has been updated.*
+TL;DR #2 - if you are currently using **any** of my Gran Turismo 2 cheats, please redownload them.
+Every single GT2 cheat published on my website has been updated.
+</aside>
 
 ***
+
+* TOC
+{:toc}
+
+# Introduction
 
 If you're following me on Twitter, you might have noticed that for the past few weeks I've been [revisiting my currently released Gran Turismo 2 codes](https://twitter.com/__silent_/status/1428127640372846595?s=20).
 The initial plan was to only update the widescreen fix, but as usual, I dug deeper in the game and the result of it is a total of **six new cheats** and two revised cheats.

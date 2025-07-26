@@ -13,9 +13,11 @@ tags: [Releases, Articles]
 juxtapose: true
 ---
 
-_TL;DR: This article details the various fixes introduced in this update, making it a relatively long read.
+<aside class="sidenote" markdown="1">
+TL;DR: This article details the various fixes introduced in this update, making it a relatively long read.
 If you want to jump straight to SilentPatch or check the source code, **go to the
-[Download and source code](#download-and-source-code) section for the links.**_
+[Download and source code](#download-and-source-code) section for the links.**
+</aside>
 
 ***
 
