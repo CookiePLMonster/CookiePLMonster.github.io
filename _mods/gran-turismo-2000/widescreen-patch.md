@@ -3,6 +3,7 @@ title: 16:9 Widescreen patch
 game-series: "gran-turismo-2000"
 order: 1
 date: 26-07-2025
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
 
 An improved 16:9 widescreen patch.

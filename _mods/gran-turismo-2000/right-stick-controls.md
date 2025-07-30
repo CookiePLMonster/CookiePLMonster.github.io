@@ -3,6 +3,7 @@ title: Throttle/brake on the right stick
 game-series: "gran-turismo-2000"
 order: 5
 date: 26-07-2025
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
 
 If controlling the car with face buttons or triggers isn't your cup of tea, most Gran Turismo games also offer an alternative -- throttle and braking
