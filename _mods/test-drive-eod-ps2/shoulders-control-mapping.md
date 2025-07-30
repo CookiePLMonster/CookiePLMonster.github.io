@@ -3,7 +3,6 @@ title: Shoulders control mapping
 game-series: "test-drive-eod-ps2"
 order: 0
 date: 09-10-2021
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v1.7.5746."
 ---
 

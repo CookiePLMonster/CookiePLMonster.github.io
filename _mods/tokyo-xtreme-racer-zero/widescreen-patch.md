@@ -3,7 +3,6 @@ title: 16:9 Widescreen patch
 game-series: "tokyo-xtreme-racer-zero"
 order: 0
 date: 08-01-2025
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.101."
 ---
 

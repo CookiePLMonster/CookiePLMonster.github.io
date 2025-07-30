@@ -3,7 +3,6 @@ title: "SilentPatch"
 game-series: "need-for-speed-underground-ps2"
 date: 12-03-2025
 order: 0
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.221."
 ---
 

@@ -1,6 +1,6 @@
 {%- if include.mod.warning-label -%}
-    <span class="mod-label warning" title="{{ mod.disclaimer-warning | markdownify | strip_html | escape }}">{{ include.mod.warning-label }}</span>
+    <span class="mod-label warning">{{ include.mod.warning-label }}</span>
 {%- endif -%}
 {%- if include.mod.info-label -%}
-    <span class="mod-label info" title="{{ mod.disclaimer-info | markdownify | strip_html | escape }}">{{ include.mod.info-label }}</span>
+    <span class="mod-label info">{{ include.mod.info-label }}</span>
 {%- endif -%}

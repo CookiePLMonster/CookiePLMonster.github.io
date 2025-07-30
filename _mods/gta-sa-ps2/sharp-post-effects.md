@@ -3,7 +3,6 @@ title: Sharp Post Effects
 game-series: "grand-theft-auto-san-andreas-ps2"
 order: 0
 date: 13-05-2025
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.345."
 ---
 

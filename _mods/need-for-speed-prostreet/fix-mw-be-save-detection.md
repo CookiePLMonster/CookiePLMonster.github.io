@@ -3,7 +3,6 @@ title: Fix Most Wanted Black Edition save detection
 game-series: "need-for-speed-prostreet-ps2"
 order: 10
 date: 22-02-2025
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.174."
 ---
 

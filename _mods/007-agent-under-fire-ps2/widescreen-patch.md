@@ -3,7 +3,6 @@ title: 16:9 Widescreen patch
 game-series: "007-agent-under-fire-ps2"
 order: 0
 date: 20-08-2023
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v1.7.4934."
 ---
 

@@ -4,7 +4,6 @@ game-series: "gta-sa"
 order: 999
 excerpt: "After ten years of being a gangsta, it was time to sit down."
 date: 01-04-2015
-warning-label: JOKE
 disclaimer-warning: "This was a joke mod created for April Fools. It works as advertised, but as you can see, its presentation is... special 🙂"
 ---
 

@@ -3,7 +3,6 @@ title: Deinterlace patch
 game-series: "tokyo-xtreme-racer-zero"
 order: 1
 date: 23-12-2024
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.83."
 ---
 

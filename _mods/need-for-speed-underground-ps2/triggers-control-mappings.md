@@ -3,7 +3,6 @@ title: Trigger control mappings
 game-series: "need-for-speed-underground-ps2"
 order: 100
 date: 19-02-2025
-info-label: BUNDLED
 disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.184."
 ---
 
