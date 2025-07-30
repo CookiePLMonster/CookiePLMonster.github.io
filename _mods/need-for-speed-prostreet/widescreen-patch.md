@@ -4,11 +4,8 @@ game-series: "need-for-speed-prostreet-ps2"
 order: 0
 date: 23-02-2025
 info-label: BUNDLED
-info-title: "This patch is shipped with PCSX2 starting with v2.3.174."
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.174."
 ---
-
-{:.disclaimer.info}
-This patch is shipped with PCSX2 starting with v2.3.174.
 
 {:.credit}
 Widescreen patch made by Xan1242 & Aero_. I ported it to the PAL versions.

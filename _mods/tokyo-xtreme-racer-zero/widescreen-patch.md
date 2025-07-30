@@ -4,11 +4,8 @@ game-series: "tokyo-xtreme-racer-zero"
 order: 0
 date: 08-01-2025
 info-label: BUNDLED
-info-title: "This patch is shipped with PCSX2 starting with v2.3.101."
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.101."
 ---
-
-{:.disclaimer.info}
-This patch is shipped with PCSX2 starting with v2.3.101.
 
 {:.credit}
 The original widescreen fix made by VIRGIN KLM. I refactored the fix to patch the game more safely, further fixed the UI scaling for widescreen,

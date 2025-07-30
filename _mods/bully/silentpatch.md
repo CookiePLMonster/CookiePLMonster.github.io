@@ -5,7 +5,7 @@ game-series: "bully"
 excerpt: "If you are on Windows 10, now you should be able to play without crashes."
 date: 07-03-2020
 warning-label: BETA
-warning-title: "This patch may not fix all known crashes yet."
+disclaimer-warning: "This patch may not fix all known crashes yet."
 ---
 
 {:.credit}

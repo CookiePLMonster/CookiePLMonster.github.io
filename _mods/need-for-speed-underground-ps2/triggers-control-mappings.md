@@ -4,11 +4,8 @@ game-series: "need-for-speed-underground-ps2"
 order: 100
 date: 19-02-2025
 info-label: BUNDLED
-info-title: "This patch is shipped with PCSX2 starting with v2.3.184."
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.184."
 ---
-
-{:.disclaimer.info}
-This patch is shipped with PCSX2 starting with v2.3.184.
 
 This patch refines the range of trigger inputs in the stock Type 3 mapping, and adds a new Type 6 mapping, mirroring the bindings from the Xbox version.
 

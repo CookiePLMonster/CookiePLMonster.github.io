@@ -4,11 +4,8 @@ game-series: "need-for-speed-hot-pursuit-2-ps2"
 order: 0
 date: 14-04-2024
 info-label: BUNDLED
-info-title: "This patch is shipped with PCSX2 starting with v1.7.5712."
+disclaimer-info: "This patch is shipped with PCSX2 starting with v1.7.5712."
 ---
-
-{:.disclaimer.info}
-This patch is shipped with PCSX2 starting with v1.7.5712.
 
 This patch adds four "modern" control schemes to the game, with throttle/brake sensitivity tuned for the range of triggers. Those are:
 * Setup E -- a cut mapping from the prototype builds of Hot Pursuit 2.

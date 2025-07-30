@@ -4,11 +4,8 @@ game-series: "grand-theft-auto-san-andreas-ps2"
 order: 0
 date: 13-05-2025
 info-label: BUNDLED
-info-title: "This patch is shipped with PCSX2 starting with v2.3.345."
+disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.345."
 ---
-
-{:.disclaimer.info}
-This patch is shipped with PCSX2 starting with v2.3.345.
 
 {:.credit}
 The original **Remove Ghosting Effects** patch by PeterDelta.
