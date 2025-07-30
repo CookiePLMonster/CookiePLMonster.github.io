@@ -53,12 +53,10 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            flex: 1 1 auto;
             column-gap: 0.5em;
         }
 
         .misc {
-            flex: 0 1 auto;
             text-align: right;
             margin-inline-start: auto;
         }
