@@ -3,8 +3,10 @@ title: Fix Most Wanted Black Edition save detection
 game-series: "need-for-speed-carbon-ps2"
 order: 10
 date: 22-02-2025
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.174."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.3.174.
 
 This patch fixes the career cash bonus not checking for a NFS Most Wanted: Black Edition save.
 

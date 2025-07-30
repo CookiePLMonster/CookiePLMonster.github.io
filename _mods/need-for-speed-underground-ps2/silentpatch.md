@@ -3,8 +3,10 @@ title: "SilentPatch"
 game-series: "need-for-speed-underground-ps2"
 date: 12-03-2025
 order: 0
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.3.221."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.3.221.
 
 This small SilentPatch primarily addresses the infamous "Magazine 22" issue, where a bug in the game's implementation made the unlock requirements nearly impossible to meet.
 Additionally, several smaller bugs have also been fixed.

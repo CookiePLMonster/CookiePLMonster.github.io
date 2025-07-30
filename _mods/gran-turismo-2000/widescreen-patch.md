@@ -3,8 +3,10 @@ title: 16:9 Widescreen patch
 game-series: "gran-turismo-2000"
 order: 1
 date: 26-07-2025
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.85.
 
 An improved 16:9 widescreen patch.
 * The game FOV is switched to Hor+ everywhere, including the menus and replays; FOV is no longer manually increased to match the original game's 4:3 vertical FOV.

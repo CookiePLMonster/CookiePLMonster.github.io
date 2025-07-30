@@ -25,17 +25,6 @@
         </div>
     </header>
     <div class="content">
-        {%- if mod.disclaimer-warning -%}
-        <p class="disclaimer warning">
-            {{- mod.disclaimer-warning | markdownify | remove: '<p>' | remove: '</p>' | strip -}}
-        </p>
-        {%- endif -%}
-        {%- if mod.disclaimer-info -%}
-        <p class="disclaimer info">
-            {{- mod.disclaimer-info | markdownify | remove: '<p>' | remove: '</p>' | strip -}}
-        </p>
-        {%- endif -%}
-
         {{ mod }}
     </div>
 </section>

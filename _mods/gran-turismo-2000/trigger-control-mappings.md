@@ -3,8 +3,10 @@ title: Trigger control mappings
 game-series: "gran-turismo-2000"
 order: 3
 date: 26-07-2025
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.85.
 
 {% assign pad-cross="**X**{:style='color:rgb(124, 178, 232);font-family:monospace, monospace'}" %}
 {% assign pad-triangle="**△**{:style='color:rgb(64, 226, 160);font-family:monospace, monospace'}" %}

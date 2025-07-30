@@ -3,8 +3,10 @@ title: No time limit
 game-series: "gran-turismo-2000"
 order: 2
 date: 26-07-2025
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.85.
 
 An improved patch lifting the 120-second time limit of the Festival demo. With this patch active, the race is endless.
 

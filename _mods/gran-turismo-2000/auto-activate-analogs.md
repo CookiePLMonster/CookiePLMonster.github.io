@@ -3,8 +3,10 @@ title: Automatic DualShock mode
 game-series: "gran-turismo-2000"
 order: 4
 date: 26-07-2025
-disclaimer-info: "This patch is shipped with PCSX2 starting with v2.5.85."
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.85.
 
 This patch makes the game automatically activate the DualShock analog sticks on startup and locks the controller in analog mode,
 like all the other PS2 Gran Turismos do.
