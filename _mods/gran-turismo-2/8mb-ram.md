@@ -5,6 +5,8 @@ order: 100
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 A cheat code moving the polygon buffers to the dev RAM area and doubling their size.
 Required by other cheats that make the game render more geometry on screen at once.
 

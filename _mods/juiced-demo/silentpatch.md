@@ -5,8 +5,10 @@ excerpt: "Experience Acclaim Demo to its fullest."
 date: 21-10-2023
 ---
 
-{% assign juiced_modding_community_link = "[**Juiced Modding Community**](https://discord.com/invite/pu2jdxR/)" %}
-{% assign f4mi_link = "[**f4mi**](http://f4mi.com/)" %}
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
+{% assign juiced_modding_community_link = '[**Juiced Modding Community**](https://discord.com/invite/pu2jdxR/){:target="_blank"}' %}
+{% assign f4mi_link = '[**f4mi**](http://f4mi.com/){:target="_blank"}' %}
 
 In this first-ever demo-oriented SilentPatch, I target all demo releases of Juiced. Due to this game's troubled development cycle,
 demos published under Acclaim Entertainment present a state of the game that is noticeably different from the final game from THQ.

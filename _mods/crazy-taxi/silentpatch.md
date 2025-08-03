@@ -6,6 +6,8 @@ date: 07-08-2021
 order: 0
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This modification fixes several bugs in the Steam version of Crazy Taxi. While some of the bugs (such as broken analog steering)
 already had unofficial fixes in the past, they are shipped as an executable edit and they can have some side effects depending
 on the gamepad used. SilentPatch also fixes several other bugs not covered by other fixes, e.g. a crash when booting the game

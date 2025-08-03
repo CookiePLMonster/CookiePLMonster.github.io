@@ -5,6 +5,8 @@ excerpt: "Fixes stuttery mouse movement."
 date: 31-03-2020
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 SilentPatch for [AquaNox](https://store.steampowered.com/app/39630/AquaNox/),
 fixing widely reported mouse control issues.
 A bug present only in the first game (AquaNox 2 fixed it) would cause the game to drop mouse input

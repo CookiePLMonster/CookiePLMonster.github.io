@@ -6,6 +6,8 @@ excerpt: "Movies working flawlessly on Windows 10!"
 date: 14-04-2019
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This early 2006 game shipped with a movie player using an obscure DirectDraw feature - hardware overlays.
 Unfortunately for users, Windows XP was the last OS to support those, so when Windows Vista came out
 in late 2006, The Godfather would start crashing on launch! Every next Windows release followed,

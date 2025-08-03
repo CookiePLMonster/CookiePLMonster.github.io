@@ -7,6 +7,8 @@ date: 07-03-2020
 warning-label: BETA
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 Co-developed with [P3ti](https://github.com/P3ti).
 

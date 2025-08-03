@@ -5,6 +5,8 @@ excerpt: "Fully dynamic time of day."
 date: 17-07-2025
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This Lua script enables a full day/night cycle in the Ultra Dynamic Sky UE5 plugin, used by the game.
 
 ## Features

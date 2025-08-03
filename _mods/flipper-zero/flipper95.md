@@ -6,6 +6,8 @@ order: 0
 date: 18-09-2024
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Application to stress test the Flipper by finding Mersenne primes using the Lucas-Lehmer Test,
 much like Prime95 does.
 

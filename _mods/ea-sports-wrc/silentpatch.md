@@ -6,6 +6,8 @@ date: 22-11-2023
 warning-label: DEPRECATED
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.disclaimer.warning}
 DON'T USE -- this patch is no longer required, as this issue has been [officially fixed in the v1.4.0 update](http://x.ea.com/78991){:target="_blank"}.
 It is listed here for archival purposes only.

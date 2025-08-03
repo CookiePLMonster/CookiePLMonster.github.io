@@ -5,6 +5,8 @@ order: 24
 date: 17-04-2022
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This cheats improves randomly generated events (One-Make races and Event Generator races) by fixing the course generation:
 * A typo causing the game to pick a 2-player version of Autumn Ring instead of Apricot Hill has been fixed.
 * Autumn Ring Mini and Autumn Ring Mini Reverse, previously unused in Simulation Mode, have been added to the pool of available courses.

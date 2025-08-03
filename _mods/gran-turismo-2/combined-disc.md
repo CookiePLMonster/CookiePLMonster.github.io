@@ -6,6 +6,8 @@ order: 3
 date: 08-03-2022
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Gran Turismo 2, other than being one of the more fondly remembered installments of the franchise, has one unique aspect
 not seen in any other Gran Turismo to date -- it's split between two discs.
 This modification combines both discs for an ultimate and complete version of Gran Turismo 2.

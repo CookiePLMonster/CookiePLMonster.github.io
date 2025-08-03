@@ -7,6 +7,8 @@ date: 18-09-2023
 version: "2.04"
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 MKPSXISO v1.x was developed by Lameguy64.
 MKPSXISO v2.x is co-developed by G4Vi, spicyjpeg, Chromaryu, and myself.

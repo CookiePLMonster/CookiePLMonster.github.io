@@ -5,6 +5,8 @@ order: 11
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 By default, Gran Turismo and Gran Turismo 2 both use very aggressive LODs for AI cars. The highest LOD level is reserved for the player, with lower LOD levels used by the AI
 depending on distance from the camera. When playing the game on the native resolution it's nearly impossible to notice, but of course with upscaling LODs become much more obvious
 and jarring.

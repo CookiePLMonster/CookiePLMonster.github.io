@@ -5,6 +5,8 @@ order: 2
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 Cheat originally made by asasega. I ported it to more game versions and expanded it with more features.
 

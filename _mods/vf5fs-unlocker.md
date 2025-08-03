@@ -5,6 +5,8 @@ excerpt: "Turns VF5FS arcades into a full console game."
 date: 19-04-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.disclaimer.info}
 This page is for the in-game unlocker. For a standalone executable, check out [Yakuza Arcade Machines Player]({% link _games/vf5fs.md %}#yamp).
 

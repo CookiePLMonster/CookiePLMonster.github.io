@@ -5,6 +5,8 @@ order: 23
 date: 23-04-2022
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This cheat allows for switching the in-race music by pressing <kbd>R3</kbd>. Holding <kbd>R3</kbd> will mute music instead.
 
 {% include setup-instructions.html platform="ps1" %}

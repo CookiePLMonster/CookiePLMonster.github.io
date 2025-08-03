@@ -9,7 +9,7 @@ order: "gran turismo 2"
 juxtapose: true
 ---
 
-## Versions glossary:
+## Versions glossary
 
 <div class="left-page-margin" markdown="1">
 * NTSC-U (USA, Canada):

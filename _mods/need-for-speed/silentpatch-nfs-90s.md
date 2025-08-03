@@ -1,3 +1,5 @@
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This modification addresses several numerous more or less several bugs in the classic Need for Speed games from the late 90s - starting from Need for Speed 2: Special Edition,
 through Need for Speed: Porsche Unleashed. Since all those games already have their established unofficial patches, I concentrated my efforts on issues either omitted by those patches,
 or (in the case of NFS2SE and NFS Porsche) caused by them.

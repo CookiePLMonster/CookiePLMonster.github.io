@@ -5,6 +5,8 @@ order: 10
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 A code changing measurement units in the NTSC-U version of the game from imperial to metric.
 
 Currently converted units:

@@ -5,6 +5,8 @@ excerpt: "Quick fixes for saving issues."
 date: 18-06-2020
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {% comment %}
 {:.disclaimer.info}
 The following patch has been made with the launch game version in mind, then updated to work with the 18.06 patch.

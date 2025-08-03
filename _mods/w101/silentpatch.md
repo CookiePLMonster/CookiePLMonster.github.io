@@ -5,6 +5,8 @@ excerpt: "Improved frame pacing and standardized hotkeys."
 date: 17-07-2020
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 At the moment of writing this text, The Wonderful 101: Remastered is not released yet, but it was given early to Kickstarter backers.
 Since time is of an essence, this SilentPatch aims to fix a few issues the community has noticed during those few days.
 Most notably, SilentPatch drastically improves the game's frame pacing, so it's now locked to stable 60 FPS.

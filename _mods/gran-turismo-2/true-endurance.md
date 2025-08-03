@@ -5,6 +5,8 @@ order: 22
 date: 09-10-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Gran Turismo 2 has a single timed Endurance race -- **Millenium In Rome 2 Hours Endurance**. However, while limited to 2 hours, this race can also end after 99 laps, whichever comes first.
 With this cheat, this race becomes a true timed Endurance race: like in PS2 Gran Turismos, the lap counter now only shows finished laps and the race ends after 2 hours, regardless of how many laps
 were finished.

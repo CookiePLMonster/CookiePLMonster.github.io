@@ -5,6 +5,8 @@ excerpt: "Fixed compatibility issues, full widescreen support, and more."
 date: 09-05-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 In the spirit of the initial purpose of SilentPatches, this release revisits an old game for once - TOCA 2 Touring Cars from 1998.
 The patch corrects several compatibility issues with modern computers, previously requiring a manual fix, and adds full widescreen support.
 Original issues have also been corrected, and I also added some quality of life improvements, bringing the game closer to what more modern

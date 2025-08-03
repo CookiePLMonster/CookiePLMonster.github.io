@@ -5,6 +5,8 @@ date: 12-03-2025
 order: 0
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This small SilentPatch primarily addresses the infamous "Magazine 22" issue, where a bug in the game's implementation made the unlock requirements nearly impossible to meet.
 Additionally, several smaller bugs have also been fixed.
 

@@ -5,6 +5,8 @@ excerpt: "Widescreen support and more."
 date: 08-08-2015
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Here we have the first non-GTA related game in the SilentPatch series, this time I have gone back to one of the very first games I played and made it compatible with modern systems.
 
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file.

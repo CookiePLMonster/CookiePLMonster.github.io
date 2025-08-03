@@ -6,6 +6,8 @@ excerpt: "Water reflections shall work properly again."
 date: 06-07-2018
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Far Cry, once a game considered an example of visual fidelity and de facto a benchmark of then-modern PCs, turns out not to be free of issues.
 
 The main reason for creating this patch were broken water reflections - landmass would not reflect on water if the game is played on anything newer than Windows XP. This patch aims to fix this issue without a need for any D3D wrappers.

@@ -5,6 +5,8 @@ order: 0
 date: 26-07-2025
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 Built upon the original research of **Xenn765**.
 

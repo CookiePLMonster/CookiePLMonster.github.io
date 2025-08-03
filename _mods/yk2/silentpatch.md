@@ -6,6 +6,8 @@ excerpt: "Peeing minigame in 30 FPS, but also more FPS related fixes."
 date: 30-03-2025
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Remake of Yakuza 2, ported from PS4 to PC in May 2019 enhanced gameplay experience by lifting a 30 FPS lock, allowing PC
 users to better leverage their hardware. This was generally fine, but also introduced some issues to the game. While the ones like
 exaggerated physics are not trivially fixable, issues with some minigames have been fixed in an official patch by limiting them to 60 FPS.

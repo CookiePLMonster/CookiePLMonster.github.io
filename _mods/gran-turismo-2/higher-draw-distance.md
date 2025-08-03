@@ -5,6 +5,8 @@ order: 12
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Fair warning -- this cheat doesn't do wonders. The game's draw distance is determined by the track data itself, and so it's impossible
 to increase it arbitrarily. However, Gran Turismo 2 has a slightly higher draw distance in replays than it does in races.
 With this cheat, I enabled the replay draw distance in races.

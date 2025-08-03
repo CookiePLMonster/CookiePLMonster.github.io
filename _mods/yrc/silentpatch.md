@@ -6,6 +6,8 @@ excerpt: "Reducing CPU usage and fixing other bugs."
 date: 27-02-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Yakuza Remastered Collection is a collection consisting of Yakuza 3 Remastered, Yakuza 4 Remastered, and Yakuza 5 Remastered,
 released on PC in January 2021. While currently all 3 games have been patched officially,
 some of the CPU usage issues remain unfixed, and SilentPatch addresses them. Additionally,

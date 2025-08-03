@@ -5,6 +5,8 @@ excerpt: "Remastered edition of the game at home."
 date: 27-07-2023
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {% assign bekoha_link = "[Bekoha](https://twitter.com/Bek0ha){:target='_blank'}" %}
 {% assign hd_ui_url = "https://bekoha.github.io/cmr3" %}
 {% assign lostraniero_link = "[LoStraniero91](https://www.youtube.com/@LoStraniero91){:target='_blank'}" %}

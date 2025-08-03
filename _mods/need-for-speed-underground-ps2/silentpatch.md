@@ -5,6 +5,8 @@ date: 12-03-2025
 order: 0
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.disclaimer.info}
 This patch is shipped with PCSX2 starting with v2.3.221.
 

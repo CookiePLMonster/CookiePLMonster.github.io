@@ -5,6 +5,8 @@ excerpt: "Fixed graphical corruptions and noticeable performance improvements."
 date: 07-05-2022
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 Scarface: The World is Yours is one of these games which nowadays are unplayable out of the box.
 Graphical corruptions present on nearly all modern machines makes the game impossible to play without using
 unofficial fixes. However, until now those were working the issue around and could result in slightly degraded

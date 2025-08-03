@@ -7,6 +7,8 @@ date: 27-02-2021
 warning-label: DEPRECATED
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.disclaimer.warning}
 DON'T USE -- for Yakuza 5 Remastered, this patch is no longer required. It is listed here for archival purposes only.
 

@@ -5,6 +5,8 @@ order: 20
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 By default, it is impossible to completely hide the UI in GT2 during races or replays. Additionally, the rear view mirror only shows in the bumper camera
 and it cannot be down in chase cameras. This cheat allows to toggle the rear view mirror by tapping `L3` (cycling between "always on", "default" and "always off")
 and toggle the entire HUD by holding `L3`.

@@ -5,6 +5,8 @@ order: 1
 date: 06-09-2021
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 The original cheat made by HugoPocked. Widescreen hack 2.0 made by me.
 

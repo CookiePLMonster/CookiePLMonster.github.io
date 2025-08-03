@@ -6,6 +6,8 @@ date: 19-03-2022
 order: 1
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 {:.credit}
 Co-developed with [Alexvgz](https://www.youtube.com/channel/UCqDbjGuaY4awoKs8J-6DBUA).
 

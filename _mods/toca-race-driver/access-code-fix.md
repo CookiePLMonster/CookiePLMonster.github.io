@@ -4,6 +4,8 @@ game-series: ['toca-race-driver-2', 'toca-race-driver-3']
 date: 03-04-2024
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 This plugin fixes a bug in TOCA Race Driver 2 and 3 where the access code wasn't generated correctly on 64-bit systems
 and/or Windows 10, rendering bonus codes unusable. For better randomness of bonus codes, the console behaviour of picking
 a random access code has been restored, since many users nowadays share the same `ProductId` after upgrading to Windows 10/11.

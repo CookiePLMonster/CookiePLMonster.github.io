@@ -5,6 +5,8 @@ order: 100
 date: 22-01-2024
 ---
 
+{::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
+
 A simple proof-of-concept of pseudo 3D rendering, modelled after a famous Mode 7 from SNES.
 
 ## Controls
