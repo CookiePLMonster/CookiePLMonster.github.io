@@ -1,10 +1,11 @@
 @use "../variables";
 @use "../utility";
+@use "external/fontawesome-glue" as fa;
 @use "sass:color";
 @use "sass:math";
 
 .comments,
-.page-body { 
+.page-body {
     border-bottom: 1px solid var(--line-color);
 }
 
@@ -61,15 +62,42 @@ header, .posts {
 h1,
 h2,
 h3,
-h4 {
-    .octicon {
-        fill: currentColor;
-        padding: 0;
-        vertical-align: middle;
-        visibility: hidden;
-    }
+h4,
+h5,
+h6,
+.element-anchor {
+    &[id]:not(.no_anchor):has(a:first-child) {
+        display: flex;
+        align-items: center;
+        a:first-child {
+            @extend .fa-solid;
+            @extend %uncolored-text;
+            width: 2em;
+            font-size: 0.8rem;
+            text-align: center;
+            order: 100;
+            visibility: hidden;
+            &:after {
+                content: fa.fa-content(fa.$fa-var-link);
+            }
+        }
 
-    &:hover .octicon {
-        visibility: visible;
+        &:hover a:first-child {
+            visibility: visible;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$break) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .element-anchor {
+        &[id]:not(.no_anchor):has(a:first-child) a:first-child {
+            font-size: 0.8 * 0.8rem;
+        }
     }
 }

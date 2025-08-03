@@ -2,16 +2,19 @@
 <section class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
     <header>
-        <div class="title">
-            <h2 id="{{ modid }}">
-            {%- if mod.title-image -%}
-                {%- assign image_url = mod.title-image | relative_url -%}
-                <img src="{{ image_url }}" alt="{{ mod.title | escape }}" {% imagesize image_url:props %}>
-            {%- else -%}
-                {{- mod.title | smartify -}}
-            {%- endif -%}
-            </h2>
-            {% include elements/mod-label.html mod=mod %}
+        <div class="element-anchor" id="{{ modid }}"">
+            <a href="#{{ modid }}"></a>
+            <span class="title">
+                <h2>
+                {%- if mod.title-image -%}
+                    {%- assign image_url = mod.title-image | relative_url -%}
+                    <img src="{{ image_url }}" alt="{{ mod.title | escape }}" {% imagesize image_url:props %}>
+                {%- else -%}
+                    {{- mod.title | smartify -}}
+                {%- endif -%}
+                </h2>
+                {% include elements/mod-label.html mod=mod %}
+            </span>
         </div>
         <div class="misc">
         {% if mod.date -%}
