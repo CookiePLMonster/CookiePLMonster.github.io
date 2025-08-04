@@ -13,10 +13,8 @@
     @extend %padding-post;
 }
 
-article {
-    .footnotes {
-        font-size: 0.9em;
-    }
+.footnotes {
+    font-size: 0.9em;
 }
 
 header, .posts {

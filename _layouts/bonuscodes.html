@@ -36,12 +36,12 @@ plausible-tagged-events: true
 </div>
 
 <template id="footnote-template">
-<li id="fn:{id}" role="doc-endnote">
+<li id="fn:{id}">
 <p>{note}<a b-code="for n in range(num):" href="#fnref:{id}:{n}" class="reversefootnote" role="doc-backlink">&nbsp;&larrhk;<sup b-code="if n != 0:">{n+1}</sup></a></p>
 </li>
 </template>
 <template id="footnote-sup">
-<sup id="fnref:{id}:{num}" role="doc-noteref"><a href="#fn:{id}" class="footnote" rel="footnote">{notenum}</a></sup>
+<sup id="fnref:{id}:{num}"><a href="#fn:{id}" class="footnote" rel="footnote" role="doc-noteref">{notenum}</a></sup>
 </template>
 
 </div>
