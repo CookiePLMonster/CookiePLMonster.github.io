@@ -20,8 +20,9 @@ article {
 }
 
 header, .posts {
-    h1, h2 {
+    h1, h2, [role=doc-subtitle] {
         margin: 0;
+        line-height: 1.3;
     }
 }
 
@@ -47,8 +48,11 @@ header, .posts {
             padding: calc(variables.$padding-large*1.5 + variables.$title-y-padding) variables.$padding-small;
         }
 
-        .meta {
+        h1, p {
             @extend %header-txt-shadow;
+        }
+
+        .meta {
             color: color.adjust(variables.$feature-image-text-color, $lightness: -15%);
         }
     }

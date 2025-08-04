@@ -1,15 +1,6 @@
 @use "../variables";
 @use "../utility";
 
-h1.title {
-    @extend %header-txt-shadow;
-}
-
-h2.subtitle {
-    font-weight: normal;
-    @extend %header-txt-shadow;
-}
-
 .outline-box {
     position: relative;
 

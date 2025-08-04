@@ -205,6 +205,7 @@ sass:
   sourcemap: development
   quiet_deps: true
 kramdown:
+  header_offset: 1
   header_links: true
 plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-redirect-from, jekyll-feed, jekyll-sitemap, jekyll-include-cache, jekyll-image-size]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem

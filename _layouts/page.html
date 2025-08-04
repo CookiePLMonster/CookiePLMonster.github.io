@@ -7,9 +7,9 @@ layout: default
   {%- if page.feature-img %} style="background-size: cover; background-image: url('{{ page.feature-img | relative_url }}')"{% endif -%}
   >
     <hgroup>
-      <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
+      <h1>{{ page.title | smartify }}</h1>
       {% if page.subtitle -%}
-      <h2 class="subtitle">{{ page.subtitle | smartify }}</h2>
+      <p role="doc-subtitle">{{ page.subtitle | smartify }}</p>
       {%- endif %}
     </hgroup>
   </header>

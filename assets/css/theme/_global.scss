@@ -55,19 +55,19 @@ h6 {
     margin: 0.67em 0;
 }
 
-h1, .heading-big {
+h1, h2 {
     font-size: 2.3em;
 }
 
-h2 {
+h3, [role=doc-subtitle] {
     font-size: 1.75em;
 }
 
-h3, summary {
+h4, summary {
     font-size: 1.5em;
 }
 
-h4 {
+h5 {
     font-size: 1.15em;
 }
 
@@ -230,14 +230,6 @@ video {
     height: auto;
 }
 
-img[align=left] {
-    margin-right: 3%;
-}
-
-img[align=right] {
-    margin-left: 3%;
-}
-
 summary {
     cursor: pointer;
 }
@@ -249,19 +241,19 @@ summary {
 /* ---- Responsive ---- */
 
 @media screen and (max-width: variables.$break) {
-    h1, .heading-big {
+    h1, h2 {
         font-size: 2em;
     }
 
-    h2 {
+    h3, [role=doc-subtitle] {
         font-size: 1.5em;
     }
 
-    h3, summary {
+    h4, summary {
         font-size: 1em;
     }
 
-    h4,
+    h5,
     tr,
     th,
     .meta {
@@ -291,19 +283,19 @@ summary {
 }
 
 @media screen and (max-width: variables.$sm-break) {
-    h1, .heading-big {
+    h1, h2 {
         font-size: 1.5em;
     }
 
-    h2 {
+    h3, [role=doc-subtitle] {
         font-size: 1em;
     }
 
-    h3, summary {
+    h4, summary {
         font-size: 0.9em;
     }
 
-    h4,
+    h5,
     th,
     tr,
     .meta {
