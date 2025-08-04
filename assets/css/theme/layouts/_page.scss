@@ -1,10 +1,6 @@
 @use "../variables";
 @use "../utility";
 
-.title-padder {
-    padding: calc(#{variables.$title-padding} + 0.5em) variables.$title-padding;
-}
-
 h1.title {
     @extend %header-txt-shadow;
 }

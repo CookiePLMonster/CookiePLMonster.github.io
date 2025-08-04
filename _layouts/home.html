@@ -5,14 +5,42 @@ layout: default
 <main class="page-body">
   {% if site.theme_settings.header_text %}
   <header id="main">
-    <div class="title-padder">
+    <hgroup>
       <h1 class="title">Welcome to {{ site.theme_settings.title | smartify }}</h1>
       <h2 class="subtitle">{{ site.theme_settings.header_text }}</h2>
-    </div>
+    </hgroup>
   </header>
   {% endif %}
 
-  {% include blog.html %}
+  <div class="posts page-content">
+    {% for post in paginator.posts %}
+    <article>
+      <header>
+        <a class="post-link" href="{{ post.url | relative_url }}" aria-label="View full post: {{ post.title | escape }}">
+            {% if post.thumbnail %}
+            <div class="post-img">
+              {%- assign image_url = post.thumbnail | relative_url %}
+              <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
+            </div>
+            {% endif %}
+        <h2 class="heading-big">
+            {{- post.title | smartify -}}
+        </h2>
+      </a>
+        <p class="meta">
+          {{- post.date | date: "%B %-d, %Y" -}}
+          {%- if post.last_modified_at %} (edited {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif -%}
+        </p>
+        <p class="meta">
+          {%- include_cached ert.html document=post %} min read {{- nop -}}
+        </p>
+      </header>
+      <div class="excerpt">
+        {{- post.excerpt | markdownify -}}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </main>
 
 {% include pagination.html %}

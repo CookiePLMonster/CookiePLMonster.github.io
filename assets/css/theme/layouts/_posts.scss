@@ -40,11 +40,11 @@ header, .posts {
     > header {
         color: variables.$feature-image-text-color;
         margin-bottom: 0;
-        padding: math.div(variables.$padding-large, 2.5) variables.$padding-large;
+        padding: calc(math.div(variables.$padding-large, 2.5) + variables.$title-y-padding) variables.$padding-large;
         text-align: center;
 
         @media screen and (max-width: variables.$break) {
-            padding: variables.$padding-large*1.5 variables.$padding-small;
+            padding: calc(variables.$padding-large*1.5 + variables.$title-y-padding) variables.$padding-small;
         }
 
         .meta {

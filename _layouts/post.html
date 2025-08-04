@@ -1,37 +1,33 @@
 ---
 layout: default
 ---
-<article class="page-body">
+<main class="page-body">
   <header id="main"
   {%- if page.feature-img %} style="background-size: cover; background-image: url('{{ page.feature-img | relative_url }}')"{% endif -%}
   >
-    <div class="title-padder">
-      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
-      <p class="meta">
-        {%- if page.custom-date -%}
-        {{ page.custom_date }}
-        {%- else -%}
-        {{ page.date | date: page.date-format }}
-        {%- endif -%}
-        {%- if page.last_modified_at %} (edited {{ page.last_modified_at | date: page.date-format }}){% endif -%}
-      </p>
-      <p class="meta">
-        {%- include_cached ert.html document=page %} min read {{- nop -}}
-      </p>
-    </div>
+    <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title | smartify }}</h1>
+    <p class="meta">
+      {%- if page.custom-date -%}
+      {{ page.custom_date }}
+      {%- else -%}
+      {{ page.date | date: page.date-format }}
+      {%- endif -%}
+      {%- if page.last_modified_at %} (edited {{ page.last_modified_at | date: page.date-format }}){% endif -%}
+    </p>
+    <p class="meta">
+      {%- include_cached ert.html document=page %} min read {{- nop -}}
+    </p>
   </header>
-  <section class="page-content">
+  <div class="page-content">
     {{ content }}
-  </section>
-
-
+  </div>
   <footer>
     {%- include share_buttons.html -%}
 
     {%- assign tag_list = page.tags | join: "|" -%}
     {%- include tags_list.html tags=tag_list -%}
   </footer>
-</article>
+</main>
 
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}

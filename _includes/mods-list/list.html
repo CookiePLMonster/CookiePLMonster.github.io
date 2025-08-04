@@ -1,5 +1,5 @@
 {% for mod in include.items %}
-<section class="mod-listing">
+<article class="mod-listing">
     {% assign modid = mod.id | split: '/' | last %}
     <header>
         <div class="element-anchor" id="{{ modid }}"">
@@ -30,5 +30,5 @@
     <div class="content">
         {{ mod }}
     </div>
-</section>
+</article>
 {% endfor %}
