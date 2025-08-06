@@ -15,7 +15,7 @@ hide: true
         {% unless item.hide %}
             {% assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" %}
             {% if mods.size > 0 %}
-                <li><span class="fa-li"><i class="far fa-list-alt"></i></span><a href="{{ item.url | relative_url }}">{{ item.title | smartify }}</a></li>
+                <li><span class="fa-li"><i class="far fa-list-alt"></i></span><a href="{{ item.url | relative_url }}">{{ item.title | smartify }}</a>
                 <ul>
                     {%- for mod in mods -%}
                         <li><span class="fa-li"><i class="far fa-list-alt"></i></span>
@@ -24,7 +24,7 @@ hide: true
                             {% include elements/mod-label.html mod=mod -%}
                         </li>
                     {%- endfor -%}
-                </ul>
+                </ul></li>
             {% endif %}
         {% endunless %}
     {% endfor %}
