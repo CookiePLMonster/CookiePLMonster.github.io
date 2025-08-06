@@ -51,7 +51,7 @@ layout: page
                         </a>
 
                         <span class="meta">
-                            {{- "today" | date: page.date-format -}}
+                            {%- include elements/time.html date="today" preset=site.date.full_date -%}
                         </span>
                     </li>
                     {% endif %}
@@ -67,8 +67,8 @@ layout: page
                     </a>
 
                     <span class="meta">
-                        {{- post.date | date: page.date-format -}}
-                        {%- if post.last_modified_at %} (edited {{ post.last_modified_at | date: page.date-format }}){% endif -%}
+                        {%- include elements/time.html date=post.date preset=site.date.full_date -%}
+                        {%- if post.last_modified_at %} (edited {% include elements/time.html date=post.last_modified_at preset=site.date.full_date %}){% endif -%}
                     </span>
                 </li>
                 {% endif %}
@@ -83,8 +83,8 @@ layout: page
                     </a>
 
                     <span class="meta">
-                        {{- note.date | date: page.date-format -}}
-                        {%- if note.last_modified_at %} (edited {{ note.last_modified_at | date: page.date-format }}){% endif -%}
+                        {%- include elements/time.html date=note.date preset=site.date.full_date -%}
+                        {%- if note.last_modified_at %} (edited {% include elements/time.html date=note.last_modified_at preset=site.date.full_date %}){% endif -%}
                     </span>
                 </li>
                 {% endif %}

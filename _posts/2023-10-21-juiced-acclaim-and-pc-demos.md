@@ -15,12 +15,12 @@ juxtapose: true
 * TOC
 {:toc}
 
-{% assign ps2online_link = "[PS2Online](https://ps2online.com/)" %}
+{% assign ps2online_link = "[PS2Online](https://ps2online.com/){:target='_blank'}" %}
 {% assign sp_name = "SilentPatch & Enhanced PC Demo" %}
 
 {% assign eagle_link = "**Eagle**" %}
-{% assign juiced_modding_community_link = "[**Juiced Modding Community**](https://discord.com/invite/pu2jdxR/)" %}
-{% assign f4mi_link = "[**f4mi**](http://f4mi.com/)" %}
+{% assign juiced_modding_community_link = "[**Juiced Modding Community**](https://discord.com/invite/pu2jdxR/){:target='_blank'}" %}
+{% assign f4mi_link = "[**f4mi**](http://f4mi.com/){:target='_blank'}" %}
 
 {% assign may_2004_download_links = "[DOWNLOAD](https://archive.org/download/gamefiles.blueyonder.co.uk/gamefiles.blueyonder.co.uk.tar/gamefiles.blueyonder.co.uk%2Fblueyondergames%2Fdemos%2Fjuiced_demo.zip) (retrieved)" %}
 {% assign june_2004_download_links = "[DOWNLOAD](https://files.hiddenpalace.org/1/11/Juiced_%28Jun_2%2C_2004_prototype%29.7z),
@@ -41,7 +41,7 @@ juxtapose: true
 # Introduction
 
 Usually, when I dissect games on this blog, I don't give much attention to demos. However, due to its troubled
-development cycle, [Juiced](https://en.wikipedia.org/wiki/Juiced_(video_game)) is an exceptional case.
+development cycle, [Juiced](https://en.wikipedia.org/wiki/Juiced_(video_game)){:target="_blank"} is an exceptional case.
 Because of the game changing publishers right before the original release date, the game has changed considerably
 -- and thanks to PC demos and leaked PS2/Xbox prototypes, we have a unique opportunity to experience the game in its original form.
 
@@ -68,10 +68,10 @@ The latest builds to surface online are developed so far that you can even play 
 
 # Chapter 1: Who was Juice Games? What is Juiced?
 
-The history of Juiced and Juice Games isn't told in full without mentioning [Rage Software](https://en.wikipedia.org/wiki/Rage_Games).
-This British studio was responsible (among other games) for racing games like [E-racer](https://en.wikipedia.org/wiki/E-racer)
-or [Off-Road Redneck Racing](https://en.wikipedia.org/wiki/Off-Road_Redneck_Racing), however, they were also working on
-[Lamborghini](https://en.wikipedia.org/wiki/Lamborghini_(video_game)) -- a racing game [announced in May 2002](https://www.ign.com/articles/2002/05/24/e3-2002-first-lamborghini-shots)
+The history of Juiced and Juice Games isn't told in full without mentioning [Rage Software](https://en.wikipedia.org/wiki/Rage_Games){:target="_blank"}.
+This British studio was responsible (among other games) for racing games like [E-racer](https://en.wikipedia.org/wiki/E-racer){:target="_blank"}
+or [Off-Road Redneck Racing](https://en.wikipedia.org/wiki/Off-Road_Redneck_Racing){:target="_blank"}, however, they were also working on
+[Lamborghini](https://en.wikipedia.org/wiki/Lamborghini_(video_game)){:target="_blank"} -- a racing game [announced in {% include elements/time.html date="2002-05-01" preset=site.date.year_month %}](https://www.ign.com/articles/2002/05/24/e3-2002-first-lamborghini-shots){:target="_blank"}
 that promised to feature every single car model from this Italian automaker.[^lamborghini-cars]
 
 <figure class="media-container small">
@@ -80,66 +80,70 @@ that promised to feature every single car model from this Italian automaker.[^la
 </figure>
 
 Unfortunately, Rage Software
-[went bankrupt](https://www.gamespot.com/articles/rage-software-closes-its-doors/1100-2908866/) in January 2003, just before they could release the game.
-Lamborghini became a lost media, with only an Xbox Demo surviving, at least until May 2022, when a nearly finished beta build
-[has been published on HiddenPalace](https://hiddenpalace.org/Lamborghini_(Dec_10,_2002_prototype)).
+[went bankrupt](https://www.gamespot.com/articles/rage-software-closes-its-doors/1100-2908866/){:target="_blank"} in {% include elements/time.html date="2003-01-01" preset=site.date.year_month %}, just before they could release the game.
+Lamborghini became a lost media, with only an Xbox Demo surviving, at least until {% include elements/time.html date="2022-05-01" preset=site.date.year_month %},
+when a nearly finished beta build [has been published on HiddenPalace](https://hiddenpalace.org/Lamborghini_(Dec_10,_2002_prototype)){:target="_blank"}.
 
 Not long after, part of the Rage Software staff founded Juice Games.
-Even on their [official website](https://web.archive.org/web/20081003032009/http://www.juicegames.com:80/html/company.html),
+Even on their [official website](https://web.archive.org/web/20081003032009/http://www.juicegames.com:80/html/company.html){:target="_blank"},
 they were always upfront about their Rage Software roots:
 
 > With a back catalogue that includes TFX, EF2000 **and the critically acclaimed but unreleased Lamborghini**,
 > Juice Games developed the multi-million unit selling Juiced franchise.
 
-Sometime in 2003, the team secured funding from [Fund4Games](https://www.gamesindustry.biz/fund4games-a-new-funding-model-for-development)
-and a publishing deal with [Acclaim Entertainment](https://en.wikipedia.org/wiki/Acclaim_Entertainment) (who needed a new racing title after losing
+Sometime in {% include elements/time.html date="2003-01-01" preset=site.date.year %}, the team secured funding from [Fund4Games](https://www.gamesindustry.biz/fund4games-a-new-funding-model-for-development){:target="_blank"}
+and a publishing deal with [Acclaim Entertainment](https://en.wikipedia.org/wiki/Acclaim_Entertainment){:target="_blank"} (who needed a new racing title after losing
 the publishing rights for Burnout) for their new game, **Juice**.
-While the game was never officially referred to by this name, thanks to a very early prototype we know this name was in use at least until November 2003.
+While the game was never officially referred to by this name, thanks to a very early prototype we know this name was in use at least until {% include elements/time.html date="2003-11-01" preset=site.date.year_month %}.
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/4rx5WTrZkTs" %}
 
-By the time Juice Games officially [announced the game in January 2004](https://www.ign.com/articles/2004/01/22/juice-games-announces-juiced),
-it was already known by its final name and set for a Fall 2004 release. The development process under Acclaim was relatively well documented,
-with multiple websites showcasing the game in its early state[^ign-preview] [^gamespot-preview] [^eurogamer-preview], and with demos on all platforms releasing around July 2004.
-In fact, you could say that they released one demo too many -- on {{ "2004-06-09" | date: page.date-format }},
-[a PC demo was released](https://www.ign.com/articles/2004/06/09/juiced-demo-released) early by the German division of Acclaim,
-then [promptly delisted](https://web.archive.org/web/20040521201131/http://www.acclaim.de:80/) on {{ "2004-06-11" | date: page.date-format }}. and scrubbed from the internet thoroughly:
+By the time Juice Games officially [announced the game in {% include elements/time.html date="2004-01-01" preset=site.date.year_month %}](https://www.ign.com/articles/2004/01/22/juice-games-announces-juiced){:target="_blank"},
+it was already known by its final name and set for a {% include elements/time.html date="2004-09-01" preset=site.date.year_month text="Fall 2004" %} release. The development process under Acclaim was relatively well documented,
+with multiple websites showcasing the game in its early state[^ign-preview] [^gamespot-preview] [^eurogamer-preview], and with demos on all platforms releasing around
+{% include elements/time.html date="2004-07-01" preset=site.date.year_month %}.
+In fact, you could say that they released one demo too many -- on {% include elements/time.html date="2004-06-09" %},
+[a PC demo was released](https://www.ign.com/articles/2004/06/09/juiced-demo-released){:target="_blank"} early by the German division of Acclaim,
+then [promptly delisted](https://web.archive.org/web/20040521201131/http://www.acclaim.de:80/){:target="_blank"} on {% include elements/time.html date="2004-06-11" %}. and scrubbed from the internet thoroughly:
 
 > **Juiced Demo**
 >
 > The Juiced demo was taken from the server because it does not show the final status of the game.
 > A new demo will be available as soon as possible. Thank you for your interest!
 
-A "final" Acclaim demo was eventually [released on {{ "2004-07-14" | date: page.date-format }}](https://www.ign.com/articles/2004/07/14/updated-juiced-demo),
+A "final" Acclaim demo was eventually [released on {% include elements/time.html date="2004-07-14" %}](https://www.ign.com/articles/2004/07/14/updated-juiced-demo){:target="_blank"},
 in a much better state than the first one. While Acclaim has done a good job replacing the early demo with a proper build,
-some downloads survived thanks to [Wayback Machine](https://archive.org/web/) and we can experience this early demo with all its issues -- but more on that later 😉
+some downloads survived thanks to [Wayback Machine](https://archive.org/web/){:target="_blank"} and we can experience this early demo with all its issues -- but more on that later 😉
 
-Thanks to [many prototypes surfacing online](https://hiddenpalace.org/Category:Juiced_prototypes), we know that by August 2004 the game was nearly complete,
-and reviews stated [the game was to be released in September 2004](https://www.gamespot.com/articles/juiced-preview/1100-6104070/).
+Thanks to [many prototypes surfacing online](https://hiddenpalace.org/Category:Juiced_prototypes){:target="_blank"}, we know that by {% include elements/time.html date="2004-08-01" preset=site.date.year_month %} the game was nearly complete,
+and reviews stated [the game was to be released in {% include elements/time.html date="2004-09-01" preset=site.date.year_month %}](https://www.gamespot.com/articles/juiced-preview/1100-6104070/){:target="_blank"}.
 
 > We'll bring you more on Juiced as its early September release date approaches.
 
-[An Amazon listing](https://www.amazon.com/Acclaim-Ent-Juiced-complete-package-PlayStation/dp/B0001XASGC) attributed to Acclaim Entertainment exists
-and lists the release date as {{ "2004-09-07" | date: page.date-format }}, although this listing doesn't use Acclaim's cover art.
-Interestingly, [THQ listings](https://www.amazon.co.uk/THQ-Juiced-PS2/dp/B000219OCC/) also exist and they have a different ASIN, but that may just be an US vs. EU Amazon.
+[An Amazon listing](https://www.amazon.com/Acclaim-Ent-Juiced-complete-package-PlayStation/dp/B0001XASGC){:target="_blank"} attributed to Acclaim Entertainment exists
+and lists the release date as {% include elements/time.html date="2004-09-07" %}, although this listing doesn't use Acclaim's cover art.
+Interestingly, [THQ listings](https://www.amazon.co.uk/THQ-Juiced-PS2/dp/B000219OCC/){:target="_blank"} also exist and they have a different ASIN, but that may just be an US vs. EU Amazon.
 
 {% include figures/image.html link="https://cdn.mobygames.com/promos/7167894-juiced-other-playstation-2-preliminary-box-art.jpg"
         style="natural" caption="Even the original box art was revealed." %}
 
-September release never happened, though -- instead, Acclaim [filed for bankruptcy in October 2004](https://www.cnet.com/tech/gaming/game-maker-acclaim-files-for-bankruptcy/)
-and the game's future became unknown. This has all happened so late so some boxed copies of the game [ended up turning up online years later](https://www.reddit.com/r/gamecollecting/comments/3r9y36/picked_up_the_cancelled_version_of_juiced_on_the/), although there is no evidence of the game reaching the store shelves.
+September release never happened, though -- instead, Acclaim [filed for bankruptcy in {% include elements/time.html date="2004-10-01" preset=site.date.year_month %}](https://www.cnet.com/tech/gaming/game-maker-acclaim-files-for-bankruptcy/){:target="_blank"}
+and the game's future became unknown. This has all happened so late so some boxed copies of the game [ended up turning up online years later](https://www.reddit.com/r/gamecollecting/comments/3r9y36/picked_up_the_cancelled_version_of_juiced_on_the/){:target="_blank"}, although there is no evidence of the game reaching the store shelves.
 
 {% include figures/video-iframe.html link="https://www.youtube.com/embed/wNuw6uVv8ng" %}
 
 <blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">- work for Rage Software<br>- develop a Lamborghini game nearly to completion<br>- studio bankrupts, game never releases<br>- move on to found Juice Games<br>- develop Juiced for Acclaim nearly to completion<br>- publisher bankrupts, new publisher modifies the game<br><br>Folks had the worst luck :( <a href="https://t.co/wIwmERTVb7">pic.twitter.com/wIwmERTVb7</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1704429355684766178?ref_src=twsrc%5Etfw">September 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Before long, [THQ](https://en.wikipedia.org/wiki/THQ) and Take-Two [both bid](https://www.gamespot.com/articles/take-two-squeezing-juiced/1100-6108179/) to acquire rights to Juiced;
+Before long, [THQ](https://en.wikipedia.org/wiki/THQ) and Take-Two [both bid](https://www.gamespot.com/articles/take-two-squeezing-juiced/1100-6108179/){:target="_blank"} to acquire rights to Juiced;
 Electronics Arts also attempted to join the bid but failed to meet the deadline (and, honestly, it's good that they didn't manage to buy a direct competitor
-to their own Need for Speed: Underground). [THQ eventually won](https://www.gamedeveloper.com/pc/thq-wins-i-juiced-i-bidding-war) and moved the release date to Summer 2005,
-giving Juice Games [5 more months](https://www.eurogamer.net/i-juiced-june2005) to make changes to the game. If the reviews were to be trusted,
-that new iteration [was received better than the Acclaim's version](https://www.gamespot.com/articles/juiced-updated-hands-on/1100-6117203/).
-The public was also able to see the changes themselves first through a round of demos released in January 2005, then in May 2005, just before the game's release.
-The game was eventually released on {{ "2005-06-13" | date: page.date-format }} in North America and {{ "2005-06-17" | date: page.date-format }} in Europe.
+to their own Need for Speed: Underground). [THQ eventually won](https://www.gamedeveloper.com/pc/thq-wins-i-juiced-i-bidding-war){:target="_blank"} and moved the release date to
+{% include elements/time.html date="2005-05-01" preset=site.date.year_month text="Summer 2005" %},
+giving Juice Games [5 more months](https://www.eurogamer.net/i-juiced-june2005){:target="_blank"} to make changes to the game. If the reviews were to be trusted,
+that new iteration [was received better than the Acclaim's version](https://www.gamespot.com/articles/juiced-updated-hands-on/1100-6117203/){:target="_blank"}.
+The public was also able to see the changes themselves first through a round of demos released in
+{% include elements/time.html date="2005-01-01" preset=site.date.year_month %}, then in {% include elements/time.html date="2005-05-01" preset=site.date.year_month %},
+just before the game's release. The game was eventually released on
+{% include elements/time.html date="2005-06-13" %} in North America and {% include elements/time.html date="2005-06-17" %} in Europe.
 
 ***
 
@@ -166,9 +170,9 @@ SilentPatch includes identical fixes for all 3 demos, and therefore I'll be only
 Screenshots included in this chapter are all taken with SilentPatch installed, as otherwise I would have to take them in 4:3.
 However, this is the **only** modified visual aspect of those demos.
 
-## May 2004 Demo
+## <span>{% include elements/time.html date="2004-05-01" preset=site.date.year_month %} Demo</span>
 
-* Compilation date: **Thursday, 27 May 2004 10:38:44**
+* Compilation date: **{% include elements/time.html date="2004-05-27 10:38:44+0000" preset=site.date.weekday_date_time %}**
 * Download links: {{ may_2004_download_links }}
 * Worth testing: **NO**{:style="color:red"} (too buggy)
 
@@ -213,9 +217,9 @@ or it was just not finalized yet and used sections of the existing tracks as pla
 
 I also have **not** fixed the crashes exclusive to this demo, so it is barely playable even patched. IMO this demo is not worth the effort, except for its rarity.
 
-## June 2004 Demo
+## <span>{% include elements/time.html date="2004-06-01" preset=site.date.year_month %} Demo</span>
 
-* Compilation date: **Wednesday, 23 June 2004 09:22:06**
+* Compilation date: **{% include elements/time.html date="2004-06-23 09:22:06+0000" preset=site.date.weekday_date_time %}**
 * Download links: {{ june_2004_download_links }}; the installer doesn't allow picking an installation directory by default, [see below](#acclaim-installers) for a fix
 * Worth testing: **NO**{:style="color:red"} (just get the July demo)
 
@@ -256,9 +260,9 @@ Based on my observations, I could identify the following differences between May
 Aside from the compatibility issues of the configurator app, this build also introduced a peculiar issue where the HUD flickers randomly. Since the July build was also affected,
 I will explain this bug in detail [below](#acclaim-silentpatch-fixes).
 
-## July 2004 Demo
+## <span>{% include elements/time.html date="2004-07-01" preset=site.date.year_month %} Demo</span>
 
-* Compilation date: **Friday, 2 July 2004 17:00:06**
+* Compilation date: **{% include elements/time.html date="2004-07-02 17:00:06+0000" preset=site.date.weekday_date_time %}**
 * Download links: {{ july_2004_download_links }}; the installer doesn't allow picking an installation directory by default, [see below](#acclaim-installers) for a fix
 * Worth testing: **YES**{:style="color:green"}
 
@@ -392,9 +396,9 @@ a free custom race form of the earlier demos, THQ demos are linear:
 It's clear that this demo showcases the game better, as the player gets a taste of what the career mode looks like, and they can experiment with the game's tuning system
 on their own, instead of relying on auto-mod from the Acclaim demo.
 
-## January 2005 Demo
+## <span>{% include elements/time.html date="2005-01-01" preset=site.date.year_month %} Demo</span>
 
-* Compilation date: **Friday, 28 January 2005 15:07:00**
+* Compilation date: **{% include elements/time.html date="2005-01-28 15:07:00+0000" preset=site.date.weekday_date_time %}**
 * Download links: {{ january_2005_download_links }}
 * Worth testing: **SOMEWHAT**{:style="color:DarkOrange"} (slightly different from the final game, runs with nearly no compatibility issues)
 
@@ -411,9 +415,9 @@ its layout is distinctly different from the final game, more resembling a career
 
 {% include figures/image.html link="/assets/img/posts/juiced-research/screens/jan-2005-career.jpg" thumbnail="/assets/img/posts/juiced-research/screens/thumb/jan-2005-career.jpg" %}
 
-## April 2005 Demo (v2.0)
+## <span>{% include elements/time.html date="2005-04-01" preset=site.date.year_month %} Demo (v2.0)</span>
 
-* Compilation date: **Thursday, 14 April 2005 15:54:25** (4 days before the full game)
+* Compilation date: **{% include elements/time.html date="2005-04-14 15:54:25+0000" preset=site.date.weekday_date_time %}** (4 days before the full game)
 * Download links: {{ april_2005_download_links }}
 * Worth testing: **NO**{:style="color:Red"} (if you really want to try it, don't bother without installing a v2.1 patch)
 
@@ -440,9 +444,9 @@ Based on my observations, I could identify the following content differences bet
   According to [PCGamingWiki](https://www.pcgamingwiki.com/wiki/Juiced#Widescreen_resolution), the Widescreen option in the full version
   of the game is for 16:10, not 16:9. I'm not sure why they changed it, and why they didn't leave both 16:9 and 16:10 as options instead.
 
-## May 2005 Demo (v2.1)
+## <span>{% include elements/time.html date="2005-05-01" preset=site.date.year_month %} Demo (v2.1)</span>
 
-* Compilation date: **Wednesday, 18 May 2005 09:13:12** (30 days after the full game, 51 days before patch v1.01)
+* Compilation date: **{% include elements/time.html date="2005-05-18 09:13:12+0000" preset=site.date.weekday_date_time %}** (30 days after the full game, 51 days before patch v1.01)
 * Download links: {{ may_2005_download_links }}; patches the above v2.0 demo to v2.1
 * Worth testing: **SOMEWHAT**{:style="color:DarkOrange"} (if you **really** can't try the full game)
 
@@ -517,11 +521,11 @@ revealed that the game tried to access `controls_dx9_p.txt` and failed. This, co
 
 * The default driver name `Player` can now be overridden via the INI file.
 
-* A startup crash in the January 2005 demo occurring on PCs with more than 4 logical CPU cores has been fixed.
+* A startup crash in the {% include elements/time.html date="2005-01-01" preset=site.date.year_month %} demo occurring on PCs with more than 4 logical CPU cores has been fixed.
 
-* `Juiced requires virtual memory to be enabled` error from the April and May 2005 demos has been fixed.
+* `Juiced requires virtual memory to be enabled` error from the {% include elements/time.html date="2005-04-01" preset=site.date.year_month %} and {% include elements/time.html date="2005-05-01" preset=site.date.year_month %} demos has been fixed.
 
-* Startup crashes in the May 2005 demo occurring when the OS locale is set to Czech, Polish or Russian have been fixed.
+* Startup crashes in the {% include elements/time.html date="2005-05-01" preset=site.date.year_month %} demo occurring when the OS locale is set to Czech, Polish or Russian have been fixed.
 
 * `JuicedConfig.exe` no longer needs Windows XP SP2 compatibility mode or a Windows compatibility shim to run.
   This improves compatibility with environments where compatibility shims are not enabled by default, e.g. on Wine/Proton.
@@ -539,7 +543,7 @@ are likely also purely technical and not that entertaining for a casual reader.
 
 That said, during the course of the entirety of this research, I came across a few findings specifically in the PS2 prototypes
 that warranted some attention, and I'm publishing them in the form of patches for the two prototypes that by the time of writing this
-are available online -- {{ "2004-06-11" | date: page.date-format }} and {{ "2004-07-28" | date: page.date-format }} builds.
+are available online -- {% include elements/time.html date="2004-06-11" %} and {% include elements/time.html date="2004-07-28" %} builds.
 
 ## 60 FPS
 
@@ -555,9 +559,9 @@ including the final version of Juiced:**
 
 ## Progressive Scan
 
-The {{ "2004-07-28" | date: page.date-format }} build and the final version of Juiced include an option to switch the game to use Progressive Scan
+The {% include elements/time.html date="2004-07-28" %} build and the final version of Juiced include an option to switch the game to use Progressive Scan
 by holding **X**{:style="color:rgb(124, 178, 232);font-family:monospace, monospace"} + **△**{:style="color:rgb(64, 226, 160);font-family:monospace, monospace"},
-while the {{ "2004-06-11" | date: page.date-format }} build doesn't implement this option yet. With this cheat, Progressive Scan is enabled also on this build.
+while the {% include elements/time.html date="2004-06-11" %} build doesn't implement this option yet. With this cheat, Progressive Scan is enabled also on this build.
 
 ## Fixed Widescreen
 
@@ -570,12 +574,12 @@ the same as I did for PC demos.
 
 ## DNAS Bypass
 
-On the PlayStation 2, online multiplayer was protected by [Dynamic Network Authentication System (DNAS)](https://en.wikipedia.org/wiki/DNAS),
+On the PlayStation 2, online multiplayer was protected by [Dynamic Network Authentication System (DNAS)](https://en.wikipedia.org/wiki/DNAS){:target="_blank"},
 an authentication protocol that ensured pirated game copies couldn't access the online functionality.
-Sony kept this service up for long after the PS2's end of life, but finally took it offline on {{ "2016-04-04" | date: page.date-format }},
+Sony kept this service up for long after the PS2's end of life, but finally took it offline on {% include elements/time.html date="2016-04-04" %},
 leaving unmodified games unable to play online. As DNAS was not responsible for the actual online functionality, only for authentication,
 DNAS Bypass codes have been created for various games to circumvent the authentication entirely. Thanks to the {{ ps2online_link }} project,
-the final version of Juiced has a DNAS Bypass patch that allows people to play online through [OpenSpy](http://openspy.net/), but that patch didn't work for the prototypes.
+the final version of Juiced has a DNAS Bypass patch that allows people to play online through [OpenSpy](http://openspy.net/){:target="_blank"}, but that patch didn't work for the prototypes.
 
 With my DNAS Bypass, Acclaim prototypes can connect to OpenSpy and online play is possible just like in the final game! Prototypes and retail games see each other's lobbies,
 but they cannot enter them -- so it is not possible to accidentally ruin someone else's fun by joining their game with the wrong version of the game.

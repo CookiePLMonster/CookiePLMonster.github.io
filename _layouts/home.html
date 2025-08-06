@@ -28,8 +28,8 @@ layout: default
         </h2>
       </a>
         <p class="meta">
-          {{- post.date | date: "%B %-d, %Y" -}}
-          {%- if post.last_modified_at %} (edited {{ post.last_modified_at | date: "%B %-d, %Y" }}){% endif -%}
+          {%- include elements/time.html date=post.date preset=site.date.full_date -%}
+          {%- if post.last_modified_at %} (edited {% include elements/time.html date=post.last_modified_at preset=site.date.full_date %}){% endif -%}
         </p>
         <p class="meta">
           {%- include_cached ert.html document=post %} min read {{- nop -}}

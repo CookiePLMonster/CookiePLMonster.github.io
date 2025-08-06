@@ -61,8 +61,7 @@ Czym zajmuję się obecnie?
 
 {% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}
-{:.sidenote}
-Ostatnia aktualizacja:
+{%- capture date_string -%}
 {{ lastdate | date: "%-d" }} {% case m %}
   {% when '1' %}stycznia
   {% when '2' %}lutego
@@ -77,4 +76,7 @@ Ostatnia aktualizacja:
   {% when '11' %}listopada
   {% when '12' %}grudnia
 {% endcase %} {{ lastdate | date: "%Y" }}
+{%- endcapture -%}
+{:.sidenote}
+Ostatnia aktualizacja: {% include elements/time.html date=page.last_modified_at text=date_string %}
 </div>

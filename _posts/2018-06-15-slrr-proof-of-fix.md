@@ -123,7 +123,7 @@ It has been tailored **only** for Build 936, I do not know what are the effects 
 
 <a href="https://github.com/CookiePLMonster/SLRR-Proofix" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source code on GitHub</a>
 
-**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
+**{% include elements/time.html date=page.last_modified_at %} update:**{:.upcase}
 A few days ago, SLRR was updated without changing the build number. Therefore, this fix is now **incompatible** with an up to date version of the game.
 
 # Unresolved issues

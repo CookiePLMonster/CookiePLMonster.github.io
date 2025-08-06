@@ -82,4 +82,4 @@ I recommend viewing the timeline fullscreen!
 {% include related-reads-list.html related_items=media_items %}
 
 {:.sidenote}
-Last update: {{ page.last_modified_at | date: page.date-format }}
+Last update: {% include elements/time.html date=page.last_modified_at %}

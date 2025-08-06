@@ -19,7 +19,7 @@
         <div class="misc">
         {% if mod.date -%}
         <p class="last-update">
-            Last update: {{ mod.date | date: page.date-format }}
+            {{- nop -}} Last update: {% include elements/time.html date=mod.date -%}
         </p>
         {%- endif %}
         <p>

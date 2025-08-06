@@ -7,8 +7,8 @@
     </a>
 
     <span class="meta">
-        {{- item.date | date: page.date-format -}}
-        {%- if item.last_modified_at %} (edited {{ item.last_modified_at | date: page.date-format }}){% endif -%}
+        {%- include elements/time.html date=item.date preset=include.date_preset -%}
+        {%- if item.last_modified_at %} (edited {% include elements/time.html date=item.last_modified_at preset=include.date_preset %}){% endif -%}
     </span>
 </li>
 {%- endfor -%}

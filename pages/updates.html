@@ -26,8 +26,8 @@ pagination:
         </h2>
       </a>
       <p class="meta">
-        {{- entry.date | date: "%B %-d, %Y" -}}
-        {%- if entry.last_modified_at %} (edited {{ entry.last_modified_at | date: "%B %-d, %Y" }}){% endif -%}
+        {%- include elements/time.html date=entry.date -%}
+        {%- if entry.last_modified_at %} (edited {% include elements/time.html date=entry.last_modified_at %}){% endif -%}
       </p>
     </header>
     <div class="excerpt read-more">

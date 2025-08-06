@@ -7,12 +7,8 @@ layout: default
   >
     <h1>{{ page.title | smartify }}</h1>
     <p class="meta">
-      {%- if page.custom-date -%}
-      {{ page.custom_date }}
-      {%- else -%}
-      {{ page.date | date: page.date-format }}
-      {%- endif -%}
-      {%- if page.last_modified_at %} (edited {{ page.last_modified_at | date: page.date-format }}){% endif -%}
+      {%- include elements/time.html date=page.date preset=site.date.full_date -%}
+      {%- if page.last_modified_at %} (edited {% include elements/time.html date=page.last_modified_at preset=site.date.full_date %}){% endif -%}
     </p>
     <p class="meta">
       {%- include_cached ert.html document=page %} min read {{- nop -}}

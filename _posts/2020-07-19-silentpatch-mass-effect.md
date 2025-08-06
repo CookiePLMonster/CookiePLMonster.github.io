@@ -18,7 +18,7 @@ scroll down to [**Download**](#download) section for a download link.*
 
 ***
 
-**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
+**{% include elements/time.html date=page.last_modified_at %} update:**{:.upcase}
 Build 2 has been released! This update resolves a bug introduced by SilentPatchME which broke enemy AI during the Virmire mission.
 
 ***

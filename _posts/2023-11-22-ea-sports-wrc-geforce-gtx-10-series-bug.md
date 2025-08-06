@@ -12,8 +12,10 @@ tags: [Articles, Releases]
 juxtapose: true
 ---
 
-_TL;DR - if you are not interested in a technical dive into the graphical glitch fixed by SilentPatch, scroll down to the [**Download**](#download)
-section for a download link._
+<aside class="sidenote" markdown="1">
+TL;DR: If you are not interested in a technical dive into the graphical glitch fixed by SilentPatch, scroll down to the [**Download**](#download)
+section for a download link.
+</aside>
 
 ***
 
@@ -28,7 +30,7 @@ For the follow-up article, see
 
 # Introduction
 
-Ever since the newest WRC game from Codemasters and EA was released on {{ "2023-11-03" | date: page.date-format }}, I've had *a lot* of fun playing it.
+Ever since the newest WRC game from Codemasters and EA was released on {% include elements/time.html date="2023-11-03" %}, I've had *a lot* of fun playing it.
 Although my GTX 1070 is close to its end of life, I managed to find a good compromise between performance and quality somewhere in the middle ground
 between Medium and High graphical details, and I'm able to play the game comfortably.
 

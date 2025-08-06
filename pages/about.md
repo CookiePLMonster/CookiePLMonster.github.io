@@ -57,5 +57,5 @@ What am I up to these days?
 * I regularly contribute to [PCGamingWiki](https://www.pcgamingwiki.com/){:target="_blank"}, documenting the state of various PC games and troubleshooting issues.
 
 {:.sidenote}
-Last update: {{ page.last_modified_at | date: page.date-format }}
+Last update: {% include elements/time.html date=page.last_modified_at %}
 </div>

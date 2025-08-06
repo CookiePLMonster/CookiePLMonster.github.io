@@ -12,7 +12,7 @@ tags: [Articles]
 twitter: {card: "summary_large_image"}
 ---
 
-**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
+**{% include elements/time.html date=page.last_modified_at %} update:**{:.upcase}
 Today, CD Projekt RED released a patch 1.05, which includes a fix for the issue covered in this post:
 
 > [AMD SMT] Optimized default core/thread utilization for 4-core and 6-core AMD Ryzen™ processors.

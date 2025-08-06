@@ -10,7 +10,7 @@
         </a>
 
         <span class="meta">
-            {{- mod.date | date: page.date-format -}}
+            {%- include elements/time.html date=mod.date -%}
         </span>
     </li>
     {%- endfor -%}

@@ -26,7 +26,7 @@ If you want to jump straight to SilentPatch or check the source code, **go to th
 *[ASLR]: Address Space Layout Randomization
 *[enex]: Entry/Exit
 
-**{{ "2024-11-02" | date: page.date-format | upcase }} UPDATE:** Hotfix #1 has been released for GTA III, Vice City, and San Andreas!
+**{% include elements/time.html date="2024-11-02" %} update:**{:.upcase} Hotfix #1 has been released for GTA III, Vice City, and San Andreas!
 This hotfix addresses several known issues introduced by the latest update, and addresses compatibility issues with multiple modifications.
 Updating is strongly recommended.
 
@@ -35,13 +35,13 @@ Updating is strongly recommended.
 
 # Introduction
 
-Tomorrow, on October 26th, 2024, GTA San Andreas turns 20 years old. I haven't had the chance to play it upon its release in 2004 -- I was a kid
+Tomorrow, on {% include elements/time.html date="2024-10-26" text="October 26th, 2024" %}, GTA San Andreas turns 20 years old. I haven't had the chance to play it upon its release in {% include elements/time.html date="2004-01-01" preset=site.date.year %} -- I was a kid
 who, back then, played exclusively on PC and would play Vice City whenever my parents allowed me. My first experience with San Andreas was
-in mid-2005 when the game was released on PC; little did I know back then how influential GTA in general, but most specifically San Andreas,
+in {% include elements/time.html date="2005-01-01" preset=site.date.year text="mid-2005" %} when the game was released on PC; little did I know back then how influential GTA in general, but most specifically San Andreas,
 would later be for my life and my professional career -- and that nearly two decades later, well into my adult life, I would still be fixing
 it to make it as enjoyable an experience as I possibly can.
 
-**Today, on October 25th, I'm honored to publish the biggest update of SilentPatch for the classic Grand Theft Auto trilogy to date,
+**Today, on {% include elements/time.html date="2024-10-25" text="October 25th" %}, I'm honored to publish the biggest update of SilentPatch for the classic Grand Theft Auto trilogy to date,
 with the full source code now available on GitHub under the MIT license!**
 While I originally planned for the open source release to go live [in January]({% post_url 2023-12-29-silentpatch-10th-anniversary %}),
 a combination of an increased update scope and several real-life issues happening in the background resulted in this much of a delay,
@@ -726,7 +726,7 @@ a button is no longer possible. Although it was never mentioned in the official 
 of the game, only in 1.0, so it was assumed that it was just fixed there.
 
 However, **Wesser** found out there's more to that.
-This is not a game bug -- instead, it was a mistake made when HOODLUM initially defeated SecuROM in the 1.0 executable back in 2005!
+This is not a game bug -- instead, it was a mistake made when HOODLUM initially defeated SecuROM in the 1.0 executable back in {% include elements/time.html date="2005-01-01" preset=site.date.year %}!
 A chunk of code obfuscated by DRM was decrypted incorrectly, resulting in this breakage, which has later been carried over by **listener**
 to his famous Compact EXE. Wesser figured out this issue in detail and reimplemented the missing chunk of code that's now also included in SilentPatch.
 
@@ -759,14 +759,14 @@ the missing items spawn reliably.
 
 ### Carl Johnson is an innocent man!
 
-Back in 2005 or 2006, when I was casually messing around in San Andreas as a kid,
-I often found myself in a familiar situation: I'd get a wanted level,
+Back in {% include elements/time.html date="2005-01-01" preset=site.date.year %} or {% include elements/time.html date="2006-01-01" preset=site.date.year %},
+when I was casually messing around in San Andreas as a kid, I often found myself in a familiar situation: I'd get a wanted level,
 biker cops would come after me, then I'd enter the legendary **AEZAKMI** cheat code to get rid of the pursuit, and yet...
 the biker cops would keep shooting at CJ. Annoying, right?
 
 {% include figures/image.html link="/assets/img/posts/sp-2024-update/screens/compact_gta_sa_xyEWIFtogB.jpg" thumbnail="auto" caption="Rude." %}
 
-In 2024, I finally dived into this issue, and after some heavy debugging, I realized it happens because of an oddity in
+In {% include elements/time.html date="2024-01-01" preset=site.date.year %}, I finally dived into this issue, and after some heavy debugging, I realized it happens because of an oddity in
 how the specific Drive-By task used by the biker cops is coded: unlike all the other pursuit activities, the drive-by task
 is actually the same as the one used by the gang members, and thus it's not coded to automatically finish when the player
 loses pursuit!

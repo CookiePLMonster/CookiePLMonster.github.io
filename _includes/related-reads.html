@@ -1,7 +1,7 @@
 {% assign related_reads_items = site.posts | where: 'game-series', include.series | sort: 'date' %}
 {% if related_reads_items.size > 0 %}
 <h2>Related reads</h2>
-{% include related-reads-list.html related_items=related_reads_items %}
+{% include related-reads-list.html related_items=related_reads_items date_preset=site.date.full_date %}
 {% endif %}
 
 {% assign other_media_items = site.data.media | where: 'game-series', include.series | sort: 'date' %}

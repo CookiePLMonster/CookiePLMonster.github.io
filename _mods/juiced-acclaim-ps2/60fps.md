@@ -19,7 +19,7 @@ including the final version of Juiced:**
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/60%20FPS/SLUS-20872_778AE49E_60fps.pnach" %} class="button">{% include elements/flag.html flag="us" %} {{ "2004-06-11" | date: page.date-format }} build</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/60%20FPS/SLUS-20872_F8B52006_60fps.pnach" %} class="button">{% include elements/flag.html flag="us" %} {{ "2004-07-28" | date: page.date-format }} build </a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/60%20FPS/SLUS-20872_778AE49E_60fps.pnach" %} class="button">{% include elements/flag.html flag="us" %} {% include elements/time.html date="2004-06-11" %} build</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/60%20FPS/SLUS-20872_F8B52006_60fps.pnach" %} class="button">{% include elements/flag.html flag="us" %} {% include elements/time.html date="2004-07-28" %} build </a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/60%20FPS" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

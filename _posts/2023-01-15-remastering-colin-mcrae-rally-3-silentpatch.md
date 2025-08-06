@@ -12,9 +12,11 @@ tags: [Releases, Articles]
 juxtapose: true
 ---
 
-_TL;DR -- this article is longer than any other blog post I've published to date, so be ready for a long read. If you aren't currently
+<aside class="sidenote" markdown="1">
+TL;DR: This article is longer than any other blog post I've published to date, so be ready for a long read. If you aren't currently
 interested in a deep dive through the game's history, internals and fixes, **scroll down to the [Changelog and download](#changelog-and-download)
-section for a download link.**_
+section for a download link.**
+</aside>
 
 ***
 
@@ -37,7 +39,7 @@ section for a download link.**_
 
 # Introduction {#introduction}
 
-{{ "2022-10-25" | date: "%B %Y" }} was [the 20th anniversary of Colin McRae Rally 3](https://twitter.com/EASPORTSRally/status/1584889076762697730).
+{% include elements/time.html date="2022-10-25" preset=site.date.year_month %} marked [the 20th anniversary of Colin McRae Rally 3](https://twitter.com/EASPORTSRally/status/1584889076762697730){:target="_blank"}.
 A little over two months later, I'm happy to reveal the biggest SilentPatch since GTA San Andreas.
 In this release, developed together with {{ bekoha_link }}, we deliver more than just a set of fixes -- with full
 widescreen support, numerous compatibility fixes, new technical features, Quality of Life improvements, and a scratch-made high definition
@@ -56,8 +58,8 @@ This post may get technical at times, but don't get discouraged; I intend it to 
 ***
 
 But first, a few words about the game for the uninitiated. Colin McRae Rally 3 is a racing game from Codemasters, released originally
-for the PS2 and Xbox on {{ "2002-10-25" | date: page.date-format }}, later ported to PC by Six by Nine Ltd.
-and released there on {{ "2003-06-13" | date: page.date-format }}.[^cmr3-release-date] It was received well and was succeeded by two more sequels in 2003 and 2004
+for the PS2 and Xbox on {% include elements/time.html date="2002-10-25" %}, later ported to PC by Six by Nine Ltd.
+and released there on {% include elements/time.html date="2003-06-13" %}.[^cmr3-release-date] It was received well and was succeeded by two more sequels in 2003 and 2004
 before the franchise moved on to a Colin McRae DiRT series.
 
 Unlike Colin McRae Rally 2.0, where the game shined on PC, CMR3 was an enhanced console port. Nonetheless, I have fond memories from playing
@@ -178,14 +180,14 @@ What about Janusz Kulig, though? We will of course never know for sure if this c
 but one more plausible reason may be a little clearer for those familiar with the Polish rallying scene.
 For those unfamiliar, it's best to show it on a timeline of what I **think** has happened:
 
-1. **{{ "2003-06-26" | date: page.date-format }}** - The original PL Colin McRae Rally 3 featuring Janusz Kulig gets released.[^pl-release]
-2. **{{ "2004-02-13" | date: page.date-format }}** - Janusz Kulig, a Polish rally driver, dies in a road accident after his car collides with a train on a level crossing.[^kulig-date]
-3. **After {{ "2004-04-01" | date: "%B %Y" }}** - Colin McRae Rally 3 gets re-released in eXtra Klasyka, featuring Janusz Wituch -- a prolific voice actor, also starring
+1. **{% include elements/time.html date="2003-06-26" %}** -- The original PL Colin McRae Rally 3 featuring Janusz Kulig gets released.[^pl-release]
+2. **{% include elements/time.html date="2004-02-13" %}** -- Janusz Kulig, a Polish rally driver, dies in a road accident after his car collides with a train on a level crossing.[^kulig-date]
+3. **After {% include elements/time.html date="2004-04-01" preset=site.date.year_month %}** -- Colin McRae Rally 3 gets re-released in eXtra Klasyka, featuring Janusz Wituch -- a prolific voice actor, also starring
    in TOCA Race Driver and TOCA Race Driver 2.[^pl-release] [^klasyka-release]
 
 While there is no definite proof to support that claim, it seems reasonably likely that CD Projekt quickly opted for a new co-driver after Kulig's death.
 Their choice to feature Janusz Wituch may or may not have been related to the fact he was presumably recording lines for TOCA Race Driver 2 around that time -- as
-it was released in Poland on {{ "2004-06-24" | date: page.date-format }}.[^toca2-release]
+it was released in Poland on {% include elements/time.html date="2004-06-24" %}.[^toca2-release]
 
 [^pl-release]: As per: <https://polski-dubbing.fandom.com/wiki/Colin_McRae_Rally_3>
 [^kulig-date]: As per: <https://en.wikipedia.org/wiki/Janusz_Kulig>
@@ -197,7 +199,7 @@ A Czech release, published by CD Projekt, also exists -- albeit the details on i
 <blockquote class="twitter-tweet" data-align="center"><p lang="en" dir="ltr">Let&#39;s see if I can once again seek help through Twitter - do any of you own this? A Czech release of Colin McRae Rally 3. <a href="https://t.co/M2CFIqeCZN">https://t.co/M2CFIqeCZN</a> <a href="https://t.co/fDD4LSOlIz">pic.twitter.com/fDD4LSOlIz</a></p>&mdash; Silent (@__silent_) <a href="https://twitter.com/__silent_/status/1588315889228599296?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Albeit much like the Polish release it was released by CD Projekt in eXtra Klasika, I don't know if it ever was released outside of it (it likely was, though).
-From the technical side, this Czech release is much less interesting than the Polish one -- compiled on {{ "2004-08-31" | date: page.date-format }},
+From the technical side, this Czech release is much less interesting than the Polish one -- compiled on {% include elements/time.html date="2004-08-31"%},
 it's not a special version but rather a translated international release replacing Spanish with Czech. None of the changes from CD Projekt are present in this release,
 although it's clear that it must have been translated from Polish, not from English -- as the Czech translation file contains (now unused) strings introduced in the Polish release!
 

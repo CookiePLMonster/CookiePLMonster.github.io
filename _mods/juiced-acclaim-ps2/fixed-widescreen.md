@@ -15,7 +15,7 @@ causing the image to be squashed. With this patch, the widescreen proportions ma
 
 ***
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Fixed%20Widescreen/SLUS-20872_778AE49E_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} {{ "2004-06-11" | date: page.date-format }} build</a>
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Fixed%20Widescreen/SLUS-20872_F8B52006_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} {{ "2004-07-28" | date: page.date-format }} build </a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Fixed%20Widescreen/SLUS-20872_778AE49E_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} {% include elements/time.html date="2004-06-11" %} build</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Acclaim%20Juiced/Fixed%20Widescreen/SLUS-20872_F8B52006_widescreen.pnach" %} class="button">{% include elements/flag.html flag="us" %} {% include elements/time.html date="2004-07-28" %} build </a>
 
 <a href="https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Acclaim%20Juiced/Fixed%20Widescreen" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>

@@ -42,7 +42,7 @@ From Build 30, SilentPatch detects when the player is playing on LS-RP and **dis
 While it has **not** been announced officially yet, it is more than likely that this and future builds of SilentPatch will be officially allowed to use without the risk of any punishment.
 When new information arrives, I will modify this post with up to date changes!
 
-{{ page.last_modified_at | date: page.date-format }} update: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
+{% include elements/time.html date=page.last_modified_at %} update: SilentPatch Build 30 is now **officially** allowed for use on LS-RP!
 
 ***
 

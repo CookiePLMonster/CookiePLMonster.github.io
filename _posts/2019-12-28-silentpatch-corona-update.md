@@ -12,7 +12,7 @@ tags: [Releases]
 juxtapose: true
 ---
 
-🎂 Happy Birthday SilentPatch! On {{ "2013-12-29" | date: page.date-format }}, the very first SilentPatch builds were released! 🎂
+🎂 Happy Birthday SilentPatch! On {% include elements/time.html date="2013-12-29" %}, the very first SilentPatch builds were released! 🎂
 
 For this occasion, new builds have been released for GTA III, Vice City and San Andreas!
 For the first time the releases have received a name! Due to the amount of fixes related to coronas and lights,

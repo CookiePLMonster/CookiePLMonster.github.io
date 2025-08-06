@@ -17,11 +17,14 @@
   {% for mod in game-mods %}
     {
       {% if mod.title != nil %}
+        {%- capture date -%}
+          {%- include elements/time.html date=mod.date -%}
+        {%- endcapture -%}
         "title"    : {{ mod.title | append: ' (' | append: game-titles[forloop.index0] | append: ')' | smartify | jsonify }},
         "category" : "Mods & Patches",
         "tags"     : " ",
         "url"      : "{{ mod.id | split: '/' | last | prepend: '#' | prepend: game-urls[forloop.index0] | relative_url }}",
-        "date"     : "{{ mod.date | date: "%B %-d, %Y" | default: ' ' }}",
+        "date"     : {{ date | strip | jsonify }},
         "excerpt"  : {{ mod.content | truncate: '250' | jsonify }},
         "content"  : {{ mod.content | truncate: '250' | jsonify }}
       {% endif %}
@@ -30,11 +33,14 @@
   {% if site.posts.size > 0 %},{% endif %}
   {% for post in site.posts %}
     {
+      {%- capture date -%}
+        {%- include elements/time.html date=post.date preset=site.date.full_date -%}
+      {%- endcapture -%}
       "title"    : {{ post.title | smartify | jsonify }},
       "category" : "Blog",
       "tags"     : "<i class=\"fas fa-tag\"></i> {{ post.tags | join: ', ' | prepend: " " }}",
       "url"      : "{{ post.url | relative_url }}",
-      "date"     : "{{ post.date | date: "%B %-d, %Y" }}",
+      "date"     : {{ date | strip | jsonify }},
       "excerpt"  : {{ post.content | truncate: '250' | jsonify }},
       "content"  : {{ post.content | jsonify }}
     } {% unless forloop.last %},{% endunless %}
@@ -43,11 +49,14 @@
   {% for page in site.portfolio %}
     {
       {% if page.title != nil %}
+        {%- capture date -%}
+          {%- include elements/time.html date=page.date preset=site.date.full_date -%}
+        {%- endcapture -%}
         "title"    : {{ page.title | smartify | jsonify }},
         "category" : "Portfolio",
         "tags"     : " ",
         "url"      : "{{ page.url | relative_url }}",
-        "date"     : "{{ page.date | date: "%B %-d, %Y" }}",
+        "date"     : {{ date | strip | jsonify }},
         "excerpt"  : {{ page.content | truncate: '250' | jsonify }},
         "content"  : {{ page.content | truncate: '250' | jsonify }}
       {% endif %}

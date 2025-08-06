@@ -116,6 +116,23 @@ theme_settings:
   # Minimum number of mods on the page for TOC to show
   min_mods_for_toc: 3
 
+# Date formats
+date:
+  default:
+    format: "%F"
+    text: "%B %-d, %Y"
+  full_date:
+    format: "%FT%T%z"
+    text: "%B %-d, %Y"
+  year:
+    format: "%Y"
+    text: "%Y"
+  year_month:
+    format: "%Y-%m"
+    text: "%B %Y"
+  weekday_date_time:
+    format: "%FT%T%z"
+    text: "%A, %e %B %Y %T"
 
 pagination:
   enabled: true

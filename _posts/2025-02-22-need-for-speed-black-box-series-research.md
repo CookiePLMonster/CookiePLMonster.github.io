@@ -13,7 +13,7 @@ tags: [Research]
 ---
 
 {:.sidenote}
-Last update: {{ page.date | date: page.date-format }}
+Last update: {% include elements/time.html date=page.last_modified_at %}
 
 This is a [Research]({% link pages/categories.html %}#Research)-style post -- as I go through more games, I will keep updating it with new findings.
 
@@ -74,5 +74,5 @@ Due to the significance of this bug fix, I detailed it in [a separate post]({% p
 
 # Post changelog
 
-* {{ "2025-03-12" | date: page.date-format }} -- NFS Underground Magazine 22 issues researched.
-* {{ page.date | date: page.date-format }} -- initial version. Later edited to clarify missing MW Black Edition serials in PAL releases of Carbon and ProStreet.
+* {% include elements/time.html date="2025-03-12" %} -- NFS Underground Magazine 22 issues researched.
+* {% include elements/time.html date=page.date %} -- initial version. Later edited to clarify missing MW Black Edition serials in PAL releases of Carbon and ProStreet.

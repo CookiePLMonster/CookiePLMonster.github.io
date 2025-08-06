@@ -12,7 +12,7 @@ mathjax: true
 ---
 
 {:.sidenote}
-Last update: {{ page.date | date: page.date-format }}
+Last update: {% include elements/time.html date=page.date %}
 
 As a new Tokyo Xtreme Racer [is just around the corner](https://store.steampowered.com/app/2634950/Tokyo_Xtreme_Racer/){:target="_blank"},
 I spent some time playing the classic TXR games. As I go through the games in order, I wanted to note some things I encountered.
@@ -100,4 +100,4 @@ Nothing here yet, but I published a few PCSX2 patches for this game! Head over t
 
 # Post changelog
 
-* {{ page.date | date: page.date-format }} -- initial version.
+* {% include elements/time.html date=page.date %} -- initial version.

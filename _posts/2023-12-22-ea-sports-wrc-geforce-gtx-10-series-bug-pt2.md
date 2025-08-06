@@ -20,7 +20,7 @@ This article is a follow-up to [Fixing EA Sports WRC decal rendering on GeForce 
 
 # Introduction
 
-On {{ "2023-12-14" | date: page.date-format }}, Codemasters released [the v1.4.0 update](http://x.ea.com/78991) for EA Sports WRC.
+On {% include elements/time.html date="2023-12-14" %}, Codemasters released [the v1.4.0 update](http://x.ea.com/78991){:target="_blank"} for EA Sports WRC.
 Among countless fixes, two items align with the fixes previously published in SilentPatch:
 
 > * Fixed an issue where Fanatec and location event plates would appear stretched when using NVIDIA GTX 10 series GPUs.

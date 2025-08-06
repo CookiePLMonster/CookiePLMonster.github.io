@@ -7,7 +7,9 @@ last_modified_at: 2020-03-05 12:00:00 +0100
 tags: [Articles]
 ---
 
-*If you are not here for the backstory, scroll down to [**A deeper dive into the code**](#a-deeper-dive-into-the-code) section.*
+<aside class="sidenote" markdown="1">
+If you are not here for the backstory, scroll down to [**A deeper dive into the code**](#a-deeper-dive-into-the-code) section.
+</aside>
 
 ***
 
@@ -147,6 +149,6 @@ and issues can happen everywhere.
 
 ***
 
-*As of time of the initial submission of this post, Nekotekina adopted [one of the solutions](https://github.com/RPCS3/llvm/commit/9fb67ecaea741afe9ca59d4a8ba8b6428df76c99)*
-*to RPCS3's LLVM fork.* \\
-*As of {{ "2020-03-05" | date: page.date-format }}, an identical fix is present [in upstream LLVM](https://reviews.llvm.org/D75110).*
+*As of the time of the initial submission of this post, Nekotekina adopted [one of the solutions](https://github.com/RPCS3/llvm/commit/9fb67ecaea741afe9ca59d4a8ba8b6428df76c99)*
+*to RPCS3's LLVM fork.*
+*As of {% include elements/time.html date="2020-03-05" %}, an identical fix is present [in upstream LLVM](https://reviews.llvm.org/D75110).*

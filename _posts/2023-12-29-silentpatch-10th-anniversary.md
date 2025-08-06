@@ -23,11 +23,11 @@ The first fixes for San Andreas spun off my various experiments in VCS PC Editio
 with just over 30 fixes. Ever since then, these patches tripled in size, which is an achievement considering I initially said I'd not update them with any more fixes 😁
 
 During that time, SilentPatch went through a lot. Some of the moments I remember the best are:
-* The release of Rosenberg's Audio Fix and Road Reflections Fix on {{ "2012-11-10" | date: page.date-format }} and {{ "2012-11-24" | date: page.date-format }} respectively.
+* The release of Rosenberg's Audio Fix and Road Reflections Fix on {% include elements/time.html date="2012-11-10" %} and {% include elements/time.html date="2012-11-24" %} respectively.
   Those two small modifications are essentially "proto-SilentPatches" and have directly influenced the decision to make a bigger "fix compilation" mod a year later.
-* The release of SilentPatch for San Andreas on {{ "2014-06-16" | date: page.date-format }}, after it had "leaked" a day prior.
-* The release of SilentPatch for Colin McRae Rally 2.0 on {{ "2015-08-08" | date: page.date-format }} -- the first non-GTA patch.
-* The first SilentPatch update with an update name released on {{ "2019-12-28" | date: page.date-format }}, turned out to be named rather unfortunately:
+* The release of SilentPatch for San Andreas on {% include elements/time.html date="2014-06-16" %}, after it had "leaked" a day prior.
+* The release of SilentPatch for Colin McRae Rally 2.0 on {% include elements/time.html date="2015-08-08" %} -- the first non-GTA patch.
+* The first SilentPatch update with an update name released on {% include elements/time.html date="2019-12-28" %}, turned out to be named rather unfortunately:
   [The Corona Update]({% post_url 2019-12-28-silentpatch-corona-update %}).
 * The SilentPatch that, to date, went the most viral due to the obscurity of a bug it fixed: [SilentPatch for Mass Effect]({% post_url 2020-07-19-silentpatch-mass-effect %}).
 * SilentPatch with the biggest scope of changes to date: [SilentPatch for Colin McRae Rally 3]({% post_url 2023-01-15-remastering-colin-mcrae-rally-3-silentpatch %}).
@@ -61,7 +61,8 @@ as of the time of writing this post.
    I recommend viewing the timeline fullscreen!
    <iframe width="100%" height="450" src="https://time.graphics/embed?v=1&id=202189" frameborder="0" allowfullscreen></iframe>
 
-3. Last but not least, a formal announcement -- **The original SilentPatches for GTA games will become open source in January 2024!** 🥳
+3. Last but not least, a formal announcement -- **The original SilentPatches for GTA games will become open source in
+   {% include elements/time.html date="2024-01-01" preset=site.date.year_month %}!** 🥳
    My interest in these games has lowered over the years, but I still want to give these original patches a proper sendoff -- therefore,
    they are going to receive a new update together with a full repository history publishing on GitHub. You'll not only be able to see the current
    state of the code but also follow it throughout most of the development cycle!

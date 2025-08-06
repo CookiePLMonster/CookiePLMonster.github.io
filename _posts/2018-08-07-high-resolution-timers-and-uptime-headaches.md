@@ -124,7 +124,7 @@ A proper way to handle this is to keep those calculations as integers and only c
 return static_cast<double>((timer_act.QuadPart - timer_begin.QuadPart) * 1000) / timer_freq.QuadPart;
 ```
 
-**{{ page.last_modified_at | date: page.date-format | upcase }} UPDATE:**\\
+**{% include elements/time.html date=page.last_modified_at %} update:**{:.upcase}
 An earlier version of this code snippet divided `timer_freq` by 1000 (as you may have noticed from the comments under the article).
 This has since been changed to a multiplication, as dividing frequency could have resulted in the loss of precision.
 

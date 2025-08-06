@@ -109,6 +109,6 @@ Turns out it does not, and removing them avoids any issues investigated above.
 Finding fixes is a neat thing, but sometimes it's even better to take a step back and look at the bigger picture. In this case, it paid off.
 
 EDITS:\\
-{{ "2018-10-14" | date: page.date-format }}: Rephrased a sentence to be more accurate.
+{% include elements/time.html date="2018-10-14" %}: Rephrased a sentence to be more accurate.
 
 [^1]: If you were ever to say "but running games as admin is totally safe and does no harm!" -- well, that is one of (several) reasons why it may not be a good idea.

@@ -43,7 +43,7 @@ Thanks to Wayback Machine, we can assemble a mostly complete list of games using
 those games most likely also used Bonus Codes. Some of them **may** have been using regular cheat codes, but Wayback Machine hasn't preserved enough web pages to know.
 
 {:.sidenote}
-Last update: {{ page.last_modified_at | date: page.date-format }}
+Last update: {% include elements/time.html date=page.last_modified_at %}
 
 * Brian Lara International Cricket 2005
 * Clive Barker's Jericho
@@ -79,7 +79,7 @@ and found out that the generation there is entirely different. CMR games were ea
 or in other words, they generate all the codes for the user's specific access code, and then they check if the sequence entered
 by the player matches any of them. Therefore, for my generators, I only had to accurately reimplement the in-game generation functions.
 This has also been done by others decades ago -- cheat code generators for all 3 games, as well as TOCA Race Driver 1 & 2,
-date back to the early 2000s. [**MobCat**](https://github.com/MobCat/Codemasters-Cheat-Database){:target="_blank"} also hosts
+date back to the early 2000s. **MobCat** also hosts
 [an online database of precomputed Bonus Codes](https://www.mobcat.zip/CodemastersDB/){:target="_blank"} for those games.
 
 However, TOCA Race Driver 3 is different. For this game, Codemasters switched to an asymmetric generator,
