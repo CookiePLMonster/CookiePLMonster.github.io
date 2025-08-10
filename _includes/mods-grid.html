@@ -2,7 +2,7 @@
 	{%- assign mods_grid_items = include.items | sort: "order" -%}
     {%- for item in mods_grid_items -%}
         {%- unless item.hide -%}
-        <a href="{{ item.url | relative_url }}" title="{{ item.title | escape }}" data-keyboard="true">
+        <a href="{{ item.url | relative_url }}" title="{{ item.title | escape }}">
             {%- assign image_url = item.image | relative_url -%}
             <img src="{{ image_url }}" alt="{{ item.title | escape }}" {% imagesize image_url:props %}>
         </a>

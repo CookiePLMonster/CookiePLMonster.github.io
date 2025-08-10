@@ -2,14 +2,11 @@
     /*
      * Display the menu items on smaller screens
      */
-    const pull = document.getElementById('pull');
-    const menu = document.querySelector('nav ul');
+    const menu = document.getElementById('nav-menu');
 
-    ['click', 'touch'].forEach(e => {
-        pull?.addEventListener(e, () => {
-            menu.classList.toggle('hide');
-        }, false);
-    });
+    document.getElementById('pull')?.addEventListener('click', () => {
+        menu.classList.toggle('hide');
+    }, false);
 
     /*
      * Make the header images move on scroll

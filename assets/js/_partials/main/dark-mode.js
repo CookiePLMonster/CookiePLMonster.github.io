@@ -1,22 +1,20 @@
-const modeSwitcher = (function () {
+(function () {
     const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-    function updateSiteElements(isDark) {
+    function updateSiteElements(linkItem, textItem, isDark) {
         const themeName = isDark ? 'dark' : 'light';
 
         // HTML data theme
         document.documentElement.setAttribute('data-theme', themeName);
 
         // Theme toggle text
-        let themeSwitcher = document.getElementById('theme-toggle');
-        let themeSwitcherText = themeSwitcher.getElementsByClassName('navbar-icon-text');
         if (isDark) {
-            themeSwitcher.title = 'Toggle Light Mode';
-            themeSwitcherText[0].innerHTML = 'Light';
+            linkItem.title = 'Toggle Light Mode';
+            textItem.innerText = 'Light';
         }
         else {
-            themeSwitcher.title = 'Toggle Dark Mode';
-            themeSwitcherText[0].innerHTML = 'Dark';
+            linkItem.title = 'Toggle Dark Mode';
+            textItem.innerText = 'Dark';
         }
 
         // Data theme for unrendered tweets
@@ -32,7 +30,23 @@ const modeSwitcher = (function () {
         });
     }
 
-    function modeSwitcher() {
+    // Create the theme switcher list entry
+    const themeSwitcher = Object.assign(document.createElement('a'), {
+        href: '#'
+    });
+
+    const switcherIcon = Object.assign(document.createElement('i'), {
+        className: 'theme-icon'
+    });
+    switcherIcon.setAttribute('aria-hidden', 'true');
+
+    const switcherText = Object.assign(document.createElement('span'), {
+        className: 'navbar-icon-text'
+    });
+
+    themeSwitcher.addEventListener('click', e => {
+        e.preventDefault();
+
         const theme = sessionStorage.getItem('theme');
         let setDark;
         if (theme === 'dark') {
@@ -44,28 +58,34 @@ const modeSwitcher = (function () {
         }
 
         sessionStorage.setItem('theme', setDark ? 'dark' : 'light');
-        updateSiteElements(setDark);
+        updateSiteElements(themeSwitcher, switcherText, setDark);
         if (typeof DISQUS !== 'undefined') {
             DISQUS.reset({ reload: true });
-        }
-    }
+        };
+    });
+
+
+    themeSwitcher.append(switcherIcon, ' ', switcherText);
+
+    const switcherLi = document.createElement('li');
+    switcherLi.appendChild(themeSwitcher);
+
+    document.getElementById('nav-menu')?.appendChild(switcherLi);
 
     const theme = sessionStorage.getItem('theme');
     if (theme === 'dark') {
-        updateSiteElements(true);
+        updateSiteElements(themeSwitcher, switcherText, true);
     } else if (theme === 'light') {
-        updateSiteElements(false);
+        updateSiteElements(themeSwitcher, switcherText, false);
     } else {
-        updateSiteElements(systemInitiatedDark.matches);
+        updateSiteElements(themeSwitcher, switcherText, systemInitiatedDark.matches);
     }
 
     systemInitiatedDark.addEventListener('change', systemDark => {
-        updateSiteElements(systemDark.matches);
+        updateSiteElements(themeSwitcher, switcherText, systemDark.matches);
         sessionStorage.removeItem('theme');
         if (typeof DISQUS !== 'undefined') {
             DISQUS.reset({ reload: true });
         }
     });
-
-    return modeSwitcher;
 })();

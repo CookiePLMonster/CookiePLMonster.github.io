@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-terser');
 
 gulp.task('js', gulp.parallel(function() {
-    return gulp.src(['js/partials/main/**.js'])
+    return gulp.src(['js/_partials/main/**.js'])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .on('error', (err) => {
@@ -15,7 +15,7 @@ gulp.task('js', gulp.parallel(function() {
         })
         .pipe(gulp.dest("js/"))
     }, function() {
-        return gulp.src(['js/partials/disqus/**.js'])
+        return gulp.src(['js/_partials/disqus/**.js'])
             .pipe(concat('disqus.min.js'))
             .pipe(uglify())
             .on('error', (err) => {
@@ -23,7 +23,7 @@ gulp.task('js', gulp.parallel(function() {
             })
             .pipe(gulp.dest("js/"))
     }, function() {
-        return gulp.src(['js/partials/juxtapose/**.js'])
+        return gulp.src(['js/_partials/juxtapose/**.js'])
         .pipe(concat('juxtapose.min.js'))
         .pipe(uglify())
         .on('error', (err) => {
@@ -33,4 +33,4 @@ gulp.task('js', gulp.parallel(function() {
     })
 );
 
-gulp.task("default", 'js');
+gulp.task("default", gulp.series("js"));
