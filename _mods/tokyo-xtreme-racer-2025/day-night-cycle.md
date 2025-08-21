@@ -5,6 +5,11 @@ excerpt: "Fully dynamic time of day."
 date: 17-07-2025
 ---
 
+{:.disclaimer.warning}
+This mod is currently incompatible with the latest version of the game (0.14.0 or newer) due to an engine upgrade.
+I plan to update it to support the newest version as soon as possible, but the incompatibilities are caused by the third party
+plugin I am using (UE4SS), so I can't promise an ETA.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 This Lua script enables a full day/night cycle in the Ultra Dynamic Sky UE5 plugin, used by the game.
