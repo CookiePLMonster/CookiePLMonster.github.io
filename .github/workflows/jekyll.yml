@@ -42,10 +42,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           cache: 'pip'
-          cache-dependency-path: ./assets/js/partials/brython/requirements.txt
+          cache-dependency-path: ./assets/js/_partials/brython/requirements.txt
       - name: Install and set up Brython
         run: |
-          pip install -r ./assets/js/partials/brython/requirements.txt
+          pip install -r ./assets/js/_partials/brython/requirements.txt
           brython-cli make_package --src-dir ./assets/brython --output-path ./assets/js/blog.brython.js blog
           rm -r ./assets/brython
       - name: Setup Pages
