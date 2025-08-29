@@ -1,6 +1,6 @@
 ---
 title: "Silent Hill 2: Enhanced Edition"
-title-image: "http://www.enhanced.townofsilenthill.com/SH2/images/logo.svg"
+title-image: "assets/img/mods/sh2ee-logo.svg"
 game-series: "sh2"
 excerpt: "A comprehensive collection of community enhancements."
 date: 14-02-2020
