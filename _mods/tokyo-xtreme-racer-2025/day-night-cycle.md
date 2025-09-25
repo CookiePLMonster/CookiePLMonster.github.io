@@ -2,13 +2,8 @@
 title: Dynamic Day/Night Cycle
 game-series: "tokyo-xtreme-racer-2025"
 excerpt: "Fully dynamic time of day."
-date: 17-07-2025
+date: 25-09-2025
 ---
-
-{:.disclaimer.warning}
-This mod is currently incompatible with the latest version of the game (0.14.0 or newer) due to an engine upgrade.
-I plan to update it to support the newest version as soon as possible, but the incompatibilities are caused by the third party
-plugin I am using (UE4SS), so I can't promise an ETA.
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
@@ -39,7 +34,7 @@ This Lua script enables a full day/night cycle in the Ultra Dynamic Sky UE5 plug
 
 # Setup instructions
 
-1. Download UE4SS and extract the archive to `TokyoXtremeRacer/Binaries/Win64` in the game directory. You **must** use the UE4SS version from this page (or at least the config file),
+1. Download UE4SS and extract the archive to `TokyoXtremeRacer/Binaries/Win64` in the game directory. You **must** use the UE4SS version from this page,
    as it's preconfigured for TXR2025.
 2. Download Dynamic Day/Night Cycle and extract the archive to `TokyoXtremeRacer/Binaries/Win64/ue4ss/Mods` in the game directory.
    This directory was extracted from the UE4SS archive in the previous step.
