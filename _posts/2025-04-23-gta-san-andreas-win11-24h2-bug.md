@@ -113,20 +113,20 @@ named `CCarCtrl::CreateCarForScript`. This function spawns a vehicle with a spec
 so I know they are correct. However, this function transforms the supplied Z coordinate slightly:
 
 ```cpp
-if (posZ <= 100.0f)
+if (pos.z <= -100.0f)
 {
-  posZ = CWorld::FindGroundZForCoord(posX, posY);
+  pos.z = CWorld::FindGroundZForCoord(pos.x, pos.y);
 }
-posZ += newVehicle->GetDistanceFromCentreOfMassToBaseOfModel();
+pos.z += newVehicle->GetDistanceFromCentreOfMassToBaseOfModel();
 ```
 
-`CEntity::GetDistanceFromCentreOfMassToBaseOfModel` contains multiple code paths, but the one used in this case simply gets the negated maximum Z value
+`CEntity::GetDistanceFromCentreOfMassToBaseOfModel` contains multiple code paths, but the one used in this case simply gets the negated minimum Z value
 of the model's bounding box:
 ```cpp
 return -CModelInfo::ms_modelInfoPtrs[this->m_wModelIndex]->pColModel->bbox.sup.z;
 ```
 
-At this point, I expected this value to be incorrect, so I peeked into Skimmer's bounding box values just to find out that the maximum Z value is indeed corrupted:
+At this point, I expected this value to be incorrect, so I peeked into Skimmer's bounding box values just to find out that the minimum Z value is indeed corrupted:
 
 ```
 - *(RwBBox**)0x00B2AC48	RwBBox *
