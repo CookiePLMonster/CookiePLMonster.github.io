@@ -7,6 +7,9 @@ date: 26-07-2025
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.247.
+
 {:.credit}
 Built upon the original research of **Xenn765**.
 
