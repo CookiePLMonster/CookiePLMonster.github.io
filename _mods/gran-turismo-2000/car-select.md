@@ -14,7 +14,7 @@ This patch is shipped with PCSX2 starting with v2.5.247.
 Built upon the original research of **Xenn765**.
 
 This patch adds a full car select feature to the game, allowing the players to choose from a list of six cars:
-* Lancer Evolution V GSR '98 (the default car)
+* Mitsubishi Lancer Evolution V GSR '98 (the default car)
 * Toyota Altezza RS200 '98
 * Subaru Legacy B4 RSK '98
 * Mazda RX-7 Type RS '98

@@ -23,6 +23,6 @@ jekyll-theme-type-on-strap.gemspec
 # Node js files
 **/node_modules/*
 
-scratch/
+_scratch/
 .jekyll-metadata
 .vscode

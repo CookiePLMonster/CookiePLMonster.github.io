@@ -575,7 +575,7 @@ and Rockstar most likely introduced it to fix cranes disappearing up close. If t
 
 ***
 
-### *Greetings from Vice City...* but not for this long, please!
+### <span>*Greetings from Vice City...* but not for this long, please!</span>
 
 The outro splash in the PC version of Vice City kind of seems to take forever, doesn't it?
 
