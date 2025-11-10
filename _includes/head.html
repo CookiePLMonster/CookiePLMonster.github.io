@@ -30,9 +30,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" integrity="sha512-+WVTaUIzUw5LFzqIqXOT3JVAc5SrMuvHm230I9QAZa6s+QRk8NDPswbHo2miIZj3yiFyV9lAgzO1wVrjdoO4tw==" crossorigin="anonymous">
 
     {%- if layout.brython or page.brython %}
-    <script defer src="https://cdn.jsdelivr.net/npm/brython@3.13.2/brython.min.js" integrity="sha512-IKveykv1kbclOAQgkHa8FlDamEXz4VXLCfQFjaWSou9/+pRVt1vvhnwJYUYgMDkm2OFSRpQBWZKf3C9YpNDM9g==" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/brython@3.13.2/brython_stdlib.js" integrity="sha512-SXec+h4TdwyIX7DdnmiQz5yzpByFNudfMikGgmXYa9TErthRmkws/JxIri/0xDRDLr3S/1nWNRc+M+oFlprzpQ==" crossorigin="anonymous"></script>
-    <script defer src="{% link assets/js/blog.brython.js %}"></script>
+    <script defer src="{% link assets/js/brython.min.js %}"></script>
+    <script defer src="
+        {%- unless jekyll.environment == 'development' -%}
+        {{- '/assets/js/brython_modules.js' | relative_url -}}
+        {%- else -%}
+        {%- link assets/js/brython_stdlib.js -%}
+        {%- endunless -%}
+        "></script>
     {%- endif %}
 
     <!-- Juxtapose -->

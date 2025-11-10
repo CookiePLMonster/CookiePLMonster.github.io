@@ -39,15 +39,13 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           cache: 'pip'
           cache-dependency-path: ./assets/js/_partials/brython/requirements.txt
-      - name: Install and set up Brython
+      - name: Setup Brython
         run: |
           pip install -r ./assets/js/_partials/brython/requirements.txt
-          brython-cli make_package --src-dir ./assets/brython --output-path ./assets/js/blog.brython.js blog
-          rm -r ./assets/brython
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -56,9 +54,16 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Generate Brython modules
+        working-directory: ./_site
+        run: |
+          brython-cli make_modules --modules_paths ./assets/brython_modules.txt
+          rm -r ./assets/brython
+          rm ./assets/brython_modules.txt
+          rm ./assets/js/brython_stdlib.js
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
 
   # Deployment job
   deploy:
