@@ -1,7 +1,7 @@
 ---
 title: Shoulders control mapping
 game-series: "nascar-dtd-ps2"
-order: 0
+order: 1
 date: 09-10-2021
 ---
 

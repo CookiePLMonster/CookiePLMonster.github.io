@@ -1,1 +1,16 @@
-<a class="button docs" target="_blank" href="{% case include.platform %}{% when 'ps1' %}{% link pages/setup-instructions-ps1.md %}{% when 'ps2' %}{% link pages/setup-instructions-ps2.md %}{% when 'psp' %}{% link pages/setup-instructions-psp.md %}{% else %}{% link pages/setup-instructions.md %}{% endcase %}"><i class='fas fa-wrench'></i> Setup instructions</a>
+{%- capture instructions-link -%}
+    {%- case include.platform -%}
+        {%- when 'ps1' -%}
+        {%- link pages/setup-instructions-ps1.md -%}
+        {%- when 'ps2' -%}
+        {%- link pages/setup-instructions-ps2.md -%}
+        {%- when 'psp' -%}
+        {%- link pages/setup-instructions-psp.md -%}
+        {%- when nil -%}
+        {%- link pages/setup-instructions.md -%}
+    {%- endcase -%}
+{%- endcapture -%}
+
+{%- unless instructions-link == '' -%}
+<a class="button docs" target="_blank" href="{{ instructions-link }}"><i class='fas fa-wrench'></i> Setup instructions</a>
+{%- endunless -%}

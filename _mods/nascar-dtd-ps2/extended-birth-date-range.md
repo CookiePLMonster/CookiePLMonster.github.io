@@ -1,7 +1,7 @@
 ---
 title: Extended valid birth date range
 game-series: "nascar-dtd-ps2"
-order: 2
+order: 3
 date: 09-10-2021
 ---
 

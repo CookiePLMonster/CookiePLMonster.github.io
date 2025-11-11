@@ -28,6 +28,16 @@ Recommended emulator: [PCSX2](https://pcsx2.net/){:target="_blank"} (Desktop), [
 
 ***
 
+# GameCube games {#gc}
+
+{:.sidenote}
+Recommended emulator: [Dolphin](https://dolphin-emu.org/){:target="_blank"} (Desktop, Android)
+
+{% assign gc_items = site.games | where:"parent-series", "console-gc" %}
+{% include mods-grid.html items=gc_items %}
+
+***
+
 # PlayStation Portable games {#psp}
 
 {:.sidenote}

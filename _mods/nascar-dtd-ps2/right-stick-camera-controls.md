@@ -1,7 +1,7 @@
 ---
 title: Camera controls on the right stick
 game-series: "nascar-dtd-ps2"
-order: 1
+order: 2
 date: 09-10-2021
 ---
 
