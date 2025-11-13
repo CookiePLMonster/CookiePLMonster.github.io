@@ -5,6 +5,9 @@ order: 0
 date: 24-06-2022
 ---
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.289.
+
 A cheat code re-enabling a previously unused control mapping in Test Drive Unlimited,
 and swapping <kbd>L1</kbd>/<kbd>R1</kbd> buttons for <kbd>L2</kbd>/<kbd>R2</kbd> triggers. With this change, this mapping matches "modern" controls of the X360 and PC versions of Test Drive Unlimited.
 
