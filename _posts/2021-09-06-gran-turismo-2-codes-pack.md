@@ -88,8 +88,8 @@ If the geometry looks wobbly while using these cheats with PGXP or it looks like
 
 ## HUD & rear view mirror toggle
 By default, it is impossible to completely hide the UI in GT2 during races or replays. Additionally, the rear view mirror only shows in the bumper camera
-and it cannot be down in chase cameras. This cheat allows to toggle the rear view mirror by tapping `L3` (cycling between "always on", "default" and "always off")
-and toggle the entire HUD by holding `L3`. Combined with a Pause and Frame Step features of PS1 emulators (including DuckStation), this can essentially act as
+and it never shows in chase cameras. This cheat allows to toggle the rear view mirror by tapping <kbd>L3</kbd> (cycling between "always on", "default" and "always off")
+and toggle the entire HUD by holding <kbd>L3</kbd>. Combined with a Pause and Frame Step features of PS1 emulators (including DuckStation), this can essentially act as
 a cheap version of Photo Mode 😉
 
 <div class="media-container small">

@@ -6,7 +6,7 @@ date: 09-10-2021
 ---
 
 NASCAR Heat 2002, the first PS2 game from Monster Games, shipped with 4 control schemes to choose from.
-One of those control schemes was called "Shoulders", and mapped throttle/brake to R2/L2.
+One of those control schemes was called "Shoulders", and mapped throttle/brake to <kbd>R2</kbd>/<kbd>L2</kbd>.
 This translates really well to modern gamepads, allowing the player to use triggers for precise throttle control.
 
 For unknown reasons, NASCAR: Dirt to Daytona removed this control scheme.

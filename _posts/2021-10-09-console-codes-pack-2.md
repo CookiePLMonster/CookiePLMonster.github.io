@@ -127,13 +127,13 @@ Applies to: NASCAR: Dirt to Daytona, Test Drive: Eve of Destruction
 For the first time, modifications for a console game that is **not** Gran Turismo! 😁
 
 NASCAR Heat 2002, the first PS2 game from Monster Games, shipped with 4 control schemes to choose from.
-One of those control schemes was called "Shoulders", and mapped throttle/brake to R2/L2.
+One of those control schemes was called "Shoulders", and mapped throttle/brake to <kbd>R2</kbd>/<kbd>L2</kbd>.
 This translates really well to modern gamepads, allowing the player to use triggers for precise throttle control
 (just like I mentioned [above](#adjusted-triggers-sensitivity)).
 
 For unknown reasons, the next two games using the game engine,
 [NASCAR: Dirt to Daytona](https://en.wikipedia.org/wiki/NASCAR:_Dirt_to_Daytona) and [Test Drive: Eve of Destruction](https://en.wikipedia.org/wiki/Test_Drive:_Eve_of_Destruction)
-both removed this control scheme (Test Drive got something resembling it, with throttle/brake on R1/L1 and not R2/L2).
+both removed this control scheme (Test Drive got something resembling it, with throttle/brake on <kbd>R1</kbd>/<kbd>L1</kbd> and not <kbd>R2</kbd>/<kbd>L2</kbd>).
 What makes this decision even more puzzling is a fact that NASCAR DtD was also released on GameCube and Test Drive EoD was also released on Xbox,
 and both are consoles with pressure sensitive triggers in place of PS2's shoulder buttons!
 
