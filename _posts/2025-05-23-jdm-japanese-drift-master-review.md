@@ -8,7 +8,7 @@ image: "assets/img/games/bg/japanese-drift-master.jpg"
 thumbnail: "assets/img/games/bg/japanese-drift-master.jpg"
 feature-img: "assets/img/games/bg/japanese-drift-master-alt.jpg"
 twitter: {card: "summary_large_image"}
-tags: [Articles]
+tags: [Reviews]
 ---
 
 * TOC
@@ -17,7 +17,7 @@ tags: [Articles]
 # Introduction
 
 There is a new kid on the block -- 2025 seems to be a year of independent racing games set in Japan,
-and now, nearly two years after the first public demo, **JDM: Japanese Drift Master** released on May 21st:
+and now, nearly two years after the first public demo, **JDM: Japanese Drift Master** released on {% include elements/time.html date="2025-05-21" text="May 21st" %}:
 
 <div class="center-blocks">
 <iframe src="https://store.steampowered.com/widget/1153410/" frameborder="0" width="646" height="190"></iframe>
