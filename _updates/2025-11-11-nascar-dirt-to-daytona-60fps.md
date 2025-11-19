@@ -9,5 +9,6 @@ Because of this, the game (unsurprisingly) supports 60 FPS flawlessly.
 
 {% include figures/video.html link="https://i.imgur.com/VeqlFv4.mp4" attributes="controls" %}
 
+{:.flexible-buttons}
 <a href="{% link _games/nascar-dirt-to-daytona-ps2.md %}#60fps" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download 60 FPS patch for PS2</a>
 <a href="{% link _games/nascar-dirt-to-daytona-gc.md %}#60fps" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download 60 FPS patch for GC</a>
