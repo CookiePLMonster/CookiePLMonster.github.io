@@ -2,7 +2,7 @@
 
 %media-entry {
     width: 90%;
-    margin: 0 auto 0.5em;
+    margin: 0 auto 0.75em;
     &.natural, .media-container.natural > & {
         max-width: 90%;
     }
@@ -74,7 +74,7 @@ $video-4-3-padding: 75%;
 
 .media-container {
     text-align: center;
-    margin: 0 auto 0.5em;
+    margin: 0 auto 0.75em;
     > figure {
         display: inline-block;
         vertical-align: top;

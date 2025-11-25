@@ -108,6 +108,11 @@ dt {
     font-weight: bold;
 }
 
+p,
+ol,
+ul,
+dl,
+details,
 dd {
     margin-block-end: 1em;
 }
@@ -116,9 +121,9 @@ p,
 ol,
 ul,
 dl,
-details {
+details,
+figcaption {
     line-height: 1.5;
-    margin-bottom: 1em;
 }
 
 figcaption {
