@@ -5,6 +5,9 @@ order: 3
 date: 09-10-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.367.
+
 When creating a new driver profile in NASCAR DtD, the birth years of the player are limited
 to the **1925-1986** range. In 2021 that limit doesn't really make sense anymore,
 so in this cheat, I lifted it enough to future proof it for a very long time -- with valid dates now being in the **1900-2100** range.

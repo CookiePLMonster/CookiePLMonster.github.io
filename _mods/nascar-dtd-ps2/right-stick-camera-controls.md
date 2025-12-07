@@ -9,6 +9,9 @@ date: 09-10-2021
 When "uninstalling" this cheat, please follow the instructions in the PNACH file!
 Removing it without first making the code unmap the newly added controls will leave camera controls permanently mapped in the savegame.
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.367.
+
 When investigating the game's code for the shoulders mapping cheat, I noticed that NASCAR DtD (but not NASCAR Heat 2002 or Test Drive EoD)
 still updates button mappings for Look Left/Look Right actions, albeit it always updates them with an empty mapping.
 I looked into that more closely and found that these actions are fully functional but unused.
