@@ -14,7 +14,7 @@ This page is available in:
 ***
 
 <div style="display: flow-root" markdown="1">
-{% include figures/image.html thumbnail="https://i.imgur.com/nnXmF1k.jpg" caption="This might be surprising, but I'm not blue or fluffy." style="natural aside" %}
+{% include figures/image.html thumbnail="/assets/img/about.jpg" caption="This might be surprising, but I'm not blue or fluffy." style="natural aside" %}
 Hi, I'm **Adrian** -- game developer by day; modder and reverse engineer by night. I try to fix things.
 In the cyberspace, I go by **Silent** or **CookiePLMonster**.
 
