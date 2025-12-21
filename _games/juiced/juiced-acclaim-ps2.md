@@ -8,7 +8,9 @@ parent-series: "console-ps2"
 order: "juiced acclaim"
 redirect_from: "/mods/juiced-ps2/"
 juxtapose: true
+disambiguation:
+  this: "the Acclaim PS2 prototypes of Juiced"
+  others:
+    - desc: "the PC demos"
+      link: "_games/juiced/juiced (demo).md"
 ---
-
-{:.disclaimer.info}
-This page is for the Acclaim PS2 prototypes of Juiced. For mods for the PC demos, see [Juiced (Demo)]({% link _games/juiced/juiced (demo).md %}).

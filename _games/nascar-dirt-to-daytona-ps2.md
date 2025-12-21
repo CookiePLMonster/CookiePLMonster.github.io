@@ -6,8 +6,9 @@ feature-img: "assets/img/games/bg/nascar-dtd.jpg"
 parent-series: "console-ps2"
 game-series: "nascar-dtd-ps2"
 order: "nascar dirt to daytona"
+disambiguation:
+  this: "the PS2 version of NASCAR: Dirt to Daytona"
+  others:
+    - desc: "the GameCube version"
+      link: "_games/nascar-dirt-to-daytona-gc.md"
 ---
-
-{:.disclaimer.info}
-This page is for the PS2 version of NASCAR: Dirt to Daytona.
-For mods for the GameCube version, see [NASCAR: Dirt to Daytona (GameCube)]({% link _games/nascar-dirt-to-daytona-gc.md %}).

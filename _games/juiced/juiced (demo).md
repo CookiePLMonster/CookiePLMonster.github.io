@@ -6,10 +6,12 @@ feature-img: "assets/img/games/bg/juiced-thq.jpg"
 game-series: "juiced-demo"
 order: 75
 redirect_from: "/mods/juiced/"
+disambiguation:
+  this: "the PC demos of Juiced"
+  others:
+    - desc: "the Acclaim PS2 prototypes"
+      link: "_games/juiced/juiced-acclaim-ps2.md"
 ---
-
-{:.disclaimer.info}
-This page is for the PC demos of Juiced. For patches for the Acclaim PS2 prototypes, see [Juiced (Acclaim, PS2)]({% link _games/juiced/juiced-acclaim-ps2.md %}).
 
 {% assign may_2004_download_links = "[DOWNLOAD](https://archive.org/download/gamefiles.blueyonder.co.uk/gamefiles.blueyonder.co.uk.tar/gamefiles.blueyonder.co.uk%2Fblueyondergames%2Fdemos%2Fjuiced_demo.zip) (retrieved)" %}
 {% assign june_2004_download_links = "[DOWNLOAD](https://files.hiddenpalace.org/1/11/Juiced_%28Jun_2%2C_2004_prototype%29.7z),

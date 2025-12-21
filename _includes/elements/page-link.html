@@ -1,0 +1,5 @@
+{%- assign this-page = site.documents | concat: site.pages | find: "path", include.page -%}
+<a href="{%- link {{ include.page }} -%}
+{%- if include.anchor -%}#{{- include.anchor -}}
+{%- endif %}">{{- include.link-name | default: this-page.title -}}
+</a>

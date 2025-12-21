@@ -1,0 +1,12 @@
+<p class="disclaimer info">
+{%- capture disambig-content -%}
+{%- if include.disambiguation.this -%}
+This page is for {{ include.disambiguation.this }}.
+{%- endif -%}
+
+{%- for other in include.disambiguation.others %}
+For {{ other.desc }}, see {% include elements/page-link.html page=other.link link-name=other.link-name anchor=other.anchor %}.
+{%- endfor -%}
+{%- endcapture -%}
+{{- disambig-content | strip -}}
+</p>

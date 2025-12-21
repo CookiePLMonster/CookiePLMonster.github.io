@@ -6,10 +6,13 @@ feature-img: "assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
 image: "assets/img/tutorials/txr2025-custom-decals/branding.jpg"
 permalink: /tutorials/tokyo-xtreme-racer-2025/custom-decals/
 hide: true
+disambiguation:
+  others:
+    - desc: "mods"
+      link: "_games/txr/tokyo-xtreme-racer-2025.md"
 ---
 
-{:.disclaimer.info}
-For mods, see [Tokyo Xtreme Racer (2025)]({% link _games/txr/tokyo-xtreme-racer-2025.md %}).
+{% include elements/disambiguation.html disambiguation=page.disambiguation %}
 
 With this tutorial, you can **replace** the default decals with your custom ones.
 It's currently unknown if **adding** decals is possible.

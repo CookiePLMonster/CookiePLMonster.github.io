@@ -3,12 +3,18 @@ title: "Virtua Fighter 5: Final Showdown Unlocker"
 game-series: ["yakuza-6", "yakuza-lad"]
 excerpt: "Turns VF5FS arcades into a full console game."
 date: 19-04-2021
+disambiguation:
+  this: "the in-game unlocker"
+  others:
+    - desc: "a standalone executable"
+      link: "_games/vf5fs.md"
+      link-name: "Yakuza Arcade Machines Player"
+      anchor: yamp
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
-{:.disclaimer.info}
-This page is for the in-game unlocker. For a standalone executable, check out [Yakuza Arcade Machines Player]({% link _games/vf5fs.md %}#yamp).
+{% include elements/disambiguation.html disambiguation=page.disambiguation %}
 
 This plugin for Yakuza 6: The Song of Life and Yakuza: Like a Dragon modifies in-game Virtua Fighter 5: Final Showdown arcades
 to boot into a previously hidden console mode instead of the arcade mode. This enables users to play a nearly

@@ -3,6 +3,10 @@ layout: page
 plausible-file-downloads: true
 ---
 
+{% if page.disambiguation %}
+{% include elements/disambiguation.html disambiguation=page.disambiguation %}
+{% endif %}
+
 {% assign mods_list_items = site.mods | where: "game-series", page.game-series | sort: 'order' %}
 {% include mods-list/toc.html items=mods_list_items %}
 
