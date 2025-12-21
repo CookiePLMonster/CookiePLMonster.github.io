@@ -13,7 +13,8 @@ Enables the full Xbox controls layout, including the menu navigation and pressur
 
 <a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Juiced/Xbox%20Controls%20Layout/SLUS-20872_C186ACA9_xbox.pnach" %} class="button">{% include elements/flag.html flag="us" %} NTSC-U</a>
 
-<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Juiced/Xbox%20Controls%20Layout/SLES-53044_D7E2EF61_xbox.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL-E</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Juiced/Xbox%20Controls%20Layout/SLES-53044_D7E2EF61_xbox.pnach" %} class="button">{% include elements/flag.html flag="eu" %} PAL-E (SLES-53044)</a>
+<a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Juiced/Xbox%20Controls%20Layout/SLES-53151_308582DE_xbox.pnach" %} class="button">{% include elements/flag.html flag="it" %} PAL-I (SLES-53151)</a>
 
 <a {% include buttons/github-blob-url.html repo="CookiePLMonster/Console-Cheat-Codes" path="master/PS2/Juiced/Xbox%20Controls%20Layout/SLPM-66277_531B7E2E_xbox.pnach" %} class="button">{% include elements/flag.html flag="jp" %} NTSC-J</a>
 
