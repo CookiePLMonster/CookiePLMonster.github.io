@@ -11,6 +11,8 @@ disambiguation:
   others:
     - desc: "the Acclaim PS2 prototypes"
       link: "_games/juiced/juiced-acclaim-ps2.md"
+    - desc: "the final PS2 version"
+      link: "_games/juiced/juiced-ps2.md"
 ---
 
 {% assign may_2004_download_links = "[DOWNLOAD](https://archive.org/download/gamefiles.blueyonder.co.uk/gamefiles.blueyonder.co.uk.tar/gamefiles.blueyonder.co.uk%2Fblueyondergames%2Fdemos%2Fjuiced_demo.zip) (retrieved)" %}
