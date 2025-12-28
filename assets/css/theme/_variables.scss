@@ -27,6 +27,7 @@ $important-color-dark: #CC2960;
 $patreon-color: #f96854;
 $paypal-color: #0079C1;
 $ko-fi-color: #13C3FF;
+$zoom-platform-color: #645cf6;
 
 // Typography colours
 $text-color-light: #383838;
@@ -37,6 +38,7 @@ $blockquote-color-dark: #204060;
 $patreon-link-color: $patreon-color;
 $paypal-link-color: $paypal-color;
 $ko-fi-link-color: $ko-fi-color;
+$zoom-platform-link-color: $zoom-platform-color;
 
 //Search color
 $link-shadow: color.adjust($link-color, $alpha: -.6); //rgba(26, 188, 156, 0.6);

@@ -60,7 +60,8 @@ $button-colors: (
     paypal: (color: variables.$paypal-link-color),
     ko-fi: (color: variables.$ko-fi-link-color),
     gog: (color: var(--gog-link-color), hover: var(--gog-link-hover-color)),
-    steam: (color: var(--steam-link-color), hover: var(--steam-link-hover-color))
+    steam: (color: var(--steam-link-color), hover: var(--steam-link-hover-color)),
+    zoom_platform: (color: variables.$zoom-platform-link-color)
 );
 
 @mixin button-coloring($color, $inverse-hover-color) {
