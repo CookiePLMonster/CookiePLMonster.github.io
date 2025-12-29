@@ -47,6 +47,9 @@ hm2:
 industry-giant-2:
   steam: {id: 271360}
   gog: {id: industry_giant_2}
+king-of-the-road:
+  gog: {id: hard_truck_2_king_of_the_road}
+  zoom_platform: {id: hard-truck-2-king-of-the-road}
 kof-xiv:
   steam: {id: 571260}
   gog: {id: the_king_of_fighters_xiv_galaxy_edition}
