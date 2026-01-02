@@ -5,6 +5,9 @@ order: 3
 date: 20-12-2025
 ---
 
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.5.405.
+
 Enables the full Xbox controls layout, including the menu navigation and pressure-sensitive triggers.
 
 {% include setup-instructions.html platform="ps2" %}
