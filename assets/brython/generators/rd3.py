@@ -29,21 +29,10 @@ def generateCode(platformData, accessCode, cheatID):
     packed = int.from_bytes(struct.pack('<BBHH', 0, cheatID, accessCode, salt), 'little') ^ xor
     encrypted = pow(packed, platformData.d, platformData.n)
 
+    alphabet = '0123456789ABCDEFGHJKLMNPQRTUVWXY'
     result = ''
     # As discovered by HOR163, generated cheat strings must always be 13 characters long
     for _ in range(13):
-        byte = encrypted & 0x1F
-        ch = chr(byte + ord('0'))
-        if ch >= ':':
-            ch = chr(byte + ord('7'))
-        if ch >= 'I':
-            ch = chr(ord(ch) + 1)
-        if ch >= 'O':
-            ch = chr(ord(ch) + 1)
-        if ch >= 'S':
-            ch = chr(ord(ch) + 1)
-        if ch >= 'Z':
-            ch = chr(ord(ch) + 1)
-        result += ch
+        result += alphabet[encrypted & 0x1F]
         encrypted >>= 5
     return result

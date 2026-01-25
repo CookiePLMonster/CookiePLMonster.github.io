@@ -6,37 +6,16 @@ def generateCode(accessCode, cheatID):
         and cheatID >= 0 and cheatID <= 99):
         return None
 
-    # Helper functions
-    def toSigned32(n):
-        n = n & 0xffffffff
-        return (n ^ 0x80000000) - 0x80000000
+    whole, part = divmod(accessCode, 100)
+    exp1 = pow(0x39, cheatID ^ part, 0x44A5)
+    exp2 = pow(0x39, cheatID ^ (whole % 100), 0x44A5)
 
-    # Division like int / int in C, rounding towards zero
-    def idiv(x, y):
-        return int(x / y)
-
-    # Remainder like % in C
-    def rem(x, y):
-        return x - int(x / y) * y
-
-    def calcSeed(input):
-        if input != 0:
-            seed = 0x39
-            for _ in range(input - 1):
-                seed = rem(toSigned32(0x39 * seed), 0x44A5)
-        else:
-            seed = 1
-        return seed
-
-    seed1 = calcSeed((cheatID % 100) ^ (accessCode % 100))
-    seed2 = calcSeed((cheatID % 100) ^ (accessCode // 100 % 100))
-
-    buffer = [0] * 6
-
-    buffer[0] = ord('Z') - rem(seed1, 26)
-    buffer[1] = ord('Z') - rem(idiv(seed1, 676), 26)
-    buffer[2] = ord('Z') - rem(idiv(seed1, 26), 26)
-    buffer[3] = ord('Z') - rem(idiv(seed2, 26), 26)
-    buffer[4] = ord('Z') - rem(idiv(seed2, 676), 26)
-    buffer[5] = ord('Z') - rem(seed2, 26)
+    buffer = [
+        ord('Z') - exp1 % 26,
+        ord('Z') - exp1 // 676 % 26,
+        ord('Z') - exp1 // 26 % 26,
+        ord('Z') - exp2 // 26 % 26,
+        ord('Z') - exp2 // 676 % 26,
+        ord('Z') - exp2 % 26
+    ]
     return ''.join([chr(x) for x in buffer])
