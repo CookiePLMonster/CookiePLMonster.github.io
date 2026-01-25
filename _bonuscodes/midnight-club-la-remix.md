@@ -4,7 +4,7 @@ title: "Midnight Club: L.A. Remix"
 subtitle: "Cheat Codes"
 excerpt: "Cheat Codes for Midnight Club: L.A. Remix."
 image: "assets/img/bonuscodes/midnight-club-la-remix.jpg"
-order: 10
+order: "midnight club la remix"
 ---
 
 {% assign mcla_remix_cheats = site.data.cheat-codes['midnight-club-la-remix'] %}

@@ -3,7 +3,7 @@ layout: bonuscodes
 title: "Colin McRae Rally 3"
 excerpt: "Cheat Generator for Colin McRae Rally 3."
 image: "assets/img/bonuscodes/cmr-3.jpg"
-order: 1
+order: "colin mcrae rally 3"
 ---
 
 <script type="text/python">

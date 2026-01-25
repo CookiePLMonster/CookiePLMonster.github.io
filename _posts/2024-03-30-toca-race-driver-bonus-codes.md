@@ -62,11 +62,11 @@ Last update: {% include elements/time.html date=page.last_modified_at %}
 * Soldiers: Heroes of World War II
 
 There are also a few games I know are missing from the 2011 version of the website but include Bonus Codes.
-These are:
-* LMA Manager 2003
-* LMA Manager 2004
-* LMA Manager 2005
-* LMA Manager 2006
+These are (**now implemented thanks to [Bo](https://32bits.substack.com){:target="_blank"}!**):
+* ~~LMA Manager 2003~~
+* ~~LMA Manager 2004~~
+* ~~LMA Manager 2005~~
+* ~~LMA Manager 2006~~
 
 I am hoping to eventually publish Bonus Codes generators for as many games as I can, but not all of them may be technically doable.
 That said, I said the same about TOCA Race Driver 3 -- until recently. In this case, the recent developments are entertaining
