@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'sass-embedded', '~> 1.89', '>= 1.89.2'
-gem 'rouge', '~> 4.6'
-gem 'kramdown', '~> 2.5', '>= 2.5.1'
+gem 'sass-embedded', '~> 1.97', '>= 1.97.3'
+gem 'rouge', '~> 4.7'
+gem 'kramdown', '~> 2.5', '>= 2.5.2'
 group :jekyll_plugins do
 	gem 'jekyll-paginate-v2', '~> 3.0'
 	gem 'jekyll-seo-tag', '~> 2.8'

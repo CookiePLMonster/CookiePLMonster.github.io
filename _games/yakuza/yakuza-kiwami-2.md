@@ -8,3 +8,5 @@ game-series: "yakuza-kiwami-2"
 redirect_from: "/mods/yk2/"
 order: 2
 ---
+{:.disclaimer.warning}
+This page contains modifications only for the Legacy version of Yakuza Kiwami 2. The 2025 re-release is not supported.

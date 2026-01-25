@@ -72,7 +72,7 @@ $button-colors: (
     }
 
     &.inverse:hover {
-        background-color: if($inverse-hover-color, $inverse-hover-color, color.adjust($color, $lightness: -15%));
+        background-color: if(sass($inverse-hover-color): $inverse-hover-color; else: color.adjust($color, $lightness: -15%));
     }
 }
 
