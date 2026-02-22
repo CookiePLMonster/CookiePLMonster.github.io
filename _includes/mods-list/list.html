@@ -17,14 +17,9 @@
             </div>
         </div>
         <div class="misc">
-        {% if mod.date -%}
-        <p class="last-update">
-            {{- nop -}} Last update: {% include elements/time.html date=mod.date -%}
-        </p>
-        {%- endif %}
-        <p>
-            {{- mod.excerpt -}}
-        </p>
+        {% if mod.version %}<p>Version: {{ mod.version -}}</p>{% endif %}
+        {% if mod.date %}<p>Last updated: {% include elements/time.html date=mod.date -%}</p>{% endif %}
+        {% if mod.first-release %}<p>First released: {% include elements/time.html date=mod.first-release -%}</p>{% endif %}
         </div>
     </header>
     <div class="content">

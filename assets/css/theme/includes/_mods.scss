@@ -44,10 +44,6 @@
             margin: 0;
         }
 
-        .last-update {
-            @extend .sidenote;
-        }
-
         .title {
             display: flex;
             justify-content: flex-start;
@@ -56,6 +52,7 @@
         }
 
         .misc {
+            @extend .sidenote;
             text-align: right;
             margin-inline-start: auto;
         }
