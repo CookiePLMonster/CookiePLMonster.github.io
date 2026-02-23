@@ -208,6 +208,10 @@ defaults:
       author:
         name: Silent
         twitter: __silent_
+  - scope:
+      path: "assets/css/flags/4x3"
+    values:
+      flag-icon: true
 
 
 # PORTFOLIO

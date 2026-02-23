@@ -11,6 +11,12 @@
     $fa-stack-width: 2em
 );
 
+@use 'external/flag-icons/flag-icons' with (
+    $flag-icons-path: "flags",
+    $flag-icons-use-square: false,
+    $flag-icons-included-countries: ({{ site.static_files | where: 'flag-icon', true | map: 'basename' | join: '", "' | prepend: '"' | append: '"' }})
+);
+
 // External
 @use 'external/reset';
 @use 'external/syntax' with (
