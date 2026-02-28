@@ -1,1 +1,8 @@
-<figure class="fig-entry" id="{{ include.id }}"><audio controls {{ include.attributes }}>{% if include.ogg %}<source src="{{ include.ogg }}" type="audio/ogg">{% endif %}{% if include.mp3 %}<source src="{{ include.mp3 }}" type="audio/mpeg">{% endif %}<a href="{{ include.ogg | default: include.mp3 }}">Download audio</a></audio>{% if include.caption %}<figcaption markdown="span">{{ include.caption }}</figcaption>{% endif %}</figure>
+<figure class="fig-entry" id="{{ include.id }}">
+    <audio controls {{ include.attributes }}>
+        {%- if include.ogg %}<source src="{% link {{ include.ogg }} %}" type="audio/ogg">{% endif -%}
+        {%- if include.mp3 %}<source src="{% link {{ include.mp3 }} %}" type="audio/mpeg">{% endif -%}
+        <a href="{% link {{ include.ogg | default: include.mp3 }} %}">Download audio</a>
+    </audio>
+    {%- if include.caption %}<figcaption markdown="span">{{ include.caption }}</figcaption>{% endif -%}
+</figure>

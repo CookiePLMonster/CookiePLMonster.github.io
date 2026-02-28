@@ -50,7 +50,7 @@ Aside from the camera stiffness, GT4 Prologue and GT4 First Preview have one mor
 
 The final GT4 does not remove this camera entirely; instead, it is available as one of the replay cameras.
 With another cheat code, I managed to **add** this camera back to the in-race selection as a new, fourth selectable camera:
-{% include figures/image.html link="/assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg " %}
+{% include figures/image.html link="/assets/img/posts/gt4-gt3-cam/gt4-far-chase-cam.jpg" %}
 
 # Download
 

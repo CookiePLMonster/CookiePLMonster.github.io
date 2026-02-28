@@ -1,5 +1,5 @@
-{%- assign left_url = include.left | relative_url -%}
-{%- assign right_url = include.right | relative_url -%}
+{%- capture left_url-%}{%- link {{ include.left }} -%}{%- endcapture -%}
+{%- capture right_url-%}{%- link {{ include.right }} -%}{%- endcapture -%}
 <figure class="{{ 'fig-entry' | append: ' ' | append: include.style | strip }}" id="{{ include.id }}">
     <div class="juxtapose" data-startingposition="{{ include.start-position }}">
         <img src="{{ left_url }}" data-label="{{ include.left-label | smartify | escape }}" alt="{{ include.left-label | escape }}" {% unless jekyll.environment == "development" %}{% imagesize left_url:props %}{% endunless %}>
