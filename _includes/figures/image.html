@@ -5,7 +5,7 @@
 {%- else -%}
     {%- assign thumbnail = include.thumbnail | default: include.link -%}
 {%- endif -%}
-<figure class="{{ 'fig-entry' | append: ' ' | append: include.style | strip }}" id="{{ include.id }}">
+<figure class="{{ include.style | prepend: 'fig-entry ' | strip }}" id="{{ include.id }}">
     {%- if include.link -%}<a href="{% link {{ include.link }} %}" target="_blank">{%- endif -%}
     <img src="{% link {{ thumbnail }} %}" alt="" {% unless jekyll.environment == "development" %}{% imagesize thumbnail:props %}{% endunless %}>
     {%- if include.link -%}</a>{%- endif -%}

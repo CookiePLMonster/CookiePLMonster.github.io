@@ -7,27 +7,25 @@ permalink: /mods/index/
 hide: true
 ---
 
-{% assign filter_conditions = "game.parent-series != 'non-game',game.parent-series == 'non-game'" | split: "," %}
-{% for filter in filter_conditions %}
+{%- assign filter_conditions = "game.parent-series != 'non-game',game.parent-series == 'non-game'" | split: "," -%}
+{%- for filter in filter_conditions -%}
     <ul class="list-icons">
-    {% assign items = site.games | where_exp: "game", filter | sort_natural: "title" %}
-    {% for item in items %}
-        {% unless item.hide %}
-            {% assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" %}
-            {% if mods.size > 0 %}
-                <li><span class="fa-li"><i class="far fa-list-alt"></i></span><a href="{{ item.url | relative_url }}">{{ item.title | smartify }}</a>
-                <ul>
-                    {%- for mod in mods -%}
-                        <li><span class="fa-li"><i class="far fa-list-alt"></i></span>
-                            {%- assign modid = mod.id | split: '/' | last -%}
-                            <a href="{{ item.url | relative_url }}#{{ modid }}">{{ mod.title | smartify }}</a>
-                            {% include elements/mod-label.html mod=mod -%}
-                        </li>
-                    {%- endfor -%}
-                </ul></li>
-            {% endif %}
-        {% endunless %}
-    {% endfor %}
+    {%- assign items = site.games | where_exp: "game", filter | where_exp: "item", "item.hide != true" | sort_natural: "title" -%}
+    {%- for item in items -%}
+        {%- assign mods = site.mods | where: "game-series", item.game-series | sort_natural: "title" -%}
+        {%- if mods.size > 0 -%}
+            <li><span class="fa-li"><i class="far fa-list-alt"></i></span><a href="{{ item.url | relative_url }}">{{ item.title | smartify }}</a>
+            <ul>
+                {%- for mod in mods -%}
+                    <li><span class="fa-li"><i class="far fa-list-alt"></i></span>
+                        {%- assign modid = mod.id | split: '/' | last -%}
+                        <a href="{{ item.url | relative_url }}#{{ modid }}">{{ mod.title | smartify }}</a>
+                        {% include elements/mod-label.html mod=mod -%}
+                    </li>
+                {%- endfor -%}
+            </ul></li>
+        {% endif %}
+    {%- endfor -%}
     </ul>
     {% unless forloop.last %}<hr>{% endunless %}
-{% endfor %}
+{%- endfor -%}

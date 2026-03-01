@@ -1,11 +1,10 @@
-<div class="{{ 'item-grid ' | append: include.style | strip }}">
-	{%- assign mods_grid_items = include.items | sort: "order" -%}
+<div class="{{ include.style | prepend: 'item-grid ' | strip }}">
+	{%- assign mods_grid_items = include.items | where_exp: 'item', 'item.hide != true' | sort: "order" -%}
     {%- for item in mods_grid_items -%}
-        {%- unless item.hide -%}
-        <a href="{{ item.url | relative_url }}" title="{{ item.title | escape }}">
-            {%- assign image_url = item.image | relative_url -%}
-            <img src="{{ image_url }}" alt="{{ item.title | escape }}" {% imagesize image_url:props %}>
+        {%- assign title_escaped = item.title | escape -%}
+        <a href="{{ item.url | relative_url }}" title="{{ title_escaped }}">
+            {%- capture image_url -%}{% link {{ item.image }} %}{%- endcapture -%}
+            <img src="{{ image_url }}" alt="{{ title_escaped }}" {% imagesize image_url:props %}>
         </a>
-        {%- endunless -%}
     {%- endfor %}
 </div>

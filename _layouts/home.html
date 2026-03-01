@@ -19,7 +19,7 @@ layout: default
         <a class="post-link" href="{{ post.url | relative_url }}" aria-label="View full post: {{ post.title | escape }}">
             {% if post.thumbnail %}
             <div class="post-img">
-              {%- assign image_url = post.thumbnail | relative_url %}
+              {%- capture image_url -%}{% link {{ post.thumbnail }} %}{%- endcapture -%}
               <img src="{{ image_url }}" alt="" {% imagesize image_url:props %}>
             </div>
             {% endif %}

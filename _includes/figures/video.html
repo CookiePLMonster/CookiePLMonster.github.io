@@ -1,4 +1,4 @@
-<figure class="{{ 'fig-entry' | append: ' ' | append: include.style | strip }}" id="{{ include.id }}">
+<figure class="{{ include.style | prepend: 'fig-entry ' | strip }}" id="{{ include.id }}">
     <video playsinline {{ include.attributes }} src="{% link {{ include.link }} %}">Your browser does not support the video tag.</video>
     {%- if include.caption %}<figcaption markdown="span">{{ include.caption }}</figcaption>{% endif -%}
 </figure>
