@@ -141,7 +141,7 @@ Those "presets" correspond to what I later used in benchmarks.
 {% include figures/image.html link="/assets/img/posts/iracing-arcade-review/screens/3226450_20260301203408_1.jpg" thumbnail="auto" caption="High" %}
 </figure>
 
-Disabling the **Volumetric Fog** and **Bloom** makes the visual difference and is the reason why the **Lowest** screenshot looks so lifeless.
+Disabling the **Volumetric Fog** and **Bloom** makes the biggest visual difference and is the reason why the **Lowest** screenshot looks so lifeless.
 Other options simply increase the quality of particular effects like shadows and Anti-Aliasing, so they should only be reduced if you need to reclaim performance.
 However, with this being a Unity game, you're unlikely to need to turn down the details, unless you're using a Steam Deck or another handheld.
 

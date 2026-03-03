@@ -14,7 +14,7 @@
     const main = document.getElementById('main');
     if (main) {
         let imageAspect = 0, imageHeight = 0;
-        if (main.style.backgroundSize == 'cover') {
+        if (main.className == 'feature-img') {
             const imageUrl = main.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
             var image = new Image();
             image.onload = () => {
@@ -33,7 +33,7 @@
                     offset = Math.max(offset, imageMaxOffset);
                 }
             }
-            main.style.backgroundPosition = 'center ' + (offset / 3) + 'px';
+            main.style.backgroundPositionY = (offset / 3) + 'px';
         });
     }
 })();
