@@ -107,5 +107,5 @@ There's more than one way to achieve it.
 
 
 Related Wine documentation:
-- [More on DLL overrides](https://wiki.winehq.org/Wine_User's_Guide#DLL_Overrides){:target="_blank"}
-- [More on WINEDLLOVERRIDES method](https://wiki.winehq.org/Wine_User's_Guide#WINEDLLOVERRIDES.3DDLL_Overrides){:target="_blank"}
+- [More on DLL overrides](https://gitlab.winehq.org/wine/wine/-/wikis/Wine-User's-Guide#dll-overrides){:target="_blank"}
+- [More on WINEDLLOVERRIDES method](https://gitlab.winehq.org/wine/wine/-/wikis/Wine-User's-Guide#winedlloverrides-dll-overrides){:target="_blank"}
