@@ -53,7 +53,6 @@ What am I up to these days?
 * I still release new modifications and patches (see my [Mods & Patches]({% link pages/mods.md %})). My hobby work spans across over 40 games on multiple platforms.
 * I occasionally contribute to numerous open-source projects, such as [OpenRCT2](https://openrct2.io/){:target="_blank"} or [PCSX2](https://pcsx2.net/){:target="_blank"}
   (see my [GitHub activity](https://github.com/CookiePLMonster){:target="_blank"}).
-* I regularly contribute to [Redump Disc Preservation Project](http://redump.org/){:target="_blank"}, concentrating my efforts on preserving PC discs.
 * I regularly contribute to [PCGamingWiki](https://www.pcgamingwiki.com/){:target="_blank"}, documenting the state of various PC games and troubleshooting issues.
 
 {:.sidenote}

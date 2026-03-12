@@ -57,7 +57,7 @@ Czym zajmuję się obecnie?
 * Wciąż wydaję nowe modyfikacje i&nbsp;patche (sprawdź moje [Mody & Patche]({% link pages/mods.md %})). Moje hobby obejmuje ponad 40 gier na różnych platformach.
 * Okazjonalnie udzielam się w&nbsp;różnych projektach z&nbsp;otwartym kodem źródłowym, takich jak np. [OpenRCT2](https://openrct2.io/){:target="_blank"} czy [PCSX2](https://pcsx2.net/){:target="_blank"}
   (sprawdź moją [aktywność na GitHubie](https://github.com/CookiePLMonster){:target="_blank"}).
-* Regularnie udzielam się w&nbsp;[projekcie Redump Disc Preservation](http://redump.org/){:target="_blank"}. Swoją działalność skupiam na utrwalaniu płyt PC.
+* Regularnie udzielam się na stronie [PCGamingWiki](https://www.pcgamingwiki.com/){:target="_blank"}, dokumentując różne gry na PC i rozwiązując związane z nimi problemy.
 
 {% assign lastdate = page.last_modified_at %}
 {% assign m = lastdate | date: "%-m" %}
