@@ -106,10 +106,6 @@ theme_settings:
   docs_icon: "<i class='fas fa-book'></i>"
   gtaf_icon: "<i class='icomoon icon-gtaf'></i>"
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+3:ital,wght@0,400..700;1,400..700"
-
   # Post navigation
   post_navigation: true
 

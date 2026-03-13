@@ -3,6 +3,8 @@
 
 @use 'theme/variables';
 
+@use 'external/source-sans';
+
 @use 'external/fontawesome-glue' with (
     $fa-font-path: 'fontawesome',
     $fa-inverse: var(--background-color),
