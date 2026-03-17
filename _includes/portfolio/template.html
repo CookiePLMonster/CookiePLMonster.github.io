@@ -1,7 +1,7 @@
-{% assign affiliate-links = site.data.store-pages[page.game-series] %}
+{% assign affiliate-links = site.data.store-pages.games[page.game-series] %}
 {% if affiliate-links %}
 
-{% if affiliate-links.gog or affiliate-links.zoom_platform %}
+{% if affiliate-links.gog or affiliate-links.zoom-platform %}
 <p class="disclaimer info">This page contains affiliate links (marked with an asterisk*), meaning I get a commission for every purchase made through them.</p>
 {% endif %}
 
@@ -13,11 +13,11 @@
         {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
     {% endif %}
 {% endif %}
-{% if affiliate-links.zoom_platform %}
+{% if affiliate-links.zoom-platform %}
     {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: '#[ZOOM Platform](https://www.zoom-platform.com/product/'
-                        | append: affiliate-links.zoom_platform.id | append: '?affiliate='
-                        | append: site.theme_settings.affiliate_links.zoom_platform | append: '){:target="_blank" rel="nofollow"}*' %}
-    {% if affiliate-links.zoom_platform.delisted %}
+                        | append: affiliate-links.zoom-platform.id | append: '?affiliate='
+                        | append: site.theme_settings.affiliate_links.zoom-platform | append: '){:target="_blank" rel="nofollow"}*' %}
+    {% if affiliate-links.zoom-platform.delisted %}
         {% assign portfolio-affiliate-links = portfolio-affiliate-links | append: ' *(delisted)*' %}
     {% endif %}
 {% endif %}

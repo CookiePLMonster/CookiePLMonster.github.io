@@ -70,5 +70,8 @@
     <meta name="twitter:data1" content="{% include_cached ert.html document=page %} min read">
     {%- endif %}
 
-    <noscript><style>.no-js { display: none !important; }</style></noscript>
+    {% if page.extra_scss -%}
+    <style>{{ page.extra_scss | scssify }}</style>
+    {% endif -%}
+    <noscript><style>.no-js{display:none !important}</style></noscript>
 </head>

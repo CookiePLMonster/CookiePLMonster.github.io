@@ -7,9 +7,10 @@ permalink: /links/
 ---
 
 # On this website
-* [Bonus Codes]({% link pages/bonuscodes.md %}) -- bonus codes generators for games from Codemasters, as well as discovered cheat codes for other games.
-* [Mod Index]({% link pages/mod-index.html %}) -- alphabetical list of all mods featured on this page.
-* [SilentPatch]({% link pages/silentpatch.md %}) -- history of SilentPatch, a list of supported games, and more.
+* {% include elements/page-link.html page='pages/bonuscodes.md' %} -- bonus codes generators for games from Codemasters, as well as discovered cheat codes for other games.
+* {% include elements/page-link.html page='pages/mod-index.html' link-name='Mod Index' %} -- alphabetical list of all mods featured on this page.
+* {% include elements/page-link.html page='pages/silentpatch.md' %} -- history of SilentPatch, a list of supported games, and more.
+* {% include elements/page-link.html page='pages/the-indie-corner.md' %} -- a list of indie games I follow and/or play. Mostly racing games, but not limited to those!
 
 # Tutorials
 * [Importing custom decals into Tokyo Xtreme Racer (2025)]({% link pages/txr2025-custom-decals.md %})

@@ -1,106 +1,267 @@
-8-bit-adventure-anthology:
-  steam: {id: 664850}
-428-shibuya-scramble:
-  steam: {id: 648580}
-  steam-jp: {id: 648590}
-a-boy-and-his-blob:
-  steam: {id: 281200}
-  gog: {id: a-boy-and-his-blob}
-  zoom_platform:
-    id: a-boy-and-his-blob
-    delisted: true
-aquanox:
-  steam: {id: 39630}
-  gog: {id: aquanox}
-buccaneer:
-  steam: {id: 2702120}
-  gog: {id: buccaneer}
-crazy-taxi:
-  steam: {id: 71230}
-crc-extreme:
-  steam: {id: 925550}
-danganronpa:
-  steam: {id: 413410}
-danganronpa-2:
-  steam: {id: 413420}
-deathkeep:
-  steam: {id: 2350540}
-  gog: {id: deathkeep}
-dirt-rally-2.0:
-  steam: {id: 690790}
-dune-awakening:
-  steam: {id: 1172710}
-dxhrdc:
-  steam: {id: 238010}
-  gog: {id: deus_ex_human_revolution_directors_cut}
-ea-sports-wrc:
-  steam: {id: 1849250}
-far-cry:
-  steam: {id: 13520}
-  gog: {id: far_cry}
-frostpunk:
-  steam: {id: 323190}
-  gog: {id: frostpunk}
-hm2:
-  steam: {id: 274170}
-  gog: {id: hotline_miami_2_wrong_number}
-industry-giant-2:
-  steam: {id: 271360}
-  gog: {id: industry_giant_2}
-king-of-the-road:
-  gog: {id: hard_truck_2_king_of_the_road}
-  zoom_platform: {id: hard-truck-2-king-of-the-road}
-kof-xiv:
-  steam: {id: 571260}
-  gog: {id: the_king_of_fighters_xiv_galaxy_edition}
-mafia2-de:
-  steam: {id: 1030830}
-  gog: {id: mafia_ii_definitive_edition}
-mass-effect:
-  steam: {id: 17460}
-pacific-general:
-  steam: {id: 1741130}
-  gog: {id: pacific_general}
-snk-heroines:
-  steam: {id: 794580}
-star-general:
-  steam: {id: 2414340}
-  gog: {id: star_general}
-take-on-prisoners:
-  steam: {id: 2464670}
-  gog: {id: take_no_prisoners}
-tokyo-xtreme-racer-2025:
-  steam: {id: 2634950}
-w101:
-  steam: {id: 1190400}
-warbreeds:
-  steam: {id: 2464660}
-  gog: {id: warbreeds}
-world-racing-2-ce:
-  steam: {id: 1301010}
-  gog: {id: world_racing_2_champion_edition}
-  zoom_platform: {id: world-racing-2-champion-edition}
-yakuza-0:
-  steam: {id: 638970}
-  gog: {id: yakuza_0}
-yakuza-3:
-  steam: {id: 1088710}
-  gog: {id: yakuza_3_remastered}
-yakuza-4:
-  steam: {id: 1105500}
-  gog: {id: yakuza_4_remastered}
-yakuza-5:
-  steam: {id: 1105510}
-  gog: {id: yakuza_5_remastered}
-yakuza-6:
-  steam: {id: 1388590}
-  gog: {id: yakuza_6_the_song_of_life}
-yakuza-kiwami:
-  steam: {id: 834530}
-  gog: {id: yakuza_kiwami}
-yakuza-kiwami-2:
-  steam: {id: 927380}
-  gog: {id: yakuza_kiwami_2}
-yakuza-lad:
-  steam: {id: 1235140}
-  gog: {id: yakuza_like_a_dragon}
+links:
+  gog:
+    icon: icomoon icon-gog-dot-com
+    name: GOG.com
+    affiliate: true
+  zoom-platform:
+    icon: icomoon icon-zoom-platform
+    name: ZOOM Platform
+    affiliate: true
+  steam:
+    icon: fab fa-steam
+    name: Steam
+  itch-io:
+    icon: fab fa-itch-io
+    name: itch.io
+    affiliate: true
+  ps-store:
+    icon: fab fa-playstation
+    name: PlayStation Store
+  xbox-store:
+    icon: fab fa-xbox
+    name: Xbox Store
+  nintendo-eshop:
+    icon: fas fa-gamepad
+    name: Nintendo eShop
+  apple-app-store:
+    icon: fab fa-app-store
+    name: App Store
+  play-store:
+    icon: fab fa-google-play
+    name: Play Store
+games:
+  4x4-in-a-furniture-store:
+    steam: {id: 4135570}
+  8-bit-adventure-anthology:
+    steam: {id: 664850}
+  10hit:
+    steam: {id: 3520410}
+  428-shibuya-scramble:
+    steam: {id: 648580}
+    steam-jp: {id: 648590}
+  a-boy-and-his-blob:
+    steam: {id: 281200}
+    gog: {id: a-boy-and-his-blob}
+    zoom-platform:
+      id: a-boy-and-his-blob
+      delisted: true
+  agent-64:
+    steam: {id: 1574480}
+  alaturka:
+    steam: {id: 4226560}
+  aquanox:
+    steam: {id: 39630}
+    gog: {id: aquanox}
+  asuka-redline-reverie:
+    steam: {id: 3357310}
+  buccaneer:
+    steam: {id: 2702120}
+    gog: {id: buccaneer}
+  car-park-capital:
+    steam: {id: 3031880}
+  classic-sport-driving:
+    steam: {id: 1267580}
+  cleared-hot:
+    steam: {id: 1710820}
+  crazy-taxi:
+    steam: {id: 71230}
+  crc-extreme:
+    steam: {id: 925550}
+  danganronpa:
+    steam: {id: 413410}
+  danganronpa-2:
+    steam: {id: 413420}
+  deathkeep:
+    steam: {id: 2350540}
+    gog: {id: deathkeep}
+  denshattack:
+    steam: {id: 2524850}
+  dirt-rally-2.0:
+    steam: {id: 690790}
+  drive-rally:
+    steam: {id: 2494780}
+    gog: {id: drive_rally}
+    ps-store: {id: 10015922}
+    apple-app-store: {id: 1573843243}
+  driftline-peaks:
+    steam: {id: 3919490}
+    itch-io: https://moi0210.itch.io/driftline-peaks-demo
+  dune-awakening:
+    steam: {id: 1172710}
+  dxhrdc:
+    steam: {id: 238010}
+    gog: {id: deus_ex_human_revolution_directors_cut}
+  ea-sports-wrc:
+    steam: {id: 1849250}
+  easy-delivery-co:
+    steam: {id: 3293010}
+  exo-rally-championship:
+    steam: {id: 2262020}
+  far-cry:
+    steam: {id: 13520}
+    gog: {id: far_cry}
+  flow:
+    steam: {id: 3895060}
+  formula-circus:
+    steam: {id: 2989890}
+  frostpunk:
+    steam: {id: 323190}
+    gog: {id: frostpunk}
+  fumes:
+    steam: {id: 1920430}
+  grand-pro-circuit:
+    steam: {id: 3993370}
+  highway-warriors-remastered:
+    itch-io: https://jreo.itch.io/highway-warriors-remastered
+  highway-warriors-2:
+    itch-io: https://jreo.itch.io/hw2
+  hm2:
+    steam: {id: 274170}
+    gog: {id: hotline_miami_2_wrong_number}
+  holstin:
+    steam: {id: 2235430}
+  honcho:
+    steam: {id: 2961860}
+  i-saw-a-flying-saucer:
+    steam: {id: 3961690}
+  ignition-2000-origins:
+    steam: {id: 3729180}
+  industry-giant-2:
+    steam: {id: 271360}
+    gog: {id: industry_giant_2}
+  iracing-arcade:
+    steam: {id: 3226450}
+  japanese-drift-master:
+    steam: {id: 1153410}
+    gog: {id: jdm_japanese_drift_master}
+    ps-store: {id: 10017347}
+    xbox-store: {id: jdm-japanese-drift-master/9P2D9T5WWTJ2}
+  kaido-genkai:
+    steam: {id: 3113580}
+  king-of-the-road:
+    gog: {id: hard_truck_2_king_of_the_road}
+    zoom-platform: {id: hard-truck-2-king-of-the-road}
+  kof-xiv:
+    steam: {id: 571260}
+    gog: {id: the_king_of_fighters_xiv_galaxy_edition}
+  lead-the-dragon:
+    steam: {id: 3836490}
+  linear-s:
+    steam: {id: 3383270}
+  mach-1:
+    steam: {id: 3272280}
+  mafia2-de:
+    steam: {id: 1030830}
+    gog: {id: mafia_ii_definitive_edition}
+  mass-effect:
+    steam: {id: 17460}
+  metropolis-1998:
+    steam: {id: 2287430}
+  over-the-hill:
+    steam: {id: 2929250}
+  overcrash:
+    steam: {id: 3980070}
+    itch-io: https://creatoramastudio.itch.io/overcrash
+  pacific-general:
+    steam: {id: 1741130}
+    gog: {id: pacific_general}
+  parking-garage-rally-circuit:
+    steam: {id: 2737300}
+  perfect-lap:
+    steam: {id: 2279080}
+  pico-drift:
+    steam: {id: 3315320}
+  pigface:
+    steam: {id: 3341650}
+  pocket-wheels:
+    steam: {id: 1129360}
+  race-jam:
+    steam: {id: 3474450}
+  rainy-day-racer:
+    steam: {id: 862130}
+  rev-up:
+    steam: {id: 2994490}
+  road-truckers-new-beginning:
+    steam: {id: 3333190}
+  rush-rally-3:
+    steam: {id: 2020860}
+    nintendo-eshop: {id: rush-rally-3-switch}
+    apple-app-store: {id: 1437096541}
+    play-store: {id: brownmonster.app.game.rushrally3}
+  severlink:
+    steam: {id: 3285390}
+  sick-street-racer:
+    steam: {id: 4128920}
+  silkrun:
+    steam: {id: 4149390}
+  skate-story:
+    steam: {id: 1263240}
+  snk-heroines:
+    steam: {id: 794580}
+  speed-demons-2:
+    steam: {id: 2851640}
+  star-general:
+    steam: {id: 2414340}
+    gog: {id: star_general}
+  super-polygon-grand-prix:
+    steam: {id: 2459860}
+  super-woden-gp2:
+    steam: {id: 2083210}
+    gog: {id: super_woden_gp_2}
+    ps-store: {id: 10010441}
+    xbox-store: {id: super-woden-gp-ii/9NBL2XPKN6XJ}
+    nintendo-eshop: {id: super-woden-gp-ii-switch}
+  super-woden-rally-edge:
+    steam: {id: 3218630}
+  superspec-rallycross:
+    steam: {id: 1501780}
+  szrot:
+    steam: {id: 1890780}
+  take-on-prisoners:
+    steam: {id: 2464670}
+    gog: {id: take_no_prisoners}
+  tokyo-xtreme-racer-2025:
+    steam: {id: 2634950}
+  tristan-cole-pro-driver:
+    steam: {id: 1677250}
+    itch-io: https://elocnat.itch.io/tcpdgame
+  truckful:
+    steam: {id: 3090810}
+  w101:
+    steam: {id: 1190400}
+  wanted-3d-dead-or-alive:
+    steam: {id: 3495980}
+  warbreeds:
+    steam: {id: 2464660}
+    gog: {id: warbreeds}
+  world-racing-2-ce:
+    steam: {id: 1301010}
+    gog: {id: world_racing_2_champion_edition}
+    zoom-platform: {id: world-racing-2-champion-edition}
+  yakuza-0:
+    steam: {id: 638970}
+    gog: {id: yakuza_0}
+  yakuza-3:
+    steam: {id: 1088710}
+    gog: {id: yakuza_3_remastered}
+  yakuza-4:
+    steam: {id: 1105500}
+    gog: {id: yakuza_4_remastered}
+  yakuza-5:
+    steam: {id: 1105510}
+    gog: {id: yakuza_5_remastered}
+  yakuza-6:
+    steam: {id: 1388590}
+    gog: {id: yakuza_6_the_song_of_life}
+  yakuza-kiwami:
+    steam: {id: 834530}
+    gog: {id: yakuza_kiwami}
+  yakuza-kiwami-2:
+    steam: {id: 927380}
+    gog: {id: yakuza_kiwami_2}
+  yakuza-lad:
+    steam: {id: 1235140}
+    gog: {id: yakuza_like_a_dragon}
+  yellow-taxi-goes-vroom:
+    steam: {id: 2011780}
+    gog: {id: yellow_taxi_goes_vroom}

@@ -1,0 +1,145 @@
+links:
+  twitter:
+    icon: fab fa-x-twitter
+    url: https://x.com
+    name: X/Twitter
+  bluesky:
+    icon: fab fa-bluesky
+    url: https://bsky.app/profile
+    name: Bluesky
+games:
+  4x4-in-a-furniture-store: &walaber
+    twitter: walaber
+    bluesky: walaber.com
+  10hit:
+    twitter: D0ll04
+  agent-64:
+    twitter: Agent64game
+  alaturka:
+    twitter: bufuakgames
+  asuka-redline-reverie:
+    twitter: ASUKAxRR
+  blow:
+    twitter: Textilismusic
+  busted-metal:
+    twitter: BigGuyCode
+  car-park-capital:
+    twitter: hilkojj
+    bluesky: hilkojj.nl
+  classic-sport-driving:
+    website: https://classicsportdriving.net/
+    twitter: pixelwrappers
+    bluesky: pixelwrappers.net
+  cleared-hot:
+    twitter: colin_k
+  denshattack:
+    twitter: Denshattack
+    bluesky: denshattack.bsky.social
+  driftline-peaks:
+    twitter: Moi0210_
+  drive-rally:
+    website: https://www.drive.game/rally/?id=rally
+    twitter: drivethegame
+    bluesky: drivethegame.bsky.social
+  easy-delivery-co:
+    twitter: sweatersjpg
+    bluesky: sweaters.bsky.social
+  exo-rally-championship:
+    twitter: JayWeston
+  formula-circus:
+    twitter: formulacircus
+  grand-pro-circuit:
+    twitter: bmarci7
+  highway-warriors-series:
+    twitter: jreo03
+  holstin:
+    twitter: holstingame
+  honcho:
+    twitter: MinskWorks
+  i-saw-a-flying-saucer:
+    twitter: nightpeppermint
+  ignition-2000-origins:
+    website: https://www.ignition2000.com/
+    twitter: f11bot
+    bluesky: f11bot.bsky.social
+  iracing-arcade:
+    website: https://iracingarcade.com/
+    twitter: iRacingArcade
+  japanese-drift-master:
+    website: https://jdmgame.com/
+    twitter: Japanese_Drift
+  kaido-genkai:
+    twitter: KaidoGenkai
+    bluesky: kaidogenkai.com
+  lead-the-dragon:
+    twitter: LeadTheDragon
+  linear-s:
+    twitter: AdventSoftworks
+  mach-1:
+    twitter: Mach1Game
+    bluesky: mach1game.bsky.social
+  mayonaka-rush:
+    twitter: MayonakaRUSHdev
+  metropolis-1998:
+    twitter: YesboxStudios
+  over-the-hill:
+    twitter: funselektor
+    bluesky: funselektor.bsky.social
+  parking-garage-rally-circuit: *walaber
+  perfect-lap:
+    twitter: Perfect_Lap
+  pico-drift:
+    twitter: PicoDrift
+  pocket-wheels:
+    twitter: PanicTheFirst
+    bluesky: panicthefirst.bsky.social
+  race-jam:
+    twitter: race_jam
+    bluesky: racejam.bsky.social
+  rainy-day-racer:
+    bluesky: illegaldogs.bsky.social
+  rev-up:
+    twitter: Chonky_Frog
+    bluesky: chonkyfrogstudio.bsky.social
+  road-truckers-new-beginning:
+    twitter: RoadStudioIR
+  rrev-racing-revolution:
+    twitter: rrevgame
+  rush-rally-3:
+    twitter: RushRally
+  severlink:
+    twitter: severlink_game
+    bluesky: severlink.bsky.social
+  sick-street-racer:
+    twitter: sickstreetracer
+    bluesky: sickstreetracer.bsky.social
+  silkrun:
+    twitter: Imphenzia
+  skate-story:
+    twitter: skatestorygame
+  speed-demons-2:
+    twitter: radiangames
+  super-polygon-grand-prix:
+    twitter: games_rozz
+  super-woden-series:
+    twitter: ViJuDaGD
+  szrot:
+    twitter: GustawMackay
+    bluesky: gustawmackay.bsky.social
+  superspec-rallycross:
+    twitter: VolumeGamesLLC
+  tokyo-xtreme-racer-2025:
+    twitter: Tokyo_Xtreme
+  tristan-cole-pro-driver:
+    twitter: elocnat
+  truckful:
+    twitter: MythicOwlGames
+    bluesky: mythicowlgames.bsky.social
+  unnamed-driver-game-evgeniy:
+    twitter: sevenevg
+    bluesky: sevenevg.bsky.social
+  wanted-3d-dead-or-alive:
+    twitter: wanted3Dgame
+    bluesky: wanted3d.bsky.social
+  yellow-taxi-goes-vroom:
+    twitter: panikarcade

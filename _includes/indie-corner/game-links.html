@@ -1,0 +1,33 @@
+{%- assign store-pages = site.data.store-pages.games[include.game-series] -%}
+{%- assign social-links = site.data.social-links.games[include.game-series] -%}
+{%- assign game-review = site.posts | where: 'tags', 'Reviews' | find: 'game-series', include.game-series -%}
+{%- if store-pages or social-links or game-review -%}
+  {%- assign comma = false -%}
+  {%- for store-page in site.data.store-pages.links -%}
+    {%- assign page-name = store-page[0] -%}
+    {%- if store-pages[page-name] -%}
+      {%- if comma -%}, {% endif -%}
+      {%- assign game-page-data = store-pages[page-name] -%}
+      <a href="{% include elements/store-link.html store=page-name links=game-page-data campaign='The Indie Corner' %}" rel="nofollow" target="_blank"><i class='{{ store-page[1].icon }}'></i> {{ store-page[1].name }}</a>
+      {%- if store-page[1].affiliate %}*{% endif -%}
+      {%- assign comma = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for social-link in site.data.social-links.links -%}
+    {%- assign page-name = social-link[0] -%}
+    {%- if social-links[page-name] -%}
+      {%- if comma -%}, {% endif -%}
+      {%- assign game-page-data = social-links[page-name] -%}
+      <a href="
+      {%- if social-link[1].url -%}{{ social-link[1].url }}/{%- endif -%}
+      {{ game-page-data }}" target="_blank"><i class='{{ social-link[1].icon }}'></i> {{ social-link[1].name }}</a>
+      {%- assign comma = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if game-review -%}
+    {%- if comma -%}, {% endif -%}
+    <a href="{{ game-review.url }}" target="_blank"><i class='far fa-file-alt'></i> My review</a>
+  {%- endif -%}
+{%- endif -%}

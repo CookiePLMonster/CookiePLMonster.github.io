@@ -20,7 +20,7 @@ I've been working on has now been released on Steam, GOG&#46;com and ZOOM Platfo
 <iframe src="https://store.steampowered.com/widget/1301010/" frameborder="0" width="646" height="190"></iframe>
 </div>
 
-[BUY ON ZOOM PLATFORM]({{ 'https://www.zoom-platform.com/product/world-racing-2-champion-edition?affiliate=' | append: site.theme_settings.affiliate_links.zoom_platform }}){:target="_blank" rel="nofollow"}
+[BUY ON ZOOM PLATFORM]({{ 'https://www.zoom-platform.com/product/world-racing-2-champion-edition?affiliate=' | append: site.theme_settings.affiliate_links.zoom-platform }}){:target="_blank" rel="nofollow"}
 
 **WR2CE** offers the full experience and the classic gameplay of the original 2005 game, plus:
 

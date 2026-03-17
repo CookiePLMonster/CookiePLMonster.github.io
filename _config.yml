@@ -67,7 +67,8 @@ theme_settings:
   # Affiliate IDs
   affiliate_links:
     gog: 1868289771
-    zoom_platform: 127acd0e-6561-4d00-b3f8-7609ffa1e201
+    zoom-platform: 127acd0e-6561-4d00-b3f8-7609ffa1e201
+    itch-io: AQz4dT9Ech
 
   # Scripts / Features
   plausible_analytics: cookieplmonster.github.io

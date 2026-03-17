@@ -1,0 +1,20 @@
+{%- case include.store -%}
+  {%- when 'steam' -%}
+    https://store.steampowered.com/app/{{ include.links.id }}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign={{ include.campaign | cgi_escape }}
+  {%- when 'gog' -%}
+    https://af.gog.com/game/{{ include.links.id }}?as={{ site.theme_settings.affiliate_links.gog }}
+  {%- when 'zoom-platform' -%}
+    https://www.zoom-platform.com/product/{{ include.links.id }}?affiliate={{ site.theme_settings.affiliate_links.zoom-platform }}
+  {%- when 'ps-store' -%}
+    https://store.playstation.com/concept/{{ include.links.id }}
+  {%- when 'xbox-store' -%}
+    https://www.xbox.com/games/store/{{ include.links.id }}
+  {%- when 'nintendo-eshop' -%}
+    https://www.nintendo.com/games/detail/{{ include.links.id }}
+  {%- when 'apple-app-store' -%}
+    https://apps.apple.com/app/id{{ include.links.id }}
+  {%- when 'play-store' -%}
+    https://play.google.com/store/apps/details?id={{ include.links.id }}
+  {%- when 'itch-io' -%}
+    {{ include.links }}?ac={{ site.theme_settings.affiliate_links.itch-io }}
+{%- endcase -%}

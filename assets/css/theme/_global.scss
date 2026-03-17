@@ -274,12 +274,9 @@ summary {
         font-size: 0.8em;
     }
 
-    li li {
-        font-size: 0.95em;
-    }
-
-    li li * {
-        font-size: 100%;
+    li li,
+    dd li {
+        font-size: 1em;
     }
 
     :root {
