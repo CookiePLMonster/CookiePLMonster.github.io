@@ -8,8 +8,8 @@ permalink: /about/
 
 {:.sidenote}
 This page is available in:
-[{% include elements/flag.html flag="gb" %} English]({% link pages/about.md %}){:style="white-space:nowrap" lang="en" hreflang="en"}
-[{% include elements/flag.html flag="pl" %} polski]({% link pages/about-pl.md %}){:style="white-space:nowrap" lang="pl" hreflang="pl"}
+[{% include elements/flag.html flag="gb" %} English]({% link pages/about.md %}){:.nobr lang="en" hreflang="en"}
+[{% include elements/flag.html flag="pl" %} polski]({% link pages/about-pl.md %}){:.nobr lang="pl" hreflang="pl"}
 
 ***
 

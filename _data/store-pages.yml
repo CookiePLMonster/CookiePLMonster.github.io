@@ -95,6 +95,12 @@ games:
     steam: {id: 1849250}
   easy-delivery-co:
     steam: {id: 3293010}
+    gog: {id: easy_delivery_co}
+    ps-store: {id: 10017365}
+    xbox-store: {id: easy-delivery-co/9PDC8J1BSV8B}
+    nintendo-eshop: {id: easy-delivery-co-switch}
+    apple-app-store: {id: 6753945058}
+    play-store: {id: com.doghowlgames.EasyDeliveryCo}
   exo-rally-championship:
     steam: {id: 2262020}
   far-cry:
@@ -222,6 +228,7 @@ games:
     gog: {id: take_no_prisoners}
   tokyo-xtreme-racer-2025:
     steam: {id: 2634950}
+    ps-store: {id: 10016323}
   tristan-cole-pro-driver:
     steam: {id: 1677250}
     itch-io: https://elocnat.itch.io/tcpdgame

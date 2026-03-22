@@ -226,3 +226,7 @@ $button-colors: (
     @extend %fa-icon;
     @extend .fa-solid;
 }
+
+.nobr {
+    white-space: nowrap;
+}
