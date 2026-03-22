@@ -226,6 +226,8 @@ games:
   take-on-prisoners:
     steam: {id: 2464670}
     gog: {id: take_no_prisoners}
+  the-driver-syndicate:
+    itch-io: https://soapyman.itch.io/driversyndicate
   tokyo-xtreme-racer-2025:
     steam: {id: 2634950}
     ps-store: {id: 10016323}

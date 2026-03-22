@@ -172,6 +172,12 @@ Pico Drift{% comment %}13 February 2025{% endcomment %}
   {% include indie-corner/game-links.html game-series='pico-drift' %}
   {% include figures/image.html thumbnail="/assets/img/the-indie-corner/pico-drift.webp" style="small" %}
 
+The Driver Syndicate{% comment %}13 December 2024{% endcomment %}
+: A sandbox-style spiritual successor to the classic Driver games with faithful recreations of its gameplay systems and lots of community-made content.
+  The official OST was composed by Allister Brimble, who is the author of Driver and Driver 2's soundtracks!
+  {% include indie-corner/game-links.html game-series='the-driver-syndicate' %}
+  {% include figures/image.html thumbnail="/assets/img/the-indie-corner/the-driver-syndicate.webp" style="small" %}
+
 Super Polygon Grand Prix{% comment %}6 August 2024{% endcomment %}
 : A Virtua Racing-inspired retro racer with loads of tracks and multiple different car classes, like the formula cars, karts, and stock cars.
   I have not tried the game yet, but I regularly see the game updating with new, interesting content during its Early Access phase.
