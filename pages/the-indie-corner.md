@@ -5,7 +5,8 @@ excerpt: A list of indie games I follow and anticipate.
 feature-img: "assets/img/the-indie-corner/the-indie-corner.webp"
 image: "assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
-last_modified_at: 2026-03-22
+date: 2026-03-19 13:30:00 +0100
+last_modified_at: 2026-03-22 12:55:00 +0100
 twitter: {card: "summary_large_image"}
 hide: true
 extra_scss: |
@@ -440,3 +441,8 @@ SeverLink
 : A PS2-style stealth action game inspired by Splinter Cell, MGS Peace Walker, and Hitman: Contracts.
   {% include indie-corner/game-links.html game-series='severlink' %}
   {% include figures/image.html thumbnail="/assets/img/the-indie-corner/severlink.webp" style="small" %}
+
+# Changelog
+
+* {% include elements/time.html date="2026-03-22 12:55:00 +0100" %}: New game: **The Driver Syndicate**. Ordered released games by release date. Added screenshots.
+* {% include elements/time.html date=page.date %}: Initial version.
