@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://cookieplmonster.github.io"
+url: "https://silentsblog.com"
 title: Silent's Blog
 description: "A blog and portfolio of Silent" # used by search engines
 permalink: pretty
@@ -22,7 +22,7 @@ theme_settings:
 
   # Icons
   rss: true
-  email_address: zdanio95@gmail.com
+  email_address: contact@silentsblog.com
   behance:
   bitbucket:
   bluesky: https://cookieplmonster.bsky.social/
@@ -71,7 +71,7 @@ theme_settings:
     itch-io: AQz4dT9Ech
 
   # Scripts / Features
-  plausible_analytics: cookieplmonster.github.io
+  plausible_analytics: silentsblog.com
   disqus_shortname: cookieplmonster-github-io
 
   special_page:
