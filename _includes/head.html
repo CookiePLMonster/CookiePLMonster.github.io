@@ -49,16 +49,11 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha512-tiaNmAzpy3KcgtuiLwT9WSlSsqGqtDB5ylMwxoqG5ysNIyzkBw24k6UFTuXGgyXJLJ8aM/ho1h67NRKedPx++Q==" crossorigin="anonymous"></script>
     {% endif %}
 
-    {%- if site.theme_settings.plausible_analytics and jekyll.environment != "development" %}
-    {%- if layout.plausible-file-downloads or page.plausible-file-downloads -%}
-        {%- assign plausible-extension = plausible-extension | append: ".file-downloads" %}
-        {% assign plausible-attributes = plausible-attributes | append: ' file-types="exe,dll,asi,7z,pkg,rar,gz,zip,txt,pnach,cht,ini,py"' %}
-    {%- endif -%}
-    {%- if layout.plausible-tagged-events or page.plausible-tagged-events -%}
-        {% assign plausible-extension = plausible-extension | append: ".tagged-events" %}
-    {%- endif -%}
-    <script defer{{ plausible-attributes }} data-domain="{{ site.theme_settings.plausible_analytics }}" data-api="https://silent.rockstarvision.com/api/event" src="https://silent.rockstarvision.com/js/script{{ plausible-extension }}.js"></script>
-    {%- endif %}
+    <script async src="https://silent.rockstarvision.com/js/script.js"></script>
+    <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init({endpoint:"https://silent.rockstarvision.com/api/event",fileExtensions:["exe","dll","asi","7z","pkg","rar","gz","zip","txt","pnach","cht","ini","py"]})
+    </script>
 
     <!-- seo tags -->
     {% seo %}

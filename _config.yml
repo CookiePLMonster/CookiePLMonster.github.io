@@ -71,7 +71,6 @@ theme_settings:
     itch-io: AQz4dT9Ech
 
   # Scripts / Features
-  plausible_analytics: silentsblog.com
   disqus_shortname: cookieplmonster-github-io
 
   special_page:
