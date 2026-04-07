@@ -6,7 +6,7 @@ feature-img: "assets/img/the-indie-corner/the-indie-corner.webp"
 image: "assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
 date: 2026-03-19 13:30:00 +0100
-last_modified_at: 2026-03-22 12:55:00 +0100
+last_modified_at: 2026-04-07 21:15:00 +0200
 twitter: {card: "summary_large_image"}
 hide: true
 extra_scss: |
@@ -145,6 +145,12 @@ Rainy Day Racer{% comment %}13 July 2018{% endcomment %}
 
 ## Demo & Early Access
 
+Formula Circus{% comment %}1 April 2026{% endcomment %}
+: A simcade F1-esque game promising an in-depth career mode, customization, and an extensive damage model. Right now, the game is very early in development,
+  so far, they've shown several in-game trailers that look ambitious. An early demo is available through Patreon.
+  {% include indie-corner/game-links.html game-series='formula-circus' %}
+  {% include figures/image.html thumbnail="/assets/img/the-indie-corner/formula-circus.webp" style="small" %}
+
 OVERCRASH{% comment %}9 January 2026{% endcomment %}
 : A "Crash Mode"-inspired game with cartoony graphics. It currently has an early demo on itch.io that I'm yet to try, but I heard good things about it.
   {% include indie-corner/game-links.html game-series='overcrash' %}
@@ -209,12 +215,6 @@ Exo Rally Championship
   Currently in active development, it used to have a demo on Steam that I liked a lot, despite its harsh difficulty.
   {% include indie-corner/game-links.html game-series='exo-rally-championship' %}
   {% include figures/image.html thumbnail="/assets/img/the-indie-corner/exo-rally-championship.webp" style="small" %}
-
-Formula Circus
-: A simcade F1-esque game promising an in-depth career mode, customization, and an extensive damage model. Right now, the game is very early in development,
-  so far, they've shown several in-game trailers that look ambitious.
-  {% include indie-corner/game-links.html game-series='formula-circus' %}
-  {% include figures/image.html thumbnail="/assets/img/the-indie-corner/formula-circus.webp" style="small" %}
 
 Grand Pro Circuit
 : A solo dev formula racing game using a custom engine, inspired by the 80s F1. A modern (but period-appropriate) take on Grand Prix 4. Currently in active development.
@@ -444,5 +444,6 @@ SeverLink
 
 # Changelog
 
+* {% include elements/time.html date="2026-04-07 21:15:00 +0200" %}: **Formula Circus** got a demo available on Patreon, moved it to an appropriate section.
 * {% include elements/time.html date="2026-03-22 12:55:00 +0100" %}: New game: **The Driver Syndicate**. Ordered released games by release date. Added screenshots.
 * {% include elements/time.html date=page.date %}: Initial version.
