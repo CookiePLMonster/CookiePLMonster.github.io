@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'sass-embedded', '~> 1.97', '>= 1.97.3'
+gem 'sass-embedded', '~> 1.99'
 gem 'rouge', '~> 4.7'
 gem 'kramdown', '~> 2.5', '>= 2.5.2'
 group :jekyll_plugins do
@@ -12,4 +12,4 @@ group :jekyll_plugins do
 	gem 'jekyll-include-cache', '~> 0.2.1'
 	gem 'jekyll-image-size', '~> 1.2', '>= 1.2.1'
 end
-gem "wdm", "~> 0.2.0", :install_if => Gem.win_platform?
+gem 'wdm', '~> 0.2.0', :install_if => Gem.win_platform?
