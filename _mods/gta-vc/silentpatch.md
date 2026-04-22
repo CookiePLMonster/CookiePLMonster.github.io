@@ -5,6 +5,8 @@ order: -100
 game-series: "gta-vc"
 excerpt: "Fixes countless issues in your favorite game."
 date: 2-11-2024
+first-release: 29-12-2013
+version: Build 11.1
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}

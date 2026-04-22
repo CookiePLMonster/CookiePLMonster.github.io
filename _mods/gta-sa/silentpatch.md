@@ -5,6 +5,8 @@ order: -100
 game-series: "gta-sa"
 excerpt: "Fixes countless issues in your favorite game."
 date: 2-11-2024
+first-release: 16-06-2014
+version: Build 33.1
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}

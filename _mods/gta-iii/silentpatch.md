@@ -4,7 +4,9 @@ title-image: "assets/img/mods/silentpatch-gta.png"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes countless issues in your favorite game."
-date: 2-11-2024
+date: 22-04-2026
+first-release: 29-12-2013
+version: Build 9.2
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
