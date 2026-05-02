@@ -1,5 +1,6 @@
 @use "variables";
-@use "external/fontawesome-glue" as fa;
+@use "external/fontawesome/fa" as fa;
+@use 'external/fontawesome/solid' as fa-solid;
 @use "sass:color";
 @use "sass:map";
 
@@ -163,8 +164,7 @@ $button-colors: (
 
 %fa-before-after-icon {
     &:before, &:after {
-        @extend %fa-icon;
-        @extend .fa-solid;
+        @include fa-solid.icon("");
     }
     &:before {
         margin-inline-end: 0.25em;
@@ -205,7 +205,7 @@ $button-colors: (
     &.warning {
         @extend %fa-before-after-icon;
         &:before, &:after {
-            content: fa.fa-content(fa.$fa-var-triangle-exclamation);
+            content: fa.fa-content(fa.$var-triangle-exclamation);
             color: DarkOrange;
         }
     }
@@ -213,18 +213,13 @@ $button-colors: (
     &.info {
         @extend %fa-before-after-icon;
         &:before, &:after {
-            content: fa.fa-content(fa.$fa-var-circle-info);
+            content: fa.fa-content(fa.$var-circle-info);
         }
     }
 }
 
 .credit, .sidenote {
     font-style: italic;
-}
-
-.theme-icon {
-    @extend %fa-icon;
-    @extend .fa-solid;
 }
 
 .nobr {

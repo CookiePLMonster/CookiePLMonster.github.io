@@ -187,7 +187,6 @@ summary {
     font-weight: bold;
     line-height: 1.3;
     &::marker {
-        @extend %fa-icon;
         content: '\f054  ';
     }
 }

@@ -23,11 +23,11 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: var(--fa-display, inline-block);
+  width: var(--fa-width, 1.25em);
 }
 
-.icon-ko-fi:before {
-  content: "\e902";
-}
 .icon-gog-dot-com:before {
   content: "\e904";
 }

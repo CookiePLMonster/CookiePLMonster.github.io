@@ -8,7 +8,7 @@
     <!-- Toggle menu -->
     <nav>
     <a id="pull" href="#" aria-label="Toggle Menu">
-    <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
+    <i class="fas fa-bars fa-lg"></i>
     </a>
 
     <!-- Menu -->
@@ -29,7 +29,7 @@
           {%- if item[1].enabled -%}
             <li>
                 <a href="{{ item[0] | relative_url }}" title="{{ item[1].title | escape }}">
-                    <i class="fas fa-{{ item[1].icon }}" aria-hidden="true"></i>
+                    <i class="fas fa-{{ item[1].icon }}"></i>
                     <span class="navbar-icon-text">{{ item[1].title | smartify }}</span>
                 </a>
             </li>

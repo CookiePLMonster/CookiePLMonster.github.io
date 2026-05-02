@@ -5,13 +5,18 @@
 
 @use 'external/source-sans';
 
-@use 'external/fontawesome-glue' with (
-    $fa-font-path: 'fontawesome',
-    $fa-inverse: var(--background-color),
-    $fa-li-margin: 2em,
-    $fa-li-width: 1.5em,
-    $fa-stack-width: 2em
+@use 'external/fontawesome/variables' as fav with (
+    $font-path: 'fontawesome',
+    $inverse: var(--background-color),
+    $li-margin: 2em,
+    $li-width: 1.5em,
+    $stack-width: 2em
 );
+@use 'external/fontawesome/fontawesome';
+
+@use 'external/fontawesome/regular' as fa-regular;
+@use 'external/fontawesome/solid' as fa-solid;
+@use 'external/fontawesome/brands' as fa-brands;
 
 @use 'external/flag-icons/flag-icons' with (
     $flag-icons-path: "flags",

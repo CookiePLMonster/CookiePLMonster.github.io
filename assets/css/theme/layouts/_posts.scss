@@ -1,6 +1,7 @@
 @use "../variables";
 @use "../utility";
-@use "external/fontawesome-glue" as fa;
+@use "external/fontawesome/fa" as fa;
+@use 'external/fontawesome/solid' as fa-solid;
 @use "sass:color";
 @use "sass:math";
 
@@ -72,16 +73,13 @@ h6,
         display: flex;
         align-items: center;
         a:first-child {
-            @extend .fa-solid;
+            @include fa-solid.icon(fa.$var-link);
             @extend %uncolored-text;
             width: 2em;
             font-size: 0.8rem;
             text-align: center;
             order: 100;
             visibility: hidden;
-            &:after {
-                content: fa.fa-content(fa.$fa-var-link);
-            }
         }
 
         &:hover a:first-child {

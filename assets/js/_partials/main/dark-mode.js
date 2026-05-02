@@ -38,7 +38,6 @@
     const switcherIcon = Object.assign(document.createElement('i'), {
         className: 'theme-icon'
     });
-    switcherIcon.setAttribute('aria-hidden', 'true');
 
     const switcherText = Object.assign(document.createElement('span'), {
         className: 'navbar-icon-text'

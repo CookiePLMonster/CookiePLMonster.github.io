@@ -10,7 +10,7 @@
 
   {% for tag in tags %}
   <a class="button smaller" href="{% link pages/categories.html %}#{{ tag | cgi_escape }}">
-    <i class="fas fa-tag fa-fw"></i> {{ tag }}
+    <i class="fas fa-tag"></i> {{ tag }}
   </a>
   {% endfor %}
 {% endif %}

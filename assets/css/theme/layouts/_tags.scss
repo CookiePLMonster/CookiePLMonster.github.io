@@ -1,6 +1,6 @@
 @use "../variables";
 @use '../utility';
-@use "external/fontawesome-glue" as fa;
+@use "external/fontawesome/list";
 
 .tag-list {
     @extend %flexible-2d-block;

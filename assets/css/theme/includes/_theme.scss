@@ -1,6 +1,9 @@
 @use "sass:color";
 @use "../variables";
 
+@use 'external/fontawesome/fa' as fa;
+@use 'external/fontawesome/solid' as fa-solid;
+
 @mixin light-theme {
     --brand-color: #{variables.$brand-color-light};
     --background-color: #{variables.$background-color-light};
@@ -29,8 +32,8 @@
     --steam-link-color: #0a4d7f;
     --steam-link-hover-color: #{color.adjust(#0a4d7f, variables.$lightness: -15%)};
 
-    .theme-icon:before {
-        content: "\f186";
+    .theme-icon {
+        @include fa-solid.icon(fa.$var-moon);
     }
 }
 
@@ -59,8 +62,8 @@
     --steam-link-color: #0179ad;
     --steam-link-hover-color: #{color.adjust(#0179ad, variables.$lightness: -15%)};
 
-     .theme-icon:before {
-        content: "\f185";
+    .theme-icon:before {
+        content: fa.fa-content(fa.$var-sun);
     }
 }
 
