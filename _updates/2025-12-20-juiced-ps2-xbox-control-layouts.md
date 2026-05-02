@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Xbox Controls Layout for Juiced (PS2)"
 ---
 

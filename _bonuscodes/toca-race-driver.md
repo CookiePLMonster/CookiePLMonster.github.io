@@ -1,7 +1,7 @@
 ---
 layout: bonuscodes
 title: "TOCA Race Driver"
-subtitle: "(Pro Race Driver, DTM Race Driver, V8 Supercars) Bonus Codes"
+subtitle: "Pro Race Driver, DTM Race Driver, V8 Supercars)"
 excerpt: "Cheat Generator for TOCA Race Driver/Pro Race Driver/DTM Race Driver/V8 Supercars."
 image: "assets/img/bonuscodes/toca-race-driver.jpg"
 order: "toca race driver"

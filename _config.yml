@@ -179,6 +179,11 @@ defaults:
       type: "games"
     values:
       layout: "mods-list"
+      title_category: "Mods and Patches"
+  - scope:
+      path: "_games/misc"
+    values:
+      title_category: ""
   - scope:
       path: ""
       type: "mods"
@@ -189,7 +194,7 @@ defaults:
       type: "bonuscodes"
     values:
       feature-img: "assets/img/bonuscodes/bonuscodes-banner.svg"
-      subtitle: "Bonus Codes"
+      title_category: "Bonus Codes"
   - scope:
       path: ""
       type: "portfolio"
@@ -197,6 +202,13 @@ defaults:
       layout: "portfolio"
       game-series: ""
       excerpt: ""
+      title_category: "Portfolio"
+  - scope:
+      path: ""
+      type: "updates"
+    values:
+      layout: "updates"
+      title_category: "Updates"
   - scope:
       path: ""
       type: "posts"

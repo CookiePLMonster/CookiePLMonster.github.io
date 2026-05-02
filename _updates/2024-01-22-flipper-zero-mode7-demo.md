@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Mode 7 Demo for Flipper Zero
 game-series: "flipper-zero"
 ---

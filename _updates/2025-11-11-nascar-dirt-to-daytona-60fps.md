@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "60 FPS patches for NASCAR: Dirt to Daytona"
 ---
 

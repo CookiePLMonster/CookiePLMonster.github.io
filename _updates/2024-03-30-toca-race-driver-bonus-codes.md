@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Bonus Codes Generators for TOCA Race Driver"
 game-series: ["toca-race-driver", "toca-race-driver-2", "toca-race-driver-3"]
 ---

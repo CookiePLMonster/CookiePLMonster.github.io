@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "The Indie Games Corner"
 ---
 

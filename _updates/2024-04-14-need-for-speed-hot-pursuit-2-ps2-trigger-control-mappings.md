@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Need for Speed: Hot Pursuit 2 (PS2): Trigger control mappings"
 game-series: "need-for-speed-hot-pursuit-2-ps2"
 ---

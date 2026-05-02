@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Need for Speed: Underground (PS2): Trigger control mappings"
 ---
 

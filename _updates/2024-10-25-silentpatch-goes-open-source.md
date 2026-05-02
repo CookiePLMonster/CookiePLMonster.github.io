@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "GTA SilentPatch 2024 Update"
 excerpt_separator: <!--more-->
 game-series: ["gta-iii", "gta-vc", "gta-sa"]

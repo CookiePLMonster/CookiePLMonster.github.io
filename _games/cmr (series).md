@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Colin McRae Rally"
+subtitle: "Mods & Patches"
 excerpt: My modifications and patches for Colin McRae Rally games.
 image: "assets/img/games/cmr-series.jpg"
 feature-img: "assets/img/games/bg/cmr-series.jpg"

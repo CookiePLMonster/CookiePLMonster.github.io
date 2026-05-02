@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Importing custom decals into Tokyo Xtreme Racer (2025)"
 ---
 

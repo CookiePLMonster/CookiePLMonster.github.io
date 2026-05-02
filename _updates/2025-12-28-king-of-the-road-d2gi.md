@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "D2GI for Hard Truck 2: King of the Road"
 ---
 

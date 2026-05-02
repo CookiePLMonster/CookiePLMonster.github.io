@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "GTA SilentPatch 2024 Update Hotfix #1"
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
 ---

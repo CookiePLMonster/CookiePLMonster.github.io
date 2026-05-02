@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How a 20 year old bug in GTA San Andreas surfaced in Windows 11 24H2"
 ---
 

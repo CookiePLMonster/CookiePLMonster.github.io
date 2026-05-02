@@ -1,4 +1,5 @@
 ---
+layout: "non-mods-list"
 title: "Flipper Zero"
 excerpt: "My applications for the Flipper Zero."
 image: "assets/img/misc/flipper-zero.jpg"

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Grand Theft Auto"
+subtitle: "Mods & Patches"
 excerpt: My modifications and patches for Grand Theft Auto games.
 image: "assets/img/games/gta.jpg"
 feature-img: "assets/img/games/bg/gta.jpg"

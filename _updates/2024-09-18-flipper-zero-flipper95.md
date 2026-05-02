@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Flipper95 app for Flipper Zero
 game-series: "flipper-zero"
 ---

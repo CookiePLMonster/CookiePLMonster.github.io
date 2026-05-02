@@ -11,6 +11,9 @@ layout: default
       {% if page.subtitle -%}
       <p role="doc-subtitle">{{ page.subtitle | smartify }}</p>
       {%- endif %}
+      {% if layout.subtitle -%}
+      <p role="doc-subtitle">{{ layout.subtitle | smartify }}</p>
+      {%- endif %}
     </hgroup>
   </header>
   <div class="page-content">

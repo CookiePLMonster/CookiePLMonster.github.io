@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "SilentPatch for Yakuza Kiwami 2 -- Build 2"
 ---
 

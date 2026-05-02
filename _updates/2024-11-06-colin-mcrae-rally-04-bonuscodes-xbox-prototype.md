@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Bonus Codes Generator for Colin McRae Rally 04 updated with support for the prototype builds"
 game-series: ["cmr-04"]
 ---

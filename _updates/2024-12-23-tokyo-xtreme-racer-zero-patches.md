@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Widescreen and Deinterlace patches for Tokyo Xtreme Racer: Zero"
 ---
 

@@ -1,4 +1,5 @@
 ---
+layout: "non-mods-list"
 title: "Tools"
 excerpt: My modding tools.
 image: "assets/img/misc/tools.jpg"

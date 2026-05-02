@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "DiRT"
+subtitle: "Mods & Patches"
 excerpt: My modifications for DiRT games.
 image: "assets/img/games/dirt.jpg"
 feature-img: "assets/img/games/bg/dirt.jpg"

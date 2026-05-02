@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Need for Speed: Carbon and Need for Speed: ProStreet (PS2): Fix Most Wanted Black Edition save detection & ported PS widescreen patch"
 ---
 

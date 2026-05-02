@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Bonus Codes Generators for LMA Manager 2003-2006"
 ---
 

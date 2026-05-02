@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "SilentPatch for Need for Speed: Underground (PC, PS2)"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Tokyo Xtreme Racer (2025): Dynamic Day/Night Cycle Mod"
 ---
 

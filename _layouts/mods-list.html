@@ -1,16 +1,6 @@
 ---
-layout: page
+layout: non-mods-list
+subtitle: "Mods & Patches"
 ---
 
-{% if page.disambiguation %}
-{% include elements/disambiguation.html disambiguation=page.disambiguation %}
-{% endif %}
-
-{% assign mods_list_items = site.mods | where: "game-series", page.game-series | sort: 'order' %}
-{% include mods-list/toc.html items=mods_list_items %}
-
 {{ content }}
-
-{% include mods-list/list.html items=mods_list_items %}
-{% include mods-list/store-pages.html series=page.game-series %}
-{% include related-reads.html series=page.game-series %}

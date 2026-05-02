@@ -1,5 +1,4 @@
 ---
-layout: page
 title: New modifications for Gran Turismo 2000
 ---
 

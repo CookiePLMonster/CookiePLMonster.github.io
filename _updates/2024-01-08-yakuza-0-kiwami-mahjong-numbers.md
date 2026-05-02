@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Mahjong Numbers for Yakuza 0 & Yakuza Kiwami
 game-series: ["yakuza-0", "yakuza-kiwami"]
 ---

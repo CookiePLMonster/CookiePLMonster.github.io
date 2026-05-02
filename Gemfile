@@ -5,7 +5,7 @@ gem 'rouge', '~> 4.7'
 gem 'kramdown', '~> 2.5', '>= 2.5.2'
 group :jekyll_plugins do
 	gem 'jekyll-paginate-v2', '~> 3.0'
-	gem 'jekyll-seo-tag', '~> 2.8'
+	gem 'jekyll-seo-tag', git: 'https://github.com/jekyll/jekyll-seo-tag.git', ref: '8403350ddc7a5c7022b114ef0303d35c4dd68829'
 	gem 'jekyll-redirect-from', '~> 0.16.0'
 	gem 'jekyll-feed', '~> 0.17.0'
 	gem 'jekyll-sitemap', '~> 1.4'

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Widescreen patches for Tokyo Xtreme Racer: Zero updated"
 ---
 
