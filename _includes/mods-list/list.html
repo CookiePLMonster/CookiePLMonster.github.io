@@ -1,6 +1,13 @@
 {% for mod in include.items %}
-<article class="mod-listing">
-    {% assign modid = mod.id | split: '/' | last %}
+<article class="mod-listing" itemscope itemtype="https://schema.org/SoftwareApplication">
+    {%- assign modid = mod.id | split: '/' | last %}
+    <meta itemprop="name" content="{{ mod.title | escape }}">
+    {%- if include.schema.operatingSystem %}
+    <meta itemprop="operatingSystem" content="{{ include.schema.operatingSystem }}">
+    {%- endif -%}
+    {%- if include.schema.applicationCategory %}
+    <meta itemprop="applicationCategory" content="{{ include.schema.applicationCategory }}">
+    {% endif -%}
     <header>
         <div class="element-anchor" id="{{ modid }}">
             <a href="#{{ modid }}"></a>
@@ -8,7 +15,7 @@
                 <h2>
                 {%- if mod.title-image -%}
                     {%- assign image_url = mod.title-image | relative_url -%}
-                    <img src="{{ image_url }}" alt="{{ mod.title | escape }}" {% imagesize image_url:props %}>
+                    <img src="{{ image_url }}" alt="{{ mod.title | escape }}" title="{{ mod.title | escape }}" {% imagesize image_url:props %}>
                 {%- else -%}
                     {{- mod.title | smartify -}}
                 {%- endif -%}
@@ -17,12 +24,12 @@
             </div>
         </div>
         <div class="misc">
-        {% if mod.version %}<p>Version: {{ mod.version -}}</p>{% endif %}
-        {% if mod.date %}<p>Last updated: {% include elements/time.html date=mod.date -%}</p>{% endif %}
-        {% if mod.first-release %}<p>First released: {% include elements/time.html date=mod.first-release -%}</p>{% endif %}
+        {% if mod.version %}<p>Version: <span itemprop="softwareVersion">{{ mod.version -}}</span></p>{% endif %}
+        {% if mod.date %}<p>Last updated: {% include elements/time.html date=mod.date itemprop="dateModified" -%}</p>{% endif %}
+        {% if mod.first-release %}<p>First released: {% include elements/time.html date=mod.first-release itemprop="datePublished" -%}</p>{% endif %}
         </div>
     </header>
-    <div class="content">
+    <div class="content" itemprop="description">
         {{ mod }}
     </div>
 </article>

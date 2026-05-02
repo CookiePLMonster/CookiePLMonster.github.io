@@ -11,6 +11,6 @@ layout: page
 
 {{ content }}
 
-{% include mods-list/list.html items=mods_list_items %}
+{% include mods-list/list.html items=mods_list_items schema=page.schema %}
 {% include mods-list/store-pages.html series=page.game-series %}
 {% include related-reads.html series=page.game-series %}
