@@ -239,7 +239,6 @@ highlighter: rouge
 sass:
   style: compressed
   sourcemap: development
-  quiet_deps: true
 kramdown:
   header_offset: 1
   header_links: true
