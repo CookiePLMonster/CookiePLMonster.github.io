@@ -38,7 +38,7 @@ At this moment, I backfilled this feed with all updates from 2024. I recommend c
 
 I recently diversified my social media presence to more places and reflected this in the social media links available at the bottom of this page.
 Now, alongside [<i class="fab fa-x-twitter"></i> X/Twitter](https://x.com/{{ site.theme_settings.twitter }}){:rel="me" target="_blank"},
-you may also follow me on [<i class="fab fa-bluesky"></i> Bluesky]({{ site.theme_settings.bluesky }}){:rel="me" target="_blank"}
+you may also follow me on [<i class="fab fa-bluesky"></i> Bluesky](https://bsky.app/profile/{{ site.theme_settings.bluesky }}){:rel="me" target="_blank"}
 or [<i class="fab fa-mastodon"></i> Mastodon]({{ site.theme_settings.mastodon }}){:rel="me" target="_blank"} (I'm not too active on that one).
 See you there!
 
