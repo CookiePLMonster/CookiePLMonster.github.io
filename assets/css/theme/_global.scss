@@ -238,6 +238,12 @@ summary {
     cursor: pointer;
 }
 
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+}
+
 #markdown-toc, .additional-toc {
     font-weight: bold;
 }

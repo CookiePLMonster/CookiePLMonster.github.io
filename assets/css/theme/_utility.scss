@@ -99,8 +99,6 @@ $button-colors: (
 
     @at-root button#{&} {
         @extend .thinner;
-        -webkit-appearance: none;
-        background-color: transparent;
     }
 
     @at-root a#{&},
@@ -137,7 +135,7 @@ $button-colors: (
 }
 
 %uncolored-link {
-    a {
+    a, button {
         @extend %uncolored-text;
     }
 }

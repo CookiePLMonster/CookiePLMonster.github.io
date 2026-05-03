@@ -9,11 +9,13 @@
 
         // Theme toggle text
         if (isDark) {
-            linkItem.title = 'Toggle Light Mode';
+            linkItem.title = 'Switch to Light Mode';
+            linkItem.setAttribute('aria-label', 'Switch to Light Mode');
             textItem.innerText = 'Light';
         }
         else {
-            linkItem.title = 'Toggle Dark Mode';
+            linkItem.title = 'Switch to Dark Mode';
+            linkItem.setAttribute('aria-label', 'Switch to Dark Mode');
             textItem.innerText = 'Dark';
         }
 
@@ -31,9 +33,7 @@
     }
 
     // Create the theme switcher list entry
-    const themeSwitcher = Object.assign(document.createElement('a'), {
-        href: '#'
-    });
+    const themeSwitcher = Object.assign(document.createElement('button'), {});
 
     const switcherIcon = Object.assign(document.createElement('i'), {
         className: 'theme-icon'
@@ -42,9 +42,9 @@
     const switcherText = Object.assign(document.createElement('span'), {
         className: 'navbar-icon-text'
     });
+    switcherText.setAttribute('aria-hidden', true);
 
-    themeSwitcher.addEventListener('click', e => {
-        e.preventDefault();
+    themeSwitcher.addEventListener('click', () => {
 
         const theme = sessionStorage.getItem('theme');
         let setDark;

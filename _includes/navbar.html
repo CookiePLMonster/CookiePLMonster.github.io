@@ -1,15 +1,15 @@
 <header class="site-header">
 
     <!-- Logo and title -->
-	<a href="{{ "/" | relative_url }}">
-		<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="Logo image">
+	<a href="{{ "/" | relative_url }}" aria-label="Go to homepage">
+		<img class="avatar" src="{{ site.theme_settings.avatar | relative_url }}" alt="">
         <span class="site-title">{{ site.theme_settings.title | smartify }}</span>
 	</a>
     <!-- Toggle menu -->
     <nav>
-    <a id="pull" href="#" aria-label="Toggle Menu">
+    <button id="pull" aria-label="Toggle Menu">
     <i class="fas fa-bars fa-lg"></i>
-    </a>
+    </button>
 
     <!-- Menu -->
     <ul id="nav-menu" class="hide">
