@@ -60,6 +60,10 @@ header, .posts {
         @extend %padding-post;
         padding-block-end: 0;
     }
+
+    > footer {
+        margin-block-end: 1em;
+    }
 }
 
 h1,

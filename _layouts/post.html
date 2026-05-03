@@ -18,10 +18,10 @@ layout: default
     {{ content }}
   </div>
   <footer>
-    {%- include share_buttons.html -%}
-
     {%- assign tag_list = page.tags | join: "|" -%}
     {%- include tags_list.html tags=tag_list -%}
+
+    <div class="share-button no-js"><a href="{{ page.url }}" id="share-btn"><i class="fas fa-share"></i> Share post</a></div>
   </footer>
 </main>
 
