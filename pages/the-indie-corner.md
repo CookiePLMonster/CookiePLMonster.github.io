@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Indie Games Corner
-excerpt: A list of indie games I follow and anticipate.
+description: A curated list of 50+ indie games, mostly racing, including released, upcoming, and unannounced titles worth keeping an eye on.
 feature-img: "assets/img/the-indie-corner/the-indie-corner.webp"
 image: "assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
@@ -25,6 +25,8 @@ extra_scss: |
   .review {
     display: block;
   }
+seo:
+  type: CollectionPage
 ---
 
 * TOC
