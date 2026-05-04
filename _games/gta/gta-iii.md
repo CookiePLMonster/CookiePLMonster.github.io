@@ -6,6 +6,8 @@ feature-img: "assets/img/games/bg/gta-iii.jpg"
 parent-series: "gta"
 game-series: "gta-iii"
 order: 0
+schema:
+  alternateName: ["GTA3", "GTA III"]
 ---
 {:.disclaimer.warning}
 This page contains modifications only for the "classic" PC version of GTA III. The Definitive Edition is not supported.

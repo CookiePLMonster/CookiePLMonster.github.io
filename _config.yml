@@ -184,14 +184,14 @@ defaults:
       seo: {type: CollectionPage}
       schema:
         operatingSystem: "Windows"
-        applicationCategory: "Game modification"
+        applicationCategory: "GameApplication"
   - scope:
       path: "_games/misc"
     values:
       title_category: ""
       schema:
         operatingSystem: ""
-        applicationCategory: ""
+        applicationCategory: "DeveloperApplication"
   - scope:
       path: ""
       type: "mods"

@@ -1,7 +1,5 @@
 {%- assign preset = include.preset | default: site.date.default -%}
-<time datetime="{{ include.date | date: preset.format }}"
-    {%- if include.itemprop %} itemprop="{{ include.itemprop }}"{% endif -%}
-    >
+<time datetime="{{ include.date | date: preset.format }}">
     {%- if include.text -%}
         {{- include.text -}}
     {%- else -%}

@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListUnordered",
+    "itemListElement": [
+
+{%- for item in include.items -%}
+    {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "name": {{ item.title | jsonify }},
+        "url": "{{ item.url | absolute_url }}"
+    } {%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+
+    ]
+}
+</script>

@@ -6,6 +6,8 @@ feature-img: "assets/img/games/bg/gta-vc.jpg"
 parent-series: "gta"
 game-series: "gta-vc"
 order: 1
+schema:
+  alternateName: ["GTA Vice City", "GTA VC"]
 ---
 {:.disclaimer.warning}
 This page contains modifications only for the "classic" PC version of GTA: Vice City. The Definitive Edition is not supported.

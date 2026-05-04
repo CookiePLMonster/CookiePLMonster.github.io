@@ -2,6 +2,7 @@
 title: XP Support Patch
 game-series: "hm2"
 warning-label: DEPRECATED
+date: 17-03-2015
 ---
 
 {:.disclaimer.warning}

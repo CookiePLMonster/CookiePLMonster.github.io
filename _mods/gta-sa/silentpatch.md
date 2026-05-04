@@ -7,6 +7,8 @@ excerpt: "Fixes countless issues in your favorite game."
 date: 2-11-2024
 first-release: 16-06-2014
 version: Build 33.1
+schema:
+    downloadUrl: "https://github.com/CookiePLMonster/SilentPatch/releases/latest/download/SilentPatchSA.zip"
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
@@ -218,7 +220,7 @@ SilentPatch includes code contributions from:
 
 ***
 
-<a href="https://github.com/CookiePLMonster/SilentPatch/releases/latest/download/SilentPatchSA.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+<a href="{{ page.schema.downloadUrl }}" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
 <a href="https://github.com/CookiePLMonster/SilentPatch" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
 

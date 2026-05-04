@@ -1,0 +1,56 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "VideoGame",
+            "@id": "{{ include.page.url | absolute_url }}#game",
+            "name": {{ include.page.title | jsonify }},
+            "mainEntityOfPage": "{{ include.page.url | absolute_url }}"
+            {%- if include.page.schema.alternateName -%}
+            ,"alternateName": {{ include.page.schema.alternateName | jsonify }}
+            {%- endif -%}
+        },
+        {
+            "@type": "ItemList",
+            "name": "Mods and Patches",
+            "itemListElement": [
+
+{%- for mod in include.items -%}
+            {%- assign modid = mod.id | split: '/' | last -%}
+            {
+                "@type": "ListItem",
+                "position": {{ forloop.index }},
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "@id": "{{ include.page.url | absolute_url }}#{{ modid }}",
+                    "url": "{{ include.page.url | absolute_url }}#{{ modid }}",
+                    "name": {{ mod.title | jsonify }},
+                    "offers": { "@type": "Offer", "price": 0 },
+                    "applicationCategory": {{ mod.schema.applicationCategory | default: include.page.schema.applicationCategory | jsonify }},
+                    "operatingSystem": {{ mod.schema.operatingSystem | default: include.page.schema.operatingSystem | jsonify }},
+                    "isPartOf": { "@type": {{ include.page.seo.type | jsonify }}, "@id": "{{ include.page.url | absolute_url }}" },
+                    "isBasedOn": { "@id": "{{ include.page.url | absolute_url }}#game" }
+
+                    {%- if mod.version -%}
+                    ,"softwareVersion": {{ mod.version | jsonify }}
+                    {%- endif -%}
+                    {%- if mod.date -%}
+                    ,"dateModified": {{ mod.date | date_to_xmlschema | jsonify }}
+                    {%- endif -%}
+                    {%- if mod.first-release -%}
+                    ,"datePublished": {{ mod.first-release | date_to_xmlschema | jsonify }}
+                    {%- endif -%}
+
+                    {%- if mod.schema.downloadUrl -%}
+                    ,"downloadUrl": {{ mod.schema.downloadUrl | jsonify }}
+                    {%- endif -%}
+                }
+            } {%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+
+            ]
+        }
+    ]
+}
+</script>

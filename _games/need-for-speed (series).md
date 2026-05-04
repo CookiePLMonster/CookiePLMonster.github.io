@@ -19,4 +19,5 @@ disambiguation:
 {% include elements/disambiguation.html disambiguation=page.disambiguation %}
 
 {% assign items = site.games | where:"parent-series", page.game-series %}
+{% include schema/item-grid.html items=items page=page %}
 {% include mods-grid.html items=items %}

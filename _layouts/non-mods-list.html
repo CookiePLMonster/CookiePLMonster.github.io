@@ -2,15 +2,17 @@
 layout: page
 ---
 
-{% if page.disambiguation %}
-{% include elements/disambiguation.html disambiguation=page.disambiguation %}
-{% endif %}
+{%- assign mods_list_items = site.mods | where: "game-series", page.game-series | sort: 'order' -%}
+{% include schema/mods-list.html items=mods_list_items page=page %}
 
-{% assign mods_list_items = site.mods | where: "game-series", page.game-series | sort: 'order' %}
+{%- if page.disambiguation -%}
+{% include elements/disambiguation.html disambiguation=page.disambiguation %}
+{%- endif -%}
+
 {% include mods-list/toc.html items=mods_list_items %}
 
 {{ content }}
 
-{% include mods-list/list.html items=mods_list_items schema=page.schema %}
+{% include mods-list/list.html items=mods_list_items %}
 {% include mods-list/store-pages.html series=page.game-series %}
 {% include related-reads.html series=page.game-series %}

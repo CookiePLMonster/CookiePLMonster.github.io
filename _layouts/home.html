@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% include schema/home.html items=paginator.posts page=page %}
 <main class="page-body">
   {% if site.theme_settings.header_text %}
   <header id="main">
