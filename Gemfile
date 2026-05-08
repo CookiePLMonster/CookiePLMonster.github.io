@@ -1,11 +1,16 @@
 source "https://rubygems.org"
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'sass-embedded', '~> 1.99'
+gem 'sass-embedded', '~> 1.100'
 gem 'rouge', '~> 4.7'
 gem 'kramdown', '~> 2.5', '>= 2.5.2'
+gem 'jekyll-sass-converter', '~> 3.1'
+# Remove when Jekyll adds this dependency
+gem 'logger', '~> 1.3'
+# Remove when Ruby 3.4 fixes the dependency
+gem 'fiddle', '~> 1.1', '>= 1.1.6'
 group :jekyll_plugins do
 	gem 'jekyll-paginate-v2', '~> 3.0'
-	gem 'jekyll-seo-tag', git: 'https://github.com/jekyll/jekyll-seo-tag.git', ref: '8403350ddc7a5c7022b114ef0303d35c4dd68829'
+	gem 'jekyll-seo-tag', '~> 2.9'
 	gem 'jekyll-redirect-from', '~> 0.16.0'
 	gem 'jekyll-feed', '~> 0.17.0'
 	gem 'jekyll-sitemap', '~> 1.4'
