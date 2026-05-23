@@ -5,7 +5,7 @@ layout: default
   <header id="main"
   {%- if page.feature-img %} class="feature-img" style="background-image: url('{% link {{ page.feature-img }} %}')"{% endif -%}
   >
-    <h1>{{ page.title | smartify }}</h1>
+    <h1>{{ page.display_title | default: page.title | smartify }}</h1>
     <p class="meta">
       {%- include elements/time.html date=page.date preset=site.date.full_date -%}
       {%- if page.last_modified_at %} (edited {% include elements/time.html date=page.last_modified_at preset=site.date.full_date %}){% endif -%}

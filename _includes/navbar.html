@@ -15,10 +15,11 @@
     <ul id="nav-menu" class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% for page in site.pages -%}
-        {%- if page.title and page.hide != true and page.autogen == nil -%}
+        {%- assign this_title = page.display_title | default: page.title -%}
+        {%- if this_title and page.hide != true and page.autogen == nil -%}
         <li>
             <a href="{{ page.url | remove_first: 'index.html' | relative_url }}">
-                {{- page.title | smartify -}}
+                {{- this_title | smartify -}}
             </a>
         </li>
         {%- endif -%}

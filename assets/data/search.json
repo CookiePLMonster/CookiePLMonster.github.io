@@ -52,7 +52,7 @@
         {%- capture date -%}
           {%- include elements/time.html date=page.date preset=site.date.full_date -%}
         {%- endcapture -%}
-        "title"    : {{ page.title | smartify | jsonify }},
+        "title"    : {{ page.display_title | default: page.title | smartify | jsonify }},
         "category" : "Portfolio",
         "tags"     : " ",
         "url"      : "{{ page.url | relative_url }}",
