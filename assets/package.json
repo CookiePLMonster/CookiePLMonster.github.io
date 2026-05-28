@@ -25,6 +25,7 @@
     "gulp-terser": "^2.1.0"
   },
   "dependencies": {
-    "gulp-cli": "^3.0.0"
+    "gulp-cli": "^3.0.0",
+    "svgo": "^4.0.1"
   }
 }
