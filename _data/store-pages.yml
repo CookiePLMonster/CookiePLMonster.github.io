@@ -144,6 +144,9 @@ games:
     xbox-store: {id: jdm-japanese-drift-master/9P2D9T5WWTJ2}
   kaido-genkai:
     steam: {id: 3113580}
+  kaido-genkai-demo:
+    free: true
+    steam: {id: 4581870}
   king-of-the-road:
     gog: {id: hard_truck_2_king_of_the_road}
     zoom-platform: {id: hard-truck-2-king-of-the-road}
