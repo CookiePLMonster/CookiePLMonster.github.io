@@ -148,6 +148,7 @@ games:
     free: true
     steam: {id: 4581870}
   king-of-the-road:
+    steam: {id: 4487840}
     gog: {id: hard_truck_2_king_of_the_road}
     zoom-platform: {id: hard-truck-2-king-of-the-road}
   kof-xiv:

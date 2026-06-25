@@ -1,9 +1,9 @@
 ---
 title: "Modern Patch"
 game-series: "king-of-the-road"
-date: 22-02-2026
+date: 05-05-2026
 first-release: 05-11-2025
-version: v1.03
+version: v1.04
 order: 1
 info-label: CONTRIBUTION
 ---

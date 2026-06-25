@@ -1,9 +1,9 @@
 ---
 title: "D2GI"
 game-series: "king-of-the-road"
-date: 22-02-2026
+date: 26-04-2026
 first-release: 23-12-2019
-version: v0.4
+version: v0.5
 order: 0
 info-label: CONTRIBUTION
 ---
@@ -36,6 +36,6 @@ D2GI adapts the game for modern PCs by wrapping DirectDraw7 + Direct3D7 to Direc
 
 ***
 
-<a href="https://github.com/REDPOWAR/D2GI/releases/download/v0.4/D2GI_v0.4.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
+<a href="https://github.com/REDPOWAR/D2GI/releases/download/v0.5/D2GI_v0.5.zip" class="button">{{ site.theme_settings.download_icon }} Download</a>
 
 <a href="https://github.com/REDPOWAR/D2GI" class="button github" target="_blank">{{ site.theme_settings.github_icon }} See source on GitHub</a>
