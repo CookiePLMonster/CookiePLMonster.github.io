@@ -30,6 +30,14 @@ gulp.task('js', gulp.parallel(function() {
             console.log(err.toString());
         })
         .pipe(gulp.dest("js/"))
+    }, function() {
+        return gulp.src(['js/_partials/head/**.js'])
+        .pipe(concat('_head.min.js'))
+        .pipe(uglify())
+        .on('error', (err) => {
+            console.log(err.toString());
+        })
+        .pipe(gulp.dest("js/"))
     })
 );
 

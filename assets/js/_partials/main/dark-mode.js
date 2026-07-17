@@ -1,11 +1,13 @@
 (function () {
     const systemInitiatedDark = window.matchMedia('(prefers-color-scheme: dark)');
 
+    function darkModePreferred() {
+        const theme = sessionStorage.getItem('theme');
+        return theme ? theme === 'dark' : systemInitiatedDark.matches;
+    }
+
     function updateSiteElements(linkItem, textItem, isDark) {
         const themeName = isDark ? 'dark' : 'light';
-
-        // HTML data theme
-        document.documentElement.setAttribute('data-theme', themeName);
 
         // Theme toggle text
         if (isDark) {
@@ -21,7 +23,7 @@
 
         // Data theme for unrendered tweets
         document.querySelectorAll('.twitter-tweet').forEach(e => {
-            e.setAttribute('data-theme', themeName);
+            e.dataset.theme = themeName;
         });
 
         // URL query value swap for rendered tweets
@@ -30,10 +32,12 @@
             url.searchParams.set('theme', themeName);
             e.setAttribute('src', url.toString());
         });
+
+        return themeName;
     }
 
     // Create the theme switcher list entry
-    const themeSwitcher = Object.assign(document.createElement('button'), {});
+    const themeSwitcher = document.createElement('button');
 
     const switcherIcon = Object.assign(document.createElement('i'), {
         className: 'theme-icon'
@@ -46,18 +50,9 @@
 
     themeSwitcher.addEventListener('click', () => {
 
-        const theme = sessionStorage.getItem('theme');
-        let setDark;
-        if (theme === 'dark') {
-            setDark = false;
-        } else if (theme === 'light') {
-            setDark = true;
-        } else {
-            setDark = !systemInitiatedDark.matches;
-        }
-
+        const setDark = !darkModePreferred();
+        document.documentElement.dataset.theme = updateSiteElements(themeSwitcher, switcherText, setDark);
         sessionStorage.setItem('theme', setDark ? 'dark' : 'light');
-        updateSiteElements(themeSwitcher, switcherText, setDark);
         if (typeof DISQUS !== 'undefined') {
             DISQUS.reset({ reload: true });
         };
@@ -71,17 +66,11 @@
 
     document.getElementById('nav-menu')?.appendChild(switcherLi);
 
-    const theme = sessionStorage.getItem('theme');
-    if (theme === 'dark') {
-        updateSiteElements(themeSwitcher, switcherText, true);
-    } else if (theme === 'light') {
-        updateSiteElements(themeSwitcher, switcherText, false);
-    } else {
-        updateSiteElements(themeSwitcher, switcherText, systemInitiatedDark.matches);
-    }
+    updateSiteElements(themeSwitcher, switcherText, darkModePreferred())
 
     systemInitiatedDark.addEventListener('change', systemDark => {
         updateSiteElements(themeSwitcher, switcherText, systemDark.matches);
+        delete document.documentElement.dataset.theme;
         sessionStorage.removeItem('theme');
         if (typeof DISQUS !== 'undefined') {
             DISQUS.reset({ reload: true });

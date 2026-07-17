@@ -198,6 +198,14 @@ details[open] > summary {
     }
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+}
+
 pre {
     overflow-x: auto; /*add scrollbars to wide code blocks*/
 }

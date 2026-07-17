@@ -5,6 +5,8 @@
 @use 'external/fontawesome/solid' as fa-solid;
 
 @mixin light-theme {
+    color-scheme: light;
+
     --brand-color: #{variables.$brand-color-light};
     --background-color: #{variables.$background-color-light};
     --text-color: #{variables.$text-color-light};
@@ -38,6 +40,8 @@
 }
 
 @mixin dark-theme {
+    color-scheme: dark;
+
     --brand-color: #{variables.$brand-color-dark};
     --background-color: #{variables.$background-color-dark};
     --text-color: #{variables.$text-color-dark};
@@ -67,6 +71,7 @@
     }
 }
 
+:root,
 html[data-theme="light"] {
     @include light-theme;
 }
@@ -75,10 +80,8 @@ html[data-theme="dark"] {
     @include dark-theme;
 }
 
-:root {
-    @extend html, [data-theme="light"];
-
-    @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+    :root {
         @include dark-theme;
     }
 }
