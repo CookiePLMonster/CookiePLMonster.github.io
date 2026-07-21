@@ -7,8 +7,8 @@
             <div class="title">
                 <h2>
                 {%- if mod.title-image -%}
-                    {%- assign image_url = mod.title-image | relative_url -%}
-                    <img src="{{ image_url }}" alt="{{ mod.title | escape }}" title="{{ mod.title | escape }}" {% imagesize image_url:props %}>
+                    {%- assign image_url = mod.title-image -%}
+                    <img src="{% link {{ image_url }} %}" alt="{{ mod.title | escape }}" title="{{ mod.title | escape }}" {% imagesize image_url:props %}>
                 {%- else -%}
                     {{- mod.title | smartify -}}
                 {%- endif -%}

@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/Sylhare/Type-on-Strap#readme",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-terser": "^2.1.0"
   },
   "dependencies": {
-    "gulp-cli": "^3.0.0",
-    "svgo": "^4.0.1"
+    "gulp-cli": "^3.1.0",
+    "svgo": "^4.0.2"
   }
 }
