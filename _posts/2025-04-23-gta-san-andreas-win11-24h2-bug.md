@@ -53,8 +53,8 @@ debugging from the host OS, headed to the usual place the Skimmer spawns, and su
 only this one vehicle did not:
 
 <figure class="media-container small">
-{% include figures/image.html link="/assets/img/posts/sa-win11-24h2-bug/screens/gta_sa_SqUlKDKCRs.jpg" thumbnail="auto" caption="Skimmer is gone." %}
-{% include figures/image.html link="/assets/img/posts/sa-win11-24h2-bug/screens/gta_sa_qnldPBAKRl.jpg" thumbnail="auto" caption="Other planes are still here, though." %}
+{% include figures/image.html link="/assets/img/posts/sa-win11-24h2-bug/screens/gta_sa_SqUlKDKCRs.webp" thumbnail="auto" caption="Skimmer is gone." %}
+{% include figures/image.html link="/assets/img/posts/sa-win11-24h2-bug/screens/gta_sa_qnldPBAKRl.webp" thumbnail="auto" caption="Other planes are still here, though." %}
 </figure>
 
 I then used the script to spawn a Skimmer and put CJ inside it, just to be launched

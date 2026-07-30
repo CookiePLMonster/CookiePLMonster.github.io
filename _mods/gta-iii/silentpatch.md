@@ -4,9 +4,9 @@ title-image: "assets/img/mods/silentpatch-gta.svg"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes countless issues in your favorite game."
-date: 22-04-2026
+date: 31-07-2026
 first-release: 29-12-2013
-version: Build 9.2
+version: Build 10
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
@@ -21,8 +21,8 @@ for both first-time players and the old guard returning for yet another playthro
 Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the INI file. These options are enabled by default unless stated otherwise.
 
 ### Critical fixes
-Compatibility issues, crashes, progression blockers.
 
+{% capture critical-fixes -%}
 * Purple Nines Glitch has been fixed.
 * The mouse will no longer go beyond the game window dimensions, making it possible to play the game on multi-monitor setups without problems.
 * More precise frame limiter, reducing lag spikes a bit when playing with Frame Limiter on.
@@ -33,10 +33,17 @@ Compatibility issues, crashes, progression blockers.
 * Path to the User Files directory is now obtained using a dedicated API call rather than a legacy registry entry, future-proofing the games more.
 * Fixed an issue that would cause games to freeze if III/VC/SA were running at the same time.
 * Fixed a crash after playing the game for a short amount of time without a sound card.
+* Fixed a rare, random crash that could occur when the game displayed texts added by other mods outside of the GXT file.
+* Boats can now be saved in garages, and the game no longer crashes when spawning stored boats.
+* Fixed a freeze if the game attempted to create any game entity multiple times in a row when the entity pool was full. This was the most likely to occur with dynamic objects like lampposts or benches.
+* <i class="fas fa-cog"></i> Made the game default to the desktop refresh rate instead of 60Hz, so Alt+Tab and startup no longer flicker on high refresh rate monitors.
+{%- endcapture %}
+
+{% include elements/details.html summary="Compatibility issues, crashes, progression blockers. **Click to expand.**" content=critical-fixes %}
 
 ### Other fixes
-All the remaining, non-critical fixes.
 
+{% capture other-fixes -%}
 * In version 1.0, armor cheat is now <kbd>TORTOISE</kbd>.
 * In version 1.0, <kbd>BOOOOORING</kbd> cheat now works properly.
 * In version 1.0, the Stats menu now has the correct font.
@@ -68,6 +75,8 @@ All the remaining, non-critical fixes.
 * Mission title and 'Mission Passed' texts now stay on screen for the same duration, regardless of screen resolution.
 * The inner padding of the text boxes with a background now scales to resolution correctly.
 * The position of the dialog question text in the main menu now scales to resolution correctly.
+* Weapon icon is no longer distorted by a pixel in the top left corner.
+* Weapon icon no longer switches between nearest and bilinear filtering.
 * `FILE_FLAG_NO_BUFFERING` flag has been removed from IMG reading functions -- speeding up streaming.
 * Free resprays will not carry on a New Game now.
 * Fixed ambulance and firetruck dispatch timers -- they reset on New Game now.
@@ -77,6 +86,7 @@ All the remaining, non-critical fixes.
 * Adjusted the probability of traffic vehicles turning on their lights to match the PS2 version, including a low chance that they may never turn them on.
 * Fixed an issue where vehicles exploded twice if the driver left the car before the explosion.
 * Script randomness is now 16-bit instead of 15-bit. This fixes checkpoint paths in  "Bling-bling Scramble" and ambulance routes in "Plaster Blaster" having variations previously inaccessible on PC.
+* Car and ped spawning generation now use 16-bit randomness, which fixes generation issues with bigger modded maps.
 * Lines read in `CPlane::LoadPath` and `CTrain::ReadAndInterpretTrackFile` are now null-terminated, fixing issues with plane/train paths under specific conditions in a modded game.
 * Environment mapping is now applied to vehicle extras. This gives Stinger a reflective, metallic roof.
 * Pedestrians trying to dive to avoid an oncoming car now dive correctly to the side, rather than jumping towards the threat.
@@ -89,29 +99,61 @@ All the remaining, non-critical fixes.
 * Detached limbs now have properly working LODs, instead of rendering the normal and low-detail models at the same time.
 * Low Brightness options now load and save correctly, instead of reverting to overly bright values.
 * Support for the `brakelights` dummy has been restored, allowing brake and reverse lights to work as they did in the PS2 version, rather than always sharing the same placement with the tail lights.
+* The correct window icon is now displayed.
+* The engine start sound now always plays correctly, regardless of the Dynamic Acoustic Modeling setting or environmental reverb.
+* Flare effects now scale to resolution correctly.
+* Shadows and lights now cast correctly on map objects rotated along the X axis.
+* Mission audio now stops immediately when it's cleared from the script.
+* The Stats menu now displays the actual number of Hidden Packages, instead of displaying a percentage collected + "out of 100". This fixes the stat display for mods that remove or add additional Hidden Packages.
+* Script sprites now have bilinear filtering applied.
+* A one-time 'get out of jail free' bonus granted for catching 10 criminals in a row now also lets the player keep their weapons.
+* Gangsters no longer spawn in circles before immediately dispersing, and random gang members no longer stand still.
+* Cops now take cover behind cars in the same way they do on the PS2; previously, on PC cops behaved like in Vice City (researched by **Nick007J**).
+* In the wanted level 'tutorial' cutscene, cops now ram the car they chase and they keep their sirens on, as it was set originally set up in the mission script.
+* Road blocks in 'Decoy' now use Enforcers instead of the army vehicles.
+* NPCs can now use sniper rifles and rocket launchers.
+* Fixed road blocks spawning vehicles with an incorrect rotation on select roads.
+* `SET_ENTER_CAR_RANGE_MULTIPLIER` and `SET_THREAT_REACTION_RANGE_MULTIPLIER` script commands are now functional and their effects reset on New Game, loading a save, and during the mission cleanup.
+* Vehicles now slow down correctly in shallow water, matching the PS2 version (contributed by **Fire_Head**).
+* The dust kicked up by helicopters now follows the terrain elevation correctly, matching the PS2 version (researched by **Nick007J**).
+* Fixed the logic of police helicopters looking for the player to match the PS2 version (researched by **Nick007J**).
+* Glass shards from broken rectangular windows are now correctly sized (contributed by **Fire_Head**).
+* Glass panes now break correctly also in cases where the glass isn't perfectly axis-aligned.
 * <i class="fas fa-cog"></i> Fixed siren corona placements in Firetruck, Ambulance, and Enforcer.
 * <i class="fas fa-cog"></i> Fixed taxi light corona placement for Taxi.
 * <i class="fas fa-cog"></i> Fixed police chopper's searchlight placement.
+* <i class="fas fa-cog"></i> Script sprites and rectangles now scale to resolution correctly.
+* <i class="fas fa-cog"></i> Gangsters can now spawn in formations of 1-4 people. This feature existed in early PS2 builds and appeared in pre-release footage, but was disabled during development due to bugs.
+{%- endcapture %}
+
+{% include elements/details.html summary="All the remaining, non-critical fixes. **Click to expand.**" content=other-fixes %}
 
 ### Enhancements
-Any changes that don't strictly fix game bugs.
 
+{% capture enhancements -%}
 * If the settings file is absent, the game will now default to your desktop resolution instead of 640x480x16.
 * All censorships from German and French versions of the game have been removed.
+* <i class="fas fa-cog"></i> Subtitles no longer overlap the radar during gameplay and are properly centered in cutscenes.
 * <i class="fas fa-cog"></i> Made the game select metric/imperial units based on system locale settings.
 * <i class="fas fa-cog"></i> Sliding mission titles and odd job texts from the GTA III beta can now be re-enabled (off by default).
+* <i class="fas fa-cog"></i> Zone names, vehicle names, subtitles, and the Wasted/Busted text can now be moved higher to match their PS2 positions (off by default).
+{%- endcapture %}
 
-***
+{% include elements/details.html summary="Any changes that don't strictly fix game bugs. **Click to expand.**" content=enhancements %}
 
 ## Credits
 
 SilentPatch includes code contributions from:
 * aap
 * B1ack_Wh1te
+* CanerKaraca
 * DK22Pac
 * Fire_Head
+* iFarbod
+* Kaizo M
 * Nick007J
 * NTAuthority
+* rx
 * Sergeanur
 * spaceeinstein
 * Wesser

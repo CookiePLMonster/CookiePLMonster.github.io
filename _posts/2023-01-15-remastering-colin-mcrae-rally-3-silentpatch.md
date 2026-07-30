@@ -64,7 +64,7 @@ before the franchise moved on to a Colin McRae DiRT series.
 
 Unlike Colin McRae Rally 2.0, where the game shined on PC, CMR3 was an enhanced console port. Nonetheless, I have fond memories from playing
 this game as a kid (although they've blurred together with memories from CMR04 and CMR2005). Curiously, back in the day,
-[this was considered a sub-par port](https://web.archive.org/web/20190404033201/https://arstechnica.com/civis/viewtopic.php?f=22&t=661429),
+[this was considered a sub-par port](https://web.archive.org/web/20190404033201/https://arstechnica.com/civis/viewtopic.php?f=22&t=661429){:target="_blank"},
 and some people did not enjoy the long wait for the PC port, especially since by then CMR04 was just a few months away from release.
 I find this comment the most amusing...
 
@@ -72,24 +72,24 @@ I find this comment the most amusing...
 
 ...since it sounds like something that could have been said online in July 2022, not July 2003 -- I guess some things never change 😜
 
-[^cmr3-release-date]: As per: <https://en.wikipedia.org/wiki/Colin_McRae_Rally_3>
+[^cmr3-release-date]: As per: <https://en.wikipedia.org/wiki/Colin_McRae_Rally_3>{:target="_blank"}
 
 # Chapter 1: In search of a perfect executable {#in-search-of-a-perfect-executable}
 
 It's commonly known that DRM on retail discs sucked. The three leading DRM solutions all came with a varying level of breakage,
 and these days, two of them are intentionally disabled by Windows; furthermore, one of those DRM solutions is so contrived
 it can make a Windows 10/11 machine unbootable (shout out to TOCA Race Driver 2 & 3). Much like I did
-[for the TOCA Race Driver games](https://twitter.com/__silent_/status/1547975239379718145), I wanted to know if the trilogy
+[for the TOCA Race Driver games](https://twitter.com/__silent_/status/1547975239379718145){:target="_blank"}, I wanted to know if the trilogy
 of later Colin McRae Rally games were all released DRM-free somewhere:
-* Colin McRae Rally 04 is easy -- much like TOCA Race Driver and TOCA Race Driver 2, [it was re-released in Italy by FX Interactive](http://redump.org/disc/60860/),
+* Colin McRae Rally 04 is easy -- much like TOCA Race Driver and TOCA Race Driver 2, [it was re-released in Italy by FX Interactive](https://redump.info/disc/60860/){:target="_blank"},
 opting for "physical" DRM (ring on the disc's surface to make copying unreliable and time consuming) instead of a software solution.
 * Colin McRae Rally 2005 was released DRM-free on GOG.com, so even though the game has since been delisted, getting a hold of the DRM-free executable is not hard.
-* This left only Colin McRae Rally 3 in an unknown state, as at that time all CMR3 discs submitted to Redump had SecuROM DRM -- [except for the Polish release](http://redump.org/disc/93705/).
+* This left only Colin McRae Rally 3 in an unknown state, as at that time all CMR3 discs submitted to Redump had SecuROM DRM -- [except for the Polish release](https://redump.info/disc/93705/){:target="_blank"}.
 
 I initially brushed off that hint, since I thought this listing is incomplete or incorrect. After all, I own a Polish CMR3 release from back in the day -- it uses SafeDisc[^safedisc-antipiracy],
 making it impossible to launch without workarounds or a no-CD executable, and it comes on **three** discs, while this listing only had two.
 
-[^safedisc-antipiracy]: Integrated so poorly that the launch version [triggered its own anti-piracy](https://www.gry-online.pl/S030.asp?ID=3092), and the game required a hotfix to be playable 😂
+[^safedisc-antipiracy]: Integrated so poorly that the launch version [triggered its own anti-piracy](https://www.gry-online.pl/S030.asp?ID=3092){:target="_blank"}, and the game required a hotfix to be playable 😂
 
 However, turns out that this wasn't an error, as a later re-release of the game did indeed come on 2 CDs:
 
@@ -114,9 +114,9 @@ Shortly after that, I also bought my own second hand copy of the eXtra Klasyka r
 
 If the rabbit hole of different versions ended here, this would have been a story of how I created an international DRM-free executable by "internationalizing" the Polish one
 and removing CD Projekt's modifications to it (more on that later). There **is** one more version, though -- CMR3 was also re-released in Germany on a single DVD. As SecuROM worked with DVDs
-just fine, we expected this release to have DRM identical to the original -- however, [Memorix101 proved us wrong](https://twitter.com/memorix101/status/1581632281311334400?s=20).
-Together with {{ ribshark_link }} we tracked down a copy for sale and [submitted its metadata to Redump](http://redump.org/disc/98620/) -- at which point it became clear
-that this re-release is so late, its disc was mastered after [the release of Colin McRae Rally 2005](https://en.wikipedia.org/wiki/Colin_McRae_Rally_2005)!
+just fine, we expected this release to have DRM identical to the original -- however, [Memorix101 proved us wrong](https://twitter.com/memorix101/status/1581632281311334400?s=20){:target="_blank"}.
+Together with {{ ribshark_link }} we tracked down a copy for sale and [submitted its metadata to Redump](https://redump.info/disc/98620/){:target="_blank"} -- at which point it became clear
+that this re-release is so late, its disc was mastered after [the release of Colin McRae Rally 2005](https://en.wikipedia.org/wiki/Colin_McRae_Rally_2005){:target="_blank"}!
 
 At this point, I've already been "internationalizing" the Polish executable, so this work was technically rendered useless (for now). Regardless, thanks to the German version,
 we got *The Perfect CMR3 Version* we wanted -- an easy to install, DRM-free, future proof release that ensures the game remains accessible indefinitely.

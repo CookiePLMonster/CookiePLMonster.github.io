@@ -1,0 +1,7 @@
+<a href="#
+    {%- if include.id -%}
+    {{- include.id -}}
+    {%- else -%}
+    {{- include.entry | replace: "'", "" | slugify -}}
+    {%- endif -%}
+    ">{{- include.entry -}}</a>

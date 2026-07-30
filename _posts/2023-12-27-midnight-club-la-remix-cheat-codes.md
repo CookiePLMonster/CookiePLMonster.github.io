@@ -83,7 +83,7 @@ _L 0x20068A54 0x00000000
 ***
 
 Most of the cheats are quite standard and not that interesting, but the **Stronger special ability effects** cheat is an exception -- it makes a Roar ability look quite entertaining:
-{% include figures/video.html link="/assets/img/posts/mcla-remix-cheats/mcla-roar.mp4" attributes="controls"
+{% include figures/video.html link="/assets/img/posts/mcla-remix-cheats/mcla-roar.webm" attributes="controls"
         caption="This effect is usually not *that* strong." %}
 
 Additionally, the 5 secret biker head models appear to be reused from the PSP version of Midnight Club 3: DUB Edition:
@@ -99,7 +99,7 @@ Additionally, the 5 secret biker head models appear to be reused from the PSP ve
 
 The cheat strings use an obfuscation algorithm to "hide" them, presumably to make them harder to spot when disassembling the executable.
 The algorithm used is simple and reversible -- to document all the cheat codes, I wrote a small decryption program, and later simplified it and cleaned it up
-with the help of [Nenkai](https://github.com/Nenkai).
+with the help of [Nenkai](https://github.com/Nenkai){:target="_blank"}.
 
 The encryption and decryption routines are as follows:
 
