@@ -2,9 +2,9 @@
 layout: post
 title: "Exploring the history of Juiced through prototypes and PC demos"
 excerpt: "Looking into Acclaim and THQ demos and into the history of Juice Games in general."
-thumbnail: "assets/img/games/bg/juiced-acclaim.jpg"
-feature-img: "assets/img/games/bg/juiced-acclaim.jpg"
-image: "assets/img/games/bg/juiced-acclaim.jpg"
+thumbnail: "/assets/img/games/bg/juiced-acclaim.jpg"
+feature-img: "/assets/img/games/bg/juiced-acclaim.jpg"
+image: "/assets/img/games/bg/juiced-acclaim.jpg"
 game-series: ["juiced-demo", "juiced-acclaim-ps2"]
 date: 2023-10-21 15:05:00 +0200
 twitter: {card: "summary_large_image"}

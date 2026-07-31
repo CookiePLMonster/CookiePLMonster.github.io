@@ -4,9 +4,9 @@ title: "Solving the mystery of Need for Speed: Underground's Magazine 22 with Si
 date: 2025-03-12 19:35:00 +0100
 excerpt: You no longer need to be superhuman to beat the drift record.
 game-series: ["need-for-speed-underground", "need-for-speed-underground-ps2"]
-image: "assets/img/posts/silentpatch-nfsug/card-image.jpg"
-thumbnail: "assets/img/games/bg/need-for-speed-underground.jpg"
-feature-img: "assets/img/games/bg/need-for-speed-underground.jpg"
+image: "/assets/img/posts/silentpatch-nfsug/card-image.jpg"
+thumbnail: "/assets/img/games/bg/need-for-speed-underground.jpg"
+feature-img: "/assets/img/games/bg/need-for-speed-underground.jpg"
 tags: [Articles, Releases]
 mathjax: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Stranded Deep"
-image: "assets/img/portfolio/thumb/stranded-deep.jpg"
-feature-img: "assets/img/portfolio/stranded-deep.jpg"
+image: "/assets/img/portfolio/thumb/stranded-deep.jpg"
+feature-img: "/assets/img/portfolio/stranded-deep.jpg"
 date: 2021-08-31
 ---
 

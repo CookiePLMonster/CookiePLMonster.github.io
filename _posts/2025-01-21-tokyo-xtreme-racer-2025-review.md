@@ -4,9 +4,9 @@ title: A technical dive into the new Tokyo Xtreme Racer
 date: 2025-01-21 10:30:00 +0100
 excerpt: Looking into the game ahead of the Early Access launch with my first impressions, benchmarks, and Steam Deck compatibility.
 game-series: ["tokyo-xtreme-racer-2025"]
-image: "assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
-thumbnail: "assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
-feature-img: "assets/img/games/bg/tokyo-xtreme-racer-2025-alt.jpg"
+image: "/assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
+thumbnail: "/assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
+feature-img: "/assets/img/games/bg/tokyo-xtreme-racer-2025-alt.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Reviews]
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Juiced (Demo)"
 excerpt: "My modifications and patches for Juiced (Demo): SilentPatch & Enhanced Demo."
-image: "assets/img/games/juiced-demo.jpg"
-feature-img: "assets/img/games/bg/juiced-thq.jpg"
+image: "/assets/img/games/juiced-demo.jpg"
+feature-img: "/assets/img/games/bg/juiced-thq.jpg"
 game-series: "juiced-demo"
 order: 75
 redirect_from: "/mods/juiced/"

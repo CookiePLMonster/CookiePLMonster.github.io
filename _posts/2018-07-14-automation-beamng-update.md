@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Automation & BeamNG.drive joint update is the best thing since sliced bread"
-feature-img: "assets/img/posts/automation/automation-img.jpg"
-thumbnail: "assets/img/posts/automation/automation-img.jpg"
-image: "assets/img/posts/automation/automation-img.jpg"
+feature-img: "/assets/img/posts/automation/automation-img.jpg"
+thumbnail: "/assets/img/posts/automation/automation-img.jpg"
+image: "/assets/img/posts/automation/automation-img.jpg"
 date: 2018-07-14 18:00:00 +0200
 twitter: {card: "summary_large_image"}
 tags: [Reviews]

@@ -2,7 +2,7 @@
 layout: bonuscodes
 title: "Colin McRae Rally 3"
 excerpt: "Cheat Generator for Colin McRae Rally 3."
-image: "assets/img/bonuscodes/cmr-3.jpg"
+image: "/assets/img/bonuscodes/cmr-3.jpg"
 order: "colin mcrae rally 3"
 ---
 

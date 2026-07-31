@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "5 years of SilentPatch!"
-feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
-thumbnail: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
-image: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+feature-img: "/assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+thumbnail: "/assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+image: "/assets/img/mods/silentpatch/silentpatch-banner-2018.png"
 date: 2018-12-29 23:15:00 +0200
 tags: [Other]
 ---

@@ -4,9 +4,9 @@ title: Tokyo Xtreme Racer -- series research
 date: 2025-01-13 23:00:00 +0100
 excerpt: Miscellaneous pieces of info about the classic Tokyo Xtreme Racer games.
 game-series: ["tokyo-xtreme-racer-zero"]
-image: "assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
-thumbnail: "assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
-feature-img: "assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
+image: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
+thumbnail: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
+feature-img: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
 tags: [Research]
 mathjax: true
 ---

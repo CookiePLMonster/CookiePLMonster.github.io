@@ -1,7 +1,7 @@
 ---
 title: "A Boy and His Blob"
-image: "assets/img/portfolio/thumb/abahb.jpg"
-feature-img: "assets/img/portfolio/abahb.jpg"
+image: "/assets/img/portfolio/thumb/abahb.jpg"
+feature-img: "/assets/img/portfolio/abahb.jpg"
 date: 2016-01-19
 game-series: "a-boy-and-his-blob"
 ---

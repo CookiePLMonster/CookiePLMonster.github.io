@@ -2,9 +2,9 @@
 layout: post
 title: "New release of Dreamcast Restoration 2.0 for Crazy Taxi"
 excerpt: "Restored voices and fixed Z-fighting."
-thumbnail: "assets/img/games/bg/crazy-taxi.jpg"
-feature-img: "assets/img/games/bg/crazy-taxi.jpg"
-image: "assets/img/games/bg/crazy-taxi.jpg"
+thumbnail: "/assets/img/games/bg/crazy-taxi.jpg"
+feature-img: "/assets/img/games/bg/crazy-taxi.jpg"
+image: "/assets/img/games/bg/crazy-taxi.jpg"
 game-series: "crazy-taxi"
 date: 2022-03-19 19:00:00 +0100
 tags: [Releases]

@@ -1,7 +1,7 @@
 ---
 title: "Frostpunk"
-image: "assets/img/portfolio/thumb/frostpunk.jpg"
-feature-img: "assets/img/portfolio/frostpunk.jpg"
+image: "/assets/img/portfolio/thumb/frostpunk.jpg"
+feature-img: "/assets/img/portfolio/frostpunk.jpg"
 date: 2021-02-24
 game-series: "frostpunk"
 ---

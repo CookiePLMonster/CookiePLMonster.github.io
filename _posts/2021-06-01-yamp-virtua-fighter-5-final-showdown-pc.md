@@ -2,9 +2,9 @@
 layout: post
 title: "Yakuza Arcade Machines Player - Native Virtua Fighter 5: Final Showdown on PC"
 excerpt: "Turning an in-Yakuza Virtua Fighter 5: Final Showdown into a native PC game using game files from Yakuza."
-thumbnail: "assets/img/games/bg/vf5fs.jpg"
-feature-img: "assets/img/games/bg/vf5fs.jpg"
-image: "assets/img/games/bg/vf5fs.jpg"
+thumbnail: "/assets/img/games/bg/vf5fs.jpg"
+feature-img: "/assets/img/games/bg/vf5fs.jpg"
+image: "/assets/img/games/bg/vf5fs.jpg"
 game-series: "vf5fs"
 date: 2021-06-01 21:00:00 +0200
 tags: [Articles, Releases]

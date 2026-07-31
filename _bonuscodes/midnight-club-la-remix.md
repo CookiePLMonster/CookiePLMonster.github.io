@@ -3,7 +3,7 @@ layout: page
 title: "Midnight Club: L.A. Remix"
 subtitle: "Cheat Codes"
 excerpt: "Cheat Codes for Midnight Club: L.A. Remix."
-image: "assets/img/bonuscodes/midnight-club-la-remix.jpg"
+image: "/assets/img/bonuscodes/midnight-club-la-remix.jpg"
 order: "midnight club la remix"
 ---
 

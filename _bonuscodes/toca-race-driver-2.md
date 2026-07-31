@@ -3,7 +3,7 @@ layout: bonuscodes
 title: "TOCA Race Driver 2"
 subtitle: "DTM Race Driver 2, V8 Supercars 2, Race Driver 2006"
 excerpt: "Cheat Generator for TOCA Race Driver 2/DTM Race Driver 2/V8 Supercars 2/Race Driver 2006."
-image: "assets/img/bonuscodes/toca-race-driver-2.jpg"
+image: "/assets/img/bonuscodes/toca-race-driver-2.jpg"
 order: "toca race driver 2"
 ---
 

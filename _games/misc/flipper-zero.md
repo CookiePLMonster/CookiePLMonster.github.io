@@ -2,8 +2,8 @@
 layout: "non-mods-list"
 title: "Flipper Zero"
 excerpt: "My applications for the Flipper Zero."
-image: "assets/img/misc/flipper-zero.jpg"
-feature-img: "assets/img/misc/bg/flipper-zero.jpg"
+image: "/assets/img/misc/flipper-zero.jpg"
+feature-img: "/assets/img/misc/bg/flipper-zero.jpg"
 game-series: "flipper-zero"
 parent-series: "non-game"
 order: 100

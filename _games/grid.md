@@ -3,8 +3,8 @@ layout: page
 title: "GRID"
 subtitle: "Mods & Patches"
 excerpt: My modifications for GRID games.
-image: "assets/img/games/grid.jpg"
-feature-img: "assets/img/games/bg/grid.jpg"
+image: "/assets/img/games/grid.jpg"
+feature-img: "/assets/img/games/bg/grid.jpg"
 game-series: "grid"
 order: 18
 ---

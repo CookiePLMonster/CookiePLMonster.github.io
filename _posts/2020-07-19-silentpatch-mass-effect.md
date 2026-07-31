@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Fixing Mass Effect black blobs on modern AMD CPUs"
-thumbnail: "assets/img/games/bg/mass-effect.jpg"
-feature-img: "assets/img/games/bg/mass-effect.jpg"
-image: "assets/img/posts/mass-effect/comparison.jpg"
+thumbnail: "/assets/img/games/bg/mass-effect.jpg"
+feature-img: "/assets/img/games/bg/mass-effect.jpg"
+image: "/assets/img/posts/mass-effect/comparison.jpg"
 excerpt: "Graphical artifacts caused by a CPU, not GPU? Sure thing."
 twitter: {card: "summary_large_image"}
 game-series: "mass-effect"

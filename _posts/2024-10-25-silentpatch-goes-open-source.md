@@ -2,9 +2,9 @@
 layout: post
 title: "SilentPatch for Grand Theft Auto goes open source!"
 excerpt: "A long overdue update packed with new fixes and a public source code release."
-feature-img: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
-thumbnail: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
-image: "assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+feature-img: "/assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+thumbnail: "/assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
+image: "/assets/img/posts/sp-2024-update/sp_opensource_banner.jpg"
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
 date: 2024-10-25 14:00:00 +0200
 last_modified_at: 2024-11-02 14:00:00 +0100 

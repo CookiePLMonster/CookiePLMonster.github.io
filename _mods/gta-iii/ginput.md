@@ -1,6 +1,6 @@
 ---
 title: GInput
-title-image: "assets/img/mods/ginput-iii.png"
+title-image: "/assets/img/mods/ginput-iii.png"
 order: -99
 game-series: "gta-iii"
 excerpt: "Adds XInput controller support on par with modern games."

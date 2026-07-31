@@ -2,9 +2,9 @@
 layout: post
 title: "Dreamcast Restoration 2.0 & SilentPatch for Crazy Taxi"
 excerpt: "Restore licensed brands from the Dreamcast version, and fix some bugs while we're at it."
-thumbnail: "assets/img/games/bg/crazy-taxi.jpg"
-feature-img: "assets/img/games/bg/crazy-taxi.jpg"
-image: "assets/img/games/bg/crazy-taxi.jpg"
+thumbnail: "/assets/img/games/bg/crazy-taxi.jpg"
+feature-img: "/assets/img/games/bg/crazy-taxi.jpg"
+image: "/assets/img/games/bg/crazy-taxi.jpg"
 game-series: "crazy-taxi"
 date: 2021-08-08 19:30:00 +0200
 tags: [Releases, Articles]

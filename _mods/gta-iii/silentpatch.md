@@ -1,6 +1,6 @@
 ---
 title: SilentPatch
-title-image: "assets/img/mods/silentpatch-gta.svg"
+title-image: "/assets/img/mods/silentpatch-gta.svg"
 order: -100
 game-series: "gta-iii"
 excerpt: "Fixes countless issues in your favorite game."

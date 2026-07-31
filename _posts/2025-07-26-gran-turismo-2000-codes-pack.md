@@ -4,9 +4,9 @@ title: Modding Gran Turismo 2000 beyond boundaries
 date: 2025-07-26 18:50:00 +0200
 excerpt: Car select? Check. Widescreen? Check. Modern controls? Check.
 game-series: "gran-turismo-2000"
-image: "assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
-thumbnail: "assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
-feature-img: "assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
+image: "/assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
+thumbnail: "/assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
+feature-img: "/assets/img/posts/gt2000-cheats/gt2000-banner.jpg"
 twitter: {card: "summary_large_image"}
 tags: Releases
 ---

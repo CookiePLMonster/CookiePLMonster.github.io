@@ -3,8 +3,8 @@ layout: page
 title: "Yakuza"
 subtitle: "Mods & Patches"
 excerpt: "My modifications and patches for Yakuza games."
-image: "assets/img/games/yakuza.jpg"
-feature-img: "assets/img/games/bg/yakuza.jpg"
+image: "/assets/img/games/yakuza.jpg"
+feature-img: "/assets/img/games/bg/yakuza.jpg"
 game-series: "yakuza"
 order: 10
 ---

@@ -5,9 +5,9 @@ date: 2026-07-31 15:00:00 +0200
 excerpt: Over 100 new fixes, more voice lines, even better stability and mod compatibility.
 description: The 2026 update to SilentPatch for Grand Theft Auto brings over 100 new fixes, additional voice lines, and improved stability and mod compatibility.
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
-image: "assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
-thumbnail: "assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
-feature-img: "assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
+image: "/assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
+thumbnail: "/assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
+feature-img: "/assets/img/posts/sp-2026-update/gta_SP_2026_banner.webp"
 twitter: {card: "summary_large_image"}
 tags: [Releases, Articles]
 extra_scss: |
@@ -35,7 +35,7 @@ After SilentPatch went open source in late 2024, it's time for another update. I
 
 However, by now it's an informal rule that nothing I foresee about the future of SilentPatch holds true. The community created hundreds of reports on GitHub,
 and many discoveries were made that culminated in this SilentPatch update being **the biggest content update to date**: over 100 new fixes were introduced across the trilogy,
-many of which restore content that was shipped in the game but didn't work due to miscellaneous issues. Many possible crashes and mod incompatibilities were fixed,
+many of which restore content that was shipped in the game, but didn't work due to miscellaneous issues. Many possible crashes and mod incompatibilities were fixed,
 and dozens of little gameplay bugs were corrected. Numerous interesting GTA mods were also released this year, so if you were considering starting a new playthrough,
 now it's the best time to update SP and enjoy these games again!
 
@@ -75,7 +75,7 @@ Before I start: you may have noticed numerous changes on the blog that went live
 Affects: All trilogy games.
 
 The PC port of GTA III was not the most thorough when it comes to making the UI scale to resolutions,
-as evidenced by SilentPatch fixing numerous those issues for well over a decade. In the past, I fixed a range of scaling issues
+as evidenced by SilentPatch fixing numerous issues like those for well over a decade. In the past, I fixed a range of scaling issues
 that made UI elements too small on higher resolutions. I did, however, overlook that some text **positions** are also not correctly adjusted,
 even though the texts themselves scale properly. This affects a few screens in GTA III, but is most noticeable in Load Game and Brief menus:
 

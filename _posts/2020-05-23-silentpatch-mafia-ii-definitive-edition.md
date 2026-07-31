@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "SilentPatch for Mafia II: Definitive Edition, fixing (some) saving issues"
-thumbnail: "assets/img/games/bg/m2de.jpg"
-feature-img: "assets/img/games/bg/m2de.jpg"
-image: "assets/img/games/bg/m2de.jpg"
+thumbnail: "/assets/img/games/bg/m2de.jpg"
+feature-img: "/assets/img/games/bg/m2de.jpg"
+image: "/assets/img/games/bg/m2de.jpg"
 excerpt: "Non-English characters in save path? Got you covered."
 game-series: "mafia2-de"
 date: 2020-05-23 16:20:00 +0200

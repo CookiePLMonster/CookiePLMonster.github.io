@@ -4,9 +4,9 @@ title: "A technical dive into Project Motor Racing -- we're racing, not farming 
 date: 2025-11-27 13:20:00 +0100
 excerpt: One of the only games that moved **away** from Unreal Engine, was it worth it? Gameplay impressions from a gamepad user, benchmarks, highlights, and gripes.
 game-series: "project-motor-racing"
-image: "assets/img/games/bg/project-motor-racing-alt.jpg"
-thumbnail: "assets/img/games/bg/project-motor-racing.jpg"
-feature-img: "assets/img/games/bg/project-motor-racing-alt.jpg"
+image: "/assets/img/games/bg/project-motor-racing-alt.jpg"
+thumbnail: "/assets/img/games/bg/project-motor-racing.jpg"
+feature-img: "/assets/img/games/bg/project-motor-racing-alt.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Reviews]
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Fixing mouse issues in AquaNox"
-thumbnail: "assets/img/games/bg/aquanox.jpg"
-feature-img: "assets/img/games/bg/aquanox.jpg"
-image: "assets/img/games/bg/aquanox.jpg"
+thumbnail: "/assets/img/games/bg/aquanox.jpg"
+feature-img: "/assets/img/games/bg/aquanox.jpg"
+image: "/assets/img/games/bg/aquanox.jpg"
 excerpt: "Lot of red herrings on the way, but it all boils down to a single line fix."
 game-series: "aquanox"
 date: 2020-03-17 10:00:00 +0100

@@ -2,9 +2,9 @@
 layout: post
 title: "Fan research vs official fix -- EA Sports WRC decal rendering on GeForce GTX 10 series cards"
 excerpt: "SilentPatch vs the official v1.4.0 update."
-thumbnail: "assets/img/posts/ea-wrc-2/rd-banner.jpg"
-feature-img: "assets/img/posts/ea-wrc-2/rd-banner.jpg"
-image: "assets/img/posts/ea-wrc-2/rd-square.jpg"
+thumbnail: "/assets/img/posts/ea-wrc-2/rd-banner.jpg"
+feature-img: "/assets/img/posts/ea-wrc-2/rd-banner.jpg"
+image: "/assets/img/posts/ea-wrc-2/rd-square.jpg"
 game-series: "ea-sports-wrc"
 date: 2023-12-22 21:30:00 +0100
 tags: Articles

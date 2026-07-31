@@ -1,7 +1,7 @@
 ---
 title: "Hotline Miami Collection"
-image: "assets/img/portfolio/thumb/hm-collection.jpg"
-feature-img: "assets/img/portfolio/hm-collection.jpg"
+image: "/assets/img/portfolio/thumb/hm-collection.jpg"
+feature-img: "/assets/img/portfolio/hm-collection.jpg"
 date: 2019-08-19
 ---
 

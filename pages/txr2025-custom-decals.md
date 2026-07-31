@@ -2,8 +2,8 @@
 layout: page
 title: Importing custom decals into Tokyo Xtreme Racer (2025)
 excerpt: Personalize your car more.
-feature-img: "assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
-image: "assets/img/tutorials/txr2025-custom-decals/branding.jpg"
+feature-img: "/assets/img/games/bg/tokyo-xtreme-racer-2025.jpg"
+image: "/assets/img/tutorials/txr2025-custom-decals/branding.jpg"
 permalink: /tutorials/tokyo-xtreme-racer-2025/custom-decals/
 hide: true
 disambiguation:

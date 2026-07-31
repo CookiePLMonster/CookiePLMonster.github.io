@@ -2,9 +2,9 @@
 layout: post
 title: "Discovering cheat codes in Midnight Club: L.A. Remix"
 excerpt: "Official cheat codes found 15 years after the release."
-thumbnail: "assets/img/games/bg/midnight-club-la-remix.jpg"
-feature-img: "assets/img/games/bg/midnight-club-la-remix.jpg"
-image: "assets/img/games/bg/midnight-club-la-remix.jpg"
+thumbnail: "/assets/img/games/bg/midnight-club-la-remix.jpg"
+feature-img: "/assets/img/games/bg/midnight-club-la-remix.jpg"
+image: "/assets/img/games/bg/midnight-club-la-remix.jpg"
 game-series: "midnight-club-la-remix"
 date: 2023-12-27 18:35:00 +0100
 twitter: {card: "summary_large_image"}

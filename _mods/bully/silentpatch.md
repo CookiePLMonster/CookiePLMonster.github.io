@@ -1,6 +1,6 @@
 ---
 title: SilentPatch
-title-image: "assets/img/mods/silentpatch-bully.png"
+title-image: "/assets/img/mods/silentpatch-bully.png"
 game-series: "bully"
 excerpt: "If you are on Windows 10, now you should be able to play without crashes."
 date: 07-03-2020

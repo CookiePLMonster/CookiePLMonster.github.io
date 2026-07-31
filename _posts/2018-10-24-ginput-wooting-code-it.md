@@ -2,9 +2,9 @@
 layout: post
 title: GInput in Wooting CODE IT contest
 date: 2018-10-24 22:25:00 +0200
-feature-img: "assets/img/posts/ginput-wooting.jpg"
-thumbnail: "assets/img/posts/ginput-wooting.jpg"
-image: "assets/img/posts/ginput-wooting-social.jpg"
+feature-img: "/assets/img/posts/ginput-wooting.jpg"
+thumbnail: "/assets/img/posts/ginput-wooting.jpg"
+image: "/assets/img/posts/ginput-wooting-social.jpg"
 excerpt_separator: <!--more-->
 game-series: "gta-sa"
 twitter: {card: "summary_large_image"}

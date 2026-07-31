@@ -2,9 +2,9 @@
 layout: post
 title: "Second release of SilentPatch for Scarface: The World is Yours"
 excerpt: "Much needed stability improvements, after the initial version of the patch made it worse."
-thumbnail: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
-feature-img: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
-image: "assets/img/posts/scarface-r2/scarface-r2-header.jpg"
+thumbnail: "/assets/img/posts/scarface-r2/scarface-r2-header.jpg"
+feature-img: "/assets/img/posts/scarface-r2/scarface-r2-header.jpg"
+image: "/assets/img/posts/scarface-r2/scarface-r2-header.jpg"
 twitter: {card: "summary_large_image"}
 game-series: "scarface"
 date: 2022-02-12 21:45:00 +0100

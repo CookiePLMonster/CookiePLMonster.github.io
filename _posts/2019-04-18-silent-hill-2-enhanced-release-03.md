@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Silent Hill 2: Enhanced Edition UPDATE #3 is out!"
-feature-img: "assets/img/games/bg/sh2.jpg"
-thumbnail: "assets/img/games/bg/sh2.jpg"
-image: "assets/img/posts/sh2-enhancement-social.jpg"
+feature-img: "/assets/img/games/bg/sh2.jpg"
+thumbnail: "/assets/img/games/bg/sh2.jpg"
+image: "/assets/img/posts/sh2-enhancement-social.jpg"
 twitter: {card: "summary_large_image"}
 excerpt: "Now also with a few improvements from myself - controller rumble and more!"
 game-series: "sh2"

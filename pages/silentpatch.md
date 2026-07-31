@@ -2,8 +2,8 @@
 layout: page
 title: SilentPatch
 excerpt: About SilentPatch.
-feature-img: "assets/img/mods/silentpatch/silentpatch-banner.png"
-image: "assets/img/mods/silentpatch/silentpatch-banner.png"
+feature-img: "/assets/img/mods/silentpatch/silentpatch-banner.png"
+image: "/assets/img/mods/silentpatch/silentpatch-banner.png"
 permalink: /silentpatch/
 last_modified_at: 2025-03-09
 twitter: {card: "summary_large_image"}

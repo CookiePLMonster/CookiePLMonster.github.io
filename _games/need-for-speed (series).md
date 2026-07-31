@@ -3,8 +3,8 @@ layout: page
 title: "Need for Speed"
 subtitle: "Mods & Patches"
 excerpt: My modifications and patches for Need for Speed games.
-image: "assets/img/games/need-for-speed-series.jpg"
-feature-img: "assets/img/games/bg/need-for-speed-series.jpg"
+image: "/assets/img/games/need-for-speed-series.jpg"
+feature-img: "/assets/img/games/bg/need-for-speed-series.jpg"
 game-series: "need-for-speed"
 order: 7
 disambiguation:

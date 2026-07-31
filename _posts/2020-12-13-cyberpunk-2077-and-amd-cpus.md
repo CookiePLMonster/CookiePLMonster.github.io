@@ -2,9 +2,9 @@
 layout: post
 title: "About Cyberpunk 2077 and AMD CPUs"
 excerpt: "Let's try to clarify some things and get facts straight."
-thumbnail: "assets/img/posts/cp2077-amd/banner.jpg"
-feature-img: "assets/img/posts/cp2077-amd/banner.jpg"
-image: "assets/img/posts/cp2077-amd/banner.jpg"
+thumbnail: "/assets/img/posts/cp2077-amd/banner.jpg"
+feature-img: "/assets/img/posts/cp2077-amd/banner.jpg"
+image: "/assets/img/posts/cp2077-amd/banner.jpg"
 game-series: "cyberpunk-2077"
 date: 2020-12-13 19:10:00 +0100
 last_modified_at: 2020-12-19 12:00:00 +0100 

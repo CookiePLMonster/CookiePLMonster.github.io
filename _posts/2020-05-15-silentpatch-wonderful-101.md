@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "SilentPatch for The Wonderful 101: Remastered, fixing frame pacing issues"
-thumbnail: "assets/img/games/bg/w101.jpg"
-feature-img: "assets/img/games/bg/w101.jpg"
-image: "assets/img/games/bg/w101.jpg"
+thumbnail: "/assets/img/games/bg/w101.jpg"
+feature-img: "/assets/img/games/bg/w101.jpg"
+image: "/assets/img/games/bg/w101.jpg"
 excerpt: "Pre-release patching."
 game-series: "w101"
 date: 2020-05-16 12:50:00 +0200

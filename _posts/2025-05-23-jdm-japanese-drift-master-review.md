@@ -4,9 +4,9 @@ title: "A technical dive into JDM: Japanese Drift Master"
 date: 2025-05-23 16:50:00 +0200
 excerpt: Does it deliver? First impressions, benchmarks, optimized settings, Steam Deck compatibility. And some bonus Unreal Engine 5 bugs.
 game-series: "japanese-drift-master"
-image: "assets/img/games/bg/japanese-drift-master.jpg"
-thumbnail: "assets/img/games/bg/japanese-drift-master.jpg"
-feature-img: "assets/img/games/bg/japanese-drift-master-alt.jpg"
+image: "/assets/img/games/bg/japanese-drift-master.jpg"
+thumbnail: "/assets/img/games/bg/japanese-drift-master.jpg"
+feature-img: "/assets/img/games/bg/japanese-drift-master-alt.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Reviews]
 ---

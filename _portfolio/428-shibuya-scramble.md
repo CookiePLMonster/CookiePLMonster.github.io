@@ -1,7 +1,7 @@
 ---
 title: "428: Shibuya Scramble"
-image: "assets/img/portfolio/thumb/428.jpg"
-feature-img: "assets/img/portfolio/428.jpg"
+image: "/assets/img/portfolio/thumb/428.jpg"
+feature-img: "/assets/img/portfolio/428.jpg"
 date: 2018-09-04
 game-series: "428-shibuya-scramble"
 ---

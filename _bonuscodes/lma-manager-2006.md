@@ -2,7 +2,7 @@
 layout: bonuscodes
 title: "LMA Manager 2006"
 excerpt: "Cheat Generator for LMA Manager 2006."
-image: "assets/img/bonuscodes/lma-manager-2006.jpg"
+image: "/assets/img/bonuscodes/lma-manager-2006.jpg"
 order: "lma manager 2006"
 ---
 

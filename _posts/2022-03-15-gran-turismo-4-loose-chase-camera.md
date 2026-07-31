@@ -2,9 +2,9 @@
 layout: post
 title: "Gran Turismo 4 Loose Chase Camera"
 excerpt: "Much awaited Gran Turismo 3-like camera for Gran Turismo 4 and Tourist Trophy."
-thumbnail: "assets/img/posts/gt4-gt3-cam/gt3-cam-banner.jpg"
-feature-img: "assets/img/posts/gt4-gt3-cam/gt3-cam-banner.jpg"
-image: "assets/img/posts/gt4-gt3-cam/gt3-cam-banner-full.jpg"
+thumbnail: "/assets/img/posts/gt4-gt3-cam/gt3-cam-banner.jpg"
+feature-img: "/assets/img/posts/gt4-gt3-cam/gt3-cam-banner.jpg"
+image: "/assets/img/posts/gt4-gt3-cam/gt3-cam-banner-full.jpg"
 twitter: {card: "summary_large_image"}
 game-series: ["gran-turismo-4", "tourist-trophy"]
 date: 2022-03-15 20:10:00 +0100

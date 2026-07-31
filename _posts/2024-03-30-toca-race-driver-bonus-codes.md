@@ -2,9 +2,9 @@
 layout: post
 title: "Bonus Codes Generators for TOCA Race Driver"
 excerpt: "Reversing RSA using Wolfram Alpha."
-feature-img: "assets/img/bonuscodes/bonuscodes-banner.svg"
-thumbnail: "assets/img/bonuscodes/bonuscodes-banner.svg"
-image: "assets/img/bonuscodes/bonuscodes-banner.webp"
+feature-img: "/assets/img/bonuscodes/bonuscodes-banner.svg"
+thumbnail: "/assets/img/bonuscodes/bonuscodes-banner.svg"
+image: "/assets/img/bonuscodes/bonuscodes-banner.webp"
 game-series: ["toca-race-driver", "toca-race-driver-2", "toca-race-driver-3"]
 date: 2024-03-30 15:30:00 +0100
 last_modified_at: 2024-11-07 10:30:00 +0100

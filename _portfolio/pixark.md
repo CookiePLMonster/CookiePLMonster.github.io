@@ -1,7 +1,7 @@
 ---
 title: "PixARK"
-image: "assets/img/portfolio/thumb/pixark.jpg"
-feature-img: "assets/img/portfolio/pixark.jpg"
+image: "/assets/img/portfolio/thumb/pixark.jpg"
+feature-img: "/assets/img/portfolio/pixark.jpg"
 date: 2019-05-31
 ---
 

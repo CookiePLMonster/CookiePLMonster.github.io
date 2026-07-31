@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Polishing Shine 'o Vice - Part 1: Saving crash"
-feature-img: "assets/img/posts/shine-o-vice/shine-o-vice.jpg"
-thumbnail: "assets/img/posts/shine-o-vice/shine-o-vice.jpg"
-image: "assets/img/posts/shine-o-vice/shine-o-vice-f.jpg"
+feature-img: "/assets/img/posts/shine-o-vice/shine-o-vice.jpg"
+thumbnail: "/assets/img/posts/shine-o-vice/shine-o-vice.jpg"
+image: "/assets/img/posts/shine-o-vice/shine-o-vice-f.jpg"
 excerpt: Starting with the most urgent issue.
 date: 2018-12-23 23:10:00 +0200
 twitter: {card: "summary_large_image"}

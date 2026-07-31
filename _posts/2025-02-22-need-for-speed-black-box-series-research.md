@@ -6,9 +6,9 @@ last_modified_at: 2025-03-12 19:35:00 +0100
 excerpt: Miscellaneous pieces of info about the Black Box-era Need for Speed games.
 game-series: ["need-for-speed-underground", "need-for-speed-underground-ps2", "need-for-speed-most-wanted-ps2",
             "need-for-speed-carbon-ps2", "need-for-speed-prostreet-ps2", "need-for-speed-undercover-ps2"]
-image: "assets/img/games/bg/need-for-speed-carbon.jpg"
-thumbnail: "assets/img/games/bg/need-for-speed-carbon.jpg"
-feature-img: "assets/img/games/bg/need-for-speed-carbon.jpg"
+image: "/assets/img/games/bg/need-for-speed-carbon.jpg"
+thumbnail: "/assets/img/games/bg/need-for-speed-carbon.jpg"
+feature-img: "/assets/img/games/bg/need-for-speed-carbon.jpg"
 tags: [Research]
 ---
 

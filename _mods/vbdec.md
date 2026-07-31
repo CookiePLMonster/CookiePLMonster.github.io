@@ -1,6 +1,6 @@
 ---
 title: VBDec
-title-image: "assets/img/mods/vbdec.png"
+title-image: "/assets/img/mods/vbdec.png"
 order: -70
 game-series: ["gta-iii", "gta-vc"]
 excerpt: "Play PS2 radio files directly on PC."

@@ -2,7 +2,7 @@
 layout: page
 title: "Consoles"
 excerpt: My cheats and modifications for various console games.
-image: "assets/img/misc/consoles.jpg"
+image: "/assets/img/misc/consoles.jpg"
 game-series: "consoles"
 parent-series: "non-game"
 order: 0

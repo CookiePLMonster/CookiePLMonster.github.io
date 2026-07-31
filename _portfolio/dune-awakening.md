@@ -1,7 +1,7 @@
 ---
 title: "Dune: Awakening"
-image: "assets/img/portfolio/thumb/dune-awakening.jpg"
-feature-img: "assets/img/portfolio/dune-awakening.jpg"
+image: "/assets/img/portfolio/thumb/dune-awakening.jpg"
+feature-img: "/assets/img/portfolio/dune-awakening.jpg"
 date: 2025-06-10
 game-series: "dune-awakening"
 ---

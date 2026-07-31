@@ -2,8 +2,8 @@
 layout: page
 title: The Indie Games Corner
 description: A curated list of 50+ indie games, mostly racing, including released, upcoming, and unannounced titles worth keeping an eye on.
-feature-img: "assets/img/the-indie-corner/the-indie-corner.webp"
-image: "assets/img/the-indie-corner/the-indie-corner.webp"
+feature-img: "/assets/img/the-indie-corner/the-indie-corner.webp"
+image: "/assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
 date: 2026-03-19 13:30:00 +0100
 last_modified_at: 2026-04-07 21:15:00 +0200

@@ -4,9 +4,9 @@ title: "How a 20 year old bug in GTA San Andreas surfaced in Windows 11 24H2"
 date: 2025-04-23 15:30:00 +0200
 excerpt: After over two decades, players are now forbidden from flying a seaplane, all thanks to undefined code behavior.
 game-series: "gta-sa"
-image: "assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
-thumbnail: "assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
-feature-img: "assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
+image: "/assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
+thumbnail: "/assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
+feature-img: "/assets/img/posts/sa-win11-24h2-bug/gta_sa_Bg0aamH1rZ.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Articles]
 ---

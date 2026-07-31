@@ -1,6 +1,6 @@
 ---
 title: SilentPatch
-title-image: "assets/img/mods/silentpatch-farcry.png"
+title-image: "/assets/img/mods/silentpatch-farcry.png"
 game-series: "far-cry"
 excerpt: "Water reflections shall work properly again."
 date: 06-07-2018

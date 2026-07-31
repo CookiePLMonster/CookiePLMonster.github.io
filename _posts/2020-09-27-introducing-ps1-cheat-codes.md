@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Introducing modifications for console games"
-thumbnail: "assets/img/posts/psx_banner2.jpg"
-feature-img: "assets/img/consoles/bg/ps1.jpg"
-image: "assets/img/posts/psx_banner2.jpg"
+thumbnail: "/assets/img/posts/psx_banner2.jpg"
+feature-img: "/assets/img/consoles/bg/ps1.jpg"
+image: "/assets/img/posts/psx_banner2.jpg"
 excerpt: "Starting with GameShark codes for Gran Turismo games."
 game-series: ["gran-turismo", "gran-turismo-2"]
 date: 2020-09-27 19:20:00 +0200

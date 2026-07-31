@@ -1,6 +1,6 @@
 ---
 title: SilentPatch
-title-image: "assets/img/mods/silentpatch-yk2.png"
+title-image: "/assets/img/mods/silentpatch-yk2.png"
 game-series: ["yakuza-5"]
 excerpt: "Reducing CPU usage and fixing other bugs."
 date: 27-02-2021

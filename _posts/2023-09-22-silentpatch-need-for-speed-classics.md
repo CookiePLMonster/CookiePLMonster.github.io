@@ -2,9 +2,9 @@
 layout: post
 title: "SilentPatch for NFS2: Special Edition, NFS3: Hot Pursuit, NFS4: High Stakes and NFS: Porsche Unleashed"
 excerpt: "Four classic games patched in one go."
-thumbnail: "assets/img/posts/spnfs90s/sp-img.jpg"
-feature-img: "assets/img/posts/spnfs90s/sp-img.jpg"
-image: "assets/img/posts/spnfs90s/sp-img.jpg"
+thumbnail: "/assets/img/posts/spnfs90s/sp-img.jpg"
+feature-img: "/assets/img/posts/spnfs90s/sp-img.jpg"
+image: "/assets/img/posts/spnfs90s/sp-img.jpg"
 game-series: ["need-for-speed-2-special-edition", "need-for-speed-3", "need-for-speed-4", "need-for-speed-porsche"]
 date: 2023-09-24 14:50:00 +0200
 twitter: {card: "summary_large_image"}

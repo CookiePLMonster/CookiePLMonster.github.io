@@ -4,9 +4,9 @@ title: iRacing Arcade review -- casual racing under a serious brand
 date: 2026-03-03 15:00:00 +0100
 excerpt: A sequel to Circuit Superstars with a new name.
 game-series: "iracing-arcade"
-image: "assets/img/games/bg/iracing-arcade.jpg"
-thumbnail: "assets/img/games/bg/iracing-arcade.jpg"
-feature-img: "assets/img/games/bg/iracing-arcade-alt.jpg"
+image: "/assets/img/games/bg/iracing-arcade.jpg"
+thumbnail: "/assets/img/games/bg/iracing-arcade.jpg"
+feature-img: "/assets/img/games/bg/iracing-arcade-alt.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Reviews]
 ---

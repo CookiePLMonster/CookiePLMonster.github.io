@@ -1,7 +1,7 @@
 ---
 title: "Take No Prisoners"
-image: "assets/img/portfolio/thumb/take-no-prisoners.jpg"
-feature-img: "assets/img/portfolio/take-no-prisoners.jpg"
+image: "/assets/img/portfolio/thumb/take-no-prisoners.jpg"
+feature-img: "/assets/img/portfolio/take-no-prisoners.jpg"
 date: 2023-06-28
 game-series: "take-on-prisoners"
 ---

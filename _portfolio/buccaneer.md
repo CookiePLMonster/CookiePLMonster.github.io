@@ -1,7 +1,7 @@
 ---
 title: "Buccaneer"
-image: "assets/img/portfolio/thumb/buccaneer.jpg"
-feature-img: "assets/img/portfolio/buccaneer.jpg"
+image: "/assets/img/portfolio/thumb/buccaneer.jpg"
+feature-img: "/assets/img/portfolio/buccaneer.jpg"
 date: 2024-07-01
 game-series: "buccaneer"
 ---

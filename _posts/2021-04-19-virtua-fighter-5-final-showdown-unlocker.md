@@ -2,9 +2,9 @@
 layout: post
 title: "Virtua Fighter 5: Final Showdown Unlocker for Yakuza 6 and Yakuza: Like a Dragon"
 excerpt: "Turning the arcade into a full console game!"
-thumbnail: "assets/img/games/bg/vf5fs.jpg"
-feature-img: "assets/img/games/bg/vf5fs.jpg"
-image: "assets/img/games/bg/vf5fs.jpg"
+thumbnail: "/assets/img/games/bg/vf5fs.jpg"
+feature-img: "/assets/img/games/bg/vf5fs.jpg"
+image: "/assets/img/games/bg/vf5fs.jpg"
 game-series: ["yakuza-6", "yakuza-lad", "vf5fs"]
 date: 2021-04-19 23:00:00 +0200
 tags: [Releases]

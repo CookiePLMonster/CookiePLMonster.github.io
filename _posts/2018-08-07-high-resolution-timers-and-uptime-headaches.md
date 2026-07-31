@@ -2,7 +2,7 @@
 layout: post
 title: "High resolution timers and high uptime headaches"
 excerpt: You may be dealing with very big numbers, so tread carefully.
-image: "assets/img/posts/high-resolution-timers/uptime-img.png"
+image: "/assets/img/posts/high-resolution-timers/uptime-img.png"
 game-series: "tools"
 date: 2018-08-07 2:25:00 +0200
 last_modified_at: 2022-02-17 12:00:00 +0200

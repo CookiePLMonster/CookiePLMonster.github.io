@@ -202,7 +202,7 @@ defaults:
       path: ""
       type: "bonuscodes"
     values:
-      feature-img: "assets/img/bonuscodes/bonuscodes-banner.svg"
+      feature-img: "/assets/img/bonuscodes/bonuscodes-banner.svg"
       title_category: "Bonus Codes"
   - scope:
       path: ""

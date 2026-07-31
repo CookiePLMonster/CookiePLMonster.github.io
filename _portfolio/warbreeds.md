@@ -1,7 +1,7 @@
 ---
 title: "WarBreeds"
-image: "assets/img/portfolio/thumb/warbreeds.jpg"
-feature-img: "assets/img/portfolio/warbreeds.jpg"
+image: "/assets/img/portfolio/thumb/warbreeds.jpg"
+feature-img: "/assets/img/portfolio/warbreeds.jpg"
 date: 2023-12-19
 game-series: "warbreeds"
 ---

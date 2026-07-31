@@ -1,7 +1,7 @@
 ---
 title: "Star General"
-image: "assets/img/portfolio/thumb/star-general.jpg"
-feature-img: "assets/img/portfolio/star-general.jpg"
+image: "/assets/img/portfolio/thumb/star-general.jpg"
+feature-img: "/assets/img/portfolio/star-general.jpg"
 date: 2023-06-06
 game-series: "star-general"
 ---

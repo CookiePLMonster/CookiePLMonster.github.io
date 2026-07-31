@@ -2,9 +2,9 @@
 layout: post
 title: "Fixing EA Sports WRC decal rendering on GeForce GTX 10 series cards"
 excerpt: "Pascal cards exposing broken shaders."
-thumbnail: "assets/img/posts/ea-wrc/mini-banner.jpg"
-feature-img: "assets/img/posts/ea-wrc/mini-banner.jpg"
-image: "assets/img/posts/ea-wrc/mini-banner.jpg"
+thumbnail: "/assets/img/posts/ea-wrc/mini-banner.jpg"
+feature-img: "/assets/img/posts/ea-wrc/mini-banner.jpg"
+image: "/assets/img/posts/ea-wrc/mini-banner.jpg"
 game-series: "ea-sports-wrc"
 date: 2023-11-22 19:20:00 +0100
 twitter: {card: "summary_large_image"}

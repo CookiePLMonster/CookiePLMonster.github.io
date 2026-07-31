@@ -4,9 +4,9 @@ title: "NASCAR 25 PC review -- good game, basic port"
 date: 2025-11-18 22:45:00 +0100
 excerpt: Curse of the PC versions of annual sports games hits the oval track. Gameplay impressions, benchmarks, Steam Deck compatibility.
 game-series: "nascar-25"
-image: "assets/img/games/bg/nascar-25-alt.jpg"
-thumbnail: "assets/img/games/bg/nascar-25.jpg"
-feature-img: "assets/img/games/bg/nascar-25-alt.jpg"
+image: "/assets/img/games/bg/nascar-25-alt.jpg"
+thumbnail: "/assets/img/games/bg/nascar-25.jpg"
+feature-img: "/assets/img/games/bg/nascar-25-alt.jpg"
 twitter: {card: "summary_large_image"}
 tags: [Reviews]
 ---

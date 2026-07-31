@@ -1,6 +1,6 @@
 ---
 title: GInput
-title-image: "assets/img/mods/ginput-sa.png"
+title-image: "/assets/img/mods/ginput-sa.png"
 order: -99
 game-series: "gta-sa"
 excerpt: "Adds XInput controller support on par with modern games."

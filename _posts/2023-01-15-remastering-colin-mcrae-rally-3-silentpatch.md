@@ -2,9 +2,9 @@
 layout: post
 title: "Remastering Colin McRae Rally 3 with SilentPatch"
 excerpt: "A fresh take on the classic rally game with widescreen support, high definition UI, and countless bug fixes."
-thumbnail: "assets/img/posts/spcmr3/cmr3-img.jpg"
-feature-img: "assets/img/posts/spcmr3/cmr3-img.jpg"
-image: "assets/img/posts/spcmr3/cmr3-img.jpg"
+thumbnail: "/assets/img/posts/spcmr3/cmr3-img.jpg"
+feature-img: "/assets/img/posts/spcmr3/cmr3-img.jpg"
+image: "/assets/img/posts/spcmr3/cmr3-img.jpg"
 game-series: "cmr-3"
 date: 2023-01-15 16:15:00 +0100
 twitter: {card: "summary_large_image"}

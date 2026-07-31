@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Restoring the gold filter in Deus Ex: Human Revolution - Director's Cut"
-thumbnail: "assets/img/games/bg/dxhrdc.jpg"
-feature-img: "assets/img/games/bg/dxhrdc.jpg"
-image: "assets/img/games/bg/dxhrdc.jpg"
+thumbnail: "/assets/img/games/bg/dxhrdc.jpg"
+feature-img: "/assets/img/games/bg/dxhrdc.jpg"
+image: "/assets/img/games/bg/dxhrdc.jpg"
 excerpt: "Researching and restoring differences in game's post-processing and lighting - with bug fixes."
 game-series: "dxhrdc"
 date: 2020-04-26 18:20:00 +0200

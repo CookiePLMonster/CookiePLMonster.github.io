@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "New SilentPatch release -- \"The Corona Update\""
-feature-img: "assets/img/mods/silentpatch/silentpatch-banner-2018.png"
-thumbnail: "assets/img/posts/corona-update/coronaupdate_bg.png"
-image: "assets/img/posts/corona-update/coronaupdate_bg.png"
+feature-img: "/assets/img/mods/silentpatch/silentpatch-banner-2018.png"
+thumbnail: "/assets/img/posts/corona-update/coronaupdate_bg.png"
+image: "/assets/img/posts/corona-update/coronaupdate_bg.png"
 excerpt: "Numerous nice fixes right for the 6th anniversary 🎂"
 game-series: "gta-sa"
 date: 2019-12-28 18:05:00 +0100

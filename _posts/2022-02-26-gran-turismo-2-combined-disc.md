@@ -4,9 +4,9 @@ title: "Gran Turismo 2 Combined Disc"
 excerpt: "What if PlayStation CDs were 1GB and Gran Turismo 2 came on a single disc?"
 game-series: "gran-turismo-2"
 date: 2022-02-26 19:30:00 +0100
-thumbnail: "assets/img/posts/gt2-combined/gt2-combined-logo.png"
-feature-img: "assets/img/posts/gt2-combined/gt2-combined-logo.png"
-image: "assets/img/posts/gt2-combined/gt2-combined-logo-square2.png"
+thumbnail: "/assets/img/posts/gt2-combined/gt2-combined-logo.png"
+feature-img: "/assets/img/posts/gt2-combined/gt2-combined-logo.png"
+image: "/assets/img/posts/gt2-combined/gt2-combined-logo-square2.png"
 tags: [Releases]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: SilentPatch
-title-image: "assets/img/mods/silentpatch-godfather.png"
+title-image: "/assets/img/mods/silentpatch-godfather.png"
 game-series: "godfather"
 excerpt: "Movies working flawlessly on Windows 10!"
 date: 14-04-2019
