@@ -5,6 +5,9 @@ order: 23
 date: 23-04-2022
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 This cheat allows for switching the in-race music by pressing <kbd>R3</kbd>. Holding <kbd>R3</kbd> will mute music instead.

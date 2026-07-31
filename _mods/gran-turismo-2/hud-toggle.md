@@ -5,6 +5,9 @@ order: 20
 date: 06-09-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 By default, it is impossible to completely hide the UI in GT2 during races or replays. Additionally, the rear view mirror only shows in the bumper camera

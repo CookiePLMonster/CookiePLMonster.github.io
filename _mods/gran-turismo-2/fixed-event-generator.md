@@ -5,6 +5,9 @@ order: 24
 date: 17-04-2022
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 This cheats improves randomly generated events (One-Make races and Event Generator races) by fixing the course generation:

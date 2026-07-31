@@ -5,6 +5,9 @@ order: 22
 date: 09-10-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 Gran Turismo 2 has a single timed Endurance race -- **Millenium In Rome 2 Hours Endurance**. However, while limited to 2 hours, this race can also end after 99 laps, whichever comes first.

@@ -5,6 +5,9 @@ order: 11
 date: 06-09-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 By default, Gran Turismo and Gran Turismo 2 both use very aggressive LODs for AI cars. The highest LOD level is reserved for the player, with lower LOD levels used by the AI

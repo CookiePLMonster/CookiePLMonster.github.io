@@ -5,6 +5,9 @@ order: 12
 date: 06-09-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 Fair warning -- this cheat doesn't do wonders. The game's draw distance is determined by the track data itself, and so it's impossible

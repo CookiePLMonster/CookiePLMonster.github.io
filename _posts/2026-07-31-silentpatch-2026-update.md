@@ -157,7 +157,7 @@ but they don't seem to pose all that much threat, except when they are given the
 
    {% include figures/video-iframe.html link="https://www.youtube.com/embed/xepDVsMVBxw" %}
 
-   This bug was fixed officially in Vice City (as "Cap the Collector" features enemy snipers), and now SilentPatch fixes it in GTA III too. Funny enough,
+   This bug was fixed officially in Vice City (as "Hit the Courier" features enemy snipers), and now SilentPatch fixes it in GTA III too. Funny enough,
    a data error in Vice City makes enemy snipers use a punching animation while shooting; but since this is not caused by code, SP doesn't do anything to fix this.
 
 2. RPGs are even funnier: NPCs can fire them, but the projectile spawns inside them and explodes instantly. This turns RPG-wielding characters into bombers:
@@ -359,7 +359,7 @@ and it's not fully finished either, so it may have caused more unforeseen side e
 
 ### The thrill of the police chases is just not there
 
-Remember those nice little "tutorials" GTA III has when picking up the *i* pickups in front of the Portland hospital or the police station?
+Remember those nice little "tutorials" GTA III has when picking up the <i class="fa-solid fa-circle-info"></i> pickups in front of the Portland hospital or the police station?
 They teach the player how the wanted level works and what happens when Claude dies and respawns at the hospital. The "Busted" tutorial has a short cutscene
 showing two police cars chasing a Diablo Stallion, but this "chase" is a bit anemic: the police cars just follow the escapee, and their sirens are off.
 {% include figures/video.html link="/assets/img/posts/sp-2026-update/10_gta3_7q7iaIixm1.webm" attributes="controls" %}
@@ -382,7 +382,7 @@ took that into consideration when placing cars across the road, but it ignored t
 Conditionally applying an additional 90&deg; rotation to the spawned cars fully fixes this issue.
 {% include figures/image.html link="/assets/img/posts/sp-2026-update/screens/10_gta3_q2VMHlGCZP.webp" thumbnail="auto" caption="Much better." %}
 
-[Sorry, Obbe.](https://x.com/ObbeVermeij/status/2073800253711544543){:target="_blank"}
+[(Sorry, Obbe.)](https://x.com/ObbeVermeij/status/2073800253711544543){:target="_blank"}
 
 ### Garages are not for boats, but if you try hard enough...
 

@@ -5,6 +5,9 @@ order: 1
 date: 09-10-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 American and European versions of Gran Turismo have a weird difference to the original Japanese release -- in those Arcade Mode is noticeably faster than the Simulation mode.
 I investigated it and found that in these versions, Arcade Mode runs at 125% speed, although naturally without speeding up the in-game timer. With this code, Arcade Mode
 is restored to 100% speed, just like in the Japanese version of GT1.

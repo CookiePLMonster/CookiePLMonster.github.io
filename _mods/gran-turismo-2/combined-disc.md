@@ -22,8 +22,8 @@ This modification combines both discs for an ultimate and complete version of Gr
 Due to the nature of this mod, the setup process is slightly more involved than the usual:
 1. Download the setup script. **Do note that GTVolTool used by this script is Windows only.**
 2. Install **Python 3.8.0** or newer. If you don't have it installed yet, Python can be downloaded from here:
-   * Standalone: <https://www.python.org/downloads/>
-   * Microsoft Store: <https://www.microsoft.com/p/python-310/9pjpw5ldxlz5>
+   * Standalone: <https://www.python.org/downloads/>{:target="_blank"}
+   * Microsoft Store: <https://www.microsoft.com/p/python-310/9pjpw5ldxlz5>{:target="_blank"}
 3. Run `setup.py` by double-clicking it like any other executable file. If due to your local setup the script does not run,
 launch it with `python setup.py` or `python3 setup.py` in the Command Prompt.
 4. Follow the on-screen instructions. The script will bring up a system file picker to select files by default, but this may be changed by starting the script with a `-t` parameter.
@@ -35,15 +35,15 @@ The modification is compatible with all game versions, **except for NTSC-J v1.0*
 
 ## Hardware compatibility
 * PSP/PS Vita can use the full version of the mod in PBP format.
-* On PS1, the full version is compatible with [XStation](https://castlemaniagames.com/products/xstation) and [PSIO](https://ps-io.com/).
+* On PS1, the full version is compatible with [XStation](https://castlemaniagames.com/products/xstation){:target="_blank"} and [PSIO](https://ps-io.com/){:target="_blank"}.
   You should opt for the lightweight version (without FMVs) **only** if burning the image on a physical CD.
 
-Combined Disc is also compatible with [RetroAchievements](https://retroachievements.org/game/11278)! Those using it for their GT2 playthroughs may safely move
+Combined Disc is also compatible with [RetroAchievements](https://retroachievements.org/game/11278){:target="_blank"}! Those using it for their GT2 playthroughs may safely move
 to using the Combined Disc and achievements will continue to work as expected.
 
 ## Credits
-* [Ash_735](https://twitter.com/Ash_735) - menu textures
-* [DAGINATSUKO](https://daginatsuko.com/) - CD label
+* [Ash_735](https://x.com/Ash_735){:target="_blank"} - menu textures
+* [DAGINATSUKO](https://daginatsuko.com/){:target="_blank"} - CD label
 
 ***
 

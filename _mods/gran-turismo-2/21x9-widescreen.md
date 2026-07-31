@@ -5,6 +5,9 @@ order: 1
 date: 06-09-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-10495.
+
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
 
 {:.credit}

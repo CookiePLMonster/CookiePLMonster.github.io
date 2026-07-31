@@ -5,6 +5,9 @@ order: 0
 date: 24-10-2021
 ---
 
+{:.disclaimer.info}
+This patch is shipped with DuckStation starting with v0.1-9669.
+
 {:.credit}
 Cheat originally made by asasega. I ported it to more game versions and expanded it with more features.
 
