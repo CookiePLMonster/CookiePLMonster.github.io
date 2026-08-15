@@ -2,6 +2,7 @@
 layout: post
 title: "SilentPatch for Grand Theft Auto: 2026 Update"
 date: 2026-07-31 15:00:00 +0200
+last_modified_at: 2026-08-15 22:25:00 +0200
 excerpt: Over 100 new fixes, more voice lines, even better stability and mod compatibility.
 description: The 2026 update to SilentPatch for Grand Theft Auto brings over 100 new fixes, additional voice lines, and improved stability and mod compatibility.
 game-series: ["gta-iii", "gta-vc", "gta-sa"]
@@ -23,6 +24,19 @@ If you want to jump straight to SilentPatch, **go to the [Download](#download) s
 </aside>
 
 {::options toc_levels="1..2" /}
+
+**{% include elements/time.html date="2026-08-15" %} update:**{:.upcase} Hotfix #1 has been released for GTA III, Vice City, and San Andreas!
+This hotfix includes a few new smaller fixes, and addresses several known issues introduced by the latest update,
+**including a critical issue with the Purple Nines in GTA III still spawning after the mission**,
+and fixes incompatibilities with multiple mods, most notably with Maxo's Vehicle Loader. Updating is strongly advised.
+
+**If in GTA III you used the latest build of SilentPatch and saved your game after finishing 'Rumble', Purple Nines persisted in your save.
+Once you update SilentPatch, you may use this CLEO script to undo the damage caused by this issue. Simply put this CLEO script in your game,
+load the affected save, then save again. After that, the script may be safely deleted:**
+
+<a href="https://github.com/CookiePLMonster/SilentPatch/releases/latest/download/PurpleNinesFix.cs" class="button">{{ site.theme_settings.download_icon }} Download CLEO repair script</a>
+
+***
 
 * TOC
 {:toc}

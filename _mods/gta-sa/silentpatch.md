@@ -4,9 +4,9 @@ title-image: "/assets/img/mods/silentpatch-gta.svg"
 order: -100
 game-series: "gta-sa"
 excerpt: "Fixes countless issues in your favorite game."
-date: 31-07-2026
+date: 15-08-2026
 first-release: 16-06-2014
-version: Build 34
+version: Build 34.1
 schema:
     downloadUrl: "https://github.com/CookiePLMonster/SilentPatch/releases/latest/download/SilentPatchSA.zip"
 ---
@@ -45,6 +45,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Fixed a crash that occurred when playing back a replay with CJ having a different body type (fat/muscular/normal) than his current one.
 * <i class="fab fa-steam-symbol"></i> Fixed Skimmer not spawning on Windows 11 24H2.
 * <i class="fab fa-steam-symbol"></i> The mouse cursor is now locked to the game window instead of getting re-centered constantly, so rapid mouse movements can no longer cause the cursor to leave the window in multi-monitor setups.
+* <i class="fab fa-steam-symbol"></i> Trains can now be saved in garages, and the game no longer crashes when spawning stored trains.
 * Game timers now tick more accurately, making them not freeze if the framerate exceeds 1000 frames per second; in other words, this fixes occasional freezes on fadeouts if playing with the Frame Limiter off.
 * A heap corruption in one place is now fixed (did not affect gameplay but could potentially make the game crash).
 * Traveling far away from the map will no longer trigger the extra gang territories glitch, nor will it corrupt the Taxi Driver submission.
@@ -147,6 +148,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Pedestrians can now initiate conversations about the weather, and CJ can respond to their comments correctly.
 * <i class="fab fa-steam-symbol"></i> Criminals running away from cops will now play their correct dialogue lines instead of screaming (contributed by **iFarbod**).
 * <i class="fab fa-steam-symbol"></i> WMYSGRD, BMYPIMP, VBFYST2 and Maccer now have voices.
+* <i class="fab fa-steam-symbol"></i> SBFYSTR and SWFYSTR now have their correct voices.
 * <i class="fab fa-steam-symbol"></i> CJ now cheers after taking over certain districts.
 * <i class="fab fa-steam-symbol"></i> CJ's comments after the solicitation are no longer forced to the Wisecracking mood, so their variety is wider.
 * <i class="fab fa-steam-symbol"></i> Multiple unused dialogue lines for girlfriends and shopkeepers have been re-enabled.
@@ -170,6 +172,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * <i class="fab fa-steam-symbol"></i> Securicars are now tougher when damaged by the player.
 * <i class="fab fa-steam-symbol"></i> A misplaced Beagle in Fort Carson has been replaced with a BMX.
 * <i class="fab fa-steam-symbol"></i> Rhino now has fully functional lights (contributed by **rx**).
+* <i class="fab fa-steam-symbol"></i> The GANGS and CRIMES section names are no longer swapped when exporting stats to stats.html (contributed by **sndth**).
 * Detached vehicle parts will now keep the same color and lighting as the vehicle they came from.
 * Detached vehicle parts are now rendered from both sides.
 * Resolved single-pixel wide seams showing on the Map screen with Anti-Aliasing enabled.
@@ -265,6 +268,7 @@ SilentPatch includes code contributions from:
 * NTAuthority
 * rx
 * Sergeanur
+* sndth
 * spaceeinstein
 * Wesser
 

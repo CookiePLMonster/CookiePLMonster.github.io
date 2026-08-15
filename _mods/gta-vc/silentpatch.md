@@ -4,9 +4,9 @@ title-image: "/assets/img/mods/silentpatch-gta.svg"
 order: -100
 game-series: "gta-vc"
 excerpt: "Fixes countless issues in your favorite game."
-date: 31-07-2026
+date: 15-08-2026
 first-release: 29-12-2013
-version: Build 12
+version: Build 12.1
 ---
 
 {::options auto_id_prefix="{{ page.id | split: '/' | last }}-" /}
@@ -112,6 +112,7 @@ Fixes marked with <i class="fas fa-cog"></i> can be configured/toggled via the I
 * The heat haze effect is no longer disabled when the zone or vehicle name shows on screen.
 * Water and blood on-screen droplets can no longer be placed under the HUD or radar on higher resolutions, and they are no longer confined to a small area of the screen when the zone or vehicle name shows on screen.
 * Fixed shell casings being ejected when firing the Python (revolver), Sniper Rifle, and Laser Scope Sniper Rifle -- revolvers and bolt-action rifles don't eject casings (contributed by **CanerKaraca**).
+* Fixed a memory corruption in the ice cream attractor effect generation function. This resulted in less customers getting generated in the Distribution mission.
 * <i class="fas fa-cog"></i> Fixed siren corona placements in Police, Firetruck, Ambulance, Enforcer, Vice Cheetah, and FBI Washington.
 * <i class="fas fa-cog"></i> Added siren corona to FBI Washington.
 * <i class="fas fa-cog"></i> Fixed taxi light corona placement for Taxi.
@@ -150,6 +151,7 @@ SilentPatch includes code contributions from:
 * NTAuthority
 * rx
 * Sergeanur
+* sndth
 * spaceeinstein
 * Wesser
 
