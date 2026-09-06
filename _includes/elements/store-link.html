@@ -1,10 +1,10 @@
 {%- case include.store -%}
   {%- when 'steam' -%}
-    https://store.steampowered.com/app/{{ include.links.id }}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign={{ include.campaign | cgi_escape }}
+    https://store.steampowered.com/app/{{ include.links.id }}{%- if include.campaign -%}?utm_source=Silent%27s+Blog&utm_medium=website&utm_campaign={{ include.campaign | cgi_escape }}{%- endif -%}
   {%- when 'gog' -%}
-    https://af.gog.com/game/{{ include.links.id }}?as={{ site.theme_settings.affiliate_links.gog }}
+    https://{%- if include.campaign -%}af.{%- endif -%}gog.com/game/{{ include.links.id }}{%- if include.campaign -%}?as={{ site.theme_settings.affiliate_links.gog }}{%- endif -%}
   {%- when 'zoom-platform' -%}
-    https://www.zoom-platform.com/product/{{ include.links.id }}?affiliate={{ site.theme_settings.affiliate_links.zoom-platform }}
+    https://www.zoom-platform.com/product/{{ include.links.id }}{%- if include.campaign -%}?affiliate={{ site.theme_settings.affiliate_links.zoom-platform }}{%- endif -%}
   {%- when 'ps-store' -%}
     https://store.playstation.com/concept/{{ include.links.id }}
   {%- when 'xbox-store' -%}
@@ -16,5 +16,5 @@
   {%- when 'play-store' -%}
     https://play.google.com/store/apps/details?id={{ include.links.id }}
   {%- when 'itch-io' -%}
-    {{ include.links }}?ac={{ site.theme_settings.affiliate_links.itch-io }}
+    {{ include.links }}{%- if include.campaign -%}?ac={{ site.theme_settings.affiliate_links.itch-io }}{%- endif -%}
 {%- endcase -%}

@@ -10,7 +10,6 @@ for path in sys.argv[1:]:
 	directory, filename = os.path.split(path)
 	stem, ext = os.path.splitext(filename)
 	with Image.open(path) as image:
-		width, height = image.size
 		thumb_path = os.path.join(directory, 'thumb')
 		os.makedirs(thumb_path, exist_ok=True)
 		thumb_path = os.path.join(thumb_path, stem + '.webp')

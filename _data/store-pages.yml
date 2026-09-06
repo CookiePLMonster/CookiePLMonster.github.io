@@ -2,33 +2,42 @@ links:
   gog:
     icon: icomoon icon-gog-dot-com
     name: GOG.com
+    platform: PC
     affiliate: true
   zoom-platform:
     icon: icomoon icon-zoom-platform
     name: ZOOM Platform
+    platform: PC
     affiliate: true
   steam:
     icon: fab fa-steam
     name: Steam
+    platform: PC
   itch-io:
     icon: fab fa-itch-io
     name: itch.io
+    platform: PC
     affiliate: true
   ps-store:
     icon: fab fa-playstation
     name: PlayStation Store
+    platform: PlayStation 5
   xbox-store:
     icon: fab fa-xbox
     name: Xbox Store
+    platform: Xbox Series X|S
   nintendo-eshop:
     icon: fas fa-gamepad
     name: Nintendo eShop
+    platform: Nintendo Switch
   apple-app-store:
     icon: fab fa-app-store
     name: App Store
+    platform: iOS
   play-store:
     icon: fab fa-google-play
     name: Play Store
+    platform: Android
 games:
   4x4-in-a-furniture-store:
     steam: {id: 4135570}
@@ -137,6 +146,8 @@ games:
     gog: {id: industry_giant_2}
   iracing-arcade:
     steam: {id: 3226450}
+    ps-store: {id: 10019049}
+    xbox-store: {id: iracing-arcade/9n1640580jgp}
   japanese-drift-master:
     steam: {id: 1153410}
     gog: {id: jdm_japanese_drift_master}
@@ -223,6 +234,9 @@ games:
     nintendo-eshop: {id: super-woden-gp-ii-switch}
   super-woden-rally-edge:
     steam: {id: 3218630}
+    ps-store: {id: 10018518}
+    xbox-store: {id: super-woden-rally-edge/9p64l0ssv1hf}
+    nintendo-eshop: {id: super-woden-rally-edge-switch}
   superspec-rallycross:
     steam: {id: 1501780}
   szrot:

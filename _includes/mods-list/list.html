@@ -1,9 +1,8 @@
 {% for mod in include.items %}
 <article class="mod-listing">
-    {%- assign modid = mod.id | split: '/' | last %}
     <header>
-        <div class="element-anchor" id="{{ modid }}">
-            <a href="#{{ modid }}"></a>
+        <div class="element-anchor" id="{{ mod.slug }}">
+            <a href="#{{ mod.slug }}"></a>
             <div class="title">
                 <h2>
                 {%- if mod.title-image -%}

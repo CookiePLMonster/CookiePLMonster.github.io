@@ -145,6 +145,7 @@ feed:
   disable_in_development: true
 
 collections:
+  indies:
   mods:
   games:
     output: true

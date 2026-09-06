@@ -50,8 +50,9 @@ games:
     twitter: formulacircus
   grand-pro-circuit:
     twitter: bmarci7
-  highway-warriors-series:
+  highway-warriors-remastered: &jreo03
     twitter: jreo03
+  highway-warriors-2: *jreo03
   holstin:
     twitter: holstingame
   honcho:
@@ -121,8 +122,9 @@ games:
     twitter: radiangames
   super-polygon-grand-prix:
     twitter: games_rozz
-  super-woden-series:
+  super-woden-gp2: &vijuda
     twitter: ViJuDaGD
+  super-woden-rally-edge: *vijuda
   szrot:
     twitter: GustawMackay
     bluesky: gustawmackay.bsky.social

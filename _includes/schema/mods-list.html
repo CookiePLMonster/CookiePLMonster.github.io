@@ -14,13 +14,14 @@
         {
             "@type": "ItemList",
             "name": "Mods and Patches",
+            "numberOfItems": {{ include.items | size | jsonify }},
             "itemListElement": [
 
 {%- for mod in include.items -%}
             {%- assign modid = mod.id | split: '/' | last -%}
             {
                 "@type": "ListItem",
-                "position": {{ forloop.index }},
+                "position": {{ forloop.index | jsonify }},
                 "item": {
                     "@type": "SoftwareApplication",
                     "@id": "{{ include.page.url | absolute_url }}#{{ modid }}",
@@ -29,7 +30,7 @@
                     "offers": { "@type": "Offer", "price": 0 },
                     "applicationCategory": {{ mod.schema.applicationCategory | default: include.page.schema.applicationCategory | jsonify }},
                     "operatingSystem": {{ mod.schema.operatingSystem | default: include.page.schema.operatingSystem | jsonify }},
-                    "isPartOf": { "@type": {{ include.page.seo.type | jsonify }}, "@id": "{{ include.page.url | absolute_url }}" },
+                    "isPartOf": { "@type": {{ include.page.seo.type | jsonify }}, "@id": {{ include.page.url | absolute_url | jsonify }} },
                     "isBasedOn": { "@id": "{{ include.page.url | absolute_url }}#game" }
 
                     {%- if mod.version -%}

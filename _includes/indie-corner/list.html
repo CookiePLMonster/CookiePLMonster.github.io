@@ -1,0 +1,22 @@
+<dl>
+    {%- for item in include.items -%}
+    {%- if item.title != "" -%}
+        <dt id="{{ item.slug }}">{{ item.title }}</dt>
+    {%- else -%}
+        <dt class="unannounced" id="{{ item.slug }}">{{ item.unannounced_title }}</dt>
+    {%- endif -%}
+    <dd>
+        {%- if item.review -%}
+            {%- assign review_link = item.review | prepend: "_posts/" | append: ".md" -%}
+            <a href="{% link {{ review_link }} %}" class="review" target="_blank"><i class='far fa-file-alt'></i> My review</a>
+        {%- endif -%}
+        {{- item -}}
+        {%- if item.game-links -%}
+            {%- include indie-corner/game-links.html game-series=item.game-links -%}
+        {%- endif -%}
+        {%- if item.screenshot -%}
+            {%- include figures/image.html thumbnail=item.screenshot style="small" lazy=true -%}
+        {%- endif -%}
+    </dd>
+    {%- endfor -%}
+</dl>

@@ -1,0 +1,60 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListUnordered",
+    "numberOfItems": {{ include.items | size | jsonify }},
+    "itemListElement": [
+
+{%- for item in include.items -%}
+        {
+            "@type": "ListItem",
+            "item": {
+                "@type": "VideoGame",
+                {%- assign game_title = item.title | default: item.unannounced_title -%}
+                "name": {{ game_title | strip_html | strip | jsonify }},
+                "description": {{ item.content | strip_html | strip | jsonify }},
+                "genre": {{ item.genre | jsonify }},
+                "dateCreated": {{ item.date | date_to_xmlschema | jsonify }}
+
+                {%- if item.review -%}
+                {%- assign review_link = item.review | prepend: "_posts/" | append: ".md" -%}
+                {%- capture review_url -%}{% link {{ review_link }} %}{%- endcapture -%}
+                , "review": { "@type": "Review", "url": {{ review_url | absolute_url | jsonify }}, "author": { "@type": "Person", "name": "Silent" }}
+                {%- endif -%}
+
+                {%- if item.release_date -%}
+                , "datePublished": {{ item.release_date | date: "%Y-%m-%d" | jsonify }}
+                {%- endif -%}
+
+                {%- assign store_pages = site.data.store-pages.games[item.game-links] -%}
+                {%- capture platform_string -%}
+                    {%- for store in store_pages -%}
+                        {%- assign store_name = store[0] -%}
+                        {%- assign platform_def = site.data.store-pages.links[store_name] -%}
+                        {{- platform_def.platform -}},
+                    {%- endfor -%}
+                {%- endcapture -%}
+                {%- assign platforms = platform_string | strip | split: "," | uniq -%}
+                {%- if platforms.size > 0 -%}
+                , "gamePlatform": {{ platforms | jsonify }}
+                {%- endif -%}
+
+                {%- capture url_string -%}
+                    {%- for store in store_pages -%}
+                        {%- assign store_name = store[0] -%}
+                        {%- assign store_links = store[1] -%}
+                        {%- include elements/store-link.html store=store_name links=store_links -%}|
+                    {%- endfor -%}
+                {%- endcapture -%}
+                {%- assign store_urls = url_string | strip | split: "|" -%}
+                {%- if store_urls.size > 0 -%}
+                , "sameAs": {{ store_urls | jsonify }}
+                {%- endif -%}
+            }
+        } {%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+
+    ]
+}
+</script>
