@@ -6,7 +6,7 @@ feature-img: "/assets/img/the-indie-corner/the-indie-corner.webp"
 image: "/assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
 date: 2026-03-19 13:30:00 +0100
-last_modified_at: 2026-04-07 21:15:00 +0200
+last_modified_at: 2026-09-06 16:50:00 +0200
 twitter: {card: "summary_large_image"}
 hide: true
 extra_scss: |
@@ -131,7 +131,9 @@ Anything else.
 
 # Changelog
 
-* {% include elements/time.html date="2026-09-05 21:15:00 +0200" %}:
+* {% include elements/time.html date="2026-09-06 16:50:00 +0200" %}:
+  * New entries: [**Nitrania**](#nitrania), [**The Henchmen**](#the-henchmen), [**Rogue Stradale**](#rogue-stradale), [**Plentiful**](#plentiful),
+    [**Driving Rogue**](#driving-rogue), [**Super Woden GP 3**](#super-woden-gp3), [**Throttle Trace**](#throttle-trace), [**Heatwarped**](#heatwarped).
   * [**iRacing Arcade**](#iracing-arcade) got new content and a console release.
   * [**Easy Delivery Co.**](#easy-delivery-co) got a free **EasyCo EasyRally** expansion.
   * [**Race Jam**](#race-jam) is out of Early Access.
@@ -144,7 +146,7 @@ Anything else.
 * {% include elements/time.html date="2026-04-07 21:15:00 +0200" %}:
   * [**Formula Circus**](#formula-circus) got a demo available on Patreon, moved it to an appropriate section.
 * {% include elements/time.html date="2026-03-22 12:55:00 +0100" %}:
-  * New game: [**The Driver Syndicate**](#the-driver-syndicate).
+  * New entry: [**The Driver Syndicate**](#the-driver-syndicate).
   * Ordered released games by release date.
   * Added screenshots.
 * {% include elements/time.html date=page.date %}:

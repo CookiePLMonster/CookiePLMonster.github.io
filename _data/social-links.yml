@@ -41,6 +41,8 @@ games:
     website: https://www.drive.game/rally/?id=rally
     twitter: drivethegame
     bluesky: drivethegame.bsky.social
+  driving-rogue:
+    twitter: DrivingRogue
   easy-delivery-co:
     twitter: sweatersjpg
     bluesky: sweaters.bsky.social
@@ -50,6 +52,10 @@ games:
     twitter: formulacircus
   grand-pro-circuit:
     twitter: bmarci7
+  heatwarped:
+    website: https://heatwarped.com/
+    twitter: Heatwarped
+    bluesky: heatwarped.com
   highway-warriors-remastered: &jreo03
     twitter: jreo03
   highway-warriors-2: *jreo03
@@ -83,6 +89,9 @@ games:
     twitter: MayonakaRUSHdev
   metropolis-1998:
     twitter: YesboxStudios
+  nitrania:
+    twitter: NitraniaGame
+    bluesky: nitrania.com
   over-the-hill:
     twitter: funselektor
     bluesky: funselektor.bsky.social
@@ -91,6 +100,8 @@ games:
     twitter: Perfect_Lap
   pico-drift:
     twitter: PicoDrift
+  plentiful:
+    twitter: PlentifulGame
   pocket-wheels:
     twitter: PanicTheFirst
     bluesky: panicthefirst.bsky.social
@@ -104,6 +115,9 @@ games:
     bluesky: chonkyfrogstudio.bsky.social
   road-truckers-new-beginning:
     twitter: RoadStudioIR
+  rogue-stradale:
+    website: https://roguestradale.com/
+    twitter: AerodynamicMonk
   rrev-racing-revolution:
     twitter: rrevgame
   rush-rally-3:
@@ -124,6 +138,7 @@ games:
     twitter: games_rozz
   super-woden-gp2: &vijuda
     twitter: ViJuDaGD
+  super-woden-gp3: *vijuda
   super-woden-rally-edge: *vijuda
   szrot:
     twitter: GustawMackay
@@ -132,6 +147,10 @@ games:
     twitter: VolumeGamesLLC
   the-driver-syndicate:
     twitter: Jellysoapy
+  the-henchmen:
+    website: https://www.dosmangames.com/
+    twitter: DOSManGames
+    bluesky: dosmangames.bsky.social
   tokyo-xtreme-racer-2025:
     twitter: Tokyo_Xtreme
   tristan-cole-pro-driver:

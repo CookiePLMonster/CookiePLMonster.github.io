@@ -95,6 +95,8 @@ games:
   driftline-peaks:
     steam: {id: 3919490}
     itch-io: https://moi0210.itch.io/driftline-peaks-demo
+  driving-rogue:
+    steam: {id: 3088700}
   dune-awakening:
     steam: {id: 1172710}
   dxhrdc:
@@ -126,6 +128,8 @@ games:
     steam: {id: 1920430}
   grand-pro-circuit:
     steam: {id: 3993370}
+  heatwarped:
+    steam: {id: 4846360}
   highway-warriors-remastered:
     itch-io: https://jreo.itch.io/highway-warriors-remastered
   highway-warriors-2:
@@ -178,6 +182,8 @@ games:
     steam: {id: 17460}
   metropolis-1998:
     steam: {id: 2287430}
+  nitrania:
+    steam: {id: 3980930}
   over-the-hill:
     steam: {id: 2929250}
   overcrash:
@@ -194,6 +200,8 @@ games:
     steam: {id: 3315320}
   pigface:
     steam: {id: 3341650}
+  plentiful:
+    steam: {id: 3044790}
   pocket-wheels:
     steam: {id: 1129360}
   race-jam:
@@ -204,6 +212,8 @@ games:
     steam: {id: 2994490}
   road-truckers-new-beginning:
     steam: {id: 3333190}
+  rogue-stradale:
+    steam: {id: 3509590}
   rush-rally-3:
     steam: {id: 2020860}
     nintendo-eshop: {id: rush-rally-3-switch}
@@ -232,6 +242,8 @@ games:
     ps-store: {id: 10010441}
     xbox-store: {id: super-woden-gp-ii/9NBL2XPKN6XJ}
     nintendo-eshop: {id: super-woden-gp-ii-switch}
+  super-woden-gp3:
+    steam: {id: 4516440}
   super-woden-rally-edge:
     steam: {id: 3218630}
     ps-store: {id: 10018518}
@@ -246,6 +258,10 @@ games:
     gog: {id: take_no_prisoners}
   the-driver-syndicate:
     itch-io: https://soapyman.itch.io/driversyndicate
+  the-henchmen:
+    steam: {id: 1431750}
+  throttle-trace:
+    steam: {id: 4535730}
   tokyo-xtreme-racer-2025:
     steam: {id: 2634950}
     ps-store: {id: 10016323}
