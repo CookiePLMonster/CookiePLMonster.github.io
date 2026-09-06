@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'sass-embedded', '>= 1.102'
+gem 'sass-embedded', '>= 1.104'
 gem 'rouge', '~> 4.7'
 gem 'kramdown', '~> 2.5', '>= 2.5.2'
 gem 'jekyll-sass-converter', '~> 3.1'
