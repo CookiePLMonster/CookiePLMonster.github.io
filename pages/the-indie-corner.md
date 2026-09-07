@@ -131,6 +131,8 @@ Anything else.
 
 # Changelog
 
+* {% include elements/time.html date="2026-13-31 16:50:00 +0200" %}:
+  * Added anchors to game titles.
 * {% include elements/time.html date="2026-09-06 16:50:00 +0200" %}:
   * New entries: [**Nitrania**](#nitrania), [**The Henchmen**](#the-henchmen), [**Rogue Stradale**](#rogue-stradale), [**Plentiful**](#plentiful),
     [**Driving Rogue**](#driving-rogue), [**Super Woden GP 3**](#super-woden-gp3), [**Throttle Trace**](#throttle-trace), [**Heatwarped**](#heatwarped).

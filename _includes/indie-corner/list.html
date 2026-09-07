@@ -1,9 +1,9 @@
 <dl>
     {%- for item in include.items -%}
     {%- if item.title != "" -%}
-        <dt id="{{ item.slug }}">{{ item.title }}</dt>
+        <dt id="{{ item.slug }}"><a href="#{{ item.slug }}"></a>{{ item.title }}</dt>
     {%- else -%}
-        <dt class="unannounced" id="{{ item.slug }}">{{ item.unannounced_title }}</dt>
+        <dt class="unannounced" id="{{ item.slug }}"><a href="#{{ item.slug }}"></a>{{ item.unannounced_title }}</dt>
     {%- endif -%}
     <dd>
         {%- if item.review -%}

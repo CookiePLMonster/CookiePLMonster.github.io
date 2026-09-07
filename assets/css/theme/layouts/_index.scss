@@ -61,10 +61,10 @@
         margin-block: 1em;
         &.read-more {
             > p:nth-last-child(2) {
-                display: inline;
+                display: contents;
             }
             > :last-child p {
-                display: inline;
+                display: contents;
                 @extend .sidenote;
             }
         }

@@ -66,13 +66,9 @@ header, .posts {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.element-anchor {
+$heading-elements: h1, h2, h3, h4, h5, h6, dt, ".element-anchor";
+
+:is(#{$heading-elements}) {
     &[id]:not(.no_anchor):has(a:first-child) {
         display: flex;
         align-items: center;
@@ -93,13 +89,7 @@ h6,
 }
 
 @media screen and (max-width: variables.$break) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .element-anchor {
+    :is(#{$heading-elements}) {
         &[id]:not(.no_anchor):has(a:first-child) a:first-child {
             font-size: 0.8 * 0.8rem;
         }
