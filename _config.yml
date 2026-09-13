@@ -226,6 +226,7 @@ defaults:
       author:
         name: Silent
         twitter: __silent_
+        author: "https://silentsblog.com/about/"
   - scope:
       path: "assets/css/flags/4x3"
     values:

@@ -6,7 +6,7 @@ feature-img: "/assets/img/the-indie-corner/the-indie-corner.webp"
 image: "/assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
 date: 2026-03-19 13:30:00 +0100
-last_modified_at: 2026-09-06 16:50:00 +0200
+last_modified_at: 2026-09-15 19:00:00 +0200
 twitter: {card: "summary_large_image"}
 hide: true
 extra_scss: |
@@ -131,7 +131,8 @@ Anything else.
 
 # Changelog
 
-* {% include elements/time.html date="2026-13-31 16:50:00 +0200" %}:
+* {% include elements/time.html date="2026-09-15 19:00:00 +0200" %}:
+  * [**Throttle Trace**](#throttle-trace) entered Early Access.
   * Added anchors to game titles.
 * {% include elements/time.html date="2026-09-06 16:50:00 +0200" %}:
   * New entries: [**Nitrania**](#nitrania), [**The Henchmen**](#the-henchmen), [**Rogue Stradale**](#rogue-stradale), [**Plentiful**](#plentiful),
