@@ -20,7 +20,7 @@ It's been slightly over a month since NASCAR 25 released on consoles on {% inclu
 As announced a few months back, we had to wait one more month for the PC release, and it got released according to plan,
 on {% include elements/time.html date="2025-11-11" text="November 11th" %}.
 
-<div class="center-blocks">
+<div class="steam-iframe">
 <iframe src="https://store.steampowered.com/widget/3873970/" frameborder="0" width="646" height="190"></iframe>
 </div>
 

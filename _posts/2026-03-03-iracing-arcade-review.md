@@ -21,7 +21,7 @@ different racing games -- first ExoCross and World of Outlaws, then [NASCAR 25](
 This cartoony simcade spin-off, developed by Original Fire Games, previously known for Circuit Superstars and Karting Superstars,
 releases on Steam on {% include elements/time.html date="2026-03-03" text="March 3rd" %}, with console releases following later this year.
 
-<div class="center-blocks">
+<div class="steam-iframe">
 <iframe src="https://store.steampowered.com/widget/3226450/" frameborder="0" width="646" height="190"></iframe>
 </div>
 
@@ -155,7 +155,7 @@ Since I was unable to use DSR, I ran the benchmark at 1080p on the **RTX 5070 Ti
 I ran the benchmarks with the following settings:
 
 |                              | Low | Medium | High |
-|:-----------------------------|:---:|-------:|-----:|
+|:-----------------------------|----:|-------:|-----:|
 | **Quality**                  | Low | Medium | High |
 | **Anti-Aliasing**            | Off | Medium | High |
 | **Ambient Occlusion**        | Off | Medium | High |

@@ -20,7 +20,7 @@ It's been 18 years since the last release of a [Tokyo Xtreme Racer](https://en.w
 game outside of the two not-so-well-received mobile installments. This is about to change, as Genki is releasing a new TXR game
 in Steam Early Access on {% include elements/time.html date="2025-01-23" text="January 23rd" %}:
 
-<div class="center-blocks">
+<div class="steam-iframe">
 <iframe src="https://store.steampowered.com/widget/2634950/" frameborder="0" width="646" height="190"></iframe>
 </div>
 

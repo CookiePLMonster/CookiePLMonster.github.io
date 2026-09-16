@@ -223,3 +223,12 @@ $button-colors: (
 .nobr {
     white-space: nowrap;
 }
+
+.steam-iframe {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 1em;
+    > iframe {
+        color-scheme: normal;
+    }
+}

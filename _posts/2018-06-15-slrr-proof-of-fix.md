@@ -24,7 +24,7 @@ original developers.
 
 Original game was released back in 2003 so it's not possible to obtain it digitally anywhere. However, v2.3.1 can be obtained from Steam:
 
-<div class="center-blocks">
+<div class="steam-iframe">
 <iframe src="https://store.steampowered.com/widget/497180/" frameborder="0" width="646" height="190"></iframe>
 </div>
 
