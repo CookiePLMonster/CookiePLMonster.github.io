@@ -1,9 +1,9 @@
 ---
 title: Driving Rogue
 date: 2026-09-06 16:50:00 +0200
-release_date: 2026-02-20
+release_date: 2026-09-27
 genre: "Racing"
-state: demo
+state: released
 game-links: driving-rogue
 screenshot: "/assets/img/the-indie-corner/driving-rogue.webp"
 ---
