@@ -6,5 +6,7 @@ image: "/assets/img/games/tokyo-xtreme-racer-zero.jpg"
 feature-img: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
 parent-series: "console-ps2"
 game-series: "tokyo-xtreme-racer-zero"
-order: "tokyo xtreme racer zero"
+order: "tokyo xtreme racer a"
+schema:
+  alternateName: ["Tokyo Xtreme Racer", "Shutokō Battle 0", "TXR Zero"]
 ---

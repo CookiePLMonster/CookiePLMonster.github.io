@@ -16,8 +16,13 @@
             </div>
         </div>
         <div class="misc">
+        {%- if mod.date and mod.first-release -%}
+            {%- assign last-updated-str = "Last updated" -%}
+        {%- else -%}
+            {%- assign last-updated-str = "Released" -%}
+        {%- endif -%}
         {% if mod.version %}<p>Version: {{ mod.version -}}</p>{% endif %}
-        {% if mod.date %}<p>Last updated: {% include elements/time.html date=mod.date -%}</p>{% endif %}
+        {% if mod.date %}<p>{{ last-updated-str }}: {% include elements/time.html date=mod.date -%}</p>{% endif %}
         {% if mod.first-release %}<p>First released: {% include elements/time.html date=mod.first-release -%}</p>{% endif %}
         </div>
     </header>

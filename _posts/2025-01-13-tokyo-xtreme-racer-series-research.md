@@ -2,8 +2,9 @@
 layout: post
 title: Tokyo Xtreme Racer -- series research
 date: 2025-01-13 23:00:00 +0100
+last_modified_at: 2026-10-15 14:00:00 +0200
 excerpt: Miscellaneous pieces of info about the classic Tokyo Xtreme Racer games.
-game-series: ["tokyo-xtreme-racer-zero"]
+game-series: ["tokyo-xtreme-racer", "tokyo-xtreme-racer-2", "tokyo-xtreme-racer-zero", "tokyo-xtreme-racer-drift"]
 image: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
 thumbnail: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
 feature-img: "/assets/img/games/bg/tokyo-xtreme-racer-zero.jpg"
@@ -12,7 +13,7 @@ mathjax: true
 ---
 
 {:.sidenote}
-Last update: {% include elements/time.html date=page.date %}
+Last update: {% include elements/time.html date=page.last_modified_at %}
 
 As a new Tokyo Xtreme Racer [is just around the corner](https://store.steampowered.com/app/2634950/Tokyo_Xtreme_Racer/){:target="_blank"},
 I spent some time playing the classic TXR games. As I go through the games in order, I wanted to note some things I encountered.
@@ -98,6 +99,76 @@ Nothing here yet, but I published a few PCSX2 patches for this game! Head over t
 
 ***
 
-# Post changelog
+# Tokyo Xtreme Racer: Drift (PlayStation 2)
 
+## Soundtrack differences
+
+For the longest time, it was believed that for TXR Drift, Crave changed the soundtrack assignments deliberately.
+I looked into that, and the reality seems to be a lot more boring -- Drift appears to be based on a non-final Kaidō Battle code,
+but used the final music data, and the two ended up being "out of sync". This is clear when the soundtrack assignments are shown in a table:
+the Night music assignments are off by two.
+
+{% capture songs-table %}
+| Music           | Kaidō Battle                | TXR Drift                                |
+| --------------- | --------------------------- | ---------------------------------------- |
+| Transmission    | Game Title                  | Game Title                               |
+| Blue Dream      | Main Menu                   | Main Menu                                |
+| Silver Surfer   | Sponsors                    | Sponsors, Parking Lot (Night)            |
+| Spark           | Track Intro                 | Track Intro                              |
+| Baseball Kids   | Conquest Menu (Day)         | Conquest Menu (Day)                      |
+| Hell Outta Here | Parking Lot (Day)           | Parking Lot (Day), Conquest Menu (Night) |
+| Banger          | Race Music (Day)            | Race Music (Day)                         |
+| Rodeo Drive     | Race Music (Day)            | Race Music (Day)                         |
+| You Know        | Race Music (Day)            | Race Music (Day)                         |
+| Vanish Into     | Race Music (Day, Raining)   | Race Music (Day, Raining)                |
+| Miss Shift      | Race Music (Day, Snowing)   | Race Music (Day, Snowing)                |
+| Trust No One    | Replay (Day)                | Replay (Day)                             |
+| Lovely Smashin' | Win                         | Win                                      |
+| Mission         | Conquest Menu (Night)       | Race Music (Night)                       |
+| Gotta Goin' On  | Parking Lot (Night)         | Race Music (Night)                       |
+| Ghostly         | Race Music (Night)          | Race Music (Night)                       |
+| Groovy Rotation | Race Music (Night)          | Race Music (Night)                       |
+| Trail Off       | Race Music (Night)          | Race Music (Night)                       |
+| Banzai Robo     | Race Music (Night)          | Tricker/Tricky Intro                     |
+| Howl            | Race Music (Night)          | Lose                                     |
+| Pyro Mania      | Tricker/Tricky Intro        | Slasher Intro                            |
+| Waiting         | Lose                        |                                          |
+| Meifumadou      | Slasher Intro               | Emotional/Drift King Intro               |
+| Insane          | Slasher Battle              |                                          |
+| Phantom         | Emotional/Drift King Intro  | Replay (Night)                           |
+| Go For Broke    | Emotional/Drift King Battle |                                          |
+| Deadly          | Replay (Night)              |                                          |
+| Going Home      | End Credits                 | End Credits                              |
+| Bro             | Cruise (Day)                | Cruise (Day)                             |
+| Sis             | Cruise (Night)              | Cruise (Night)                           |
+{% endcapture %}
+
+{% include elements/details.html summary="Music in KB and TXT Drift. **Click to expand.**" content=songs-table %}
+
+Internally, I suspect that the enum used for the soundtrack IDs in TXR Drift comes from an earlier version of the game
+that didn't have any unique music for **Conquest Menu (Night)** and **Parking Lot (Night)**. On the table, you can see that:
+* For those two, TXR Drift uses music already used elsewhere.
+* After those, all music assignments are shifted by two.
+
+That is not the only issue present in TXR Drift. More things regressed compared to Kaidō Battle:
+* TXR Drift has a bug where boss-exclusive battle music gets forcibly overwritten with generic music selection
+before the race starts. This results in several audio tracks being left completely unused.
+* The music player cuts off the final two songs, making "Deadly" and "Going Home" inaccessible.
+* The music player also names most of the songs incorrectly, further hinting at TXR Drift's code being dated back to when the soundtrack selection was different.
+
+{% include figures/image.html link="/assets/img/posts/txr-research/Tokyo Xtreme Racer Drift_SLUS-21236_20261015130613.webp" thumbnail="auto"
+      caption="Many track names don't match KB or the official TXR Drift soundtrack." %}
+
+I published a PNACH patch correcting all those mistakes and bringing full soundtrack parity between KB and TXR Drift.
+Despite this **technically** being a small SilentPatch, I decided to leave the patch named "Japanese Soundtrack",
+as the past belief was that those changes were intentional and not caused by bugs.
+
+You can get the patch from *Mods & Patches*:
+
+<a href="{% link _games/txr/tokyo-xtreme-racer-drift.md %}#jp-soundtrack" class="button" target="_blank">{{ site.theme_settings.download_icon }} Download Japanese Soundtrack</a>
+
+***
+
+# Post changelog
+* {% include elements/time.html date="2026-10-15 14:00:00 +0200" %} -- soundtrack research in TXR Drift.
 * {% include elements/time.html date=page.date %} -- initial version.

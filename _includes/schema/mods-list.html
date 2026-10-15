@@ -33,14 +33,15 @@
                     "isPartOf": { "@type": {{ include.page.seo.type | jsonify }}, "@id": {{ include.page.url | absolute_url | jsonify }} },
                     "isBasedOn": { "@id": "{{ include.page.url | absolute_url }}#game" }
 
+                    {%- assign publish-date = mod.first-release | default: mod.date -%}
                     {%- if mod.version -%}
                     ,"softwareVersion": {{ mod.version | jsonify }}
                     {%- endif -%}
                     {%- if mod.date -%}
                     ,"dateModified": {{ mod.date | date_to_xmlschema | jsonify }}
                     {%- endif -%}
-                    {%- if mod.first-release -%}
-                    ,"datePublished": {{ mod.first-release | date_to_xmlschema | jsonify }}
+                    {%- if publish-date -%}
+                    ,"datePublished": {{ publish-date | date_to_xmlschema | jsonify }}
                     {%- endif -%}
 
                     {%- if mod.schema.downloadUrl -%}
