@@ -6,7 +6,7 @@ feature-img: "/assets/img/the-indie-corner/the-indie-corner.webp"
 image: "/assets/img/the-indie-corner/the-indie-corner.webp"
 permalink: /the-indie-corner/
 date: 2026-03-19 13:30:00 +0100
-last_modified_at: 2026-10-14 18:00:00 +0200
+last_modified_at: 2026-10-16 17:45:00 +0200
 twitter: {card: "summary_large_image"}
 hide: true
 extra_scss: |
@@ -131,6 +131,8 @@ Anything else.
 
 # Changelog
 
+* {% include elements/time.html date="2026-10-16 17:45:00 +0200" %}:
+  * [**Road Truckers: New Beginning**](#road-truckers-new-beginning) got a demo.
 * {% include elements/time.html date="2026-10-14 18:00:00 +0200" %}:
   * [**over the hill**](#over-the-hill) and [**Truckful**](#truckful) are out.
   * [**SeverLink**](#severlink) and [**ASUKA x Redline Reverie**](#asuka-redline-reverie) got public demos.
