@@ -14,8 +14,17 @@ div.jx-slider {
 	overflow: hidden;
 	cursor: pointer;
 	color: #f3f3f3;
+
+	/* Added */
+	touch-action: pan-y pinch-zoom;
+	-webkit-user-select: none;
+    user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
+.jx-natural div.jx-slider {
+	touch-action: pan-x pan-y pinch-zoom;
+}
 
 div.jx-handle {
 	position: absolute;
@@ -24,6 +33,9 @@ div.jx-handle {
 	cursor: col-resize;
 	z-index: 15;
 	margin-left: -20px;
+
+	/* Added */
+	touch-action: none;
 }
 
 .vertical div.jx-handle {
@@ -172,6 +184,12 @@ div.jx-image img {
 	max-width: none;
 	max-height: initial;
 	max-width: initial;
+
+	/* Added */
+	pointer-events: none;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	user-select: none;
 }
 
 .vertical div.jx-image img {
@@ -199,12 +217,12 @@ div.jx-image.jx-right img {
 }
 
 
-.veritcal div.jx-image.jx-left {
+.vertical div.jx-image.jx-left {
 	top: 0;
 	background-position: top;
 }
 
-.veritcal div.jx-image.jx-left img {
+.vertical div.jx-image.jx-left img {
 	top: 0;
 }
 
@@ -213,7 +231,7 @@ div.jx-image.jx-right img {
 	background-position: bottom;
 }
 
-.veritcal div.jx-image.jx-right img {
+.vertical div.jx-image.jx-right img {
 	bottom: 0;
 }
 

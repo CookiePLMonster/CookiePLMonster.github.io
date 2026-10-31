@@ -43,7 +43,7 @@ for path in sys.argv[1:]:
             os.makedirs(thumb_path, exist_ok=True)
             thumb_path = os.path.join(thumb_path, stem + thumb_ext)
 
-            image.thumbnail(THUMB_SIZE)
+            image.thumbnail(THUMB_SIZE, resample=Image.Resampling.MKS2021, reducing_gap=None)
             # If has_transparency is False then the alpha channel exists but is all 255
             if has_transparency is False:
                 image = image.convert('RGB')

@@ -1,0 +1,19 @@
+---
+juxtapose: true
+bare: true
+noindex: true
+---
+{%- capture left_url-%}{%- link {{ page.left }} -%}{%- endcapture -%}
+{%- capture right_url-%}{%- link {{ page.right }} -%}{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+    {% include head.html %}
+    <body class="compare-body">
+    <div class="compare">
+        <div class="juxtapose" data-startingposition="{{ page.start-position }}">
+            <img src="{{ left_url }}" data-label="{{ page.left-label | smartify | escape }}" alt="{{ page.left-label | escape }}" {% unless jekyll.environment == "development" %}{% imagesize left_url:props %}{% endunless %}>{{- nop -}}
+            <img src="{{ right_url }}" data-label="{{ page.right-label | smartify | escape }}" alt="{{ page.right-label | escape }}" {% unless jekyll.environment == "development" %}{% imagesize right_url:props %}{% endunless %}>{{- nop -}}
+        </div>
+    </div>
+    </body>
+</html>

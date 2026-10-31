@@ -14,5 +14,5 @@ for path in sys.argv[1:]:
 		os.makedirs(thumb_path, exist_ok=True)
 		thumb_path = os.path.join(thumb_path, stem + '.webp')
 
-		image.thumbnail(THUMB_SIZE)
+		image.thumbnail(THUMB_SIZE, resample=Image.Resampling.MKS2021, reducing_gap=None)
 		image.save(thumb_path, lossless=False, quality=WEBP_QUALITY, method=6)

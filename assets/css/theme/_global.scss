@@ -236,6 +236,22 @@ button {
     font-weight: bold;
 }
 
+.compare-body {
+    color-scheme: dark;
+    background: Canvas;
+
+    .compare {
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
+        color-scheme: light dark;
+
+        &.jx-natural {
+            overflow: auto;
+        }
+    }
+}
+
 /* ---- Responsive ---- */
 
 @media screen and (max-width: variables.$break) {

@@ -7,10 +7,13 @@
     <meta name="theme-color" content="{{ site.theme_settings.theme_color }}">
     <meta name="msapplication-navbutton-color" content="{{ site.theme_settings.theme_color }}">
     <meta name="apple-mobile-web-app-status-bar-style" content="{{ site.theme_settings.theme_color }}">
-
+    {% unless layout.bare -%}
     <link rel="preload" as="image" href="{% link {{ page.feature-img | default: site.theme_settings.header_feature_image }} %}" fetchpriority="high">
-
     <script defer src="{% link assets/js/main.min.js %}"></script>
+    {%- endunless %}
+    {% if layout.noindex -%}
+    <meta name="robots" content="noindex">
+    {%- endif %}
     <link rel="stylesheet" href="{% link assets/css/main.scss %}">
 
     <link rel="icon" type="image/png" href="{% link assets/icons/favicon-96x96.png %}" sizes="96x96" />

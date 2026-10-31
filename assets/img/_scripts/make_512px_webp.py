@@ -12,5 +12,5 @@ for path in sys.argv[1:]:
     with Image.open(path) as image:
         path = os.path.join(directory, stem + '.webp')
 
-        image.thumbnail(THUMB_SIZE)
+        image.thumbnail(THUMB_SIZE, resample=Image.Resampling.MKS2021, reducing_gap=None)
         image.save(path, lossless=False, quality=WEBP_QUALITY, method=6)

@@ -157,6 +157,8 @@ collections:
   updates:
     permalink: /:collection/:year/:month/:day/:title/
     output: true
+  compare:
+    output: true
 
 # SEO
 twitter:
@@ -219,6 +221,11 @@ defaults:
     values:
       layout: "updates"
       title_category: "Updates"
+  - scope:
+      path: ""
+      type: "compare"
+    values:
+      layout: "compare"
   - scope:
       path: ""
       type: "posts"
