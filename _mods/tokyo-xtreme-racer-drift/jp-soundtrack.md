@@ -1,11 +1,14 @@
 ---
 title: Japanese Soundtrack
 game-series: "tokyo-xtreme-racer-drift"
-order: 0
+order: -1
 date: 2026-10-15 14:00:00 +0200
 schema:
     downloadUrl: "https://github.com/CookiePLMonster/Console-Cheat-Codes/blob/master/PS2/Tokyo%20Xtreme%20Racer%20Drift/Japanese%20Soundtrack/SLUS-21236_07A4E535_jp-soundtrack.pnach"
 ---
+
+{:.disclaimer.info}
+This patch is shipped with PCSX2 starting with v2.9.136.
 
 A patch fixing soundtrack assignment issues in TXR Drift, making the music match the original release of Kaidō Battle:
 * Working unique music for the **Night Conquest Menu** and **Night Parking Lot**.
